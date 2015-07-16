@@ -23,7 +23,7 @@ gulp.task('build', function() {
 				{
 					var templateData = JSON.parse(data);
 
-					gulp.src(['./templates/*.html'])
+					gulp.src(['./templates/mock_pages/*.html'])
 						.pipe(fileinclude({
 							prefix: '@@',
 							basepath: '@file'

@@ -1,10 +1,11 @@
-<div>XXX</div>
-{{#links}}
-
+{{#links.length}}
+	{{> link}}
 
 	<ul>
+		{{#links}}
 		<li>
 			{{> link}}
 		</li>
+		{{/links}}
 	</ul>
-{{#links}}
+{{/links.length}}
