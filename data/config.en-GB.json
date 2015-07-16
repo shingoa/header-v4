@@ -1,0 +1,176 @@
+{
+	"services" : {
+		"label" : "Services",
+
+		"col1" : {
+			"label" : "Document Management",
+
+			"links" : [
+				{
+					"label" : "Back Office Transaction",
+					"href" : "#"
+				},
+				{
+					"label" : "Centralised Print Services",
+					"href" : "#"
+				},
+				{
+					"label" : "Enterprise Content Management",
+					"href" : "#"
+				},
+				{
+					"label" : "Managed Print Services",
+					"href" : "#"
+				},
+				{
+					"label" : "Workflow Automation",
+					"href" : "#"
+				}
+			]
+		},
+
+		"col2" : {
+			"label" : "Business Process",
+
+			"links" : [
+				{
+					"label" : "Communication & Marketing",
+					"href" : "#"
+				},
+				{
+					"label" : "Customer Care",
+					"href" : "#"
+				},
+				{
+					"label" : "Finance & Accounting",
+					"href" : "#"
+				},
+				{
+					"label" : "Human Capital Services",
+					"href" : "#"
+				},
+				{
+					"label" : "HR Consulting",
+					"href" : "#"
+				},
+				{
+					"label" : "Litigation Services",
+					"href" : "#"
+				}
+			]
+		},
+
+		"col3" : {
+			"label" : "Industries",
+
+			"links" : [
+				{
+					"label" : "Aerospace/Defence",
+					"href" : "#"
+				},
+				{
+					"label" : "Auto",
+					"href" : "#"
+				},
+				{
+					"label" : "Banking",
+					"href" : "#"
+				},
+				{
+					"label" : "Chemical",
+					"href" : "#"
+				},
+				{
+					"label" : "Consumer",
+					"href" : "#"
+				},
+				{
+					"label" : "Energy/Utility",
+					"href" : "#"
+				},
+				{
+					"label" : "Healthcare Payers",
+					"href" : "#"
+				},
+				{
+					"label" : "Healthcare Providers",
+					"href" : "#"
+				},
+				{
+					"label" : "High Tech & Telecom",
+					"href" : "#"
+				},
+				{
+					"label" : "Higher Education",
+					"href" : "#"
+				},
+				{
+					"label" : "Hospitality/Logistics",
+					"href" : "#"
+				},
+				{
+					"label" : "Industrial",
+					"href" : "#"
+				},
+				{
+					"label" : "Insurance",
+					"href" : "#"
+				},
+				{
+					"label" : "Life Sciences",
+					"href" : "#"
+				},
+				{
+					"label" : "Retail Services",
+					"href" : "#"
+				},
+				{
+					"label" : "Transportation",
+					"href" : "#"
+				},
+				{
+					"label" : "Travel",
+					"href" : "#"
+				}
+			]
+		},
+
+		"col4" : {
+			"label" : "Public Sector",
+
+			"links" : [
+				{
+					"label" : "Fedral",
+					"href" : "#"
+				},
+				{
+					"label" : "Government Healthcare",
+					"href" : "#"
+				},
+				{
+					"label" : "State",
+					"href" : "#"
+				},
+				{
+					"label" : "Local",
+					"href" : "#"
+				}
+			]
+		}
+	},
+	"products" : {
+		"label" : "Products"
+	},
+	"insights" : {
+		"label" : "Insights"
+	},
+	"supplies" : {
+		"label" : "Supplies"
+	},
+	"support" : {
+		"label" : "Support"
+	},
+	"about" : {
+		"label" : "About"
+	}
+}

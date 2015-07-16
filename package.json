@@ -1,0 +1,26 @@
+{
+  "name": "xerox.com-banners",
+  "version": "4.0.1",
+  "description": "Xerox.com banners",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-file-include": "^0.13.2",
+    "gulp-mustache": "^1.0.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.3",
+    "gulp-watch": "^4.2.4",
+    "handlebars": "^3.0.3",
+    "require-dir": "^0.3.0",
+    "require-dir": "^0.3.0"
+  },
+  "devDependencies": {
+    "gulp-load-plugins": "^0.10.0",
+    "require-dir": "^0.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paul Hawxby",
+  "license": "ISC"
+}
