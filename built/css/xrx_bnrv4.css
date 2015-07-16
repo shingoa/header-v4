@@ -441,22 +441,33 @@ th {
   margin: 0 auto; }
 
 .xrx_bnrv4_resetlist, .xrx_bnrv4_inlinelist, #xrx_bnrv4_header #xrx_bnrv4_header_nav_tertiary, #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_primary,
-#xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_secondary, #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_primary ul {
+#xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_secondary, #xrx_bnrv4_footer #xrx_bnr_v3_ftr_links, #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_primary ul {
   list-style-type: none;
   padding: 0;
   margin: 0; }
   .xrx_bnrv4_resetlist > li, .xrx_bnrv4_inlinelist > li, #xrx_bnrv4_header #xrx_bnrv4_header_nav_tertiary > li, #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_primary > li,
-  #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_secondary > li, #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_primary ul > li {
+  #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_secondary > li, #xrx_bnrv4_footer #xrx_bnr_v3_ftr_links > li, #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_primary ul > li {
     margin: 0;
     padding-right: 0; }
 
 .xrx_bnrv4_inlinelist > li, #xrx_bnrv4_header #xrx_bnrv4_header_nav_tertiary > li, #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_primary > li,
-#xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_secondary > li {
+#xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_secondary > li, #xrx_bnrv4_footer #xrx_bnr_v3_ftr_links > li {
   display: inline-block; }
 
 #xrx_bnrv4_header,
 #xrx_bnrv4_footer {
   font-family: 'Roboto', sans-serif; }
+  #xrx_bnrv4_header a,
+  #xrx_bnrv4_header label[for],
+  #xrx_bnrv4_footer a,
+  #xrx_bnrv4_footer label[for] {
+    color: #333;
+    text-decoration: none; }
+    #xrx_bnrv4_header a:hover,
+    #xrx_bnrv4_header label[for]:hover,
+    #xrx_bnrv4_footer a:hover,
+    #xrx_bnrv4_footer label[for]:hover {
+      color: #cf3847; }
 
 #xrx_bnrv4_header {
   height: 80px; }
@@ -475,7 +486,8 @@ th {
     top: 22px;
     left: 90px; }
   #xrx_bnrv4_header div.xrx_bnrv4_table {
-    display: table; }
+    display: table;
+    width: 100%; }
     #xrx_bnrv4_header div.xrx_bnrv4_table > div {
       display: table-row; }
       #xrx_bnrv4_header div.xrx_bnrv4_table > div > div {
@@ -536,7 +548,6 @@ th {
       display: block;
       cursor: pointer;
       text-decoration: none;
-      color: #333;
       position: relative; }
       #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_primary > li > label::after,
       #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_primary > li > a::after,
@@ -591,17 +602,41 @@ th {
         #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_primary .xrx_bnrv4_column_header > a {
           font-weight: bold;
           font-size: 18px;
-          text-decoration: none;
-          color: #333; }
+          text-decoration: none; }
       #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_primary ul {
         font-size: 16px; }
         #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_primary ul > li {
           margin-bottom: 5px; }
           #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_primary ul > li > a {
             text-decoration: none;
-            color: #333;
             padding: 3px 0;
             display: block; }
     #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_secondary {
       float: right;
       line-height: 20px; }
+
+#xrx_bnrv4_footer {
+  background-color: #f9f9f9;
+  padding: 15px;
+  font-size: 13px; }
+  #xrx_bnrv4_footer .xrx_bnrv4_logo {
+    margin-bottom: 25px;
+    height: 30px; }
+  #xrx_bnrv4_footer #xrx_bnr_v3_ftr_links {
+    font-size: 15px; }
+    #xrx_bnrv4_footer #xrx_bnr_v3_ftr_links > li {
+      position: relative;
+      padding: 0 15px; }
+      #xrx_bnrv4_footer #xrx_bnr_v3_ftr_links > li::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20%;
+        bottom: 20%;
+        right: 0;
+        width: 1px;
+        background-color: #dbdbdb; }
+      #xrx_bnrv4_footer #xrx_bnr_v3_ftr_links > li:first-child {
+        padding-left: 0; }
+      #xrx_bnrv4_footer #xrx_bnr_v3_ftr_links > li:last-child::after {
+        display: none; }

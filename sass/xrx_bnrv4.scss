@@ -41,6 +41,16 @@
 #xrx_bnrv4_header,
 #xrx_bnrv4_footer {
 	font-family: 'Roboto', sans-serif;
+
+	a,
+	label[for] {
+		color: #333;
+		text-decoration: none;
+
+		&:hover {
+			color: $red;
+		}
+	}
 }
 
 #xrx_bnrv4_header,
@@ -77,6 +87,7 @@
 
 	div.xrx_bnrv4_table {
 		display: table;
+		width: 100%;
 
 		> div {
 			display: table-row;
@@ -167,7 +178,6 @@
 					display: block;
 					cursor: pointer;
 					text-decoration: none;
-					color: #333;
 					position: relative;
 
 					&::after {
@@ -236,7 +246,6 @@
 					font-weight: bold;
 					font-size: 18px;
 					text-decoration: none;
-					color: #333;
 				}
 			}
 
@@ -249,7 +258,6 @@
 
 					> a {
 						text-decoration: none;
-						color: #333;
 						padding: 3px 0;
 						display: block;
 					}
@@ -264,5 +272,42 @@
 }
 
 #xrx_bnrv4_footer {
+	background-color: #f9f9f9;
+	padding: 15px;
+	font-size: 13px;
 
+	.xrx_bnrv4_logo {
+		margin-bottom: 25px;
+		height: 30px;
+	}
+
+	#xrx_bnr_v3_ftr_links {
+		@extend .xrx_bnrv4_inlinelist;
+
+		font-size: 15px;
+
+		> li {
+			position: relative;
+			padding: 0 15px;
+
+			&::after {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 20%;
+				bottom: 20%;
+				right: 0;
+				width: 1px;
+				background-color: #dbdbdb;
+			}
+
+			&:first-child {
+				padding-left: 0;
+			}
+
+			&:last-child::after {
+				display: none;
+			}
+		}
+	}
 }
