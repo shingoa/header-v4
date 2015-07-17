@@ -57,10 +57,12 @@
 #xrx_bnrv4_footer,
 #xrx_bnrv4_content {
 	@extend .xrx_bnrv4_positionit;
+	position: relative;
 }
 
 #xrx_bnrv4_header {
 	height: 80px;
+	z-index: 1000;
 
 	> div {
 		@extend .xrx_bnrv4_positionit;
@@ -235,6 +237,21 @@
 			font-size: 20px;
 			line-height: 20px;
 
+			.xrx_bnrv4_header_flyout_header {
+				font-size: 24px;
+				margin-bottom: 20px;
+				display: block;
+				color: #000;
+
+				> a {
+					&::after {
+						content: " >";
+						color: $red;
+						font-size: 90%;
+					}
+				}
+			}
+
 			.xrx_bnrv4_column_header {
 				padding-bottom: 5px;
 				border-bottom: 1px solid #dbdbdb;
@@ -272,6 +289,7 @@
 }
 
 #xrx_bnrv4_footer {
+	z-index: 100;
 	background-color: #f9f9f9;
 	padding: 15px;
 	font-size: 13px;

@@ -30,7 +30,8 @@ gulp.task('build', function() {
 						}))
 						.pipe(mustache(templateData))
 						.pipe(rename({
-							'suffix' : '-' + locale
+							'suffix' : '-' + locale,
+							'extname' : '.html'
 						}))
 						.pipe(gulp.dest('./built'));
 				}

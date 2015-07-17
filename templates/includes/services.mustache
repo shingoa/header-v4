@@ -5,22 +5,26 @@
 		<label for="xrx_bnrv4_services">{{label}}</label>
 
 		<div class="xrx_bnrv4_header_flyout">
+			{{> ../includes/mustachePartials/flyout_header}}
+
 			<div class="xrx_bnrv4_table">
 				<div class="xrx_bnrv4_row">
 					{{#col1}}
-						{{> ../includes/mustachePartials/column_links}}
+						{{> ../includes/mustachePartials/column_links_tall}}
 					{{/col1}}
 					{{#col2}}
-						{{> ../includes/mustachePartials/column_links}}
+						{{> ../includes/mustachePartials/column_links_tall}}
 					{{/col2}}
 					{{#col3}}
-						{{> ../includes/mustachePartials/column_links}}
+						{{> ../includes/mustachePartials/column_links_tall}}
 					{{/col3}}
 					{{#col4}}
-						{{> ../includes/mustachePartials/column_links}}
+						{{> ../includes/mustachePartials/column_links_tall}}
 					{{/col4}}
 				</div>
 			</div>
+
+			{{> ../includes/mustachePartials/flyout_footer}}
 		</div>
 	</li>
 {{/services}}

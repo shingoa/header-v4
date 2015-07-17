@@ -469,8 +469,14 @@ th {
     #xrx_bnrv4_footer label[for]:hover {
       color: #cf3847; }
 
+#xrx_bnrv4_header,
+#xrx_bnrv4_footer,
+#xrx_bnrv4_content {
+  position: relative; }
+
 #xrx_bnrv4_header {
-  height: 80px; }
+  height: 80px;
+  z-index: 1000; }
   #xrx_bnrv4_header > div {
     height: 80px;
     position: fixed;
@@ -593,6 +599,15 @@ th {
       float: left;
       font-size: 20px;
       line-height: 20px; }
+      #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_primary .xrx_bnrv4_header_flyout_header {
+        font-size: 24px;
+        margin-bottom: 20px;
+        display: block;
+        color: #000; }
+        #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_primary .xrx_bnrv4_header_flyout_header > a::after {
+          content: " >";
+          color: #cf3847;
+          font-size: 90%; }
       #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_primary .xrx_bnrv4_column_header {
         padding-bottom: 5px;
         border-bottom: 1px solid #dbdbdb;
@@ -616,6 +631,7 @@ th {
       line-height: 20px; }
 
 #xrx_bnrv4_footer {
+  z-index: 100;
   background-color: #f9f9f9;
   padding: 15px;
   font-size: 13px; }
