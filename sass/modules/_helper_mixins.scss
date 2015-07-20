@@ -1,0 +1,28 @@
+@mixin xrx_bnrv4_positionit
+{
+	max-width: $page_width;
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+
+@mixin xrx_bnrv4_resetlist
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+
+	> li {
+		margin: 0;
+		padding-right: 0;
+	}
+}
+
+@mixin xrx_bnrv4_inlinelist
+{
+	@include xrx_bnrv4_resetlist;
+
+	> li {
+		display: inline-block;
+	}
+}

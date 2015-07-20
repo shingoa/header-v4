@@ -7,6 +7,10 @@ var sass = plugins.sass;
 
 gulp.task('sass', function () {
 	gulp.src('./sass/**/*.scss')
-		.pipe(sass().on('error', sass.logError))
+		.pipe(sass({
+			outputStyle: "expanded",
+			indentType: "tab",
+			indentWidth: 1
+		}).on('error', sass.logError))
 		.pipe(gulp.dest('./built/css'));
 });

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+@import "vars";
+
+@import "../modules/_responsive_base";
+
+#xrx_bnrv4_header_nav_secondary
+{
+	@include respond-min($break_tablet_landscape)
+	{
+		> li {
+			> label[for],
+			> a {
+				padding: 20px 15px;
+
+				&::before {
+					top: 35%;
+					bottom: 35%;
+				}
+			}
+
+			&:first-child {
+
+				> label,
+				> a {
+					padding-left: 30px;
+				}
+			}
+			&:last-child {
+
+				> label,
+				> a {
+					padding-right: 30px;
+				}
+			}
+		}
+	}
+}

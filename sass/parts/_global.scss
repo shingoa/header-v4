@@ -1,0 +1,62 @@
+@charset "UTF-8";
+@import "vars";
+
+@import "../modules/_responsive_base";
+
+#xrx_bnrv4_header,
+#xrx_bnrv4_footer {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #333;
+
+	a,
+	label[for] {
+		color: #333;
+		text-decoration: none;
+
+		&:hover {
+			color: $red;
+		}
+
+		&:focus {
+			color: $red;
+			outline: none;
+		}
+	}
+
+	.xrx_bnrv4_logo {
+		display: block;
+		background-image: $logoPathSvg;
+		background-repeat: no-repeat;
+		background-size: contain;
+
+		&:focus
+		{
+			@include respond-min($break_tablet_portrait)
+			{
+				outline: 1px solid $red !important;
+			}
+		}
+	}
+
+	div.xrx_bnrv4_table {
+		display: table;
+		width: 100%;
+
+		> div {
+			display: table-row;
+
+			> div {
+				display: table-cell;
+				padding-right: 20px;
+
+				&:last-child {
+					padding-right: 0;
+				}
+			}
+		}
+	}
+}
+
+#xrx_bnrv4_content {
+	@include xrx_bnrv4_positionit;
+}

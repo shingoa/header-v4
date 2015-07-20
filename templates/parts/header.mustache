@@ -1,26 +1,30 @@
 {{#header}}
 	<div id="xrx_bnrv4_header">
 		<input type="checkbox" name="xrx_bnrv4_header_menuchk" id="xrx_bnrv4_header_menuchk"></input>
+		<input type="checkbox" name="xrx_bnrv4_header_searchchk" id="xrx_bnrv4_header_searchchk"></input>
 
 		<div id="xrx_bnrv4_header_floater">
-			<label for="xrx_bnrv4_header_menuchk" id="xrx_bnrv4_header_menubtn" title="Open/Close Menu">
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-			</label>
-			<a class="xrx_bnrv4_logo" href="#" title="Xerox.com home"></a>
+			<div>
+				<label for="xrx_bnrv4_header_menuchk" id="xrx_bnrv4_header_menubtn" title="Open/Close Menu">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</label>
+				<a class="xrx_bnrv4_logo" href="#" title="Xerox.com home"></a>
 
-			<div id="xrx_bnrv4_header_search">
-				<input type="textbox" title="Search" placeholder="Search"></input>
+				<label id="xrx_bnrv4_header_search_btn" for="xrx_bnrv4_header_searchchk"></label>
+				<div id="xrx_bnrv4_header_search">
+					<input type="textbox" title="Search" placeholder="Search"></input>
+				</div>
+
+				{{#header.tertiaryNav}}
+					<ul id="xrx_bnrv4_header_nav_tertiary">
+						<li><a href="#">{{contactUs}}</a></li>
+						<li><a href="#">{{share}}</a></li>
+					</ul>
+				{{/header.tertiaryNav}}
 			</div>
-
-			{{#header.tertiaryNav}}
-				<ul id="xrx_bnrv4_header_nav_tertiary">
-					<li>{{contactUs}}</li>
-					<li>{{share}}</li>
-				</ul>
-			{{/header.tertiaryNav}}
 		</div>
 
 		<div id="xrx_bnrv4_header_nav">

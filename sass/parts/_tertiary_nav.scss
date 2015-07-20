@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import "vars";
+
+@import "../modules/_responsive_base";
+
+#xrx_bnrv4_header_nav_tertiary
+{
+	@include xrx_bnrv4_inlinelist;
+
+	position: absolute;
+	right: 30px;
+	display: none;
+
+	@include respond-min($break_tablet_portrait)
+	{
+		display: block;
+		top: 27px;
+	}
+	@include respond-min($break_tablet_landscape)
+	{
+		top: 24px;
+	}
+	@include respond-min($break_desktop)
+	{
+		top: 34px;
+	}
+
+	> li {
+		padding: 0 10px;
+		cursor: pointer;
+
+		&:last-child {
+			> a,
+			> label[for] {
+				padding-right: 0;
+			}
+		}
+
+		> a,
+		> label[for]
+		{
+			&::after {
+				content: "˅";
+				display: inline-block;
+				margin-left: 10px;
+				position: relative;
+				top: 1px;
+			}
+		}
+	}
+}

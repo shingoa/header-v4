@@ -1,0 +1,344 @@
+@charset "UTF-8";
+@import "vars";
+
+@import "../modules/helper_mixins";
+
+@import "primary_nav";
+@import "seconday_nav";
+@import "tertiary_nav";
+
+#xrx_bnrv4_header
+{
+	z-index: 1000;
+	height: 116px;
+
+	@include respond-min($break_tablet_landscape)
+	{
+		height: 80px;
+	}
+
+	.xrx_bnrv4_logo {
+		position: absolute;
+		background-position: center center;
+		top: 25px;
+		left: 50px;
+		right: 50px;
+		height: 58px;
+
+		@include respond-min($break_tablet_portrait)
+		{
+			width: 142px;
+			height: 38px;
+			top: 19px;
+			left: 70px;
+			right: auto;
+			background-position: left top;
+		}
+		@include respond-min($break_tablet_landscape)
+		{
+			top: 15px;
+			left: 80px;
+		}
+		@include respond-min($break_desktop)
+		{
+			top: 26px;
+			left: 90px;
+		}
+	}
+
+	#xrx_bnrv4_header_floater {
+		position: fixed;
+		width: 100%;
+		height: 116px;
+		background-color: rgba(255, 255, 255, .92);
+
+		@include respond-min($break_tablet_portrait)
+		{
+			height: 80px;
+		}
+
+		> div {
+			@include xrx_bnrv4_positionit;
+			position: relative;
+		}
+	}
+
+	> input {
+		opacity: 0;
+		position: absolute;
+		top: -20px;
+	}
+
+	#xrx_bnrv4_header_menubtn {
+		position: absolute;
+		top: 42px;
+		left: 0;
+
+		@include respond-min($break_tablet_portrait)
+		{
+			top: 27px;
+			left: 20px;
+		}
+		@include respond-min($break_tablet_landscape)
+		{
+			top: 23px;
+			left: 25px;
+		}
+		@include respond-min($break_desktop)
+		{
+			top: 35px;
+			left: 30px;
+		}
+	}
+
+	#xrx_bnrv4_header_nav_primary,
+	#xrx_bnrv4_header_nav_secondary,
+	#xrx_bnrv4_header_nav_tertiary
+	{
+		@include xrx_bnrv4_resetlist;
+
+		@include respond-min($break_tablet_landscape)
+		{
+			@include xrx_bnrv4_inlinelist;
+
+			> li {
+				> label[for],
+				> a {
+					display: block;
+					cursor: pointer;
+					text-decoration: none;
+					position: relative;
+					font-weight: lighter;
+					padding-right: 10px;
+
+					&::before {
+						content: "";
+						display: block;
+						position: absolute;
+						top: 20%;
+						bottom: 20%;
+						right: 0;
+						width: 1px;
+						background-color: #dbdbdb;
+					}
+				}
+
+				&:first-child {
+					> label,
+					> a {
+						padding-left: 0;
+					}
+				}
+
+				&:last-child {
+
+					> label,
+					> a {
+						padding-right: 0;
+
+						&::before {
+							display: none;
+						}
+					}
+				}
+
+				> input {
+					display: none;
+
+					&:checked ~ label {
+						color: $red;
+						cursor: default;
+					}
+
+					&:checked ~ .xrx_bnrv4_header_flyout {
+						display: block;
+						position: absolute;
+						left: -1px;
+						right: -1px;
+					}
+				}
+			}
+		}
+
+	}
+
+	#xrx_bnrv4_header_nav {
+		display: none;
+		background-color: #ebebeb;
+		border-top: 1px solid #dbdbdb;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 116px;
+		z-index: 1200;
+
+		@include respond-min($break_tablet_portrait)
+		{
+			top: 80px;
+		}
+
+		&::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		> div {
+			@include xrx_bnrv4_positionit;
+			padding: 0 30px;
+			box-sizing: border-box;
+		}
+	}
+
+	#xrx_bnrv4_header_nav_primary {
+		float: left;
+		line-height: 20px;
+
+		> li > a,
+		> li > label {
+			font-size: 26px;
+		}
+
+		.xrx_bnrv4_header_flyout_header {
+			font-size: 24px;
+			margin-bottom: 20px;
+			display: block;
+			color: #000;
+
+			> a {
+				&::after {
+					content: " >";
+					color: $red;
+					font-size: 90%;
+				}
+			}
+		}
+
+		.xrx_bnrv4_column_header {
+			padding-bottom: 5px;
+			border-bottom: 1px solid #dbdbdb;
+			margin-bottom: 10px;
+
+			&,
+			> span,
+			> a {
+				font-weight: bold;
+				font-size: 18px;
+				text-decoration: none;
+			}
+		}
+
+		ul {
+			@include xrx_bnrv4_resetlist;
+			font-size: 16px;
+
+			> li {
+				margin-bottom: 5px;
+
+				> a {
+					text-decoration: none;
+					padding: 3px 0;
+					display: block;
+				}
+			}
+		}
+	}
+
+	#xrx_bnrv4_header_nav_secondary {
+		float: right;
+		line-height: 20px;
+
+		> li > a,
+		> li > label {
+			font-size: 17px;
+		}
+	}
+
+	#xrx_bnrv4_header_search_btn {
+		display: block;
+		width: 35px;
+		height: 35px;
+		background-image: url("../images/search.svg");
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 35px;
+		right: 0;
+		cursor: pointer;
+
+		@include respond-min($break_tablet_portrait)
+		{
+			display: none;
+		}
+
+
+	}
+
+	#xrx_bnrv4_header_searchchk:checked ~ #xrx_bnrv4_header_floater #xrx_bnrv4_header_search {
+		display: block;
+	}
+
+	#xrx_bnrv4_header_search
+	{
+		display: none;
+		padding: 20px;
+		background-color: #ebebeb;
+		border: 1px solid #dbdbdb;
+		position: relative;
+		top: 116px;
+		border-width: 1px 0;
+
+		input {
+			width: 100%;
+			padding: 6px;
+			box-sizing: border-box;
+		}
+
+		@include respond-min($break_tablet_portrait)
+		{
+			display: block;
+			position: absolute;
+			padding: 0;
+			background-color: none;
+			border: none;
+
+			left: 263px;
+			right: 230px;
+			top: 20px;
+
+			input {
+				border: none;
+				border: 1px solid #ebebeb;
+				outline: none;
+
+				&:focus {
+					border-color: $red;
+				}
+			}
+		}
+		@include respond-min($break_tablet_landscape)
+		{
+			top: 17px;
+			left: 294px;
+		}
+		@include respond-min($break_desktop)
+		{
+			top: 26px;
+			left: 320px;
+		}
+	}
+
+	.xrx_bnrv4_header_flyout {
+		min-height: 50px;
+		border-bottom: 1px solid #dbdbdb;
+		border-top: 1px solid #dbdbdb;
+		display: none;
+		background-color: #fff;
+
+		> div {
+			box-sizing: border-box;
+			padding: 30px;
+			@include xrx_bnrv4_positionit;
+		}
+	}
+
+}

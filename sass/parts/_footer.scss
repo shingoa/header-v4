@@ -1,0 +1,50 @@
+@charset "UTF-8";
+@import "vars";
+
+@import "../modules/_responsive_base";
+
+#xrx_bnrv4_footer {
+	z-index: 100;
+	background-color: #f9f9f9;
+	padding: 15px;
+	font-size: 13px;
+
+	> div {
+		@include xrx_bnrv4_positionit;
+	}
+
+	.xrx_bnrv4_logo {
+		margin-bottom: 25px;
+		height: 30px;
+	}
+
+	#xrx_bnr_v3_ftr_links {
+		@include xrx_bnrv4_inlinelist;
+
+		font-size: 15px;
+
+		> li {
+			position: relative;
+			padding: 0 15px;
+
+			&::after {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 20%;
+				bottom: 20%;
+				right: 0;
+				width: 1px;
+				background-color: #dbdbdb;
+			}
+
+			&:first-child {
+				padding-left: 0;
+			}
+
+			&:last-child::after {
+				display: none;
+			}
+		}
+	}
+}
