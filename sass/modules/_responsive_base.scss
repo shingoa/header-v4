@@ -1,0 +1,58 @@
+// -----------------------------------------
+// Mobile first responsive design
+// http://jakearchibald.github.io/sass-ie/
+// https://raw.github.com/jakearchibald/sass-ie/master/css/_utils.scss
+// ------------------------------------------
+// Tweaked and commented by phawxby for xerox.com implementation
+// ------------------------------------------
+
+@import '_vars';
+
+// Fixed media query set.
+// Basically it asks the question do you want to build the stylesheet just for a specific media query subset
+// So if you set $fix-mqs: $desktop; then you can build just desktop styles.
+// Side note for the future, we can also build mobile only css using this approach to reduce the footprint of mobile pages
+$fix-mqs: false !default;
+
+
+// -----------------------------------------
+// Mixin to display
+// ------------------------------------------
+@mixin respond-min($width) {
+	@if $fix-mqs {
+		@if $fix-mqs >= $width {
+			@content;
+		}
+	}
+	@else {
+		@media screen and (min-width: $width) {
+			@content;
+		}
+	}
+}
+
+@mixin respond-max($width) {
+	@if $fix-mqs {
+		@if $fix-mqs < $width {
+			@content;
+		}
+	}
+	@else {
+		@media screen and (max-width: $width - 1) {
+			@content;
+		}
+	}
+}
+
+@mixin respond-min-max($minWidth, $maxWidth) {
+	@if $fix-mqs {
+		@if ($fix-mqs >= $minWidth and $fix-mqs < $maxWidth) {
+			@content;
+		}
+	}
+	@else {
+		@media screen and (min-width: $minWidth) and (max-width: $maxWidth - 1) {
+			@content;
+		}
+	}
+}

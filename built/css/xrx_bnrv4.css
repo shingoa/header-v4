@@ -395,47 +395,56 @@ th {
     #xrx_bnrv4_header_menubtn span:nth-child(4) {
       bottom: 0; }
 
-#xrx_bnrv4_header_menuchk:checked ~ #xrx_bnrv4_header_menubtn span:nth-child(1),
-#xrx_bnrv4_header_menubtn.open span:nth-child(1) {
+#xrx_bnrv4_header_menuchk:focus ~ #xrx_bnrv4_header_floater #xrx_bnrv4_header_menubtn span {
+  background-color: #cf3847; }
+
+#xrx_bnrv4_header_menuchk:checked ~ #xrx_bnrv4_header_floater #xrx_bnrv4_header_menubtn
+span:nth-child(1),
+#xrx_bnrv4_header_menubtn.open ~ #xrx_bnrv4_header_floater #xrx_bnrv4_header_menubtn span:nth-child(1) {
   top: 18px;
   width: 0%;
   left: 50%; }
 
-#xrx_bnrv4_header_menuchk:checked ~ #xrx_bnrv4_header_menubtn span:nth-child(2),
-#xrx_bnrv4_header_menubtn.open span:nth-child(2) {
+#xrx_bnrv4_header_menuchk:checked ~ #xrx_bnrv4_header_floater #xrx_bnrv4_header_menubtn
+span:nth-child(2),
+#xrx_bnrv4_header_menubtn.open ~ #xrx_bnrv4_header_floater #xrx_bnrv4_header_menubtn span:nth-child(2) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg); }
 
-#xrx_bnrv4_header_menuchk:checked ~ #xrx_bnrv4_header_menubtn span:nth-child(3),
-#xrx_bnrv4_header_menubtn.open span:nth-child(3) {
+#xrx_bnrv4_header_menuchk:checked ~ #xrx_bnrv4_header_floater #xrx_bnrv4_header_menubtn
+span:nth-child(3),
+#xrx_bnrv4_header_menubtn.open ~ #xrx_bnrv4_header_floater #xrx_bnrv4_header_menubtn span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg); }
 
-#xrx_bnrv4_header_menuchk:checked ~ #xrx_bnrv4_header_menubtn span:nth-child(4),
-#xrx_bnrv4_header_menubtn.open span:nth-child(4) {
+#xrx_bnrv4_header_menuchk:checked ~ #xrx_bnrv4_header_floater #xrx_bnrv4_header_menubtn
+span:nth-child(4),
+#xrx_bnrv4_header_menubtn.open ~ #xrx_bnrv4_header_floater #xrx_bnrv4_header_menubtn span:nth-child(4) {
   top: 18px;
   width: 0%;
   left: 50%; }
 
-#xrx_bnrv4_header_menuchk:checked ~ #xrx_bnrv4_header_menubtn ~ #xrx_bnrv4_header_nav,
+#xrx_bnrv4_header_menuchk:checked ~ #xrx_bnrv4_header_nav,
 #xrx_bnrv4_header_menubtn.open ~ #xrx_bnrv4_header_nav {
   display: block; }
 
 .xrx_bnrv4_logo {
   display: block;
-  width: 130px;
-  height: 35px;
+  width: 142px;
+  height: 38px;
   background-image: url("http://www.xerox.com/assets/images/navigation/headers/xerox_logo_r.png");
   background-repeat: no-repeat;
   background-size: contain; }
+  .xrx_bnrv4_logo:focus {
+    outline: 1px solid #cf3847 !important; }
 
-.xrx_bnrv4_positionit, #xrx_bnrv4_header,
+.xrx_bnrv4_positionit, #xrx_bnrv4_header_floater,
 #xrx_bnrv4_footer,
-#xrx_bnrv4_content, #xrx_bnrv4_header > div {
+#xrx_bnrv4_content, #xrx_bnrv4_header > div#xrx_bnrv4_header_floater, #xrx_bnrv4_header #xrx_bnrv4_header_nav > div, #xrx_bnrv4_header #xrx_bnrv4_header_nav .xrx_bnrv4_header_flyout > div {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto; }
@@ -456,7 +465,8 @@ th {
 
 #xrx_bnrv4_header,
 #xrx_bnrv4_footer {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #333; }
   #xrx_bnrv4_header a,
   #xrx_bnrv4_header label[for],
   #xrx_bnrv4_footer a,
@@ -468,8 +478,14 @@ th {
     #xrx_bnrv4_footer a:hover,
     #xrx_bnrv4_footer label[for]:hover {
       color: #cf3847; }
+    #xrx_bnrv4_header a:focus,
+    #xrx_bnrv4_header label[for]:focus,
+    #xrx_bnrv4_footer a:focus,
+    #xrx_bnrv4_footer label[for]:focus {
+      color: #cf3847;
+      outline: none; }
 
-#xrx_bnrv4_header,
+#xrx_bnrv4_header_floater,
 #xrx_bnrv4_footer,
 #xrx_bnrv4_content {
   position: relative; }
@@ -477,19 +493,20 @@ th {
 #xrx_bnrv4_header {
   height: 80px;
   z-index: 1000; }
-  #xrx_bnrv4_header > div {
+  #xrx_bnrv4_header > div#xrx_bnrv4_header_floater {
     height: 80px;
-    position: fixed;
     background-color: rgba(255, 255, 255, 0.92); }
   #xrx_bnrv4_header #xrx_bnrv4_header_menuchk {
-    display: none; }
+    opacity: 0;
+    position: absolute;
+    top: -20px; }
   #xrx_bnrv4_header #xrx_bnrv4_header_menubtn {
     position: absolute;
-    top: 29px;
+    top: 35px;
     left: 30px; }
   #xrx_bnrv4_header .xrx_bnrv4_logo {
     position: absolute;
-    top: 22px;
+    top: 26px;
     left: 90px; }
   #xrx_bnrv4_header div.xrx_bnrv4_table {
     display: table;
@@ -503,15 +520,21 @@ th {
           padding-right: 0; }
   #xrx_bnrv4_header #xrx_bnrv4_header_search {
     position: absolute;
-    left: 270px;
+    left: 328px;
     right: 280px;
     top: 28px; }
     #xrx_bnrv4_header #xrx_bnrv4_header_search input {
-      width: 100%; }
+      width: 100%;
+      border: none;
+      padding: 6px;
+      border: 1px solid #ebebeb;
+      outline: none; }
+      #xrx_bnrv4_header #xrx_bnrv4_header_search input:focus {
+        border-color: #cf3847; }
   #xrx_bnrv4_header #xrx_bnrv4_header_nav_tertiary {
     position: absolute;
     right: 30px;
-    top: 28px; }
+    top: 34px; }
     #xrx_bnrv4_header #xrx_bnrv4_header_nav_tertiary > li {
       border-right: 1px solid #999;
       padding: 0 10px;
@@ -527,12 +550,13 @@ th {
         top: 1px; }
   #xrx_bnrv4_header #xrx_bnrv4_header_nav {
     display: none;
+    background-color: #ebebeb;
+    border: 1px solid #dbdbdb;
     position: absolute;
-    top: 80px;
     left: 0;
     right: 0;
-    background-color: #ebebeb;
-    border: 1px solid #dbdbdb; }
+    top: 80px;
+    z-index: 1200; }
     #xrx_bnrv4_header #xrx_bnrv4_header_nav::after {
       display: block;
       content: "";
@@ -540,12 +564,13 @@ th {
     #xrx_bnrv4_header #xrx_bnrv4_header_nav .xrx_bnrv4_header_flyout {
       display: block;
       min-height: 50px;
-      border: 1px solid #dbdbdb;
+      border-bottom: 1px solid #dbdbdb;
       border-top: none;
       display: none;
-      background-color: #fff;
-      max-height: 300px;
-      padding: 30px; }
+      background-color: #fff; }
+      #xrx_bnrv4_header #xrx_bnrv4_header_nav .xrx_bnrv4_header_flyout > div {
+        box-sizing: border-box;
+        padding: 30px; }
     #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_primary > li > label,
     #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_primary > li > a,
     #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_secondary > li > label,
@@ -554,7 +579,8 @@ th {
       display: block;
       cursor: pointer;
       text-decoration: none;
-      position: relative; }
+      position: relative;
+      font-weight: lighter; }
       #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_primary > li > label::after,
       #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_primary > li > a::after,
       #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_secondary > li > label::after,
@@ -597,8 +623,10 @@ th {
         right: -1px; }
     #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_primary {
       float: left;
-      font-size: 20px;
       line-height: 20px; }
+      #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_primary > li > a,
+      #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_primary > li > label {
+        font-size: 26px; }
       #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_primary .xrx_bnrv4_header_flyout_header {
         font-size: 24px;
         margin-bottom: 20px;
@@ -629,6 +657,9 @@ th {
     #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_secondary {
       float: right;
       line-height: 20px; }
+      #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_secondary > li > a,
+      #xrx_bnrv4_header #xrx_bnrv4_header_nav #xrx_bnrv4_header_nav_secondary > li > label {
+        font-size: 17px; }
 
 #xrx_bnrv4_footer {
   z-index: 100;

@@ -3,14 +3,19 @@
 @import "vars";
 
 @import "modules/hamburger";
+@import "modules/_responsive_base";
 
 .xrx_bnrv4_logo {
 	display: block;
-	width: 130px;
-	height: 35px;
+	width: 142px;
+	height: 38px;
 	background-image: $logoPathPng;
 	background-repeat: no-repeat;
 	background-size: contain;
+
+	&:focus {
+		outline: 1px solid $red !important;
+	}
 }
 
 .xrx_bnrv4_positionit {
@@ -40,7 +45,8 @@
 
 #xrx_bnrv4_header,
 #xrx_bnrv4_footer {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #333;
 
 	a,
 	label[for] {
@@ -50,10 +56,15 @@
 		&:hover {
 			color: $red;
 		}
+
+		&:focus {
+			color: $red;
+			outline: none;
+		}
 	}
 }
 
-#xrx_bnrv4_header,
+#xrx_bnrv4_header_floater,
 #xrx_bnrv4_footer,
 #xrx_bnrv4_content {
 	@extend .xrx_bnrv4_positionit;
@@ -64,26 +75,27 @@
 	height: 80px;
 	z-index: 1000;
 
-	> div {
+	> div#xrx_bnrv4_header_floater {
 		@extend .xrx_bnrv4_positionit;
 		height: 80px;
-		position: fixed;
 		background-color: rgba(255, 255, 255, .92);
 	}
 
 	#xrx_bnrv4_header_menuchk {
-		display: none;
+		opacity: 0;
+		position: absolute;
+		top: -20px;
 	}
 
 	#xrx_bnrv4_header_menubtn {
 		position: absolute;
-		top: 29px;
+		top: 35px;
 		left: 30px;
 	}
 
 	.xrx_bnrv4_logo {
 		position: absolute;
-		top: 22px;
+		top: 26px;
 		left: 90px;
 	}
 
@@ -107,12 +119,20 @@
 
 	#xrx_bnrv4_header_search {
 		position: absolute;
-		left: 270px;
+		left: 328px;
 		right: 280px;
 		top: 28px;
 
 		input {
 			width: 100%;
+			border: none;
+			padding: 6px;
+			border: 1px solid #ebebeb;
+			outline: none;
+
+			&:focus {
+				border-color: $red;
+			}
 		}
 	}
 
@@ -121,7 +141,7 @@
 
 		position: absolute;
 		right: 30px;
-		top: 28px;
+		top: 34px;
 
 		> li {
 			border-right: 1px solid #999;
@@ -145,12 +165,17 @@
 
 	#xrx_bnrv4_header_nav {
 		display: none;
-		position: absolute;
-		top: 80px;
-		left: 0;
-		right: 0;
 		background-color: #ebebeb;
 		border: 1px solid #dbdbdb;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 80px;
+		z-index: 1200;
+
+		> div {
+			@extend .xrx_bnrv4_positionit;
+		}
 
 		&::after {
 			display: block;
@@ -161,12 +186,16 @@
 		.xrx_bnrv4_header_flyout {
 			display: block;
 			min-height: 50px;
-			border: 1px solid #dbdbdb;
+			border-bottom: 1px solid #dbdbdb;
 			border-top: none;
 			display: none;
 			background-color: #fff;
-			max-height: 300px;
-			padding: 30px;
+
+			> div {
+				box-sizing: border-box;
+				padding: 30px;
+				@extend .xrx_bnrv4_positionit;
+			}
 		}
 
 		#xrx_bnrv4_header_nav_primary,
@@ -181,6 +210,7 @@
 					cursor: pointer;
 					text-decoration: none;
 					position: relative;
+					font-weight: lighter;
 
 					&::after {
 						content: "";
@@ -234,8 +264,12 @@
 
 		#xrx_bnrv4_header_nav_primary {
 			float: left;
-			font-size: 20px;
 			line-height: 20px;
+
+			> li > a,
+			> li > label {
+				font-size: 26px;
+			}
 
 			.xrx_bnrv4_header_flyout_header {
 				font-size: 24px;
@@ -284,6 +318,11 @@
 		#xrx_bnrv4_header_nav_secondary {
 			float: right;
 			line-height: 20px;
+
+			> li > a,
+			> li > label {
+				font-size: 17px;
+			}
 		}
 	}
 }

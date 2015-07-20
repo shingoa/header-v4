@@ -4,23 +4,25 @@
 		<label for="xrx_bnrv4_support">{{label}}</label>
 
 		<div class="xrx_bnrv4_header_flyout">
-			{{> ../includes/mustachePartials/flyout_header}}
+			<div>
+				{{> ../includes/mustachePartials/flyout_header}}
 
-			<div class="xrx_bnrv4_table">
-				<div class="xrx_bnrv4_row">
-					{{#col1}}
-						{{> ../includes/mustachePartials/column_links_short}}
-					{{/col1}}
-					{{#col2}}
-						{{> ../includes/mustachePartials/column_links_short}}
-					{{/col2}}
-					{{#col3}}
-						{{> ../includes/mustachePartials/column_links_short}}
-					{{/col3}}
+				<div class="xrx_bnrv4_table">
+					<div class="xrx_bnrv4_row">
+						{{#col1}}
+							{{> ../includes/mustachePartials/column_links_short}}
+						{{/col1}}
+						{{#col2}}
+							{{> ../includes/mustachePartials/column_links_short}}
+						{{/col2}}
+						{{#col3}}
+							{{> ../includes/mustachePartials/column_links_short}}
+						{{/col3}}
+					</div>
 				</div>
-			</div>
 
-			{{> ../includes/mustachePartials/flyout_footer}}
+				{{> ../includes/mustachePartials/flyout_footer}}
+			</div>
 		</div>
 	</li>
 {{/support}}
