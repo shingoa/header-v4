@@ -672,11 +672,11 @@ span:nth-child(4),
 	}
 	#xrx_bnrv4_header #xrx_bnrv4_header_nav_primary > li:first-child > label,
 	#xrx_bnrv4_header #xrx_bnrv4_header_nav_primary > li:first-child > a {
-		padding-left: 30px;
+		padding-left: 0px;
 	}
 	#xrx_bnrv4_header #xrx_bnrv4_header_nav_primary > li:last-child > label,
 	#xrx_bnrv4_header #xrx_bnrv4_header_nav_primary > li:last-child > a {
-		padding-right: 30px;
+		padding-right: 0px;
 	}
 }
 
@@ -735,11 +735,11 @@ span:nth-child(4),
 	}
 	#xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary > li:first-child > label,
 	#xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary > li:first-child > a {
-		padding-left: 30px;
+		padding-left: 0px;
 	}
 	#xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary > li:last-child > label,
 	#xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary > li:last-child > a {
-		padding-right: 30px;
+		padding-right: 0px;
 	}
 }
 

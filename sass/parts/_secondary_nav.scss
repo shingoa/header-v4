@@ -18,7 +18,7 @@
 
 		> li {
 			@include xrx_bnrv4_list_dividers;
-			
+
 			> label[for],
 			> a {
 				font-size: 17px;
@@ -33,14 +33,14 @@
 			&:first-child {
 				> label,
 				> a {
-					padding-left: 30px;
+					padding-left: 0px;
 				}
 			}
 			&:last-child {
 
 				> label,
 				> a {
-					padding-right: 30px;
+					padding-right: 0px;
 				}
 			}
 		}
