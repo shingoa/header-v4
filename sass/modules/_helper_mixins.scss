@@ -26,3 +26,46 @@
 		display: inline-block;
 	}
 }
+
+@mixin xrx_bnrv4_list_dividers
+{
+	> label[for],
+	> a {
+		display: block;
+		cursor: pointer;
+		text-decoration: none;
+		position: relative;
+		font-weight: lighter;
+		padding-right: 10px;
+
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 20%;
+			bottom: 20%;
+			right: 0;
+			width: 1px;
+			background-color: #dbdbdb;
+		}
+	}
+
+	&:first-child {
+		> label,
+		> a {
+			padding-left: 0;
+		}
+	}
+
+	&:last-child {
+
+		> label,
+		> a {
+			padding-right: 0;
+
+			&::before {
+				display: none;
+			}
+		}
+	}
+}
