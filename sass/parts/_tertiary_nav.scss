@@ -3,26 +3,38 @@
 
 @import "../modules/_responsive_base";
 
-#xrx_bnrv4_header_nav_tertiary
+#xrx_bnrv4_header #xrx_bnrv4_header_nav_tertiary
 {
 	@include xrx_bnrv4_inlinelist;
 
 	position: absolute;
-	right: 30px;
 	display: none;
 
-	@include respond-min($break_tablet_portrait)
+	li {
+		display: block;
+		border-bottom: 1px solid #e3e3e3;
+		padding: 10px 20px;
+	}
+
+	@include respond-min($break_tablet)
 	{
 		display: block;
 		top: 27px;
+		right: 80px;
+
+		li {
+			@include xrx_bnrv4_list_dividers;
+
+			display: inline-block;
+			padding: 0;
+			border-bottom: none;
+		}
 	}
-	@include respond-min($break_tablet_landscape)
-	{
-		top: 24px;
-	}
+
 	@include respond-min($break_desktop)
 	{
-		top: 34px;
+		right: 80px;
+		top: 35px;
 	}
 
 	> li {

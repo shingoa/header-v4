@@ -4,7 +4,7 @@
 @import "../modules/helper_mixins";
 
 @import "primary_nav";
-@import "seconday_nav";
+@import "secondary_nav";
 @import "tertiary_nav";
 
 #xrx_bnrv4_header
@@ -12,37 +12,32 @@
 	z-index: 1000;
 	height: 116px;
 
-	@include respond-min($break_tablet_landscape)
+	@include respond-min($break_tablet)
 	{
 		height: 80px;
 	}
 
 	.xrx_bnrv4_logo {
 		position: absolute;
-		background-position: center center;
+		background-position: left center;
 		top: 25px;
-		left: 50px;
-		right: 50px;
+		left: 5px;
+		width: 200px;
 		height: 58px;
 
-		@include respond-min($break_tablet_portrait)
+		@include respond-min($break_tablet)
 		{
 			width: 142px;
 			height: 38px;
 			top: 19px;
-			left: 70px;
+			left: 20px;
 			right: auto;
-			background-position: left top;
-		}
-		@include respond-min($break_tablet_landscape)
-		{
-			top: 15px;
-			left: 80px;
+			background-position: left center;
 		}
 		@include respond-min($break_desktop)
 		{
 			top: 26px;
-			left: 90px;
+			left: 30px;
 		}
 	}
 
@@ -52,7 +47,7 @@
 		height: 116px;
 		background-color: rgba(255, 255, 255, .92);
 
-		@include respond-min($break_tablet_portrait)
+		@include respond-min($break_tablet)
 		{
 			height: 80px;
 		}
@@ -72,22 +67,17 @@
 	#xrx_bnrv4_header_menubtn {
 		position: absolute;
 		top: 42px;
-		left: 0;
+		right: 5px;
 
-		@include respond-min($break_tablet_portrait)
+		@include respond-min($break_tablet)
 		{
 			top: 27px;
-			left: 20px;
-		}
-		@include respond-min($break_tablet_landscape)
-		{
-			top: 23px;
-			left: 25px;
+			right: 20px;
 		}
 		@include respond-min($break_desktop)
 		{
 			top: 35px;
-			left: 30px;
+			right: 30px;
 		}
 	}
 
@@ -97,54 +87,29 @@
 	{
 		@include xrx_bnrv4_resetlist;
 
-		@include respond-min($break_tablet_landscape)
+		> li > input {
+			display: none;
+		}
+
+		li {
+			> a,
+			> label {
+				display: block;
+				cursor: pointer;
+			}
+		}
+
+		@include respond-min($break_desktop)
 		{
 			@include xrx_bnrv4_inlinelist;
 
+			li {
+				border-bottom: none;
+				padding: 0;
+			}
+
 			> li {
-				> label[for],
-				> a {
-					display: block;
-					cursor: pointer;
-					text-decoration: none;
-					position: relative;
-					font-weight: lighter;
-					padding-right: 10px;
-
-					&::before {
-						content: "";
-						display: block;
-						position: absolute;
-						top: 20%;
-						bottom: 20%;
-						right: 0;
-						width: 1px;
-						background-color: #dbdbdb;
-					}
-				}
-
-				&:first-child {
-					> label,
-					> a {
-						padding-left: 0;
-					}
-				}
-
-				&:last-child {
-
-					> label,
-					> a {
-						padding-right: 0;
-
-						&::before {
-							display: none;
-						}
-					}
-				}
-
 				> input {
-					display: none;
-
 					&:checked ~ label {
 						color: $red;
 						cursor: default;
@@ -164,17 +129,30 @@
 
 	#xrx_bnrv4_header_nav {
 		display: none;
-		background-color: #ebebeb;
-		border-top: 1px solid #dbdbdb;
+		background-color: rgba(235, 235, 235, .98);
+		z-index: 1200;
 		position: fixed;
+		top: 116px;
 		left: 0;
 		right: 0;
-		top: 116px;
-		z-index: 1200;
+		bottom: 0;
 
-		@include respond-min($break_tablet_portrait)
+		@include respond-min($break_tablet)
 		{
 			top: 80px;
+		}
+
+		@include respond-min($break_desktop)
+		{
+			border-top: 1px solid #dbdbdb;
+			position: fixed;
+			top: 80px;
+
+			> div {
+				@include xrx_bnrv4_positionit;
+				padding: 0 30px;
+				box-sizing: border-box;
+			}
 		}
 
 		&::after {
@@ -182,95 +160,27 @@
 			display: block;
 			clear: both;
 		}
-
-		> div {
-			@include xrx_bnrv4_positionit;
-			padding: 0 30px;
-			box-sizing: border-box;
-		}
-	}
-
-	#xrx_bnrv4_header_nav_primary {
-		float: left;
-		line-height: 20px;
-
-		> li > a,
-		> li > label {
-			font-size: 26px;
-		}
-
-		.xrx_bnrv4_header_flyout_header {
-			font-size: 24px;
-			margin-bottom: 20px;
-			display: block;
-			color: #000;
-
-			> a {
-				&::after {
-					content: " >";
-					color: $red;
-					font-size: 90%;
-				}
-			}
-		}
-
-		.xrx_bnrv4_column_header {
-			padding-bottom: 5px;
-			border-bottom: 1px solid #dbdbdb;
-			margin-bottom: 10px;
-
-			&,
-			> span,
-			> a {
-				font-weight: bold;
-				font-size: 18px;
-				text-decoration: none;
-			}
-		}
-
-		ul {
-			@include xrx_bnrv4_resetlist;
-			font-size: 16px;
-
-			> li {
-				margin-bottom: 5px;
-
-				> a {
-					text-decoration: none;
-					padding: 3px 0;
-					display: block;
-				}
-			}
-		}
-	}
-
-	#xrx_bnrv4_header_nav_secondary {
-		float: right;
-		line-height: 20px;
-
-		> li > a,
-		> li > label {
-			font-size: 17px;
-		}
 	}
 
 	#xrx_bnrv4_header_search_btn {
 		display: block;
-		width: 35px;
-		height: 35px;
-		background-image: url("../images/search.svg");
-		background-repeat: no-repeat;
+		width: 30px;
+		height: 30px;
 		position: absolute;
 		top: 35px;
-		right: 0;
+		right: 60px;
 		cursor: pointer;
 
-		@include respond-min($break_tablet_portrait)
+		&:hover svg {
+			#XMLID_1_, #XMLID_3_ {
+				stroke: $red !important;
+			}
+		}
+
+		@include respond-min($break_tablet)
 		{
 			display: none;
 		}
-
-
 	}
 
 	#xrx_bnrv4_header_searchchk:checked ~ #xrx_bnrv4_header_floater #xrx_bnrv4_header_search {
@@ -280,7 +190,7 @@
 	#xrx_bnrv4_header_search
 	{
 		display: none;
-		padding: 20px;
+		padding: 30px 20px;
 		background-color: #ebebeb;
 		border: 1px solid #dbdbdb;
 		position: relative;
@@ -293,7 +203,7 @@
 			box-sizing: border-box;
 		}
 
-		@include respond-min($break_tablet_portrait)
+		@include respond-min($break_tablet)
 		{
 			display: block;
 			position: absolute;
@@ -301,8 +211,8 @@
 			background-color: none;
 			border: none;
 
-			left: 263px;
-			right: 230px;
+			left: 200px;
+			right: 280px;
 			top: 20px;
 
 			input {
@@ -315,15 +225,10 @@
 				}
 			}
 		}
-		@include respond-min($break_tablet_landscape)
-		{
-			top: 17px;
-			left: 294px;
-		}
+
 		@include respond-min($break_desktop)
 		{
-			top: 26px;
-			left: 320px;
+			top: 28px;
 		}
 	}
 
@@ -340,5 +245,4 @@
 			@include xrx_bnrv4_positionit;
 		}
 	}
-
 }

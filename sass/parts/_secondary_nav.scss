@@ -3,13 +3,25 @@
 
 @import "../modules/_responsive_base";
 
-#xrx_bnrv4_header_nav_secondary
+#xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary
 {
-	@include respond-min($break_tablet_landscape)
+	li {
+		display: block;
+		border-bottom: 1px solid #e3e3e3;
+		padding: 10px 20px;
+	}
+
+	@include respond-min($break_desktop)
 	{
+		float: right;
+		line-height: 20px;
+
 		> li {
+			@include xrx_bnrv4_list_dividers;
+			
 			> label[for],
 			> a {
+				font-size: 17px;
 				padding: 20px 15px;
 
 				&::before {
@@ -19,7 +31,6 @@
 			}
 
 			&:first-child {
-
 				> label,
 				> a {
 					padding-left: 30px;

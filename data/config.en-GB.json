@@ -1,5 +1,12 @@
 {
 	"header" : {
+		"trans" : {
+			"menuBtnTitle" : "Open/Close menu",
+			"logoTitle" : "Xerox.com home",
+			"searchBtnTitle" : "Search",
+			"searchPlaceholder" : "Search"
+		},
+
 		"primaryNav" : {
 			"services" : {
 				"label" : "Services",
@@ -533,6 +540,52 @@
 		"tertiaryNav" : {
 			"contactUs" : "Contact Us",
 			"share" : "Share"
+		}
+	},
+
+	"footer" : {
+		"trans" : {
+			"logoTitle" : "Xerox.com home"
+		},
+
+		"copyrightStatement" : "&copy; 2015 Xerox Corporation. All rights reserved. Xerox&reg; and Xerox and Design&reg; are trademarks of Xerox Corporation in the United States and/or other countries.",
+
+		"footerLinks" : {
+
+			"links" : [
+				{
+					"label" : "Careers",
+					"href" : "http://www.xerox.com/jobs/enus.html"
+				},
+				{
+					"label" : "Contact Us",
+					"href" : "http://www.xerox.com/about-xerox/contact-us/enus.html"
+				},
+				{
+					"label" : "About Xerox",
+					"href" : "http://www.xerox.com/about-xerox/enus.html"
+				},
+				{
+					"label" : "Investors",
+					"href" : "http://news.xerox.com/pr/xerox/investor-relations.aspx"
+				},
+				{
+					"label" : "Privacy",
+					"href" : "http://www.xerox.com/about-xerox/privacy-policy/enus.html"
+				},
+				{
+					"label" : "Legal",
+					"href" : "http://www.xerox.com/about-xerox/website-terms-of-use/enus.html"
+				},
+				{
+					"label" : "Privacy Choices",
+					"href" : "http://www.xerox.com/about-xerox/privacy-policy/enus.html#adchoices"
+				},
+				{
+					"label" : "Site Map",
+					"href" : "http://www.xerox.com/about-xerox/site-map/enus.html"
+				}
+			]
 		}
 	}
 }

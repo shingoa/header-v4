@@ -31,7 +31,7 @@
 
 		&:focus
 		{
-			@include respond-min($break_tablet_portrait)
+			@include respond-min($break_desktop)
 			{
 				outline: 1px solid $red !important;
 			}

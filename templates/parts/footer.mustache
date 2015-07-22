@@ -1,20 +1,15 @@
 <div id="xrx_bnrv4_footer">
 	<div>
-		<a class="xrx_bnrv4_logo" href="#" title="Xerox.com home"></a>
+		<a class="xrx_bnrv4_logo" href="#" title="{{footer.trans.logoTitle}}"></a>
 
 		<ul id="xrx_bnr_v3_ftr_links">
-			<li><a href="http://www.xerox.com/jobs/enus.html">Careers</a></li>
-			<li><a href="http://www.xerox.com/about-xerox/contact-us/enus.html">Contact Us</a></li>
-			<li><a href="http://www.xerox.com/about-xerox/enus.html">About Xerox</a></li>
-			<li><a href="http://news.xerox.com/pr/xerox/investor-relations.aspx">Investors</a></li>
-			<li><a href="http://www.xerox.com/about-xerox/privacy-policy/enus.html">Privacy</a></li>
-			<li><a href="http://www.xerox.com/about-xerox/website-terms-of-use/enus.html">Legal</a></li>
-			<li><a href="http://www.xerox.com/about-xerox/privacy-policy/enus.html#adchoices">Privacy Choices</a></li>
-			<li><a href="http://www.xerox.com/about-xerox/site-map/enus.html">Site Map</a></li>
+			{{#footer.footerLinks.links}}
+				{{> list_item}}
+			{{/footer.footerLinks.links}}
 		</ul>
 
 		<p class="xrx_bnr_v3_ftr_copyright">
-			&copy; 2015 Xerox Corporation. All rights reserved. Xerox&reg; and Xerox and Design&reg; are trademarks of Xerox Corporation in the United States and/or other countries.
+			{{{footer.copyrightStatement}}}
 		</p>
 	</div>
 </div>
