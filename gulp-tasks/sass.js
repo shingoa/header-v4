@@ -10,7 +10,8 @@ gulp.task('sass', function () {
 		.pipe(sass({
 			outputStyle: "expanded",
 			indentType: "tab",
-			indentWidth: 1
+			indentWidth: 1,
+			sourceComments: true
 		}).on('error', sass.logError))
 		.pipe(gulp.dest('./built/css'));
 });

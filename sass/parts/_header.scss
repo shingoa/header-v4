@@ -107,35 +107,76 @@
 				border-bottom: none;
 				padding: 0;
 			}
-
-			> li {
-				> input {
-					&:checked ~ label {
-						color: $red;
-						cursor: default;
-					}
-
-					&:checked ~ .xrx_bnrv4_header_flyout {
-						display: block;
-						position: absolute;
-						left: -1px;
-						right: -1px;
-					}
-				}
-			}
 		}
 
 	}
 
-	#xrx_bnrv4_header_nav {
-		display: none;
+	#xrx_bnrv4_header_nav
+	{
 		background-color: rgba(235, 235, 235, .98);
 		z-index: 1200;
 		position: fixed;
 		top: 116px;
-		left: 0;
-		right: 0;
+		width: 100%;
 		bottom: 0;
+		overflow: hidden;
+		overflow-x: hidden;
+
+		@include transition(left .25s ease-in-out);
+
+		> input {
+			display: none;
+		}
+
+		@include respond-max($break_desktop)
+		{
+			left: 100%;
+			border-top: 1px solid #e3e3e3;
+
+			> div {
+				position: absolute;
+				top: 0;
+				left: -100%;
+				width: 100%;
+				bottom: 0;
+
+				@include transition(left .25s ease-in-out);
+
+				.xrx_bnrv4_header_flyout {
+					display: none;
+				}
+			}
+
+			input#xrx_bnrv4_default:checked ~ div {
+				left: 0;
+			}
+
+			#xrx_bnrv4_header_nav_primary > li > input:checked ~ .xrx_bnrv4_header_flyout,
+			#xrx_bnrv4_header_nav_secondary > li > input:checked ~ .xrx_bnrv4_header_flyout,
+			#xrx_bnrv4_header_nav_tertiary > li > input:checked ~ .xrx_bnrv4_header_flyout
+			{
+				display: block;
+			}
+		}
+
+		@include respond-min($break_desktop)
+		{
+			input#xrx_bnrv4_default:checked ~ div #xrx_bnrv4_header_nav_primary li:first-child > label,
+			#xrx_bnrv4_header_nav_primary > li > input:checked ~ label,
+			#xrx_bnrv4_header_nav_secondary > li > input:checked ~ label,
+			#xrx_bnrv4_header_nav_tertiary > li > input:checked ~ label
+			{
+				color: $red;
+				cursor: default;
+
+				~ .xrx_bnrv4_header_flyout {
+					display: block;
+					position: absolute;
+					left: -1px;
+					right: -1px;
+				}
+			}
+		}
 
 		@include respond-min($break_tablet)
 		{
@@ -144,9 +185,12 @@
 
 		@include respond-min($break_desktop)
 		{
-			border-top: 1px solid #dbdbdb;
 			position: fixed;
 			top: 80px;
+			max-height: 0;
+			border-top: 0px solid #dbdbdb;
+
+			@include transition(max-height .25s ease-in-out, border-top-width .25s ease-in-out);
 
 			> div {
 				@include xrx_bnrv4_positionit;
@@ -159,6 +203,25 @@
 			content: "";
 			display: block;
 			clear: both;
+		}
+	}
+
+	#xrx_bnrv4_header_menuchk:checked,
+	#xrx_bnrv4_header_menubtn.open
+	{
+		@include respond-max($break_desktop)
+		{
+			~ #xrx_bnrv4_header_nav {
+				left: 0;
+			}
+		}
+
+		@include respond-min($break_desktop)
+		{
+			~ #xrx_bnrv4_header_nav {
+				max-height: 100%;
+				border-top: 1px solid #dbdbdb;
+			}
 		}
 	}
 
@@ -184,18 +247,20 @@
 	}
 
 	#xrx_bnrv4_header_searchchk:checked ~ #xrx_bnrv4_header_floater #xrx_bnrv4_header_search {
-		display: block;
+		left: 0;
 	}
 
 	#xrx_bnrv4_header_search
 	{
-		display: none;
 		padding: 30px 20px;
 		background-color: #ebebeb;
 		border: 1px solid #dbdbdb;
 		position: relative;
 		top: 116px;
+		left: 100%;
 		border-width: 1px 0;
+
+		@include transition(left .25s ease-in-out);
 
 		input {
 			width: 100%;
@@ -232,17 +297,20 @@
 		}
 	}
 
-	.xrx_bnrv4_header_flyout {
-		min-height: 50px;
-		border-bottom: 1px solid #dbdbdb;
-		border-top: 1px solid #dbdbdb;
-		display: none;
-		background-color: #fff;
+	@include respond-min($break_desktop)
+	{
+		.xrx_bnrv4_header_flyout {
+			min-height: 50px;
+			border-bottom: 1px solid #dbdbdb;
+			border-top: 1px solid #dbdbdb;
+			display: none;
+			background-color: #fff;
 
-		> div {
-			box-sizing: border-box;
-			padding: 30px;
-			@include xrx_bnrv4_positionit;
+			> div {
+				box-sizing: border-box;
+				padding: 30px;
+				@include xrx_bnrv4_positionit;
+			}
 		}
 	}
 }
