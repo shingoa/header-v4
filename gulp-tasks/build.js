@@ -12,7 +12,7 @@ var requireDir = plugins.requireDir;
 
 gulp.task('build', function() {
 
-	var locales = ["en-GB"];
+	var locales = ["en-GB", "chris"];
 
 	locales.forEach(function(locale)
 	{
@@ -25,7 +25,7 @@ gulp.task('build', function() {
 					var templateData = JSON.parse(data);
 					templateData = xrxhelpers.processTemplateData(templateData);
 
-					fs.writeFileSync('./data/config.' + locale + '.test.json', JSON.stringify(templateData, null, "\t"));
+					//fs.writeFileSync('./data/config.' + locale + '.test.json', JSON.stringify(templateData, null, "\t"));
 
 					gulp.src(['./templates/mock_pages/*.html'])
 						.pipe(fileinclude({

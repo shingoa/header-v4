@@ -85,6 +85,10 @@
 					}
 				}
 			}
+
+			label ~ a {
+				display: none;
+			}
 		}
 		.xrx_bnrv4_header_flyout_header_back {
 			background-color: #fff;

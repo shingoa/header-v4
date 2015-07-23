@@ -1,4 +1,5 @@
 {
+    "header" : { "primaryNav" : {
    "support" : {
       "col3" : {
          "target" : "_self",
@@ -115,4 +116,407 @@
       },
       "col1" : {
          "target" : "_self",
-         "href" : "http://
+         "href" : "http://dev.services.xerox.com/document-management-solutions/enus.html",
+         "id" : "&lid=cell2-title-document management",
+         "label" : "Document Management",
+         "links" : [
+            {
+               "target" : "_self",
+               "href" : "http://dev.services.xerox.com/centralized-print-services/enus.html",
+               "id" : "&lid=cell2-centralized print services",
+               "label" : "Centralized Print Services"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://dev.services.xerox.com/enterprise-content-management/enus.html",
+               "id" : "&lid=cell2-enterprise content management",
+               "label" : "Enterprise Content Management"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://dev.services.xerox.com/xerox-managed-print-services/enus.html",
+               "id" : "&lid=cell2-managed print services",
+               "label" : "Managed Print Services"
+            }
+         ]
+      },
+      "col2" : {
+         "target" : "_self",
+         "href" : "http://dev.services.xerox.com/business-process-outsourcing/enus.html",
+         "id" : "&lid=cell2-title-business processes",
+         "label" : "Business Processes",
+         "links" : [
+            {
+               "target" : "_self",
+               "href" : "http://dev.services.xerox.com/back-office-services/enus.html",
+               "id" : "&lid=cell2-back office transaction processing",
+               "label" : "Back Office Transaction Processing"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://dev.services.xerox.com/communication-and-marketing-services/enus.html",
+               "id" : "&lid=cell2-communication and marketing",
+               "label" : "Communication and Marketing"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://dev.services.xerox.com/customer-care/enus.html",
+               "id" : "&lid=cell2-customer care",
+               "label" : "Customer Care"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://dev.services.xerox.com/finance-and-accounting/enus.html",
+               "id" : "&lid=cell2-finance and accounting outsourcing",
+               "label" : "Finance and Accounting Outsourcing"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://dev.services.xerox.com/hr-consulting/enus.html",
+               "id" : "&lid=cell2-hr consulting",
+               "label" : "HR Consulting"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://dev.services.xerox.com/human-resources-outsourcing/enus.html",
+               "id" : "&lid=cell2-hr outsourcing",
+               "label" : "HR Outsourcing"
+            }
+         ]
+      },
+      "label" : "Services"
+   },
+   "about" : {
+      "col3" : {
+         "target" : "_self",
+         "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/enus.html",
+         "id" : "&lid=cell2-title-where to buy",
+         "label" : "Where to Buy",
+         "links" : [
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/enus.html#office",
+               "id" : "&lid=cell2-where-to-buy-office equipment",
+               "label" : "Office Equipment"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/enus.html#production",
+               "id" : "&lid=cell2-where-to-buy-production equipment",
+               "label" : "Production Equipment"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/enus.html#scanners",
+               "id" : "&lid=cell2-where-to-buy-scanners",
+               "label" : "Scanners"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/enus.html#supplies",
+               "id" : "&lid=cell2-where-to-buy-supplies",
+               "label" : "Supplies"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/enus.html#services",
+               "id" : "&lid=cell2-where-to-buy-business services",
+               "label" : "Business Services"
+            }
+         ]
+      },
+      "col1" : {
+         "target" : "_self",
+         "href" : "http://psgdev.opbu.xerox.com/about-xerox/enus.html",
+         "id" : "&lid=cell2-title-about xerox",
+         "label" : "About Xerox",
+         "links" : [
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/enus.html",
+               "id" : "&lid=cell2-xerox at a glance",
+               "label" : "Xerox at a Glance"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://news.xerox.com/investors",
+               "id" : "&lid=cell2-investors",
+               "label" : "Investors"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://news.xerox.com/",
+               "id" : "&lid=cell2-newsroom",
+               "label" : "Newsroom"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/enus.html",
+               "id" : "&lid=cell2-global citizenship",
+               "label" : "Global Citizenship"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/enus.html",
+               "id" : "&lid=cell2-environment and sustainability",
+               "label" : "Environment and Sustainability"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://www.realbusinesslive.xerox.com/events/index/enus.html",
+               "id" : "&lid=cell2-events_ tradeshows and webinars",
+               "label" : "Events, Tradeshows and Webinars"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/innovation/enus.html",
+               "id" : "&lid=cell2-innovation",
+               "label" : "Innovation"
+            }
+         ]
+      },
+      "col2" : {
+         "target" : "_self",
+         "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/enus.html",
+         "id" : "&lid=cell2-title-contact",
+         "label" : "Contact",
+         "links" : [
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/enus.html#billing",
+               "id" : "&lid=cell2-contact-support for billing and account administration",
+               "label" : "Support for billing and account administration"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/enus.html#tech_support",
+               "id" : "&lid=cell2-contact-technical support",
+               "label" : "Technical Support"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/enus.html#products",
+               "id" : "&lid=cell2-contact-products and software",
+               "label" : "Products and software"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/enus.html#supplies",
+               "id" : "&lid=cell2-contact-supplies",
+               "label" : "Supplies"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/enus.html#services",
+               "id" : "&lid=cell2-contact-business services",
+               "label" : "Business Services"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/enus.html#research",
+               "id" : "&lid=cell2-contact-research and innovation",
+               "label" : "Research and innovation"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/enus.html#corporate",
+               "id" : "&lid=cell2-contact-xerox corporation",
+               "label" : "Xerox Corporation"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/perl-bin/world_contact.pl#0",
+               "id" : "&lid=cell2-contact-worldwide locations",
+               "label" : "Worldwide Locations"
+            }
+         ]
+      },
+      "label" : "About Xerox"
+   },
+   "supplies" : {
+      "col3" : {
+         "target" : "_self",
+         "href" : "http://psgdev.opbu.xerox.com/printer-supplies/my-supplies-online/enus.html",
+         "id" : "&lid=cell2-title-mys-my supplies",
+         "label" : "My Supplies",
+         "links" : [
+            {
+               "target" : "_self",
+               "href" : "https://www.test.accounts.xerox.com/auth/login.jsf?app=MYS&locale=en_US",
+               "id" : "&lid=cell2-mys-log in",
+               "label" : "Log In"
+            }
+         ]
+      },
+      "col1" : {
+         "target" : "_self",
+         "href" : "http://psgdev.opbu.xerox.com/printer-supplies/enus.html",
+         "id" : "&lid=cell2-title-supplies",
+         "label" : "Supplies",
+         "links" : [
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/enus.html",
+               "id" : "&lid=cell2-buy supplies online",
+               "label" : "Buy Supplies Online"
+            },
+            {
+               "target" : "_self",
+               "href" : "https://www.test.accounts.xerox.com/auth/login.jsf?app=OSF&locale=en_US",
+               "id" : "&lid=cell2-check your order status",
+               "label" : "Check Your Order Status"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/perl-bin/product.pl?mode=recycling&referer=xrx",
+               "id" : "&lid=cell2-recycling programs",
+               "label" : "Recycling Programs"
+            },
+            {
+               "target" : "_self",
+               "href" : "https://www.test.accounts.xerox.com/loyalty-program/landing.jsf?&locale=en_US",
+               "id" : "&lid=cell2-genuine xerox rewards",
+               "label" : "Genuine Xerox Rewards"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/compatible-cartridges/enus.html",
+               "id" : "&lid=cell2-xerox cartridges for hp _ brother printers",
+               "label" : "Xerox Cartridges for HP &Brother Printers"
+            }
+         ]
+      },
+      "col2" : {
+         "target" : "_self",
+         "href" : "http://psgdev.opbu.xerox.com/printer-supplies/metered-supplies-replenishment/enus.html",
+         "id" : "&lid=cell2-title-metered supplies",
+         "label" : "Metered Supplies",
+         "links" : [
+            {
+               "target" : "_self",
+               "href" : "http://www.test.accounts.xerox.com/auth/login.jsf?app=MSS&locale=en_US",
+               "id" : "&lid=cell2-metered-log in",
+               "label" : "Log In"
+            }
+         ]
+      },
+      "label" : "Supplies"
+   },
+   "products" : {
+      "col3" : {
+         "target" : "_self",
+         "href" : "http://dev.office.xerox.com/digital-printing-equipment/enus.html",
+         "id" : "&lid=hdr-products-title-additional resources",
+         "label" : "Additional Resources",
+         "links" : [
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/digital-printing/product-locator/enus.html",
+               "id" : "&lid=hdr-products-product finder",
+               "label" : "Product Finder"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://dev.office.xerox.com/small-business/enus.html",
+               "id" : "&lid=hdr-products-small business resource center",
+               "label" : "Small Business Solutions"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/enus.html",
+               "id" : "&lid=hdr-products-toner and ink",
+               "label" : "Toner and Ink"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/digital-printing/case-studies/enus.html",
+               "id" : "&lid=hdr-products-case studies",
+               "label" : "Case Studies"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/partner-programs/enus.html",
+               "id" : "&lid=hdr-products-become a partner",
+               "label" : "Become a Partner"
+            }
+         ]
+      },
+      "col1" : {
+         "target" : "_self",
+         "href" : "http://dev.office.xerox.com/",
+         "id" : "&lid=hdr-products-title-office solutions",
+         "label" : "Office Solutions",
+         "links" : [
+            {
+               "target" : "_self",
+               "href" : "http://dev.office.xerox.com/digital-printing-equipment/printers/enus.html",
+               "id" : "&lid=cell2-xog-office printers",
+               "label" : "Office Printers"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://dev.office.xerox.com/digital-printing-equipment/multifunction-printer/enus.html",
+               "id" : "&lid=cell2-xog-multifunction",
+               "label" : "Multifunction"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://www.xeroxscanners.com/en/us/",
+               "id" : "&lid=hdr-products-scanners",
+               "label" : "Scanners"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://dev.office.xerox.com/software-solutions/enus.html",
+               "id" : "&lid=hdr-products-office software",
+               "label" : "Office Software"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://test.shop.xerox.com/?utm_source=xcom&utm_medium=referral&utm_campaign=flyout",
+               "id" : "&lid=store-link-office printers online store",
+               "label" : "Office Printers Online Store"
+            }
+         ]
+      },
+      "col2" : {
+         "target" : "_self",
+         "href" : "http://psgdev.opbu.xerox.com/digital-printing/enus.html",
+         "id" : "&lid=hdr-products-title-graphic communications",
+         "label" : "Graphic Communications",
+         "links" : [
+            {
+               "target" : "_self",
+               "href" : "http://dev.office.xerox.com/digital-printing-equipment/digital-press/enus.html",
+               "id" : "&lid=cell2-psg-production printers",
+               "label" : "Production Printers"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://dev.office.xerox.com/digital-printing-equipment/continuous-feed-printer/enus.html",
+               "id" : "&lid=cell2-psg-continuous feed printers",
+               "label" : "Continuous Feed Printers"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://dev.office.xerox.com/digital-printing-equipment/wide-format-printer/enus.html",
+               "id" : "&lid=cell2-psg-wide format printers",
+               "label" : "Wide Format Printers"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/digital-printing/feeders-print-finishing/enus.html",
+               "id" : "&lid=hdr-products-psg-feeding and finishing",
+               "label" : "Feeding and Finishing"
+            },
+            {
+               "target" : "_self",
+               "href" : "http://psgdev.opbu.xerox.com/digital-printing/workflow/enus.html",
+               "id" : "&lid=hdr-products-psg-workflow software",
+               "label" : "Workflow Software"
+            }
+         ]
+      },
+      "label" : "Products"
+   }
+}}}
