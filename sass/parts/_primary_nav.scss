@@ -9,27 +9,44 @@
 		@include xrx_bnrv4_resetlist;
 	}
 
+	.xrx_bnrv4_column > input {
+		display: none;
+	}
+
 	@include respond-max($break_desktop)
 	{
 		&
 		{
+			input:checked ~ .xrx_bnrv4_header_flyout {
+				left: 0;
+			}
 			.xrx_bnrv4_header_flyout
 			{
+				display: block;
 				position: absolute;
 				top: 0;
 				bottom: 0;
 				left: 100%;
-				right: -100%;
+				width: 100%;
+				background-color: rgba(235, 235, 235, .98);
 
-				> div > .xrx_bnrv4_table > .xrx_bnrv4_row > .xrx_bnrv4_column
-				{
-					> ul,
-					.xrx_bnrv4_table {
+				@include transition(left .25s ease-in-out);
+
+				.xrx_bnrv4_column {
+
+					input:checked ~ .xrx_bnrv4_column_links {
+						left: 0;
+					}
+					.xrx_bnrv4_column_links
+					{
 						position: absolute;
 						top: 0;
 						bottom: 0;
-						left: 200%;
-						right: -200%;
+						left: 100%;
+						width: 100%;
+						background-color: rgba(235, 235, 235, .98);
+
+						@include transition(left .25s ease-in-out);
 					}
 				}
 			}

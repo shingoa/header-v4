@@ -136,27 +136,11 @@
 			> div {
 				position: absolute;
 				top: 0;
-				left: -100%;
+				left: 0;
 				width: 100%;
 				bottom: 0;
-
-				@include transition(left .25s ease-in-out);
-
-				.xrx_bnrv4_header_flyout {
-					display: none;
-				}
 			}
 
-			input#xrx_bnrv4_default:checked ~ div {
-				left: 0;
-			}
-
-			#xrx_bnrv4_header_nav_primary > li > input:checked ~ .xrx_bnrv4_header_flyout,
-			#xrx_bnrv4_header_nav_secondary > li > input:checked ~ .xrx_bnrv4_header_flyout,
-			#xrx_bnrv4_header_nav_tertiary > li > input:checked ~ .xrx_bnrv4_header_flyout
-			{
-				display: block;
-			}
 		}
 
 		@include respond-min($break_desktop)

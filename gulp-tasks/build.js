@@ -3,6 +3,7 @@
 var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')();
 var fs = require('fs');
+var xrxhelpers = require('./_helpers.js');
 
 var fileinclude = plugins.fileInclude;
 var mustache = plugins.mustache;
@@ -22,6 +23,9 @@ gulp.task('build', function() {
 				try
 				{
 					var templateData = JSON.parse(data);
+					templateData = xrxhelpers.processTemplateData(templateData);
+
+					fs.writeFileSync('./data/config.' + locale + '.test.json', JSON.stringify(templateData, null, "\t"));
 
 					gulp.src(['./templates/mock_pages/*.html'])
 						.pipe(fileinclude({
