@@ -22,7 +22,8 @@
 			> label[for],
 			> a {
 				font-size: 17px;
-				padding: 20px 15px;
+				padding: 20px 15px 20px 0;
+
 
 				&::before {
 					top: 35%;
@@ -30,17 +31,12 @@
 				}
 			}
 
-			&:first-child {
-				> label,
-				> a {
-					padding-left: 0px;
-				}
-			}
 			&:last-child {
 
 				> label,
 				> a {
 					padding-right: 0px;
+					margin-right: 0;
 				}
 			}
 		}

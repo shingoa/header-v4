@@ -37,6 +37,7 @@
 		position: relative;
 		font-weight: lighter;
 		padding-right: 10px;
+		margin-right: 10px;
 
 		&::before {
 			content: "";
@@ -62,6 +63,7 @@
 		> label,
 		> a {
 			padding-right: 0;
+			margin-right: 0;
 
 			&::before {
 				display: none;
