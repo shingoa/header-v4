@@ -113,7 +113,6 @@
 
 	#xrx_bnrv4_header_nav
 	{
-		background-color: rgba(235, 235, 235, .98);
 		z-index: 1200;
 		position: fixed;
 		top: 116px;
@@ -130,6 +129,7 @@
 
 		@include respond-max($break_desktop)
 		{
+			background-color: rgba(235, 235, 235, .98);
 			left: 100%;
 			border-top: 1px solid #e3e3e3;
 
@@ -159,6 +159,17 @@
 					left: -1px;
 					right: -1px;
 				}
+			}
+
+			&:before {
+				content: "";
+				background-color: rgba(235, 235, 235, .98);
+				display: block;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				height: 150px;
 			}
 		}
 
