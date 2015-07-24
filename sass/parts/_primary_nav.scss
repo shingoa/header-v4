@@ -32,6 +32,12 @@
 
 				@include transition(left .25s ease-in-out);
 
+				p,
+				form {
+					padding-left: 20px;
+					padding-right: 20px;
+				}
+
 				.xrx_bnrv4_column {
 
 					input:checked ~ .xrx_bnrv4_column_links {
