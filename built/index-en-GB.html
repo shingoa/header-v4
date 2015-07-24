@@ -10,12 +10,21 @@
 	</head>
 	<body>
 	<div id="xrx_bnrv4_header">
-		<input type="checkbox" name="xrx_bnrv4_header_menuchk" id="xrx_bnrv4_header_menuchk"></input>
-		<input type="checkbox" name="xrx_bnrv4_header_searchchk" id="xrx_bnrv4_header_searchchk"></input>
+		<input type="radio" name="xrx_bnrv4_header_menu" value="xrx_bnrv4_header_defaultchk" id="xrx_bnrv4_header_defaultchk" checked />
+
+		<input type="radio" name="xrx_bnrv4_header_menu" value="xrx_bnrv4_header_menuchk" id="xrx_bnrv4_header_menuchk" />
+		<input type="radio" name="xrx_bnrv4_header_menu" value="xrx_bnrv4_header_searchchk" id="xrx_bnrv4_header_searchchk" />
+
 
 		<div id="xrx_bnrv4_header_floater">
 			<div>
-				<label for="xrx_bnrv4_header_menuchk" id="xrx_bnrv4_header_menubtn" title="Open&#x2F;Close menu">
+				<label for="xrx_bnrv4_header_defaultchk" id="xrx_bnrv4_menu_defaultbtn" title="Open&#x2F;Close menu" class="xrx_bnrv4_menu_btn">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</label>
+				<label for="xrx_bnrv4_header_menuchk" id="xrx_bnrv4_menu_openbtn" title="Open&#x2F;Close menu" class="xrx_bnrv4_menu_btn">
 					<span></span>
 					<span></span>
 					<span></span>
@@ -23,7 +32,18 @@
 				</label>
 				<a class="xrx_bnrv4_logo" href="#" title=""></a>
 
-				<label id="xrx_bnrv4_header_search_btn" for="xrx_bnrv4_header_searchchk" title="Search">
+				<label id="xrx_bnrv4_menu_search_default_btn" for="xrx_bnrv4_header_defaultchk" title="Search" class="xrx_bnrv4_header_search_btn">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 viewBox="0 0 18.7 19.9" style="enable-background:new 0 0 18.7 19.9;" xml:space="preserve">
+						<style type="text/css">
+							.st0{fill:none;stroke-width:2;stroke-miterlimit:10;}
+							.st1{fill:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+						</style>
+						<circle id="XMLID_1_" class="st0" cx="7.9" cy="7.9" r="6.9" stroke="#999" />
+						<line id="XMLID_3_" class="st1" x1="12.7" y1="13" x2="18" y2="19.2" stroke="#999" />
+					</svg>
+				</label>
+				<label id="xrx_bnrv4_menu_search_btn" for="xrx_bnrv4_header_searchchk" title="Search" class="xrx_bnrv4_header_search_btn">
 					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						 viewBox="0 0 18.7 19.9" style="enable-background:new 0 0 18.7 19.9;" xml:space="preserve">
 						<style type="text/css">
@@ -39,8 +59,28 @@
 				</div>
 
 					<ul id="xrx_bnrv4_header_nav_tertiary">
-						<li><a href="#">Contact Us</a></li>
-						<li><a href="#">Share</a></li>
+						<li id="xrx_bnrv4_header_contact">
+	<input type="radio" name="xrx_bnrv4_header_menu" value="xrx_bnrv4_header_contactchk" id="xrx_bnrv4_header_contactchk" />
+	<label for="xrx_bnrv4_header_defaultchk" class="xrx_bnrv4_header_defaultlbl">Contact Us</label>
+	<label for="xrx_bnrv4_header_contactchk">Contact Us</label>
+
+	<div class="xrx_bnrv4_header_flyout">
+		<p><strong>Contact</strong></p>
+		<p>Some contact stuff here</p>
+	</div>
+</li>
+
+						<li id="xrx_bnrv4_header_share">
+	<input type="radio" name="xrx_bnrv4_header_menu" value="xrx_bnrv4_header_sharechk" id="xrx_bnrv4_header_sharechk" />
+	<label for="xrx_bnrv4_header_defaultchk" class="xrx_bnrv4_header_defaultlbl">Share</label>
+	<label for="xrx_bnrv4_header_sharechk">Share</label>
+
+	<div class="xrx_bnrv4_header_flyout">
+		<p><strong>Share</strong></p>
+		<p>Some share stuff here</p>
+	</div>
+</li>
+
 					</ul>
 			</div>
 		</div>

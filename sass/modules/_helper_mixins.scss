@@ -31,13 +31,17 @@
 {
 	> label[for],
 	> a {
-		display: block;
 		cursor: pointer;
 		text-decoration: none;
 		position: relative;
 		font-weight: lighter;
 		padding-right: 10px;
 		margin-right: 10px;
+		user-select: none;
+		-o-user-select:none;
+		-moz-user-select: none;
+		-khtml-user-select: none;
+		-webkit-user-select: none;
 
 		&::before {
 			content: "";

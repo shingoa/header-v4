@@ -23,6 +23,14 @@
 		}
 	}
 
+	p, h1, h2, h3, h4, h5, h6, li, ul {
+		margin-top: 0;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
 	.xrx_bnrv4_logo {
 		display: block;
 		background-image: $logoPathSvg;
