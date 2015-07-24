@@ -1145,20 +1145,56 @@ span:nth-child(4),
 	top: 1px;
 }
 
-/* line 10, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+/* line 4, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_insights_selector.scss */
+.xrx_bnrv4_insights select, .xrx_bnrv4_insights button {
+	display: inline-block;
+	border: 1px solid #e3e3e3;
+	padding: 5px 10px;
+	margin-right: 10px;
+	outline: none;
+	background-color: #fff;
+}
+
+/* line 13, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_insights_selector.scss */
+.xrx_bnrv4_insights select:focus,
+.xrx_bnrv4_insights select:hover, .xrx_bnrv4_insights button:focus,
+.xrx_bnrv4_insights button:hover {
+	border-color: #cf3847;
+}
+
+/* line 18, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_insights_selector.scss */
+.xrx_bnrv4_insights select {
+	width: 200px;
+}
+
+/* line 21, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_insights_selector.scss */
+.xrx_bnrv4_insights select:focus {
+	border-color: #cf3847;
+}
+
+/* line 27, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_insights_selector.scss */
+.xrx_bnrv4_insights button:after {
+	content: " >";
+	display: inline-block;
+	color: #cf3847;
+	font-size: 115%;
+	margin-left: 10px;
+}
+
+/* line 11, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 #xrx_bnrv4_header {
 	z-index: 1000;
 	height: 116px;
 }
 
 @media screen and (min-width: 768px) {
-	/* line 10, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 11, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header {
 		height: 80px;
 	}
 }
 
-/* line 20, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+/* line 21, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 #xrx_bnrv4_header .xrx_bnrv4_logo {
 	position: absolute;
 	background-position: left center;
@@ -1169,7 +1205,7 @@ span:nth-child(4),
 }
 
 @media screen and (min-width: 768px) {
-	/* line 20, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 21, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header .xrx_bnrv4_logo {
 		width: 142px;
 		height: 38px;
@@ -1181,14 +1217,14 @@ span:nth-child(4),
 }
 
 @media screen and (min-width: 930px) {
-	/* line 20, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 21, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header .xrx_bnrv4_logo {
 		top: 26px;
 		left: 30px;
 	}
 }
 
-/* line 44, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+/* line 45, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 #xrx_bnrv4_header #xrx_bnrv4_header_floater {
 	position: fixed;
 	width: 100%;
@@ -1197,13 +1233,13 @@ span:nth-child(4),
 }
 
 @media screen and (min-width: 768px) {
-	/* line 44, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 45, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header #xrx_bnrv4_header_floater {
 		height: 80px;
 	}
 }
 
-/* line 55, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+/* line 56, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 #xrx_bnrv4_header #xrx_bnrv4_header_floater > div {
 	max-width: 1200px;
 	width: 100%;
@@ -1212,14 +1248,14 @@ span:nth-child(4),
 	position: relative;
 }
 
-/* line 61, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+/* line 62, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 #xrx_bnrv4_header > input {
 	opacity: 0;
 	position: absolute;
 	top: -20px;
 }
 
-/* line 67, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+/* line 68, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 #xrx_bnrv4_header #xrx_bnrv4_header_menubtn {
 	position: absolute;
 	top: 42px;
@@ -1227,7 +1263,7 @@ span:nth-child(4),
 }
 
 @media screen and (min-width: 768px) {
-	/* line 67, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 68, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header #xrx_bnrv4_header_menubtn {
 		top: 27px;
 		right: 20px;
@@ -1235,14 +1271,14 @@ span:nth-child(4),
 }
 
 @media screen and (min-width: 930px) {
-	/* line 67, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 68, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header #xrx_bnrv4_header_menubtn {
 		top: 35px;
 		right: 30px;
 	}
 }
 
-/* line 86, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+/* line 87, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 #xrx_bnrv4_header #xrx_bnrv4_header_nav_primary,
 #xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary,
 #xrx_bnrv4_header
@@ -1261,7 +1297,7 @@ span:nth-child(4),
 	padding-right: 0;
 }
 
-/* line 90, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+/* line 91, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 #xrx_bnrv4_header #xrx_bnrv4_header_nav_primary > li > input,
 #xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary > li > input,
 #xrx_bnrv4_header
@@ -1269,7 +1305,7 @@ span:nth-child(4),
 	display: none;
 }
 
-/* line 96, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+/* line 97, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 #xrx_bnrv4_header #xrx_bnrv4_header_nav_primary li > a,
 #xrx_bnrv4_header #xrx_bnrv4_header_nav_primary li > label,
 #xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary li > a,
@@ -1283,7 +1319,7 @@ span:nth-child(4),
 }
 
 @media screen and (min-width: 930px) {
-	/* line 86, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 87, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header #xrx_bnrv4_header_nav_primary,
 	#xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary,
 	#xrx_bnrv4_header
@@ -1307,7 +1343,7 @@ span:nth-child(4),
 #xrx_bnrv4_header_nav_tertiary > li {
 		display: inline-block;
 	}
-	/* line 106, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 107, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header #xrx_bnrv4_header_nav_primary li,
 	#xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary li,
 	#xrx_bnrv4_header
@@ -1317,7 +1353,7 @@ span:nth-child(4),
 	}
 }
 
-/* line 114, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+/* line 115, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 #xrx_bnrv4_header
 #xrx_bnrv4_header_nav {
 	z-index: 1200;
@@ -1333,21 +1369,21 @@ span:nth-child(4),
 	transition: left 0.25s ease-in-out;
 }
 
-/* line 126, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+/* line 127, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 #xrx_bnrv4_header
 #xrx_bnrv4_header_nav > input {
 	display: none;
 }
 
 @media screen and (max-width: 929px) {
-	/* line 114, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 115, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header
 #xrx_bnrv4_header_nav {
 		background-color: rgba(235, 235, 235, 0.98);
 		left: 100%;
 		border-top: 1px solid #e3e3e3;
 	}
-	/* line 136, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 137, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header
 #xrx_bnrv4_header_nav > div {
 		position: absolute;
@@ -1359,7 +1395,7 @@ span:nth-child(4),
 }
 
 @media screen and (min-width: 930px) {
-	/* line 151, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 152, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header
 #xrx_bnrv4_header_nav input#xrx_bnrv4_default:checked ~ div #xrx_bnrv4_header_nav_primary li:first-child > label,
 	#xrx_bnrv4_header
@@ -1372,7 +1408,7 @@ span:nth-child(4),
 		color: #cf3847;
 		cursor: default;
 	}
-	/* line 156, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 157, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header
 #xrx_bnrv4_header_nav input#xrx_bnrv4_default:checked ~ div #xrx_bnrv4_header_nav_primary li:first-child > label ~ .xrx_bnrv4_header_flyout,
 	#xrx_bnrv4_header
@@ -1387,7 +1423,7 @@ span:nth-child(4),
 		left: -1px;
 		right: -1px;
 	}
-	/* line 164, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 165, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header
 #xrx_bnrv4_header_nav:before {
 		content: "";
@@ -1402,7 +1438,7 @@ span:nth-child(4),
 }
 
 @media screen and (min-width: 768px) {
-	/* line 114, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 115, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header
 #xrx_bnrv4_header_nav {
 		top: 80px;
@@ -1410,7 +1446,7 @@ span:nth-child(4),
 }
 
 @media screen and (min-width: 930px) {
-	/* line 114, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 115, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header
 #xrx_bnrv4_header_nav {
 		position: fixed;
@@ -1422,7 +1458,7 @@ span:nth-child(4),
 		-webkit-transition: max-height 0.25s ease-in-out, border-top-width 0.25s ease-in-out;
 		transition: max-height 0.25s ease-in-out, border-top-width 0.25s ease-in-out;
 	}
-	/* line 190, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 191, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header
 #xrx_bnrv4_header_nav > div {
 		max-width: 1200px;
@@ -1434,7 +1470,7 @@ span:nth-child(4),
 	}
 }
 
-/* line 197, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+/* line 198, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 #xrx_bnrv4_header
 #xrx_bnrv4_header_nav::after {
 	content: "";
@@ -1443,7 +1479,7 @@ span:nth-child(4),
 }
 
 @media screen and (max-width: 929px) {
-	/* line 209, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 210, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header #xrx_bnrv4_header_menuchk:checked ~ #xrx_bnrv4_header_nav,
 	#xrx_bnrv4_header
 #xrx_bnrv4_header_menubtn.open ~ #xrx_bnrv4_header_nav {
@@ -1452,7 +1488,7 @@ span:nth-child(4),
 }
 
 @media screen and (min-width: 930px) {
-	/* line 216, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 217, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header #xrx_bnrv4_header_menuchk:checked ~ #xrx_bnrv4_header_nav,
 	#xrx_bnrv4_header
 #xrx_bnrv4_header_menubtn.open ~ #xrx_bnrv4_header_nav {
@@ -1461,7 +1497,7 @@ span:nth-child(4),
 	}
 }
 
-/* line 223, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+/* line 224, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 #xrx_bnrv4_header #xrx_bnrv4_header_search_btn {
 	display: block;
 	width: 30px;
@@ -1472,24 +1508,24 @@ span:nth-child(4),
 	cursor: pointer;
 }
 
-/* line 233, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+/* line 234, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 #xrx_bnrv4_header #xrx_bnrv4_header_search_btn:hover svg #XMLID_1_, #xrx_bnrv4_header #xrx_bnrv4_header_search_btn:hover svg #XMLID_3_ {
 	stroke: #cf3847 !important;
 }
 
 @media screen and (min-width: 768px) {
-	/* line 223, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 224, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header #xrx_bnrv4_header_search_btn {
 		display: none;
 	}
 }
 
-/* line 244, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+/* line 245, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 #xrx_bnrv4_header #xrx_bnrv4_header_searchchk:checked ~ #xrx_bnrv4_header_floater #xrx_bnrv4_header_search {
 	left: 0;
 }
 
-/* line 248, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+/* line 249, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 #xrx_bnrv4_header
 #xrx_bnrv4_header_search {
 	padding: 30px 20px;
@@ -1505,7 +1541,7 @@ span:nth-child(4),
 	transition: left 0.25s ease-in-out;
 }
 
-/* line 260, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+/* line 261, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 #xrx_bnrv4_header
 #xrx_bnrv4_header_search input {
 	width: 100%;
@@ -1514,7 +1550,7 @@ span:nth-child(4),
 }
 
 @media screen and (min-width: 768px) {
-	/* line 248, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 249, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header
 #xrx_bnrv4_header_search {
 		display: block;
@@ -1526,22 +1562,24 @@ span:nth-child(4),
 		right: 280px;
 		top: 20px;
 	}
-	/* line 278, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 279, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header
 #xrx_bnrv4_header_search input {
 		border: none;
 		border: 1px solid #ebebeb;
 		outline: none;
 	}
-	/* line 283, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 285, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header
-#xrx_bnrv4_header_search input:focus {
+#xrx_bnrv4_header_search input:focus,
+	#xrx_bnrv4_header
+#xrx_bnrv4_header_search input:hover {
 		border-color: #cf3847;
 	}
 }
 
 @media screen and (min-width: 930px) {
-	/* line 248, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 249, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header
 #xrx_bnrv4_header_search {
 		top: 28px;
@@ -1549,7 +1587,7 @@ span:nth-child(4),
 }
 
 @media screen and (min-width: 930px) {
-	/* line 297, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 299, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header .xrx_bnrv4_header_flyout {
 		min-height: 50px;
 		border-bottom: 1px solid #dbdbdb;
@@ -1557,7 +1595,7 @@ span:nth-child(4),
 		display: none;
 		background-color: #fff;
 	}
-	/* line 304, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
+	/* line 306, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_header.scss */
 	#xrx_bnrv4_header .xrx_bnrv4_header_flyout > div {
 		box-sizing: border-box;
 		padding: 30px;

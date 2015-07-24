@@ -6,6 +6,7 @@
 @import "primary_nav";
 @import "secondary_nav";
 @import "tertiary_nav";
+@import "insights_selector";
 
 #xrx_bnrv4_header
 {
@@ -280,7 +281,8 @@
 				border: 1px solid #ebebeb;
 				outline: none;
 
-				&:focus {
+				&:focus,
+				&:hover {
 					border-color: $red;
 				}
 			}

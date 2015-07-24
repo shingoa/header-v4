@@ -1,0 +1,35 @@
+@import "vars";
+
+.xrx_bnrv4_insights {
+	select, button {
+		display: inline-block;
+		border: 1px solid #e3e3e3;
+		padding: 5px 10px;
+		margin-right: 10px;
+		outline: none;
+		background-color: #fff;
+
+		&:focus,
+		&:hover {
+			border-color: $red;
+		}
+	}
+
+	select {
+		width: 200px;
+
+		&:focus {
+			border-color: $red;
+		}
+	}
+
+	button {
+		&:after {
+			content: " >";
+			display: inline-block;
+			color: $red;
+			font-size: 115%;
+			margin-left: 10px;
+		}
+	}
+}

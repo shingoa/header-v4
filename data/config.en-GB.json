@@ -273,7 +273,69 @@
 					"href" : "#"
 				},
 
-				"blurb" : "Explore how Xerox is solving today's business challenges"
+				"blurb" : "Explore how Xerox is solving today's business challenges",
+
+				"category" : {
+					"default" : "Category",
+					"fieldName" : "category",
+
+					"options" : [
+						{
+							"label" : "Option 1",
+							"value" : "Option1"
+						},
+						{
+							"label" : "Option 2",
+							"value" : "Option2"
+						},
+						{
+							"label" : "Option 3",
+							"value" : "Option3"
+						}
+					]
+				},
+
+				"type" : {
+					"default" : "Type",
+					"fieldName" : "type",
+
+					"options" : [
+						{
+							"label" : "Option 1",
+							"value" : "Option1"
+						},
+						{
+							"label" : "Option 2",
+							"value" : "Option2"
+						},
+						{
+							"label" : "Option 3",
+							"value" : "Option3"
+						}
+					]
+				},
+
+				"mostRecent" : {
+					"default" : "Most Recent",
+					"fieldName" : "recent",
+
+					"options" : [
+						{
+							"label" : "Option 1",
+							"value" : "Option1"
+						},
+						{
+							"label" : "Option 2",
+							"value" : "Option2"
+						},
+						{
+							"label" : "Option 3",
+							"value" : "Option3"
+						}
+					]
+				},
+
+				"submit" : "Go"
 			},
 			"supplies" : {
 				"label" : "Supplies",

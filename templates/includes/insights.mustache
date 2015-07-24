@@ -8,6 +8,21 @@
 				{{> ../includes/mustachePartials/flyout_header}}
 
 				<div class="xrx_bnrv4_header_flyout_content">
+					<p>{{blurb}}</p>
+
+					<form method="get" action="#" class="xrx_bnrv4_insights">
+						{{#category}}
+							{{> ../includes/mustachePartials/select_box}}
+						{{/category}}
+						{{#type}}
+							{{> ../includes/mustachePartials/select_box}}
+						{{/type}}
+						{{#mostRecent}}
+							{{> ../includes/mustachePartials/select_box}}
+						{{/mostRecent}}
+
+						<button type="submit">{{submit}}</button>
+					</form>
 				</div>
 
 				{{> ../includes/mustachePartials/flyout_footer}}
