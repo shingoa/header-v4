@@ -9,7 +9,7 @@ var mustache = require('gulp-mustache');
 var rename = require('gulp-rename');
 var requireDir = require('require-dir');
 
-gulp.task('build', function() {
+gulp.task('build-html', function() {
 
 	var locales = ["en_GB", "chris"];
 

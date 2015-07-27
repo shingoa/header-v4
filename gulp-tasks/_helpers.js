@@ -1,3 +1,5 @@
+'use strict';
+
 var helpers = {};
 
 helpers.processTemplateData = function(data)

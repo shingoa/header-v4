@@ -1,7 +1,7 @@
-$break_tablet: 768px;
-$break_desktop: 930px;
+$break_tablet: 768px !default;
+$break_desktop: 930px !default;
 
-$page_width: 1200px;
+$page_width: 1200px !default;
 
 $logoPathPng: url("http://www.xerox.com/assets/images/navigation/headers/xerox_logo_r.png");
 $logoPathSvg: url("http://www.xerox.com/assets/images/navigation/headers/xerox_logo_r.svg");
