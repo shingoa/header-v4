@@ -6,6 +6,8 @@
 @import "modules/hamburger";
 @import "modules/responsive_base";
 
+$page_width: 200000px;
+
 @import "parts/global";
 @import "parts/header";
 @import "parts/footer";

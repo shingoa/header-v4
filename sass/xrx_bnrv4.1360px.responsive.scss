@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@import "normalize";
+@import "vars";
+
+@import "modules/helper_mixins";
+@import "modules/hamburger";
+@import "modules/responsive_base";
+
+$page_width: 1360px;
+
+@import "parts/global";
+@import "parts/header";
+@import "parts/footer";
