@@ -7,8 +7,8 @@ var mustache = require('gulp-mustache');
 var rename = require('gulp-rename');
 var requireDir = require('require-dir');
 
-gulp.task('compile-html', ['download-locales'], function() {
-
+gulp.task('compile-html', ['download-locales'], function()
+{
 	fs.readFile('./data/locales.json', function (err, data)
 	{
 		if (!err)
@@ -29,7 +29,7 @@ gulp.task('compile-html', ['download-locales'], function() {
 							{
 								var templateData = JSON.parse(data);
 
-								gulp.src(['./templates/parts/*.mustache'])
+								gulp.src(['./templates/parts/header.mustache', './templates/parts/footer.mustache'])
 									.pipe(mustache(templateData))
 									.pipe(rename({
 										'suffix' : '-' + localeCode,
@@ -45,6 +45,13 @@ gulp.task('compile-html', ['download-locales'], function() {
 					});
 				}
 			});
+
+			gulp.src(['./templates/parts/head_section.*.mustache'])
+				.pipe(mustache({}))
+				.pipe(rename({
+					'extname' : '.html'
+				}))
+				.pipe(gulp.dest('./compiled/parts'));
 		}
 		else
 		{
