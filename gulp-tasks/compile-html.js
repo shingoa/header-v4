@@ -3,7 +3,6 @@
 var gulp = require('gulp');
 var fs = require('fs');
 
-var fileinclude = require('gulp-file-include');
 var mustache = require('gulp-mustache');
 var rename = require('gulp-rename');
 var requireDir = require('require-dir');
@@ -31,10 +30,6 @@ gulp.task('compile-html', ['download-locales'], function() {
 								var templateData = JSON.parse(data);
 
 								gulp.src(['./templates/parts/*.mustache'])
-									.pipe(fileinclude({
-										prefix: '@@',
-										basepath: '@file'
-									}))
 									.pipe(mustache(templateData))
 									.pipe(rename({
 										'suffix' : '-' + localeCode,

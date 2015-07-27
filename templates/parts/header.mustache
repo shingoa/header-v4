@@ -50,8 +50,8 @@
 
 				{{#header.tertiaryNav}}
 					<ul id="xrx_bnrv4_header_nav_tertiary">
-						@@include('../includes/contact.mustache')
-						@@include('../includes/share.mustache')
+						{{> ../includes/contact}}
+						{{> ../includes/share}}
 					</ul>
 				{{/header.tertiaryNav}}
 			</div>
@@ -63,12 +63,12 @@
 			<div>
 				{{#header.primaryNav}}
 					<ul id="xrx_bnrv4_header_nav_primary">
-						@@include('../includes/services.mustache')
-						@@include('../includes/products.mustache')
-						@@include('../includes/insights.mustache')
-						@@include('../includes/supplies.mustache')
-						@@include('../includes/support.mustache')
-						@@include('../includes/about.mustache')
+						{{> ../includes/services}}
+						{{> ../includes/products}}
+						{{> ../includes/insights}}
+						{{> ../includes/supplies}}
+						{{> ../includes/support}}
+						{{> ../includes/about}}
 					</ul>
 				{{/header.primaryNav}}
 

@@ -4,7 +4,6 @@ var gulp = require('gulp');
 var fs = require('fs');
 var xrxhelpers = require('./_helpers.js');
 
-var fileinclude = require('gulp-file-include');
 var mustache = require('gulp-mustache');
 var rename = require('gulp-rename');
 var requireDir = require('require-dir');
@@ -27,10 +26,6 @@ gulp.task('build-html', function() {
 					//fs.writeFileSync('./data/config.' + locale + '.test.json', JSON.stringify(templateData, null, "\t"));
 
 					gulp.src(['./templates/mock_pages/*.html'])
-						.pipe(fileinclude({
-							prefix: '@@',
-							basepath: '@file'
-						}))
 						.pipe(mustache(templateData))
 						.pipe(rename({
 							'suffix' : '-' + locale,
