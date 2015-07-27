@@ -1,7 +1,13 @@
 @mixin xrx_bnrv4_positionit
 {
-	max-width: $page_width;
-	width: 100%;
+	@if $fix-mqs {
+		width: $page_width;
+	}
+	@else {
+		max-width: $page_width;
+		width: 100%;
+	}
+
 	margin: 0 auto;
 	display: block;
 }
