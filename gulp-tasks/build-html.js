@@ -25,7 +25,7 @@ gulp.task('build-html', function() {
 
 					//fs.writeFileSync('./data/config.' + locale + '.test.json', JSON.stringify(templateData, null, "\t"));
 
-					gulp.src(['./templates/mock_pages/*.html'])
+					gulp.src(['./templates/mock_pages/*.mustache'])
 						.pipe(mustache(templateData))
 						.pipe(rename({
 							'suffix' : '-' + locale,
