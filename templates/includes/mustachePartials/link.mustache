@@ -1,5 +1,10 @@
 {{#href}}
-	<a href="#" name="{{lid}}">{{label}}</a>
+	{{#id}}
+		<a href="#" name="{{lid}}" id="{{id}}">{{label}}</a>
+	{{/id}}
+	{{^id}}
+		<a href="#" name="{{lid}}">{{label}}</a>
+	{{/id}}
 {{/href}}
 {{^href}}
 	<span>{{label}}</span>

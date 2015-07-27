@@ -11,10 +11,31 @@
 		padding: 10px 20px;
 	}
 
+	a#xrx_bnrv4_header_country_selector {
+		background-image: url("../images/maplocator.svg");
+		background-repeat: no-repeat;
+	}
+
+	@include respond-max($break_desktop)
+	{
+		a#xrx_bnrv4_header_country_selector {
+			background-size: auto 90%;
+			background-position: right 20px center;
+			padding-right: 90px;
+			height: 40px;
+		}
+	}
+
 	@include respond-min($break_desktop)
 	{
 		float: right;
 		line-height: 20px;
+
+		a#xrx_bnrv4_header_country_selector {
+			padding-left: 70px;
+			background-size: auto 50%;
+			background-position: left center;
+		}
 
 		> li {
 			@include xrx_bnrv4_list_dividers;

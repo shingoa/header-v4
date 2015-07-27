@@ -1016,11 +1016,33 @@ th {
 	padding: 10px 20px;
 }
 
+/* line 14, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_secondary_nav.scss */
+#xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary a#xrx_bnrv4_header_country_selector {
+	background-image: url("../images/maplocator.svg");
+	background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 929px) {
+	/* line 21, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_secondary_nav.scss */
+	#xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary a#xrx_bnrv4_header_country_selector {
+		background-size: auto 90%;
+		background-position: right 20px center;
+		padding-right: 90px;
+		height: 40px;
+	}
+}
+
 @media screen and (min-width: 930px) {
 	/* line 6, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_secondary_nav.scss */
 	#xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary {
 		float: right;
 		line-height: 20px;
+	}
+	/* line 34, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_secondary_nav.scss */
+	#xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary a#xrx_bnrv4_header_country_selector {
+		padding-left: 70px;
+		background-size: auto 50%;
+		background-position: left center;
 	}
 	/* line 39, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/modules/_helper_mixins.scss */
 	#xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary > li > label[for],
@@ -1065,19 +1087,19 @@ th {
 	#xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary > li:last-child > a::before {
 		display: none;
 	}
-	/* line 23, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_secondary_nav.scss */
+	/* line 44, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_secondary_nav.scss */
 	#xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary > li > label[for],
 	#xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary > li > a {
 		font-size: 17px;
 		padding: 20px 15px 20px 0;
 	}
-	/* line 28, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_secondary_nav.scss */
+	/* line 49, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_secondary_nav.scss */
 	#xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary > li > label[for]::before,
 	#xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary > li > a::before {
 		top: 35%;
 		bottom: 35%;
 	}
-	/* line 37, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_secondary_nav.scss */
+	/* line 58, C:/Users/z269cjbb/Documents/GitHub/header-v4/sass/parts/_secondary_nav.scss */
 	#xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary > li:last-child > label,
 	#xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary > li:last-child > a {
 		padding-right: 0px;

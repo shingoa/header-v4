@@ -590,7 +590,8 @@
 			"links" : [
 				{
 					"label" : "United States",
-					"href" : "#"
+					"href" : "#",
+					"id" : "xrx_bnrv4_header_country_selector"
 				},
 				{
 					"label" : "Sign In",
