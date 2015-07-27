@@ -23,7 +23,9 @@ gulp.task('build-html', function() {
 					var templateData = JSON.parse(data);
 					templateData = xrxhelpers.processTemplateData(templateData);
 
-					//fs.writeFileSync('./data/config.' + locale + '.test.json', JSON.stringify(templateData, null, "\t"));
+					var files = fs.readdirSync("./templates/mock_pages/");
+					files = xrxhelpers.processMockPageFileList(files, '-' + locale);
+					templateData.files = files;
 
 					gulp.src(['./templates/mock_pages/*.mustache'])
 						.pipe(mustache(templateData))

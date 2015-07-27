@@ -48,4 +48,26 @@ helpers.recurse = function(obj, callback)
     }
 };
 
+helpers.processMockPageFileList = function(files, suffix)
+{
+	var returnFiles = [];
+
+	if (files)
+	{
+		files.forEach(function(file)
+		{
+			if (file.indexOf(".mustache") > -1)
+			{
+				file = file.replace(".mustache", suffix + ".html");
+
+				if (returnFiles.indexOf(file) === -1) {
+					returnFiles.push(file);
+				}
+			}
+		});
+	}
+
+	return returnFiles;
+};
+
 module.exports = helpers;
