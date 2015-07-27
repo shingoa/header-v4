@@ -1,18 +1,17 @@
 'use strict';
 
 var gulp = require('gulp');
-var plugins = require('gulp-load-plugins')();
 var fs = require('fs');
 var xrxhelpers = require('./_helpers.js');
 
-var fileinclude = plugins.fileInclude;
-var mustache = plugins.mustache;
-var rename = plugins.rename;
-var requireDir = plugins.requireDir;
+var fileinclude = require('gulp-file-include');
+var mustache = require('gulp-mustache');
+var rename = require('gulp-rename');
+var requireDir = require('require-dir');
 
 gulp.task('build', function() {
 
-	var locales = ["en-GB", "chris"];
+	var locales = ["en_GB", "chris"];
 
 	locales.forEach(function(locale)
 	{

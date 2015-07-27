@@ -1,9 +1,7 @@
 'use strict';
 
 var gulp = require('gulp');
-var plugins = require('gulp-load-plugins')();
-
-var sass = plugins.sass;
+var sass = require('gulp-sass');
 
 gulp.task('sass', function () {
 	gulp.src('./sass/**/*.scss')
