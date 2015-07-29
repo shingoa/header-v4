@@ -13,6 +13,7 @@ The version 4.0 header and footer built using GULP
   3. On Mac...
 3. Get a copy of the source code. I use [GitHub for Windows](https://windows.github.com/)
 4. Open PowerShell, Command Prompt, Terminal, whatever and navigate to the location of the source code.
+5. Call `npm install`. This will install all the required node/gulp modules. It can take a bit of time but wont work at all if you haven't set the proxy as above if required by your network.
 
 ### Build
 - "gulp build" - Will build a limited subset of pages into the built/ directory for testing
