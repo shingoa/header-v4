@@ -10,11 +10,11 @@ var requireDir = require('require-dir');
 
 gulp.task('build-html', function() {
 
-	var locales = ["en_GB", "chris"];
+	var locales = ["ptbr", "engb", "frfr", "heil"];
 
 	locales.forEach(function(locale)
 	{
-		fs.readFile('./data/config.' + locale + '.json', function (err, data)
+		fs.readFile('./data/config.' + locale + '.json', { "encoding" : "utf8" }, function (err, data)
 		{
 			if (!err)
 			{
@@ -23,14 +23,17 @@ gulp.task('build-html', function() {
 					var templateData = JSON.parse(data);
 					templateData = xrxhelpers.processTemplateData(templateData);
 
+					//console.log(templateData.header.primaryNav.services);
+					//throw "stop: " + templateData.header.primaryNav.services.label;
+
 					var files = fs.readdirSync("./templates/mock_pages/");
-					files = xrxhelpers.processMockPageFileList(files, '-' + locale);
+					files = xrxhelpers.processMockPageFileList(files, '.' + locale);
 					templateData.files = files;
 
 					gulp.src(['./templates/mock_pages/*.mustache'])
 						.pipe(mustache(templateData))
 						.pipe(rename({
-							'suffix' : '-' + locale,
+							'suffix' : '.' + locale,
 							'extname' : '.html'
 						}))
 						.pipe(gulp.dest('./built'));

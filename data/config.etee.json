@@ -1,0 +1,452 @@
+{
+   "footer" : {
+      "copyrightStatement" : "&copy; 2015 Xerox Corporation. All rights reserved. Xerox&reg; and Xerox and Design&reg; are trademarks of Xerox Corporation in the United States and/or other countries.",
+      "footerLinks" : {
+         "links" : [
+            {
+               "href" : "http://www.xerox.com/jobs/enus.html",
+               "label" : "Careers"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/contact-us/enus.html",
+               "label" : "Contact Us"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/enus.html",
+               "label" : "About Xerox"
+            },
+            {
+               "href" : "http://news.xerox.com/pr/xerox/investor-relations.aspx",
+               "label" : "Investors"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/privacy-policy/enus.html",
+               "label" : "Privacy"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/website-terms-of-use/enus.html",
+               "label" : "Legal"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/privacy-policy/enus.html#adchoices",
+               "label" : "Privacy Choices"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/site-map/enus.html",
+               "label" : "Site Map"
+            }
+         ]
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home"
+      }
+   },
+   "header" : {
+      "footerLinks" : [
+         {
+            "href" : "#",
+            "label" : "Contact"
+         },
+         {
+            "href" : "#",
+            "label" : "Chat"
+         },
+         {
+            "href" : "#",
+            "label" : "Where to Buy"
+         },
+         {
+            "href" : "#",
+            "label" : "Careers"
+         },
+         {
+            "href" : "#",
+            "label" : "Partners"
+         },
+         {
+            "href" : "#",
+            "label" : "Case Studies"
+         }
+      ],
+      "primaryNav" : {
+         "about" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/etee.html",
+               "id" : "&lid=cell2-title-teave xeroxi kohta",
+               "label" : "Teave Xeroxi kohta",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/etee.html",
+                     "id" : "&lid=cell2-xeroxi lühitutvustus",
+                     "label" : "Xeroxi lühitutvustus",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://news.xerox.com/investors",
+                     "id" : "&lid=cell2-investorid",
+                     "label" : "Investorid",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/etee.html",
+                     "id" : "&lid=cell2-globaalne kodakondsus",
+                     "label" : "Globaalne kodakondsus",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/etee.html",
+                     "id" : "&lid=cell2-keskkond ja jätkusuutlikkus",
+                     "label" : "Keskkond ja jätkusuutlikkus",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/innovation/etee.html",
+                     "id" : "&lid=cell2-uuendus",
+                     "label" : "Uuendus",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/etee.html",
+               "id" : "&lid=cell2-title-kontakt",
+               "label" : "Kontakt",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/etee.html#tech_support",
+                     "id" : "&lid=cell2-contact-tehniline tugi",
+                     "label" : "Tehniline tugi",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/etee.html#products",
+                     "id" : "&lid=cell2-contact-tooted ja tarkvara",
+                     "label" : "Tooted ja tarkvara",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/etee.html#supplies",
+                     "id" : "&lid=cell2-contact-tarvikud",
+                     "label" : "Tarvikud",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/etee.html#services",
+                     "id" : "&lid=cell2-contact-business services",
+                     "label" : "Business Services",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/etee.html#corporate",
+                     "id" : "&lid=cell2-contact-xerox corporation",
+                     "label" : "Xerox Corporation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/perl-bin/world_contact.pl#0",
+                     "id" : "&lid=cell2-contact-esindused üle maailma",
+                     "label" : "Esindused üle maailma",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/etee.html",
+               "id" : "&lid=cell2-title-kust osta",
+               "label" : "Kust osta",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/etee.html#office",
+                     "id" : "&lid=cell2-where-to-buy-kontoriseadmed",
+                     "label" : "Kontoriseadmed",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/etee.html#production",
+                     "id" : "&lid=cell2-where-to-buy-tootmisseadmed",
+                     "label" : "Tootmisseadmed",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/etee.html#scanners",
+                     "id" : "&lid=cell2-where-to-buy-skannerid",
+                     "label" : "Skannerid",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/etee.html#supplies",
+                     "id" : "&lid=cell2-where-to-buy-tarvikud",
+                     "label" : "Tarvikud",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/etee.html#services",
+                     "id" : "&lid=cell2-where-to-buy-business services",
+                     "label" : "Business Services",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Teave Xeroxi kohta"
+         },
+         "products" : {
+            "col1" : {
+               "href" : "http://dev.office.xerox.com/index/etee.html",
+               "id" : "&lid=hdr-products-title-office solutions",
+               "label" : "Büroolahendused",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/printers/etee.html",
+                     "id" : "&lid=cell2-xog-printerid büroosse",
+                     "label" : "Printerid büroosse",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/multifunction-printer/etee.html",
+                     "id" : "&lid=cell2-xog-multifunktsionaalsed printerid",
+                     "label" : "Multifunktsionaalsed printerid",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.xeroxscanners.com/en/en/",
+                     "id" : "&lid=hdr-products-scanners",
+                     "label" : "Skannerid",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/software-solutions/etee.html",
+                     "id" : "&lid=hdr-products-office software",
+                     "label" : "Bürootarkvara",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/digital-printing/etee.html",
+               "id" : "&lid=hdr-products-title-graphic communications",
+               "label" : "Graafiline kommunikatsioon",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/digital-press/etee.html",
+                     "id" : "&lid=cell2-psg-digitrükipressid",
+                     "label" : "Digitrükipressid",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/continuous-feed-printer/etee.html",
+                     "id" : "&lid=cell2-psg-automaatsööturiga printerid",
+                     "label" : "Automaatsööturiga printerid",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/wide-format-printer/etee.html",
+                     "id" : "&lid=cell2-psg-laiformaatprinterid",
+                     "label" : "Laiformaatprinterid",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/workflow/etee.html",
+                     "id" : "&lid=hdr-products-psg-toovoo tarkvara",
+                     "label" : "Töövoo tarkvara",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.office.xerox.com/digital-printing-equipment/etee.html",
+               "id" : "&lid=hdr-products-title-additional resources",
+               "label" : "Lisaressursid",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/product-locator/etee.html",
+                     "id" : "&lid=hdr-products-product finder",
+                     "label" : "Tooteotsija",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/small-business/etee.html",
+                     "id" : "&lid=hdr-products-small business resource center",
+                     "label" : "Väikeettevõtete lahendused",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/etee.html",
+                     "id" : "&lid=hdr-products-toner and ink",
+                     "label" : "Toonerit ja tinti",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/partner-programs/etee.html",
+                     "id" : "&lid=hdr-products-become a partner",
+                     "label" : "Hakka partneriks",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Tooted"
+         },
+         "services" : {
+            "col1" : {
+               "href" : "http://dev.services.xerox.com/document-management-solutions/etee.html",
+               "id" : "&lid=cell2-title-dokumendihaldus",
+               "label" : "Dokumendihaldus",
+               "links" : [
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-managed-print-services/etee.html",
+                     "id" : "&lid=cell2-hallatud printimisteenused",
+                     "label" : "Hallatud printimisteenused",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/print-room/etee.html",
+                     "id" : "&lid=cell2-tsentraliseeritud printimisteenused",
+                     "label" : "Tsentraliseeritud printimisteenused",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.services.xerox.com/business-process-outsourcing/etee.html",
+               "id" : "&lid=cell2-title-äriprotsessid",
+               "label" : "Äriprotsessid",
+               "links" : [
+                  {
+                     "href" : "http://dev.consulting.xerox.com/document-management/etee.html",
+                     "id" : "&lid=cell2-dokumentide tehingutöötluse teenused",
+                     "label" : "Dokumentide tehingutöötluse teenused",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/customer-service/etee.html",
+                     "id" : "&lid=cell2-klienditoe lahendused",
+                     "label" : "Klienditoe lahendused",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-marketing-services/etee.html",
+                     "id" : "&lid=cell2-kommunikatsioon ja turundus",
+                     "label" : "Kommunikatsioon ja turundus",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.services.xerox.com/industry-services/etee.html",
+               "id" : "&lid=cell2-title-teenindatavad tööstused",
+               "label" : "Teenindatavad tööstused",
+               "links" : [
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/financial-services/etee.html",
+                     "id" : "&lid=cell2-finantsteenused",
+                     "label" : "Finantsteenused",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/retail/etee.html",
+                     "id" : "&lid=cell2-jaemüük ja tarbekaubad",
+                     "label" : "Jaemüük ja tarbekaubad",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/high-tech-and-communications/etee.html",
+                     "id" : "&lid=cell2-kõrgtehnoloogia ja kommunikatsioon",
+                     "label" : "Kõrgtehnoloogia ja kommunikatsioon",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/government/etee.html",
+                     "id" : "&lid=cell2-valitsus",
+                     "label" : "Valitsus",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Teenused"
+         },
+         "supplies" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/etee.html",
+               "id" : "&lid=cell2-title-tarvikud",
+               "label" : "Tarvikud",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/etee.html",
+                     "id" : "&lid=cell2-tarvikud",
+                     "label" : "Tarvikud",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/recycling/etee.html",
+                     "id" : "&lid=cell2-jäätmekäitlusprogrammid",
+                     "label" : "Jäätmekäitlusprogrammid",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Tarvikud"
+         },
+         "support" : {
+            "col1" : {
+               "href" : "http://www.support.xerox.com/support/etee.html",
+               "id" : "&lid=cell2-title-tugi ja draiverid",
+               "label" : "Tugi ja draiverid",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/support-faq/etee.html",
+                     "id" : "&lid=cell2-korduma kippuvad küsimused",
+                     "label" : "Korduma kippuvad küsimused",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/customer-training/etee.html",
+                     "id" : "&lid=cell2-nõustamine ja koolitusteenused",
+                     "label" : "Nõustamine ja koolitusteenused",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/information-security/etee.html",
+                     "id" : "&lid=cell2-turvalisuse teave",
+                     "label" : "Turvalisuse teave",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Tugi ja draiverid"
+         }
+      },
+      "secondaryNav" : {
+         "links" : [
+            {
+               "href" : "#",
+               "id" : "xrx_bnrv4_header_country_selector",
+               "label" : "United States"
+            },
+            {
+               "href" : "#",
+               "label" : "Sign In"
+            }
+         ]
+      },
+      "tertiaryNav" : {
+         "contactUs" : "Contact Us",
+         "share" : "Share"
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home",
+         "menuBtnTitle" : "Open/Close menu",
+         "searchBtnTitle" : "Search",
+         "searchPlaceholder" : "Search"
+      }
+   }
+}

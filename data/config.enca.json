@@ -1,0 +1,560 @@
+{
+   "footer" : {
+      "copyrightStatement" : "&copy; 2015 Xerox Corporation. All rights reserved. Xerox&reg; and Xerox and Design&reg; are trademarks of Xerox Corporation in the United States and/or other countries.",
+      "footerLinks" : {
+         "links" : [
+            {
+               "href" : "http://www.xerox.com/jobs/enus.html",
+               "label" : "Careers"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/contact-us/enus.html",
+               "label" : "Contact Us"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/enus.html",
+               "label" : "About Xerox"
+            },
+            {
+               "href" : "http://news.xerox.com/pr/xerox/investor-relations.aspx",
+               "label" : "Investors"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/privacy-policy/enus.html",
+               "label" : "Privacy"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/website-terms-of-use/enus.html",
+               "label" : "Legal"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/privacy-policy/enus.html#adchoices",
+               "label" : "Privacy Choices"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/site-map/enus.html",
+               "label" : "Site Map"
+            }
+         ]
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home"
+      }
+   },
+   "header" : {
+      "footerLinks" : [
+         {
+            "href" : "#",
+            "label" : "Contact"
+         },
+         {
+            "href" : "#",
+            "label" : "Chat"
+         },
+         {
+            "href" : "#",
+            "label" : "Where to Buy"
+         },
+         {
+            "href" : "#",
+            "label" : "Careers"
+         },
+         {
+            "href" : "#",
+            "label" : "Partners"
+         },
+         {
+            "href" : "#",
+            "label" : "Case Studies"
+         }
+      ],
+      "primaryNav" : {
+         "about" : {
+            "col1" : {
+               "href" : "http://dev.xerox.ca/about-xerox/enca.html",
+               "id" : "&lid=cell2-title-about xerox",
+               "label" : "About Xerox",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.ca/about-xerox/company-facts/enca.html",
+                     "id" : "&lid=cell2-xerox at a glance",
+                     "label" : "Xerox at a Glance",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://news.xerox.com/investors",
+                     "id" : "&lid=cell2-investors",
+                     "label" : "Investors",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://en-news.xerox.ca/",
+                     "id" : "&lid=cell2-newsroom",
+                     "label" : "Newsroom",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/about-xerox/citizenship/enca.html",
+                     "id" : "&lid=cell2-global citizenship",
+                     "label" : "Global Citizenship",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/about-xerox/environment/enca.html",
+                     "id" : "&lid=cell2-environment and sustainability",
+                     "label" : "Environment and Sustainability",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.realbusinesslive.xerox.com/events/index/enca.html",
+                     "id" : "&lid=cell2-events_ tradeshows and webinars",
+                     "label" : "Events, Tradeshows and Webinars",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/innovation/enca.html",
+                     "id" : "&lid=cell2-innovation",
+                     "label" : "Innovation",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.xerox.ca/about-xerox/contact-us/enca.html",
+               "id" : "&lid=cell2-title-contact",
+               "label" : "Contact",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.ca/about-xerox/contact-us/enca.html#billing",
+                     "id" : "&lid=cell2-contact-support for billing and account administration",
+                     "label" : "Support for billing and account administration",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/about-xerox/contact-us/enca.html#tech_support",
+                     "id" : "&lid=cell2-contact-technical support",
+                     "label" : "Technical Support",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/about-xerox/contact-us/enca.html#products",
+                     "id" : "&lid=cell2-contact-products and software",
+                     "label" : "Products and software",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/about-xerox/contact-us/enca.html#supplies",
+                     "id" : "&lid=cell2-contact-supplies",
+                     "label" : "Supplies",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/about-xerox/contact-us/enca.html#services",
+                     "id" : "&lid=cell2-contact-business services",
+                     "label" : "Business Services",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/about-xerox/contact-us/enca.html#research",
+                     "id" : "&lid=cell2-contact-research and innovation",
+                     "label" : "Research and innovation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/about-xerox/contact-us/enca.html#corporate",
+                     "id" : "&lid=cell2-contact-xerox corporation",
+                     "label" : "Xerox Corporation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/perl-bin/world_contact.pl#0",
+                     "id" : "&lid=cell2-contact-worldwide locations",
+                     "label" : "Worldwide Locations",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.xerox.ca/about-xerox/buy/enca.html",
+               "id" : "&lid=cell2-title-where to buy",
+               "label" : "Where to Buy",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.ca/about-xerox/buy/enca.html#office",
+                     "id" : "&lid=cell2-where-to-buy-office equipment",
+                     "label" : "Office Equipment",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/about-xerox/buy/enca.html#production",
+                     "id" : "&lid=cell2-where-to-buy-production equipment",
+                     "label" : "Production Equipment",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/about-xerox/buy/enca.html#scanners",
+                     "id" : "&lid=cell2-where-to-buy-scanners",
+                     "label" : "Scanners",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/about-xerox/buy/enca.html#supplies",
+                     "id" : "&lid=cell2-where-to-buy-supplies",
+                     "label" : "Supplies",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/about-xerox/buy/enca.html#services",
+                     "id" : "&lid=cell2-where-to-buy-business services",
+                     "label" : "Business Services",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "About Xerox"
+         },
+         "products" : {
+            "col1" : {
+               "href" : "http://dev.xerox.ca/office/index/enca.html",
+               "id" : "&lid=hdr-products-title-office solutions",
+               "label" : "Office Solutions",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.ca/office/digital-printing-equipment/printers/enca.html",
+                     "id" : "&lid=cell2-xog-office printers",
+                     "label" : "Office Printers",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/office/digital-printing-equipment/multifunction-printer/enca.html",
+                     "id" : "&lid=cell2-xog-multifunction",
+                     "label" : "Multifunction",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.xeroxscanners.com/en/ca/",
+                     "id" : "&lid=hdr-products-scanners",
+                     "label" : "Scanners",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/office/software-solutions/enca.html",
+                     "id" : "&lid=hdr-products-office software",
+                     "label" : "Office Software",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.xerox.ca/digital-printing/enca.html",
+               "id" : "&lid=hdr-products-title-graphic communications",
+               "label" : "Graphic Communications",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.ca/office/digital-printing-equipment/digital-press/enca.html",
+                     "id" : "&lid=cell2-psg-production printers",
+                     "label" : "Production Printers",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/office/digital-printing-equipment/continuous-feed-printer/enca.html",
+                     "id" : "&lid=cell2-psg-continuous feed printers",
+                     "label" : "Continuous Feed Printers",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/digital-printing/workflow/enca.html",
+                     "id" : "&lid=hdr-products-psg-workflow software",
+                     "label" : "Workflow Software",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.xerox.ca/office/digital-printing-equipment/enca.html",
+               "id" : "&lid=hdr-products-title-additional resources",
+               "label" : "Additional Resources",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.ca/digital-printing/product-locator/enca.html",
+                     "id" : "&lid=hdr-products-product finder",
+                     "label" : "Product Finder",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/office/small-business/enca.html",
+                     "id" : "&lid=hdr-products-small business resource center",
+                     "label" : "Small Business Solutions",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/printer-supplies/enca.html",
+                     "id" : "&lid=hdr-products-toner and ink",
+                     "label" : "Toner and Ink",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/digital-printing/case-studies/enca.html",
+                     "id" : "&lid=hdr-products-case studies",
+                     "label" : "Case Studies",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/about-xerox/partner-programs/enca.html",
+                     "id" : "&lid=hdr-products-become a partner",
+                     "label" : "Become a Partner",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Products"
+         },
+         "services" : {
+            "col1" : {
+               "href" : "http://dev.xerox.ca/services/document-management-solutions/enca.html",
+               "id" : "&lid=cell2-title-document management",
+               "label" : "Document Management",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.ca/services/print-room/enca.html",
+                     "id" : "&lid=cell2-centralized print services",
+                     "label" : "Centralized Print Services",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/services/xerox-managed-print-services/enca.html",
+                     "id" : "&lid=cell2-managed print services",
+                     "label" : "Managed Print Services",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.xerox.ca/services/business-process-outsourcing/enca.html",
+               "id" : "&lid=cell2-title-business processes",
+               "label" : "Business Processes",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.ca/services/back-office-services/enca.html",
+                     "id" : "&lid=cell2-back office transaction processing",
+                     "label" : "Back Office Transaction Processing",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/services/xerox-marketing-services/enca.html",
+                     "id" : "&lid=cell2-communication and marketing",
+                     "label" : "Communication and Marketing",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/services/customer-service/enca.html",
+                     "id" : "&lid=cell2-customer care",
+                     "label" : "Customer Care",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/services/finance-and-accounting/enca.html",
+                     "id" : "&lid=cell2-finance and accounting outsourcing",
+                     "label" : "Finance and Accounting Outsourcing",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/services/hr-consulting/enca.html",
+                     "id" : "&lid=cell2-hr consulting",
+                     "label" : "HR Consulting",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.xerox.ca/services/industry-services/enca.html",
+               "id" : "&lid=cell2-title-industries we serve",
+               "label" : "Industries we serve",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.ca/consulting/business-services-industry/financial-services/enca.html",
+                     "id" : "&lid=cell2-financial services",
+                     "label" : "Financial Services",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/consulting/business-services-industry/government/enca.html",
+                     "id" : "&lid=cell2-government",
+                     "label" : "Government",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/consulting/business-services-industry/high-tech-and-communications/enca.html",
+                     "id" : "&lid=cell2-high tech and communications",
+                     "label" : "High Tech and Communications",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/consulting/business-services-industry/retail/enca.html",
+                     "id" : "&lid=cell2-retail and consumer products",
+                     "label" : "Retail and Consumer Products",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/services/transport-solutions/enca.html",
+                     "id" : "&lid=cell2-transportation",
+                     "label" : "Transportation",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Services"
+         },
+         "supplies" : {
+            "col1" : {
+               "href" : "http://dev.xerox.ca/printer-supplies/enca.html",
+               "id" : "&lid=cell2-title-supplies",
+               "label" : "Supplies",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.ca/printer-supplies/enca.html",
+                     "id" : "&lid=cell2-buy supplies online",
+                     "label" : "Buy Supplies Online",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/about-xerox/recycling/enca.html",
+                     "id" : "&lid=cell2-recycling programs",
+                     "label" : "Recycling Programs",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.accounts.xerox.com/loyalty-program/landing.jsf?&locale=en_CA",
+                     "id" : "&lid=cell2-genuine xerox rewards",
+                     "label" : "Genuine Xerox Rewards",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/printer-supplies/compatible-cartridges/enca.html",
+                     "id" : "&lid=cell2-xerox toner for non-xerox printers",
+                     "label" : "Xerox toner for non-Xerox printers",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.xerox.ca/printer-supplies/metered-supplies-replenishment/enca.html",
+               "id" : "&lid=cell2-title-metered supplies",
+               "label" : "Metered Supplies",
+               "links" : [
+                  {
+                     "href" : "http://www.test.accounts.xerox.com/auth/login.jsf?app=MSS&locale=en_CA",
+                     "id" : "&lid=cell2-metered-log in",
+                     "label" : "Log In",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Supplies"
+         },
+         "support" : {
+            "col1" : {
+               "href" : "http://www.support.xerox.com/support/enca.html",
+               "id" : "&lid=cell2-title-support and drivers",
+               "label" : "Support and Drivers",
+               "links" : [
+                  {
+                     "href" : "https://www.test.accounts.xerox.com/auth/login.jsf?app=CMR&locale=en_CA",
+                     "id" : "&lid=cell2-submit meter reads",
+                     "label" : "Submit Meter Reads",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/office/cgi-bin/resloc.pl?country=canada&what=Service",
+                     "id" : "&lid=cell2-find local service providers",
+                     "label" : "Find Local Service Providers",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/office/cgi-bin/dispatch_reg.pl",
+                     "id" : "&lid=cell2-register your product",
+                     "label" : "Register your product",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/about-xerox/customer-training/enca.html",
+                     "id" : "&lid=cell2-consulting _ training services",
+                     "label" : "Consulting & Training Services",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.ca/information-security/enca.html",
+                     "id" : "&lid=cell2-security information",
+                     "label" : "Security Information",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.xerox.ca/about-xerox/my-support/",
+               "id" : "&lid=cell2-title-mysupport",
+               "label" : "MySupport",
+               "links" : [
+                  {
+                     "href" : "https://www.test.accounts.xerox.com/auth/login.jsf?app=MSP&locale=en_CA",
+                     "id" : "&lid=cell2-log in",
+                     "label" : "Log in",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://forum.support.xerox.com/",
+               "id" : "&lid=cell2-title-support community forum",
+               "label" : "Support Community Forum",
+               "links" : [
+                  {
+                     "href" : "https://www.accounts.xerox.com/auth/registration.jsf?app=FORUMS&locale=en_CA&next_page=http%3A%2F%2Fforum.support.xerox.com%2F",
+                     "id" : "&lid=cell2-register",
+                     "label" : "Register",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Support & Drivers"
+         }
+      },
+      "secondaryNav" : {
+         "links" : [
+            {
+               "href" : "#",
+               "id" : "xrx_bnrv4_header_country_selector",
+               "label" : "United States"
+            },
+            {
+               "href" : "#",
+               "label" : "Sign In"
+            }
+         ]
+      },
+      "tertiaryNav" : {
+         "contactUs" : "Contact Us",
+         "share" : "Share"
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home",
+         "menuBtnTitle" : "Open/Close menu",
+         "searchBtnTitle" : "Search",
+         "searchPlaceholder" : "Search"
+      }
+   }
+}

@@ -1,0 +1,458 @@
+{
+   "footer" : {
+      "copyrightStatement" : "&copy; 2015 Xerox Corporation. All rights reserved. Xerox&reg; and Xerox and Design&reg; are trademarks of Xerox Corporation in the United States and/or other countries.",
+      "footerLinks" : {
+         "links" : [
+            {
+               "href" : "http://www.xerox.com/jobs/enus.html",
+               "label" : "Careers"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/contact-us/enus.html",
+               "label" : "Contact Us"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/enus.html",
+               "label" : "About Xerox"
+            },
+            {
+               "href" : "http://news.xerox.com/pr/xerox/investor-relations.aspx",
+               "label" : "Investors"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/privacy-policy/enus.html",
+               "label" : "Privacy"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/website-terms-of-use/enus.html",
+               "label" : "Legal"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/privacy-policy/enus.html#adchoices",
+               "label" : "Privacy Choices"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/site-map/enus.html",
+               "label" : "Site Map"
+            }
+         ]
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home"
+      }
+   },
+   "header" : {
+      "footerLinks" : [
+         {
+            "href" : "#",
+            "label" : "Contact"
+         },
+         {
+            "href" : "#",
+            "label" : "Chat"
+         },
+         {
+            "href" : "#",
+            "label" : "Where to Buy"
+         },
+         {
+            "href" : "#",
+            "label" : "Careers"
+         },
+         {
+            "href" : "#",
+            "label" : "Partners"
+         },
+         {
+            "href" : "#",
+            "label" : "Case Studies"
+         }
+      ],
+      "primaryNav" : {
+         "about" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/frlb.html",
+               "id" : "&lid=cell2-title-a propos de xerox",
+               "label" : "A propos de Xerox",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/frlb.html",
+                     "id" : "&lid=cell2-xerox en un coup d_œil",
+                     "label" : "Xerox en un coup d'œil",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://news.xerox.com/investors",
+                     "id" : "&lid=cell2-investisseurs",
+                     "label" : "Investisseurs",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/frlb.html",
+                     "id" : "&lid=cell2-citoyenneté internationale",
+                     "label" : "Citoyenneté internationale",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/frlb.html",
+                     "id" : "&lid=cell2-conditions ambiantes et développement durable",
+                     "label" : "Conditions ambiantes et développement durable",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/innovation/frlb.html",
+                     "id" : "&lid=cell2-laboratoire d_innovation",
+                     "label" : "Laboratoire d'innovation",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/frlb.html",
+               "id" : "&lid=cell2-title-contact",
+               "label" : "Contact",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/frlb.html#tech_support",
+                     "id" : "&lid=cell2-contact-support technique",
+                     "label" : "Support technique",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/frlb.html#products",
+                     "id" : "&lid=cell2-contact-produits et logiciels",
+                     "label" : "Produits et logiciels",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/frlb.html#supplies",
+                     "id" : "&lid=cell2-contact-consommables",
+                     "label" : "Consommables",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/frlb.html#services",
+                     "id" : "&lid=cell2-contact-département commercial",
+                     "label" : "Département commercial",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/frlb.html#corporate",
+                     "id" : "&lid=cell2-contact-xerox corporation",
+                     "label" : "Xerox Corporation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/perl-bin/world_contact.pl#0",
+                     "id" : "&lid=cell2-contact-couverture mondiale",
+                     "label" : "Couverture mondiale",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/frlb.html",
+               "id" : "&lid=cell2-title-où acheter",
+               "label" : "Où acheter",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/frlb.html#office",
+                     "id" : "&lid=cell2-where-to-buy-produits bureautiques",
+                     "label" : "Produits Bureautiques",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/frlb.html#production",
+                     "id" : "&lid=cell2-where-to-buy-equipements de production",
+                     "label" : "Equipements de production",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/frlb.html#scanners",
+                     "id" : "&lid=cell2-where-to-buy-scanners",
+                     "label" : "Scanners",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/frlb.html#supplies",
+                     "id" : "&lid=cell2-where-to-buy-consommables",
+                     "label" : "Consommables",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/frlb.html#services",
+                     "id" : "&lid=cell2-where-to-buy-département commercial",
+                     "label" : "Département commercial",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "A propos de Xerox"
+         },
+         "products" : {
+            "col1" : {
+               "href" : "http://dev.office.xerox.com/index/frlb.html",
+               "id" : "&lid=hdr-products-title-office solutions",
+               "label" : "Solutions pour bureau",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/printers/frlb.html",
+                     "id" : "&lid=cell2-xog-imprimantes de bureau",
+                     "label" : "Imprimantes de bureau",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/multifunction-printer/frlb.html",
+                     "id" : "&lid=cell2-xog-multifonctions",
+                     "label" : "Multifonctions",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.xeroxscanners.com/en/en/",
+                     "id" : "&lid=hdr-products-scanners",
+                     "label" : "Scanners",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/software-solutions/frlb.html",
+                     "id" : "&lid=hdr-products-office software",
+                     "label" : "Logiciels de bureau",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/digital-printing/frlb.html",
+               "id" : "&lid=hdr-products-title-graphic communications",
+               "label" : "Communications graphiques",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/digital-press/frlb.html",
+                     "id" : "&lid=cell2-psg-imprimantes de production",
+                     "label" : "Imprimantes de production",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/continuous-feed-printer/frlb.html",
+                     "id" : "&lid=cell2-psg-imprimantes en continu",
+                     "label" : "Imprimantes en continu",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/wide-format-printer/frlb.html",
+                     "id" : "&lid=cell2-psg-imprimantes grand format",
+                     "label" : "Imprimantes grand format",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/workflow/frlb.html",
+                     "id" : "&lid=hdr-products-psg-logiciel workflow",
+                     "label" : "Logiciel Workflow",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.office.xerox.com/digital-printing-equipment/frlb.html",
+               "id" : "&lid=hdr-products-title-additional resources",
+               "label" : "Ressources supplémentaires",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/product-locator/frlb.html",
+                     "id" : "&lid=hdr-products-product finder",
+                     "label" : "Recherche de produit",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/small-business/frlb.html",
+                     "id" : "&lid=hdr-products-small business resource center",
+                     "label" : "Solutions pour petites entreprises",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/frlb.html",
+                     "id" : "&lid=hdr-products-toner and ink",
+                     "label" : "Toner et encre",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/partner-programs/frlb.html",
+                     "id" : "&lid=hdr-products-become a partner",
+                     "label" : "Devenir partenaire",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Produits"
+         },
+         "services" : {
+            "col1" : {
+               "href" : "http://dev.services.xerox.com/document-management-solutions/frlb.html",
+               "id" : "&lid=cell2-title-gestion des documents",
+               "label" : "Gestion des documents",
+               "links" : [
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-managed-print-services/frlb.html",
+                     "id" : "&lid=cell2-service gestion d_impression",
+                     "label" : "Service Gestion d'impression",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/print-room/frlb.html",
+                     "id" : "&lid=cell2-services de gestion centralisée des impressions",
+                     "label" : "Services De Gestion Centralisée Des Impressions",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.services.xerox.com/business-process-outsourcing/frlb.html",
+               "id" : "&lid=cell2-title-processus métier",
+               "label" : "Processus métier",
+               "links" : [
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-marketing-services/frlb.html",
+                     "id" : "&lid=cell2-communication et marketing",
+                     "label" : "Communication et marketing",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/procedure-gestion-documents/frlb.html",
+                     "id" : "&lid=cell2-dématérialisation et automatisation des processus",
+                     "label" : "Dématérialisation et automatisation des processus",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/customer-service/frlb.html",
+                     "id" : "&lid=cell2-solutions pour le service client",
+                     "label" : "Solutions pour le service client",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.services.xerox.com/industry-services/frlb.html",
+               "id" : "&lid=cell2-title-les secteurs d’activité pour lesquels nous avons une réponse",
+               "label" : "Les secteurs d’activité pour lesquels nous avons une réponse",
+               "links" : [
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/government/frlb.html",
+                     "id" : "&lid=cell2-administration",
+                     "label" : "Administration",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/retail/frlb.html",
+                     "id" : "&lid=cell2-grande distribution",
+                     "label" : "Grande distribution",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/high-tech-and-communications/frlb.html",
+                     "id" : "&lid=cell2-hautes technologies et communications",
+                     "label" : "Hautes technologies et communications",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/financial-services/frlb.html",
+                     "id" : "&lid=cell2-services financiers",
+                     "label" : "Services financiers",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Services"
+         },
+         "supplies" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/frlb.html",
+               "id" : "&lid=cell2-title-fournitures",
+               "label" : "Fournitures",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/frlb.html",
+                     "id" : "&lid=cell2-fournitures",
+                     "label" : "Fournitures",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/recycling/frlb.html",
+                     "id" : "&lid=cell2-programmes de recyclage",
+                     "label" : "Programmes de recyclage",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Fournitures"
+         },
+         "support" : {
+            "col1" : {
+               "href" : "http://www.support.xerox.com/support/frlb.html",
+               "id" : "&lid=cell2-title-assistance _ pilotes",
+               "label" : "Assistance & Pilotes",
+               "links" : [
+                  {
+                     "href" : "http://www.office.xerox.com/cgi-bin/dmoresloc.pl?XOGlang=fr_LB&reseller_type=asp",
+                     "id" : "&lid=cell2-trouver des prestataires de services dans votre région",
+                     "label" : "Trouver des prestataires de services dans votre région",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/support-faq/frlb.html",
+                     "id" : "&lid=cell2-foire aux questions",
+                     "label" : "Foire aux questions",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/customer-training/frlb.html",
+                     "id" : "&lid=cell2-services de conseil et de formation",
+                     "label" : "Services de conseil et de formation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/information-security/frlb.html",
+                     "id" : "&lid=cell2-informations sur la sécurité",
+                     "label" : "Informations sur la sécurité",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Assistance & Pilotes"
+         }
+      },
+      "secondaryNav" : {
+         "links" : [
+            {
+               "href" : "#",
+               "id" : "xrx_bnrv4_header_country_selector",
+               "label" : "United States"
+            },
+            {
+               "href" : "#",
+               "label" : "Sign In"
+            }
+         ]
+      },
+      "tertiaryNav" : {
+         "contactUs" : "Contact Us",
+         "share" : "Share"
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home",
+         "menuBtnTitle" : "Open/Close menu",
+         "searchBtnTitle" : "Rechercher",
+         "searchPlaceholder" : "Rechercher"
+      }
+   }
+}

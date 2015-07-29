@@ -1,0 +1,476 @@
+{
+   "footer" : {
+      "copyrightStatement" : "&copy; 2015 Xerox Corporation. All rights reserved. Xerox&reg; and Xerox and Design&reg; are trademarks of Xerox Corporation in the United States and/or other countries.",
+      "footerLinks" : {
+         "links" : [
+            {
+               "href" : "http://www.xerox.com/jobs/enus.html",
+               "label" : "Careers"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/contact-us/enus.html",
+               "label" : "Contact Us"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/enus.html",
+               "label" : "About Xerox"
+            },
+            {
+               "href" : "http://news.xerox.com/pr/xerox/investor-relations.aspx",
+               "label" : "Investors"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/privacy-policy/enus.html",
+               "label" : "Privacy"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/website-terms-of-use/enus.html",
+               "label" : "Legal"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/privacy-policy/enus.html#adchoices",
+               "label" : "Privacy Choices"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/site-map/enus.html",
+               "label" : "Site Map"
+            }
+         ]
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home"
+      }
+   },
+   "header" : {
+      "footerLinks" : [
+         {
+            "href" : "#",
+            "label" : "Contact"
+         },
+         {
+            "href" : "#",
+            "label" : "Chat"
+         },
+         {
+            "href" : "#",
+            "label" : "Where to Buy"
+         },
+         {
+            "href" : "#",
+            "label" : "Careers"
+         },
+         {
+            "href" : "#",
+            "label" : "Partners"
+         },
+         {
+            "href" : "#",
+            "label" : "Case Studies"
+         }
+      ],
+      "primaryNav" : {
+         "about" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/esco.html",
+               "id" : "&lid=cell2-title-acerca de xerox",
+               "label" : "Acerca de Xerox",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/esco.html",
+                     "id" : "&lid=cell2-xerox en un vistazo",
+                     "label" : "Xerox en un vistazo",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://news.xerox.com/investors",
+                     "id" : "&lid=cell2-inversionistas",
+                     "label" : "Inversionistas",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/news/esco.html",
+                     "id" : "&lid=cell2-prensa",
+                     "label" : "Prensa",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/esco.html",
+                     "id" : "&lid=cell2-ciudadanía global",
+                     "label" : "Ciudadanía Global",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/esco.html",
+                     "id" : "&lid=cell2-medio ambiente y sostenibilidad",
+                     "label" : "Medio ambiente y sostenibilidad",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.realbusinesslive.xerox.com/events/index/esco.html",
+                     "id" : "&lid=cell2-eventos_ convenciones y seminarios web",
+                     "label" : "Eventos, Convenciones y Seminarios web",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/innovation/esco.html",
+                     "id" : "&lid=cell2-innovación",
+                     "label" : "Innovación",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/esco.html",
+               "id" : "&lid=cell2-title-contáctenos",
+               "label" : "Contáctenos",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/esco.html#tech_support",
+                     "id" : "&lid=cell2-contact-soporte técnico",
+                     "label" : "Soporte técnico",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/esco.html#products",
+                     "id" : "&lid=cell2-contact-equipos y software",
+                     "label" : "Equipos y software",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/esco.html#supplies",
+                     "id" : "&lid=cell2-contact-suministros y papeles xerox",
+                     "label" : "Suministros y Papeles Xerox",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/esco.html#services",
+                     "id" : "&lid=cell2-contact-servicios para empresas",
+                     "label" : "Servicios para empresas",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/esco.html#corporate",
+                     "id" : "&lid=cell2-contact-xerox corporation",
+                     "label" : "Xerox Corporation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/perl-bin/world_contact.pl#0",
+                     "id" : "&lid=cell2-contact-ubicaciones en todo el mundo",
+                     "label" : "Ubicaciones en todo el mundo",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/esco.html",
+               "id" : "&lid=cell2-title-puntos de venta",
+               "label" : "Puntos de venta",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/esco.html#office",
+                     "id" : "&lid=cell2-where-to-buy-productos xerox oficina",
+                     "label" : "Productos Xerox Oficina",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/esco.html#production",
+                     "id" : "&lid=cell2-where-to-buy-equipos de producción",
+                     "label" : "Equipos de Producción",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/esco.html#scanners",
+                     "id" : "&lid=cell2-where-to-buy-scanners",
+                     "label" : "Scanners",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/esco.html#supplies",
+                     "id" : "&lid=cell2-where-to-buy-suministros y papeles xerox",
+                     "label" : "Suministros y Papeles Xerox",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/esco.html#services",
+                     "id" : "&lid=cell2-where-to-buy-servicios para empresas",
+                     "label" : "Servicios para empresas",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Acerca de Xerox"
+         },
+         "products" : {
+            "col1" : {
+               "href" : "http://dev.office.xerox.com/index/esco.html",
+               "id" : "&lid=hdr-products-title-office solutions",
+               "label" : "Soluciones para oficina",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/printers/esco.html",
+                     "id" : "&lid=cell2-xog-impresoras de oficina",
+                     "label" : "Impresoras de oficina",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/multifunction-printer/esco.html",
+                     "id" : "&lid=cell2-xog-multifunción",
+                     "label" : "Multifunción",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.xeroxscanners.com/en/en/",
+                     "id" : "&lid=hdr-products-scanners",
+                     "label" : "Escáneres",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/software-solutions/esco.html",
+                     "id" : "&lid=hdr-products-office software",
+                     "label" : "Software de oficina",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/digital-printing/esco.html",
+               "id" : "&lid=hdr-products-title-graphic communications",
+               "label" : "Comunicación gráfica",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/digital-press/esco.html",
+                     "id" : "&lid=cell2-psg-impresoras de producción",
+                     "label" : "Impresoras de producción",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/continuous-feed-printer/esco.html",
+                     "id" : "&lid=cell2-psg-impresoras de alimentación continua",
+                     "label" : "Impresoras de alimentación continua",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/wide-format-printer/esco.html",
+                     "id" : "&lid=cell2-psg-impresoras de formato amplio",
+                     "label" : "Impresoras de formato amplio",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/workflow/esco.html",
+                     "id" : "&lid=hdr-products-psg-software de flujo de trabajo",
+                     "label" : "Software de flujo de trabajo",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.office.xerox.com/digital-printing-equipment/esco.html",
+               "id" : "&lid=hdr-products-title-additional resources",
+               "label" : "Recursos adicionales",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/product-locator/esco.html",
+                     "id" : "&lid=hdr-products-product finder",
+                     "label" : "Buscador de productos",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/small-business/esco.html",
+                     "id" : "&lid=hdr-products-small business resource center",
+                     "label" : "Soluciones para pequeñas empresas",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/esco.html",
+                     "id" : "&lid=hdr-products-toner and ink",
+                     "label" : "Toner y tinta",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/partner-programs/esco.html",
+                     "id" : "&lid=hdr-products-become a partner",
+                     "label" : "Conviértase en socio",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Productos"
+         },
+         "services" : {
+            "col1" : {
+               "href" : "http://dev.services.xerox.com/document-management-solutions/esco.html",
+               "id" : "&lid=cell2-title-administración de documentos",
+               "label" : "Administración de documentos",
+               "links" : [
+                  {
+                     "href" : "http://dev.services.xerox.com/print-room/esco.html",
+                     "id" : "&lid=cell2-servicios de impresión centralizada",
+                     "label" : "Servicios de Impresión centralizada",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-managed-print-services/esco.html",
+                     "id" : "&lid=cell2-servicios de impresión administrada",
+                     "label" : "Servicios de impresión administrada",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.services.xerox.com/business-process-outsourcing/esco.html",
+               "id" : "&lid=cell2-title-procesos comerciales",
+               "label" : "Procesos comerciales",
+               "links" : [
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-marketing-services/esco.html",
+                     "id" : "&lid=cell2-comunicación y marketing",
+                     "label" : "Comunicación y marketing",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/gestion-documental/esco.html",
+                     "id" : "&lid=cell2-servicios de procesamiento de transacción de documentación",
+                     "label" : "Servicios de procesamiento de transacción de documentación",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/customer-service/esco.html",
+                     "id" : "&lid=cell2-soluciones de atención al cliente",
+                     "label" : "Soluciones de atención al cliente",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/hr-outsourcing/esco.html",
+                     "id" : "&lid=cell2-tercerización de rh (outsourcing)",
+                     "label" : "Tercerización de RH (Outsourcing)",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.services.xerox.com/industry-services/esco.html",
+               "id" : "&lid=cell2-title-las industrias a las cuales servimos",
+               "label" : "Las industrias a las cuales servimos",
+               "links" : [
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/high-tech-and-communications/esco.html",
+                     "id" : "&lid=cell2-alta tecnología",
+                     "label" : "Alta tecnología",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/government/esco.html",
+                     "id" : "&lid=cell2-gobierno",
+                     "label" : "Gobierno",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/retail/esco.html",
+                     "id" : "&lid=cell2-productos para minoristas y consumidores",
+                     "label" : "Productos para minoristas y consumidores",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/financial-services/esco.html",
+                     "id" : "&lid=cell2-servicios financieros",
+                     "label" : "Servicios Financieros",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/transportation/esco.html",
+                     "id" : "&lid=cell2-transporte",
+                     "label" : "Transporte",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Servicios"
+         },
+         "supplies" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/esco.html",
+               "id" : "&lid=cell2-title-consumibles",
+               "label" : "Consumibles",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/esco.html",
+                     "id" : "&lid=cell2-consumibles",
+                     "label" : "Consumibles",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/recycling/esco.html",
+                     "id" : "&lid=cell2-programas de reciclado",
+                     "label" : "Programas de reciclado",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Consumibles"
+         },
+         "support" : {
+            "col1" : {
+               "href" : "http://www.support.xerox.com/support/esco.html",
+               "id" : "&lid=cell2-title-soporte y drivers",
+               "label" : "Soporte y drivers",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/support-faq/esco.html",
+                     "id" : "&lid=cell2-preguntas frecuentes",
+                     "label" : "Preguntas frecuentes",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/customer-training/esco.html",
+                     "id" : "&lid=cell2-servicios de capacitación y asesoramiento",
+                     "label" : "Servicios de capacitación y asesoramiento",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/information-security/esco.html",
+                     "id" : "&lid=cell2-información de seguridad",
+                     "label" : "Información de seguridad",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Soporte y drivers"
+         }
+      },
+      "secondaryNav" : {
+         "links" : [
+            {
+               "href" : "#",
+               "id" : "xrx_bnrv4_header_country_selector",
+               "label" : "United States"
+            },
+            {
+               "href" : "#",
+               "label" : "Sign In"
+            }
+         ]
+      },
+      "tertiaryNav" : {
+         "contactUs" : "Contact Us",
+         "share" : "Share"
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home",
+         "menuBtnTitle" : "Open/Close menu",
+         "searchBtnTitle" : "Búsqueda",
+         "searchPlaceholder" : "Búsqueda"
+      }
+   }
+}

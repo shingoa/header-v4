@@ -1,0 +1,514 @@
+{
+   "footer" : {
+      "copyrightStatement" : "&copy; 2015 Xerox Corporation. All rights reserved. Xerox&reg; and Xerox and Design&reg; are trademarks of Xerox Corporation in the United States and/or other countries.",
+      "footerLinks" : {
+         "links" : [
+            {
+               "href" : "http://www.xerox.com/jobs/enus.html",
+               "label" : "Careers"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/contact-us/enus.html",
+               "label" : "Contact Us"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/enus.html",
+               "label" : "About Xerox"
+            },
+            {
+               "href" : "http://news.xerox.com/pr/xerox/investor-relations.aspx",
+               "label" : "Investors"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/privacy-policy/enus.html",
+               "label" : "Privacy"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/website-terms-of-use/enus.html",
+               "label" : "Legal"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/privacy-policy/enus.html#adchoices",
+               "label" : "Privacy Choices"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/site-map/enus.html",
+               "label" : "Site Map"
+            }
+         ]
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home"
+      }
+   },
+   "header" : {
+      "footerLinks" : [
+         {
+            "href" : "#",
+            "label" : "Contact"
+         },
+         {
+            "href" : "#",
+            "label" : "Chat"
+         },
+         {
+            "href" : "#",
+            "label" : "Where to Buy"
+         },
+         {
+            "href" : "#",
+            "label" : "Careers"
+         },
+         {
+            "href" : "#",
+            "label" : "Partners"
+         },
+         {
+            "href" : "#",
+            "label" : "Case Studies"
+         }
+      ],
+      "primaryNav" : {
+         "about" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/fifi.html",
+               "id" : "&lid=cell2-title-yritysesittely",
+               "label" : "Yritysesittely",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/fifi.html",
+                     "id" : "&lid=cell2-xerox lyhyesti",
+                     "label" : "Xerox lyhyesti",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://news.xerox.com/investors",
+                     "id" : "&lid=cell2-sijoittajat",
+                     "label" : "Sijoittajat",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/news/fifi.html",
+                     "id" : "&lid=cell2-uutisia",
+                     "label" : "Uutisia",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/fifi.html",
+                     "id" : "&lid=cell2-maailmankansalaisuus",
+                     "label" : "Maailmankansalaisuus",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/fifi.html",
+                     "id" : "&lid=cell2-käyttöympäristö ja kestävä kehitys",
+                     "label" : "Käyttöympäristö ja kestävä kehitys",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.realbusinesslive.xerox.com/events/index/fifi.html",
+                     "id" : "&lid=cell2-tapahtumat_ messut ja webinaarit",
+                     "label" : "Tapahtumat, Messut ja Webinaarit",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/innovation/fifi.html",
+                     "id" : "&lid=cell2-innovaatioita",
+                     "label" : "Innovaatioita",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/fifi.html",
+               "id" : "&lid=cell2-title-ota yhteyttä",
+               "label" : "Ota yhteyttä",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/fifi.html#billing",
+                     "id" : "&lid=cell2-contact-laskutusta ja tilinhallintaa koskevat asiat",
+                     "label" : "Laskutusta ja tilinhallintaa koskevat asiat",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/fifi.html#tech_support",
+                     "id" : "&lid=cell2-contact-tekninen tuki",
+                     "label" : "Tekninen tuki",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/fifi.html#products",
+                     "id" : "&lid=cell2-contact-tuotteet ja ohjelmat",
+                     "label" : "Tuotteet ja ohjelmat",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/fifi.html#supplies",
+                     "id" : "&lid=cell2-contact-tarvikkeet",
+                     "label" : "Tarvikkeet",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/fifi.html#services",
+                     "id" : "&lid=cell2-contact-yrityspalvelut",
+                     "label" : "Yrityspalvelut",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/fifi.html#research",
+                     "id" : "&lid=cell2-contact-tutkimus ja innovaatiot",
+                     "label" : "Tutkimus ja innovaatiot",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/fifi.html#corporate",
+                     "id" : "&lid=cell2-contact-xerox corporation",
+                     "label" : "Xerox Corporation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/perl-bin/world_contact.pl#0",
+                     "id" : "&lid=cell2-contact-toimipaikkoja ympäri maailmaa",
+                     "label" : "Toimipaikkoja ympäri maailmaa",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/fifi.html",
+               "id" : "&lid=cell2-title-jälleenmyyjät",
+               "label" : "Jälleenmyyjät",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/fifi.html#office",
+                     "id" : "&lid=cell2-where-to-buy-office-tuotteet",
+                     "label" : "Office-tuotteet",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/fifi.html#production",
+                     "id" : "&lid=cell2-where-to-buy-tuotantolaitteet",
+                     "label" : "Tuotantolaitteet",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/fifi.html#scanners",
+                     "id" : "&lid=cell2-where-to-buy-skannerit",
+                     "label" : "Skannerit",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/fifi.html#supplies",
+                     "id" : "&lid=cell2-where-to-buy-tarvikkeet",
+                     "label" : "Tarvikkeet",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/fifi.html#services",
+                     "id" : "&lid=cell2-where-to-buy-yrityspalvelut",
+                     "label" : "Yrityspalvelut",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Yritysesittely"
+         },
+         "products" : {
+            "col1" : {
+               "href" : "http://dev.office.xerox.com/index/fifi.html",
+               "id" : "&lid=hdr-products-title-office solutions",
+               "label" : "Toimistoratkaisut",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/printers/fifi.html",
+                     "id" : "&lid=cell2-xog-toimistotulostimet",
+                     "label" : "Toimistotulostimet",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/multifunction-printer/fifi.html",
+                     "id" : "&lid=cell2-xog-monitoimilaitteet",
+                     "label" : "Monitoimilaitteet",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.xeroxscanners.com/en/en/",
+                     "id" : "&lid=hdr-products-scanners",
+                     "label" : "Skannerit",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/software-solutions/fifi.html",
+                     "id" : "&lid=hdr-products-office software",
+                     "label" : "Toimiston ohjelmistoja",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/digital-printing/fifi.html",
+               "id" : "&lid=hdr-products-title-graphic communications",
+               "label" : "Graafinen viestintä",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/digital-press/fifi.html",
+                     "id" : "&lid=cell2-psg-tuotantotulostimet",
+                     "label" : "Tuotantotulostimet",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/continuous-feed-printer/fifi.html",
+                     "id" : "&lid=cell2-psg-rullasyöttöiset tuotantojärjestelmät",
+                     "label" : "Rullasyöttöiset tuotantojärjestelmät",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/wide-format-printer/fifi.html",
+                     "id" : "&lid=cell2-psg-suuri koko",
+                     "label" : "Suuri koko",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/feeders-print-finishing/fifi.html",
+                     "id" : "&lid=hdr-products-psg-paperialustat ja viimeistely",
+                     "label" : "Paperialustat ja viimeistely",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/workflow/fifi.html",
+                     "id" : "&lid=hdr-products-psg-tyonkulun ohjelmisto",
+                     "label" : "Työnkulun ohjelmisto",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.office.xerox.com/digital-printing-equipment/fifi.html",
+               "id" : "&lid=hdr-products-title-additional resources",
+               "label" : "Lisäresurssit",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/product-locator/fifi.html",
+                     "id" : "&lid=hdr-products-product finder",
+                     "label" : "Tuotehaku",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/small-business/fifi.html",
+                     "id" : "&lid=hdr-products-small business resource center",
+                     "label" : "Pienyritysratkaisut",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/fifi.html",
+                     "id" : "&lid=hdr-products-toner and ink",
+                     "label" : "Värijauhetta ja mustetta",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/partner-programs/fifi.html",
+                     "id" : "&lid=hdr-products-become a partner",
+                     "label" : "Ryhdy partneriksi",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Tuotteet"
+         },
+         "services" : {
+            "col1" : {
+               "href" : "http://dev.services.xerox.com/document-management-solutions/fifi.html",
+               "id" : "&lid=cell2-title-asiakirjan hallinta",
+               "label" : "Asiakirjan hallinta",
+               "links" : [
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-managed-print-services/fifi.html",
+                     "id" : "&lid=cell2-hallinnoidut tulostuspalvelut",
+                     "label" : "Hallinnoidut tulostuspalvelut",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/print-room/fifi.html",
+                     "id" : "&lid=cell2-keskitetyt painopalvelut",
+                     "label" : "Keskitetyt Painopalvelut",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.services.xerox.com/business-process-outsourcing/fifi.html",
+               "id" : "&lid=cell2-title-yritysprosessit",
+               "label" : "Yritysprosessit",
+               "links" : [
+                  {
+                     "href" : "http://dev.services.xerox.com/back-office-services/fifi.html",
+                     "id" : "&lid=cell2-back office -transaktioiden käsittely",
+                     "label" : "Back Office -transaktioiden käsittely",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/finance-and-accounting/fifi.html",
+                     "id" : "&lid=cell2-rahoitus ja laskenta",
+                     "label" : "Rahoitus ja laskenta",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-marketing-services/fifi.html",
+                     "id" : "&lid=cell2-tiedotus ja markkinointi",
+                     "label" : "Tiedotus ja markkinointi",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.services.xerox.com/industry-services/fifi.html",
+               "id" : "&lid=cell2-title-aloja_ joita palvelemme",
+               "label" : "Aloja, joita palvelemme",
+               "links" : [
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/high-tech-and-communications/fifi.html",
+                     "id" : "&lid=cell2-huipputeknologia ja viestintä",
+                     "label" : "Huipputeknologia ja viestintä",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/government/fifi.html",
+                     "id" : "&lid=cell2-julkinen hallinto",
+                     "label" : "Julkinen hallinto",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/transport-solutions/fifi.html",
+                     "id" : "&lid=cell2-kuljetusala",
+                     "label" : "Kuljetusala",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/financial-services/fifi.html",
+                     "id" : "&lid=cell2-rahoituspalvelut",
+                     "label" : "Rahoituspalvelut",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/retail/fifi.html",
+                     "id" : "&lid=cell2-vähittäismyynti- ja kuluttajatuotteet",
+                     "label" : "Vähittäismyynti- ja kuluttajatuotteet",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Palvelut"
+         },
+         "supplies" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/fifi.html",
+               "id" : "&lid=cell2-title-tarvikkeet",
+               "label" : "Tarvikkeet",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/fifi.html",
+                     "id" : "&lid=cell2-osta värijauhetta_ mustetta ja lisävarusteita",
+                     "label" : "Osta värijauhetta, mustetta ja lisävarusteita",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/paper-marketing/fifi.html",
+                     "id" : "&lid=cell2-paperi ja muut tulostusmateriaalit",
+                     "label" : "Paperi ja muut tulostusmateriaalit",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/recycling/fifi.html",
+                     "id" : "&lid=cell2-kierrätysohjelmat",
+                     "label" : "Kierrätysohjelmat",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/compatible-cartridges/fifi.html",
+                     "id" : "&lid=cell2-xerox väriaineet muille kuin xerox-tulostimille",
+                     "label" : "Xerox väriaineet muille kuin Xerox-tulostimille",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/account-management/consumables/fifi.html",
+               "id" : "&lid=cell2-title-contract-sopimustarvikkeet",
+               "label" : "Sopimustarvikkeet",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/account-management/consumables/fifi.html",
+                     "id" : "&lid=cell2-contract-kirjaudu sisään ja tilaa sopimukseesi kuuluvaa värijauhetta ja mustetta",
+                     "label" : "Kirjaudu sisään ja tilaa sopimukseesi kuuluvaa värijauhetta ja mustetta",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Tarvikkeet"
+         },
+         "support" : {
+            "col1" : {
+               "href" : "http://www.support.xerox.com/support/fifi.html",
+               "id" : "&lid=cell2-title-tuki _ ajurit",
+               "label" : "Tuki & ajurit",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/support-faq/fifi.html",
+                     "id" : "&lid=cell2-usein esitettyjä kysymyksiä",
+                     "label" : "Usein esitettyjä kysymyksiä",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/customer-training/fifi.html",
+                     "id" : "&lid=cell2-konsultointi- ja koulutuspalvelut",
+                     "label" : "Konsultointi- ja koulutuspalvelut",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/information-security/fifi.html",
+                     "id" : "&lid=cell2-turvallisuusasiaa",
+                     "label" : "Turvallisuusasiaa",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Tuki & ajurit"
+         }
+      },
+      "secondaryNav" : {
+         "links" : [
+            {
+               "href" : "#",
+               "id" : "xrx_bnrv4_header_country_selector",
+               "label" : "United States"
+            },
+            {
+               "href" : "#",
+               "label" : "Sign In"
+            }
+         ]
+      },
+      "tertiaryNav" : {
+         "contactUs" : "Contact Us",
+         "share" : "Share"
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home",
+         "menuBtnTitle" : "Open/Close menu",
+         "searchBtnTitle" : "Haku",
+         "searchPlaceholder" : "Haku"
+      }
+   }
+}

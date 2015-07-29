@@ -9,7 +9,7 @@ var requireDir = require('require-dir');
 
 gulp.task('compile-html', ['download-locales'], function()
 {
-	fs.readFile('./data/locales.json', function (err, data)
+	fs.readFile('./data/locales.json', { "encoding" : "utf8" }, function (err, data)
 	{
 		if (!err)
 		{
@@ -19,9 +19,9 @@ gulp.task('compile-html', ['download-locales'], function()
 			{
 				if (locale.type != "redirect")
 				{
-					var localeCode = locale.locale;
+					var localeCodeShort = locale['locale-short'];
 
-					fs.readFile('./data/config.' + localeCode + '.json', function (err, data)
+					fs.readFile('./data/config.' + localeCodeShort + '.json', { "encoding" : "utf8" }, function (err, data)
 					{
 						if (!err)
 						{
@@ -32,7 +32,7 @@ gulp.task('compile-html', ['download-locales'], function()
 								gulp.src(['./templates/parts/header.mustache', './templates/parts/footer.mustache'])
 									.pipe(mustache(templateData))
 									.pipe(rename({
-										'suffix' : '-' + localeCode,
+										'suffix' : '.' + localeCodeShort,
 										'extname' : '.html'
 									}))
 									.pipe(gulp.dest('./compiled/parts'));

@@ -1,0 +1,532 @@
+{
+   "footer" : {
+      "copyrightStatement" : "&copy; 2015 Xerox Corporation. All rights reserved. Xerox&reg; and Xerox and Design&reg; are trademarks of Xerox Corporation in the United States and/or other countries.",
+      "footerLinks" : {
+         "links" : [
+            {
+               "href" : "http://www.xerox.com/jobs/enus.html",
+               "label" : "Careers"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/contact-us/enus.html",
+               "label" : "Contact Us"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/enus.html",
+               "label" : "About Xerox"
+            },
+            {
+               "href" : "http://news.xerox.com/pr/xerox/investor-relations.aspx",
+               "label" : "Investors"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/privacy-policy/enus.html",
+               "label" : "Privacy"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/website-terms-of-use/enus.html",
+               "label" : "Legal"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/privacy-policy/enus.html#adchoices",
+               "label" : "Privacy Choices"
+            },
+            {
+               "href" : "http://www.xerox.com/about-xerox/site-map/enus.html",
+               "label" : "Site Map"
+            }
+         ]
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home"
+      }
+   },
+   "header" : {
+      "footerLinks" : [
+         {
+            "href" : "#",
+            "label" : "Contact"
+         },
+         {
+            "href" : "#",
+            "label" : "Chat"
+         },
+         {
+            "href" : "#",
+            "label" : "Where to Buy"
+         },
+         {
+            "href" : "#",
+            "label" : "Careers"
+         },
+         {
+            "href" : "#",
+            "label" : "Partners"
+         },
+         {
+            "href" : "#",
+            "label" : "Case Studies"
+         }
+      ],
+      "primaryNav" : {
+         "about" : {
+            "col1" : {
+               "href" : "http://dev.xerox.nl/about-xerox/nlnl.html",
+               "id" : "&lid=cell2-title-over xerox",
+               "label" : "Over Xerox",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.nl/about-xerox/company-facts/nlnl.html",
+                     "id" : "&lid=cell2-xerox in vogelvlucht",
+                     "label" : "Xerox in vogelvlucht",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://news.xerox.com/investors",
+                     "id" : "&lid=cell2-investeerders",
+                     "label" : "Investeerders",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://nieuws.xerox.nl/",
+                     "id" : "&lid=cell2-nieuws",
+                     "label" : "Nieuws",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/about-xerox/citizenship/nlnl.html",
+                     "id" : "&lid=cell2-global citizenship (duurzaamheid en mvo)",
+                     "label" : "Global Citizenship (duurzaamheid en MVO)",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/about-xerox/environment/nlnl.html",
+                     "id" : "&lid=cell2-omgevingscondities en duurzaamheid",
+                     "label" : "Omgevingscondities en Duurzaamheid",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.realbusinesslive.xerox.com/events/index/nlnl.html",
+                     "id" : "&lid=cell2-evenementen_ beurzen en webinars",
+                     "label" : "Evenementen, Beurzen en Webinars",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/innovation/nlnl.html",
+                     "id" : "&lid=cell2-innovatie",
+                     "label" : "Innovatie",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.xerox.nl/about-xerox/contact-us/nlnl.html",
+               "id" : "&lid=cell2-title-contact",
+               "label" : "Contact",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.nl/about-xerox/contact-us/nlnl.html#billing",
+                     "id" : "&lid=cell2-contact-ondersteuning voor facturatie en accountadministratie",
+                     "label" : "Ondersteuning voor facturatie en accountadministratie",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/about-xerox/contact-us/nlnl.html#tech_support",
+                     "id" : "&lid=cell2-contact-technische ondersteuning",
+                     "label" : "Technische ondersteuning",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/about-xerox/contact-us/nlnl.html#products",
+                     "id" : "&lid=cell2-contact-producten en software",
+                     "label" : "Producten en software",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/about-xerox/contact-us/nlnl.html#supplies",
+                     "id" : "&lid=cell2-contact-verbruiksartikelen",
+                     "label" : "Verbruiksartikelen",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/about-xerox/contact-us/nlnl.html#services",
+                     "id" : "&lid=cell2-contact-bedrijfsservices",
+                     "label" : "Bedrijfsservices",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/about-xerox/contact-us/nlnl.html#research",
+                     "id" : "&lid=cell2-contact-onderzoek en innovatie",
+                     "label" : "Onderzoek en innovatie",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/about-xerox/contact-us/nlnl.html#corporate",
+                     "id" : "&lid=cell2-contact-xerox corporation",
+                     "label" : "Xerox Corporation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/perl-bin/world_contact.pl#0",
+                     "id" : "&lid=cell2-contact-locaties wereldwijd",
+                     "label" : "Locaties wereldwijd",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.xerox.nl/about-xerox/buy/nlnl.html",
+               "id" : "&lid=cell2-title-leveranciers",
+               "label" : "Leveranciers",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.nl/about-xerox/buy/nlnl.html#office",
+                     "id" : "&lid=cell2-where-to-buy-office-producten",
+                     "label" : "Office-Producten",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/about-xerox/buy/nlnl.html#production",
+                     "id" : "&lid=cell2-where-to-buy-productie-apparaten",
+                     "label" : "Productie-apparaten",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/about-xerox/buy/nlnl.html#scanners",
+                     "id" : "&lid=cell2-where-to-buy-scanners",
+                     "label" : "Scanners",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/about-xerox/buy/nlnl.html#supplies",
+                     "id" : "&lid=cell2-where-to-buy-verbruiksartikelen",
+                     "label" : "Verbruiksartikelen",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/about-xerox/buy/nlnl.html#services",
+                     "id" : "&lid=cell2-where-to-buy-bedrijfsservices",
+                     "label" : "Bedrijfsservices",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Over Xerox"
+         },
+         "products" : {
+            "col1" : {
+               "href" : "http://dev.xerox.nl/kantoor/index/nlnl.html",
+               "id" : "&lid=hdr-products-title-office solutions",
+               "label" : "Kantooroplossingen",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.nl/kantoor/digital-printing-equipment/printers/nlnl.html",
+                     "id" : "&lid=cell2-xog-kantoorprinters",
+                     "label" : "Kantoorprinters",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/kantoor/digital-printing-equipment/multifunctionele-printer/nlnl.html",
+                     "id" : "&lid=cell2-xog-multifunctionals",
+                     "label" : "Multifunctionals",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.xeroxscanners.com/en/en/",
+                     "id" : "&lid=hdr-products-scanners",
+                     "label" : "Scanners",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/kantoor/software-solutions/nlnl.html",
+                     "id" : "&lid=hdr-products-office software",
+                     "label" : "Kantoorsoftware",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.xerox.nl/digitaal-printen/nlnl.html",
+               "id" : "&lid=hdr-products-title-graphic communications",
+               "label" : "Grafische communicatie",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.nl/kantoor/digital-printing-equipment/digitale-drukpers-/nlnl.html",
+                     "id" : "&lid=cell2-psg-productieprinters",
+                     "label" : "Productieprinters",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/kantoor/digital-printing-equipment/constante-toevoer-printers/nlnl.html",
+                     "id" : "&lid=cell2-psg-rotatieve printers",
+                     "label" : "Rotatieve Printers",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/kantoor/digital-printing-equipment/grootformaat-printers-/nlnl.html",
+                     "id" : "&lid=cell2-psg-breedformaat",
+                     "label" : "Breedformaat",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/digitaal-printen/feeders-print-finishing/nlnl.html",
+                     "id" : "&lid=hdr-products-psg-afwerkopties en invoeropties",
+                     "label" : "Afwerkopties en invoeropties",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/digitaal-printen/workflow/nlnl.html",
+                     "id" : "&lid=hdr-products-psg-workflow-software",
+                     "label" : "Workflow-software",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.xerox.nl/kantoor/digital-printing-equipment/nlnl.html",
+               "id" : "&lid=hdr-products-title-additional resources",
+               "label" : "Aanvullende bronnen",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.nl/digitaal-printen/product-locator/nlnl.html",
+                     "id" : "&lid=hdr-products-product finder",
+                     "label" : "Producten zoeken",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/kantoor/small-business/nlnl.html",
+                     "id" : "&lid=hdr-products-small business resource center",
+                     "label" : "Oplossingen voor kleine bedrijven",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/printer-supplies/nlnl.html",
+                     "id" : "&lid=hdr-products-toner and ink",
+                     "label" : "Toner en inkt",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/about-xerox/partner-programs/nlnl.html",
+                     "id" : "&lid=hdr-products-become a partner",
+                     "label" : "Word een partner",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Producten"
+         },
+         "services" : {
+            "col1" : {
+               "href" : "http://dev.xerox.nl/services/document-management-solutions/nlnl.html",
+               "id" : "&lid=cell2-title-document management",
+               "label" : "Document management",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.nl/services/print-room/nlnl.html",
+                     "id" : "&lid=cell2-centralised print services",
+                     "label" : "Centralised Print Services",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/services/xerox-managed-print-services/nlnl.html",
+                     "id" : "&lid=cell2-services voor managed print services",
+                     "label" : "Services voor Managed Print Services",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.xerox.nl/services/business-process-outsourcing/nlnl.html",
+               "id" : "&lid=cell2-title-bedrijfsprocessen",
+               "label" : "Bedrijfsprocessen",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.nl/services/back-office-services/nlnl.html",
+                     "id" : "&lid=cell2-backoffice-transactieverwerking",
+                     "label" : "Backoffice-transactieverwerking",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/services/xerox-marketing-services/nlnl.html",
+                     "id" : "&lid=cell2-communicatie en marketing",
+                     "label" : "Communicatie en marketing",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/services/finance-and-accounting/nlnl.html",
+                     "id" : "&lid=cell2-financiën en accounting",
+                     "label" : "Financiën en accounting",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/services/customer-service/nlnl.html",
+                     "id" : "&lid=cell2-klantenzorgoplossingen",
+                     "label" : "Klantenzorgoplossingen",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/services/hr-outsourcing/nlnl.html",
+                     "id" : "&lid=cell2-outsourcing van hr",
+                     "label" : "Outsourcing van HR",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.xerox.nl/services/industry-services/nlnl.html",
+               "id" : "&lid=cell2-title-wij werken voor de volgende sectoren",
+               "label" : "Wij werken voor de volgende sectoren",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.nl/advisering/business-services-industry/retail/nlnl.html",
+                     "id" : "&lid=cell2-detailhandel- en consumentenproducten",
+                     "label" : "Detailhandel- en consumentenproducten",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/advisering/business-services-industry/financial-services/nlnl.html",
+                     "id" : "&lid=cell2-financiële diensten",
+                     "label" : "Financiële diensten",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/advisering/business-services-industry/high-tech-and-communications/nlnl.html",
+                     "id" : "&lid=cell2-high tech en communicatie",
+                     "label" : "High Tech en communicatie",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/advisering/business-services-industry/government/nlnl.html",
+                     "id" : "&lid=cell2-overheid",
+                     "label" : "Overheid",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/services/transport-solutions/nlnl.html",
+                     "id" : "&lid=cell2-transport",
+                     "label" : "Transport",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Services"
+         },
+         "supplies" : {
+            "col1" : {
+               "href" : "http://dev.xerox.nl/printer-supplies/nlnl.html",
+               "id" : "&lid=cell2-title-verbruiksartikelen",
+               "label" : "Verbruiksartikelen",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.nl/printer-supplies/nlnl.html",
+                     "id" : "&lid=cell2-koop toner_ inkt en accessoires",
+                     "label" : "Koop toner, inkt en accessoires",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/printer-supplies/paper-marketing/nlnl.html",
+                     "id" : "&lid=cell2-papier en andere afdrukmaterialen",
+                     "label" : "Papier en andere afdrukmaterialen",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/about-xerox/recycling/nlnl.html",
+                     "id" : "&lid=cell2-recycling programma_s",
+                     "label" : "Recycling programma's",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.accounts.xerox.com/loyalty-program/landing.jsf?&locale=nl_NL",
+                     "id" : "&lid=cell2-genuine xerox rewards",
+                     "label" : "Genuine Xerox Rewards",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/printer-supplies/compatible-cartridges/nlnl.html",
+                     "id" : "&lid=cell2-toner voor printers van derden",
+                     "label" : "Toner voor printers van derden",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.xerox.nl/about-xerox/account-management/consumables/nlnl.html",
+               "id" : "&lid=cell2-title-contract-contractverbruiksartikelen",
+               "label" : "Contractverbruiksartikelen",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.nl/about-xerox/account-management/consumables/nlnl.html",
+                     "id" : "&lid=cell2-contract-log in om toner en inkt te bestellen die zijn inbegrepen in uw contract",
+                     "label" : "Log in om toner en inkt te bestellen die zijn inbegrepen in uw contract",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Verbruiksartikelen"
+         },
+         "support" : {
+            "col1" : {
+               "href" : "http://www.support.xerox.com/support/nlnl.html",
+               "id" : "&lid=cell2-title-support _ drivers",
+               "label" : "Support & Drivers",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.nl/about-xerox/support-faq/nlnl.html",
+                     "id" : "&lid=cell2-veelgestelde vragen",
+                     "label" : "Veelgestelde vragen",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/about-xerox/customer-training/nlnl.html",
+                     "id" : "&lid=cell2-advies- en trainingsdiensten",
+                     "label" : "Advies- en trainingsdiensten",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.nl/information-security/nlnl.html",
+                     "id" : "&lid=cell2-informatie over veiligheid",
+                     "label" : "Informatie over veiligheid",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Support & Drivers"
+         }
+      },
+      "secondaryNav" : {
+         "links" : [
+            {
+               "href" : "#",
+               "id" : "xrx_bnrv4_header_country_selector",
+               "label" : "United States"
+            },
+            {
+               "href" : "#",
+               "label" : "Sign In"
+            }
+         ]
+      },
+      "tertiaryNav" : {
+         "contactUs" : "Contact Us",
+         "share" : "Share"
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home",
+         "menuBtnTitle" : "Open/Close menu",
+         "searchBtnTitle" : "Zoeken",
+         "searchPlaceholder" : "Zoeken"
+      }
+   }
+}
