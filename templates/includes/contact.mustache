@@ -1,10 +1,14 @@
-<li id="xrx_bnrv4_header_contact">
-	<input type="radio" name="xrx_bnrv4_header_menu" value="xrx_bnrv4_header_contactchk" id="xrx_bnrv4_header_contactchk" />
-	<label for="xrx_bnrv4_header_defaultchk" class="xrx_bnrv4_header_defaultlbl">{{contactUs}}</label>
-	<label for="xrx_bnrv4_header_contactchk">{{contactUs}}</label>
+{{#contactUs}}
+	<li id="xrx_bnrv4_header_contact">
+		<input type="radio" name="xrx_bnrv4_header_menu" value="xrx_bnrv4_header_contactchk" id="xrx_bnrv4_header_contactchk" />
+		<label for="xrx_bnrv4_header_defaultchk" class="xrx_bnrv4_header_defaultlbl">{{label}}</label>
+		<label for="xrx_bnrv4_header_contactchk">{{label}}</label>
 
-	<div class="xrx_bnrv4_header_flyout">
-		<p><strong>Contact</strong></p>
-		<p>Some contact stuff here</p>
-	</div>
-</li>
+		<div class="xrx_bnrv4_header_flyout">
+			<label for="xrx_bnrv4_header_defaultchk" class="xrx_bnrv4_header_defaultlbl">X</label>
+			<p>{{label}}</p>
+
+			{{> ./mustachePartials/list }}
+		</div>
+	</li>
+{{/contactUs}}

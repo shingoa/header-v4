@@ -10,7 +10,7 @@
 	position: absolute;
 	display: none;
 
-	li {
+	> li {
 		display: block;
 		border-bottom: 1px solid #e3e3e3;
 		padding: 10px 20px;
@@ -21,15 +21,16 @@
 		display: block;
 		top: 27px;
 		right: 80px;
+		z-index: 500;
 
-		li {
+		> li {
 			@include xrx_bnrv4_list_dividers;
 
 			display: inline-block;
 			padding: 0;
 			border-bottom: none;
 
-			.xrx_bnrv4_header_defaultlbl {
+			> .xrx_bnrv4_header_defaultlbl {
 				display: none;
 			}
 
@@ -54,11 +55,46 @@
 			.xrx_bnrv4_header_flyout {
 				display: none;
 				position: absolute;
-				left: 0;
-				top: 30px;
+				left: -10px;
+				top: -10px;
+				right: 0;
 				border: 1px solid #e3e3e3;
-				padding: 20px;
-				max-width: 200px;
+				padding: 10px;
+				z-index: 1000;
+
+				> .xrx_bnrv4_header_defaultlbl {
+					position: absolute;
+					top: 10px;
+					right: 10px;
+				}
+
+				ul {
+					@include xrx_bnrv4_resetlist;
+
+					> li {
+						display: block;
+						border-bottom: 1px solid #e3e3e3;
+						font-weight: bold;
+
+						> a,
+						> label {
+							display: block;
+							cursor: pointer;
+							padding: 10px 0px;
+
+							&::after {
+								content: " >";
+								color: $red;
+								font-size: 115%;
+								margin-left: 10px;
+							}
+						}
+
+						&:last-child {
+							border-bottom: none;
+						}
+					}
+				}
 			}
 		}
 	}

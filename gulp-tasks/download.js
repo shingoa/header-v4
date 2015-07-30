@@ -42,6 +42,9 @@ gulp.task('download-configs', ['download-locales'], function()
 
 	if (downloaded == 0)
 	{
+		// This may seem weird but without it the download task stalls in the case that it doesn't need
+		// to download any updated files.
+		// I'd rather that didn't happen
 		merged.add(
 			gulp.src('./data/config.*.json')
 		);
