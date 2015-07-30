@@ -1,39 +1,42 @@
 {
    "footer" : {
-      "copyrightStatement" : "&copy; 2015 Xerox Corporation. All rights reserved. Xerox&reg; and Xerox and Design&reg; are trademarks of Xerox Corporation in the United States and/or other countries.",
+      "copyrightStatement" : "© 2015 Xerox Corporation. כל הזכויות שמורות. Xerox®‎‏ ו-Xerox and Design®‎‏ הם סימני מסחר של Xerox Corporation בארה\"ב ו/או במדינות נוספות.",
       "footerLinks" : {
          "links" : [
             {
-               "href" : "http://www.xerox.com/jobs/enus.html",
-               "label" : "Careers"
+               "class" : "xrx_hide_mobile first",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/heil.html",
+               "id" : "&lid=ftr-contact us",
+               "label" : "צור איתנו קשר",
+               "target" : "_self"
             },
             {
-               "href" : "http://www.xerox.com/about-xerox/contact-us/enus.html",
-               "label" : "Contact Us"
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/heil.html",
+               "id" : "&lid=ftr-about xerox",
+               "label" : "אודות Xerox",
+               "target" : "_self"
             },
             {
-               "href" : "http://www.xerox.com/about-xerox/enus.html",
-               "label" : "About Xerox"
+               "class" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/privacy-policy/heil.html",
+               "id" : "&lid=ftr-privacy",
+               "label" : "פרטיות",
+               "target" : "_self"
             },
             {
-               "href" : "http://news.xerox.com/pr/xerox/investor-relations.aspx",
-               "label" : "Investors"
+               "class" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/website-terms-of-use/heil.html",
+               "id" : "&lid=ftr-legal",
+               "label" : "Legal",
+               "target" : "_self"
             },
             {
-               "href" : "http://www.xerox.com/about-xerox/privacy-policy/enus.html",
-               "label" : "Privacy"
-            },
-            {
-               "href" : "http://www.xerox.com/about-xerox/website-terms-of-use/enus.html",
-               "label" : "Legal"
-            },
-            {
-               "href" : "http://www.xerox.com/about-xerox/privacy-policy/enus.html#adchoices",
-               "label" : "Privacy Choices"
-            },
-            {
-               "href" : "http://www.xerox.com/about-xerox/site-map/enus.html",
-               "label" : "Site Map"
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/site-map/heil.html",
+               "id" : "&lid=ftr-site map",
+               "label" : "מפת האתר",
+               "target" : "_self"
             }
          ]
       },
@@ -72,42 +75,42 @@
          "about" : {
             "col1" : {
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/heil.html",
-               "id" : "&lid=cell2-title-אודות xerox",
+               "id" : "&lid=hdr-about-title-אודות xerox",
                "label" : "אודות Xerox",
                "links" : [
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/heil.html",
-                     "id" : "&lid=cell2-זירוקס במבט מהיר",
+                     "id" : "&lid=hdr-about-זירוקס במבט מהיר",
                      "label" : "זירוקס במבט מהיר",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://news.xerox.com/investors",
-                     "id" : "&lid=cell2-משקיעים",
+                     "id" : "&lid=hdr-about-משקיעים",
                      "label" : "משקיעים",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/heil.html",
-                     "id" : "&lid=cell2-אזרחות גלובלית",
+                     "id" : "&lid=hdr-about-אזרחות גלובלית",
                      "label" : "אזרחות גלובלית",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/heil.html",
-                     "id" : "&lid=cell2-סביבה וקיימות",
+                     "id" : "&lid=hdr-about-סביבה וקיימות",
                      "label" : "סביבה וקיימות",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://www.realbusinesslive.xerox.com/events/index/heil.html",
-                     "id" : "&lid=cell2-תערוכות מקצועיות_ כנסים ואירועים",
+                     "id" : "&lid=hdr-about-תערוכות מקצועיות_ כנסים ואירועים",
                      "label" : "תערוכות מקצועיות, כנסים ואירועים",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/innovation/heil.html",
-                     "id" : "&lid=cell2-חדשנות",
+                     "id" : "&lid=hdr-about-חדשנות",
                      "label" : "חדשנות",
                      "target" : "_self"
                   }
@@ -116,42 +119,42 @@
             },
             "col2" : {
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/heil.html",
-               "id" : "&lid=cell2-title-צור קשר",
+               "id" : "&lid=hdr-about-contact-title-צור קשר",
                "label" : "צור קשר",
                "links" : [
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/heil.html#tech_support",
-                     "id" : "&lid=cell2-contact-תמיכה טכנית",
+                     "id" : "&lid=hdr-about-contact-תמיכה טכנית",
                      "label" : "תמיכה טכנית",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/heil.html#products",
-                     "id" : "&lid=cell2-contact-מוצרים ותוכנות",
+                     "id" : "&lid=hdr-about-contact-מוצרים ותוכנות",
                      "label" : "מוצרים ותוכנות",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/heil.html#supplies",
-                     "id" : "&lid=cell2-contact-חומרים מתכלים",
+                     "id" : "&lid=hdr-about-contact-חומרים מתכלים",
                      "label" : "חומרים מתכלים",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/heil.html#services",
-                     "id" : "&lid=cell2-contact-שירותים עסקיים",
+                     "id" : "&lid=hdr-about-contact-שירותים עסקיים",
                      "label" : "שירותים עסקיים",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/heil.html#corporate",
-                     "id" : "&lid=cell2-contact-xerox corporation",
+                     "id" : "&lid=hdr-about-contact-xerox corporation",
                      "label" : "Xerox Corporation",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/perl-bin/world_contact.pl#0",
-                     "id" : "&lid=cell2-contact-מיקומים ברחבי העולם",
+                     "id" : "&lid=hdr-about-contact-מיקומים ברחבי העולם",
                      "label" : "מיקומים ברחבי העולם",
                      "target" : "_self"
                   }
@@ -160,36 +163,36 @@
             },
             "col3" : {
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/heil.html",
-               "id" : "&lid=cell2-title-היכן ניתן לרכוש",
+               "id" : "&lid=hdr-about-wtb-title-היכן ניתן לרכוש",
                "label" : "היכן ניתן לרכוש",
                "links" : [
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/heil.html#office",
-                     "id" : "&lid=cell2-where-to-buy-מוצרים ופתרונות לעסקים",
+                     "id" : "&lid=hdr-about-wtb-מוצרים ופתרונות לעסקים",
                      "label" : "מוצרים ופתרונות לעסקים",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/heil.html#production",
-                     "id" : "&lid=cell2-where-to-buy-ציוד הפקה",
+                     "id" : "&lid=hdr-about-wtb-ציוד הפקה",
                      "label" : "ציוד הפקה",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/heil.html#scanners",
-                     "id" : "&lid=cell2-where-to-buy-סורקים",
+                     "id" : "&lid=hdr-about-wtb-סורקים",
                      "label" : "סורקים",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/heil.html#supplies",
-                     "id" : "&lid=cell2-where-to-buy-חומרים מתכלים",
+                     "id" : "&lid=hdr-about-wtb-חומרים מתכלים",
                      "label" : "חומרים מתכלים",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/heil.html#services",
-                     "id" : "&lid=cell2-where-to-buy-שירותים עסקיים",
+                     "id" : "&lid=hdr-about-wtb-שירותים עסקיים",
                      "label" : "שירותים עסקיים",
                      "target" : "_self"
                   }
@@ -201,30 +204,30 @@
          "products" : {
             "col1" : {
                "href" : "http://dev.office.xerox.com/index/heil.html",
-               "id" : "&lid=hdr-products-title-office solutions",
+               "id" : "&lid=hdr-products-ofc-title-office solutions",
                "label" : "פתרונות למשרד",
                "links" : [
                   {
                      "href" : "http://dev.office.xerox.com/digital-printing-equipment/printers/heil.html",
-                     "id" : "&lid=cell2-xog-מדפסות משרדיות",
+                     "id" : "&lid=hdr-products-ofc-מדפסות משרדיות",
                      "label" : "מדפסות משרדיות",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://dev.office.xerox.com/digital-printing-equipment/multifunction-printer/heil.html",
-                     "id" : "&lid=cell2-xog-מכשירים משולבים ומרכזי הדפסה",
+                     "id" : "&lid=hdr-products-ofc-מכשירים משולבים ומרכזי הדפסה",
                      "label" : "מכשירים משולבים ומרכזי הדפסה",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://www.xeroxscanners.com/en/en/",
-                     "id" : "&lid=hdr-products-scanners",
+                     "id" : "&lid=hdr-products-ofc-scanners",
                      "label" : "סורקים",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://dev.office.xerox.com/software-solutions/heil.html",
-                     "id" : "&lid=hdr-products-office software",
+                     "id" : "&lid=hdr-products-ofc-office software",
                      "label" : "פתרונות תוכנה",
                      "target" : "_self"
                   }
@@ -233,30 +236,30 @@
             },
             "col2" : {
                "href" : "http://psgdev.opbu.xerox.com/digital-printing/heil.html",
-               "id" : "&lid=hdr-products-title-graphic communications",
+               "id" : "&lid=hdr-products-gc-title-graphic communications",
                "label" : "תקשורת גרפית",
                "links" : [
                   {
                      "href" : "http://dev.office.xerox.com/digital-printing-equipment/digital-press/heil.html",
-                     "id" : "&lid=cell2-psg-מכונות דפוס",
+                     "id" : "&lid=hdr-products-gc-מכונות דפוס",
                      "label" : "מכונות דפוס",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://dev.office.xerox.com/digital-printing-equipment/continuous-feed-printer/heil.html",
-                     "id" : "&lid=cell2-psg-מכונות הדפסה בנייר רציף",
+                     "id" : "&lid=hdr-products-gc-מכונות הדפסה בנייר רציף",
                      "label" : "מכונות הדפסה בנייר רציף",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://dev.office.xerox.com/digital-printing-equipment/wide-format-printer/heil.html",
-                     "id" : "&lid=cell2-psg-מדפסות פורמט רחב",
+                     "id" : "&lid=hdr-products-gc-מדפסות פורמט רחב",
                      "label" : "מדפסות פורמט רחב",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/digital-printing/workflow/heil.html",
-                     "id" : "&lid=hdr-products-psg-_____ ______ _____",
+                     "id" : "&lid=hdr-products-gc-_____ ______ _____",
                      "label" : "תוכנת זרימות עבודה",
                      "target" : "_self"
                   }
@@ -264,54 +267,51 @@
                "target" : "_self"
             },
             "col3" : {
-               "href" : "http://dev.office.xerox.com/digital-printing-equipment/heil.html",
-               "id" : "&lid=hdr-products-title-additional resources",
                "label" : "משאבים נוספים",
                "links" : [
                   {
                      "href" : "http://psgdev.opbu.xerox.com/digital-printing/product-locator/heil.html",
-                     "id" : "&lid=hdr-products-product finder",
+                     "id" : "&lid=hdr-products-res-product finder",
                      "label" : "מחפש המוצרים",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://dev.office.xerox.com/small-business/heil.html",
-                     "id" : "&lid=hdr-products-small business resource center",
+                     "id" : "&lid=hdr-products-res-small business resource center",
                      "label" : "פתרונות לעסקים קטנים",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/printer-supplies/heil.html",
-                     "id" : "&lid=hdr-products-toner and ink",
+                     "id" : "&lid=hdr-products-res-toner and ink",
                      "label" : "טונר ודיו",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/partner-programs/heil.html",
-                     "id" : "&lid=hdr-products-become a partner",
+                     "id" : "&lid=hdr-products-res-become a partner",
                      "label" : "הצטרפות כשותף עסקי",
                      "target" : "_self"
                   }
-               ],
-               "target" : "_self"
+               ]
             },
             "label" : "מוצרים"
          },
          "services" : {
             "col1" : {
                "href" : "http://dev.services.xerox.com/document-management-solutions/heil.html",
-               "id" : "&lid=cell2-title-ניהול מסמכים",
+               "id" : "&lid=hdr-services-dso-title-ניהול מסמכים",
                "label" : "ניהול מסמכים",
                "links" : [
                   {
                      "href" : "http://dev.services.xerox.com/print-room/heil.html",
-                     "id" : "&lid=cell2-ריכוז שירותי הדפסה",
+                     "id" : "&lid=hdr-services-dso-ריכוז שירותי הדפסה",
                      "label" : "ריכוז שירותי הדפסה",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://dev.services.xerox.com/xerox-managed-print-services/heil.html",
-                     "id" : "&lid=cell2-שירותי הדפסה מנוהלים",
+                     "id" : "&lid=hdr-services-dso-שירותי הדפסה מנוהלים",
                      "label" : "שירותי הדפסה מנוהלים",
                      "target" : "_self"
                   }
@@ -320,24 +320,24 @@
             },
             "col2" : {
                "href" : "http://dev.services.xerox.com/business-process-outsourcing/heil.html",
-               "id" : "&lid=cell2-title-תהליכים עסקיים",
+               "id" : "&lid=hdr-services-bpo-title-תהליכים עסקיים",
                "label" : "תהליכים עסקיים",
                "links" : [
                   {
                      "href" : "http://dev.services.xerox.com/customer-service/heil.html",
-                     "id" : "&lid=cell2-פתרונות שירות לקוחות",
+                     "id" : "&lid=hdr-services-bpo-פתרונות שירות לקוחות",
                      "label" : "פתרונות שירות לקוחות",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://dev.consulting.xerox.com/document-management/heil.html",
-                     "id" : "&lid=cell2-שירות לעיבוד העברת מסמכים",
+                     "id" : "&lid=hdr-services-bpo-שירות לעיבוד העברת מסמכים",
                      "label" : "שירות לעיבוד העברת מסמכים",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://dev.services.xerox.com/xerox-marketing-services/heil.html",
-                     "id" : "&lid=cell2-תקשורת ושיווק",
+                     "id" : "&lid=hdr-services-bpo-תקשורת ושיווק",
                      "label" : "תקשורת ושיווק",
                      "target" : "_self"
                   }
@@ -346,30 +346,30 @@
             },
             "col3" : {
                "href" : "http://dev.services.xerox.com/industry-services/heil.html",
-               "id" : "&lid=cell2-title-המגזרים שאנו משרתים",
+               "id" : "&lid=hdr-services-ind-title-המגזרים שאנו משרתים",
                "label" : "המגזרים שאנו משרתים",
                "links" : [
                   {
                      "href" : "http://dev.consulting.xerox.com/business-services-industry/high-tech-and-communications/heil.html",
-                     "id" : "&lid=cell2-טכנולוגיה עילית ותקשורת",
+                     "id" : "&lid=hdr-services-ind-טכנולוגיה עילית ותקשורת",
                      "label" : "טכנולוגיה עילית ותקשורת",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://dev.consulting.xerox.com/business-services-industry/retail/heil.html",
-                     "id" : "&lid=cell2-מוצרי צריכה",
+                     "id" : "&lid=hdr-services-ind-מוצרי צריכה",
                      "label" : "מוצרי צריכה",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://dev.consulting.xerox.com/business-services-industry/government/heil.html",
-                     "id" : "&lid=cell2-ממשל",
+                     "id" : "&lid=hdr-services-ind-ממשל",
                      "label" : "ממשל",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://dev.consulting.xerox.com/business-services-industry/financial-services/heil.html",
-                     "id" : "&lid=cell2-שירותים פיננסיים",
+                     "id" : "&lid=hdr-services-ind-שירותים פיננסיים",
                      "label" : "שירותים פיננסיים",
                      "target" : "_self"
                   }
@@ -381,18 +381,18 @@
          "supplies" : {
             "col1" : {
                "href" : "http://psgdev.opbu.xerox.com/printer-supplies/heil.html",
-               "id" : "&lid=cell2-title-חומרים מתכלים",
+               "id" : "&lid=hdr-supplies-title-חומרים מתכלים",
                "label" : "חומרים מתכלים",
                "links" : [
                   {
                      "href" : "http://psgdev.opbu.xerox.com/printer-supplies/heil.html",
-                     "id" : "&lid=cell2-חומרים מתכלים",
+                     "id" : "&lid=hdr-supplies-חומרים מתכלים",
                      "label" : "חומרים מתכלים",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/recycling/heil.html",
-                     "id" : "&lid=cell2-תוכניות מחזור",
+                     "id" : "&lid=hdr-supplies-תוכניות מחזור",
                      "label" : "תוכניות מחזור",
                      "target" : "_self"
                   }
@@ -404,18 +404,18 @@
          "support" : {
             "col1" : {
                "href" : "http://www.support.xerox.com/support/heil.html",
-               "id" : "&lid=cell2-title-תמיכה ומנהלי התקן",
+               "id" : "&lid=hdr-support-title-תמיכה ומנהלי התקן",
                "label" : "תמיכה ומנהלי התקן",
                "links" : [
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/customer-training/heil.html",
-                     "id" : "&lid=cell2-שירותי ייעוץ והדרכה",
+                     "id" : "&lid=hdr-support-שירותי ייעוץ והדרכה",
                      "label" : "שירותי ייעוץ והדרכה",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/information-security/heil.html",
-                     "id" : "&lid=cell2-מידע אודות אבטחה",
+                     "id" : "&lid=hdr-support-מידע אודות אבטחה",
                      "label" : "מידע אודות אבטחה",
                      "target" : "_self"
                   }
@@ -428,9 +428,10 @@
       "secondaryNav" : {
          "links" : [
             {
-               "href" : "#",
-               "id" : "xrx_bnrv4_header_country_selector",
-               "label" : "United States"
+               "choices" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
+               "id" : "hdr-bar-country-select",
+               "label" : "Israel"
             },
             {
                "href" : "#",
@@ -439,8 +440,8 @@
          ]
       },
       "tertiaryNav" : {
-         "contactUs" : "Contact Us",
-         "share" : "Share"
+         "contactUs" : "צור איתנו קשר",
+         "share" : "שתף"
       },
       "trans" : {
          "logoTitle" : "Xerox.com home",

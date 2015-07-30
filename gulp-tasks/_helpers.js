@@ -96,15 +96,15 @@ helpers.openJson = function(path, shouldThrow)
 {
 	try
 	{
-		var data = fs.readFileSync('./data/locales.json');
+		var data = fs.readFileSync(path);
 
 		return JSON.parse(data);
 	}
 	catch (err)
 	{
-		if (shouldThrow) {
+		//if (shouldThrow) {
 			console.log(shouldThrow);
-		}
+		//}
 	}
 }
 

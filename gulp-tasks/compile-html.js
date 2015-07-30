@@ -7,58 +7,53 @@ var mustache = require('gulp-mustache');
 var rename = require('gulp-rename');
 var requireDir = require('require-dir');
 var mergeStream = require("merge-stream");
+var xrxhelpers = require('./_helpers.js');
 
 gulp.task('compile-html', ['download-configs'], function()
 {
 	var merged = mergeStream();
 
-	fs.readFile('./data/locales.json', { "encoding" : "utf8" }, function (err, data)
+	try
 	{
-		if (!err)
-		{
-			var data = JSON.parse(data);
+		var locales = xrxhelpers.openJson('./data/locales.json');
 
-			data.locales.forEach(function(locale)
+		locales.locales.forEach(function(locale)
+		{
+			if (locale.type != "redirect")
 			{
-				if (locale.type != "redirect")
+				var localeCodeShort = locale['locale-short'];
+
+				try
 				{
-					var localeCodeShort = locale['locale-short'];
+					var templateData = xrxhelpers.openJson('./data/config.' + localeCodeShort + '.json');
+					templateData = xrxhelpers.processTemplateData(templateData);
 
-					fs.readFile('./data/config.' + localeCodeShort + '.json', { "encoding" : "utf8" }, function (err, data)
-					{
-						if (!err)
-						{
-							try
-							{
-								var templateData = JSON.parse(data);
-
-								merged.add(gulp.src(['./templates/parts/header.mustache', './templates/parts/footer.mustache'])
-									.pipe(mustache(templateData))
-									.pipe(rename({
-										'suffix' : '.' + localeCodeShort,
-										'extname' : '.html'
-									}))
-									.pipe(gulp.dest('./compiled/parts')));
-							}
-							catch (err)
-							{
-								console.log(err);
-							}
-						}
-					});
+					merged.add(gulp.src(['./templates/parts/header.mustache', './templates/parts/footer.mustache'])
+						.pipe(mustache(templateData))
+						.pipe(rename({
+							'suffix' : '.' + localeCodeShort,
+							'extname' : '.html'
+						}))
+						.pipe(gulp.dest('./compiled/parts')));
 				}
-			});
+				catch (err)
+				{
+					console.log(err);
+				}
+			}
+		});
 
-			merged.add(gulp.src(['./templates/parts/head_section.*.mustache'])
-				.pipe(mustache({}))
-				.pipe(rename({
-					'extname' : '.html'
-				}))
-				.pipe(gulp.dest('./compiled/parts')));
-		}
-		else
-		{
-			console.log(err);
-		}
-	});
+		merged.add(gulp.src(['./templates/parts/head_section.*.mustache'])
+			.pipe(mustache({}))
+			.pipe(rename({
+				'extname' : '.html'
+			}))
+			.pipe(gulp.dest('./compiled/parts')));
+	}
+	catch (err)
+	{
+		console.log(err);
+	}
+
+	return merged;
 });
