@@ -29,7 +29,6 @@ gulp.task('download-configs', ['download-locales'], function()
 			var savePath = './data/config.' + localeCodeShort + '.json';
 			var differenceMinutes = xrxhelpers.getFileAgeMinutes(savePath);
 
-			console.log(differenceMinutes);
 			if (differenceMinutes > 120)
 			{
 				merged.add(request("http://psgdev.opbu.xerox.com/assets/json/xrx_bnr_json/v4_header_raw." + localeCodeShort + ".json")
