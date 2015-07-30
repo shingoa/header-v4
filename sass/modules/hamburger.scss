@@ -22,6 +22,8 @@
 		background: #999;
 		opacity: 1;
 		left: 0;
+
+		/*
 		-webkit-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
 		-o-transform: rotate(0deg);
@@ -30,6 +32,7 @@
 		-moz-transition: transform .25s ease-in-out, top .25s ease-in-out, left .25s ease-in-out, width .25s ease-in-out;
 		-o-transition: transform .25s ease-in-out, top .25s ease-in-out, left .25s ease-in-out, width .25s ease-in-out;
 		transition: transform .25s ease-in-out, top .25s ease-in-out, left .25s ease-in-out, width .25s ease-in-out;
+		*/
 
 		&:nth-child(1) {
 			top: 0px;
