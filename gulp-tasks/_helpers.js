@@ -1,5 +1,7 @@
 'use strict';
 
+var fs = require('fs');
+
 var helpers = {};
 
 helpers.processTemplateData = function(data)
@@ -69,5 +71,41 @@ helpers.processMockPageFileList = function(files, suffix)
 
 	return returnFiles;
 };
+
+helpers.getFileAgeMinutes = function(path)
+{
+	try
+	{
+		var stats = fs.statSync(path);
+		var differenceMinutes = 0;
+
+		if (stats)
+		{
+			var now = new Date();
+			var modified = new Date(stats.mtime);
+			return ((now.getTime() - modified.getTime()) / 1000) / 60;
+		}
+	}
+	catch (err)
+	{}
+
+	return null;
+};
+
+helpers.openJson = function(path, shouldThrow)
+{
+	try
+	{
+		var data = fs.readFileSync('./data/locales.json');
+
+		return JSON.parse(data);
+	}
+	catch (err)
+	{
+		if (shouldThrow) {
+			console.log(shouldThrow);
+		}
+	}
+}
 
 module.exports = helpers;

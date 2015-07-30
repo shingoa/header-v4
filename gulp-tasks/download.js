@@ -5,6 +5,7 @@ var fs = require('fs');
 var request = require('request');
 var source = require('vinyl-source-stream');
 var mergeStream = require("merge-stream");
+var xrxhelpers = require('./_helpers.js');
 
 gulp.task('download-locales', function()
 {
@@ -17,23 +18,22 @@ gulp.task('download-configs', ['download-locales'], function()
 {
 	var merged = mergeStream();
 
-	fs.readFile('./data/locales.json', function (err, data)
+	var data = xrxhelpers.openJson('./data/locales.json', true);
+
+	data.locales.forEach(function(locale)
 	{
-		if (!err)
+		if (locale.type != "redirect")
 		{
-			var data = JSON.parse(data);
+			var localeCodeShort = locale['locale-short'];
+			var savePath = './data/config.' + localeCodeShort + '.json';
+			var differenceMinutes = xrxhelpers.getFileAgeMinutes(savePath);
 
-			data.locales.forEach(function(locale)
+			if (differenceMinutes > 120)
 			{
-				if (locale.type != "redirect")
-				{
-					var localeCodeShort = locale['locale-short'];
-
-					merged.add(request("http://psgdev.opbu.xerox.com/assets/json/xrx_bnr_json/v4_header_raw." + localeCodeShort + ".json")
-						.pipe(source('config.' + localeCodeShort + '.json'))
-						.pipe(gulp.dest('./data')));
-				}
-			});
+				merged.add(request("http://psgdev.opbu.xerox.com/assets/json/xrx_bnr_json/v4_header_raw." + localeCodeShort + ".json")
+					.pipe(source('config.' + localeCodeShort + '.json'))
+					.pipe(gulp.dest('./data')));
+			}
 		}
 	});
 
