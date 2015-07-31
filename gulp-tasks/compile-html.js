@@ -15,7 +15,7 @@ gulp.task('compile-html', ['download-configs'], function()
 
 	try
 	{
-		var locales = xrxhelpers.openJson('./data/locales.json');
+		var locales = xrxhelpers.openJson('./data/locales.json', true);
 
 		locales.locales.forEach(function(locale)
 		{
