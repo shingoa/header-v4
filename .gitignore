@@ -1,6 +1,7 @@
 built/**/*
 
 compiled/**/*
+dist/**/*
 
 data/**/*
 # Includes the data files normally used for dev builds to save time when developing

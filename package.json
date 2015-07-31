@@ -12,6 +12,7 @@
     "require-dir": "^0.3.0"
   },
   "devDependencies": {
+    "gulp-zip": "^3.0.2",
     "merge-stream": "^0.1.8",
     "request": "^2.60.0",
     "require-dir": "^0.3.0",
