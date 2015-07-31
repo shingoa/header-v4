@@ -24,9 +24,6 @@ gulp.task('build-html', function()
 			{
 				templateData = xrxhelpers.processTemplateData(templateData);
 
-				//console.log(templateData.header.primaryNav.services);
-				//throw "stop: " + templateData.header.primaryNav.services.label;
-
 				var files = fs.readdirSync("./templates/mock_pages/");
 				files = xrxhelpers.processMockPageFileList(files, '.' + locale);
 				templateData.files = files;

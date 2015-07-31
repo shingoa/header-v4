@@ -10,7 +10,7 @@ helpers.processTemplateData = function(data)
 	{
 		helpers.recurse(data, function(obj, p)
 		{
-			if (typeof(obj) === "object")
+			if (typeof(obj) === "object" && obj)
 			{
 				if (typeof(obj.label) !== "undefined" && obj.label)
 				{
