@@ -616,7 +616,9 @@
 					}
 				]
 			},
-			"share" : "Share"
+			"share" : {
+				"label" : "Share"
+			}
 		}
 	},
 

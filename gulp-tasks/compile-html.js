@@ -26,15 +26,19 @@ gulp.task('compile-html', ['download-configs'], function()
 				try
 				{
 					var templateData = xrxhelpers.openJson('./data/config.' + localeCodeShort + '.json');
-					templateData = xrxhelpers.processTemplateData(templateData);
 
-					merged.add(gulp.src(['./templates/parts/header.mustache', './templates/parts/footer.mustache'])
-						.pipe(mustache(templateData))
-						.pipe(rename({
-							'suffix' : '.' + localeCodeShort,
-							'extname' : '.html'
-						}))
-						.pipe(gulp.dest('./compiled/parts')));
+					if (typeof(templateData) !== "undefined" && templateData)
+					{
+						templateData = xrxhelpers.processTemplateData(templateData);
+
+						merged.add(gulp.src(['./templates/parts/header.mustache', './templates/parts/footer.mustache'])
+							.pipe(mustache(templateData))
+							.pipe(rename({
+								'suffix' : '.' + localeCodeShort,
+								'extname' : '.html'
+							}))
+							.pipe(gulp.dest('./compiled/parts')));
+					}
 				}
 				catch (err)
 				{

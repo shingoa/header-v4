@@ -20,22 +20,25 @@ gulp.task('build-html', function()
 		try
 		{
 			var templateData = xrxhelpers.openJson('./data/config.' + locale + '.json');
-			templateData = xrxhelpers.processTemplateData(templateData);
+			if (typeof(templateData) !== "undefined" && templateData)
+			{
+				templateData = xrxhelpers.processTemplateData(templateData);
 
-			//console.log(templateData.header.primaryNav.services);
-			//throw "stop: " + templateData.header.primaryNav.services.label;
+				//console.log(templateData.header.primaryNav.services);
+				//throw "stop: " + templateData.header.primaryNav.services.label;
 
-			var files = fs.readdirSync("./templates/mock_pages/");
-			files = xrxhelpers.processMockPageFileList(files, '.' + locale);
-			templateData.files = files;
+				var files = fs.readdirSync("./templates/mock_pages/");
+				files = xrxhelpers.processMockPageFileList(files, '.' + locale);
+				templateData.files = files;
 
-			merged.add(gulp.src(['./templates/mock_pages/*.mustache'])
-				.pipe(mustache(templateData))
-				.pipe(rename({
-					'suffix' : '.' + locale,
-					'extname' : '.html'
-				}))
-				.pipe(gulp.dest('./built')));
+				merged.add(gulp.src(['./templates/mock_pages/*.mustache'])
+					.pipe(mustache(templateData))
+					.pipe(rename({
+						'suffix' : '.' + locale,
+						'extname' : '.html'
+					}))
+					.pipe(gulp.dest('./built')));
+			}
 		}
 		catch (err)
 		{
