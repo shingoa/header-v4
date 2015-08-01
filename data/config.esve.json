@@ -1,0 +1,484 @@
+{
+   "footer" : {
+      "copyrightStatement" : "© 2015 Xerox Corporation. Todos los derechos reservados. Xerox® y Xerox y Design® son marcas comerciales de Xerox Corporation en Estados Unidos y/o en otros países.",
+      "footerLinks" : {
+         "links" : [
+            {
+               "class" : "xrx_hide_mobile first",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/esve.html",
+               "id" : "&lid=ftr-contact us",
+               "label" : "Contáctanos",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/esve.html",
+               "id" : "&lid=ftr-about xerox",
+               "label" : "Acerca de Xerox",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://news.xerox.com/pr/xerox/investor-relations.aspx",
+               "id" : "&lid=ftr-investors",
+               "label" : "Inversionistas",
+               "target" : "_blank"
+            },
+            {
+               "class" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/privacy-policy/esve.html",
+               "id" : "&lid=ftr-privacy",
+               "label" : "Política de Confidencialidad",
+               "target" : "_self"
+            },
+            {
+               "class" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/website-terms-of-use/esve.html",
+               "id" : "&lid=ftr-legal",
+               "label" : "Legal",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/site-map/esve.html",
+               "id" : "&lid=ftr-site map",
+               "label" : "Mapa del sitio",
+               "target" : "_self"
+            }
+         ]
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home"
+      }
+   },
+   "header" : {
+      "footerLinks" : [
+         {
+            "href" : "#",
+            "label" : "Contact"
+         },
+         {
+            "href" : "#",
+            "label" : "Chat"
+         },
+         {
+            "href" : "#",
+            "label" : "Where to Buy"
+         },
+         {
+            "href" : "#",
+            "label" : "Careers"
+         },
+         {
+            "href" : "#",
+            "label" : "Partners"
+         },
+         {
+            "href" : "#",
+            "label" : "Case Studies"
+         }
+      ],
+      "primaryNav" : {
+         "about" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/esve.html",
+               "id" : "&lid=hdr-about-title-acerca de xerox",
+               "label" : "Acerca de Xerox",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/esve.html",
+                     "id" : "&lid=hdr-about-xerox en un vistazo",
+                     "label" : "Xerox en un vistazo",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://news.xerox.com/investors",
+                     "id" : "&lid=hdr-about-inversionistas",
+                     "label" : "Inversionistas",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/news/esve.html",
+                     "id" : "&lid=hdr-about-prensa",
+                     "label" : "Prensa",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/esve.html",
+                     "id" : "&lid=hdr-about-ciudadanía global",
+                     "label" : "Ciudadanía Global",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/esve.html",
+                     "id" : "&lid=hdr-about-medio ambiente y sostenibilidad",
+                     "label" : "Medio ambiente y sostenibilidad",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/innovation/esve.html",
+                     "id" : "&lid=hdr-about-innovación",
+                     "label" : "Innovación",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/esve.html",
+               "id" : "&lid=hdr-about-contact-title-contáctenos",
+               "label" : "Contáctenos",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/esve.html#tech_support",
+                     "id" : "&lid=hdr-about-contact-soporte técnico",
+                     "label" : "Soporte técnico",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/esve.html#products",
+                     "id" : "&lid=hdr-about-contact-equipos y software",
+                     "label" : "Equipos y software",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/esve.html#supplies",
+                     "id" : "&lid=hdr-about-contact-suministros y papeles xerox",
+                     "label" : "Suministros y Papeles Xerox",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/esve.html#services",
+                     "id" : "&lid=hdr-about-contact-servicios para empresas",
+                     "label" : "Servicios para empresas",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/esve.html#corporate",
+                     "id" : "&lid=hdr-about-contact-xerox corporation",
+                     "label" : "Xerox Corporation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/perl-bin/world_contact.pl#0",
+                     "id" : "&lid=hdr-about-contact-ubicaciones en todo el mundo",
+                     "label" : "Ubicaciones en todo el mundo",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/esve.html",
+               "id" : "&lid=hdr-about-wtb-title-puntos de venta",
+               "label" : "Puntos de venta",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/esve.html#office",
+                     "id" : "&lid=hdr-about-wtb-productos xerox oficina",
+                     "label" : "Productos Xerox Oficina",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/esve.html#production",
+                     "id" : "&lid=hdr-about-wtb-equipos de producción",
+                     "label" : "Equipos de Producción",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/esve.html#scanners",
+                     "id" : "&lid=hdr-about-wtb-scanners",
+                     "label" : "Scanners",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/esve.html#supplies",
+                     "id" : "&lid=hdr-about-wtb-suministros y papeles xerox",
+                     "label" : "Suministros y Papeles Xerox",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/esve.html#services",
+                     "id" : "&lid=hdr-about-wtb-servicios para empresas",
+                     "label" : "Servicios para empresas",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Acerca de Xerox"
+         },
+         "products" : {
+            "col1" : {
+               "href" : "http://dev.office.xerox.com/index/esve.html",
+               "id" : "&lid=hdr-products-ofc-title-office solutions",
+               "label" : "Soluciones para oficina",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/printers/esve.html",
+                     "id" : "&lid=hdr-products-ofc-impresoras de oficina",
+                     "label" : "Impresoras de oficina",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/multifunction-printer/esve.html",
+                     "id" : "&lid=hdr-products-ofc-multifunción",
+                     "label" : "Multifunción",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.xeroxscanners.com/en/en/",
+                     "id" : "&lid=hdr-products-ofc-scanners",
+                     "label" : "Escáneres",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/software-solutions/esve.html",
+                     "id" : "&lid=hdr-products-ofc-office software",
+                     "label" : "Software de oficina",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/digital-printing/esve.html",
+               "id" : "&lid=hdr-products-gc-title-graphic communications",
+               "label" : "Comunicación gráfica",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/digital-press/esve.html",
+                     "id" : "&lid=hdr-products-gc-impresoras de producción",
+                     "label" : "Impresoras de producción",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/continuous-feed-printer/esve.html",
+                     "id" : "&lid=hdr-products-gc-impresoras de alimentación continua",
+                     "label" : "Impresoras de alimentación continua",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/wide-format-printer/esve.html",
+                     "id" : "&lid=hdr-products-gc-impresoras de formato amplio",
+                     "label" : "Impresoras de formato amplio",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/workflow/esve.html",
+                     "id" : "&lid=hdr-products-gc-software de flujo de trabajo",
+                     "label" : "Software de flujo de trabajo",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "label" : "Recursos adicionales",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/product-locator/esve.html",
+                     "id" : "&lid=hdr-products-res-product finder",
+                     "label" : "Buscador de productos",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/small-business/esve.html",
+                     "id" : "&lid=hdr-products-res-small business resource center",
+                     "label" : "Soluciones para pequeñas empresas",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/esve.html",
+                     "id" : "&lid=hdr-products-res-toner and ink",
+                     "label" : "Toner y tinta",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/partner-programs/esve.html",
+                     "id" : "&lid=hdr-products-res-become a partner",
+                     "label" : "Conviértase en socio",
+                     "target" : "_self"
+                  }
+               ]
+            },
+            "label" : "Productos"
+         },
+         "services" : {
+            "col1" : {
+               "href" : "http://dev.services.xerox.com/document-management-solutions/esve.html",
+               "id" : "&lid=hdr-services-dso-title-administración de documentos",
+               "label" : "Administración de documentos",
+               "links" : [
+                  {
+                     "href" : "http://dev.services.xerox.com/print-room/esve.html",
+                     "id" : "&lid=hdr-services-dso-servicios de impresión centralizada",
+                     "label" : "Servicios de Impresión centralizada",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-managed-print-services/esve.html",
+                     "id" : "&lid=hdr-services-dso-servicios de impresión administrada",
+                     "label" : "Servicios de impresión administrada",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.services.xerox.com/business-process-outsourcing/esve.html",
+               "id" : "&lid=hdr-services-bpo-title-procesos comerciales",
+               "label" : "Procesos comerciales",
+               "links" : [
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-marketing-services/esve.html",
+                     "id" : "&lid=hdr-services-bpo-comunicación y marketing",
+                     "label" : "Comunicación y marketing",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/gestion-documental/esve.html",
+                     "id" : "&lid=hdr-services-bpo-servicios de procesamiento de transacción de documentación",
+                     "label" : "Servicios de procesamiento de transacción de documentación",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/customer-service/esve.html",
+                     "id" : "&lid=hdr-services-bpo-soluciones de atención al cliente",
+                     "label" : "Soluciones de atención al cliente",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/hr-outsourcing/esve.html",
+                     "id" : "&lid=hdr-services-bpo-tercerización de rh (outsourcing)",
+                     "label" : "Tercerización de RH (Outsourcing)",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.services.xerox.com/industry-services/esve.html",
+               "id" : "&lid=hdr-services-ind-title-las industrias a las cuales servimos",
+               "label" : "Las industrias a las cuales servimos",
+               "links" : [
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/high-tech-and-communications/esve.html",
+                     "id" : "&lid=hdr-services-ind-alta tecnología",
+                     "label" : "Alta tecnología",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/government/esve.html",
+                     "id" : "&lid=hdr-services-ind-gobierno",
+                     "label" : "Gobierno",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/retail/esve.html",
+                     "id" : "&lid=hdr-services-ind-productos para minoristas y consumidores",
+                     "label" : "Productos para minoristas y consumidores",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/financial-services/esve.html",
+                     "id" : "&lid=hdr-services-ind-servicios financieros",
+                     "label" : "Servicios Financieros",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/transportation/esve.html",
+                     "id" : "&lid=hdr-services-ind-transporte",
+                     "label" : "Transporte",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Servicios"
+         },
+         "supplies" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/esve.html",
+               "id" : "&lid=hdr-supplies-title-consumibles",
+               "label" : "Consumibles",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/esve.html",
+                     "id" : "&lid=hdr-supplies-consumibles",
+                     "label" : "Consumibles",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/recycling/esve.html",
+                     "id" : "&lid=hdr-supplies-programas de reciclado",
+                     "label" : "Programas de reciclado",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Consumibles"
+         },
+         "support" : {
+            "col1" : {
+               "href" : "http://www.support.xerox.com/support/esve.html",
+               "id" : "&lid=hdr-support-title-soporte y drivers",
+               "label" : "Soporte y drivers",
+               "links" : [
+                  {
+                     "href" : "http://www.office.xerox.com/cgi-bin/dmoresloc.pl?XOGlang=es_VE&reseller_type=asp",
+                     "id" : "&lid=hdr-support-busque proveedores locales de servicios",
+                     "label" : "Busque proveedores locales de servicios",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/support-faq/esve.html",
+                     "id" : "&lid=hdr-support-preguntas frecuentes",
+                     "label" : "Preguntas frecuentes",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/customer-training/esve.html",
+                     "id" : "&lid=hdr-support-servicios de capacitación y asesoramiento",
+                     "label" : "Servicios de capacitación y asesoramiento",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/information-security/esve.html",
+                     "id" : "&lid=hdr-support-información de seguridad",
+                     "label" : "Información de seguridad",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Soporte y drivers"
+         }
+      },
+      "secondaryNav" : {
+         "links" : [
+            {
+               "choices" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
+               "id" : "hdr-bar-country-select",
+               "label" : "Venezuela, Bolivarian Republic of"
+            },
+            {
+               "href" : "#",
+               "label" : "Sign In"
+            }
+         ]
+      },
+      "tertiaryNav" : {
+         "contactUs" : "Contáctanos",
+         "share" : "Compartir"
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home",
+         "menuBtnTitle" : "Open/Close menu",
+         "searchBtnTitle" : "Búsqueda",
+         "searchPlaceholder" : "Búsqueda"
+      }
+   }
+}

@@ -1,0 +1,523 @@
+{
+   "footer" : {
+      "copyrightStatement" : "© 2015 Xerox Corporation. Alle rettigheter forbeholdt. Xerox®, Xerox og Design® er varemerker for Xerox Corporation i USA og/eller andre land.",
+      "footerLinks" : {
+         "links" : [
+            {
+               "class" : "xrx_hide_mobile first",
+               "href" : "http://www.xerox.com/jobs/nono.html",
+               "id" : "&lid=ftr-careers",
+               "label" : "Karriere",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/nono.html",
+               "id" : "&lid=ftr-contact us",
+               "label" : "Kontakt oss",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/nono.html",
+               "id" : "&lid=ftr-about xerox",
+               "label" : "Om Xerox",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://news.xerox.com/pr/xerox/investor-relations.aspx",
+               "id" : "&lid=ftr-investors",
+               "label" : "Investorer",
+               "target" : "_blank"
+            },
+            {
+               "class" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/privacy-policy/nono.html",
+               "id" : "&lid=ftr-privacy",
+               "label" : "Interne data",
+               "target" : "_self"
+            },
+            {
+               "class" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/website-terms-of-use/nono.html",
+               "id" : "&lid=ftr-legal",
+               "label" : "Rettslig",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/site-map/nono.html",
+               "id" : "&lid=ftr-site map",
+               "label" : "Kart over nettstedet",
+               "target" : "_self"
+            }
+         ]
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home"
+      }
+   },
+   "header" : {
+      "footerLinks" : [
+         {
+            "href" : "#",
+            "label" : "Contact"
+         },
+         {
+            "href" : "#",
+            "label" : "Chat"
+         },
+         {
+            "href" : "#",
+            "label" : "Where to Buy"
+         },
+         {
+            "href" : "#",
+            "label" : "Careers"
+         },
+         {
+            "href" : "#",
+            "label" : "Partners"
+         },
+         {
+            "href" : "#",
+            "label" : "Case Studies"
+         }
+      ],
+      "primaryNav" : {
+         "about" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/nono.html",
+               "id" : "&lid=hdr-about-title-om xerox",
+               "label" : "Om Xerox",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/nono.html",
+                     "id" : "&lid=hdr-about-kort blikk på xerox",
+                     "label" : "Kort blikk på Xerox",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://news.xerox.com/investors",
+                     "id" : "&lid=hdr-about-investorer",
+                     "label" : "Investorer",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/nono.html",
+                     "id" : "&lid=hdr-about-globalt samfunnsansvar",
+                     "label" : "Globalt Samfunnsansvar",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/nono.html",
+                     "id" : "&lid=hdr-about-miljø og bærekraftige produkter",
+                     "label" : "Miljø og bærekraftige produkter",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.realbusinesslive.xerox.com/events/index/nono.html",
+                     "id" : "&lid=hdr-about-arrangementer og handelsmesser",
+                     "label" : "Arrangementer og handelsmesser",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/innovation/nono.html",
+                     "id" : "&lid=hdr-about-innovasjon",
+                     "label" : "Innovasjon",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/nono.html",
+               "id" : "&lid=hdr-about-contact-title-kontakt",
+               "label" : "Kontakt",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/nono.html#billing",
+                     "id" : "&lid=hdr-about-contact-støtte for fakturering og kontoadministrasjon",
+                     "label" : "Støtte for fakturering og kontoadministrasjon",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/nono.html#tech_support",
+                     "id" : "&lid=hdr-about-contact-teknisk support",
+                     "label" : "Teknisk support",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/nono.html#products",
+                     "id" : "&lid=hdr-about-contact-produkter og programvare",
+                     "label" : "Produkter og programvare",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/nono.html#supplies",
+                     "id" : "&lid=hdr-about-contact-forbruksartikler",
+                     "label" : "Forbruksartikler",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/nono.html#services",
+                     "id" : "&lid=hdr-about-contact-bedriftstjenester",
+                     "label" : "Bedriftstjenester",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/nono.html#research",
+                     "id" : "&lid=hdr-about-contact-forskning og innovasjon",
+                     "label" : "Forskning og innovasjon",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/nono.html#corporate",
+                     "id" : "&lid=hdr-about-contact-xerox corporation",
+                     "label" : "Xerox Corporation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/perl-bin/world_contact.pl#0",
+                     "id" : "&lid=hdr-about-contact-xerox globalt",
+                     "label" : "Xerox globalt",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/nono.html",
+               "id" : "&lid=hdr-about-wtb-title-salgssteder",
+               "label" : "Salgssteder",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/nono.html#office",
+                     "id" : "&lid=hdr-about-wtb-office-produkter",
+                     "label" : "Office-produkter",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/nono.html#production",
+                     "id" : "&lid=hdr-about-wtb-produksjonsprodukter",
+                     "label" : "Produksjonsprodukter",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/nono.html#scanners",
+                     "id" : "&lid=hdr-about-wtb-skannere",
+                     "label" : "Skannere",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/nono.html#supplies",
+                     "id" : "&lid=hdr-about-wtb-forbruksartikler",
+                     "label" : "Forbruksartikler",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/nono.html#services",
+                     "id" : "&lid=hdr-about-wtb-bedriftstjenester",
+                     "label" : "Bedriftstjenester",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Om Xerox"
+         },
+         "products" : {
+            "col1" : {
+               "href" : "http://dev.office.xerox.com/index/nono.html",
+               "id" : "&lid=hdr-products-ofc-title-office solutions",
+               "label" : "Kontorløsninger",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/printers/nono.html",
+                     "id" : "&lid=hdr-products-ofc-kontorskrivere",
+                     "label" : "Kontorskrivere",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/multifunction-printer/nono.html",
+                     "id" : "&lid=hdr-products-ofc-multifunksjonelle",
+                     "label" : "Multifunksjonelle",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.xeroxscanners.com/en/en/",
+                     "id" : "&lid=hdr-products-ofc-scanners",
+                     "label" : "Skannere",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/software-solutions/nono.html",
+                     "id" : "&lid=hdr-products-ofc-office software",
+                     "label" : "Programvare for kontoret",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/digital-printing/nono.html",
+               "id" : "&lid=hdr-products-gc-title-graphic communications",
+               "label" : "Grafiske kommunikasjoner",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/digital-press/nono.html",
+                     "id" : "&lid=hdr-products-gc-produksjonsskrivere",
+                     "label" : "Produksjonsskrivere",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/continuous-feed-printer/nono.html",
+                     "id" : "&lid=hdr-products-gc-continuous feed-skrivere",
+                     "label" : "Continuous Feed-skrivere",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/wide-format-printer/nono.html",
+                     "id" : "&lid=hdr-products-gc-bredformatskriver",
+                     "label" : "Bredformatskriver",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/feeders-print-finishing/nono.html",
+                     "id" : "&lid=hdr-products-gc-matting og etterbehandling",
+                     "label" : "Matting og Etterbehandling",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/workflow/nono.html",
+                     "id" : "&lid=hdr-products-gc-programvare for arbeidsflyt",
+                     "label" : "Programvare for arbeidsflyt",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "label" : "Flere ressurser",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/product-locator/nono.html",
+                     "id" : "&lid=hdr-products-res-product finder",
+                     "label" : "Produktfinner",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/small-business/nono.html",
+                     "id" : "&lid=hdr-products-res-small business resource center",
+                     "label" : "Løsninger for småbedrifter",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/nono.html",
+                     "id" : "&lid=hdr-products-res-toner and ink",
+                     "label" : "Toner og blekk",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/partner-programs/nono.html",
+                     "id" : "&lid=hdr-products-res-become a partner",
+                     "label" : "Bli partner",
+                     "target" : "_self"
+                  }
+               ]
+            },
+            "label" : "Produkter"
+         },
+         "services" : {
+            "col1" : {
+               "href" : "http://dev.services.xerox.com/document-management-solutions/nono.html",
+               "id" : "&lid=hdr-services-dso-title-arbeidsflyt",
+               "label" : "Arbeidsflyt",
+               "links" : [
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-managed-print-services/nono.html",
+                     "id" : "&lid=hdr-services-dso-managed print-tjenester",
+                     "label" : "Managed Print-tjenester",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/print-room/nono.html",
+                     "id" : "&lid=hdr-services-dso-sentraliserte utskriftstjenester",
+                     "label" : "Sentraliserte Utskriftstjenester",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.services.xerox.com/business-process-outsourcing/nono.html",
+               "id" : "&lid=hdr-services-bpo-title-forretningsprosesser",
+               "label" : "Forretningsprosesser",
+               "links" : [
+                  {
+                     "href" : "http://dev.consulting.xerox.com/document-management/nono.html",
+                     "id" : "&lid=hdr-services-bpo-dokument transaksjonsbehandlingstjenester",
+                     "label" : "Dokument transaksjonsbehandlingstjenester",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/finance-and-accounting/nono.html",
+                     "id" : "&lid=hdr-services-bpo-finans og regnskap",
+                     "label" : "Finans og regnskap",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-marketing-services/nono.html",
+                     "id" : "&lid=hdr-services-bpo-kommunikasjon og markedsføring",
+                     "label" : "Kommunikasjon og markedsføring",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.services.xerox.com/industry-services/nono.html",
+               "id" : "&lid=hdr-services-ind-title-bransjer vi betjener",
+               "label" : "Bransjer vi betjener",
+               "links" : [
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/retail/nono.html",
+                     "id" : "&lid=hdr-services-ind-butikk- og forbrukerprodukter",
+                     "label" : "Butikk- og forbrukerprodukter",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/financial-services/nono.html",
+                     "id" : "&lid=hdr-services-ind-finansielle tjenester",
+                     "label" : "Finansielle tjenester",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/high-tech-and-communications/nono.html",
+                     "id" : "&lid=hdr-services-ind-høyteknologi og kommunikasjon",
+                     "label" : "Høyteknologi og kommunikasjon",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/government/nono.html",
+                     "id" : "&lid=hdr-services-ind-offentlig sektor",
+                     "label" : "Offentlig sektor",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/transport-solutions/nono.html",
+                     "id" : "&lid=hdr-services-ind-transport",
+                     "label" : "Transport",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Tjenester"
+         },
+         "supplies" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/nono.html",
+               "id" : "&lid=hdr-supplies-title-forbruksartikler",
+               "label" : "Forbruksartikler",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/nono.html",
+                     "id" : "&lid=hdr-supplies-kjøpe toner_ blekk og tilbehør",
+                     "label" : "Kjøpe toner, blekk og tilbehør",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/paper-marketing/nono.html",
+                     "id" : "&lid=hdr-supplies-papir og andre utskriftsmaterialer",
+                     "label" : "Papir og andre utskriftsmaterialer",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/recycling/nono.html",
+                     "id" : "&lid=hdr-supplies-resirkuleringsprogrammer",
+                     "label" : "Resirkuleringsprogrammer",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/compatible-cartridges/nono.html",
+                     "id" : "&lid=hdr-supplies-toner for ikke-xerox-skrivere",
+                     "label" : "Toner for ikke-Xerox-skrivere",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/account-management/consumables/nono.html",
+               "id" : "&lid=hdr-supplies-title-contract-forbruksartikkelkontrakt",
+               "label" : "Forbruksartikkelkontrakt",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/account-management/consumables/nono.html",
+                     "id" : "&lid=hdr-supplies-contract-logge inn for å bestille toner og blekk inkludert i din kontrakt",
+                     "label" : "Logge inn for å bestille toner og blekk inkludert i din kontrakt",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Forbruksartikler"
+         },
+         "support" : {
+            "col1" : {
+               "href" : "http://www.support.xerox.com/support/nono.html",
+               "id" : "&lid=hdr-support-title-kundestøtte og drivere",
+               "label" : "Kundestøtte og drivere",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/support-faq/nono.html",
+                     "id" : "&lid=hdr-support-vanlige spørsmål og svar",
+                     "label" : "Vanlige spørsmål og svar",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/customer-training/nono.html",
+                     "id" : "&lid=hdr-support-bedriftsrådgivnings- og opplæringstjenester",
+                     "label" : "Bedriftsrådgivnings- og opplæringstjenester",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/information-security/nono.html",
+                     "id" : "&lid=hdr-support-sikkerhetsinformasjon",
+                     "label" : "Sikkerhetsinformasjon",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Kundestøtte og drivere"
+         }
+      },
+      "secondaryNav" : {
+         "links" : [
+            {
+               "choices" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
+               "id" : "hdr-bar-country-select",
+               "label" : "Norway"
+            },
+            {
+               "href" : "#",
+               "label" : "Sign In"
+            }
+         ]
+      },
+      "tertiaryNav" : {
+         "contactUs" : "Kontakt oss",
+         "share" : "Del"
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home",
+         "menuBtnTitle" : "Open/Close menu",
+         "searchBtnTitle" : "Søk",
+         "searchPlaceholder" : "Søk"
+      }
+   }
+}

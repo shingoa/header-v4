@@ -1,0 +1,460 @@
+{
+   "footer" : {
+      "copyrightStatement" : "© 2015 Xerox Corporation. Visas tiesības rezervētas. Xerox® un Xerox and Design® ir Xerox Corporation prečzīmes Amerikas Savienotajās Valstīs un/vai citās valstīs.",
+      "footerLinks" : {
+         "links" : [
+            {
+               "class" : "xrx_hide_mobile first",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/lvlv.html",
+               "id" : "&lid=ftr-contact us",
+               "label" : "Sazinieties ar mums",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/lvlv.html",
+               "id" : "&lid=ftr-about xerox",
+               "label" : "Par \"Xerox\"",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://news.xerox.com/pr/xerox/investor-relations.aspx",
+               "id" : "&lid=ftr-investors",
+               "label" : "Investori",
+               "target" : "_blank"
+            },
+            {
+               "class" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/privacy-policy/lvlv.html",
+               "id" : "&lid=ftr-privacy",
+               "label" : "Konfidencialitāte",
+               "target" : "_self"
+            },
+            {
+               "class" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/website-terms-of-use/lvlv.html",
+               "id" : "&lid=ftr-legal",
+               "label" : "Juridiskā informācija",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/site-map/lvlv.html",
+               "id" : "&lid=ftr-site map",
+               "label" : "Vietnes karte",
+               "target" : "_self"
+            }
+         ]
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home"
+      }
+   },
+   "header" : {
+      "footerLinks" : [
+         {
+            "href" : "#",
+            "label" : "Contact"
+         },
+         {
+            "href" : "#",
+            "label" : "Chat"
+         },
+         {
+            "href" : "#",
+            "label" : "Where to Buy"
+         },
+         {
+            "href" : "#",
+            "label" : "Careers"
+         },
+         {
+            "href" : "#",
+            "label" : "Partners"
+         },
+         {
+            "href" : "#",
+            "label" : "Case Studies"
+         }
+      ],
+      "primaryNav" : {
+         "about" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/lvlv.html",
+               "id" : "&lid=hdr-about-title-par _xerox_",
+               "label" : "Par \"Xerox\"",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/lvlv.html",
+                     "id" : "&lid=hdr-about-īsumā par _xerox_",
+                     "label" : "Īsumā par \"Xerox\"",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://news.xerox.com/investors",
+                     "id" : "&lid=hdr-about-investori",
+                     "label" : "Investori",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/lvlv.html",
+                     "id" : "&lid=hdr-about-globālais ieguldījums",
+                     "label" : "Globālais ieguldījums",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/lvlv.html",
+                     "id" : "&lid=hdr-about-vide un ilgstspējība",
+                     "label" : "Vide un ilgstspējība",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/innovation/lvlv.html",
+                     "id" : "&lid=hdr-about-jaunievedumi",
+                     "label" : "Jaunievedumi",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/lvlv.html",
+               "id" : "&lid=hdr-about-contact-title-kontaktinformācija",
+               "label" : "Kontaktinformācija",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/lvlv.html#tech_support",
+                     "id" : "&lid=hdr-about-contact-tehniskais atbalsts",
+                     "label" : "Tehniskais atbalsts",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/lvlv.html#products",
+                     "id" : "&lid=hdr-about-contact-produkti un programmatūra",
+                     "label" : "Produkti un programmatūra",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/lvlv.html#supplies",
+                     "id" : "&lid=hdr-about-contact-palīgmateriāli",
+                     "label" : "Palīgmateriāli",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/lvlv.html#services",
+                     "id" : "&lid=hdr-about-contact-business services",
+                     "label" : "Business Services",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/lvlv.html#corporate",
+                     "id" : "&lid=hdr-about-contact-xerox corporation",
+                     "label" : "Xerox Corporation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/perl-bin/world_contact.pl#0",
+                     "id" : "&lid=hdr-about-contact-biroji visā pasaulē",
+                     "label" : "Biroji visā pasaulē",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/lvlv.html",
+               "id" : "&lid=hdr-about-wtb-title-kur iegādāties",
+               "label" : "Kur iegādāties",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/lvlv.html#office",
+                     "id" : "&lid=hdr-about-wtb-office equipment",
+                     "label" : "Office Equipment",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/lvlv.html#production",
+                     "id" : "&lid=hdr-about-wtb-ražošanas iekārtas",
+                     "label" : "Ražošanas iekārtas",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/lvlv.html#scanners",
+                     "id" : "&lid=hdr-about-wtb-skeneri",
+                     "label" : "Skeneri",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/lvlv.html#supplies",
+                     "id" : "&lid=hdr-about-wtb-palīgmateriāli",
+                     "label" : "Palīgmateriāli",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/lvlv.html#services",
+                     "id" : "&lid=hdr-about-wtb-business services",
+                     "label" : "Business Services",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Par \"Xerox\""
+         },
+         "products" : {
+            "col1" : {
+               "href" : "http://dev.office.xerox.com/index/lvlv.html",
+               "id" : "&lid=hdr-products-ofc-title-office solutions",
+               "label" : "Biroja risinājumi",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/printers/lvlv.html",
+                     "id" : "&lid=hdr-products-ofc-biroja printeri",
+                     "label" : "Biroja printeri",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/multifunction-printer/lvlv.html",
+                     "id" : "&lid=hdr-products-ofc-daudzfunkcionālie printeri",
+                     "label" : "Daudzfunkcionālie printeri",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.xeroxscanners.com/en/en/",
+                     "id" : "&lid=hdr-products-ofc-scanners",
+                     "label" : "Skeneri",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/software-solutions/lvlv.html",
+                     "id" : "&lid=hdr-products-ofc-office software",
+                     "label" : "Biroja programmatūra",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/digital-printing/lvlv.html",
+               "id" : "&lid=hdr-products-gc-title-graphic communications",
+               "label" : "Grafiskā komunikācija",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/digital-press/lvlv.html",
+                     "id" : "&lid=hdr-products-gc-produkcijas digitālās iespiedmašīnas",
+                     "label" : "Produkcijas digitālās iespiedmašīnas",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/continuous-feed-printer/lvlv.html",
+                     "id" : "&lid=hdr-products-gc-nepārtrauktās padeves printeri",
+                     "label" : "Nepārtrauktās padeves printeri",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/wide-format-printer/lvlv.html",
+                     "id" : "&lid=hdr-products-gc-platformāta drukas",
+                     "label" : "Platformāta drukas",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/workflow/lvlv.html",
+                     "id" : "&lid=hdr-products-gc-darbpl_smas programmat_ra",
+                     "label" : "Darbplūsmas programmatūra",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "label" : "Papildu resursi",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/product-locator/lvlv.html",
+                     "id" : "&lid=hdr-products-res-product finder",
+                     "label" : "Produktu meklētājs",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/small-business/lvlv.html",
+                     "id" : "&lid=hdr-products-res-small business resource center",
+                     "label" : "Mazā biznesa risinājumi",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/lvlv.html",
+                     "id" : "&lid=hdr-products-res-toner and ink",
+                     "label" : "Toneri un tinti",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/partner-programs/lvlv.html",
+                     "id" : "&lid=hdr-products-res-become a partner",
+                     "label" : "Kļūstiet par partneri",
+                     "target" : "_self"
+                  }
+               ]
+            },
+            "label" : "Produkti"
+         },
+         "services" : {
+            "col1" : {
+               "href" : "http://dev.services.xerox.com/document-management-solutions/lvlv.html",
+               "id" : "&lid=hdr-services-dso-title-dokumentu pārvaldība",
+               "label" : "Dokumentu pārvaldība",
+               "links" : [
+                  {
+                     "href" : "http://dev.services.xerox.com/print-room/lvlv.html",
+                     "id" : "&lid=hdr-services-dso-centralizēti drukas pakalpojumi",
+                     "label" : "Centralizēti drukas pakalpojumi",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-managed-print-services/lvlv.html",
+                     "id" : "&lid=hdr-services-dso-pārvaldītas drukas pakalpojumi",
+                     "label" : "Pārvaldītas drukas pakalpojumi",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.services.xerox.com/business-process-outsourcing/lvlv.html",
+               "id" : "&lid=hdr-services-bpo-title-uzņēmējdarbības procesi",
+               "label" : "Uzņēmējdarbības procesi",
+               "links" : [
+                  {
+                     "href" : "http://dev.consulting.xerox.com/document-management/lvlv.html",
+                     "id" : "&lid=hdr-services-bpo-ar dokumentiem saistītu procesu apstrādes pakalpojumi",
+                     "label" : "Ar dokumentiem saistītu procesu apstrādes pakalpojumi",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/customer-service/lvlv.html",
+                     "id" : "&lid=hdr-services-bpo-klientu aprūpes risinājumi",
+                     "label" : "Klientu aprūpes risinājumi",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-marketing-services/lvlv.html",
+                     "id" : "&lid=hdr-services-bpo-saziņa un mārketings",
+                     "label" : "Saziņa un mārketings",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.services.xerox.com/industry-services/lvlv.html",
+               "id" : "&lid=hdr-services-ind-title-nozares_ kurām strādājam",
+               "label" : "Nozares, kurām strādājam",
+               "links" : [
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/financial-services/lvlv.html",
+                     "id" : "&lid=hdr-services-ind-finanšu pakalpojumi",
+                     "label" : "Finanšu pakalpojumi",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/retail/lvlv.html",
+                     "id" : "&lid=hdr-services-ind-mazumtirdzniecība un patēriņa preces",
+                     "label" : "Mazumtirdzniecība un patēriņa preces",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/high-tech-and-communications/lvlv.html",
+                     "id" : "&lid=hdr-services-ind-progresīvās tehnoloģijas un sakari",
+                     "label" : "Progresīvās tehnoloģijas un sakari",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/government/lvlv.html",
+                     "id" : "&lid=hdr-services-ind-valsts pārvalde",
+                     "label" : "Valsts pārvalde",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Pakalpojumi"
+         },
+         "supplies" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/lvlv.html",
+               "id" : "&lid=hdr-supplies-title-palīgmateriāli",
+               "label" : "Palīgmateriāli",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/lvlv.html",
+                     "id" : "&lid=hdr-supplies-palīgmateriāli",
+                     "label" : "Palīgmateriāli",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/recycling/lvlv.html",
+                     "id" : "&lid=hdr-supplies-otrreizējās pārstrādes programmas",
+                     "label" : "Otrreizējās pārstrādes programmas",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Palīgmateriāli"
+         },
+         "support" : {
+            "col1" : {
+               "href" : "http://www.support.xerox.com/support/lvlv.html",
+               "id" : "&lid=hdr-support-title-atbalsts un draiveri",
+               "label" : "Atbalsts un draiveri",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/support-faq/lvlv.html",
+                     "id" : "&lid=hdr-support-bieži uzdotie jautājumi",
+                     "label" : "Bieži uzdotie jautājumi",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/customer-training/lvlv.html",
+                     "id" : "&lid=hdr-support-konsultāciju un mācību pakalpojumi",
+                     "label" : "Konsultāciju un mācību pakalpojumi",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/information-security/lvlv.html",
+                     "id" : "&lid=hdr-support-informācija par drošību",
+                     "label" : "Informācija par drošību",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Atbalsts un draiveri"
+         }
+      },
+      "secondaryNav" : {
+         "links" : [
+            {
+               "choices" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
+               "id" : "hdr-bar-country-select",
+               "label" : "Latvia"
+            },
+            {
+               "href" : "#",
+               "label" : "Sign In"
+            }
+         ]
+      },
+      "tertiaryNav" : {
+         "contactUs" : "Sazinieties ar mums",
+         "share" : "Kopīgot"
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home",
+         "menuBtnTitle" : "Open/Close menu",
+         "searchBtnTitle" : "Search",
+         "searchPlaceholder" : "Search"
+      }
+   }
+}

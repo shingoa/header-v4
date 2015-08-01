@@ -1,0 +1,553 @@
+{
+   "footer" : {
+      "copyrightStatement" : "©2015 Xerox Corporation. Tutti i diritti riservati. Xerox® e Xerox and Design® sono marchi di Xerox Corporation negli Stati Uniti e/o in altri Paesi.",
+      "footerLinks" : {
+         "links" : [
+            {
+               "class" : "xrx_hide_mobile first",
+               "href" : "http://www.xerox.it/jobs/itit.html",
+               "id" : "&lid=ftr-careers",
+               "label" : "Lavora con noi",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile",
+               "href" : "http://dev.xerox.it/about-xerox/contact-us/itit.html",
+               "id" : "&lid=ftr-contact us",
+               "label" : "Contatti",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://dev.xerox.it/about-xerox/itit.html",
+               "id" : "&lid=ftr-about xerox",
+               "label" : "Chi siamo",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://news.xerox.com/pr/xerox/investor-relations.aspx",
+               "id" : "&lid=ftr-investors",
+               "label" : "Investitori",
+               "target" : "_blank"
+            },
+            {
+               "class" : "",
+               "href" : "http://dev.xerox.it/about-xerox/privacy-policy/itit.html",
+               "id" : "&lid=ftr-privacy",
+               "label" : "Privacy",
+               "target" : "_self"
+            },
+            {
+               "class" : "",
+               "href" : "http://dev.xerox.it/about-xerox/website-terms-of-use/itit.html",
+               "id" : "&lid=ftr-legal",
+               "label" : "Note legali",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://dev.xerox.it/about-xerox/site-map/itit.html",
+               "id" : "&lid=ftr-site map",
+               "label" : "Mappa sito",
+               "target" : "_self"
+            }
+         ]
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home"
+      }
+   },
+   "header" : {
+      "footerLinks" : [
+         {
+            "href" : "#",
+            "label" : "Contact"
+         },
+         {
+            "href" : "#",
+            "label" : "Chat"
+         },
+         {
+            "href" : "#",
+            "label" : "Where to Buy"
+         },
+         {
+            "href" : "#",
+            "label" : "Careers"
+         },
+         {
+            "href" : "#",
+            "label" : "Partners"
+         },
+         {
+            "href" : "#",
+            "label" : "Case Studies"
+         }
+      ],
+      "primaryNav" : {
+         "about" : {
+            "col1" : {
+               "href" : "http://dev.xerox.it/about-xerox/itit.html",
+               "id" : "&lid=hdr-about-title-chi siamo",
+               "label" : "Chi siamo",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.it/about-xerox/company-facts/itit.html",
+                     "id" : "&lid=hdr-about-breve descrizione di xerox",
+                     "label" : "Breve descrizione di Xerox",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://news.xerox.com/investors",
+                     "id" : "&lid=hdr-about-investitori",
+                     "label" : "Investitori",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/news/itit.html",
+                     "id" : "&lid=hdr-about-newsroom",
+                     "label" : "Newsroom",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/about-xerox/citizenship/itit.html",
+                     "id" : "&lid=hdr-about-senso civico globale",
+                     "label" : "Senso civico globale",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/about-xerox/environment/itit.html",
+                     "id" : "&lid=hdr-about-ambiente e sviluppo sostenibile",
+                     "label" : "Ambiente e sviluppo sostenibile",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.realbusinesslive.xerox.com/events/index/itit.html",
+                     "id" : "&lid=hdr-about-eventi_ fiere e webinars",
+                     "label" : "Eventi, Fiere e Webinars",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/innovation/itit.html",
+                     "id" : "&lid=hdr-about-innovazione",
+                     "label" : "Innovazione",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.xerox.it/about-xerox/contact-us/itit.html",
+               "id" : "&lid=hdr-about-contact-title-contatti",
+               "label" : "Contatti",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.it/about-xerox/contact-us/itit.html#billing",
+                     "id" : "&lid=hdr-about-contact-assistenza fatturazione e amministrazione account",
+                     "label" : "Assistenza fatturazione e amministrazione account",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/about-xerox/contact-us/itit.html#tech_support",
+                     "id" : "&lid=hdr-about-contact-supporto tecnico",
+                     "label" : "Supporto tecnico",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/about-xerox/contact-us/itit.html#products",
+                     "id" : "&lid=hdr-about-contact-prodotti e software",
+                     "label" : "Prodotti e software",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/about-xerox/contact-us/itit.html#supplies",
+                     "id" : "&lid=hdr-about-contact-materiali di consumo",
+                     "label" : "Materiali di consumo",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/about-xerox/contact-us/itit.html#services",
+                     "id" : "&lid=hdr-about-contact-servizi aziendali",
+                     "label" : "Servizi aziendali",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/about-xerox/contact-us/itit.html#research",
+                     "id" : "&lid=hdr-about-contact-ricerca e innovazione",
+                     "label" : "Ricerca e innovazione",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/about-xerox/contact-us/itit.html#corporate",
+                     "id" : "&lid=hdr-about-contact-xerox corporation",
+                     "label" : "Xerox Corporation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/perl-bin/world_contact.pl#0",
+                     "id" : "&lid=hdr-about-contact-sedi mondiali",
+                     "label" : "Sedi mondiali",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.xerox.it/about-xerox/buy/itit.html",
+               "id" : "&lid=hdr-about-wtb-title-dove acquistare",
+               "label" : "Dove acquistare",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.it/about-xerox/buy/itit.html#office",
+                     "id" : "&lid=hdr-about-wtb-prodotti per ufficio",
+                     "label" : "Prodotti Per Ufficio",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/about-xerox/buy/itit.html#production",
+                     "id" : "&lid=hdr-about-wtb-prodotti di produzione",
+                     "label" : "Prodotti di produzione",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/about-xerox/buy/itit.html#scanners",
+                     "id" : "&lid=hdr-about-wtb-scanner",
+                     "label" : "Scanner",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/about-xerox/buy/itit.html#supplies",
+                     "id" : "&lid=hdr-about-wtb-materiali di consumo",
+                     "label" : "Materiali di consumo",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/about-xerox/buy/itit.html#services",
+                     "id" : "&lid=hdr-about-wtb-servizi aziendali",
+                     "label" : "Servizi aziendali",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Chi siamo"
+         },
+         "products" : {
+            "col1" : {
+               "href" : "http://dev.xerox.it/ufficio/index/itit.html",
+               "id" : "&lid=hdr-products-ofc-title-office solutions",
+               "label" : "Soluzioni per l'ufficio",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.it/ufficio/digital-printing-equipment/stampanti/itit.html",
+                     "id" : "&lid=hdr-products-ofc-stampanti per ufficio",
+                     "label" : "Stampanti per ufficio",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/ufficio/digital-printing-equipment/stampante-multifunzione/itit.html",
+                     "id" : "&lid=hdr-products-ofc-multifunzione",
+                     "label" : "Multifunzione",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.xeroxscanners.com/it/it/",
+                     "id" : "&lid=hdr-products-ofc-scanners",
+                     "label" : "Scanner",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/ufficio/soluzioni-software/itit.html",
+                     "id" : "&lid=hdr-products-ofc-office software",
+                     "label" : "Software per l'ufficio",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.xerox.it/stampa-digitale/itit.html",
+               "id" : "&lid=hdr-products-gc-title-graphic communications",
+               "label" : "Comunicazioni grafiche",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.it/ufficio/digital-printing-equipment/macchina-da-stampa-digitale/itit.html",
+                     "id" : "&lid=hdr-products-gc-stampanti di produzione",
+                     "label" : "Stampanti di produzione",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/ufficio/digital-printing-equipment/stampante-ad-alimentazione-continua/itit.html",
+                     "id" : "&lid=hdr-products-gc-stampanti ad alimentazione continua",
+                     "label" : "Stampanti ad alimentazione continua",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/ufficio/digital-printing-equipment/stampanti-per-grandi-formati-/itit.html",
+                     "id" : "&lid=hdr-products-gc-stampanti per grandi formati",
+                     "label" : "Stampanti per grandi formati",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/stampa-digitale/feeders-print-finishing/itit.html",
+                     "id" : "&lid=hdr-products-gc-alimentazione e finitura",
+                     "label" : "Alimentazione e finitura",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/stampa-digitale/flusso-di-lavoro/itit.html",
+                     "id" : "&lid=hdr-products-gc-software per il flusso di lavoro",
+                     "label" : "Software per il flusso di lavoro",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "label" : "Risorse aggiuntive",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.it/stampa-digitale/product-locator/itit.html",
+                     "id" : "&lid=hdr-products-res-product finder",
+                     "label" : "Cerca prodotti",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/ufficio/small-business/itit.html",
+                     "id" : "&lid=hdr-products-res-small business resource center",
+                     "label" : "Soluzioni per le piccole imprese",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/printer-supplies/itit.html",
+                     "id" : "&lid=hdr-products-res-toner and ink",
+                     "label" : "Toner e inchiostro",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/about-xerox/partner-programs/itit.html",
+                     "id" : "&lid=hdr-products-res-become a partner",
+                     "label" : "Diventate partner",
+                     "target" : "_self"
+                  }
+               ]
+            },
+            "label" : "Prodotti"
+         },
+         "services" : {
+            "col1" : {
+               "href" : "http://dev.xerox.it/servizi/document-management-solutions/itit.html",
+               "id" : "&lid=hdr-services-dso-title-gestione dei documenti",
+               "label" : "Gestione dei documenti",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.it/servizi/enterprise-content-management/itit.html",
+                     "id" : "&lid=hdr-services-dso-gestione dei contenuti aziendali",
+                     "label" : "Gestione dei contenuti aziendali",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/servizi/print-room/itit.html",
+                     "id" : "&lid=hdr-services-dso-servizi di stampa centralizzata",
+                     "label" : "Servizi Di Stampa Centralizzata",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/servizi/xerox-managed-print-services/itit.html",
+                     "id" : "&lid=hdr-services-dso-servizi di stampa gestita",
+                     "label" : "Servizi di stampa gestita",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.xerox.it/servizi/business-process-outsourcing/itit.html",
+               "id" : "&lid=hdr-services-bpo-title-processi aziendali",
+               "label" : "Processi aziendali",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.it/servizi/xerox-marketing-services/itit.html",
+                     "id" : "&lid=hdr-services-bpo-comunicazione e marketing",
+                     "label" : "Comunicazione e marketing",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/servizi/finance-and-accounting/itit.html",
+                     "id" : "&lid=hdr-services-bpo-finanza e contabilità",
+                     "label" : "Finanza e contabilità",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/servizi/hr-outsourcing/itit.html",
+                     "id" : "&lid=hdr-services-bpo-outsourcing hr",
+                     "label" : "Outsourcing HR",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/consulenza/gestione-documentale/itit.html",
+                     "id" : "&lid=hdr-services-bpo-servizi di elaborazione delle transazioni di documenti",
+                     "label" : "Servizi di elaborazione delle transazioni di documenti",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/servizi/customer-service/itit.html",
+                     "id" : "&lid=hdr-services-bpo-soluzioni di assistenza clienti",
+                     "label" : "Soluzioni di assistenza clienti",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.xerox.it/servizi/industry-services/itit.html",
+               "id" : "&lid=hdr-services-ind-title-settori che si affidano a noi",
+               "label" : "Settori che si affidano a noi",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.it/consulenza/business-services-industry/government/itit.html",
+                     "id" : "&lid=hdr-services-ind-governo",
+                     "label" : "Governo",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/consulenza/business-services-industry/high-tech-and-communications/itit.html",
+                     "id" : "&lid=hdr-services-ind-high-tech e telecomunicazioni",
+                     "label" : "High-Tech e Telecomunicazioni",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/consulenza/business-services-industry/retail/itit.html",
+                     "id" : "&lid=hdr-services-ind-prodotti di consumo e vendita al dettaglio",
+                     "label" : "Prodotti di consumo e vendita al dettaglio",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/consulenza/business-services-industry/financial-services/itit.html",
+                     "id" : "&lid=hdr-services-ind-servizi finanziari",
+                     "label" : "Servizi Finanziari",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/servizi/transport-solutions/itit.html",
+                     "id" : "&lid=hdr-services-ind-trasporti",
+                     "label" : "Trasporti",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Servizi"
+         },
+         "supplies" : {
+            "col1" : {
+               "href" : "http://dev.xerox.it/printer-supplies/itit.html",
+               "id" : "&lid=hdr-supplies-title-materiali di consumo",
+               "label" : "Materiali di consumo",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.it/printer-supplies/itit.html",
+                     "id" : "&lid=hdr-supplies-vendita toner_ inchiostri e accessori",
+                     "label" : "Vendita toner, inchiostri e accessori",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/printer-supplies/paper-marketing/itit.html",
+                     "id" : "&lid=hdr-supplies-carta e altri supporti di stampa",
+                     "label" : "Carta e altri supporti di stampa",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "https://www.test.accounts.xerox.com/loyalty-program/landing.jsf?&locale=it_IT",
+                     "id" : "&lid=hdr-supplies-genuine xerox rewards",
+                     "label" : "Genuine Xerox Rewards",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/about-xerox/recycling/itit.html",
+                     "id" : "&lid=hdr-supplies-programmi di riciclo",
+                     "label" : "Programmi di riciclo",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/printer-supplies/compatible-cartridges/itit.html",
+                     "id" : "&lid=hdr-supplies-toner per stampanti non xerox",
+                     "label" : "Toner per stampanti non Xerox",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.xerox.it/about-xerox/account-management/consumables/itit.html",
+               "id" : "&lid=hdr-supplies-title-contract-contratti per materiali di consumo",
+               "label" : "Contratti per materiali di consumo",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.it/about-xerox/account-management/consumables/itit.html",
+                     "id" : "&lid=hdr-supplies-contract-login per ordinare toner e inchiostri inclusi nel contratto",
+                     "label" : "Login per ordinare toner e inchiostri inclusi nel contratto",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Materiali di consumo"
+         },
+         "support" : {
+            "col1" : {
+               "href" : "http://www.support.xerox.com/support/itit.html",
+               "id" : "&lid=hdr-support-title-supporto e driver",
+               "label" : "Supporto e Driver",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.it/about-xerox/support-faq/itit.html",
+                     "id" : "&lid=hdr-support-domande frequenti",
+                     "label" : "Domande frequenti",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/about-xerox/customer-training/itit.html",
+                     "id" : "&lid=hdr-support-servizi di formazione e consulenza",
+                     "label" : "Servizi di formazione e consulenza",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.it/information-security/itit.html",
+                     "id" : "&lid=hdr-support-informazioni sulla sicurezza",
+                     "label" : "Informazioni sulla sicurezza",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Supporto e Driver"
+         }
+      },
+      "secondaryNav" : {
+         "links" : [
+            {
+               "choices" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
+               "id" : "hdr-bar-country-select",
+               "label" : "Italia"
+            },
+            {
+               "href" : "#",
+               "label" : "Sign In"
+            }
+         ]
+      },
+      "tertiaryNav" : {
+         "contactUs" : "Contatti",
+         "share" : "Condividi"
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home",
+         "menuBtnTitle" : "Open/Close menu",
+         "searchBtnTitle" : "ricerca",
+         "searchPlaceholder" : "ricerca"
+      }
+   }
+}

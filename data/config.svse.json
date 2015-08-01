@@ -1,0 +1,535 @@
+{
+   "footer" : {
+      "copyrightStatement" : "©2015 Xerox Corporation. Med ensamrätt. Xerox® och Xerox and Design® är varumärken som tillhör Xerox Corporation i USA och/eller andra länder.",
+      "footerLinks" : {
+         "links" : [
+            {
+               "class" : "xrx_hide_mobile first",
+               "href" : "http://www.xerox.com/jobs/svse.html",
+               "id" : "&lid=ftr-careers",
+               "label" : "Karriär på Xerox",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/svse.html",
+               "id" : "&lid=ftr-contact us",
+               "label" : "Kontakta oss",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/svse.html",
+               "id" : "&lid=ftr-about xerox",
+               "label" : "Om Xerox",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://news.xerox.com/pr/xerox/investor-relations.aspx",
+               "id" : "&lid=ftr-investors",
+               "label" : "Investerare",
+               "target" : "_blank"
+            },
+            {
+               "class" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/privacy-policy/svse.html",
+               "id" : "&lid=ftr-privacy",
+               "label" : "Personlig Integritet",
+               "target" : "_self"
+            },
+            {
+               "class" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/website-terms-of-use/svse.html",
+               "id" : "&lid=ftr-legal",
+               "label" : "Villkor",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/site-map/svse.html",
+               "id" : "&lid=ftr-site map",
+               "label" : "Webbplatsöversik",
+               "target" : "_self"
+            }
+         ]
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home"
+      }
+   },
+   "header" : {
+      "footerLinks" : [
+         {
+            "href" : "#",
+            "label" : "Contact"
+         },
+         {
+            "href" : "#",
+            "label" : "Chat"
+         },
+         {
+            "href" : "#",
+            "label" : "Where to Buy"
+         },
+         {
+            "href" : "#",
+            "label" : "Careers"
+         },
+         {
+            "href" : "#",
+            "label" : "Partners"
+         },
+         {
+            "href" : "#",
+            "label" : "Case Studies"
+         }
+      ],
+      "primaryNav" : {
+         "about" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/svse.html",
+               "id" : "&lid=hdr-about-title-om xerox",
+               "label" : "Om Xerox",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/svse.html",
+                     "id" : "&lid=hdr-about-snabbfakta om xerox",
+                     "label" : "Snabbfakta om Xerox",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://news.xerox.com/investors",
+                     "id" : "&lid=hdr-about-investerare",
+                     "label" : "Investerare",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/news/svse.html",
+                     "id" : "&lid=hdr-about-pressinformation",
+                     "label" : "Pressinformation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/svse.html",
+                     "id" : "&lid=hdr-about-globalt medborgarskap",
+                     "label" : "Globalt medborgarskap",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/svse.html",
+                     "id" : "&lid=hdr-about-miljö och en hållbar utveckling",
+                     "label" : "Miljö och En hållbar utveckling",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.realbusinesslive.xerox.com/events/index/svse.html",
+                     "id" : "&lid=hdr-about-evenemang_ branschmässor och webbseminarier",
+                     "label" : "Evenemang, Branschmässor och Webbseminarier",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/innovation/svse.html",
+                     "id" : "&lid=hdr-about-innovationslabb",
+                     "label" : "Innovationslabb",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/svse.html",
+               "id" : "&lid=hdr-about-contact-title-kontakt",
+               "label" : "Kontakt",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/svse.html#billing",
+                     "id" : "&lid=hdr-about-contact-hjälp med fakturering och kontoadministration",
+                     "label" : "Hjälp med fakturering och kontoadministration",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/svse.html#tech_support",
+                     "id" : "&lid=hdr-about-contact-teknisk support",
+                     "label" : "Teknisk support",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/svse.html#products",
+                     "id" : "&lid=hdr-about-contact-produkter och programvara",
+                     "label" : "Produkter och programvara",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/svse.html#supplies",
+                     "id" : "&lid=hdr-about-contact-förbrukningsmaterial",
+                     "label" : "Förbrukningsmaterial",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/svse.html#services",
+                     "id" : "&lid=hdr-about-contact-affärstjänster",
+                     "label" : "Affärstjänster",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/svse.html#research",
+                     "id" : "&lid=hdr-about-contact-forskning och utveckling",
+                     "label" : "Forskning och utveckling",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/svse.html#corporate",
+                     "id" : "&lid=hdr-about-contact-xerox corporation",
+                     "label" : "Xerox Corporation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/perl-bin/world_contact.pl#0",
+                     "id" : "&lid=hdr-about-contact-globala platser",
+                     "label" : "Globala platser",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/svse.html",
+               "id" : "&lid=hdr-about-wtb-title-försäljning",
+               "label" : "Försäljning",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/svse.html#office",
+                     "id" : "&lid=hdr-about-wtb-kontorsmaskiner",
+                     "label" : "Kontorsmaskiner",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/svse.html#production",
+                     "id" : "&lid=hdr-about-wtb-produktionsmaskiner",
+                     "label" : "Produktionsmaskiner",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/svse.html#scanners",
+                     "id" : "&lid=hdr-about-wtb-scanners",
+                     "label" : "Scanners",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/svse.html#supplies",
+                     "id" : "&lid=hdr-about-wtb-förbrukningsmaterial",
+                     "label" : "Förbrukningsmaterial",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/svse.html#services",
+                     "id" : "&lid=hdr-about-wtb-affärstjänster",
+                     "label" : "Affärstjänster",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Om Xerox"
+         },
+         "products" : {
+            "col1" : {
+               "href" : "http://dev.office.xerox.com/index/svse.html",
+               "id" : "&lid=hdr-products-ofc-title-office solutions",
+               "label" : "Kontorslösningar",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/printers/svse.html",
+                     "id" : "&lid=hdr-products-ofc-kontorsskrivare",
+                     "label" : "Kontorsskrivare",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/multifunction-printer/svse.html",
+                     "id" : "&lid=hdr-products-ofc-multifunktion",
+                     "label" : "Multifunktion",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.xeroxscanners.com/en/en/",
+                     "id" : "&lid=hdr-products-ofc-scanners",
+                     "label" : "Avläsare",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/software-solutions/svse.html",
+                     "id" : "&lid=hdr-products-ofc-office software",
+                     "label" : "Program för kontor",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/digital-printing/svse.html",
+               "id" : "&lid=hdr-products-gc-title-graphic communications",
+               "label" : "Grafisk kommunikation",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/digital-press/svse.html",
+                     "id" : "&lid=hdr-products-gc-produktionsskrivare",
+                     "label" : "Produktionsskrivare",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/continuous-feed-printer/svse.html",
+                     "id" : "&lid=hdr-products-gc-skrivare med kontinuerlig matning",
+                     "label" : "Skrivare med kontinuerlig matning",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/wide-format-printer/svse.html",
+                     "id" : "&lid=hdr-products-gc-storformat",
+                     "label" : "Storformat",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/feeders-print-finishing/svse.html",
+                     "id" : "&lid=hdr-products-gc-efterbehandling och matning",
+                     "label" : "Efterbehandling och matning",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/workflow/svse.html",
+                     "id" : "&lid=hdr-products-gc-programvara for arbetsfloden",
+                     "label" : "Programvara för arbetsflöden",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "label" : "Övriga resurser",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/product-locator/svse.html",
+                     "id" : "&lid=hdr-products-res-product finder",
+                     "label" : "Sök produkt",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/small-business/svse.html",
+                     "id" : "&lid=hdr-products-res-small business resource center",
+                     "label" : "Lösningar för småföretag",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/svse.html",
+                     "id" : "&lid=hdr-products-res-toner and ink",
+                     "label" : "Toner och bläck",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/partner-programs/svse.html",
+                     "id" : "&lid=hdr-products-res-become a partner",
+                     "label" : "Bli en partner",
+                     "target" : "_self"
+                  }
+               ]
+            },
+            "label" : "Produkter"
+         },
+         "services" : {
+            "col1" : {
+               "href" : "http://dev.services.xerox.com/document-management-solutions/svse.html",
+               "id" : "&lid=hdr-services-dso-title-dokumenthantering",
+               "label" : "Dokumenthantering",
+               "links" : [
+                  {
+                     "href" : "http://dev.services.xerox.com/print-room/svse.html",
+                     "id" : "&lid=hdr-services-dso-centraliserade utskriftstjänster",
+                     "label" : "Centraliserade Utskriftstjänster",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-managed-print-services/svse.html",
+                     "id" : "&lid=hdr-services-dso-strategiska utskriftstjänster",
+                     "label" : "Strategiska utskriftstjänster",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.services.xerox.com/business-process-outsourcing/svse.html",
+               "id" : "&lid=hdr-services-bpo-title-affärsprocesser",
+               "label" : "Affärsprocesser",
+               "links" : [
+                  {
+                     "href" : "http://dev.services.xerox.com/finance-and-accounting/svse.html",
+                     "id" : "&lid=hdr-services-bpo-finans och redovisning",
+                     "label" : "Finans och redovisning",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-marketing-services/svse.html",
+                     "id" : "&lid=hdr-services-bpo-kommunikation och marknadsföring",
+                     "label" : "Kommunikation och marknadsföring",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/customer-service/svse.html",
+                     "id" : "&lid=hdr-services-bpo-kundtjänstlösningar",
+                     "label" : "Kundtjänstlösningar",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/back-office-services/svse.html",
+                     "id" : "&lid=hdr-services-bpo-transaktionshantering – back office",
+                     "label" : "Transaktionshantering – back office",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.services.xerox.com/industry-services/svse.html",
+               "id" : "&lid=hdr-services-ind-title-vi arbetar för följande branscher",
+               "label" : "Vi arbetar för följande branscher",
+               "links" : [
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/financial-services/svse.html",
+                     "id" : "&lid=hdr-services-ind-finansiella tjänster",
+                     "label" : "Finansiella tjänster",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/retail/svse.html",
+                     "id" : "&lid=hdr-services-ind-produkter för detaljhandel och konsumenter",
+                     "label" : "Produkter för detaljhandel och konsumenter",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/government/svse.html",
+                     "id" : "&lid=hdr-services-ind-stat och myndigheter",
+                     "label" : "Stat och myndigheter",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/high-tech-and-communications/svse.html",
+                     "id" : "&lid=hdr-services-ind-teknik- och kommunikationsbranschen",
+                     "label" : "Teknik- och kommunikationsbranschen",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/transport-solutions/svse.html",
+                     "id" : "&lid=hdr-services-ind-transport",
+                     "label" : "Transport",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Tjänster"
+         },
+         "supplies" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/svse.html",
+               "id" : "&lid=hdr-supplies-title-förbrukning",
+               "label" : "Förbrukning",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/svse.html",
+                     "id" : "&lid=hdr-supplies-köp tonerkassetter_ bläck och tillbehör",
+                     "label" : "Köp tonerkassetter, bläck och tillbehör",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/paper-marketing/svse.html",
+                     "id" : "&lid=hdr-supplies-papper och övrigt utskriftsmaterial",
+                     "label" : "Papper och övrigt utskriftsmaterial",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/recycling/svse.html",
+                     "id" : "&lid=hdr-supplies-återvinningsprogram",
+                     "label" : "Återvinningsprogram",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/compatible-cartridges/svse.html",
+                     "id" : "&lid=hdr-supplies-toner för skrivare av andra märken",
+                     "label" : "Toner för skrivare av andra märken",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/account-management/consumables/svse.html",
+               "id" : "&lid=hdr-supplies-title-contract-förbrukningsmaterial i kontrakt",
+               "label" : "Förbrukningsmaterial i kontrakt",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/account-management/consumables/svse.html",
+                     "id" : "&lid=hdr-supplies-contract-logga in för att beställa tonerkassetter och bläckpatroner som ingår i ditt avtal",
+                     "label" : "Logga in för att beställa tonerkassetter och bläckpatroner som ingår i ditt avtal",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Förbrukning"
+         },
+         "support" : {
+            "col1" : {
+               "href" : "http://www.support.xerox.com/support/svse.html",
+               "id" : "&lid=hdr-support-title-support _ drivrutiner",
+               "label" : "Support & Drivrutiner",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/support-faq/svse.html",
+                     "id" : "&lid=hdr-support-vanliga frågor (faq)",
+                     "label" : "Vanliga frågor (FAQ)",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/customer-training/svse.html",
+                     "id" : "&lid=hdr-support-konsultation och utbildning",
+                     "label" : "Konsultation och utbildning",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/information-security/svse.html",
+                     "id" : "&lid=hdr-support-säkerhetsinformation",
+                     "label" : "Säkerhetsinformation",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Support & Drivrutiner"
+         }
+      },
+      "secondaryNav" : {
+         "links" : [
+            {
+               "choices" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
+               "id" : "hdr-bar-country-select",
+               "label" : "Sweden"
+            },
+            {
+               "href" : "#",
+               "label" : "Sign In"
+            }
+         ]
+      },
+      "tertiaryNav" : {
+         "contactUs" : "Kontakta oss",
+         "share" : "Dela"
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home",
+         "menuBtnTitle" : "Open/Close menu",
+         "searchBtnTitle" : "Sök",
+         "searchPlaceholder" : "Sök"
+      }
+   }
+}

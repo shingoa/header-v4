@@ -1,0 +1,459 @@
+{
+   "footer" : {
+      "copyrightStatement" : "© 2015 Xerox Corporation. Všechna práva vyhrazena. Xerox® a Xerox and Design® jsou obchodní známky Xerox Corporation ve Spojených státech amerických a/nebo dalších zemích.",
+      "footerLinks" : {
+         "links" : [
+            {
+               "class" : "xrx_hide_mobile first",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/cscz.html",
+               "id" : "&lid=ftr-contact us",
+               "label" : "Kontaktujte nás",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/cscz.html",
+               "id" : "&lid=ftr-about xerox",
+               "label" : "O Xeroxu",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://news.xerox.com/pr/xerox/investor-relations.aspx",
+               "id" : "&lid=ftr-investors",
+               "label" : "Investoři",
+               "target" : "_blank"
+            },
+            {
+               "class" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/privacy-policy/cscz.html",
+               "id" : "&lid=ftr-privacy",
+               "label" : "Soukromí",
+               "target" : "_self"
+            },
+            {
+               "class" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/website-terms-of-use/cscz.html",
+               "id" : "&lid=ftr-legal",
+               "label" : "Právní informace",
+               "target" : "_self"
+            }
+         ]
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home"
+      }
+   },
+   "header" : {
+      "footerLinks" : [
+         {
+            "href" : "#",
+            "label" : "Contact"
+         },
+         {
+            "href" : "#",
+            "label" : "Chat"
+         },
+         {
+            "href" : "#",
+            "label" : "Where to Buy"
+         },
+         {
+            "href" : "#",
+            "label" : "Careers"
+         },
+         {
+            "href" : "#",
+            "label" : "Partners"
+         },
+         {
+            "href" : "#",
+            "label" : "Case Studies"
+         }
+      ],
+      "primaryNav" : {
+         "about" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/cscz.html",
+               "id" : "&lid=hdr-about-title-o xeroxu",
+               "label" : "O Xeroxu",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/cscz.html",
+                     "id" : "&lid=hdr-about-xerox v kostce",
+                     "label" : "Xerox v kostce",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://news.xerox.com/investors",
+                     "id" : "&lid=hdr-about-investoři",
+                     "label" : "Investoři",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/cscz.html",
+                     "id" : "&lid=hdr-about-zprávy ze světa",
+                     "label" : "Zprávy ze světa",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/cscz.html",
+                     "id" : "&lid=hdr-about-životní prostředí a udržitelnost",
+                     "label" : "Životní prostředí a udržitelnost",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/innovation/cscz.html",
+                     "id" : "&lid=hdr-about-inovace",
+                     "label" : "Inovace",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/cscz.html",
+               "id" : "&lid=hdr-about-contact-title-kontakt",
+               "label" : "Kontakt",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/cscz.html#tech_support",
+                     "id" : "&lid=hdr-about-contact-technická podpora",
+                     "label" : "Technická podpora",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/cscz.html#products",
+                     "id" : "&lid=hdr-about-contact-produkty a software",
+                     "label" : "Produkty a software",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/cscz.html#supplies",
+                     "id" : "&lid=hdr-about-contact-spotřební materiál",
+                     "label" : "Spotřební materiál",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/cscz.html#services",
+                     "id" : "&lid=hdr-about-contact-obchodní služby",
+                     "label" : "Obchodní služby",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/cscz.html#corporate",
+                     "id" : "&lid=hdr-about-contact-společnost xerox",
+                     "label" : "Společnost Xerox",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/perl-bin/world_contact.pl#0",
+                     "id" : "&lid=hdr-about-contact-pobočky ve světě",
+                     "label" : "Pobočky ve světě",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/cscz.html",
+               "id" : "&lid=hdr-about-wtb-title-kde koupit",
+               "label" : "Kde koupit",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/cscz.html#office",
+                     "id" : "&lid=hdr-about-wtb-kancelářská zařízení",
+                     "label" : "Kancelářská zařízení",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/cscz.html#production",
+                     "id" : "&lid=hdr-about-wtb-produkční zařízení",
+                     "label" : "Produkční zařízení",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/cscz.html#scanners",
+                     "id" : "&lid=hdr-about-wtb-skenery",
+                     "label" : "Skenery",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/cscz.html#supplies",
+                     "id" : "&lid=hdr-about-wtb-spotřební materiál",
+                     "label" : "Spotřební materiál",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/cscz.html#services",
+                     "id" : "&lid=hdr-about-wtb-obchodní služby",
+                     "label" : "Obchodní služby",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "O Xeroxu"
+         },
+         "products" : {
+            "col1" : {
+               "href" : "http://dev.office.xerox.com/index/cscz.html",
+               "id" : "&lid=hdr-products-ofc-title-office solutions",
+               "label" : "Řešení pro kanceláře",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/printers/cscz.html",
+                     "id" : "&lid=hdr-products-ofc-kancelářské tiskárny",
+                     "label" : "Kancelářské tiskárny",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/multifunction-printer/cscz.html",
+                     "id" : "&lid=hdr-products-ofc-multifunkční tiskárny",
+                     "label" : "Multifunkční tiskárny",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.xeroxscanners.com/en/en/",
+                     "id" : "&lid=hdr-products-ofc-scanners",
+                     "label" : "Skenery",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/software-solutions/cscz.html",
+                     "id" : "&lid=hdr-products-ofc-office software",
+                     "label" : "Kancelářský software",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/digital-printing/cscz.html",
+               "id" : "&lid=hdr-products-gc-title-graphic communications",
+               "label" : "Grafická komunikace",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/digital-press/cscz.html",
+                     "id" : "&lid=hdr-products-gc-produkční tiskárny",
+                     "label" : "Produkční tiskárny",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/continuous-feed-printer/cscz.html",
+                     "id" : "&lid=hdr-products-gc-kontinuální zařízení - vysoké objemy",
+                     "label" : "Kontinuální zařízení - vysoké objemy",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/wide-format-printer/cscz.html",
+                     "id" : "&lid=hdr-products-gc-velkoformátové tiskárny",
+                     "label" : "Velkoformátové tiskárny",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/workflow/cscz.html",
+                     "id" : "&lid=hdr-products-gc-workflow",
+                     "label" : "Workflow",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "label" : "Další zdroje informací",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/product-locator/cscz.html",
+                     "id" : "&lid=hdr-products-res-product finder",
+                     "label" : "Vyhledávač produktů",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/small-business/cscz.html",
+                     "id" : "&lid=hdr-products-res-small business resource center",
+                     "label" : "Řešení pro malé podniky",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/cscz.html",
+                     "id" : "&lid=hdr-products-res-toner and ink",
+                     "label" : "Spotřební materiál",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/partner-programs/cscz.html",
+                     "id" : "&lid=hdr-products-res-become a partner",
+                     "label" : "Staňte se partnerem",
+                     "target" : "_self"
+                  }
+               ]
+            },
+            "label" : "Produkty"
+         },
+         "services" : {
+            "col1" : {
+               "href" : "http://dev.services.xerox.com/document-management-solutions/cscz.html",
+               "id" : "&lid=hdr-services-dso-title-správa dokumentů",
+               "label" : "Správa dokumentů",
+               "links" : [
+                  {
+                     "href" : "http://dev.services.xerox.com/print-room/cscz.html",
+                     "id" : "&lid=hdr-services-dso-centralizovaný tiskový servis",
+                     "label" : "Centralizovaný tiskový servis",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-managed-print-services/cscz.html",
+                     "id" : "&lid=hdr-services-dso-tiskové služby",
+                     "label" : "Tiskové služby",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.services.xerox.com/business-process-outsourcing/cscz.html",
+               "id" : "&lid=hdr-services-bpo-title-obchodní procesy",
+               "label" : "Obchodní procesy",
+               "links" : [
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-marketing-services/cscz.html",
+                     "id" : "&lid=hdr-services-bpo-marketing a komunikace",
+                     "label" : "Marketing a komunikace",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/document-management/cscz.html",
+                     "id" : "&lid=hdr-services-bpo-transakční tiskové služby",
+                     "label" : "Transakční tiskové služby",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/customer-service/cscz.html",
+                     "id" : "&lid=hdr-services-bpo-řešení pro péči o zákazníky",
+                     "label" : "Řešení pro péči o zákazníky",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.services.xerox.com/industry-services/cscz.html",
+               "id" : "&lid=hdr-services-ind-title-řešení dle odvětví",
+               "label" : "Řešení dle odvětví",
+               "links" : [
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/financial-services/cscz.html",
+                     "id" : "&lid=hdr-services-ind-finanční služby",
+                     "label" : "Finanční služby",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/retail/cscz.html",
+                     "id" : "&lid=hdr-services-ind-maloobchod a živnostníci",
+                     "label" : "Maloobchod a živnostníci",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/high-tech-and-communications/cscz.html",
+                     "id" : "&lid=hdr-services-ind-moderní technologie",
+                     "label" : "Moderní technologie",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/government/cscz.html",
+                     "id" : "&lid=hdr-services-ind-státní správa",
+                     "label" : "Státní správa",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Služby"
+         },
+         "supplies" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/cscz.html",
+               "id" : "&lid=hdr-supplies-title-spotřební materiál",
+               "label" : "Spotřební materiál",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/cscz.html",
+                     "id" : "&lid=hdr-supplies-spotřební materiál",
+                     "label" : "Spotřební materiál",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/recycling/cscz.html",
+                     "id" : "&lid=hdr-supplies-recyklace a životní prostředí",
+                     "label" : "Recyklace a životní prostředí",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Spotřební materiál"
+         },
+         "support" : {
+            "col1" : {
+               "href" : "http://www.support.xerox.com/support/cscz.html",
+               "id" : "&lid=hdr-support-title-podpora a ovladače",
+               "label" : "Podpora a Ovladače",
+               "links" : [
+                  {
+                     "href" : "http://www.office.xerox.com/cgi-bin/dmoresloc.pl?XOGlang=cs_CZ&reseller_type=asp",
+                     "id" : "&lid=hdr-support-najít místní poskytovatele služeb",
+                     "label" : "Najít místní poskytovatele služeb",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/customer-training/cscz.html",
+                     "id" : "&lid=hdr-support-konzultační a školicí služby",
+                     "label" : "Konzultační a školicí služby",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/information-security/cscz.html",
+                     "id" : "&lid=hdr-support-informace o zabezpečení",
+                     "label" : "Informace o zabezpečení",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "https://chester.xerox.cz",
+                     "id" : "&lid=hdr-support-chester on-line nástroj pro objednávky a správu vaich zarízení",
+                     "label" : "Chester On-line nástroj pro objednávky a správu Vaich zarízení",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Podpora & Ovladače"
+         }
+      },
+      "secondaryNav" : {
+         "links" : [
+            {
+               "choices" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
+               "id" : "hdr-bar-country-select",
+               "label" : "Česká Republika"
+            },
+            {
+               "href" : "#",
+               "label" : "Sign In"
+            }
+         ]
+      },
+      "tertiaryNav" : {
+         "contactUs" : "Kontaktujte nás",
+         "share" : "Sdílet"
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home",
+         "menuBtnTitle" : "Open/Close menu",
+         "searchBtnTitle" : "Search",
+         "searchPlaceholder" : "Search"
+      }
+   }
+}

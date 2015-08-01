@@ -1,17 +1,6 @@
 built/**/*
 
 compiled/**/*
-# dist/**/*
-
-data/**/*
-# Includes the data files normally used for dev builds to save time when developing
-!data/locales.json
-!config.ptbr.json
-!config.engb.json
-!config.frfr.json
-!config.heil.json
-!config.enus.json
-!config.sample.json
 
 # Dependency directory
 # https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git

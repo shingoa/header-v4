@@ -1,0 +1,466 @@
+{
+   "footer" : {
+      "copyrightStatement" : "© 2015 Xerox Corporation. Сите права се задржани. „Ксерокс“ (Xerox®) и „Ксерокс енд дизајн“ (Xerox and Design®) се трговски марки на „Ксерокс корпорејшн“ (Xerox Corporation) во Соединетите Американски Држави и/или во други земји.",
+      "footerLinks" : {
+         "links" : [
+            {
+               "class" : "xrx_hide_mobile first",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/mkmk.html",
+               "id" : "&lid=ftr-contact us",
+               "label" : "Контактирајте не",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/mkmk.html",
+               "id" : "&lid=ftr-about xerox",
+               "label" : "За Xerox",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://news.xerox.com/pr/xerox/investor-relations.aspx",
+               "id" : "&lid=ftr-investors",
+               "label" : "Инвеститори",
+               "target" : "_blank"
+            },
+            {
+               "class" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/privacy-policy/mkmk.html",
+               "id" : "&lid=ftr-privacy",
+               "label" : "Заштита на лични податоци",
+               "target" : "_self"
+            },
+            {
+               "class" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/website-terms-of-use/mkmk.html",
+               "id" : "&lid=ftr-legal",
+               "label" : "Правни информации",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/site-map/mkmk.html",
+               "id" : "&lid=ftr-site map",
+               "label" : "Мапа на сајтот",
+               "target" : "_self"
+            }
+         ]
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home"
+      }
+   },
+   "header" : {
+      "footerLinks" : [
+         {
+            "href" : "#",
+            "label" : "Contact"
+         },
+         {
+            "href" : "#",
+            "label" : "Chat"
+         },
+         {
+            "href" : "#",
+            "label" : "Where to Buy"
+         },
+         {
+            "href" : "#",
+            "label" : "Careers"
+         },
+         {
+            "href" : "#",
+            "label" : "Partners"
+         },
+         {
+            "href" : "#",
+            "label" : "Case Studies"
+         }
+      ],
+      "primaryNav" : {
+         "about" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/mkmk.html",
+               "id" : "&lid=hdr-about-title-за xerox",
+               "label" : "За Xerox",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/mkmk.html",
+                     "id" : "&lid=hdr-about-за xerox",
+                     "label" : "За Xerox",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://news.xerox.com/investors",
+                     "id" : "&lid=hdr-about-инвеститори",
+                     "label" : "Инвеститори",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/mkmk.html",
+                     "id" : "&lid=hdr-about-одржлив развој",
+                     "label" : "Одржлив Развој",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/mkmk.html",
+                     "id" : "&lid=hdr-about-животна средина и одржливост",
+                     "label" : "Животна средина и одржливост",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/innovation/mkmk.html",
+                     "id" : "&lid=hdr-about-иновации",
+                     "label" : "Иновации",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/mkmk.html",
+               "id" : "&lid=hdr-about-contact-title-контакт",
+               "label" : "Контакт",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/mkmk.html#tech_support",
+                     "id" : "&lid=hdr-about-contact-техничка подршка",
+                     "label" : "Техничка подршка",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/mkmk.html#products",
+                     "id" : "&lid=hdr-about-contact-производи и софтвер",
+                     "label" : "Производи и софтвер",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/mkmk.html#supplies",
+                     "id" : "&lid=hdr-about-contact-потрошен материјал",
+                     "label" : "Потрошен материјал",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/mkmk.html#services",
+                     "id" : "&lid=hdr-about-contact-business services",
+                     "label" : "Business Services",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/mkmk.html#corporate",
+                     "id" : "&lid=hdr-about-contact-xerox корпорација",
+                     "label" : "Xerox Корпорација",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/perl-bin/world_contact.pl#0",
+                     "id" : "&lid=hdr-about-contact-локации ширум светот",
+                     "label" : "Локации ширум светот",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/mkmk.html",
+               "id" : "&lid=hdr-about-wtb-title-каде да купам",
+               "label" : "Каде да купам",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/mkmk.html#office",
+                     "id" : "&lid=hdr-about-wtb-office equipment",
+                     "label" : "Office Equipment",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/mkmk.html#production",
+                     "id" : "&lid=hdr-about-wtb-продукциска опрема",
+                     "label" : "Продукциска опрема",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/mkmk.html#scanners",
+                     "id" : "&lid=hdr-about-wtb-скенери",
+                     "label" : "Скенери",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/mkmk.html#supplies",
+                     "id" : "&lid=hdr-about-wtb-потрошен материјал",
+                     "label" : "Потрошен материјал",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/mkmk.html#services",
+                     "id" : "&lid=hdr-about-wtb-business services",
+                     "label" : "Business Services",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "За Xerox"
+         },
+         "products" : {
+            "col1" : {
+               "href" : "http://dev.office.xerox.com/index/mkmk.html",
+               "id" : "&lid=hdr-products-ofc-title-office solutions",
+               "label" : "Канцелариски решенија",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/printers/mkmk.html",
+                     "id" : "&lid=hdr-products-ofc-канцелариски печатачи",
+                     "label" : "Канцелариски печатачи",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/multifunction-printer/mkmk.html",
+                     "id" : "&lid=hdr-products-ofc-мултифункциски уреди",
+                     "label" : "Мултифункциски уреди",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.xeroxscanners.com/en/en/",
+                     "id" : "&lid=hdr-products-ofc-scanners",
+                     "label" : "Cкенери",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/software-solutions/mkmk.html",
+                     "id" : "&lid=hdr-products-ofc-office software",
+                     "label" : "Канцелариски софтвер",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/digital-printing/mkmk.html",
+               "id" : "&lid=hdr-products-gc-title-graphic communications",
+               "label" : "Графичка комуникација",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/digital-press/mkmk.html",
+                     "id" : "&lid=hdr-products-gc-производни дигитални печатници",
+                     "label" : "Производни дигитални печатници",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/continuous-feed-printer/mkmk.html",
+                     "id" : "&lid=hdr-products-gc-continuous feed принтери",
+                     "label" : "Continuous Feed Принтери",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/wide-format-printer/mkmk.html",
+                     "id" : "&lid=hdr-products-gc-широк формат",
+                     "label" : "Широк Формат",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/workflow/mkmk.html",
+                     "id" : "&lid=hdr-products-gc-_______ __ _______ _______",
+                     "label" : "Софтвер за работни процеси",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "label" : "Дополнителни ресурси",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/product-locator/mkmk.html",
+                     "id" : "&lid=hdr-products-res-product finder",
+                     "label" : "Пребарувач на производи",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/small-business/mkmk.html",
+                     "id" : "&lid=hdr-products-res-small business resource center",
+                     "label" : "Решенија за малечки бизниси",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/mkmk.html",
+                     "id" : "&lid=hdr-products-res-toner and ink",
+                     "label" : "тонер&мастило",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/partner-programs/mkmk.html",
+                     "id" : "&lid=hdr-products-res-become a partner",
+                     "label" : "Станете партнер",
+                     "target" : "_self"
+                  }
+               ]
+            },
+            "label" : "Производи"
+         },
+         "services" : {
+            "col1" : {
+               "href" : "http://dev.services.xerox.com/document-management-solutions/mkmk.html",
+               "id" : "&lid=hdr-services-dso-title-менаџирање со документи",
+               "label" : "Менаџирање со документи",
+               "links" : [
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-managed-print-services/mkmk.html",
+                     "id" : "&lid=hdr-services-dso-услуги за менаџирање на принт",
+                     "label" : "Услуги за менаџирање на принт",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/print-room/mkmk.html",
+                     "id" : "&lid=hdr-services-dso-централизирани услуги за печатење",
+                     "label" : "Централизирани услуги за печатење",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.services.xerox.com/business-process-outsourcing/mkmk.html",
+               "id" : "&lid=hdr-services-bpo-title-бизнис процеси",
+               "label" : "Бизнис процеси",
+               "links" : [
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-marketing-services/mkmk.html",
+                     "id" : "&lid=hdr-services-bpo-комуникација и маркетинг",
+                     "label" : "Комуникација и Маркетинг",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/customer-service/mkmk.html",
+                     "id" : "&lid=hdr-services-bpo-решенија за грижа на клиенти",
+                     "label" : "Решенија за грижа на клиенти",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/document-management/mkmk.html",
+                     "id" : "&lid=hdr-services-bpo-услуги за дигитализација и трансакционен печат",
+                     "label" : "Услуги за дигитализација и трансакционен печат",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.services.xerox.com/industry-services/mkmk.html",
+               "id" : "&lid=hdr-services-ind-title-индустрии кои ги опслужуваме",
+               "label" : "Индустрии кои ги опслужуваме",
+               "links" : [
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/high-tech-and-communications/mkmk.html",
+                     "id" : "&lid=hdr-services-ind-висока технологија и комуникации",
+                     "label" : "Висока технологија и комуникации",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/government/mkmk.html",
+                     "id" : "&lid=hdr-services-ind-влада",
+                     "label" : "Влада",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/retail/mkmk.html",
+                     "id" : "&lid=hdr-services-ind-производи за широка потрошувачка",
+                     "label" : "Производи за широка потрошувачка",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/financial-services/mkmk.html",
+                     "id" : "&lid=hdr-services-ind-финансиски услуги",
+                     "label" : "Финансиски услуги",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Услуги"
+         },
+         "supplies" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/mkmk.html",
+               "id" : "&lid=hdr-supplies-title-потрошен материјал",
+               "label" : "Потрошен материјал",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/mkmk.html",
+                     "id" : "&lid=hdr-supplies-потрошен материјал",
+                     "label" : "Потрошен материјал",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/recycling/mkmk.html",
+                     "id" : "&lid=hdr-supplies-програма за рециклирање",
+                     "label" : "Програма за рециклирање",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Потрошен материјал"
+         },
+         "support" : {
+            "col1" : {
+               "href" : "http://www.support.xerox.com/support/mkmk.html",
+               "id" : "&lid=hdr-support-title-подршка и драјвери",
+               "label" : "Подршка и драјвери",
+               "links" : [
+                  {
+                     "href" : "http://www.office.xerox.com/cgi-bin/dmoresloc.pl?XOGlang=en_MK&reseller_type=asp",
+                     "id" : "&lid=hdr-support-најдете локални добавувачи на услуги",
+                     "label" : "Најдете локални добавувачи на услуги",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/support-faq/mkmk.html",
+                     "id" : "&lid=hdr-support-најчесто поставувани прашања",
+                     "label" : "Најчесто поставувани прашања",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/customer-training/mkmk.html",
+                     "id" : "&lid=hdr-support-услуги за советување и за обуки",
+                     "label" : "Услуги за советување и за обуки",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/information-security/mkmk.html",
+                     "id" : "&lid=hdr-support-доверливи информации",
+                     "label" : "Доверливи информации",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Подршка и драјвери"
+         }
+      },
+      "secondaryNav" : {
+         "links" : [
+            {
+               "choices" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
+               "id" : "hdr-bar-country-select",
+               "label" : "Macedonia"
+            },
+            {
+               "href" : "#",
+               "label" : "Sign In"
+            }
+         ]
+      },
+      "tertiaryNav" : {
+         "contactUs" : "Контактирајте не",
+         "share" : "Share"
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home",
+         "menuBtnTitle" : "Open/Close menu",
+         "searchBtnTitle" : "Search",
+         "searchPlaceholder" : "Search"
+      }
+   }
+}

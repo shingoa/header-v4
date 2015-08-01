@@ -1,0 +1,553 @@
+{
+   "footer" : {
+      "copyrightStatement" : "© 2015 Xerox Corporation. Alle Rechte vorbehalten. Xerox® und Xerox and Design® sind Marken der Xerox Corporation in den USA und/oder anderen Ländern.",
+      "footerLinks" : {
+         "links" : [
+            {
+               "class" : "xrx_hide_mobile first",
+               "href" : "http://dev.xerox.de/jobs/dede.html",
+               "id" : "&lid=ftr-careers",
+               "label" : "Jobs",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile",
+               "href" : "http://dev.xerox.de/about-xerox/contact-us/dede.html",
+               "id" : "&lid=ftr-contact us",
+               "label" : "Kontakt",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://dev.xerox.de/about-xerox/dede.html",
+               "id" : "&lid=ftr-about xerox",
+               "label" : "Über Xerox",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://news.xerox.com/pr/xerox/investor-relations.aspx",
+               "id" : "&lid=ftr-investors",
+               "label" : "Investoren",
+               "target" : "_blank"
+            },
+            {
+               "class" : "",
+               "href" : "http://dev.xerox.de/about-xerox/privacy-policy/dede.html",
+               "id" : "&lid=ftr-privacy",
+               "label" : "Datenschutz",
+               "target" : "_self"
+            },
+            {
+               "class" : "",
+               "href" : "http://dev.xerox.de/about-xerox/website-terms-of-use/dede.html",
+               "id" : "&lid=ftr-legal",
+               "label" : "Impressum",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://dev.xerox.de/about-xerox/site-map/dede.html",
+               "id" : "&lid=ftr-site map",
+               "label" : "Sitemap",
+               "target" : "_self"
+            }
+         ]
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home"
+      }
+   },
+   "header" : {
+      "footerLinks" : [
+         {
+            "href" : "#",
+            "label" : "Contact"
+         },
+         {
+            "href" : "#",
+            "label" : "Chat"
+         },
+         {
+            "href" : "#",
+            "label" : "Where to Buy"
+         },
+         {
+            "href" : "#",
+            "label" : "Careers"
+         },
+         {
+            "href" : "#",
+            "label" : "Partners"
+         },
+         {
+            "href" : "#",
+            "label" : "Case Studies"
+         }
+      ],
+      "primaryNav" : {
+         "about" : {
+            "col1" : {
+               "href" : "http://dev.xerox.de/about-xerox/dede.html",
+               "id" : "&lid=hdr-about-title-über xerox",
+               "label" : "Über Xerox",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.de/about-xerox/company-facts/dede.html",
+                     "id" : "&lid=hdr-about-xerox im überblick",
+                     "label" : "Xerox im Überblick",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://news.xerox.com/investors",
+                     "id" : "&lid=hdr-about-investoren",
+                     "label" : "Investoren",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://news.xerox.de/",
+                     "id" : "&lid=hdr-about-news",
+                     "label" : "News",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/about-xerox/citizenship/dede.html",
+                     "id" : "&lid=hdr-about-globale verantwortung",
+                     "label" : "Globale Verantwortung",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/about-xerox/environment/dede.html",
+                     "id" : "&lid=hdr-about-umweltverträglichkeit",
+                     "label" : "Umweltverträglichkeit",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.realbusinesslive.xerox.com/events/index/dede.html",
+                     "id" : "&lid=hdr-about-veranstaltungen_ fachmessen und webinars",
+                     "label" : "Veranstaltungen, Fachmessen und Webinars",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/innovation/dede.html",
+                     "id" : "&lid=hdr-about-innovationen",
+                     "label" : "Innovationen",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.xerox.de/about-xerox/contact-us/dede.html",
+               "id" : "&lid=hdr-about-contact-title-kontakt",
+               "label" : "Kontakt",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.de/about-xerox/contact-us/dede.html#billing",
+                     "id" : "&lid=hdr-about-contact-rechnungen und kontenverwaltung",
+                     "label" : "Rechnungen und Kontenverwaltung",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/about-xerox/contact-us/dede.html#tech_support",
+                     "id" : "&lid=hdr-about-contact-technischer support",
+                     "label" : "Technischer Support",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/about-xerox/contact-us/dede.html#products",
+                     "id" : "&lid=hdr-about-contact-geräte und software",
+                     "label" : "Geräte und Software",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/about-xerox/contact-us/dede.html#supplies",
+                     "id" : "&lid=hdr-about-contact-verbrauchsmaterial",
+                     "label" : "Verbrauchsmaterial",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/about-xerox/contact-us/dede.html#services",
+                     "id" : "&lid=hdr-about-contact-business services",
+                     "label" : "Business Services",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/about-xerox/contact-us/dede.html#research",
+                     "id" : "&lid=hdr-about-contact-forschung und innovation",
+                     "label" : "Forschung und Innovation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/about-xerox/contact-us/dede.html#corporate",
+                     "id" : "&lid=hdr-about-contact-xerox corporation",
+                     "label" : "Xerox Corporation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/perl-bin/world_contact.pl#0",
+                     "id" : "&lid=hdr-about-contact-internationale standorte",
+                     "label" : "Internationale Standorte",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.xerox.de/about-xerox/buy/dede.html",
+               "id" : "&lid=hdr-about-wtb-title-bezugsquellen",
+               "label" : "Bezugsquellen",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.de/about-xerox/buy/dede.html#office",
+                     "id" : "&lid=hdr-about-wtb-office produkte",
+                     "label" : "Office Produkte",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/about-xerox/buy/dede.html#production",
+                     "id" : "&lid=hdr-about-wtb-produktionssysteme",
+                     "label" : "Produktionssysteme",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/about-xerox/buy/dede.html#scanners",
+                     "id" : "&lid=hdr-about-wtb-scanners",
+                     "label" : "Scanners",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/about-xerox/buy/dede.html#supplies",
+                     "id" : "&lid=hdr-about-wtb-verbrauchsmaterial",
+                     "label" : "Verbrauchsmaterial",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/about-xerox/buy/dede.html#services",
+                     "id" : "&lid=hdr-about-wtb-business services",
+                     "label" : "Business Services",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Über Xerox"
+         },
+         "products" : {
+            "col1" : {
+               "href" : "http://dev.xerox.de/office-produkte/index/dede.html",
+               "id" : "&lid=hdr-products-ofc-title-office solutions",
+               "label" : "Office-Lösungen",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.de/office-produkte/digital-printing-equipment/drucker/dede.html",
+                     "id" : "&lid=hdr-products-ofc-bürodrucker",
+                     "label" : "Bürodrucker",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/office-produkte/digital-printing-equipment/multifunktionsdrucker/dede.html",
+                     "id" : "&lid=hdr-products-ofc-multifunktionssysteme",
+                     "label" : "Multifunktionssysteme",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.xeroxscanners.com/de/de/",
+                     "id" : "&lid=hdr-products-ofc-scanners",
+                     "label" : "Scanner",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/office-produkte/software-losungen/dede.html",
+                     "id" : "&lid=hdr-products-ofc-office software",
+                     "label" : "Software fürs Büro",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.xerox.de/digitaldruck/dede.html",
+               "id" : "&lid=hdr-products-gc-title-graphic communications",
+               "label" : "Graphische Kommunikation",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.de/office-produkte/digital-printing-equipment/digitaldrucksysteme-/dede.html",
+                     "id" : "&lid=hdr-products-gc-produktionsdrucker",
+                     "label" : "Produktionsdrucker",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/office-produkte/digital-printing-equipment/drucksysteme-endlosdruck/dede.html",
+                     "id" : "&lid=hdr-products-gc-drucksysteme endlosdruck",
+                     "label" : "Drucksysteme Endlosdruck",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/office-produkte/digital-printing-equipment/grossformatdrucker-/dede.html",
+                     "id" : "&lid=hdr-products-gc-großformat",
+                     "label" : "Großformat",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/digitaldruck/feeders-print-finishing/dede.html",
+                     "id" : "&lid=hdr-products-gc-endverarbeitung",
+                     "label" : "Endverarbeitung",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/digitaldruck/workflow/dede.html",
+                     "id" : "&lid=hdr-products-gc-workflow-software",
+                     "label" : "Workflow-Software",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "label" : "Weitere Ressourcen",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.de/digitaldruck/product-locator/dede.html",
+                     "id" : "&lid=hdr-products-res-product finder",
+                     "label" : "Produktfinder",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/office-produkte/small-business/dede.html",
+                     "id" : "&lid=hdr-products-res-small business resource center",
+                     "label" : "Lösungen für kleine Unternehmen",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/printer-supplies/dede.html",
+                     "id" : "&lid=hdr-products-res-toner and ink",
+                     "label" : "Toner und Tinte",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/about-xerox/partner-programs/dede.html",
+                     "id" : "&lid=hdr-products-res-become a partner",
+                     "label" : "Werden Sie Partner",
+                     "target" : "_self"
+                  }
+               ]
+            },
+            "label" : "Produkte"
+         },
+         "services" : {
+            "col1" : {
+               "href" : "http://dev.xerox.de/dienstleistungen/document-management-solutions/dede.html",
+               "id" : "&lid=hdr-services-dso-title-dokumentenmanagement",
+               "label" : "Dokumentenmanagement",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.de/dienstleistungen/enterprise-content-management/dede.html",
+                     "id" : "&lid=hdr-services-dso-enterprise content management",
+                     "label" : "Enterprise Content Management",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/dienstleistungen/xerox-managed-print-services/dede.html",
+                     "id" : "&lid=hdr-services-dso-managed print services",
+                     "label" : "Managed Print Services",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/dienstleistungen/print-room/dede.html",
+                     "id" : "&lid=hdr-services-dso-zentralisierte druckdienstleistungen",
+                     "label" : "Zentralisierte Druckdienstleistungen",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.xerox.de/dienstleistungen/business-process-outsourcing/dede.html",
+               "id" : "&lid=hdr-services-bpo-title-geschäftsprozesse",
+               "label" : "Geschäftsprozesse",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.de/dienstleistungen/back-office-services/dede.html",
+                     "id" : "&lid=hdr-services-bpo-back-office-transaktionsverarbeitung",
+                     "label" : "Back-Office-Transaktionsverarbeitung",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/dienstleistungen/finance-and-accounting/dede.html",
+                     "id" : "&lid=hdr-services-bpo-finanzen _ buchhaltung",
+                     "label" : "Finanzen & Buchhaltung",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/dienstleistungen/hr-outsourcing/dede.html",
+                     "id" : "&lid=hdr-services-bpo-hr-outsourcing",
+                     "label" : "HR-Outsourcing",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/dienstleistungen/xerox-marketing-services/dede.html",
+                     "id" : "&lid=hdr-services-bpo-kommunikation und marketing",
+                     "label" : "Kommunikation und Marketing",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/dienstleistungen/customer-service/dede.html",
+                     "id" : "&lid=hdr-services-bpo-kundendienst-lösungen",
+                     "label" : "Kundendienst-Lösungen",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.xerox.de/dienstleistungen/industry-services/dede.html",
+               "id" : "&lid=hdr-services-ind-title-branchen",
+               "label" : "Branchen",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.de/consulting/business-services-industry/government/dede.html",
+                     "id" : "&lid=hdr-services-ind-behörden",
+                     "label" : "Behörden",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/consulting/business-services-industry/retail/dede.html",
+                     "id" : "&lid=hdr-services-ind-einzelhandel _ endverbraucher",
+                     "label" : "Einzelhandel & Endverbraucher",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/consulting/business-services-industry/financial-services/dede.html",
+                     "id" : "&lid=hdr-services-ind-finanzdienstleister",
+                     "label" : "Finanzdienstleister",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/consulting/business-services-industry/high-tech-and-communications/dede.html",
+                     "id" : "&lid=hdr-services-ind-it und kommunikation",
+                     "label" : "IT und Kommunikation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/dienstleistungen/transport-solutions/dede.html",
+                     "id" : "&lid=hdr-services-ind-transport",
+                     "label" : "Transport",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Serviceleistungen"
+         },
+         "supplies" : {
+            "col1" : {
+               "href" : "http://dev.xerox.de/printer-supplies/dede.html",
+               "id" : "&lid=hdr-supplies-title-zubehör",
+               "label" : "Zubehör",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.de/printer-supplies/dede.html",
+                     "id" : "&lid=hdr-supplies-toner_ tinte _ zubehör kaufen",
+                     "label" : "Toner, Tinte & Zubehör kaufen",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/printer-supplies/paper-marketing/dede.html",
+                     "id" : "&lid=hdr-supplies-papier _ andere druckmaterialien",
+                     "label" : "Papier & andere Druckmaterialien",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/about-xerox/recycling/dede.html",
+                     "id" : "&lid=hdr-supplies-recyclingprogramme",
+                     "label" : "Recyclingprogramme",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "https://www.test.accounts.xerox.com/loyalty-program/landing.jsf?&locale=de_DE",
+                     "id" : "&lid=hdr-supplies-genuine xerox rewards",
+                     "label" : "Genuine Xerox Rewards",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/printer-supplies/compatible-cartridges/dede.html",
+                     "id" : "&lid=hdr-supplies-toner für drucker von anderen herstellern",
+                     "label" : "Toner für Drucker von anderen Herstellern",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.xerox.de/about-xerox/account-management/consumables/dede.html",
+               "id" : "&lid=hdr-supplies-title-contract-vertrag für verbrauchsmaterial",
+               "label" : "Vertrag für Verbrauchsmaterial",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.de/about-xerox/account-management/consumables/dede.html",
+                     "id" : "&lid=hdr-supplies-contract-melden sie sich an_ um toner und tinte zu bestellen_ die in ihrem vertrag enthalten sind",
+                     "label" : "Melden Sie sich an, um Toner und Tinte zu bestellen, die in Ihrem Vertrag enthalten sind",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Zubehör"
+         },
+         "support" : {
+            "col1" : {
+               "href" : "http://www.support.xerox.com/support/dede.html",
+               "id" : "&lid=hdr-support-title-support _ treiber",
+               "label" : "Support & Treiber",
+               "links" : [
+                  {
+                     "href" : "http://dev.xerox.de/about-xerox/support-faq/dede.html",
+                     "id" : "&lid=hdr-support-häufig gestellte fragen",
+                     "label" : "Häufig gestellte Fragen",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/about-xerox/customer-training/dede.html",
+                     "id" : "&lid=hdr-support-services für consulting _ schulungen",
+                     "label" : "Services für Consulting & Schulungen",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.xerox.de/information-security/dede.html",
+                     "id" : "&lid=hdr-support-sicherheitsinformationen",
+                     "label" : "Sicherheitsinformationen",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Support & Treiber"
+         }
+      },
+      "secondaryNav" : {
+         "links" : [
+            {
+               "choices" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
+               "id" : "hdr-bar-country-select",
+               "label" : "Deutschland"
+            },
+            {
+               "href" : "#",
+               "label" : "Sign In"
+            }
+         ]
+      },
+      "tertiaryNav" : {
+         "contactUs" : "Kontakt",
+         "share" : "Teilen"
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home",
+         "menuBtnTitle" : "Open/Close menu",
+         "searchBtnTitle" : "Suchen",
+         "searchPlaceholder" : "Suchen"
+      }
+   }
+}

@@ -1,0 +1,432 @@
+{
+   "footer" : {
+      "copyrightStatement" : "© 2015 Xerox Corporation. Alle Rechte vorbehalten. Xerox® und Xerox and Design® sind Marken der Xerox Corporation in den USA und/oder anderen Ländern.",
+      "footerLinks" : {
+         "links" : [
+            {
+               "class" : "xrx_hide_mobile first",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/deli.html",
+               "id" : "&lid=ftr-contact us",
+               "label" : "Kontakt",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/deli.html",
+               "id" : "&lid=ftr-about xerox",
+               "label" : "Über Xerox",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://news.xerox.com/pr/xerox/investor-relations.aspx",
+               "id" : "&lid=ftr-investors",
+               "label" : "Investoren",
+               "target" : "_blank"
+            },
+            {
+               "class" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/privacy-policy/deli.html",
+               "id" : "&lid=ftr-privacy",
+               "label" : "Datenschutz",
+               "target" : "_self"
+            },
+            {
+               "class" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/website-terms-of-use/deli.html",
+               "id" : "&lid=ftr-legal",
+               "label" : "Impressum",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/site-map/deli.html",
+               "id" : "&lid=ftr-site map",
+               "label" : "Sitemap",
+               "target" : "_self"
+            }
+         ]
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home"
+      }
+   },
+   "header" : {
+      "footerLinks" : [
+         {
+            "href" : "#",
+            "label" : "Contact"
+         },
+         {
+            "href" : "#",
+            "label" : "Chat"
+         },
+         {
+            "href" : "#",
+            "label" : "Where to Buy"
+         },
+         {
+            "href" : "#",
+            "label" : "Careers"
+         },
+         {
+            "href" : "#",
+            "label" : "Partners"
+         },
+         {
+            "href" : "#",
+            "label" : "Case Studies"
+         }
+      ],
+      "primaryNav" : {
+         "about" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/deli.html",
+               "id" : "&lid=hdr-about-title-über xerox",
+               "label" : "Über Xerox",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/deli.html",
+                     "id" : "&lid=hdr-about-xerox im überblick",
+                     "label" : "Xerox im Überblick",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://news.xerox.com/investors",
+                     "id" : "&lid=hdr-about-investoren",
+                     "label" : "Investoren",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/deli.html",
+                     "id" : "&lid=hdr-about-globale verantwortung",
+                     "label" : "Globale Verantwortung",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/deli.html",
+                     "id" : "&lid=hdr-about-umweltverträglichkeit",
+                     "label" : "Umweltverträglichkeit",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/innovation/deli.html",
+                     "id" : "&lid=hdr-about-innovationen",
+                     "label" : "Innovationen",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "links" : [
+                  {
+                     "href" : null,
+                     "id" : "faux_contact",
+                     "label" : "CCSS Premierpartner AGPremierpartner AG Scheidwegstr. 18b 9000 St.Gallen Schweiz  ",
+                     "target" : "_self"
+                  }
+               ]
+            },
+            "label" : "Über Xerox"
+         },
+         "products" : {
+            "col1" : {
+               "href" : "http://dev.office.xerox.com/index/deli.html",
+               "id" : "&lid=hdr-products-ofc-title-office solutions",
+               "label" : "Office-Lösungen",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/printers/deli.html",
+                     "id" : "&lid=hdr-products-ofc-bürodrucker",
+                     "label" : "Bürodrucker",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/multifunction-printer/deli.html",
+                     "id" : "&lid=hdr-products-ofc-multifunktionssysteme",
+                     "label" : "Multifunktionssysteme",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.xeroxscanners.com/en/en/",
+                     "id" : "&lid=hdr-products-ofc-scanners",
+                     "label" : "Scanner",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/software-solutions/deli.html",
+                     "id" : "&lid=hdr-products-ofc-office software",
+                     "label" : "Software fürs Büro",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/digital-printing/deli.html",
+               "id" : "&lid=hdr-products-gc-title-graphic communications",
+               "label" : "Graphische Kommunikation",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/digital-press/deli.html",
+                     "id" : "&lid=hdr-products-gc-produktionsdrucker",
+                     "label" : "Produktionsdrucker",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/continuous-feed-printer/deli.html",
+                     "id" : "&lid=hdr-products-gc-drucksysteme endlosdruck",
+                     "label" : "Drucksysteme Endlosdruck",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/wide-format-printer/deli.html",
+                     "id" : "&lid=hdr-products-gc-großformat",
+                     "label" : "Großformat",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/feeders-print-finishing/deli.html",
+                     "id" : "&lid=hdr-products-gc-endverarbeitung",
+                     "label" : "Endverarbeitung",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/workflow/deli.html",
+                     "id" : "&lid=hdr-products-gc-workflow-software",
+                     "label" : "Workflow-Software",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "label" : "Weitere Ressourcen",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/product-locator/deli.html",
+                     "id" : "&lid=hdr-products-res-product finder",
+                     "label" : "Produktfinder",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/small-business/deli.html",
+                     "id" : "&lid=hdr-products-res-small business resource center",
+                     "label" : "Lösungen für kleine Unternehmen",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/deli.html",
+                     "id" : "&lid=hdr-products-res-toner and ink",
+                     "label" : "Toner und Tinte",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/partner-programs/deli.html",
+                     "id" : "&lid=hdr-products-res-become a partner",
+                     "label" : "Werden Sie Partner",
+                     "target" : "_self"
+                  }
+               ]
+            },
+            "label" : "Produkte"
+         },
+         "services" : {
+            "col1" : {
+               "href" : "http://dev.services.xerox.com/document-management-solutions/deli.html",
+               "id" : "&lid=hdr-services-dso-title-dokumentenmanagement",
+               "label" : "Dokumentenmanagement",
+               "links" : [
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-managed-print-services/deli.html",
+                     "id" : "&lid=hdr-services-dso-managed print services",
+                     "label" : "Managed Print Services",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/print-room/deli.html",
+                     "id" : "&lid=hdr-services-dso-zentralisierte druckdienstleistungen",
+                     "label" : "Zentralisierte Druckdienstleistungen",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.services.xerox.com/business-process-outsourcing/deli.html",
+               "id" : "&lid=hdr-services-bpo-title-geschäftsprozesse",
+               "label" : "Geschäftsprozesse",
+               "links" : [
+                  {
+                     "href" : "http://dev.consulting.xerox.com/dokument-management/deli.html",
+                     "id" : "&lid=hdr-services-bpo-document transaction processing services",
+                     "label" : "Document Transaction Processing Services",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/finance-and-accounting/deli.html",
+                     "id" : "&lid=hdr-services-bpo-finanzen _ buchhaltung",
+                     "label" : "Finanzen & Buchhaltung",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/hr-outsourcing/deli.html",
+                     "id" : "&lid=hdr-services-bpo-hr-outsourcing",
+                     "label" : "HR-Outsourcing",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-marketing-services/deli.html",
+                     "id" : "&lid=hdr-services-bpo-kommunikation und marketing",
+                     "label" : "Kommunikation und Marketing",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/customer-service/deli.html",
+                     "id" : "&lid=hdr-services-bpo-kundendienst-lösungen",
+                     "label" : "Kundendienst-Lösungen",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.services.xerox.com/industry-services/deli.html",
+               "id" : "&lid=hdr-services-ind-title-branchen",
+               "label" : "Branchen",
+               "links" : [
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/government/deli.html",
+                     "id" : "&lid=hdr-services-ind-behörden",
+                     "label" : "Behörden",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/retail/deli.html",
+                     "id" : "&lid=hdr-services-ind-einzelhandel _ endverbraucher",
+                     "label" : "Einzelhandel & Endverbraucher",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/financial-services/deli.html",
+                     "id" : "&lid=hdr-services-ind-finanzdienstleister",
+                     "label" : "Finanzdienstleister",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/high-tech-and-communications/deli.html",
+                     "id" : "&lid=hdr-services-ind-it und kommunikation",
+                     "label" : "IT und Kommunikation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/transport-solutions/deli.html",
+                     "id" : "&lid=hdr-services-ind-transport",
+                     "label" : "Transport",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Serviceleistungen"
+         },
+         "supplies" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/deli.html",
+               "id" : "&lid=hdr-supplies-title-zubehör",
+               "label" : "Zubehör",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/deli.html",
+                     "id" : "&lid=hdr-supplies-toner_ tinte _ zubehör kaufen",
+                     "label" : "Toner, Tinte & Zubehör kaufen",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/recycling/deli.html",
+                     "id" : "&lid=hdr-supplies-recyclingprogramme",
+                     "label" : "Recyclingprogramme",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/compatible-cartridges/deli.html",
+                     "id" : "&lid=hdr-supplies-toner für drucker von anderen herstellern",
+                     "label" : "Toner für Drucker von anderen Herstellern",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/account-management/consumables/deli.html",
+               "id" : "&lid=hdr-supplies-title-contract-vertrag für verbrauchsmaterial",
+               "label" : "Vertrag für Verbrauchsmaterial",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/account-management/consumables/deli.html",
+                     "id" : "&lid=hdr-supplies-contract-melden sie sich an_ um toner und tinte zu bestellen_ die in ihrem vertrag enthalten sind",
+                     "label" : "Melden Sie sich an, um Toner und Tinte zu bestellen, die in Ihrem Vertrag enthalten sind",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Zubehör"
+         },
+         "support" : {
+            "col1" : {
+               "href" : "http://www.support.xerox.com/support/deli.html",
+               "id" : "&lid=hdr-support-title-support _ treiber",
+               "label" : "Support & Treiber",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/support-faq/deli.html",
+                     "id" : "&lid=hdr-support-häufig gestellte fragen",
+                     "label" : "Häufig gestellte Fragen",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/customer-training/deli.html",
+                     "id" : "&lid=hdr-support-services für consulting _ schulungen",
+                     "label" : "Services für Consulting & Schulungen",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/information-security/deli.html",
+                     "id" : "&lid=hdr-support-sicherheitsinformationen",
+                     "label" : "Sicherheitsinformationen",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Support & Treiber"
+         }
+      },
+      "secondaryNav" : {
+         "links" : [
+            {
+               "choices" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
+               "id" : "hdr-bar-country-select",
+               "label" : "Liechtenstein"
+            },
+            {
+               "href" : "#",
+               "label" : "Sign In"
+            }
+         ]
+      },
+      "tertiaryNav" : {
+         "contactUs" : "Kontakt",
+         "share" : "Teilen"
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home",
+         "menuBtnTitle" : "Open/Close menu",
+         "searchBtnTitle" : "Suchen",
+         "searchPlaceholder" : "Suchen"
+      }
+   }
+}

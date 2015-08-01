@@ -1,0 +1,460 @@
+{
+   "footer" : {
+      "copyrightStatement" : "© 2015 Xerox Corporation. Visos teisės saugomos. Xerox® ir Xerox and Design® yra Xerox Corporation prekių ženklai Jungtinėse Amerikos Valstijose ir (arba) kitose šalyse.",
+      "footerLinks" : {
+         "links" : [
+            {
+               "class" : "xrx_hide_mobile first",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/ltlt.html",
+               "id" : "&lid=ftr-contact us",
+               "label" : "Susisiekite su mumis",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/ltlt.html",
+               "id" : "&lid=ftr-about xerox",
+               "label" : "Apie „Xerox“",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://news.xerox.com/pr/xerox/investor-relations.aspx",
+               "id" : "&lid=ftr-investors",
+               "label" : "Investitoriai",
+               "target" : "_blank"
+            },
+            {
+               "class" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/privacy-policy/ltlt.html",
+               "id" : "&lid=ftr-privacy",
+               "label" : "Privatumas",
+               "target" : "_self"
+            },
+            {
+               "class" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/website-terms-of-use/ltlt.html",
+               "id" : "&lid=ftr-legal",
+               "label" : "Teisinė informacija",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/site-map/ltlt.html",
+               "id" : "&lid=ftr-site map",
+               "label" : "Svetainės struktūra",
+               "target" : "_self"
+            }
+         ]
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home"
+      }
+   },
+   "header" : {
+      "footerLinks" : [
+         {
+            "href" : "#",
+            "label" : "Contact"
+         },
+         {
+            "href" : "#",
+            "label" : "Chat"
+         },
+         {
+            "href" : "#",
+            "label" : "Where to Buy"
+         },
+         {
+            "href" : "#",
+            "label" : "Careers"
+         },
+         {
+            "href" : "#",
+            "label" : "Partners"
+         },
+         {
+            "href" : "#",
+            "label" : "Case Studies"
+         }
+      ],
+      "primaryNav" : {
+         "about" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/ltlt.html",
+               "id" : "&lid=hdr-about-title-apie „xerox“",
+               "label" : "Apie „Xerox“",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/ltlt.html",
+                     "id" : "&lid=hdr-about-„xerox“ apžvalga",
+                     "label" : "„Xerox“ apžvalga",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://news.xerox.com/investors",
+                     "id" : "&lid=hdr-about-investitoriai",
+                     "label" : "Investitoriai",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/ltlt.html",
+                     "id" : "&lid=hdr-about-pasaulinė pilietybė",
+                     "label" : "Pasaulinė pilietybė",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/ltlt.html",
+                     "id" : "&lid=hdr-about-aplinka ir tvarumas",
+                     "label" : "Aplinka ir tvarumas",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/innovation/ltlt.html",
+                     "id" : "&lid=hdr-about-naujovės",
+                     "label" : "Naujovės",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/ltlt.html",
+               "id" : "&lid=hdr-about-contact-title-kontaktai",
+               "label" : "Kontaktai",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/ltlt.html#tech_support",
+                     "id" : "&lid=hdr-about-contact-techninis palaikymas",
+                     "label" : "Techninis palaikymas",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/ltlt.html#products",
+                     "id" : "&lid=hdr-about-contact-produktai ir programinė įranga",
+                     "label" : "Produktai ir programinė įranga",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/ltlt.html#supplies",
+                     "id" : "&lid=hdr-about-contact-ištekliai",
+                     "label" : "Ištekliai",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/ltlt.html#services",
+                     "id" : "&lid=hdr-about-contact-business services",
+                     "label" : "Business Services",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/ltlt.html#corporate",
+                     "id" : "&lid=hdr-about-contact-xerox corporation",
+                     "label" : "Xerox Corporation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/perl-bin/world_contact.pl#0",
+                     "id" : "&lid=hdr-about-contact-vietos visame pasaulyje",
+                     "label" : "Vietos visame pasaulyje",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/ltlt.html",
+               "id" : "&lid=hdr-about-wtb-title-kur pirkti",
+               "label" : "Kur pirkti",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/ltlt.html#office",
+                     "id" : "&lid=hdr-about-wtb-biuro įranga",
+                     "label" : "Biuro įranga",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/ltlt.html#production",
+                     "id" : "&lid=hdr-about-wtb-pramoninė įranga",
+                     "label" : "Pramoninė įranga",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/ltlt.html#scanners",
+                     "id" : "&lid=hdr-about-wtb-skeneriai",
+                     "label" : "Skeneriai",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/ltlt.html#supplies",
+                     "id" : "&lid=hdr-about-wtb-ištekliai",
+                     "label" : "Ištekliai",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/ltlt.html#services",
+                     "id" : "&lid=hdr-about-wtb-business services",
+                     "label" : "Business Services",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Apie „Xerox“"
+         },
+         "products" : {
+            "col1" : {
+               "href" : "http://dev.office.xerox.com/index/ltlt.html",
+               "id" : "&lid=hdr-products-ofc-title-office solutions",
+               "label" : "Biuro sprendimai",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/printers/ltlt.html",
+                     "id" : "&lid=hdr-products-ofc-ofiso spausdintuvai",
+                     "label" : "Ofiso spausdintuvai",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/multifunction-printer/ltlt.html",
+                     "id" : "&lid=hdr-products-ofc-daugiafunkciai spausdintuvai",
+                     "label" : "Daugiafunkciai spausdintuvai",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.xeroxscanners.com/en/en/",
+                     "id" : "&lid=hdr-products-ofc-scanners",
+                     "label" : "Skeneriai",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/software-solutions/ltlt.html",
+                     "id" : "&lid=hdr-products-ofc-office software",
+                     "label" : "Ofiso programos",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/digital-printing/ltlt.html",
+               "id" : "&lid=hdr-products-gc-title-graphic communications",
+               "label" : "Grafiniai pranešimai",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/digital-press/ltlt.html",
+                     "id" : "&lid=hdr-products-gc-skaitmeninis apdorojimas",
+                     "label" : "Skaitmeninis apdorojimas",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/continuous-feed-printer/ltlt.html",
+                     "id" : "&lid=hdr-products-gc-nepertraukiamo tiekimo spausdintuvai",
+                     "label" : "Nepertraukiamo tiekimo spausdintuvai",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/wide-format-printer/ltlt.html",
+                     "id" : "&lid=hdr-products-gc-platus formatas",
+                     "label" : "Platus formatas",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/workflow/ltlt.html",
+                     "id" : "&lid=hdr-products-gc-darb_ automatizavimo programos",
+                     "label" : "Darbų automatizavimo programos",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "label" : "Papildomi ištekliai",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/product-locator/ltlt.html",
+                     "id" : "&lid=hdr-products-res-product finder",
+                     "label" : "Produkto paieška",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/small-business/ltlt.html",
+                     "id" : "&lid=hdr-products-res-small business resource center",
+                     "label" : "Sprendimai smulkiajam verslui",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/ltlt.html",
+                     "id" : "&lid=hdr-products-res-toner and ink",
+                     "label" : "Dažus ir rašalą",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/partner-programs/ltlt.html",
+                     "id" : "&lid=hdr-products-res-become a partner",
+                     "label" : "Tapkite partneriu",
+                     "target" : "_self"
+                  }
+               ]
+            },
+            "label" : "Gaminiai"
+         },
+         "services" : {
+            "col1" : {
+               "href" : "http://dev.services.xerox.com/document-management-solutions/ltlt.html",
+               "id" : "&lid=hdr-services-dso-title-dokumentų valdymas",
+               "label" : "Dokumentų valdymas",
+               "links" : [
+                  {
+                     "href" : "http://dev.services.xerox.com/print-room/ltlt.html",
+                     "id" : "&lid=hdr-services-dso-centralizuotos spausdinimo paslaugos",
+                     "label" : "Centralizuotos spausdinimo paslaugos",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-managed-print-services/ltlt.html",
+                     "id" : "&lid=hdr-services-dso-valdomo spausdinimo paslaugos",
+                     "label" : "Valdomo spausdinimo paslaugos",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.services.xerox.com/business-process-outsourcing/ltlt.html",
+               "id" : "&lid=hdr-services-bpo-title-verslo procesai",
+               "label" : "Verslo procesai",
+               "links" : [
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-marketing-services/ltlt.html",
+                     "id" : "&lid=hdr-services-bpo-bendravimas ir rinkodara",
+                     "label" : "Bendravimas ir rinkodara",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/document-management/ltlt.html",
+                     "id" : "&lid=hdr-services-bpo-dokumentų operacijų apdorojimo paslaugos",
+                     "label" : "Dokumentų operacijų apdorojimo paslaugos",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/customer-service/ltlt.html",
+                     "id" : "&lid=hdr-services-bpo-klientų paramos sprendimai",
+                     "label" : "Klientų paramos sprendimai",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.services.xerox.com/industry-services/ltlt.html",
+               "id" : "&lid=hdr-services-ind-title-mūsų aptarnaujamos pramonės šakos",
+               "label" : "Mūsų aptarnaujamos pramonės šakos",
+               "links" : [
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/high-tech-and-communications/ltlt.html",
+                     "id" : "&lid=hdr-services-ind-aukštosios technologijos ir ryšiai",
+                     "label" : "Aukštosios technologijos ir ryšiai",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/financial-services/ltlt.html",
+                     "id" : "&lid=hdr-services-ind-finansinės paslaugos",
+                     "label" : "Finansinės paslaugos",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/government/ltlt.html",
+                     "id" : "&lid=hdr-services-ind-government",
+                     "label" : "Government",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/retail/ltlt.html",
+                     "id" : "&lid=hdr-services-ind-mažmeninė prekyba ir plataus vartojimo produktai",
+                     "label" : "Mažmeninė prekyba ir plataus vartojimo produktai",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Paslaugos"
+         },
+         "supplies" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/ltlt.html",
+               "id" : "&lid=hdr-supplies-title-ištekliai",
+               "label" : "Ištekliai",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/ltlt.html",
+                     "id" : "&lid=hdr-supplies-ištekliai",
+                     "label" : "Ištekliai",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/recycling/ltlt.html",
+                     "id" : "&lid=hdr-supplies-antrinio perdirbimo programos",
+                     "label" : "Antrinio perdirbimo programos",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Ištekliai"
+         },
+         "support" : {
+            "col1" : {
+               "href" : "http://www.support.xerox.com/support/ltlt.html",
+               "id" : "&lid=hdr-support-title-palaikymas ir tvarkyklės",
+               "label" : "Palaikymas ir tvarkyklės",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/support-faq/ltlt.html",
+                     "id" : "&lid=hdr-support-dažnai užduodami klausimai",
+                     "label" : "Dažnai užduodami klausimai",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/customer-training/ltlt.html",
+                     "id" : "&lid=hdr-support-konsultavimo ir mokymo paslaugos",
+                     "label" : "Konsultavimo ir mokymo paslaugos",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/information-security/ltlt.html",
+                     "id" : "&lid=hdr-support-saugos informacija",
+                     "label" : "Saugos informacija",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Palaikymas ir tvarkyklės"
+         }
+      },
+      "secondaryNav" : {
+         "links" : [
+            {
+               "choices" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
+               "id" : "hdr-bar-country-select",
+               "label" : "Lithuania"
+            },
+            {
+               "href" : "#",
+               "label" : "Sign In"
+            }
+         ]
+      },
+      "tertiaryNav" : {
+         "contactUs" : "Susisiekite su mumis",
+         "share" : "Dalintis"
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home",
+         "menuBtnTitle" : "Open/Close menu",
+         "searchBtnTitle" : "Search",
+         "searchPlaceholder" : "Search"
+      }
+   }
+}

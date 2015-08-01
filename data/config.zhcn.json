@@ -1,0 +1,375 @@
+{
+   "footer" : {
+      "copyrightStatement" : "© 2015 施乐公司。 版权所有。Xerox®、Xerox和Design®是美国和/或其他国家施乐公司的商标。",
+      "footerLinks" : {
+         "links" : [
+            {
+               "class" : "first",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/privacy-policy/zhcn.html",
+               "id" : "&lid=ftr-privacy",
+               "label" : "隐私权",
+               "target" : "_self"
+            },
+            {
+               "class" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/website-terms-of-use/zhcn.html",
+               "id" : "&lid=ftr-legal",
+               "label" : "法律",
+               "target" : "_self"
+            }
+         ]
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home"
+      }
+   },
+   "header" : {
+      "footerLinks" : [
+         {
+            "href" : "#",
+            "label" : "Contact"
+         },
+         {
+            "href" : "#",
+            "label" : "Chat"
+         },
+         {
+            "href" : "#",
+            "label" : "Where to Buy"
+         },
+         {
+            "href" : "#",
+            "label" : "Careers"
+         },
+         {
+            "href" : "#",
+            "label" : "Partners"
+         },
+         {
+            "href" : "#",
+            "label" : "Case Studies"
+         }
+      ],
+      "primaryNav" : {
+         "about" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/zhcn.html",
+               "id" : "&lid=hdr-about-title-about xerox",
+               "label" : "About Xerox",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/zhcn.html",
+                     "id" : "&lid=hdr-about-xerox at a glance",
+                     "label" : "Xerox at a Glance",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://news.xerox.com/investors",
+                     "id" : "&lid=hdr-about-investors",
+                     "label" : "Investors",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/zhcn.html",
+                     "id" : "&lid=hdr-about-global citizenship",
+                     "label" : "Global Citizenship",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/zhcn.html",
+                     "id" : "&lid=hdr-about-environment and sustainability",
+                     "label" : "Environment and Sustainability",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/innovation/zhcn.html",
+                     "id" : "&lid=hdr-about-innovation",
+                     "label" : "Innovation",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/zhcn.html",
+               "id" : "&lid=hdr-about-contact-title-contact",
+               "label" : "Contact",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/zhcn.html#billing",
+                     "id" : "&lid=hdr-about-contact-support for billing and account administration",
+                     "label" : "Support for billing and account administration",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/zhcn.html#tech_support",
+                     "id" : "&lid=hdr-about-contact-technical support",
+                     "label" : "Technical Support",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/zhcn.html#products",
+                     "id" : "&lid=hdr-about-contact-products and software",
+                     "label" : "Products and software",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/zhcn.html#supplies",
+                     "id" : "&lid=hdr-about-contact-supplies and consumables",
+                     "label" : "Supplies and consumables",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/zhcn.html#services",
+                     "id" : "&lid=hdr-about-contact-business services",
+                     "label" : "Business Services",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/zhcn.html#research",
+                     "id" : "&lid=hdr-about-contact-research and innovation",
+                     "label" : "Research and innovation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/zhcn.html#corporate",
+                     "id" : "&lid=hdr-about-contact-xerox corporation",
+                     "label" : "Xerox Corporation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/perl-bin/world_contact.pl#0",
+                     "id" : "&lid=hdr-about-contact-worldwide locations",
+                     "label" : "Worldwide Locations",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/zhcn.html",
+               "id" : "&lid=hdr-about-wtb-title-where to buy",
+               "label" : "Where to Buy",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/zhcn.html#office",
+                     "id" : "&lid=hdr-about-wtb-office equipment",
+                     "label" : "Office Equipment",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/zhcn.html#production",
+                     "id" : "&lid=hdr-about-wtb-production equipment",
+                     "label" : "Production Equipment",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/zhcn.html#scanners",
+                     "id" : "&lid=hdr-about-wtb-scanners",
+                     "label" : "Scanners",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/zhcn.html#supplies",
+                     "id" : "&lid=hdr-about-wtb-supplies and consumables",
+                     "label" : "Supplies and consumables",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/zhcn.html#services",
+                     "id" : "&lid=hdr-about-wtb-business services",
+                     "label" : "Business Services",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "About Xerox"
+         },
+         "products" : {
+            "col1" : {
+               "href" : "http://dev.office.xerox.com/index/zhcn.html",
+               "id" : "&lid=hdr-products-ofc-title-office solutions",
+               "label" : "Office Solutions",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/software-solutions/zhcn.html",
+                     "id" : "&lid=hdr-products-ofc-office software",
+                     "label" : "Office Software",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/digital-printing/zhcn.html",
+               "id" : "&lid=hdr-products-gc-title-graphic communications",
+               "label" : "Graphic Communications",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/continuous-feed-printer/zhcn.html",
+                     "id" : "&lid=hdr-products-gc-连续供墨印刷机",
+                     "label" : "连续供墨印刷机",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/feeders-print-finishing/zhcn.html",
+                     "id" : "&lid=hdr-products-gc-feeding and finishing",
+                     "label" : "Feeding and Finishing",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/workflow/zhcn.html",
+                     "id" : "&lid=hdr-products-gc-workflow software",
+                     "label" : "Workflow Software",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "label" : "Additional Resources",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/product-locator/zhcn.html",
+                     "id" : "&lid=hdr-products-res-product finder",
+                     "label" : "Product Finder",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/small-business/zhcn.html",
+                     "id" : "&lid=hdr-products-res-small business resource center",
+                     "label" : "Small Business Solutions",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/zhcn.html",
+                     "id" : "&lid=hdr-products-res-toner and ink",
+                     "label" : "Toner and Ink",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/partner-programs/zhcn.html",
+                     "id" : "&lid=hdr-products-res-become a partner",
+                     "label" : "Become a Partner",
+                     "target" : "_self"
+                  }
+               ]
+            },
+            "label" : "Products"
+         },
+         "services" : {
+            "col1" : {
+               "href" : "",
+               "id" : "&lid=hdr-services-dso-title-document management",
+               "label" : "Document Management",
+               "links" : [],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.services.xerox.com/business-process-outsourcing/zhcn.html",
+               "id" : "&lid=hdr-services-bpo-title-business processes",
+               "label" : "Business Processes",
+               "links" : [
+                  {
+                     "href" : "http://acs-qa.serverside.net:8080/human-resource-solutions/zhcn.html",
+                     "id" : "&lid=hdr-services-bpo-hr outsourcing",
+                     "label" : "HR Outsourcing",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/customer-service/zhcn.html",
+                     "id" : "&lid=hdr-services-bpo-客户服务",
+                     "label" : "客户服务",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.services.xerox.com/industry-services/zhcn.html",
+               "id" : "&lid=hdr-services-ind-title-industries we serve",
+               "label" : "Industries we serve",
+               "links" : [
+                  {
+                     "href" : "http://acs-qa.serverside.net:8080/high-tech-telecommunications/zhcn.html",
+                     "id" : "&lid=hdr-services-ind-high tech and communications",
+                     "label" : "High Tech and Communications",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://acs-qa.serverside.net:8080/retail-business-services/zhcn.html",
+                     "id" : "&lid=hdr-services-ind-retail and consumer products",
+                     "label" : "Retail and Consumer Products",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/transportation-solutions/zhcn.html",
+                     "id" : "&lid=hdr-services-ind-交通解决方案",
+                     "label" : "交通解决方案",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Services"
+         },
+         "supplies" : {
+            "label" : "Supplies & Consumables"
+         },
+         "support" : {
+            "col1" : {
+               "href" : "http://www.support.xerox.com/support/zhcn.html",
+               "id" : "&lid=hdr-support-title-support and drivers",
+               "label" : "Support and Drivers",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/support-faq/zhcn.html",
+                     "id" : "&lid=hdr-support-frequently asked questions",
+                     "label" : "Frequently Asked Questions",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/customer-training/zhcn.html",
+                     "id" : "&lid=hdr-support-consulting _ training services",
+                     "label" : "Consulting & Training Services",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/information-security/zhcn.html",
+                     "id" : "&lid=hdr-support-安全信息",
+                     "label" : "安全信息",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Support & Drivers"
+         }
+      },
+      "secondaryNav" : {
+         "links" : [
+            {
+               "choices" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
+               "id" : "hdr-bar-country-select",
+               "label" : "中 国"
+            },
+            {
+               "href" : "#",
+               "label" : "Sign In"
+            }
+         ]
+      },
+      "tertiaryNav" : {
+         "contactUs" : "Contact Us",
+         "share" : "Share"
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home",
+         "menuBtnTitle" : "Open/Close menu",
+         "searchBtnTitle" : "Search",
+         "searchPlaceholder" : "Search"
+      }
+   }
+}

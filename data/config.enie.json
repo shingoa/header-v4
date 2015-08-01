@@ -1,0 +1,547 @@
+{
+   "footer" : {
+      "copyrightStatement" : "© 2015 Xerox Corporation. All rights reserved. Xerox® and Xerox and Design® are trademarks of Xerox Corporation in the United States and/or other countries.",
+      "footerLinks" : {
+         "links" : [
+            {
+               "class" : "xrx_hide_mobile first",
+               "href" : "http://psgdev.opbu.xerox.com/jobs/enie.html",
+               "id" : "&lid=ftr-careers",
+               "label" : "Careers",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/enie.html",
+               "id" : "&lid=ftr-contact us",
+               "label" : "Contact Us",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/enie.html",
+               "id" : "&lid=ftr-about xerox",
+               "label" : "About Xerox",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://news.xerox.com/pr/xerox/investor-relations.aspx",
+               "id" : "&lid=ftr-investors",
+               "label" : "Investors",
+               "target" : "_blank"
+            },
+            {
+               "class" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/privacy-policy/enie.html",
+               "id" : "&lid=ftr-privacy",
+               "label" : "Privacy",
+               "target" : "_self"
+            },
+            {
+               "class" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/website-terms-of-use/enie.html",
+               "id" : "&lid=ftr-legal",
+               "label" : "Legal",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/site-map/enie.html",
+               "id" : "&lid=ftr-site map",
+               "label" : "Site Map",
+               "target" : "_self"
+            }
+         ]
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home"
+      }
+   },
+   "header" : {
+      "footerLinks" : [
+         {
+            "href" : "#",
+            "label" : "Contact"
+         },
+         {
+            "href" : "#",
+            "label" : "Chat"
+         },
+         {
+            "href" : "#",
+            "label" : "Where to Buy"
+         },
+         {
+            "href" : "#",
+            "label" : "Careers"
+         },
+         {
+            "href" : "#",
+            "label" : "Partners"
+         },
+         {
+            "href" : "#",
+            "label" : "Case Studies"
+         }
+      ],
+      "primaryNav" : {
+         "about" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/enie.html",
+               "id" : "&lid=hdr-about-title-about xerox",
+               "label" : "About Xerox",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/enie.html",
+                     "id" : "&lid=hdr-about-xerox at a glance",
+                     "label" : "Xerox at a Glance",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://news.xerox.com/investors",
+                     "id" : "&lid=hdr-about-investors",
+                     "label" : "Investors",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/enie.html",
+                     "id" : "&lid=hdr-about-global citizenship",
+                     "label" : "Global Citizenship",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/enie.html",
+                     "id" : "&lid=hdr-about-environment and sustainability",
+                     "label" : "Environment and Sustainability",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.realbusinesslive.xerox.com/events/index/enie.html",
+                     "id" : "&lid=hdr-about-events_ tradeshows and webinars",
+                     "label" : "Events, Tradeshows and Webinars",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/innovation/enie.html",
+                     "id" : "&lid=hdr-about-innovation",
+                     "label" : "Innovation",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/enie.html",
+               "id" : "&lid=hdr-about-contact-title-contact",
+               "label" : "Contact",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/enie.html#billing",
+                     "id" : "&lid=hdr-about-contact-support for billing and account administration",
+                     "label" : "Support for billing and account administration",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/enie.html#tech_support",
+                     "id" : "&lid=hdr-about-contact-technical support",
+                     "label" : "Technical Support",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/enie.html#products",
+                     "id" : "&lid=hdr-about-contact-products and software",
+                     "label" : "Products and software",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/enie.html#supplies",
+                     "id" : "&lid=hdr-about-contact-supplies and consumables",
+                     "label" : "Supplies and consumables",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/enie.html#services",
+                     "id" : "&lid=hdr-about-contact-business services",
+                     "label" : "Business Services",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/enie.html#research",
+                     "id" : "&lid=hdr-about-contact-research and innovation",
+                     "label" : "Research and innovation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/enie.html#corporate",
+                     "id" : "&lid=hdr-about-contact-xerox corporation",
+                     "label" : "Xerox Corporation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/perl-bin/world_contact.pl#0",
+                     "id" : "&lid=hdr-about-contact-worldwide locations",
+                     "label" : "Worldwide Locations",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/enie.html",
+               "id" : "&lid=hdr-about-wtb-title-where to buy",
+               "label" : "Where to Buy",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/enie.html#office",
+                     "id" : "&lid=hdr-about-wtb-office equipment",
+                     "label" : "Office Equipment",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/enie.html#production",
+                     "id" : "&lid=hdr-about-wtb-production equipment",
+                     "label" : "Production Equipment",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/enie.html#scanners",
+                     "id" : "&lid=hdr-about-wtb-scanners",
+                     "label" : "Scanners",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/enie.html#supplies",
+                     "id" : "&lid=hdr-about-wtb-supplies and consumables",
+                     "label" : "Supplies and consumables",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/enie.html#services",
+                     "id" : "&lid=hdr-about-wtb-business services",
+                     "label" : "Business Services",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "About Xerox"
+         },
+         "products" : {
+            "col1" : {
+               "href" : "http://dev.office.xerox.com/index/enie.html",
+               "id" : "&lid=hdr-products-ofc-title-office solutions",
+               "label" : "Office Solutions",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/printers/enie.html",
+                     "id" : "&lid=hdr-products-ofc-office printers",
+                     "label" : "Office Printers",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/multifunction-printer/enie.html",
+                     "id" : "&lid=hdr-products-ofc-multifunction",
+                     "label" : "Multifunction",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.xeroxscanners.com/en/uk/",
+                     "id" : "&lid=hdr-products-ofc-scanners",
+                     "label" : "Scanners",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/software-solutions/enie.html",
+                     "id" : "&lid=hdr-products-ofc-office software",
+                     "label" : "Office Software",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/digital-printing/enie.html",
+               "id" : "&lid=hdr-products-gc-title-graphic communications",
+               "label" : "Graphic Communications",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/digital-press/enie.html",
+                     "id" : "&lid=hdr-products-gc-production printers",
+                     "label" : "Production Printers",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/continuous-feed-printer/enie.html",
+                     "id" : "&lid=hdr-products-gc-continuous feed printers",
+                     "label" : "Continuous Feed Printers",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/wide-format-printer/enie.html",
+                     "id" : "&lid=hdr-products-gc-wide format printers",
+                     "label" : "Wide Format Printers",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/feeders-print-finishing/enie.html",
+                     "id" : "&lid=hdr-products-gc-feeding and finishing",
+                     "label" : "Feeding and Finishing",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/workflow/enie.html",
+                     "id" : "&lid=hdr-products-gc-workflow software",
+                     "label" : "Workflow Software",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "label" : "Additional Resources",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/product-locator/enie.html",
+                     "id" : "&lid=hdr-products-res-product finder",
+                     "label" : "Product Finder",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/small-business/enie.html",
+                     "id" : "&lid=hdr-products-res-small business resource center",
+                     "label" : "Small Business Solutions",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/enie.html",
+                     "id" : "&lid=hdr-products-res-toner and ink",
+                     "label" : "Toner and Ink",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/case-studies/enie.html",
+                     "id" : "&lid=hdr-products-res-case studies",
+                     "label" : "Case Studies",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/partner-programs/enie.html",
+                     "id" : "&lid=hdr-products-res-become a partner",
+                     "label" : "Become a Partner",
+                     "target" : "_self"
+                  }
+               ]
+            },
+            "label" : "Products"
+         },
+         "services" : {
+            "col1" : {
+               "href" : "http://dev.services.xerox.com/document-management-solutions/enie.html",
+               "id" : "&lid=hdr-services-dso-title-document management",
+               "label" : "Document Management",
+               "links" : [
+                  {
+                     "href" : "http://dev.services.xerox.com/print-room/enie.html",
+                     "id" : "&lid=hdr-services-dso-centralised print services",
+                     "label" : "Centralised Print Services",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-managed-print-services/enie.html",
+                     "id" : "&lid=hdr-services-dso-managed print services",
+                     "label" : "Managed Print Services",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.services.xerox.com/business-process-outsourcing/enie.html",
+               "id" : "&lid=hdr-services-bpo-title-business processes",
+               "label" : "Business Processes",
+               "links" : [
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-marketing-services/enie.html",
+                     "id" : "&lid=hdr-services-bpo-communication and marketing",
+                     "label" : "Communication and Marketing",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/customer-service/enie.html",
+                     "id" : "&lid=hdr-services-bpo-customer care",
+                     "label" : "Customer Care",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/document-management/enie.html",
+                     "id" : "&lid=hdr-services-bpo-document transaction processing services",
+                     "label" : "Document Transaction Processing Services",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/finance-and-accounting/enie.html",
+                     "id" : "&lid=hdr-services-bpo-finance and accounting outsourcing",
+                     "label" : "Finance and Accounting Outsourcing",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/hr-outsourcing/enie.html",
+                     "id" : "&lid=hdr-services-bpo-hr outsourcing",
+                     "label" : "HR Outsourcing",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.services.xerox.com/industry-services/enie.html",
+               "id" : "&lid=hdr-services-ind-title-industries we serve",
+               "label" : "Industries we serve",
+               "links" : [
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/financial-services/enie.html",
+                     "id" : "&lid=hdr-services-ind-financial services",
+                     "label" : "Financial Services",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/government/enie.html",
+                     "id" : "&lid=hdr-services-ind-government",
+                     "label" : "Government",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/high-tech-and-communications/enie.html",
+                     "id" : "&lid=hdr-services-ind-high tech and communications",
+                     "label" : "High Tech and Communications",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/retail/enie.html",
+                     "id" : "&lid=hdr-services-ind-retail and consumer products",
+                     "label" : "Retail and Consumer Products",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/transport-solutions/enie.html",
+                     "id" : "&lid=hdr-services-ind-transportation",
+                     "label" : "Transportation",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Services"
+         },
+         "supplies" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/enie.html",
+               "id" : "&lid=hdr-supplies-title-supplies _ consumables",
+               "label" : "Supplies & Consumables",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/enie.html",
+                     "id" : "&lid=hdr-supplies-buy toner_ ink and accessories",
+                     "label" : "Buy toner, ink and accessories",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/paper-marketing/enie.html",
+                     "id" : "&lid=hdr-supplies-paper _ other print media",
+                     "label" : "Paper & Other Print Media",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/recycling/enie.html",
+                     "id" : "&lid=hdr-supplies-recycling programs",
+                     "label" : "Recycling Programs",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/compatible-cartridges/enie.html",
+                     "id" : "&lid=hdr-supplies-xerox toner for non-xerox printers",
+                     "label" : "Xerox toner for non-Xerox printers",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/xerox-toner/enie.html",
+                     "id" : "&lid=hdr-supplies-genuine xerox toner",
+                     "label" : "Genuine Xerox Toner",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/account-management/consumables/enie.html",
+               "id" : "&lid=hdr-supplies-title-contract-contract supplies",
+               "label" : "Contract Supplies",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/account-management/consumables/enie.html",
+                     "id" : "&lid=hdr-supplies-contract-log in to order toner and ink included in your contract",
+                     "label" : "Log in to order toner and ink included in your contract",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Supplies & Consumables"
+         },
+         "support" : {
+            "col1" : {
+               "href" : "http://www.support.xerox.com/support/enie.html",
+               "id" : "&lid=hdr-support-title-support and drivers",
+               "label" : "Support and Drivers",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/support-faq/enie.html",
+                     "id" : "&lid=hdr-support-frequently asked questions",
+                     "label" : "Frequently Asked Questions",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/customer-training/enie.html",
+                     "id" : "&lid=hdr-support-consulting _ training services",
+                     "label" : "Consulting & Training Services",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/information-security/enie.html",
+                     "id" : "&lid=hdr-support-security information",
+                     "label" : "Security Information",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Support & Drivers"
+         }
+      },
+      "secondaryNav" : {
+         "links" : [
+            {
+               "choices" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
+               "id" : "hdr-bar-country-select",
+               "label" : "Ireland"
+            },
+            {
+               "href" : "#",
+               "label" : "Sign In"
+            }
+         ]
+      },
+      "tertiaryNav" : {
+         "contactUs" : "Contact Us",
+         "share" : "Share"
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home",
+         "menuBtnTitle" : "Open/Close menu",
+         "searchBtnTitle" : "Search",
+         "searchPlaceholder" : "Search"
+      }
+   }
+}

@@ -1,0 +1,535 @@
+{
+   "footer" : {
+      "copyrightStatement" : "© 2015 Xerox Corporation. Alle rettigheder forbeholdes. Xerox® og Xerox and Design® er varemærker for Xerox Corporation i USA og/eller andre lande.",
+      "footerLinks" : {
+         "links" : [
+            {
+               "class" : "xrx_hide_mobile first",
+               "href" : "http://www.xerox.com/jobs/dadk.html",
+               "id" : "&lid=ftr-careers",
+               "label" : "Karriere",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/dadk.html",
+               "id" : "&lid=ftr-contact us",
+               "label" : "Kontakt",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/dadk.html",
+               "id" : "&lid=ftr-about xerox",
+               "label" : "Om Xerox",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://news.xerox.com/pr/xerox/investor-relations.aspx",
+               "id" : "&lid=ftr-investors",
+               "label" : "Investorer",
+               "target" : "_blank"
+            },
+            {
+               "class" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/privacy-policy/dadk.html",
+               "id" : "&lid=ftr-privacy",
+               "label" : "Behandling af persondata",
+               "target" : "_self"
+            },
+            {
+               "class" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/website-terms-of-use/dadk.html",
+               "id" : "&lid=ftr-legal",
+               "label" : "Juridisk meddelelse",
+               "target" : "_self"
+            },
+            {
+               "class" : "xrx_hide_mobile xrx_hide_tablet",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/site-map/dadk.html",
+               "id" : "&lid=ftr-site map",
+               "label" : "Oversigt",
+               "target" : "_self"
+            }
+         ]
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home"
+      }
+   },
+   "header" : {
+      "footerLinks" : [
+         {
+            "href" : "#",
+            "label" : "Contact"
+         },
+         {
+            "href" : "#",
+            "label" : "Chat"
+         },
+         {
+            "href" : "#",
+            "label" : "Where to Buy"
+         },
+         {
+            "href" : "#",
+            "label" : "Careers"
+         },
+         {
+            "href" : "#",
+            "label" : "Partners"
+         },
+         {
+            "href" : "#",
+            "label" : "Case Studies"
+         }
+      ],
+      "primaryNav" : {
+         "about" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/dadk.html",
+               "id" : "&lid=hdr-about-title-om xerox",
+               "label" : "Om Xerox",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/dadk.html",
+                     "id" : "&lid=hdr-about-xerox i overblik",
+                     "label" : "Xerox i overblik",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://news.xerox.com/investors",
+                     "id" : "&lid=hdr-about-investorer",
+                     "label" : "Investorer",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/news/dadk.html",
+                     "id" : "&lid=hdr-about-nyhedsarkiv",
+                     "label" : "Nyhedsarkiv",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/dadk.html",
+                     "id" : "&lid=hdr-about-global virksomhed i samfundet",
+                     "label" : "Global virksomhed i samfundet",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/dadk.html",
+                     "id" : "&lid=hdr-about-omgivelser og bæredygtighed",
+                     "label" : "Omgivelser og Bæredygtighed",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.realbusinesslive.xerox.com/events/index/dadk.html",
+                     "id" : "&lid=hdr-about-arrangementer og messer",
+                     "label" : "Arrangementer og messer",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/innovation/dadk.html",
+                     "id" : "&lid=hdr-about-innovationslaboratoriet",
+                     "label" : "Innovationslaboratoriet",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/dadk.html",
+               "id" : "&lid=hdr-about-contact-title-kontakt",
+               "label" : "Kontakt",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/dadk.html#billing",
+                     "id" : "&lid=hdr-about-contact-hjælp til fakturerings- og konteringsadministration",
+                     "label" : "Hjælp til fakturerings- og konteringsadministration",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/dadk.html#tech_support",
+                     "id" : "&lid=hdr-about-contact-teknisk support",
+                     "label" : "Teknisk support",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/dadk.html#products",
+                     "id" : "&lid=hdr-about-contact-produkter og software",
+                     "label" : "Produkter og software",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/dadk.html#supplies",
+                     "id" : "&lid=hdr-about-contact-forbrugsstoffer",
+                     "label" : "Forbrugsstoffer",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/dadk.html#services",
+                     "id" : "&lid=hdr-about-contact-serviceydelser til virksomheder",
+                     "label" : "Serviceydelser til virksomheder",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/dadk.html#research",
+                     "id" : "&lid=hdr-about-contact-forskning og innovation",
+                     "label" : "Forskning og innovation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/dadk.html#corporate",
+                     "id" : "&lid=hdr-about-contact-xerox corporation",
+                     "label" : "Xerox Corporation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/perl-bin/world_contact.pl#0",
+                     "id" : "&lid=hdr-about-contact-xerox globalt",
+                     "label" : "Xerox globalt",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/dadk.html",
+               "id" : "&lid=hdr-about-wtb-title-forhandlere",
+               "label" : "Forhandlere",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/dadk.html#office",
+                     "id" : "&lid=hdr-about-wtb-kontorprodukter",
+                     "label" : "Kontorprodukter",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/dadk.html#production",
+                     "id" : "&lid=hdr-about-wtb-produktionsprodukter",
+                     "label" : "Produktionsprodukter",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/dadk.html#scanners",
+                     "id" : "&lid=hdr-about-wtb-scannere",
+                     "label" : "Scannere",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/dadk.html#supplies",
+                     "id" : "&lid=hdr-about-wtb-forbrugsstoffer",
+                     "label" : "Forbrugsstoffer",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/dadk.html#services",
+                     "id" : "&lid=hdr-about-wtb-serviceydelser til virksomheder",
+                     "label" : "Serviceydelser til virksomheder",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Om Xerox"
+         },
+         "products" : {
+            "col1" : {
+               "href" : "http://dev.office.xerox.com/index/dadk.html",
+               "id" : "&lid=hdr-products-ofc-title-office solutions",
+               "label" : "Kontorløsninger",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/printers/dadk.html",
+                     "id" : "&lid=hdr-products-ofc-kontorprintere",
+                     "label" : "Kontorprintere",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/multifunction-printer/dadk.html",
+                     "id" : "&lid=hdr-products-ofc-multifunktion",
+                     "label" : "Multifunktion",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://www.xeroxscanners.com/en/en/",
+                     "id" : "&lid=hdr-products-ofc-scanners",
+                     "label" : "Scannere",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/software-solutions/dadk.html",
+                     "id" : "&lid=hdr-products-ofc-office software",
+                     "label" : "Kontorsoftware",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/digital-printing/dadk.html",
+               "id" : "&lid=hdr-products-gc-title-graphic communications",
+               "label" : "Grafisk kommunikation",
+               "links" : [
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/digital-press/dadk.html",
+                     "id" : "&lid=hdr-products-gc-produktionsprintere",
+                     "label" : "Produktionsprintere",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/continuous-feed-printer/dadk.html",
+                     "id" : "&lid=hdr-products-gc-printere til endeløse baner",
+                     "label" : "Printere til endeløse baner",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/digital-printing-equipment/wide-format-printer/dadk.html",
+                     "id" : "&lid=hdr-products-gc-bredformat",
+                     "label" : "Bredformat",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/feeders-print-finishing/dadk.html",
+                     "id" : "&lid=hdr-products-gc-efterbehandling og fremfuring",
+                     "label" : "Efterbehandling og fremføring",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/workflow/dadk.html",
+                     "id" : "&lid=hdr-products-gc-arbejdsgangsoftware",
+                     "label" : "Arbejdsgangsoftware",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "label" : "Yderligere ressourcer",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/digital-printing/product-locator/dadk.html",
+                     "id" : "&lid=hdr-products-res-product finder",
+                     "label" : "Produktfinder",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.office.xerox.com/small-business/dadk.html",
+                     "id" : "&lid=hdr-products-res-small business resource center",
+                     "label" : "Løsninger til mindre virksomheder",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/dadk.html",
+                     "id" : "&lid=hdr-products-res-toner and ink",
+                     "label" : "Toner og blæk",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/partner-programs/dadk.html",
+                     "id" : "&lid=hdr-products-res-become a partner",
+                     "label" : "Bliv partner",
+                     "target" : "_self"
+                  }
+               ]
+            },
+            "label" : "Produkter"
+         },
+         "services" : {
+            "col1" : {
+               "href" : "http://dev.services.xerox.com/document-management-solutions/dadk.html",
+               "id" : "&lid=hdr-services-dso-title-dokumentstyring",
+               "label" : "Dokumentstyring",
+               "links" : [
+                  {
+                     "href" : "http://dev.services.xerox.com/print-room/dadk.html",
+                     "id" : "&lid=hdr-services-dso-centralised print services",
+                     "label" : "Centralised Print Services",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-managed-print-services/dadk.html",
+                     "id" : "&lid=hdr-services-dso-managed print services",
+                     "label" : "Managed Print Services",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://dev.services.xerox.com/business-process-outsourcing/dadk.html",
+               "id" : "&lid=hdr-services-bpo-title-virksomhedsprocesser",
+               "label" : "Virksomhedsprocesser",
+               "links" : [
+                  {
+                     "href" : "http://dev.services.xerox.com/finance-and-accounting/dadk.html",
+                     "id" : "&lid=hdr-services-bpo-finans og regnskab",
+                     "label" : "Finans og regnskab",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/hr-outsourcing/dadk.html",
+                     "id" : "&lid=hdr-services-bpo-hr-outsourcing",
+                     "label" : "HR-outsourcing",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/xerox-marketing-services/dadk.html",
+                     "id" : "&lid=hdr-services-bpo-kommunikation og markedsføring",
+                     "label" : "Kommunikation og Markedsføring",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/dokumentstyring/dadk.html",
+                     "id" : "&lid=hdr-services-bpo-tjenester vedrørende dokumenttransaktionsbehandling",
+                     "label" : "Tjenester vedrørende dokumenttransaktionsbehandling",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col3" : {
+               "href" : "http://dev.services.xerox.com/industry-services/dadk.html",
+               "id" : "&lid=hdr-services-ind-title-brancher_ vi hjælper",
+               "label" : "Brancher, vi hjælper",
+               "links" : [
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/financial-services/dadk.html",
+                     "id" : "&lid=hdr-services-ind-den finansielle sektor",
+                     "label" : "Den finansielle sektor",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/retail/dadk.html",
+                     "id" : "&lid=hdr-services-ind-detail- og forbrugerprodukter",
+                     "label" : "Detail- og forbrugerprodukter",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/high-tech-and-communications/dadk.html",
+                     "id" : "&lid=hdr-services-ind-high tech og kommunikation",
+                     "label" : "High tech og kommunikation",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.consulting.xerox.com/business-services-industry/government/dadk.html",
+                     "id" : "&lid=hdr-services-ind-offentlige myndigheder",
+                     "label" : "Offentlige myndigheder",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://dev.services.xerox.com/transport-solutions/dadk.html",
+                     "id" : "&lid=hdr-services-ind-transport",
+                     "label" : "Transport",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Tjenester"
+         },
+         "supplies" : {
+            "col1" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/dadk.html",
+               "id" : "&lid=hdr-supplies-title-papir _ tilbehør",
+               "label" : "Papir & Tilbehør",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/dadk.html",
+                     "id" : "&lid=hdr-supplies-køb toner_ blæk og tilbehør",
+                     "label" : "Køb toner, blæk og tilbehør",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/paper-marketing/dadk.html",
+                     "id" : "&lid=hdr-supplies-papir _ andre printmedier",
+                     "label" : "Papir & andre printmedier",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/recycling/dadk.html",
+                     "id" : "&lid=hdr-supplies-genvindingsprogrammer",
+                     "label" : "Genvindingsprogrammer",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/printer-supplies/compatible-cartridges/dadk.html",
+                     "id" : "&lid=hdr-supplies-toner til ikke-xerox-printere",
+                     "label" : "Toner til ikke-Xerox-printere",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "col2" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/account-management/consumables/dadk.html",
+               "id" : "&lid=hdr-supplies-title-contract-forbrugsstoffer",
+               "label" : "Forbrugsstoffer",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/account-management/consumables/dadk.html",
+                     "id" : "&lid=hdr-supplies-contract-log ind for at bestille toner og blæk_ som er inkluderet i din kontrakt",
+                     "label" : "Log ind for at bestille toner og blæk, som er inkluderet i din kontrakt",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Papir & Tilbehør"
+         },
+         "support" : {
+            "col1" : {
+               "href" : "http://www.support.xerox.com/support/dadk.html",
+               "id" : "&lid=hdr-support-title-support og drivere",
+               "label" : "Support og drivere",
+               "links" : [
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/support-faq/dadk.html",
+                     "id" : "&lid=hdr-support-spørgsmål og svar",
+                     "label" : "Spørgsmål og svar",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/about-xerox/customer-training/dadk.html",
+                     "id" : "&lid=hdr-support-konsulent- _ uddannelsesservices",
+                     "label" : "Konsulent- & uddannelsesservices",
+                     "target" : "_self"
+                  },
+                  {
+                     "href" : "http://psgdev.opbu.xerox.com/information-security/dadk.html",
+                     "id" : "&lid=hdr-support-sikkerhedsoplysninger",
+                     "label" : "Sikkerhedsoplysninger",
+                     "target" : "_self"
+                  }
+               ],
+               "target" : "_self"
+            },
+            "label" : "Support & drivere"
+         }
+      },
+      "secondaryNav" : {
+         "links" : [
+            {
+               "choices" : "",
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
+               "id" : "hdr-bar-country-select",
+               "label" : "Denmark"
+            },
+            {
+               "href" : "#",
+               "label" : "Sign In"
+            }
+         ]
+      },
+      "tertiaryNav" : {
+         "contactUs" : "Kontakt",
+         "share" : "Del"
+      },
+      "trans" : {
+         "logoTitle" : "Xerox.com home",
+         "menuBtnTitle" : "Open/Close menu",
+         "searchBtnTitle" : "Søg",
+         "searchPlaceholder" : "Søg"
+      }
+   }
+}
