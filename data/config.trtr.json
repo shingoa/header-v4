@@ -52,78 +52,52 @@
       }
    },
    "header" : {
-      "footerLinks" : [
-         {
-            "href" : "#",
-            "label" : "Contact"
-         },
-         {
-            "href" : "#",
-            "label" : "Chat"
-         },
-         {
-            "href" : "#",
-            "label" : "Where to Buy"
-         },
-         {
-            "href" : "#",
-            "label" : "Careers"
-         },
-         {
-            "href" : "#",
-            "label" : "Partners"
-         },
-         {
-            "href" : "#",
-            "label" : "Case Studies"
-         }
-      ],
       "primaryNav" : {
          "about" : {
             "col1" : {
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/trtr.html",
-               "id" : "&lid=hdr-about-title-xerox hakkında",
+               "id" : "&lid=hdr-about-info-title-xerox hakkında",
                "label" : "Xerox Hakkında",
                "links" : [
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/trtr.html",
-                     "id" : "&lid=hdr-about-bir bakışta xerox",
+                     "id" : "&lid=hdr-about-info-bir bakışta xerox",
                      "label" : "Bir Bakışta Xerox",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://news.xerox.com/investors",
-                     "id" : "&lid=hdr-about-yatırımcılar",
+                     "id" : "&lid=hdr-about-info-yatırımcılar",
                      "label" : "Yatırımcılar",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/news/trtr.html",
-                     "id" : "&lid=hdr-about-haber merkezi",
+                     "id" : "&lid=hdr-about-info-haber merkezi",
                      "label" : "Haber Merkezi",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/trtr.html",
-                     "id" : "&lid=hdr-about-sorumluluğumuz",
+                     "id" : "&lid=hdr-about-info-sorumluluğumuz",
                      "label" : "Sorumluluğumuz",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/trtr.html",
-                     "id" : "&lid=hdr-about-çevre ve sürdürülebilirlik",
+                     "id" : "&lid=hdr-about-info-çevre ve sürdürülebilirlik",
                      "label" : "Çevre ve sürdürülebilirlik",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://www.realbusinesslive.xerox.com/events/index/trtr.html",
-                     "id" : "&lid=hdr-about-aktiviteler_ ticari fuarlar ve internet tabanlı seminerler",
+                     "id" : "&lid=hdr-about-info-aktiviteler_ ticari fuarlar ve internet tabanlı seminerler",
                      "label" : "Aktiviteler, Ticari Fuarlar ve Internet Tabanlı Seminerler",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/innovation/trtr.html",
-                     "id" : "&lid=hdr-about-yenilik",
+                     "id" : "&lid=hdr-about-info-yenilik",
                      "label" : "Yenilik",
                      "target" : "_self"
                   }
@@ -210,6 +184,26 @@
                      "target" : "_self"
                   }
                ],
+               "target" : "_self"
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/trtr.html",
+                  "id" : "&lid=hdr-about-btm contact us",
+                  "label" : "Bize Ulaşın",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/trtr.html",
+                  "id" : "&lid=hdr-about-btm where to buy",
+                  "label" : "Satış Noktaları",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/trtr.html",
+               "id" : "&lid=hdr-services-all about xerox",
+               "label" : "Xerox Hakkında Her Şey",
                "target" : "_self"
             },
             "label" : "Xerox Hakkında"
@@ -308,6 +302,26 @@
                   }
                ]
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/trtr.html",
+                  "id" : "&lid=hdr-products-btm contact us",
+                  "label" : "Bize Ulaşın",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/trtr.html",
+                  "id" : "&lid=hdr-products-btm where to buy",
+                  "label" : "Satış Noktaları",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.office.xerox.com/digital-printing-equipment/trtr.html",
+               "id" : "&lid=hdr-products-all products",
+               "label" : "Tüm Ürünler",
+               "target" : "_self"
+            },
             "label" : "Ürünler"
          },
          "services" : {
@@ -389,6 +403,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/trtr.html",
+                  "id" : "&lid=hdr-services-btm contact us",
+                  "label" : "Bize Ulaşın",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/trtr.html",
+                  "id" : "&lid=hdr-services-btm where to buy",
+                  "label" : "Satış Noktaları",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.services.xerox.com/index/trtr.html",
+               "id" : "&lid=hdr-services-all services",
+               "label" : "All Services",
+               "target" : "_self"
+            },
             "label" : "Hizmetler"
          },
          "supplies" : {
@@ -410,6 +444,26 @@
                      "target" : "_self"
                   }
                ],
+               "target" : "_self"
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/trtr.html",
+                  "id" : "&lid=hdr-supplies-btm contact us",
+                  "label" : "Bize Ulaşın",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/trtr.html",
+                  "id" : "&lid=hdr-supplies-btm where to buy",
+                  "label" : "Satış Noktaları",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/svse.html",
+               "id" : "&lid=hdr-supplies-all supplies",
+               "label" : "All Supplies",
                "target" : "_self"
             },
             "label" : "Sarf Malzemeleri"
@@ -441,6 +495,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/trtr.html",
+                  "id" : "&lid=hdr-support-btm contact us",
+                  "label" : "Bize Ulaşın",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/trtr.html",
+                  "id" : "&lid=hdr-support-btm where to buy",
+                  "label" : "Satış Noktaları",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://www.support.xerox.com/support/svse.html",
+               "id" : "&lid=hdr-support-all support",
+               "label" : "Tam Destek",
+               "target" : "_self"
+            },
             "label" : "Destek ve Sürücüler"
          }
       },
@@ -449,21 +523,21 @@
             {
                "choices" : "",
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
-               "id" : "hdr-bar-country-select",
+               "id" : "&lid=hdr-bar-country-select",
                "label" : "Türkiye"
-            },
-            {
-               "href" : "#",
-               "label" : "Sign In"
             }
          ]
       },
       "tertiaryNav" : {
-         "contactUs" : "Bize Ulaşın",
-         "share" : "Paylaş"
+         "contactUs" : {
+            "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/trtr.html",
+            "id" : "&lid=hdr-bar-contact us",
+            "label" : "Bize Ulaşın",
+            "target" : "_self"
+         }
       },
       "trans" : {
-         "logoTitle" : "Xerox.com home",
+         "logoTitle" : "Xerox.com ana sayfası",
          "menuBtnTitle" : "Open/Close menu",
          "searchBtnTitle" : "Ara",
          "searchPlaceholder" : "Ara"

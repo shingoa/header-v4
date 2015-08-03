@@ -59,78 +59,52 @@
       }
    },
    "header" : {
-      "footerLinks" : [
-         {
-            "href" : "#",
-            "label" : "Contact"
-         },
-         {
-            "href" : "#",
-            "label" : "Chat"
-         },
-         {
-            "href" : "#",
-            "label" : "Where to Buy"
-         },
-         {
-            "href" : "#",
-            "label" : "Careers"
-         },
-         {
-            "href" : "#",
-            "label" : "Partners"
-         },
-         {
-            "href" : "#",
-            "label" : "Case Studies"
-         }
-      ],
       "primaryNav" : {
          "about" : {
             "col1" : {
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/svse.html",
-               "id" : "&lid=hdr-about-title-om xerox",
+               "id" : "&lid=hdr-about-info-title-om xerox",
                "label" : "Om Xerox",
                "links" : [
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/svse.html",
-                     "id" : "&lid=hdr-about-snabbfakta om xerox",
+                     "id" : "&lid=hdr-about-info-snabbfakta om xerox",
                      "label" : "Snabbfakta om Xerox",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://news.xerox.com/investors",
-                     "id" : "&lid=hdr-about-investerare",
+                     "id" : "&lid=hdr-about-info-investerare",
                      "label" : "Investerare",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/news/svse.html",
-                     "id" : "&lid=hdr-about-pressinformation",
+                     "id" : "&lid=hdr-about-info-pressinformation",
                      "label" : "Pressinformation",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/svse.html",
-                     "id" : "&lid=hdr-about-globalt medborgarskap",
+                     "id" : "&lid=hdr-about-info-globalt medborgarskap",
                      "label" : "Globalt medborgarskap",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/svse.html",
-                     "id" : "&lid=hdr-about-miljö och en hållbar utveckling",
+                     "id" : "&lid=hdr-about-info-miljö och en hållbar utveckling",
                      "label" : "Miljö och En hållbar utveckling",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://www.realbusinesslive.xerox.com/events/index/svse.html",
-                     "id" : "&lid=hdr-about-evenemang_ branschmässor och webbseminarier",
+                     "id" : "&lid=hdr-about-info-evenemang_ branschmässor och webbseminarier",
                      "label" : "Evenemang, Branschmässor och Webbseminarier",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/innovation/svse.html",
-                     "id" : "&lid=hdr-about-innovationslabb",
+                     "id" : "&lid=hdr-about-info-innovationslabb",
                      "label" : "Innovationslabb",
                      "target" : "_self"
                   }
@@ -229,6 +203,26 @@
                      "target" : "_self"
                   }
                ],
+               "target" : "_self"
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/svse.html",
+                  "id" : "&lid=hdr-about-btm contact us",
+                  "label" : "Kontakta oss",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/svse.html",
+                  "id" : "&lid=hdr-about-btm where to buy",
+                  "label" : "Försäljning",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/svse.html",
+               "id" : "&lid=hdr-services-all about xerox",
+               "label" : "Allt om Xerox",
                "target" : "_self"
             },
             "label" : "Om Xerox"
@@ -333,6 +327,26 @@
                   }
                ]
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/svse.html",
+                  "id" : "&lid=hdr-products-btm contact us",
+                  "label" : "Kontakta oss",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/svse.html",
+                  "id" : "&lid=hdr-products-btm where to buy",
+                  "label" : "Försäljning",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.office.xerox.com/digital-printing-equipment/svse.html",
+               "id" : "&lid=hdr-products-all products",
+               "label" : "Alla produkter",
+               "target" : "_self"
+            },
             "label" : "Produkter"
          },
          "services" : {
@@ -426,6 +440,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/svse.html",
+                  "id" : "&lid=hdr-services-btm contact us",
+                  "label" : "Kontakta oss",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/svse.html",
+                  "id" : "&lid=hdr-services-btm where to buy",
+                  "label" : "Försäljning",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.services.xerox.com/index/svse.html",
+               "id" : "&lid=hdr-services-all services",
+               "label" : "All Services",
+               "target" : "_self"
+            },
             "label" : "Tjänster"
          },
          "supplies" : {
@@ -475,6 +509,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/svse.html",
+                  "id" : "&lid=hdr-supplies-btm contact us",
+                  "label" : "Kontakta oss",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/svse.html",
+                  "id" : "&lid=hdr-supplies-btm where to buy",
+                  "label" : "Försäljning",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/srrs.html",
+               "id" : "&lid=hdr-supplies-all supplies",
+               "label" : "All Supplies",
+               "target" : "_self"
+            },
             "label" : "Förbrukning"
          },
          "support" : {
@@ -504,6 +558,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/svse.html",
+                  "id" : "&lid=hdr-support-btm contact us",
+                  "label" : "Kontakta oss",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/svse.html",
+                  "id" : "&lid=hdr-support-btm where to buy",
+                  "label" : "Försäljning",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://www.support.xerox.com/support/srrs.html",
+               "id" : "&lid=hdr-support-all support",
+               "label" : "All support",
+               "target" : "_self"
+            },
             "label" : "Support & Drivrutiner"
          }
       },
@@ -512,21 +586,27 @@
             {
                "choices" : "",
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
-               "id" : "hdr-bar-country-select",
+               "id" : "&lid=hdr-bar-country-select",
                "label" : "Sweden"
             },
             {
-               "href" : "#",
-               "label" : "Sign In"
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/account-management/svse.html",
+               "id" : "&lid=hdr-bar-account",
+               "label" : "Konto",
+               "target" : "_self"
             }
          ]
       },
       "tertiaryNav" : {
-         "contactUs" : "Kontakta oss",
-         "share" : "Dela"
+         "contactUs" : {
+            "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/svse.html",
+            "id" : "&lid=hdr-bar-contact us",
+            "label" : "Kontakta oss",
+            "target" : "_self"
+         }
       },
       "trans" : {
-         "logoTitle" : "Xerox.com home",
+         "logoTitle" : "Startsidan på www.xerox.com",
          "menuBtnTitle" : "Open/Close menu",
          "searchBtnTitle" : "Sök",
          "searchPlaceholder" : "Sök"

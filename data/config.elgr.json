@@ -59,78 +59,52 @@
       }
    },
    "header" : {
-      "footerLinks" : [
-         {
-            "href" : "#",
-            "label" : "Contact"
-         },
-         {
-            "href" : "#",
-            "label" : "Chat"
-         },
-         {
-            "href" : "#",
-            "label" : "Where to Buy"
-         },
-         {
-            "href" : "#",
-            "label" : "Careers"
-         },
-         {
-            "href" : "#",
-            "label" : "Partners"
-         },
-         {
-            "href" : "#",
-            "label" : "Case Studies"
-         }
-      ],
       "primaryNav" : {
          "about" : {
             "col1" : {
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/elgr.html",
-               "id" : "&lid=hdr-about-title-εταιρεία",
+               "id" : "&lid=hdr-about-info-title-εταιρεία",
                "label" : "Εταιρεία",
                "links" : [
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/elgr.html",
-                     "id" : "&lid=hdr-about-η xerox με μια ματιά",
+                     "id" : "&lid=hdr-about-info-η xerox με μια ματιά",
                      "label" : "Η Xerox με μια ματιά",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://news.xerox.com/investors",
-                     "id" : "&lid=hdr-about-επενδυτές",
+                     "id" : "&lid=hdr-about-info-επενδυτές",
                      "label" : "Επενδυτές",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/news/elgr.html",
-                     "id" : "&lid=hdr-about-ειδήσεις",
+                     "id" : "&lid=hdr-about-info-ειδήσεις",
                      "label" : "Ειδήσεις",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/elgr.html",
-                     "id" : "&lid=hdr-about-παγκόσμια κοινωνική ευθύνη",
+                     "id" : "&lid=hdr-about-info-παγκόσμια κοινωνική ευθύνη",
                      "label" : "Παγκόσμια κοινωνική ευθύνη",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/elgr.html",
-                     "id" : "&lid=hdr-about-περιβάλλον και βιωσιμότητα",
+                     "id" : "&lid=hdr-about-info-περιβάλλον και βιωσιμότητα",
                      "label" : "Περιβάλλον και Βιωσιμότητα",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://www.realbusinesslive.xerox.com/events/index/elgr.html",
-                     "id" : "&lid=hdr-about-εκδηλώσεις και εμπορικές εκθέσεις",
+                     "id" : "&lid=hdr-about-info-εκδηλώσεις και εμπορικές εκθέσεις",
                      "label" : "Εκδηλώσεις και εμπορικές εκθέσεις",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/innovation/elgr.html",
-                     "id" : "&lid=hdr-about-καινοτομία",
+                     "id" : "&lid=hdr-about-info-καινοτομία",
                      "label" : "Καινοτομία",
                      "target" : "_self"
                   }
@@ -229,6 +203,26 @@
                      "target" : "_self"
                   }
                ],
+               "target" : "_self"
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/elgr.html",
+                  "id" : "&lid=hdr-about-btm contact us",
+                  "label" : "Επικοινωνία",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/elgr.html",
+                  "id" : "&lid=hdr-about-btm where to buy",
+                  "label" : "Σημεία πώλησης",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/elgr.html",
+               "id" : "&lid=hdr-services-all about xerox",
+               "label" : "Όλες οι πληροφορίες για τη Xerox",
                "target" : "_self"
             },
             "label" : "Εταιρεία"
@@ -333,6 +327,26 @@
                   }
                ]
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/elgr.html",
+                  "id" : "&lid=hdr-products-btm contact us",
+                  "label" : "Επικοινωνία",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/elgr.html",
+                  "id" : "&lid=hdr-products-btm where to buy",
+                  "label" : "Σημεία πώλησης",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.office.xerox.com/digital-printing-equipment/elgr.html",
+               "id" : "&lid=hdr-products-all products",
+               "label" : "Όλα τα προϊόντα",
+               "target" : "_self"
+            },
             "label" : "Προϊόντα"
          },
          "services" : {
@@ -432,6 +446,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/elgr.html",
+                  "id" : "&lid=hdr-services-btm contact us",
+                  "label" : "Επικοινωνία",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/elgr.html",
+                  "id" : "&lid=hdr-services-btm where to buy",
+                  "label" : "Σημεία πώλησης",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.services.xerox.com/index/elgr.html",
+               "id" : "&lid=hdr-services-all services",
+               "label" : "All Services",
+               "target" : "_self"
+            },
             "label" : "Υπηρεσίες"
          },
          "supplies" : {
@@ -473,6 +507,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/elgr.html",
+                  "id" : "&lid=hdr-supplies-btm contact us",
+                  "label" : "Επικοινωνία",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/elgr.html",
+                  "id" : "&lid=hdr-supplies-btm where to buy",
+                  "label" : "Σημεία πώλησης",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/delu.html",
+               "id" : "&lid=hdr-supplies-all supplies",
+               "label" : "All Supplies",
+               "target" : "_self"
+            },
             "label" : "Αναλώσιμα"
          },
          "support" : {
@@ -502,6 +556,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/elgr.html",
+                  "id" : "&lid=hdr-support-btm contact us",
+                  "label" : "Επικοινωνία",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/elgr.html",
+                  "id" : "&lid=hdr-support-btm where to buy",
+                  "label" : "Σημεία πώλησης",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://www.support.xerox.com/support/delu.html",
+               "id" : "&lid=hdr-support-all support",
+               "label" : "Όλη η υποστήριξη",
+               "target" : "_self"
+            },
             "label" : "Τεχνική υποστήριξη & Drivers"
          }
       },
@@ -510,18 +584,18 @@
             {
                "choices" : "",
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
-               "id" : "hdr-bar-country-select",
+               "id" : "&lid=hdr-bar-country-select",
                "label" : "Greece"
-            },
-            {
-               "href" : "#",
-               "label" : "Sign In"
             }
          ]
       },
       "tertiaryNav" : {
-         "contactUs" : "Επικοινωνία",
-         "share" : "Κοινή χρήση"
+         "contactUs" : {
+            "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/elgr.html",
+            "id" : "&lid=hdr-bar-contact us",
+            "label" : "Επικοινωνία",
+            "target" : "_self"
+         }
       },
       "trans" : {
          "logoTitle" : "Xerox.com home",

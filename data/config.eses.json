@@ -59,78 +59,52 @@
       }
    },
    "header" : {
-      "footerLinks" : [
-         {
-            "href" : "#",
-            "label" : "Contact"
-         },
-         {
-            "href" : "#",
-            "label" : "Chat"
-         },
-         {
-            "href" : "#",
-            "label" : "Where to Buy"
-         },
-         {
-            "href" : "#",
-            "label" : "Careers"
-         },
-         {
-            "href" : "#",
-            "label" : "Partners"
-         },
-         {
-            "href" : "#",
-            "label" : "Case Studies"
-         }
-      ],
       "primaryNav" : {
          "about" : {
             "col1" : {
                "href" : "http://dev.xerox.es/about-xerox/eses.html",
-               "id" : "&lid=hdr-about-title-acerca de xerox",
+               "id" : "&lid=hdr-about-info-title-acerca de xerox",
                "label" : "Acerca de Xerox",
                "links" : [
                   {
                      "href" : "http://dev.xerox.es/about-xerox/company-facts/eses.html",
-                     "id" : "&lid=hdr-about-xerox de un vistazo",
+                     "id" : "&lid=hdr-about-info-xerox de un vistazo",
                      "label" : "Xerox de un vistazo",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://news.xerox.com/investors",
-                     "id" : "&lid=hdr-about-inversores",
+                     "id" : "&lid=hdr-about-info-inversores",
                      "label" : "Inversores",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://dev.xerox.es/news/eses.html",
-                     "id" : "&lid=hdr-about-noticias",
+                     "id" : "&lid=hdr-about-info-noticias",
                      "label" : "Noticias",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://dev.xerox.es/about-xerox/citizenship/eses.html",
-                     "id" : "&lid=hdr-about-responsabilidad social global",
+                     "id" : "&lid=hdr-about-info-responsabilidad social global",
                      "label" : "Responsabilidad social global",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://dev.xerox.es/about-xerox/environment/eses.html",
-                     "id" : "&lid=hdr-about-ambiente y sostenibilidad",
+                     "id" : "&lid=hdr-about-info-ambiente y sostenibilidad",
                      "label" : "Ambiente y sostenibilidad",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://www.realbusinesslive.xerox.com/events/index/eses.html",
-                     "id" : "&lid=hdr-about-eventos_ ferias profesionales y seminarios web",
+                     "id" : "&lid=hdr-about-info-eventos_ ferias profesionales y seminarios web",
                      "label" : "Eventos, Ferias Profesionales y Seminarios web",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://dev.xerox.es/innovation/eses.html",
-                     "id" : "&lid=hdr-about-innovación",
+                     "id" : "&lid=hdr-about-info-innovación",
                      "label" : "Innovación",
                      "target" : "_self"
                   }
@@ -229,6 +203,26 @@
                      "target" : "_self"
                   }
                ],
+               "target" : "_self"
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://dev.xerox.es/about-xerox/contact-us/eses.html",
+                  "id" : "&lid=hdr-about-btm contact us",
+                  "label" : "Contáctenos",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://dev.xerox.es/about-xerox/buy/eses.html",
+                  "id" : "&lid=hdr-about-btm where to buy",
+                  "label" : "Puntos de venta",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.xerox.es/about-xerox/eses.html",
+               "id" : "&lid=hdr-services-all about xerox",
+               "label" : "Todo acerca de Xerox",
                "target" : "_self"
             },
             "label" : "Acerca de Xerox"
@@ -332,6 +326,26 @@
                      "target" : "_self"
                   }
                ]
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://dev.xerox.es/about-xerox/contact-us/eses.html",
+                  "id" : "&lid=hdr-products-btm contact us",
+                  "label" : "Contáctenos",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://dev.xerox.es/about-xerox/buy/eses.html",
+                  "id" : "&lid=hdr-products-btm where to buy",
+                  "label" : "Puntos de venta",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.xerox.es/oficina/equipo-de-impresion-digital/eses.html",
+               "id" : "&lid=hdr-products-all products",
+               "label" : "Todos los productos",
+               "target" : "_self"
             },
             "label" : "Productos"
          },
@@ -438,6 +452,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://dev.xerox.es/about-xerox/contact-us/eses.html",
+                  "id" : "&lid=hdr-services-btm contact us",
+                  "label" : "Contáctenos",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://dev.xerox.es/about-xerox/buy/eses.html",
+                  "id" : "&lid=hdr-services-btm where to buy",
+                  "label" : "Puntos de venta",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.xerox.es/servicios/eses.html",
+               "id" : "&lid=hdr-services-all services",
+               "label" : "All Services",
+               "target" : "_self"
+            },
             "label" : "Servicios"
          },
          "supplies" : {
@@ -487,6 +521,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://dev.xerox.es/about-xerox/contact-us/eses.html",
+                  "id" : "&lid=hdr-supplies-btm contact us",
+                  "label" : "Contáctenos",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://dev.xerox.es/about-xerox/buy/eses.html",
+                  "id" : "&lid=hdr-supplies-btm where to buy",
+                  "label" : "Puntos de venta",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/esec.html",
+               "id" : "&lid=hdr-supplies-all supplies",
+               "label" : "All Supplies",
+               "target" : "_self"
+            },
             "label" : "Suministros"
          },
          "support" : {
@@ -516,6 +570,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://dev.xerox.es/about-xerox/contact-us/eses.html",
+                  "id" : "&lid=hdr-support-btm contact us",
+                  "label" : "Contáctenos",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://dev.xerox.es/about-xerox/buy/eses.html",
+                  "id" : "&lid=hdr-support-btm where to buy",
+                  "label" : "Puntos de venta",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://www.support.xerox.com/support/esec.html",
+               "id" : "&lid=hdr-support-all support",
+               "label" : "Toda la asistencia",
+               "target" : "_self"
+            },
             "label" : "Asistencia y controladores"
          }
       },
@@ -524,21 +598,27 @@
             {
                "choices" : "",
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
-               "id" : "hdr-bar-country-select",
+               "id" : "&lid=hdr-bar-country-select",
                "label" : "España"
             },
             {
-               "href" : "#",
-               "label" : "Sign In"
+               "href" : "http://dev.xerox.es/about-xerox/account-management/eses.html",
+               "id" : "&lid=hdr-bar-account",
+               "label" : "Cuenta",
+               "target" : "_self"
             }
          ]
       },
       "tertiaryNav" : {
-         "contactUs" : "Contáctenos",
-         "share" : "Compartir"
+         "contactUs" : {
+            "href" : "http://dev.xerox.es/about-xerox/contact-us/eses.html",
+            "id" : "&lid=hdr-bar-contact us",
+            "label" : "Contáctenos",
+            "target" : "_self"
+         }
       },
       "trans" : {
-         "logoTitle" : "Xerox.com home",
+         "logoTitle" : "Página principal Xerox.com",
          "menuBtnTitle" : "Open/Close menu",
          "searchBtnTitle" : "Búsqueda",
          "searchPlaceholder" : "Búsqueda"

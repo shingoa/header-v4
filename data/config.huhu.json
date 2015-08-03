@@ -52,72 +52,46 @@
       }
    },
    "header" : {
-      "footerLinks" : [
-         {
-            "href" : "#",
-            "label" : "Contact"
-         },
-         {
-            "href" : "#",
-            "label" : "Chat"
-         },
-         {
-            "href" : "#",
-            "label" : "Where to Buy"
-         },
-         {
-            "href" : "#",
-            "label" : "Careers"
-         },
-         {
-            "href" : "#",
-            "label" : "Partners"
-         },
-         {
-            "href" : "#",
-            "label" : "Case Studies"
-         }
-      ],
       "primaryNav" : {
          "about" : {
             "col1" : {
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/huhu.html",
-               "id" : "&lid=hdr-about-title-rólunk",
+               "id" : "&lid=hdr-about-info-title-rólunk",
                "label" : "Rólunk",
                "links" : [
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/huhu.html",
-                     "id" : "&lid=hdr-about-rólunk",
+                     "id" : "&lid=hdr-about-info-rólunk",
                      "label" : "Rólunk",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://news.xerox.com/investors",
-                     "id" : "&lid=hdr-about-befektetők",
+                     "id" : "&lid=hdr-about-info-befektetők",
                      "label" : "Befektetők",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/news/huhu.html",
-                     "id" : "&lid=hdr-about-sajtószoba",
+                     "id" : "&lid=hdr-about-info-sajtószoba",
                      "label" : "Sajtószoba",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/huhu.html",
-                     "id" : "&lid=hdr-about-globális felelősségvállalás",
+                     "id" : "&lid=hdr-about-info-globális felelősségvállalás",
                      "label" : "Globális felelősségvállalás",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/huhu.html",
-                     "id" : "&lid=hdr-about-környezetvédelem és fenntarthatóság",
+                     "id" : "&lid=hdr-about-info-környezetvédelem és fenntarthatóság",
                      "label" : "Környezetvédelem és fenntarthatóság",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/innovation/huhu.html",
-                     "id" : "&lid=hdr-about-innováció",
+                     "id" : "&lid=hdr-about-info-innováció",
                      "label" : "Innováció",
                      "target" : "_self"
                   }
@@ -204,6 +178,26 @@
                      "target" : "_self"
                   }
                ],
+               "target" : "_self"
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/huhu.html",
+                  "id" : "&lid=hdr-about-btm contact us",
+                  "label" : "Keressen meg minket",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/huhu.html",
+                  "id" : "&lid=hdr-about-btm where to buy",
+                  "label" : "Elérhetőségek",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/huhu.html",
+               "id" : "&lid=hdr-services-all about xerox",
+               "label" : "A Xerox bemutatása",
                "target" : "_self"
             },
             "label" : "Rólunk"
@@ -302,6 +296,26 @@
                   }
                ]
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/huhu.html",
+                  "id" : "&lid=hdr-products-btm contact us",
+                  "label" : "Keressen meg minket",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/huhu.html",
+                  "id" : "&lid=hdr-products-btm where to buy",
+                  "label" : "Elérhetőségek",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.office.xerox.com/digital-printing-equipment/huhu.html",
+               "id" : "&lid=hdr-products-all products",
+               "label" : "Minden termék",
+               "target" : "_self"
+            },
             "label" : "Termékek"
          },
          "services" : {
@@ -383,6 +397,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/huhu.html",
+                  "id" : "&lid=hdr-services-btm contact us",
+                  "label" : "Keressen meg minket",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/huhu.html",
+                  "id" : "&lid=hdr-services-btm where to buy",
+                  "label" : "Elérhetőségek",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.services.xerox.com/index/huhu.html",
+               "id" : "&lid=hdr-services-all services",
+               "label" : "All Services",
+               "target" : "_self"
+            },
             "label" : "Szolgáltatások"
          },
          "supplies" : {
@@ -410,6 +444,26 @@
                      "target" : "_self"
                   }
                ],
+               "target" : "_self"
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/huhu.html",
+                  "id" : "&lid=hdr-supplies-btm contact us",
+                  "label" : "Keressen meg minket",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/huhu.html",
+                  "id" : "&lid=hdr-supplies-btm where to buy",
+                  "label" : "Elérhetőségek",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/heil.html",
+               "id" : "&lid=hdr-supplies-all supplies",
+               "label" : "All Supplies",
                "target" : "_self"
             },
             "label" : "Kellékanyagok"
@@ -441,6 +495,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/huhu.html",
+                  "id" : "&lid=hdr-support-btm contact us",
+                  "label" : "Keressen meg minket",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/huhu.html",
+                  "id" : "&lid=hdr-support-btm where to buy",
+                  "label" : "Elérhetőségek",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://www.support.xerox.com/support/heil.html",
+               "id" : "&lid=hdr-support-all support",
+               "label" : "Minden támogatási lehetőség",
+               "target" : "_self"
+            },
             "label" : "Támogatás és illesztőprogramok"
          }
       },
@@ -449,21 +523,21 @@
             {
                "choices" : "",
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
-               "id" : "hdr-bar-country-select",
+               "id" : "&lid=hdr-bar-country-select",
                "label" : "Magyarország"
-            },
-            {
-               "href" : "#",
-               "label" : "Sign In"
             }
          ]
       },
       "tertiaryNav" : {
-         "contactUs" : "Keressen meg minket",
-         "share" : "Megosztás"
+         "contactUs" : {
+            "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/huhu.html",
+            "id" : "&lid=hdr-bar-contact us",
+            "label" : "Keressen meg minket",
+            "target" : "_self"
+         }
       },
       "trans" : {
-         "logoTitle" : "Xerox.com home",
+         "logoTitle" : "A Xerox.com honlap",
          "menuBtnTitle" : "Open/Close menu",
          "searchBtnTitle" : "Keresés",
          "searchPlaceholder" : "Keresés"

@@ -45,66 +45,40 @@
       }
    },
    "header" : {
-      "footerLinks" : [
-         {
-            "href" : "#",
-            "label" : "Contact"
-         },
-         {
-            "href" : "#",
-            "label" : "Chat"
-         },
-         {
-            "href" : "#",
-            "label" : "Where to Buy"
-         },
-         {
-            "href" : "#",
-            "label" : "Careers"
-         },
-         {
-            "href" : "#",
-            "label" : "Partners"
-         },
-         {
-            "href" : "#",
-            "label" : "Case Studies"
-         }
-      ],
       "primaryNav" : {
          "about" : {
             "col1" : {
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/cscz.html",
-               "id" : "&lid=hdr-about-title-o xeroxu",
+               "id" : "&lid=hdr-about-info-title-o xeroxu",
                "label" : "O Xeroxu",
                "links" : [
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/cscz.html",
-                     "id" : "&lid=hdr-about-xerox v kostce",
+                     "id" : "&lid=hdr-about-info-xerox v kostce",
                      "label" : "Xerox v kostce",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://news.xerox.com/investors",
-                     "id" : "&lid=hdr-about-investoři",
+                     "id" : "&lid=hdr-about-info-investoři",
                      "label" : "Investoři",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/cscz.html",
-                     "id" : "&lid=hdr-about-zprávy ze světa",
+                     "id" : "&lid=hdr-about-info-zprávy ze světa",
                      "label" : "Zprávy ze světa",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/cscz.html",
-                     "id" : "&lid=hdr-about-životní prostředí a udržitelnost",
+                     "id" : "&lid=hdr-about-info-životní prostředí a udržitelnost",
                      "label" : "Životní prostředí a udržitelnost",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/innovation/cscz.html",
-                     "id" : "&lid=hdr-about-inovace",
+                     "id" : "&lid=hdr-about-info-inovace",
                      "label" : "Inovace",
                      "target" : "_self"
                   }
@@ -191,6 +165,26 @@
                      "target" : "_self"
                   }
                ],
+               "target" : "_self"
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/cscz.html",
+                  "id" : "&lid=hdr-about-btm contact us",
+                  "label" : "Kontaktujte nás",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/cscz.html",
+                  "id" : "&lid=hdr-about-btm where to buy",
+                  "label" : "Kde koupit",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/cscz.html",
+               "id" : "&lid=hdr-services-all about xerox",
+               "label" : "Vše o firmě Xerox",
                "target" : "_self"
             },
             "label" : "O Xeroxu"
@@ -289,6 +283,26 @@
                   }
                ]
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/cscz.html",
+                  "id" : "&lid=hdr-products-btm contact us",
+                  "label" : "Kontaktujte nás",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/cscz.html",
+                  "id" : "&lid=hdr-products-btm where to buy",
+                  "label" : "Kde koupit",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.office.xerox.com/digital-printing-equipment/cscz.html",
+               "id" : "&lid=hdr-products-all products",
+               "label" : "Všechny produkty",
+               "target" : "_self"
+            },
             "label" : "Produkty"
          },
          "services" : {
@@ -370,6 +384,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/cscz.html",
+                  "id" : "&lid=hdr-services-btm contact us",
+                  "label" : "Kontaktujte nás",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/cscz.html",
+                  "id" : "&lid=hdr-services-btm where to buy",
+                  "label" : "Kde koupit",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.services.xerox.com/index/cscz.html",
+               "id" : "&lid=hdr-services-all services",
+               "label" : "All Services",
+               "target" : "_self"
+            },
             "label" : "Služby"
          },
          "supplies" : {
@@ -391,6 +425,26 @@
                      "target" : "_self"
                   }
                ],
+               "target" : "_self"
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/cscz.html",
+                  "id" : "&lid=hdr-supplies-btm contact us",
+                  "label" : "Kontaktujte nás",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/cscz.html",
+                  "id" : "&lid=hdr-supplies-btm where to buy",
+                  "label" : "Kde koupit",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/bgbg.html",
+               "id" : "&lid=hdr-supplies-all supplies",
+               "label" : "All Supplies",
                "target" : "_self"
             },
             "label" : "Spotřební materiál"
@@ -428,6 +482,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/cscz.html",
+                  "id" : "&lid=hdr-support-btm contact us",
+                  "label" : "Kontaktujte nás",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/cscz.html",
+                  "id" : "&lid=hdr-support-btm where to buy",
+                  "label" : "Kde koupit",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://www.support.xerox.com/support/bgbg.html",
+               "id" : "&lid=hdr-support-all support",
+               "label" : "Veškerá podpora",
+               "target" : "_self"
+            },
             "label" : "Podpora & Ovladače"
          }
       },
@@ -436,24 +510,22 @@
             {
                "choices" : "",
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
-               "id" : "hdr-bar-country-select",
+               "id" : "&lid=hdr-bar-country-select",
                "label" : "Česká Republika"
-            },
-            {
-               "href" : "#",
-               "label" : "Sign In"
             }
          ]
       },
       "tertiaryNav" : {
-         "contactUs" : "Kontaktujte nás",
-         "share" : "Sdílet"
+         "contactUs" : {
+            "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/cscz.html",
+            "id" : "&lid=hdr-bar-contact us",
+            "label" : "Kontaktujte nás",
+            "target" : "_self"
+         }
       },
       "trans" : {
          "logoTitle" : "Xerox.com home",
-         "menuBtnTitle" : "Open/Close menu",
-         "searchBtnTitle" : "Search",
-         "searchPlaceholder" : "Search"
+         "menuBtnTitle" : "Open/Close menu"
       }
    }
 }

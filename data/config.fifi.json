@@ -59,78 +59,52 @@
       }
    },
    "header" : {
-      "footerLinks" : [
-         {
-            "href" : "#",
-            "label" : "Contact"
-         },
-         {
-            "href" : "#",
-            "label" : "Chat"
-         },
-         {
-            "href" : "#",
-            "label" : "Where to Buy"
-         },
-         {
-            "href" : "#",
-            "label" : "Careers"
-         },
-         {
-            "href" : "#",
-            "label" : "Partners"
-         },
-         {
-            "href" : "#",
-            "label" : "Case Studies"
-         }
-      ],
       "primaryNav" : {
          "about" : {
             "col1" : {
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/fifi.html",
-               "id" : "&lid=hdr-about-title-yritysesittely",
+               "id" : "&lid=hdr-about-info-title-yritysesittely",
                "label" : "Yritysesittely",
                "links" : [
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/fifi.html",
-                     "id" : "&lid=hdr-about-xerox lyhyesti",
+                     "id" : "&lid=hdr-about-info-xerox lyhyesti",
                      "label" : "Xerox lyhyesti",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://news.xerox.com/investors",
-                     "id" : "&lid=hdr-about-sijoittajat",
+                     "id" : "&lid=hdr-about-info-sijoittajat",
                      "label" : "Sijoittajat",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/news/fifi.html",
-                     "id" : "&lid=hdr-about-uutisia",
+                     "id" : "&lid=hdr-about-info-uutisia",
                      "label" : "Uutisia",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/fifi.html",
-                     "id" : "&lid=hdr-about-maailmankansalaisuus",
+                     "id" : "&lid=hdr-about-info-maailmankansalaisuus",
                      "label" : "Maailmankansalaisuus",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/fifi.html",
-                     "id" : "&lid=hdr-about-käyttöympäristö ja kestävä kehitys",
+                     "id" : "&lid=hdr-about-info-käyttöympäristö ja kestävä kehitys",
                      "label" : "Käyttöympäristö ja kestävä kehitys",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://www.realbusinesslive.xerox.com/events/index/fifi.html",
-                     "id" : "&lid=hdr-about-tapahtumat_ messut ja webinaarit",
+                     "id" : "&lid=hdr-about-info-tapahtumat_ messut ja webinaarit",
                      "label" : "Tapahtumat, Messut ja Webinaarit",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/innovation/fifi.html",
-                     "id" : "&lid=hdr-about-innovaatioita",
+                     "id" : "&lid=hdr-about-info-innovaatioita",
                      "label" : "Innovaatioita",
                      "target" : "_self"
                   }
@@ -229,6 +203,26 @@
                      "target" : "_self"
                   }
                ],
+               "target" : "_self"
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/fifi.html",
+                  "id" : "&lid=hdr-about-btm contact us",
+                  "label" : "Ota yhteyttä",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/fifi.html",
+                  "id" : "&lid=hdr-about-btm where to buy",
+                  "label" : "Jälleenmyyjät",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/fifi.html",
+               "id" : "&lid=hdr-services-all about xerox",
+               "label" : "Kaikki Xeroxista",
                "target" : "_self"
             },
             "label" : "Yritysesittely"
@@ -333,6 +327,26 @@
                   }
                ]
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/fifi.html",
+                  "id" : "&lid=hdr-products-btm contact us",
+                  "label" : "Ota yhteyttä",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/fifi.html",
+                  "id" : "&lid=hdr-products-btm where to buy",
+                  "label" : "Jälleenmyyjät",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.office.xerox.com/digital-printing-equipment/fifi.html",
+               "id" : "&lid=hdr-products-all products",
+               "label" : "Kaikki tuotteet",
+               "target" : "_self"
+            },
             "label" : "Tuotteet"
          },
          "services" : {
@@ -420,6 +434,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/fifi.html",
+                  "id" : "&lid=hdr-services-btm contact us",
+                  "label" : "Ota yhteyttä",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/fifi.html",
+                  "id" : "&lid=hdr-services-btm where to buy",
+                  "label" : "Jälleenmyyjät",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.services.xerox.com/index/fifi.html",
+               "id" : "&lid=hdr-services-all services",
+               "label" : "All Services",
+               "target" : "_self"
+            },
             "label" : "Palvelut"
          },
          "supplies" : {
@@ -469,6 +503,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/fifi.html",
+                  "id" : "&lid=hdr-supplies-btm contact us",
+                  "label" : "Ota yhteyttä",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/fifi.html",
+                  "id" : "&lid=hdr-supplies-btm where to buy",
+                  "label" : "Jälleenmyyjät",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/etee.html",
+               "id" : "&lid=hdr-supplies-all supplies",
+               "label" : "All Supplies",
+               "target" : "_self"
+            },
             "label" : "Tarvikkeet"
          },
          "support" : {
@@ -498,6 +552,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/fifi.html",
+                  "id" : "&lid=hdr-support-btm contact us",
+                  "label" : "Ota yhteyttä",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/fifi.html",
+                  "id" : "&lid=hdr-support-btm where to buy",
+                  "label" : "Jälleenmyyjät",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://www.support.xerox.com/support/etee.html",
+               "id" : "&lid=hdr-support-all support",
+               "label" : "Kaikki tuki",
+               "target" : "_self"
+            },
             "label" : "Tuki & ajurit"
          }
       },
@@ -506,21 +580,27 @@
             {
                "choices" : "",
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
-               "id" : "hdr-bar-country-select",
+               "id" : "&lid=hdr-bar-country-select",
                "label" : "Finland"
             },
             {
-               "href" : "#",
-               "label" : "Sign In"
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/account-management/fifi.html",
+               "id" : "&lid=hdr-bar-account",
+               "label" : "Asiakastili",
+               "target" : "_self"
             }
          ]
       },
       "tertiaryNav" : {
-         "contactUs" : "Ota yhteyttä",
-         "share" : "Jaa"
+         "contactUs" : {
+            "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/fifi.html",
+            "id" : "&lid=hdr-bar-contact us",
+            "label" : "Ota yhteyttä",
+            "target" : "_self"
+         }
       },
       "trans" : {
-         "logoTitle" : "Xerox.com home",
+         "logoTitle" : "Xerox.com-kotisivu",
          "menuBtnTitle" : "Open/Close menu",
          "searchBtnTitle" : "Haku",
          "searchPlaceholder" : "Haku"

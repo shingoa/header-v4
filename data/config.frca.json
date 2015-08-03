@@ -59,78 +59,52 @@
       }
    },
    "header" : {
-      "footerLinks" : [
-         {
-            "href" : "#",
-            "label" : "Contact"
-         },
-         {
-            "href" : "#",
-            "label" : "Chat"
-         },
-         {
-            "href" : "#",
-            "label" : "Where to Buy"
-         },
-         {
-            "href" : "#",
-            "label" : "Careers"
-         },
-         {
-            "href" : "#",
-            "label" : "Partners"
-         },
-         {
-            "href" : "#",
-            "label" : "Case Studies"
-         }
-      ],
       "primaryNav" : {
          "about" : {
             "col1" : {
                "href" : "http://dev.xerox.ca/about-xerox/frca.html",
-               "id" : "&lid=hdr-about-title-a propos de xerox",
+               "id" : "&lid=hdr-about-info-title-a propos de xerox",
                "label" : "A propos de Xerox",
                "links" : [
                   {
                      "href" : "http://dev.xerox.ca/about-xerox/company-facts/frca.html",
-                     "id" : "&lid=hdr-about-coup d_œil sur xerox",
+                     "id" : "&lid=hdr-about-info-coup d_œil sur xerox",
                      "label" : "Coup d'œil sur Xerox",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://news.xerox.com/investors",
-                     "id" : "&lid=hdr-about-investisseurs",
+                     "id" : "&lid=hdr-about-info-investisseurs",
                      "label" : "Investisseurs",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://fr-news.xerox.ca/",
-                     "id" : "&lid=hdr-about-salle de presse",
+                     "id" : "&lid=hdr-about-info-salle de presse",
                      "label" : "Salle de presse",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://dev.xerox.ca/about-xerox/citizenship/frca.html",
-                     "id" : "&lid=hdr-about-citoyenneté mondiale",
+                     "id" : "&lid=hdr-about-info-citoyenneté mondiale",
                      "label" : "Citoyenneté mondiale",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://dev.xerox.ca/about-xerox/environment/frca.html",
-                     "id" : "&lid=hdr-about-conditions ambiantes et développement durable",
+                     "id" : "&lid=hdr-about-info-conditions ambiantes et développement durable",
                      "label" : "Conditions ambiantes et développement durable",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://www.realbusinesslive.xerox.com/events/index/frca.html",
-                     "id" : "&lid=hdr-about-événements_ salons professionnels et webinaires",
+                     "id" : "&lid=hdr-about-info-événements_ salons professionnels et webinaires",
                      "label" : "Événements, Salons professionnels et Webinaires",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://dev.xerox.ca/innovation/frca.html",
-                     "id" : "&lid=hdr-about-lab. innovateur",
+                     "id" : "&lid=hdr-about-info-lab. innovateur",
                      "label" : "lab. Innovateur",
                      "target" : "_self"
                   }
@@ -231,6 +205,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://dev.xerox.ca/about-xerox/contact-us/frca.html",
+                  "id" : "&lid=hdr-about-btm contact us",
+                  "label" : "Contactez-nous ",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://dev.xerox.ca/about-xerox/buy/frca.html",
+                  "id" : "&lid=hdr-about-btm where to buy",
+                  "label" : "Où acheter",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.xerox.ca/about-xerox/frca.html",
+               "id" : "&lid=hdr-services-all about xerox",
+               "label" : "À propos de Xerox",
+               "target" : "_self"
+            },
             "label" : "A propos de Xerox"
          },
          "products" : {
@@ -320,6 +314,26 @@
                      "target" : "_self"
                   }
                ]
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://dev.xerox.ca/about-xerox/contact-us/frca.html",
+                  "id" : "&lid=hdr-products-btm contact us",
+                  "label" : "Contactez-nous ",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://dev.xerox.ca/about-xerox/buy/frca.html",
+                  "id" : "&lid=hdr-products-btm where to buy",
+                  "label" : "Où acheter",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.xerox.ca/bureau/digital-printing-equipment/frca.html",
+               "id" : "&lid=hdr-products-all products",
+               "label" : "Tous les produits",
+               "target" : "_self"
             },
             "label" : "Produits"
          },
@@ -420,6 +434,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://dev.xerox.ca/about-xerox/contact-us/frca.html",
+                  "id" : "&lid=hdr-services-btm contact us",
+                  "label" : "Contactez-nous ",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://dev.xerox.ca/about-xerox/buy/frca.html",
+                  "id" : "&lid=hdr-services-btm where to buy",
+                  "label" : "Où acheter",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.xerox.ca/services/frca.html",
+               "id" : "&lid=hdr-services-all services",
+               "label" : "All Services",
+               "target" : "_self"
+            },
             "label" : "Services"
          },
          "supplies" : {
@@ -467,6 +501,26 @@
                      "target" : "_self"
                   }
                ],
+               "target" : "_self"
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://dev.xerox.ca/about-xerox/contact-us/frca.html",
+                  "id" : "&lid=hdr-supplies-btm contact us",
+                  "label" : "Contactez-nous ",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://dev.xerox.ca/about-xerox/buy/frca.html",
+                  "id" : "&lid=hdr-supplies-btm where to buy",
+                  "label" : "Où acheter",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/frbj.html",
+               "id" : "&lid=hdr-supplies-all supplies",
+               "label" : "All Supplies",
                "target" : "_self"
             },
             "label" : "Fournitures"
@@ -538,6 +592,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://dev.xerox.ca/about-xerox/contact-us/frca.html",
+                  "id" : "&lid=hdr-support-btm contact us",
+                  "label" : "Contactez-nous ",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://dev.xerox.ca/about-xerox/buy/frca.html",
+                  "id" : "&lid=hdr-support-btm where to buy",
+                  "label" : "Où acheter",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://www.support.xerox.com/support/frbj.html",
+               "id" : "&lid=hdr-support-all support",
+               "label" : "Tout le soutien",
+               "target" : "_self"
+            },
             "label" : "Soutien et pilotes"
          }
       },
@@ -546,21 +620,33 @@
             {
                "choices" : "[<a class=\"xrx_bnr_language_alt_url en_CA\" href=\"http://dev.xerox.ca/index/enca.html\">EN</a>] [FR]",
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
-               "id" : "hdr-bar-country-select",
+               "id" : "&lid=hdr-bar-country-select",
                "label" : "Canada"
             },
             {
-               "href" : "#",
-               "label" : "Sign In"
+               "href" : "http://dev.xerox.ca/about-xerox/account-management/frca.html",
+               "id" : "&lid=hdr-bar-account",
+               "label" : "Compte",
+               "target" : "_self"
+            },
+            {
+               "href" : "http://psgdev.opbu.xerox.com/perl-bin/login_logout.pl?XOGlang=fr_CA",
+               "id" : "&lid=hdr-bar-log in",
+               "label" : "Connexion/Déconnexion",
+               "target" : "_self"
             }
          ]
       },
       "tertiaryNav" : {
-         "contactUs" : "Contactez-nous ",
-         "share" : "Partager"
+         "contactUs" : {
+            "href" : "http://dev.xerox.ca/about-xerox/contact-us/frca.html",
+            "id" : "&lid=hdr-bar-contact us",
+            "label" : "Contactez-nous ",
+            "target" : "_self"
+         }
       },
       "trans" : {
-         "logoTitle" : "Xerox.com home",
+         "logoTitle" : "Page d’accueil de Xerox.com",
          "menuBtnTitle" : "Open/Close menu",
          "searchBtnTitle" : "Recherche",
          "searchPlaceholder" : "Recherche"

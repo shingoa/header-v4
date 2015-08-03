@@ -52,66 +52,40 @@
       }
    },
    "header" : {
-      "footerLinks" : [
-         {
-            "href" : "#",
-            "label" : "Contact"
-         },
-         {
-            "href" : "#",
-            "label" : "Chat"
-         },
-         {
-            "href" : "#",
-            "label" : "Where to Buy"
-         },
-         {
-            "href" : "#",
-            "label" : "Careers"
-         },
-         {
-            "href" : "#",
-            "label" : "Partners"
-         },
-         {
-            "href" : "#",
-            "label" : "Case Studies"
-         }
-      ],
       "primaryNav" : {
          "about" : {
             "col1" : {
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/lvlv.html",
-               "id" : "&lid=hdr-about-title-par _xerox_",
+               "id" : "&lid=hdr-about-info-title-par _xerox_",
                "label" : "Par \"Xerox\"",
                "links" : [
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/lvlv.html",
-                     "id" : "&lid=hdr-about-īsumā par _xerox_",
+                     "id" : "&lid=hdr-about-info-īsumā par _xerox_",
                      "label" : "Īsumā par \"Xerox\"",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://news.xerox.com/investors",
-                     "id" : "&lid=hdr-about-investori",
+                     "id" : "&lid=hdr-about-info-investori",
                      "label" : "Investori",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/lvlv.html",
-                     "id" : "&lid=hdr-about-globālais ieguldījums",
+                     "id" : "&lid=hdr-about-info-globālais ieguldījums",
                      "label" : "Globālais ieguldījums",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/lvlv.html",
-                     "id" : "&lid=hdr-about-vide un ilgstspējība",
+                     "id" : "&lid=hdr-about-info-vide un ilgstspējība",
                      "label" : "Vide un ilgstspējība",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/innovation/lvlv.html",
-                     "id" : "&lid=hdr-about-jaunievedumi",
+                     "id" : "&lid=hdr-about-info-jaunievedumi",
                      "label" : "Jaunievedumi",
                      "target" : "_self"
                   }
@@ -198,6 +172,26 @@
                      "target" : "_self"
                   }
                ],
+               "target" : "_self"
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/lvlv.html",
+                  "id" : "&lid=hdr-about-btm contact us",
+                  "label" : "Sazinieties ar mums",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/lvlv.html",
+                  "id" : "&lid=hdr-about-btm where to buy",
+                  "label" : "Kur iegādāties",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/lvlv.html",
+               "id" : "&lid=hdr-services-all about xerox",
+               "label" : "Viss par Xerox",
                "target" : "_self"
             },
             "label" : "Par \"Xerox\""
@@ -296,6 +290,26 @@
                   }
                ]
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/lvlv.html",
+                  "id" : "&lid=hdr-products-btm contact us",
+                  "label" : "Sazinieties ar mums",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/lvlv.html",
+                  "id" : "&lid=hdr-products-btm where to buy",
+                  "label" : "Kur iegādāties",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.office.xerox.com/digital-printing-equipment/lvlv.html",
+               "id" : "&lid=hdr-products-all products",
+               "label" : "Visi produkti",
+               "target" : "_self"
+            },
             "label" : "Produkti"
          },
          "services" : {
@@ -377,6 +391,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/lvlv.html",
+                  "id" : "&lid=hdr-services-btm contact us",
+                  "label" : "Sazinieties ar mums",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/lvlv.html",
+                  "id" : "&lid=hdr-services-btm where to buy",
+                  "label" : "Kur iegādāties",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.services.xerox.com/index/lvlv.html",
+               "id" : "&lid=hdr-services-all services",
+               "label" : "All Services",
+               "target" : "_self"
+            },
             "label" : "Pakalpojumi"
          },
          "supplies" : {
@@ -398,6 +432,26 @@
                      "target" : "_self"
                   }
                ],
+               "target" : "_self"
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/lvlv.html",
+                  "id" : "&lid=hdr-supplies-btm contact us",
+                  "label" : "Sazinieties ar mums",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/lvlv.html",
+                  "id" : "&lid=hdr-supplies-btm where to buy",
+                  "label" : "Kur iegādāties",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/ltlt.html",
+               "id" : "&lid=hdr-supplies-all supplies",
+               "label" : "All Supplies",
                "target" : "_self"
             },
             "label" : "Palīgmateriāli"
@@ -429,6 +483,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/lvlv.html",
+                  "id" : "&lid=hdr-support-btm contact us",
+                  "label" : "Sazinieties ar mums",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/lvlv.html",
+                  "id" : "&lid=hdr-support-btm where to buy",
+                  "label" : "Kur iegādāties",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://www.support.xerox.com/support/ltlt.html",
+               "id" : "&lid=hdr-support-all support",
+               "label" : "Viss atbalsts",
+               "target" : "_self"
+            },
             "label" : "Atbalsts un draiveri"
          }
       },
@@ -437,24 +511,22 @@
             {
                "choices" : "",
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
-               "id" : "hdr-bar-country-select",
+               "id" : "&lid=hdr-bar-country-select",
                "label" : "Latvia"
-            },
-            {
-               "href" : "#",
-               "label" : "Sign In"
             }
          ]
       },
       "tertiaryNav" : {
-         "contactUs" : "Sazinieties ar mums",
-         "share" : "Kopīgot"
+         "contactUs" : {
+            "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/lvlv.html",
+            "id" : "&lid=hdr-bar-contact us",
+            "label" : "Sazinieties ar mums",
+            "target" : "_self"
+         }
       },
       "trans" : {
          "logoTitle" : "Xerox.com home",
-         "menuBtnTitle" : "Open/Close menu",
-         "searchBtnTitle" : "Search",
-         "searchPlaceholder" : "Search"
+         "menuBtnTitle" : "Open/Close menu"
       }
    }
 }

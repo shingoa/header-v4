@@ -52,66 +52,40 @@
       }
    },
    "header" : {
-      "footerLinks" : [
-         {
-            "href" : "#",
-            "label" : "Contact"
-         },
-         {
-            "href" : "#",
-            "label" : "Chat"
-         },
-         {
-            "href" : "#",
-            "label" : "Where to Buy"
-         },
-         {
-            "href" : "#",
-            "label" : "Careers"
-         },
-         {
-            "href" : "#",
-            "label" : "Partners"
-         },
-         {
-            "href" : "#",
-            "label" : "Case Studies"
-         }
-      ],
       "primaryNav" : {
          "about" : {
             "col1" : {
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/dafo.html",
-               "id" : "&lid=hdr-about-title-om xerox",
+               "id" : "&lid=hdr-about-info-title-om xerox",
                "label" : "Om Xerox",
                "links" : [
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/dafo.html",
-                     "id" : "&lid=hdr-about-xerox i overblik",
+                     "id" : "&lid=hdr-about-info-xerox i overblik",
                      "label" : "Xerox i overblik",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://news.xerox.com/investors",
-                     "id" : "&lid=hdr-about-investorer",
+                     "id" : "&lid=hdr-about-info-investorer",
                      "label" : "Investorer",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/dafo.html",
-                     "id" : "&lid=hdr-about-global virksomhed i samfundet",
+                     "id" : "&lid=hdr-about-info-global virksomhed i samfundet",
                      "label" : "Global virksomhed i samfundet",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/dafo.html",
-                     "id" : "&lid=hdr-about-omgivelser og bæredygtighed",
+                     "id" : "&lid=hdr-about-info-omgivelser og bæredygtighed",
                      "label" : "Omgivelser og Bæredygtighed",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/innovation/dafo.html",
-                     "id" : "&lid=hdr-about-innovationslaboratoriet",
+                     "id" : "&lid=hdr-about-info-innovationslaboratoriet",
                      "label" : "Innovationslaboratoriet",
                      "target" : "_self"
                   }
@@ -210,6 +184,26 @@
                      "target" : "_self"
                   }
                ],
+               "target" : "_self"
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/dafo.html",
+                  "id" : "&lid=hdr-about-btm contact us",
+                  "label" : "Kontakt",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/dafo.html",
+                  "id" : "&lid=hdr-about-btm where to buy",
+                  "label" : "Forhandlere",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/dafo.html",
+               "id" : "&lid=hdr-services-all about xerox",
+               "label" : "Alt om Xerox",
                "target" : "_self"
             },
             "label" : "Om Xerox"
@@ -314,6 +308,26 @@
                   }
                ]
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/dafo.html",
+                  "id" : "&lid=hdr-products-btm contact us",
+                  "label" : "Kontakt",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/dafo.html",
+                  "id" : "&lid=hdr-products-btm where to buy",
+                  "label" : "Forhandlere",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.office.xerox.com/digital-printing-equipment/dafo.html",
+               "id" : "&lid=hdr-products-all products",
+               "label" : "Alle produkter",
+               "target" : "_self"
+            },
             "label" : "Produkter"
          },
          "services" : {
@@ -413,6 +427,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/dafo.html",
+                  "id" : "&lid=hdr-services-btm contact us",
+                  "label" : "Kontakt",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/dafo.html",
+                  "id" : "&lid=hdr-services-btm where to buy",
+                  "label" : "Forhandlere",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.services.xerox.com/index/dafo.html",
+               "id" : "&lid=hdr-services-all services",
+               "label" : "All Services",
+               "target" : "_self"
+            },
             "label" : "Tjenester"
          },
          "supplies" : {
@@ -440,6 +474,26 @@
                      "target" : "_self"
                   }
                ],
+               "target" : "_self"
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/dafo.html",
+                  "id" : "&lid=hdr-supplies-btm contact us",
+                  "label" : "Kontakt",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/dafo.html",
+                  "id" : "&lid=hdr-supplies-btm where to buy",
+                  "label" : "Forhandlere",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/dadk.html",
+               "id" : "&lid=hdr-supplies-all supplies",
+               "label" : "All Supplies",
                "target" : "_self"
             },
             "label" : "Papir & Tilbehør"
@@ -471,6 +525,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/dafo.html",
+                  "id" : "&lid=hdr-support-btm contact us",
+                  "label" : "Kontakt",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/dafo.html",
+                  "id" : "&lid=hdr-support-btm where to buy",
+                  "label" : "Forhandlere",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://www.support.xerox.com/support/dadk.html",
+               "id" : "&lid=hdr-support-all support",
+               "label" : "Al supportering",
+               "target" : "_self"
+            },
             "label" : "Support & drivere"
          }
       },
@@ -479,24 +553,22 @@
             {
                "choices" : "[DA] [<a class=\"xrx_bnr_language_alt_url en_FO\" href=\"http://psgdev.opbu.xerox.com/index/enfo.html\">EN</a>]",
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
-               "id" : "hdr-bar-country-select",
+               "id" : "&lid=hdr-bar-country-select",
                "label" : "Faroe Islands"
-            },
-            {
-               "href" : "#",
-               "label" : "Sign In"
             }
          ]
       },
       "tertiaryNav" : {
-         "contactUs" : "Kontakt",
-         "share" : "Del"
+         "contactUs" : {
+            "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/dafo.html",
+            "id" : "&lid=hdr-bar-contact us",
+            "label" : "Kontakt",
+            "target" : "_self"
+         }
       },
       "trans" : {
-         "logoTitle" : "Xerox.com home",
-         "menuBtnTitle" : "Open/Close menu",
-         "searchBtnTitle" : "Søg",
-         "searchPlaceholder" : "Søg"
+         "logoTitle" : "Xerox.com-hjemmeside",
+         "menuBtnTitle" : "Open/Close menu"
       }
    }
 }

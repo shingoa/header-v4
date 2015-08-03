@@ -52,72 +52,46 @@
       }
    },
    "header" : {
-      "footerLinks" : [
-         {
-            "href" : "#",
-            "label" : "Contact"
-         },
-         {
-            "href" : "#",
-            "label" : "Chat"
-         },
-         {
-            "href" : "#",
-            "label" : "Where to Buy"
-         },
-         {
-            "href" : "#",
-            "label" : "Careers"
-         },
-         {
-            "href" : "#",
-            "label" : "Partners"
-         },
-         {
-            "href" : "#",
-            "label" : "Case Studies"
-         }
-      ],
       "primaryNav" : {
          "about" : {
             "col1" : {
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/esve.html",
-               "id" : "&lid=hdr-about-title-acerca de xerox",
+               "id" : "&lid=hdr-about-info-title-acerca de xerox",
                "label" : "Acerca de Xerox",
                "links" : [
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/esve.html",
-                     "id" : "&lid=hdr-about-xerox en un vistazo",
+                     "id" : "&lid=hdr-about-info-xerox en un vistazo",
                      "label" : "Xerox en un vistazo",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://news.xerox.com/investors",
-                     "id" : "&lid=hdr-about-inversionistas",
+                     "id" : "&lid=hdr-about-info-inversionistas",
                      "label" : "Inversionistas",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/news/esve.html",
-                     "id" : "&lid=hdr-about-prensa",
+                     "id" : "&lid=hdr-about-info-prensa",
                      "label" : "Prensa",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/esve.html",
-                     "id" : "&lid=hdr-about-ciudadanía global",
+                     "id" : "&lid=hdr-about-info-ciudadanía global",
                      "label" : "Ciudadanía Global",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/esve.html",
-                     "id" : "&lid=hdr-about-medio ambiente y sostenibilidad",
+                     "id" : "&lid=hdr-about-info-medio ambiente y sostenibilidad",
                      "label" : "Medio ambiente y sostenibilidad",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/innovation/esve.html",
-                     "id" : "&lid=hdr-about-innovación",
+                     "id" : "&lid=hdr-about-info-innovación",
                      "label" : "Innovación",
                      "target" : "_self"
                   }
@@ -204,6 +178,26 @@
                      "target" : "_self"
                   }
                ],
+               "target" : "_self"
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/esve.html",
+                  "id" : "&lid=hdr-about-btm contact us",
+                  "label" : "Contáctanos",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/esve.html",
+                  "id" : "&lid=hdr-about-btm where to buy",
+                  "label" : "Puntos de venta",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/esve.html",
+               "id" : "&lid=hdr-services-all about xerox",
+               "label" : "Todo acerca de Xerox",
                "target" : "_self"
             },
             "label" : "Acerca de Xerox"
@@ -302,6 +296,26 @@
                   }
                ]
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/esve.html",
+                  "id" : "&lid=hdr-products-btm contact us",
+                  "label" : "Contáctanos",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/esve.html",
+                  "id" : "&lid=hdr-products-btm where to buy",
+                  "label" : "Puntos de venta",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.office.xerox.com/digital-printing-equipment/esve.html",
+               "id" : "&lid=hdr-products-all products",
+               "label" : "Todos los productos",
+               "target" : "_self"
+            },
             "label" : "Productos"
          },
          "services" : {
@@ -395,6 +409,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/esve.html",
+                  "id" : "&lid=hdr-services-btm contact us",
+                  "label" : "Contáctanos",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/esve.html",
+                  "id" : "&lid=hdr-services-btm where to buy",
+                  "label" : "Puntos de venta",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.services.xerox.com/index/esve.html",
+               "id" : "&lid=hdr-services-all services",
+               "label" : "All Services",
+               "target" : "_self"
+            },
             "label" : "Servicios"
          },
          "supplies" : {
@@ -416,6 +450,26 @@
                      "target" : "_self"
                   }
                ],
+               "target" : "_self"
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/esve.html",
+                  "id" : "&lid=hdr-supplies-btm contact us",
+                  "label" : "Contáctanos",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/esve.html",
+                  "id" : "&lid=hdr-supplies-btm where to buy",
+                  "label" : "Puntos de venta",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/esuy.html",
+               "id" : "&lid=hdr-supplies-all supplies",
+               "label" : "All Supplies",
                "target" : "_self"
             },
             "label" : "Consumibles"
@@ -453,6 +507,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/esve.html",
+                  "id" : "&lid=hdr-support-btm contact us",
+                  "label" : "Contáctanos",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/esve.html",
+                  "id" : "&lid=hdr-support-btm where to buy",
+                  "label" : "Puntos de venta",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://www.support.xerox.com/support/esuy.html",
+               "id" : "&lid=hdr-support-all support",
+               "label" : "Todo el soporte",
+               "target" : "_self"
+            },
             "label" : "Soporte y drivers"
          }
       },
@@ -461,21 +535,21 @@
             {
                "choices" : "",
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
-               "id" : "hdr-bar-country-select",
+               "id" : "&lid=hdr-bar-country-select",
                "label" : "Venezuela, Bolivarian Republic of"
-            },
-            {
-               "href" : "#",
-               "label" : "Sign In"
             }
          ]
       },
       "tertiaryNav" : {
-         "contactUs" : "Contáctanos",
-         "share" : "Compartir"
+         "contactUs" : {
+            "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/esve.html",
+            "id" : "&lid=hdr-bar-contact us",
+            "label" : "Contáctanos",
+            "target" : "_self"
+         }
       },
       "trans" : {
-         "logoTitle" : "Xerox.com home",
+         "logoTitle" : "Página de inicio de Xerox.com",
          "menuBtnTitle" : "Open/Close menu",
          "searchBtnTitle" : "Búsqueda",
          "searchPlaceholder" : "Búsqueda"

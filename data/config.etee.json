@@ -52,66 +52,40 @@
       }
    },
    "header" : {
-      "footerLinks" : [
-         {
-            "href" : "#",
-            "label" : "Contact"
-         },
-         {
-            "href" : "#",
-            "label" : "Chat"
-         },
-         {
-            "href" : "#",
-            "label" : "Where to Buy"
-         },
-         {
-            "href" : "#",
-            "label" : "Careers"
-         },
-         {
-            "href" : "#",
-            "label" : "Partners"
-         },
-         {
-            "href" : "#",
-            "label" : "Case Studies"
-         }
-      ],
       "primaryNav" : {
          "about" : {
             "col1" : {
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/etee.html",
-               "id" : "&lid=hdr-about-title-teave xeroxi kohta",
+               "id" : "&lid=hdr-about-info-title-teave xeroxi kohta",
                "label" : "Teave Xeroxi kohta",
                "links" : [
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/etee.html",
-                     "id" : "&lid=hdr-about-xeroxi lühitutvustus",
+                     "id" : "&lid=hdr-about-info-xeroxi lühitutvustus",
                      "label" : "Xeroxi lühitutvustus",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://news.xerox.com/investors",
-                     "id" : "&lid=hdr-about-investorid",
+                     "id" : "&lid=hdr-about-info-investorid",
                      "label" : "Investorid",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/etee.html",
-                     "id" : "&lid=hdr-about-globaalne kodakondsus",
+                     "id" : "&lid=hdr-about-info-globaalne kodakondsus",
                      "label" : "Globaalne kodakondsus",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/etee.html",
-                     "id" : "&lid=hdr-about-keskkond ja jätkusuutlikkus",
+                     "id" : "&lid=hdr-about-info-keskkond ja jätkusuutlikkus",
                      "label" : "Keskkond ja jätkusuutlikkus",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/innovation/etee.html",
-                     "id" : "&lid=hdr-about-uuendus",
+                     "id" : "&lid=hdr-about-info-uuendus",
                      "label" : "Uuendus",
                      "target" : "_self"
                   }
@@ -198,6 +172,26 @@
                      "target" : "_self"
                   }
                ],
+               "target" : "_self"
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/etee.html",
+                  "id" : "&lid=hdr-about-btm contact us",
+                  "label" : "Võtke ühendust",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/etee.html",
+                  "id" : "&lid=hdr-about-btm where to buy",
+                  "label" : "Kust osta",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/etee.html",
+               "id" : "&lid=hdr-services-all about xerox",
+               "label" : "Kõik Xeroxi kohta",
                "target" : "_self"
             },
             "label" : "Teave Xeroxi kohta"
@@ -296,6 +290,26 @@
                   }
                ]
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/etee.html",
+                  "id" : "&lid=hdr-products-btm contact us",
+                  "label" : "Võtke ühendust",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/etee.html",
+                  "id" : "&lid=hdr-products-btm where to buy",
+                  "label" : "Kust osta",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.office.xerox.com/digital-printing-equipment/etee.html",
+               "id" : "&lid=hdr-products-all products",
+               "label" : "Kõik tooted",
+               "target" : "_self"
+            },
             "label" : "Tooted"
          },
          "services" : {
@@ -377,6 +391,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/etee.html",
+                  "id" : "&lid=hdr-services-btm contact us",
+                  "label" : "Võtke ühendust",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/etee.html",
+                  "id" : "&lid=hdr-services-btm where to buy",
+                  "label" : "Kust osta",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.services.xerox.com/index/etee.html",
+               "id" : "&lid=hdr-services-all services",
+               "label" : "All Services",
+               "target" : "_self"
+            },
             "label" : "Teenused"
          },
          "supplies" : {
@@ -398,6 +432,26 @@
                      "target" : "_self"
                   }
                ],
+               "target" : "_self"
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/etee.html",
+                  "id" : "&lid=hdr-supplies-btm contact us",
+                  "label" : "Võtke ühendust",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/etee.html",
+                  "id" : "&lid=hdr-supplies-btm where to buy",
+                  "label" : "Kust osta",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/esve.html",
+               "id" : "&lid=hdr-supplies-all supplies",
+               "label" : "All Supplies",
                "target" : "_self"
             },
             "label" : "Tarvikud"
@@ -429,6 +483,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/etee.html",
+                  "id" : "&lid=hdr-support-btm contact us",
+                  "label" : "Võtke ühendust",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/etee.html",
+                  "id" : "&lid=hdr-support-btm where to buy",
+                  "label" : "Kust osta",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://www.support.xerox.com/support/esve.html",
+               "id" : "&lid=hdr-support-all support",
+               "label" : "Kogu tugi",
+               "target" : "_self"
+            },
             "label" : "Tugi ja draiverid"
          }
       },
@@ -437,24 +511,22 @@
             {
                "choices" : "",
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
-               "id" : "hdr-bar-country-select",
+               "id" : "&lid=hdr-bar-country-select",
                "label" : "Estonia"
-            },
-            {
-               "href" : "#",
-               "label" : "Sign In"
             }
          ]
       },
       "tertiaryNav" : {
-         "contactUs" : "Võtke ühendust",
-         "share" : "Jaga"
+         "contactUs" : {
+            "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/etee.html",
+            "id" : "&lid=hdr-bar-contact us",
+            "label" : "Võtke ühendust",
+            "target" : "_self"
+         }
       },
       "trans" : {
          "logoTitle" : "Xerox.com home",
-         "menuBtnTitle" : "Open/Close menu",
-         "searchBtnTitle" : "Search",
-         "searchPlaceholder" : "Search"
+         "menuBtnTitle" : "Open/Close menu"
       }
    }
 }

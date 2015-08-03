@@ -52,66 +52,40 @@
       }
    },
    "header" : {
-      "footerLinks" : [
-         {
-            "href" : "#",
-            "label" : "Contact"
-         },
-         {
-            "href" : "#",
-            "label" : "Chat"
-         },
-         {
-            "href" : "#",
-            "label" : "Where to Buy"
-         },
-         {
-            "href" : "#",
-            "label" : "Careers"
-         },
-         {
-            "href" : "#",
-            "label" : "Partners"
-         },
-         {
-            "href" : "#",
-            "label" : "Case Studies"
-         }
-      ],
       "primaryNav" : {
          "about" : {
             "col1" : {
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/srba.html",
-               "id" : "&lid=hdr-about-title-o xerox-u",
+               "id" : "&lid=hdr-about-info-title-o xerox-u",
                "label" : "O Xerox-u",
                "links" : [
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/srba.html",
-                     "id" : "&lid=hdr-about-xerox na prvi pogled",
+                     "id" : "&lid=hdr-about-info-xerox na prvi pogled",
                      "label" : "Xerox na prvi pogled",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://news.xerox.com/investors",
-                     "id" : "&lid=hdr-about-investitori",
+                     "id" : "&lid=hdr-about-info-investitori",
                      "label" : "Investitori",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/srba.html",
-                     "id" : "&lid=hdr-about-globalni gradjanin",
+                     "id" : "&lid=hdr-about-info-globalni gradjanin",
                      "label" : "Globalni gradjanin",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/srba.html",
-                     "id" : "&lid=hdr-about-životna sredina i održivost",
+                     "id" : "&lid=hdr-about-info-životna sredina i održivost",
                      "label" : "Životna sredina i održivost",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/innovation/srba.html",
-                     "id" : "&lid=hdr-about-inovacije",
+                     "id" : "&lid=hdr-about-info-inovacije",
                      "label" : "Inovacije",
                      "target" : "_self"
                   }
@@ -198,6 +172,26 @@
                      "target" : "_self"
                   }
                ],
+               "target" : "_self"
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/srba.html",
+                  "id" : "&lid=hdr-about-btm contact us",
+                  "label" : "Kontakt",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/srba.html",
+                  "id" : "&lid=hdr-about-btm where to buy",
+                  "label" : "Gde kupiti",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/srba.html",
+               "id" : "&lid=hdr-services-all about xerox",
+               "label" : "Sve o kompaniji Xerox",
                "target" : "_self"
             },
             "label" : "O Xerox-u"
@@ -296,6 +290,26 @@
                   }
                ]
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/srba.html",
+                  "id" : "&lid=hdr-products-btm contact us",
+                  "label" : "Kontakt",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/srba.html",
+                  "id" : "&lid=hdr-products-btm where to buy",
+                  "label" : "Gde kupiti",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.office.xerox.com/digital-printing-equipment/srba.html",
+               "id" : "&lid=hdr-products-all products",
+               "label" : "Svi proizvodi",
+               "target" : "_self"
+            },
             "label" : "Proizvodi"
          },
          "services" : {
@@ -377,6 +391,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/srba.html",
+                  "id" : "&lid=hdr-services-btm contact us",
+                  "label" : "Kontakt",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/srba.html",
+                  "id" : "&lid=hdr-services-btm where to buy",
+                  "label" : "Gde kupiti",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.services.xerox.com/index/srba.html",
+               "id" : "&lid=hdr-services-all services",
+               "label" : "All Services",
+               "target" : "_self"
+            },
             "label" : "Usluge - Servis"
          },
          "supplies" : {
@@ -398,6 +432,26 @@
                      "target" : "_self"
                   }
                ],
+               "target" : "_self"
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/srba.html",
+                  "id" : "&lid=hdr-supplies-btm contact us",
+                  "label" : "Kontakt",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/srba.html",
+                  "id" : "&lid=hdr-supplies-btm where to buy",
+                  "label" : "Gde kupiti",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/sqkv.html",
+               "id" : "&lid=hdr-supplies-all supplies",
+               "label" : "All Supplies",
                "target" : "_self"
             },
             "label" : "Pribor"
@@ -435,6 +489,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/srba.html",
+                  "id" : "&lid=hdr-support-btm contact us",
+                  "label" : "Kontakt",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/srba.html",
+                  "id" : "&lid=hdr-support-btm where to buy",
+                  "label" : "Gde kupiti",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://www.support.xerox.com/support/sqkv.html",
+               "id" : "&lid=hdr-support-all support",
+               "label" : "Potpuna podrška",
+               "target" : "_self"
+            },
             "label" : "Podrška i upravljački programi (drivers)"
          }
       },
@@ -443,24 +517,22 @@
             {
                "choices" : "",
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
-               "id" : "hdr-bar-country-select",
+               "id" : "&lid=hdr-bar-country-select",
                "label" : "Bosnia and Herzegovina"
-            },
-            {
-               "href" : "#",
-               "label" : "Sign In"
             }
          ]
       },
       "tertiaryNav" : {
-         "contactUs" : "Kontakt",
-         "share" : "Podeli"
+         "contactUs" : {
+            "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/srba.html",
+            "id" : "&lid=hdr-bar-contact us",
+            "label" : "Kontakt",
+            "target" : "_self"
+         }
       },
       "trans" : {
          "logoTitle" : "Xerox.com home",
-         "menuBtnTitle" : "Open/Close menu",
-         "searchBtnTitle" : "Search",
-         "searchPlaceholder" : "Search"
+         "menuBtnTitle" : "Open/Close menu"
       }
    }
 }

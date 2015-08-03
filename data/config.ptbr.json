@@ -59,78 +59,52 @@
       }
    },
    "header" : {
-      "footerLinks" : [
-         {
-            "href" : "#",
-            "label" : "Contact"
-         },
-         {
-            "href" : "#",
-            "label" : "Chat"
-         },
-         {
-            "href" : "#",
-            "label" : "Where to Buy"
-         },
-         {
-            "href" : "#",
-            "label" : "Careers"
-         },
-         {
-            "href" : "#",
-            "label" : "Partners"
-         },
-         {
-            "href" : "#",
-            "label" : "Case Studies"
-         }
-      ],
       "primaryNav" : {
          "about" : {
             "col1" : {
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/ptbr.html",
-               "id" : "&lid=hdr-about-title-sobre a xerox",
+               "id" : "&lid=hdr-about-info-title-sobre a xerox",
                "label" : "Sobre a Xerox",
                "links" : [
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/company-facts/ptbr.html",
-                     "id" : "&lid=hdr-about-uma visualização superficial sobre a xerox",
+                     "id" : "&lid=hdr-about-info-uma visualização superficial sobre a xerox",
                      "label" : "Uma visualização superficial sobre a Xerox",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://news.xerox.com/investors",
-                     "id" : "&lid=hdr-about-investidores",
+                     "id" : "&lid=hdr-about-info-investidores",
                      "label" : "Investidores",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://brasil.news.xerox.com",
-                     "id" : "&lid=hdr-about-notícias",
+                     "id" : "&lid=hdr-about-info-notícias",
                      "label" : "Notícias",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/citizenship/ptbr.html",
-                     "id" : "&lid=hdr-about-cidadania global",
+                     "id" : "&lid=hdr-about-info-cidadania global",
                      "label" : "Cidadania global",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/about-xerox/environment/ptbr.html",
-                     "id" : "&lid=hdr-about-meio ambiente e sustentabilidade",
+                     "id" : "&lid=hdr-about-info-meio ambiente e sustentabilidade",
                      "label" : "Meio ambiente e sustentabilidade",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://www.realbusinesslive.xerox.com/events/index/ptbr.html",
-                     "id" : "&lid=hdr-about-eventos_ demonstrações de vendas e seminários on-line",
+                     "id" : "&lid=hdr-about-info-eventos_ demonstrações de vendas e seminários on-line",
                      "label" : "Eventos, Demonstrações de vendas e Seminários on-line",
                      "target" : "_self"
                   },
                   {
                      "href" : "http://psgdev.opbu.xerox.com/innovation/ptbr.html",
-                     "id" : "&lid=hdr-about-inovação",
+                     "id" : "&lid=hdr-about-info-inovação",
                      "label" : "Inovação",
                      "target" : "_self"
                   }
@@ -205,6 +179,26 @@
                      "target" : "_self"
                   }
                ],
+               "target" : "_self"
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/ptbr.html",
+                  "id" : "&lid=hdr-about-btm contact us",
+                  "label" : "Fale conosco",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/ptbr.html",
+                  "id" : "&lid=hdr-about-btm where to buy",
+                  "label" : "Onde comprar",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/about-xerox/ptbr.html",
+               "id" : "&lid=hdr-services-all about xerox",
+               "label" : "Tudo sobre a Xerox",
                "target" : "_self"
             },
             "label" : "Sobre a Xerox"
@@ -309,6 +303,26 @@
                   }
                ]
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/ptbr.html",
+                  "id" : "&lid=hdr-products-btm contact us",
+                  "label" : "Fale conosco",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/ptbr.html",
+                  "id" : "&lid=hdr-products-btm where to buy",
+                  "label" : "Onde comprar",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.office.xerox.com/digital-printing-equipment/ptbr.html",
+               "id" : "&lid=hdr-products-all products",
+               "label" : "Todos os produtos",
+               "target" : "_self"
+            },
             "label" : "Produtos"
          },
          "services" : {
@@ -408,6 +422,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/ptbr.html",
+                  "id" : "&lid=hdr-services-btm contact us",
+                  "label" : "Fale conosco",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/ptbr.html",
+                  "id" : "&lid=hdr-services-btm where to buy",
+                  "label" : "Onde comprar",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://dev.services.xerox.com/index/ptbr.html",
+               "id" : "&lid=hdr-services-all services",
+               "label" : "All Services",
+               "target" : "_self"
+            },
             "label" : "Serviços"
          },
          "supplies" : {
@@ -435,6 +469,26 @@
                      "target" : "_self"
                   }
                ],
+               "target" : "_self"
+            },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/ptbr.html",
+                  "id" : "&lid=hdr-supplies-btm contact us",
+                  "label" : "Fale conosco",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/ptbr.html",
+                  "id" : "&lid=hdr-supplies-btm where to buy",
+                  "label" : "Onde comprar",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://psgdev.opbu.xerox.com/printer-supplies/ptao.html",
+               "id" : "&lid=hdr-supplies-all supplies",
+               "label" : "All Supplies",
                "target" : "_self"
             },
             "label" : "Suprimentos"
@@ -472,6 +526,26 @@
                ],
                "target" : "_self"
             },
+            "footerLinks" : [
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/ptbr.html",
+                  "id" : "&lid=hdr-support-btm contact us",
+                  "label" : "Fale conosco",
+                  "target" : "_self"
+               },
+               {
+                  "href" : "http://psgdev.opbu.xerox.com/about-xerox/buy/ptbr.html",
+                  "id" : "&lid=hdr-support-btm where to buy",
+                  "label" : "Onde comprar",
+                  "target" : "_self"
+               }
+            ],
+            "header" : {
+               "href" : "http://www.support.xerox.com/support/ptao.html",
+               "id" : "&lid=hdr-support-all support",
+               "label" : "Todo o suporte",
+               "target" : "_self"
+            },
             "label" : "Suporte & Drivers"
          }
       },
@@ -480,21 +554,21 @@
             {
                "choices" : "",
                "href" : "http://psgdev.opbu.xerox.com/about-xerox/country-select/xxxx.html",
-               "id" : "hdr-bar-country-select",
+               "id" : "&lid=hdr-bar-country-select",
                "label" : "Brasil"
-            },
-            {
-               "href" : "#",
-               "label" : "Sign In"
             }
          ]
       },
       "tertiaryNav" : {
-         "contactUs" : "Fale conosco",
-         "share" : "Compartilhar"
+         "contactUs" : {
+            "href" : "http://psgdev.opbu.xerox.com/about-xerox/contact-us/ptbr.html",
+            "id" : "&lid=hdr-bar-contact us",
+            "label" : "Fale conosco",
+            "target" : "_self"
+         }
       },
       "trans" : {
-         "logoTitle" : "Xerox.com home",
+         "logoTitle" : "Página inicial da Xerox.com",
          "menuBtnTitle" : "Open/Close menu",
          "searchBtnTitle" : "Busca",
          "searchPlaceholder" : "Busca"
