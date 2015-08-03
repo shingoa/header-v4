@@ -60,6 +60,16 @@
 			width: 1px;
 			background-color: #dbdbdb;
 		}
+
+		&.xrx_bnrv4_header_no_divider
+		{
+			padding-right: 0;
+			margin-right: 0;
+
+			&:before {
+				display: none;
+			}
+		}
 	}
 
 	&:first-child {

@@ -96,6 +96,12 @@
 			> a,
 			> label {
 				display: block;
+
+				@include respond-min($break_desktop)
+				{
+					display: inline-block;
+				}
+
 				cursor: pointer;
 			}
 		}

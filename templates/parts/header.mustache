@@ -45,7 +45,9 @@
 				{{#header.secondaryNav}}
 					<ul id="xrx_bnrv4_header_nav_secondary">
 						{{#links}}
-							{{> ../includes/mustachePartials/list_item}}
+							<li id="{{id}}">
+								{{> ../includes/mustachePartials/secondary_nav_link}}
+							</li>
 						{{/links}}
 					</ul>
 				{{/header.secondaryNav}}

@@ -11,18 +11,19 @@
 		padding: 10px 20px;
 	}
 
-	a#xrx_bnrv4_header_country_selector {
-		background-image: url("../images/maplocator.svg");
-		background-repeat: no-repeat;
-	}
-
 	@include respond-max($break_desktop)
 	{
-		a#xrx_bnrv4_header_country_selector {
+		#xrx_bnrv4_header_country_selector {
+			background-image: url("../images/maplocator.svg");
+			background-repeat: no-repeat;
 			background-size: auto 90%;
 			background-position: right 20px center;
 			padding-right: 90px;
 			height: 40px;
+
+			> * {
+				display: inline;
+			}
 		}
 	}
 
@@ -31,7 +32,9 @@
 		float: right;
 		line-height: 20px;
 
-		a#xrx_bnrv4_header_country_selector {
+		#xrx_bnrv4_header_country_selector > a {
+			background-image: url("../images/maplocator.svg");
+			background-repeat: no-repeat;
 			padding-left: 70px;
 			background-size: auto 50%;
 			background-position: left center;
@@ -40,11 +43,11 @@
 		> li {
 			@include xrx_bnrv4_list_dividers;
 
+			> span,
 			> label[for],
 			> a {
 				font-size: 17px;
 				padding: 20px 15px 20px 0;
-
 
 				&::before {
 					top: 35%;
