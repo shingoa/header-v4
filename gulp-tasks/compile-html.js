@@ -17,6 +17,10 @@ gulp.task('compile-html', ['download-configs'], function()
 	{
 		var locales = xrxhelpers.openJson('./data/locales.json', true);
 
+		locales.locales.push({
+			'locale-short' : 'sample'
+		});
+
 		locales.locales.forEach(function(locale)
 		{
 			if (locale.type != "redirect")
