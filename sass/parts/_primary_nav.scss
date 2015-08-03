@@ -84,11 +84,6 @@
 					content: " >";
 					color: $red;
 					font-size: 115%;
-
-					@include respond-min($break_desktop)
-					{
-						display: none;
-					}
 				}
 			}
 
@@ -154,6 +149,7 @@
 			padding-bottom: 5px;
 			border-bottom: 1px solid #dbdbdb;
 			margin-bottom: 10px;
+			font-weight: normal;
 
 			&,
 			> span,
@@ -161,6 +157,19 @@
 				font-weight: bold;
 				font-size: 18px;
 				text-decoration: none;
+			}
+
+			> span,
+			> a {
+				font-weight: bold;
+
+				&::after {
+					content: " >";
+					color: $red;
+					font-size: 115%;
+					margin-left: 10px;
+					font-weight: normal;
+				}
 			}
 
 			label {

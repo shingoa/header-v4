@@ -26,6 +26,10 @@ helpers.processTemplateData = function(data)
 						obj.lid = "&lid=" + obj.id;
 					}
 				}
+
+				if (obj.id && obj.id === "hdr-bar-country-select") {
+					obj.id = "xrx_bnrv4_header_country_selector";
+				}
 			}
 		});
 	}

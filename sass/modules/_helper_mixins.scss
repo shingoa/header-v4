@@ -35,6 +35,7 @@
 
 @mixin xrx_bnrv4_list_dividers
 {
+	> span,
 	> label[for],
 	> a {
 		cursor: pointer;
