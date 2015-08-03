@@ -108,13 +108,23 @@
 	> li {
 		cursor: pointer;
 
-		> a,
 		> label[for]
 		{
 			&::after {
 				content: "˅";
 				display: inline-block;
 				margin-left: 10px;
+				position: relative;
+				top: 1px;
+			}
+		}
+
+		> a {
+			&::after {
+				content: " >";
+				color: $red;
+				font-size: 115%;
+				margin-left: 5px;
 				position: relative;
 				top: 1px;
 			}

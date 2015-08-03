@@ -16,15 +16,7 @@
 				</label>
 				<a class="xrx_bnrv4_logo" href="#" title="{{logoTitle}}"></a>
 
-				<label id="xrx_bnrv4_menu_search_default_btn" for="xrx_bnrv4_header_defaultchk" title="{{trans.searchBtnTitle}}" class="xrx_bnrv4_header_search_btn">
-					{{> mustachePartials/search_icon }}
-				</label>
-				<label id="xrx_bnrv4_menu_search_btn" for="xrx_bnrv4_header_searchchk" title="{{trans.searchBtnTitle}}" class="xrx_bnrv4_header_search_btn">
-					{{> mustachePartials/search_icon }}
-				</label>
-				<div id="xrx_bnrv4_header_search">
-					<input type="textbox" title="Search" placeholder="{{trans.searchPlaceholder}}"></input>
-				</div>
+				{{> ../includes/search }}
 
 				{{#header.tertiaryNav}}
 					<ul id="xrx_bnrv4_header_nav_tertiary">

@@ -11,7 +11,7 @@ var mergeStream = require("merge-stream");
 
 gulp.task('build-html', function()
 {
-	var locales = ["ptbr", "engb", "frfr", "heil", "enus", "sample"];
+	var locales = ["ptbr", "engb", "frfr", "heil", "enus", "sample", "frmc"];
 
 	var merged = mergeStream();
 
