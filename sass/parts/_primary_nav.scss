@@ -81,9 +81,9 @@
 
 				&::after {
 					float: right;
-					content: " >";
+					content: "\0000a0❯";
 					color: $red;
-					font-size: 115%;
+					font-family: "Arial";
 				}
 			}
 
@@ -100,9 +100,8 @@
 
 			&::after {
 				float: left;
-				content: "< ";
+				content: "❮ ";
 				color: $red;
-				font-size: 115%;
 				margin-right: 20px;
 
 				@include respond-min($break_desktop)
@@ -134,9 +133,9 @@
 
 			> a {
 				&::after {
-					content: " >";
+					content: "\0000a0❯";
 					color: $red;
-					font-size: 90%;
+					font-family: "Arial";
 				}
 			}
 		}
@@ -164,11 +163,11 @@
 				font-weight: bold;
 
 				&::after {
-					content: " >";
+					content: "\0000a0❯";
 					color: $red;
-					font-size: 115%;
 					margin-left: 10px;
 					font-weight: normal;
+					font-family: "Arial";
 				}
 			}
 

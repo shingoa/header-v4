@@ -9,6 +9,8 @@
 
 	position: absolute;
 	display: none;
+	font-size: 18px;
+	font-weight: lighter;
 
 	> li {
 		display: block;
@@ -19,9 +21,11 @@
 	@include respond-min($break_tablet)
 	{
 		display: block;
-		top: 27px;
+		top: 30px;
 		right: 80px;
 		z-index: 500;
+		min-width: 200px;
+		text-align: right;
 
 		> li {
 			@include xrx_bnrv4_list_dividers;
@@ -29,6 +33,7 @@
 			display: inline-block;
 			padding: 0;
 			border-bottom: none;
+			text-align: left;
 
 			> .xrx_bnrv4_header_defaultlbl {
 				display: none;
@@ -55,6 +60,7 @@
 			.xrx_bnrv4_header_flyout {
 				display: none;
 				position: absolute;
+				background-color: #fff;
 				left: -10px;
 				top: -10px;
 				right: 0;
@@ -64,8 +70,9 @@
 
 				> .xrx_bnrv4_header_defaultlbl {
 					position: absolute;
-					top: 10px;
+					top: 7px;
 					right: 10px;
+					font-family: "Arial";
 				}
 
 				ul {
@@ -83,7 +90,7 @@
 							padding: 10px 0px;
 
 							&::after {
-								content: " >";
+								content: "\0000a0❯";
 								color: $red;
 								font-size: 115%;
 								margin-left: 10px;
@@ -111,22 +118,21 @@
 		> label[for]
 		{
 			&::after {
-				content: "˅";
+				content: "❯";
 				display: inline-block;
-				margin-left: 10px;
+				margin-left: 12px;
 				position: relative;
 				top: 1px;
+				transform: rotate(90deg);
+				font-size: 90%;
+				margin-right: 2px;
 			}
 		}
 
 		> a {
 			&::after {
-				content: " >";
+				content: "\0000a0❯";
 				color: $red;
-				font-size: 115%;
-				margin-left: 5px;
-				position: relative;
-				top: 1px;
 			}
 		}
 	}

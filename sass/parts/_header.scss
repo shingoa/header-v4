@@ -274,10 +274,45 @@
 
 		@include transition(left .25s ease-in-out);
 
+		.xrx_bnrv4_header_search_submit_icon {
+			z-index: 40;
+			position: absolute;
+			top: 5px;
+			right: 5px;
+			bottom: 5px;
+			width: 30px;
+		}
+
+		form {
+			position: relative;
+		}
+
+		button {
+			z-index: 50;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			width: 40px;
+			border: none;
+			background-color: transparent;
+
+			&:hover {
+				~ .xrx_bnrv4_header_search_submit_icon svg {
+					#XMLID_1_, #XMLID_3_ {
+						stroke: $red !important;
+					}
+				}
+			}
+		}
+
 		input {
 			width: 100%;
-			padding: 6px;
+			padding: 8px 10px;
 			box-sizing: border-box;
+			font-weight: lighter;
+			color: #737373;
+			font-size: 18px;
 		}
 
 		@include respond-min($break_tablet)
@@ -289,7 +324,7 @@
 			border: none;
 
 			left: 200px;
-			right: 280px;
+			right: 300px;
 			top: 20px;
 
 			input {
@@ -306,7 +341,9 @@
 
 		@include respond-min($break_desktop)
 		{
-			top: 28px;
+			top: 26px;
+			left: 262px;
+			right: 362px;
 		}
 	}
 
