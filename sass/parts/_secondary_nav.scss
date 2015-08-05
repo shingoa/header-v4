@@ -46,9 +46,10 @@
 			> span,
 			> label[for],
 			> a {
-				font-size: 17px;
-				padding-top: 20px;
-				padding-bottom: 20px;
+				font-size: 15px;
+				padding-top: 16px;
+				padding-bottom: 17px;
+				font-weight: lighter;
 
 				&::before {
 					top: 35%;

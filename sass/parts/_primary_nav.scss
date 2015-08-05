@@ -13,6 +13,10 @@
 		display: none;
 	}
 
+	p {
+		color: #737373;
+	}
+
 	@include respond-max($break_desktop)
 	{
 		&
@@ -120,16 +124,12 @@
 		float: left;
 		line-height: 20px;
 
-		> li > a,
-		> li > label {
-			font-size: 26px;
-		}
-
 		.xrx_bnrv4_header_flyout_header {
-			font-size: 24px;
+			font-size: 18px;
 			margin-bottom: 20px;
 			display: block;
 			color: #000;
+			font-weight: bold;
 
 			> a {
 				&::after {
@@ -147,20 +147,23 @@
 			padding-bottom: 5px;
 			border-bottom: 1px solid #dbdbdb;
 			margin-bottom: 10px;
-			font-weight: normal;
 
 			&,
 			> span,
 			> a {
 				font-weight: bold;
-				font-size: 18px;
+				font-size: 16px;
 				text-decoration: none;
-				color: #666;
+				color: #737373;
 			}
 
 			> label,
 			> a {
 				color: #333;
+
+				&:hover {
+					color: $red;
+				}
 
 				&::after {
 					color: $red;
@@ -179,7 +182,7 @@
 
 		ul {
 			@include xrx_bnrv4_resetlist;
-			font-size: 16px;
+			font-size: 15px;
 
 			> li {
 				margin-bottom: 5px;
@@ -197,7 +200,8 @@
 
 			> label[for],
 			> a {
-				padding: 20px 15px 20px 0;
+				font-size: 20px;
+				padding: 16px 15px 17px 0;
 				margin-right: 15px;
 
 				&::before {
@@ -222,11 +226,18 @@
 			position: relative;
 			top: 10px;
 			border-top: 1px solid #dbdbdb;
-			padding-top: 20px;
-			margin-top: 10px;
+			padding-top: 15px;
+			margin-top: 9px;
+			margin-bottom: -5px;
 
 			li {
 				@include xrx_bnrv4_list_dividers;
+
+				> a,
+				> span {
+					padding-right: 18px;
+					margin-right: 18px;
+				}
 			}
 		}
 	}

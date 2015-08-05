@@ -159,6 +159,7 @@
 			{
 				color: $red;
 				cursor: default;
+				font-weight: bold;
 
 				~ .xrx_bnrv4_header_flyout {
 					display: block;
@@ -170,7 +171,7 @@
 
 			&:before {
 				content: "";
-				background-color: rgba(235, 235, 235, .98);
+				background-color: rgba(235, 235, 235, 1);
 				display: block;
 				position: absolute;
 				left: 0;
@@ -354,7 +355,7 @@
 			border-bottom: 1px solid #dbdbdb;
 			border-top: 1px solid #dbdbdb;
 			display: none;
-			background-color: #fff;
+			background-color: #f1f1f1;
 
 			> div {
 				box-sizing: border-box;
