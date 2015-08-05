@@ -112,4 +112,10 @@ helpers.openJson = function(path, shouldThrow)
 	}
 }
 
+helpers.getPackageVersion = function()
+{
+	var pjson = JSON.parse(fs.readFileSync('./package.json'));
+	return pjson.version;
+}
+
 module.exports = helpers;
