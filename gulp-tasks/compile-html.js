@@ -15,6 +15,8 @@ gulp.task('compile-html', ['download-configs'], function()
 
 	try
 	{
+		var version = xrxhelpers.getPackageVersion();
+
 		var locales = xrxhelpers.openJson('./data/locales.json', true);
 
 		locales.locales.push({
@@ -41,7 +43,7 @@ gulp.task('compile-html', ['download-configs'], function()
 								'suffix' : '.' + localeCodeShort,
 								'extname' : '.html'
 							}))
-							.pipe(gulp.dest('./compiled/parts')));
+							.pipe(gulp.dest('./compiled/' + version + '/parts')));
 					}
 				}
 				catch (err)
@@ -56,7 +58,7 @@ gulp.task('compile-html', ['download-configs'], function()
 			.pipe(rename({
 				'extname' : '.html'
 			}))
-			.pipe(gulp.dest('./compiled/parts')));
+			.pipe(gulp.dest('./compiled/' + version + '/parts')));
 	}
 	catch (err)
 	{
