@@ -33,7 +33,7 @@
 	}
 }
 
-@mixin xrx_bnrv4_list_dividers
+@mixin xrx_bnrv4_list_dividers($side: right)
 {
 	> span,
 	> label[for],
@@ -42,8 +42,8 @@
 		text-decoration: none;
 		position: relative;
 		font-weight: lighter;
-		padding-right: 10px;
-		margin-right: 10px;
+		padding-#{$side}: 10px;
+		margin-#{$side}: 10px;
 		user-select: none;
 		-o-user-select:none;
 		-moz-user-select: none;
@@ -56,15 +56,15 @@
 			position: absolute;
 			top: 20%;
 			bottom: 20%;
-			right: 0;
+			#{$side}: 0;
 			width: 1px;
 			background-color: #dbdbdb;
 		}
 
 		&.xrx_bnrv4_header_no_divider
 		{
-			padding-right: 0;
-			margin-right: 0;
+			padding-#{$side}: 0;
+			margin-#{$side}: 0;
 
 			&:before {
 				display: none;
@@ -72,22 +72,36 @@
 		}
 	}
 
-	&:first-child {
+	&:first-child
+	{
 		> label,
-		> a {
-			padding-left: 0;
+		> a
+		{
+			@if ($side == left)
+			{
+				padding-left: 0;
+				margin-left: 0;
+
+				&:before {
+					display: none;
+				}
+			}
 		}
 	}
 
-	&:last-child {
-
+	&:last-child
+	{
 		> label,
-		> a {
-			padding-right: 0;
-			margin-right: 0;
+		> a
+		{
+			@if ($side == right)
+			{
+				padding-right: 0;
+				margin-right: 0;
 
-			&::before {
-				display: none;
+				&::before {
+					display: none;
+				}
 			}
 		}
 	}

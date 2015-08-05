@@ -41,13 +41,14 @@
 		}
 
 		> li {
-			@include xrx_bnrv4_list_dividers;
+			@include xrx_bnrv4_list_dividers(left);
 
 			> span,
 			> label[for],
 			> a {
 				font-size: 17px;
-				padding: 20px 15px 20px 0;
+				padding-top: 20px;
+				padding-bottom: 20px;
 
 				&::before {
 					top: 35%;
@@ -62,6 +63,10 @@
 					padding-right: 0px;
 					margin-right: 0;
 				}
+			}
+
+			&#hdr-bar-log-out {
+				display: none;
 			}
 		}
 	}

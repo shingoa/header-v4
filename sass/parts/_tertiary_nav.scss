@@ -28,7 +28,7 @@
 		text-align: right;
 
 		> li {
-			@include xrx_bnrv4_list_dividers;
+			@include xrx_bnrv4_list_dividers();
 
 			display: inline-block;
 			padding: 0;
@@ -90,6 +90,7 @@
 
 							&::after {
 								@include xrx_bnrv4_right_arrow();
+								color: $red;
 							}
 						}
 
