@@ -81,9 +81,9 @@
 
 				&::after {
 					float: right;
-					content: "\0000a0❯";
 					color: $red;
-					font-family: "Arial";
+
+					@include xrx_bnrv4_right_arrow();
 				}
 			}
 
@@ -100,9 +100,9 @@
 
 			&::after {
 				float: left;
-				content: "❮ ";
 				color: $red;
-				margin-right: 20px;
+
+				@include xrx_bnrv4_left_arrow();
 
 				@include respond-min($break_desktop)
 				{
@@ -133,9 +133,8 @@
 
 			> a {
 				&::after {
-					content: "\0000a0❯";
 					color: $red;
-					font-family: "Arial";
+					@include xrx_bnrv4_right_arrow();
 				}
 			}
 		}
@@ -156,18 +155,16 @@
 				font-weight: bold;
 				font-size: 18px;
 				text-decoration: none;
+				color: #666;
 			}
 
-			> span,
+			> label,
 			> a {
-				font-weight: bold;
+				color: #333;
 
 				&::after {
-					content: "\0000a0❯";
 					color: $red;
-					margin-left: 10px;
-					font-weight: normal;
-					font-family: "Arial";
+					@include xrx_bnrv4_right_arrow();
 				}
 			}
 
