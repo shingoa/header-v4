@@ -8,10 +8,15 @@ var mustache = require('gulp-mustache');
 var rename = require('gulp-rename');
 var requireDir = require('require-dir');
 var mergeStream = require("merge-stream");
+var argv = require('yargs').argv;
+
 
 gulp.task('build-html', function()
 {
-	var locales = ["ptbr", "engb", "frfr", "heil", "enus", "sample", "frmc", "frca"];
+	if (argv.t != "local")
+		throw "Builds can only be performed locally"
+
+	var locales = xrxhelpers.testLocales;
 
 	var merged = mergeStream();
 
@@ -19,7 +24,7 @@ gulp.task('build-html', function()
 	{
 		try
 		{
-			var templateData = xrxhelpers.openJson('./data/config.' + locale + '.json');
+			var templateData = xrxhelpers.openJson('./data/local/config.' + locale + '.json');
 			if (typeof(templateData) !== "undefined" && templateData)
 			{
 				templateData = xrxhelpers.processTemplateData(templateData);
