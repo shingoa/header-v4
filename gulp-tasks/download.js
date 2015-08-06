@@ -22,7 +22,7 @@ gulp.task('download-configs', ['init-repo', 'download-locales'], function()
 	var merged = mergeStream();
 
 	var server = xrxhelpers.getXeroxHttpServer(argv.t);
-	var data = xrxhelpers.openJson('./data/locales.json', true);
+	var data = xrxhelpers.openJson('./data/' + argv.t + '/locales.json', true);
 	var downloaded = 0;
 
 	data.locales.forEach(function(locale)
@@ -30,7 +30,7 @@ gulp.task('download-configs', ['init-repo', 'download-locales'], function()
 		if (locale.type != "redirect")
 		{
 			var localeCodeShort = locale['locale-short'];
-			var savePath = './data/config.' + localeCodeShort + '.json';
+			var savePath = './data/' + argv.t + '/config.' + localeCodeShort + '.json';
 			var differenceMinutes = xrxhelpers.getFileAgeMinutes(savePath);
 
 			if (typeof(differenceMinutes) === "undefined" ||
@@ -75,7 +75,7 @@ gulp.task('download-test-configs', ['init-repo', 'download-locales'], function()
 		if(locale.length != 4)
 			return;
 
-		var savePath = './data/config.' + locale + '.json';
+		var savePath = './data/' + argv.t + '/config.' + locale + '.json';
 		var differenceMinutes = xrxhelpers.getFileAgeMinutes(savePath);
 
 		if (typeof(differenceMinutes) === "undefined" ||
