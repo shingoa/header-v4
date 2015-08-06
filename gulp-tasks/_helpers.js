@@ -4,6 +4,8 @@ var fs = require('fs');
 
 var helpers = {};
 
+helpers.testLocales = ["ptbr", "engb", "frfr", "heil", "enus", "sample", "frmc", "frca"];
+
 helpers.processTemplateData = function(data)
 {
 	if(typeof(data) !== "undefined" && data)
@@ -109,6 +111,25 @@ helpers.openJson = function(path, shouldThrow)
 		//if (shouldThrow) {
 			console.log(shouldThrow);
 		//}
+	}
+}
+
+helpers.getPackageVersion = function()
+{
+	var pjson = JSON.parse(fs.readFileSync('./package.json'));
+	return pjson.version;
+}
+
+helpers.getXeroxHttpServer = function(tier)
+{
+	if (tier == "prod") {
+		return "http://www.xerox.com/";
+	}
+	else if (tier == "test") {
+		return "http://xeroxtest.xerox.com/";
+	}
+	else {
+		return "http://psgdev.opbu.xerox.com/";
 	}
 }
 

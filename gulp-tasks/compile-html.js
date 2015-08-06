@@ -8,18 +8,16 @@ var rename = require('gulp-rename');
 var requireDir = require('require-dir');
 var mergeStream = require("merge-stream");
 var xrxhelpers = require('./_helpers.js');
+var argv = require('yargs').argv;
 
-gulp.task('compile-html', ['download-configs'], function()
+gulp.task('compile-html', ['init-repo', 'download-configs'], function()
 {
 	var merged = mergeStream();
 
 	try
 	{
-		var locales = xrxhelpers.openJson('./data/locales.json', true);
-
-		locales.locales.push({
-			'locale-short' : 'sample'
-		});
+		var version = xrxhelpers.getPackageVersion();
+		var locales = xrxhelpers.openJson('./data/' + argv.t + '/locales.json', true);
 
 		locales.locales.forEach(function(locale)
 		{
@@ -29,7 +27,7 @@ gulp.task('compile-html', ['download-configs'], function()
 
 				try
 				{
-					var templateData = xrxhelpers.openJson('./data/config.' + localeCodeShort + '.json');
+					var templateData = xrxhelpers.openJson('./data/' + argv.t + '/config.' + localeCodeShort + '.json');
 
 					if (typeof(templateData) !== "undefined" && templateData)
 					{
@@ -41,7 +39,7 @@ gulp.task('compile-html', ['download-configs'], function()
 								'suffix' : '.' + localeCodeShort,
 								'extname' : '.html'
 							}))
-							.pipe(gulp.dest('./compiled/parts')));
+							.pipe(gulp.dest('./compiled/' + argv.t + '/' + version + '/parts')));
 					}
 				}
 				catch (err)
@@ -56,7 +54,7 @@ gulp.task('compile-html', ['download-configs'], function()
 			.pipe(rename({
 				'extname' : '.html'
 			}))
-			.pipe(gulp.dest('./compiled/parts')));
+			.pipe(gulp.dest('./compiled/' + argv.t + '/' + version + '/parts')));
 	}
 	catch (err)
 	{

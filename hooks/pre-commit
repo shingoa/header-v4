@@ -1,0 +1,36 @@
+#!/bin/sh
+
+rightBranch=`git status --branch --porcelain | grep -b master`
+if [ "$rightBranch" == "" ]; then
+	echo "---------------------------------------------------"
+	echo "Commit failed..."
+	echo "You can only commit to the master branch!"
+	echo "---------------------------------------------------"
+	exit 1;
+fi
+
+hasPackageJson=`git status --branch --porcelain | grep -b package.json`
+if [ "$hasPackageJson" == "" ]; then
+	echo "---------------------------------------------------"
+	echo "Commit failed..."
+	echo "No edits in package.json! Update your version number"
+	echo "4.1.x : Minor changes and bug fixes"
+	echo "4.x.1 : New features and larger changes"
+	echo "x.1.1 : Major new version"
+	echo "---------------------------------------------------"
+	exit 1;
+fi
+
+hasPackageVersionChange=`git diff-index --patch-with-stat --unified=0 HEAD package.json | grep -b '\"version\"'`
+if [ "$hasPackageVersionChange" == "" ]; then
+	echo "---------------------------------------------------"
+	echo "Commit failed..."
+	echo "You've not updated the package version!"
+	echo "4.1.x : Minor changes and bug fixes"
+	echo "4.x.1 : New features and larger changes"
+	echo "x.1.1 : Major new version"
+	echo "---------------------------------------------------"
+	exit 1
+fi
+
+exit 0
