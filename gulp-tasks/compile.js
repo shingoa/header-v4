@@ -2,6 +2,6 @@
 
 var gulp = require('gulp');
 
-gulp.task('compile', ['compile-html', 'compile-sass', 'compile-images'], function() {
+gulp.task('compile', ['init-repo', 'compile-html', 'compile-sass', 'compile-images'], function() {
 
 });
