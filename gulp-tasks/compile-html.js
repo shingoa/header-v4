@@ -44,7 +44,7 @@ gulp.task('compile-html', ['init-repo', 'download-configs'], function()
 				}
 				catch (err)
 				{
-					console.log(err);
+					console.log("Error: " + err);
 				}
 			}
 		});
@@ -58,7 +58,7 @@ gulp.task('compile-html', ['init-repo', 'download-configs'], function()
 	}
 	catch (err)
 	{
-		console.log(err);
+		console.log("Error: " + err);
 	}
 
 	return merged;
