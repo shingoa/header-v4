@@ -13,5 +13,5 @@ gulp.task('compile-sass', ['init-repo'], function () {
 			outputStyle: "compressed",
 			sourceComments: true
 		}).on('error', sass.logError))
-		.pipe(gulp.dest('./compiled/' + argv.t + '/' + version + '/css'));
+		.pipe(gulp.dest('./compiled/' + argv.t + '/css/' + version));
 });

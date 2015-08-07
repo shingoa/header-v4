@@ -39,7 +39,7 @@ gulp.task('compile-html', ['init-repo', 'download-configs'], function()
 								'suffix' : '.' + localeCodeShort,
 								'extname' : '.html'
 							}))
-							.pipe(gulp.dest('./compiled/' + argv.t + '/' + version + '/parts')));
+							.pipe(gulp.dest('./compiled/' + argv.t + '/parts/' + version)));
 					}
 				}
 				catch (err)
@@ -54,7 +54,7 @@ gulp.task('compile-html', ['init-repo', 'download-configs'], function()
 			.pipe(rename({
 				'extname' : '.html'
 			}))
-			.pipe(gulp.dest('./compiled/' + argv.t + '/' + version + '/parts')));
+			.pipe(gulp.dest('./compiled/' + argv.t + '/parts/' + version)));
 	}
 	catch (err)
 	{

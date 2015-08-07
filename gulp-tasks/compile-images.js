@@ -9,5 +9,5 @@ gulp.task('compile-images', ['init-repo'], function()
 	var version = xrxhelpers.getPackageVersion();
 
 	return gulp.src(['./images/**/*'])
-		.pipe(gulp.dest('./compiled/' + argv.t + '/' + version + '/images'));
+		.pipe(gulp.dest('./compiled/' + argv.t + '/css/' + version + '/images'));
 });
