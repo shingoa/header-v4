@@ -21,10 +21,10 @@
 	.xrx_bnrv4_logo {
 		position: absolute;
 		background-position: left center;
-		top: 25px;
+		top: 27px;
 		left: 5px;
 		width: 200px;
-		height: 58px;
+		height: 50px;
 
 		@include respond-min($break_tablet)
 		{
