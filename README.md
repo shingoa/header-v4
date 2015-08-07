@@ -25,9 +25,9 @@ The version 4.0 header and footer built using GULP
 
 ### Commit
 When you start working with gulp I automatically install a git precommit hook which will block all commits unless you have incremented the version number. Use the following pattern.
-4.1.x : Minor changes and bug fixes"
-4.x.1 : New features and larger changes"
-x.1.1 : Major new version"
+- 4.1.x : Minor changes and bug fixes"
+- 4.x.1 : New features and larger changes"
+- x.1.1 : Major new version"
 
 ### Automatic Building
 Automatic building occurs on a [Jenkins server](http://usa7061vm1072.na.xerox.net:8080/), it is automatically triggered by a JSON build on LAMP.
