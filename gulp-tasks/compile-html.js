@@ -31,7 +31,7 @@ gulp.task('compile-html', ['init-repo', 'download-configs'], function()
 
 					if (typeof(templateData) !== "undefined" && templateData)
 					{
-						templateData = xrxhelpers.processTemplateData(templateData);
+						templateData = xrxhelpers.processTemplateData(templateData, locale);
 
 						merged.add(gulp.src(['./templates/parts/header.mustache', './templates/parts/footer.mustache'])
 							.pipe(mustache(templateData))

@@ -6,12 +6,13 @@
 		{{> mustachePartials/search_icon }}
 	</label>
 	<div id="xrx_bnrv4_header_search">
-		<form method="get" action="#">
+		<form method="get" action="#" id="xrx_bnr_hdr_utilitynav_search_form" novalidate role="search">
 			<button type="submit"></button>
 			<div class="xrx_bnrv4_header_search_submit_icon">
 				{{> mustachePartials/search_icon }}
 			</div>
-			<input type="textbox" title="Search" placeholder="{{trans.searchPlaceholder}}"></input>
+			<input type="textbox" title="Search" placeholder="{{trans.searchPlaceholder}}" name="searchString"></input>
+			<input name="XOGlang" value="{{XOGLang}}" type="hidden" />
 		</form>
 	</div>
 {{/trans.searchBtnTitle}}
