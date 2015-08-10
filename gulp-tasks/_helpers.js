@@ -8,8 +8,13 @@ helpers.testLocales = ["ptbr", "engb", "frfr", "heil", "enus", "sample", "frmc",
 
 helpers.getXOGLang = function(locale)
 {
-	if (locale)
+	if (typeof(locale) !== "undefined" && locale)
 	{
+		if (typeof(locale) == "object" && typeof(locale.locale) != "undefined")
+		{
+			locale = locale.locale;
+		}
+
 		var matches = locale.match(/^(\w{2}).*(\w{2})$/);
 
 		if (matches)
@@ -25,6 +30,7 @@ helpers.processTemplateData = function(data, locale)
 {
 	if(typeof(data) !== "undefined" && data)
 	{
+
 		data.XOGLang = helpers.getXOGLang(locale);
 
 		helpers.recurse(data, function(obj, p)

@@ -31,7 +31,7 @@ gulp.task('compile-html', ['init-repo', 'download-configs'], function()
 
 					if (typeof(templateData) !== "undefined" && templateData)
 					{
-						templateData = xrxhelpers.processTemplateData(templateData, locale);
+						templateData = xrxhelpers.processTemplateData(templateData, localeCodeShort);
 
 						merged.add(gulp.src(['./templates/parts/header.mustache', './templates/parts/footer.mustache'])
 							.pipe(mustache(templateData))
@@ -58,7 +58,7 @@ gulp.task('compile-html', ['init-repo', 'download-configs'], function()
 	}
 	catch (err)
 	{
-		console.log("Error: " + err);
+		console.log("Compile HTML Error: " + err);
 	}
 
 	return merged;
