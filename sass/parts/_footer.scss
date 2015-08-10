@@ -2,15 +2,19 @@
 @import "vars";
 
 @import "../modules/_responsive_base";
+@import "_lobfooter";
 
 #xrx_bnrv4_footer {
 	z-index: 100;
-	background-color: #f9f9f9;
 	padding: 15px;
-	font-size: 13px;
 
-	> div {
+	#xrx_bnrv4_footer_main {
+		background-color: #f9f9f9;
+	}
+
+	.xrx_bnrv4_footer_position {
 		@include xrx_bnrv4_positionit;
+		padding: 15px;
 	}
 
 	.xrx_bnrv4_logo {
@@ -19,7 +23,8 @@
 		width: 115px;
 	}
 
-	#xrx_bnr_v3_ftr_links {
+	#xrx_bnr_v3_ftr_links
+	{
 		@include xrx_bnrv4_inlinelist;
 
 		font-size: 15px;
