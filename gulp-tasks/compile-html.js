@@ -31,15 +31,15 @@ gulp.task('compile-html', ['init-repo', 'download-configs'], function()
 
 					if (typeof(templateData) !== "undefined" && templateData)
 					{
-						templateData = xrxhelpers.processTemplateData(templateData);
+						templateData = xrxhelpers.processTemplateData(templateData, localeCodeShort);
 
-						merged.add(gulp.src(['./templates/parts/header.mustache', './templates/parts/footer.mustache'])
+						merged.add(gulp.src(['./templates/parts/header.mustache', './templates/parts/footer.mustache', './templates/parts/footer.*.mustache'])
 							.pipe(mustache(templateData))
 							.pipe(rename({
 								'suffix' : '.' + localeCodeShort,
 								'extname' : '.html'
 							}))
-							.pipe(gulp.dest('./compiled/' + argv.t + '/' + version + '/parts')));
+							.pipe(gulp.dest('./compiled/' + argv.t + '/parts/' + version)));
 					}
 				}
 				catch (err)
@@ -54,11 +54,11 @@ gulp.task('compile-html', ['init-repo', 'download-configs'], function()
 			.pipe(rename({
 				'extname' : '.html'
 			}))
-			.pipe(gulp.dest('./compiled/' + argv.t + '/' + version + '/parts')));
+			.pipe(gulp.dest('./compiled/' + argv.t + '/parts/' + version)));
 	}
 	catch (err)
 	{
-		console.log("Error: " + err);
+		console.log("Compile HTML Error: " + err);
 	}
 
 	return merged;

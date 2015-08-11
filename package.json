@@ -1,24 +1,23 @@
 {
   "name": "xerox.com-banners",
-  "version": "4.1.2",
+  "version": "4.2.8",
   "description": "Xerox.com banners",
   "main": "gulpfile.js",
   "dependencies": {
+  },
+  "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-mustache": "^1.0.2",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.3",
     "gulp-watch": "^4.2.4",
-    "require-dir": "^0.3.0"
-  },
-  "devDependencies": {
+    "require-dir": "^0.3.0",
     "gulp-bump": "^0.3.1",
     "gulp-git": "^1.2.4",
     "gulp-match": "^0.2.1",
     "gulp-zip": "^3.0.2",
     "merge-stream": "^0.1.8",
     "request": "^2.60.0",
-    "require-dir": "^0.3.0",
     "vinyl-source-stream": "^1.1.0",
     "yargs": "^3.17.1"
   },

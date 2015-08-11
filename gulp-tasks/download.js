@@ -31,18 +31,12 @@ gulp.task('download-configs', ['init-repo', 'download-locales'], function()
 		{
 			var localeCodeShort = locale['locale-short'];
 			var savePath = './data/' + argv.t + '/config.' + localeCodeShort + '.json';
-			var differenceMinutes = xrxhelpers.getFileAgeMinutes(savePath);
 
-			if (typeof(differenceMinutes) === "undefined" ||
-				!differenceMinutes ||
-				differenceMinutes > 120)
-			{
-				merged.add(request(server + "assets/json/xrx_bnr_json/v4_header_raw." + localeCodeShort + ".json")
-					.pipe(source('config.' + localeCodeShort + '.json'))
-					.pipe(gulp.dest('./data/' + argv.t)));
+			merged.add(request(server + "assets/json/xrx_bnr_json/v4_header_raw." + localeCodeShort + ".json")
+				.pipe(source('config.' + localeCodeShort + '.json'))
+				.pipe(gulp.dest('./data/' + argv.t)));
 
-				downloaded++;
-			}
+			downloaded++;
 		}
 	});
 

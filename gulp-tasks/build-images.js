@@ -9,5 +9,5 @@ gulp.task('build-images', ['init-repo'], function()
 		throw "Builds can only be performed locally"
 
 	return gulp.src(['./images/**/*'])
-		.pipe(gulp.dest('./built/images'));
+		.pipe(gulp.dest('./built/css/images'));
 });

@@ -6,10 +6,33 @@ var helpers = {};
 
 helpers.testLocales = ["ptbr", "engb", "frfr", "heil", "enus", "sample", "frmc", "frca"];
 
-helpers.processTemplateData = function(data)
+helpers.getXOGLang = function(locale)
+{
+	if (typeof(locale) !== "undefined" && locale)
+	{
+		if (typeof(locale) == "object" && typeof(locale.locale) != "undefined")
+		{
+			locale = locale.locale;
+		}
+
+		var matches = locale.match(/^(\w{2}).*(\w{2})$/);
+
+		if (matches)
+		{
+			return matches[1].toLowerCase() + "_" + matches[2].toUpperCase();
+		}
+	}
+
+	return null;
+}
+
+helpers.processTemplateData = function(data, locale)
 {
 	if(typeof(data) !== "undefined" && data)
 	{
+
+		data.XOGLang = helpers.getXOGLang(locale);
+
 		helpers.recurse(data, function(obj, p)
 		{
 			if (typeof(obj) === "object" && obj)
