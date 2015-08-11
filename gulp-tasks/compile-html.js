@@ -33,7 +33,7 @@ gulp.task('compile-html', ['init-repo', 'download-configs'], function()
 					{
 						templateData = xrxhelpers.processTemplateData(templateData, localeCodeShort);
 
-						merged.add(gulp.src(['./templates/parts/header.mustache', './templates/parts/footer.mustache'])
+						merged.add(gulp.src(['./templates/parts/header.mustache', './templates/parts/footer.mustache', './templates/parts/footer.*.mustache'])
 							.pipe(mustache(templateData))
 							.pipe(rename({
 								'suffix' : '.' + localeCodeShort,
