@@ -16,7 +16,7 @@ gulp.task('compile-push-to-lamp', ['compile-zip'], function()
 	var targets = [];
 
 	if (argv.t == "dev") {
-		targets.push("http://dev.office.xerox.com:4080/perl-bin/receive_versioned_banner.pl?2");
+		targets.push("http://dev.office.xerox.com/perl-bin/receive_versioned_banner.pl");
 	}
 	//else if (argv.t == "test") {
 	//}
