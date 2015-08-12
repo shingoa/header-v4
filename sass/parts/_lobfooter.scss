@@ -12,6 +12,7 @@
 	.xrx_bnrv4_lobfooter_title {
 		font-size: 24px;
 		margin-bottom: 10px;
+		font-weight: lighter;
 	}
 
 	.xrx_bnrv4_column {
@@ -23,6 +24,12 @@
 			font-weight: bold;
 			padding: 8px 0;
 
+			&,
+			> span {
+				font-weight: bold;
+				font-size: 16px;
+			}
+
 			> label {
 				display: none;
 			}
@@ -33,6 +40,13 @@
 
 			> li {
 				padding: 8px 0;
+
+				&,
+				> a,
+				> span {
+					font-weight: lighter;
+					font-size: 16px;
+				}
 			}
 		}
 	}

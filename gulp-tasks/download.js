@@ -53,7 +53,7 @@ gulp.task('download-configs', ['init-repo', 'clean', 'download-locales'], functi
 	return merged;
 });
 
-gulp.task('download-test-configs', ['init-repo', 'clean', 'download-locales'], function()
+gulp.task('download-test-configs', ['init-repo', 'clean'], function()
 {
 	var merged = mergeStream();
 

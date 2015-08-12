@@ -5,8 +5,22 @@
 
 #xrx_bnrv4_header,
 #xrx_bnrv4_footer {
-	font-family: 'Roboto Condensed', sans-serif;
-	color: #333;
+
+	&,
+	a,
+	span,
+	li,
+	p,
+	label,
+	input,
+	button,
+	div {
+		font-family: 'Roboto Condensed', sans-serif;
+		font-weight: normal;
+		color: #333;
+		line-height: 120%;
+		font-size: 15px;
+	}
 
 	a,
 	label[for] {
