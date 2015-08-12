@@ -3,6 +3,8 @@ built/**/*
 compiled/**/*
 dist/**/*
 data/**/*
+!data/local
+data/local/**/*
 !data/local/config.sample.json
 
 # Dependency directory

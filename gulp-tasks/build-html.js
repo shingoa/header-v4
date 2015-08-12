@@ -11,7 +11,7 @@ var mergeStream = require("merge-stream");
 var argv = require('yargs').argv;
 
 
-gulp.task('build-html', ['init-repo', 'download-test-configs'], function()
+gulp.task('build-html', ['init-repo', 'clean', 'download-test-configs'], function()
 {
 	if (argv.t != "local")
 		throw "Builds can only be performed locally"

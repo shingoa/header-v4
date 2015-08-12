@@ -9,17 +9,18 @@ var mergeStream = require("merge-stream");
 var xrxhelpers = require('./_helpers.js');
 var argv = require('yargs').argv;
 
-gulp.task('compile-push-to-lamp', ['compile-zip'], function()
+gulp.task('compile-push-to-lamp', ['clean', 'compile-zip'], function()
 {
 	var merged = mergeStream();
 
 	var targets = [];
 
 	if (argv.t == "dev") {
-		targets.push("http://dev.office.xerox.com/perl-bin/receive_versioned_banner.pl");
+		targets.push("http://wvlnxas08.opbu.xerox.com/perl-bin/receive_versioned_banner.pl");
 	}
-	//else if (argv.t == "test") {
-	//}
+	else if (argv.t == "test") {
+		targets.push("http://wvlnxas06.opbu.xerox.com/perl-bin/receive_versioned_banner.pl");
+	}
 	//else if (argv.t == "prod") {
 
 	//}
