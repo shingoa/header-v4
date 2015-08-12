@@ -11,7 +11,7 @@ var mergeStream = require("merge-stream");
 var argv = require('yargs').argv;
 
 
-gulp.task('build-html', ['init-repo', 'download-test-configs'], function()
+gulp.task('build-html', ['init-repo', 'clean', 'download-test-configs'], function()
 {
 	if (argv.t != "local")
 		throw "Builds can only be performed locally"
@@ -27,7 +27,7 @@ gulp.task('build-html', ['init-repo', 'download-test-configs'], function()
 			var templateData = xrxhelpers.openJson('./data/local/config.' + locale + '.json');
 			if (typeof(templateData) !== "undefined" && templateData)
 			{
-				templateData = xrxhelpers.processTemplateData(templateData);
+				templateData = xrxhelpers.processTemplateData(templateData, locale);
 
 				var files = fs.readdirSync("./templates/mock_pages/");
 				files = xrxhelpers.processMockPageFileList(files, '.' + locale);
