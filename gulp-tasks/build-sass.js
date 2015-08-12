@@ -4,7 +4,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var argv = require('yargs').argv;
 
-gulp.task('build-sass', ['init-repo'], function ()
+gulp.task('build-sass', ['init-repo', 'clean'], function ()
 {
 	if (argv.t != "local")
 		throw "Builds can only be performed locally"

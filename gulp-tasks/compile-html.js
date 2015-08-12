@@ -10,7 +10,7 @@ var mergeStream = require("merge-stream");
 var xrxhelpers = require('./_helpers.js');
 var argv = require('yargs').argv;
 
-gulp.task('compile-html', ['init-repo', 'download-configs'], function()
+gulp.task('compile-html', ['init-repo', 'clean', 'download-configs'], function()
 {
 	var merged = mergeStream();
 

@@ -8,7 +8,7 @@ var mergeStream = require("merge-stream");
 var xrxhelpers = require('./_helpers.js');
 var argv = require('yargs').argv;
 
-gulp.task('download-locales', ['init-repo'], function()
+gulp.task('download-locales', ['init-repo', 'clean'], function()
 {
 	var server = xrxhelpers.getXeroxHttpServer(argv.t);
 
@@ -17,7 +17,7 @@ gulp.task('download-locales', ['init-repo'], function()
 		.pipe(gulp.dest('./data/' + argv.t));
 });
 
-gulp.task('download-configs', ['init-repo', 'download-locales'], function()
+gulp.task('download-configs', ['init-repo', 'clean', 'download-locales'], function()
 {
 	var merged = mergeStream();
 
@@ -53,7 +53,7 @@ gulp.task('download-configs', ['init-repo', 'download-locales'], function()
 	return merged;
 });
 
-gulp.task('download-test-configs', ['init-repo', 'download-locales'], function()
+gulp.task('download-test-configs', ['init-repo', 'clean', 'download-locales'], function()
 {
 	var merged = mergeStream();
 
