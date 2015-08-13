@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @mixin xrx_bnrv4_positionit
 {
 	@if $fix-mqs {
@@ -43,7 +45,6 @@
 	> span,
 	> label[for],
 	> a {
-		cursor: pointer;
 		position: relative;
 		padding-#{$side}: 10px;
 		margin-#{$side}: 10px;
