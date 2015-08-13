@@ -11,7 +11,7 @@ var mergeStream = require("merge-stream");
 var argv = require('yargs').argv;
 
 
-gulp.task('build-html', ['init-repo'], function()
+gulp.task('build-html', ['init-repo', 'download-test-configs'], function()
 {
 	if (argv.t != "local")
 		throw "Builds can only be performed locally"
@@ -32,6 +32,8 @@ gulp.task('build-html', ['init-repo'], function()
 				var files = fs.readdirSync("./templates/mock_pages/");
 				files = xrxhelpers.processMockPageFileList(files, '.' + locale);
 				templateData.files = files;
+
+				templateData.imagePath = "../images/";
 
 				merged.add(gulp.src(['./templates/mock_pages/*.mustache'])
 					.pipe(mustache(templateData))
