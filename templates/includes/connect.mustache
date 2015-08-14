@@ -1,0 +1,53 @@
+<div class="xrx_links_social_network">
+	<a href="#"><img alt="" src="{{imagePath}}icon_fb.png"></a>
+	<a href="#"><img alt="" src="{{imagePath}}icon_tw.png"></a>
+	<a href="#"><img alt="" src="{{imagePath}}icon_ln.png"></a>
+	<a href="#"><img alt="" src="{{imagePath}}icon_yt.png"></a>
+	<a href="#"><img alt="" src="{{imagePath}}icon_go.png"></a>
+</div>
+<div class="xrx_social_feed" data-handles="tw:XeroxCorp,tw:ServicesatXerox,tw:XeroxHealthcare,tw:XeroxTransportation,tw:XeroxProduction,li:Xerox">
+</div>
+
+{{=<% %>=}}
+<script id="feed-tmpl-js" type="text/x-jsrender">
+
+    {{if twitter}}
+	    <div class="feed-tweet" data-index="{{:index}}">
+	        <div class="icon"><span class="icon-twitter"></span></div>
+	        <div class="text-side">
+		        <p class="account">
+		            <a href="{{:account_link}}" target="_blank">{{:account_name}} {{:account}}</a> {{:tweetLink}}
+		        </p>
+		        <p class="tweet-text">{{:title_twitter}}</p>
+		        <div class="twitter-actions">{{:reply}} {{:retweet}} {{:favorite}}</div>
+	        </div>
+	    </div>
+    {{/if}}
+
+    {{if linkedin}}
+        <div class="feed-linkedin">
+            <div class="icon"><span class="icon-linkedin2"></span></div>
+            <div class="text-side">
+                <a href="{{:account_link}}" target="_blank"><p class="account">{{:account}}</p></a>
+                <a href="{{:link}}" target="_blank"><p class="title">{{:title}}</p></a>
+
+                <p class="li-info">{{:LItimeago}}</p>
+            </div>
+        </div>
+
+    {{/if}}
+    {{if facebook}}
+        <div class="feed-facebook">
+            <div class="icon"><span class="icon-facebook-official"></span></div>
+            <div class="text-side">
+                <a href="{{:account_link}}" class="account" target="_blank">{{:account}}</a>
+                <a href="{{:postLink}}" target="_blank">
+                    <span class="title">{{:title}}</span>
+                </a>
+                <p class="updated">{{:LItimeago}}</p>
+            </div>
+        </div>
+    {{/if}}
+
+</script>
+<%={{ }}=%>

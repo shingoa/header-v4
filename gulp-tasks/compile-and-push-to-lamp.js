@@ -9,7 +9,7 @@ var mergeStream = require("merge-stream");
 var xrxhelpers = require('./_helpers.js');
 var argv = require('yargs').argv;
 
-gulp.task('compile-push-to-lamp', ['clean', 'compile-zip'], function()
+gulp.task('compile-and-push-to-lamp', ['clean', 'compile-zip'], function()
 {
 	var merged = mergeStream();
 
@@ -20,6 +20,7 @@ gulp.task('compile-push-to-lamp', ['clean', 'compile-zip'], function()
 	}
 	else if (argv.t == "test") {
 		targets.push("http://wvlnxas06.opbu.xerox.com/perl-bin/receive_versioned_banner.pl");
+		targets.push("http://wvlnxas07.opbu.xerox.com/perl-bin/receive_versioned_banner.pl");
 	}
 	//else if (argv.t == "prod") {
 
