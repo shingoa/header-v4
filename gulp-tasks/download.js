@@ -7,6 +7,9 @@ var source = require('vinyl-source-stream');
 var mergeStream = require("merge-stream");
 var xrxhelpers = require('./_helpers.js');
 var argv = require('yargs').argv;
+var iconv  = require('iconv-lite');
+
+iconv.extendNodeEncodings();
 
 gulp.task('download-locales', ['init-repo', 'clean'], function()
 {
@@ -32,7 +35,13 @@ gulp.task('download-configs', ['init-repo', 'clean', 'download-locales'], functi
 			var localeCodeShort = locale['locale-short'];
 			var savePath = './data/' + argv.t + '/config.' + localeCodeShort + '.json';
 
-			merged.add(request(server + "assets/json/xrx_bnr_json/v4_header_raw." + localeCodeShort + ".json")
+			var requestOptions  = {
+				encoding: null,
+				method: "GET",
+				uri: server + "assets/json/xrx_bnr_json/v4_header_raw." + localeCodeShort + ".json"
+			};
+
+			merged.add(request(requestOptions)
 				.pipe(source('config.' + localeCodeShort + '.json'))
 				.pipe(gulp.dest('./data/' + argv.t)));
 
@@ -76,7 +85,13 @@ gulp.task('download-test-configs', ['init-repo'], function()
 			!differenceMinutes ||
 			differenceMinutes > 240)
 		{
-			merged.add(request(server + "assets/json/xrx_bnr_json/v4_header_raw." + locale + ".json")
+			var requestOptions  = {
+				encoding: null,
+				method: "GET",
+				uri: server + "assets/json/xrx_bnr_json/v4_header_raw." + locale + ".json"
+			};
+
+			merged.add(request(requestOptions)
 				.pipe(source('config.' + locale + '.json'))
 				.pipe(gulp.dest('./data/' + argv.t)));
 
