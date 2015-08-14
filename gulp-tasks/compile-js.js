@@ -7,7 +7,7 @@ var uglify = require('gulp-uglify');
 var xrxhelpers = require('./_helpers.js');
 var include = require("gulp-include");
 
-gulp.task('compile-js', ['init-repo'], function ()
+gulp.task('compile-js', ['init-repo', 'clean'], function ()
 {
 	var version = xrxhelpers.getPackageVersion();
 
