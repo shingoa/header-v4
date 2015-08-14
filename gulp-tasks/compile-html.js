@@ -33,6 +33,8 @@ gulp.task('compile-html', ['init-repo', 'clean', 'download-configs'], function()
 					{
 						templateData = xrxhelpers.processTemplateData(templateData, localeCodeShort);
 
+						templateData.imagePath = "/assets/css/banners/" + version + "/images/";
+
 						merged.add(gulp.src(['./templates/parts/header.mustache', './templates/parts/footer.mustache', './templates/parts/footer.*.mustache'])
 							.pipe(mustache(templateData))
 							.pipe(rename({
