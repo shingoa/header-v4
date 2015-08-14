@@ -27,11 +27,13 @@ gulp.task('build-html', ['init-repo', 'download-test-configs'], function()
 			var templateData = xrxhelpers.openJson('./data/local/config.' + locale + '.json');
 			if (typeof(templateData) !== "undefined" && templateData)
 			{
-				templateData = xrxhelpers.processTemplateData(templateData);
+				templateData = xrxhelpers.processTemplateData(templateData, locale);
 
 				var files = fs.readdirSync("./templates/mock_pages/");
 				files = xrxhelpers.processMockPageFileList(files, '.' + locale);
 				templateData.files = files;
+
+				templateData.imagePath = "../images/";
 
 				merged.add(gulp.src(['./templates/mock_pages/*.mustache'])
 					.pipe(mustache(templateData))

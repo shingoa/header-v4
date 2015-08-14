@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @mixin xrx_bnrv4_positionit
 {
 	@if $fix-mqs {
@@ -35,14 +37,18 @@
 
 @mixin xrx_bnrv4_list_dividers($side: right)
 {
-	> span,
 	> label[for],
 	> a {
 		cursor: pointer;
-		text-decoration: none;
+	}
+
+	> span,
+	> label[for],
+	> a {
 		position: relative;
 		padding-#{$side}: 10px;
 		margin-#{$side}: 10px;
+		margin-bottom: 0;
 		user-select: none;
 		-o-user-select:none;
 		-moz-user-select: none;
@@ -58,6 +64,7 @@
 			#{$side}: 0;
 			width: 1px;
 			background-color: #dbdbdb;
+			border: none !important;
 		}
 
 		&.xrx_bnrv4_header_no_divider

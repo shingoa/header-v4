@@ -1,0 +1,127 @@
+#xrx_bnrv4_header
+{
+	.xrx_bnrv4_header_search_btn {
+		display: block;
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 35px;
+		right: 60px;
+		cursor: pointer;
+
+		&:hover svg {
+			#XMLID_1_, #XMLID_3_ {
+				stroke: $red !important;
+			}
+		}
+
+		@include respond-min($break_tablet)
+		{
+			display: none;
+		}
+	}
+
+	#xrx_bnrv4_header_searchchk:checked ~ #xrx_bnrv4_header_floater
+	{
+		#xrx_bnrv4_menu_search_btn {
+			display: none;
+		}
+
+		@include respond-max($break_tablet)
+		{
+			 #xrx_bnrv4_header_search {
+				left: 0;
+			}
+		}
+	}
+
+	#xrx_bnrv4_header_search
+	{
+		padding: 30px 20px;
+		background-color: #ebebeb;
+		border: 1px solid #dbdbdb;
+		position: relative;
+		top: 116px;
+		left: 100%;
+		border-width: 1px 0;
+
+		@include transition(left .25s ease-in-out);
+
+		.xrx_bnrv4_header_search_submit_icon {
+			z-index: 40;
+			position: absolute;
+			top: 9px;
+			right: 5px;
+			bottom: 8px;
+			width: 30px;
+
+			> svg {
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+
+		form {
+			position: relative;
+		}
+
+		button {
+			z-index: 50;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			width: 40px;
+			border: none;
+			background-color: transparent;
+
+			&:hover {
+				~ .xrx_bnrv4_header_search_submit_icon svg {
+					#XMLID_1_, #XMLID_3_ {
+						stroke: $red !important;
+					}
+				}
+			}
+		}
+
+		input {
+			width: 100%;
+			padding: 8px 10px;
+			box-sizing: border-box;
+			font-weight: lighter;
+			color: #737373;
+			font-size: 18px;
+		}
+
+		@include respond-min($break_tablet)
+		{
+			display: block;
+			position: absolute;
+			padding: 0;
+			background-color: none;
+			border: none;
+
+			left: 200px;
+			right: 300px;
+			top: 20px;
+
+			input {
+				border: none;
+				border: 1px solid #ebebeb;
+				outline: none;
+
+				&:focus,
+				&:hover {
+					border-color: $red;
+				}
+			}
+		}
+
+		@include respond-min($break_desktop)
+		{
+			top: 26px;
+			left: 262px;
+			right: 368px;
+		}
+	}
+}

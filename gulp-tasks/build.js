@@ -2,6 +2,6 @@
 
 var gulp = require('gulp');
 
-gulp.task('build', ['init-repo', 'build-html', 'build-sass', 'build-images'], function() {
-
+gulp.task('build', ['init-repo', 'clean'], function() {
+	return gulp.start('build-html', 'build-sass', 'build-images', 'build-js');
 });

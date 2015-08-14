@@ -1,0 +1,123 @@
+@import "../vars";
+@import "_responsive_base";
+
+//special variables from drupal:
+$xerox-c1: #c1c1c1 !default;
+$xerox-red: $red;
+
+.xrx_links_social_network
+{
+	> a {
+		margin-right: 15px;
+
+		> img {
+			width: 32px;
+		}
+	}
+}
+
+.social-feed-red {
+	padding: 0 0 10px;
+
+	.loading-image {
+		max-width: 64px;
+		width: 100%;
+		margin: 30px auto 0;
+	}
+
+	.feed {
+
+		.feed-tweet, .feed-linkedin, .feed-facebook {
+			border-top: 1px solid #c1c1c1;
+			padding: 15px 0 15px;
+			.icon {
+				width: 30px;
+				float: left;
+				display: block;
+				span {
+					font-size: 30px;
+					color: #c1c1c1;
+				}
+			}
+			.text-side {
+				margin-left: 45px;
+				font-weight: lighter;
+				font-size: 15px;
+
+				@include respond-min($break_tablet)
+				{
+					font-size: 14px;
+				}
+			}
+			p {
+				margin-bottom: 0;
+			}
+		}
+		.feed-linkedin {
+			&:hover {
+				text-decoration: none;
+			}
+			a {
+				color: $xerox-red;
+			}
+			p.li-info {
+				color: #333;
+				span {
+					padding: 0 7px;
+				}
+			}
+		}
+		.feed-tweet {
+			padding-bottom: 0;
+			p {
+				color: #333;
+				margin-bottom: 0;
+				a {
+					color: $xerox-red;
+				}
+				&.account {
+					a {
+						&:hover {
+							span {
+								text-decoration: none;
+							}
+						}
+
+					}
+				}
+			}
+			.twitter-actions {
+				margin-top: 10px;
+				margin-bottom: 10px;
+				a {
+					background-image:  url('../images/twitter-actions.png');
+					display: inline-block;
+					width: 16px;
+					height: 16px;
+					text-indent: -99999px;
+					margin-right: 40px;
+					&.retweet {
+						background-position: -81px 0;
+						width: 17px;
+					}
+					&.favorite {
+						margin-right: 0;
+						background-position: -32px 0;
+					}
+				}
+			}
+		}
+		.feed-facebook {
+			.text-side {
+				a {
+					display: block;
+					color: $xerox-red;
+					.updated {
+						display: block;
+					}
+				}
+			}
+		}
+
+	}
+}

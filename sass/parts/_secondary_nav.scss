@@ -14,9 +14,9 @@
 	@include respond-max($break_desktop)
 	{
 		#xrx_bnrv4_header_country_selector {
-			background-image: url("../images/maplocator.svg");
+			background-image: url("images/maplocator.svg");
 			background-repeat: no-repeat;
-			background-size: auto 90%;
+			background-size: auto 70%;
 			background-position: right 20px center;
 			padding-right: 90px;
 			height: 40px;
@@ -30,10 +30,9 @@
 	@include respond-min($break_desktop)
 	{
 		float: right;
-		line-height: 20px;
 
 		#xrx_bnrv4_header_country_selector > a {
-			background-image: url("../images/maplocator.svg");
+			background-image: url("images/maplocator.svg");
 			background-repeat: no-repeat;
 			padding-left: 60px;
 			background-size: auto 50%;
@@ -50,6 +49,7 @@
 				padding-top: 16px;
 				padding-bottom: 17px;
 				font-weight: lighter;
+				line-height: 20px;
 
 				&::before {
 					top: 35%;

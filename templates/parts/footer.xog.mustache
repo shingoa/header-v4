@@ -1,0 +1,71 @@
+<div id="xrx_bnrv4_footer">
+	{{#footer.lobFooter}}
+		<div id="xrx_bnrv4_lobfooter" class="xrx_bnrv4_footer_position">
+			<div class="xrx_bnrv4_table">
+				<div class="xrx_bnrv4_row">
+					<div class="xrx_bnrv4_column">
+						<div class="xrx_bnrv4_lobfooter_title">{{trans.usefulLinks}}</div>
+
+						<div class="xrx_bnrv4_table">
+							<div class="xrx_bnrv4_row">
+								<div class="xrx_bnrv4_column">
+									{{#xogSales}}
+										{{> column_header}}
+										{{> list}}
+									{{/xogSales}}
+									{{#xogPurchase}}
+										{{> column_header}}
+										{{> list}}
+									{{/xogPurchase}}
+								</div>
+								<div class="xrx_bnrv4_column">
+									{{#xogOfficeEquipment}}
+										{{> column_header}}
+										{{> list}}
+									{{/xogOfficeEquipment}}
+									{{#xogOwners}}
+										{{> column_header}}
+										{{> list}}
+									{{/xogOwners}}
+								</div>
+								<div class="xrx_bnrv4_column">
+									{{#helpfulResources}}
+										{{> column_header}}
+										{{> list}}
+									{{/helpfulResources}}
+								</div>
+								<div class="xrx_bnrv4_column">
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="xrx_bnrv4_column">
+						<div class="xrx_bnrv4_lobfooter_title">{{trans.connect}}</div>
+
+						{{> ../includes/connect}}
+					</div>
+				</div>
+			</div>
+		</div>
+	{{/footer.lobFooter}}
+
+	<div id="xrx_bnrv4_footer_main">
+		<div class="xrx_bnrv4_footer_position">
+			<a class="xrx_bnrv4_logo" name="&lid=ftr-logo-home" href="{{footer.trans.logoURL}}" title="{{footer.trans.logoTitle}}"></a>
+
+			<ul id="xrx_bnr_v3_ftr_links">
+				{{#footer.footerLinks.links}}
+					{{> ../includes/mustachePartials/list_item}}
+				{{/footer.footerLinks.links}}
+			</ul>
+
+			<p class="xrx_bnr_v3_ftr_copyright">
+				{{{footer.copyrightStatement}}}
+			</p>
+		</div>
+	</div>
+</div>
+
+<script defer src="js/xrx_bnrv4.js"></script>

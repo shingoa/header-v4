@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@import "vars";
+
+@import "../modules/_responsive_base";
+
+@import "../modules/social-feed";
+
+#xrx_bnrv4_lobfooter
+{
+	margin-bottom: 20px;
+	font-size: 16px;
+	font-weight: lighter;
+
+	.xrx_bnrv4_lobfooter_title {
+		font-size: 24px;
+		margin-bottom: 10px;
+		font-weight: lighter;
+	}
+
+	.xrx_bnrv4_column {
+		> input {
+			display: none;
+		}
+
+		.xrx_bnrv4_column_header {
+			font-weight: bold;
+			padding: 8px 0;
+
+			&,
+			> span {
+				font-weight: bold;
+				font-size: 16px;
+			}
+
+			> label {
+				display: none;
+			}
+		}
+
+		> ul {
+			@include xrx_bnrv4_resetlist;
+
+			> li {
+				padding: 8px 0;
+
+				&,
+				> a,
+				> span {
+					font-weight: lighter;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
