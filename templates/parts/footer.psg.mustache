@@ -1,4 +1,55 @@
 <div id="xrx_bnrv4_footer">
+	{{#footer.lobFooter}}
+		<div id="xrx_bnrv4_lobfooter" class="xrx_bnrv4_footer_position">
+			<div class="xrx_bnrv4_table">
+				<div class="xrx_bnrv4_row">
+					<div class="xrx_bnrv4_column">
+						<div class="xrx_bnrv4_lobfooter_title">{{trans.usefulLinks}}</div>
+
+						<div class="xrx_bnrv4_table">
+							<div class="xrx_bnrv4_row">
+								<div class="xrx_bnrv4_column">
+									{{#psgSales}}
+										{{> column_header}}
+										{{> list}}
+									{{/psgSales}}
+								</div>
+								<div class="xrx_bnrv4_column">
+									{{#psgProducts}}
+										{{> column_header}}
+										{{> list}}
+									{{/psgProducts}}
+									{{#psgOwners}}
+										{{> column_header}}
+										{{> list}}
+									{{/psgOwners}}
+								</div>
+								<div class="xrx_bnrv4_column">
+									{{#psgHelpfulResources}}
+										{{> column_header}}
+										{{> list}}
+									{{/psgHelpfulResources}}
+								</div>
+								<div class="xrx_bnrv4_column">
+									{{#psgApplications}}
+										{{> column_header}}
+										{{> list}}
+									{{/psgApplications}}
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="xrx_bnrv4_column">
+						<div class="xrx_bnrv4_lobfooter_title">{{trans.connect}}</div>
+
+						{{> ../includes/connect}}
+					</div>
+				</div>
+			</div>
+		</div>
+	{{/footer.lobFooter}}
+
 	{{> mustachePartials/footer_main }}
 </div>
 
