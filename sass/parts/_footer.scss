@@ -6,7 +6,6 @@
 
 #xrx_bnrv4_footer {
 	z-index: 100;
-	padding: 15px;
 
 	#xrx_bnrv4_footer_main {
 		background-color: #f9f9f9;
@@ -27,7 +26,7 @@
 	{
 		@include xrx_bnrv4_inlinelist;
 
-		font-size: 15px;
+		font-size: 14px;
 		margin-bottom: 15px;
 
 		> li {
@@ -53,5 +52,9 @@
 				display: none;
 			}
 		}
+	}
+
+	#xrx_bnr_v3_ftr_copyright {
+		font-size: 12px;
 	}
 }
