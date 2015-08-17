@@ -1,6 +1,6 @@
 {
   "name": "xerox.com-banners",
-  "version": "4.2.20",
+  "version": "4.3.1",
   "description": "Xerox.com banners",
   "main": "gulpfile.js",
   "dependencies": {},
@@ -18,6 +18,7 @@
     "gulp-uglify": "^1.2.0",
     "gulp-watch": "^4.2.4",
     "gulp-zip": "^3.0.2",
+    "iconv-lite": "^0.4.11",
     "merge-stream": "^0.1.8",
     "request": "^2.60.0",
     "require-dir": "^0.3.0",
