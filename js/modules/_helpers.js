@@ -1,5 +1,3 @@
-"use strict";
-
 (function(window)
 {
 	if (typeof(window.xrx) == "undefined") {
@@ -47,6 +45,21 @@
 				var script = document.createElement('script');
 				script.src = config.url;
 				document.getElementsByTagName('head')[0].appendChild(script);
+			}
+		};
+
+		self.attachListener = function(elm, event, callback)
+		{
+			if (elm)
+			{
+				if (elm.addEventListener)
+				{
+					elm.addEventListener(event, callback, false);
+				}
+				else if (elm.attachEvent)
+				{
+					elm.attachEvent("on" + event, callback);
+				}
 			}
 		};
 	}
