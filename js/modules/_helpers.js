@@ -1,4 +1,4 @@
-(function(window)
+(function(window, document)
 {
 	if (typeof(window.xrx) == "undefined") {
 		window.xrx = {};
@@ -62,6 +62,11 @@
 				}
 			}
 		};
+
+		self.scrollY = function()
+		{
+			return (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+		};
 	}
 
-})(window);
+})(window, document);
