@@ -47,8 +47,10 @@
 		position: fixed;
 		width: 100%;
 		height: 116px;
-		background-color: rgba(255, 255, 255, .92);
+		background-color: rgba(255, 255, 255, .96);
 		z-index: 1200;
+		box-shadow: 0px 4px 5px 0px rgba(102,102,102,0);
+		@include transition(box-shadow .1s ease-in-out);
 
 		@include respond-min($break_tablet)
 		{
@@ -58,6 +60,10 @@
 		> div {
 			@include xrx_bnrv4_positionit;
 			position: relative;
+		}
+
+		&.xrx_bnrv4_scrolling {
+			box-shadow: 0px 4px 5px 0px rgba(102,102,102,0.5);
 		}
 	}
 
