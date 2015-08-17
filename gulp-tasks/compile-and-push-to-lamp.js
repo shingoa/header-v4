@@ -22,9 +22,9 @@ gulp.task('compile-and-push-to-lamp', ['clean', 'compile-zip'], function()
 		targets.push("http://wvlnxas06.opbu.xerox.com/perl-bin/receive_versioned_banner.pl");
 		targets.push("http://wvlnxas07.opbu.xerox.com/perl-bin/receive_versioned_banner.pl");
 	}
-	//else if (argv.t == "prod") {
-
-	//}
+	else if (argv.t == "prod") {
+		targets.push("http://w3adminp.opbu.xerox.com/perl-bin/receive_versioned_banner.pl");
+	}
 	else {
 		console.log("Cannot push to " + argv.t + " tier");
 	}
