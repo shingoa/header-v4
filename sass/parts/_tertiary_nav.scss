@@ -42,7 +42,7 @@
 	@include respond-min($break_tablet)
 	{
 		display: block;
-		top: 30px;
+		top: 29px;
 		right: 80px;
 		z-index: 500;
 		min-width: 200px;
@@ -134,6 +134,5 @@
 	@include respond-min($break_desktop)
 	{
 		right: 80px;
-		top: 35px;
 	}
 }

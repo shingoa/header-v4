@@ -31,14 +31,13 @@
 		{
 			width: 142px;
 			height: 38px;
-			top: 19px;
+			top: 21px;
 			left: 20px;
 			right: auto;
 			background-position: left center;
 		}
 		@include respond-min($break_desktop)
 		{
-			top: 26px;
 			left: 30px;
 		}
 	}
@@ -91,12 +90,11 @@
 
 		@include respond-min($break_tablet)
 		{
-			top: 27px;
+			top: 29px;
 			right: 20px;
 		}
 		@include respond-min($break_desktop)
 		{
-			top: 35px;
 			right: 30px;
 		}
 	}
