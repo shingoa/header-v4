@@ -9,6 +9,7 @@ var requireDir = require('require-dir');
 var mergeStream = require("merge-stream");
 var xrxhelpers = require('./_helpers.js');
 var argv = require('yargs').argv;
+var gutil = require('gulp-util');
 
 gulp.task('compile-html', ['init-repo', 'clean', 'download-configs'], function()
 {
@@ -46,7 +47,7 @@ gulp.task('compile-html', ['init-repo', 'clean', 'download-configs'], function()
 				}
 				catch (err)
 				{
-					console.log("Error: " + err);
+					gutil.log("Error: " + err);
 				}
 			}
 		});
@@ -60,7 +61,7 @@ gulp.task('compile-html', ['init-repo', 'clean', 'download-configs'], function()
 	}
 	catch (err)
 	{
-		console.log("Compile HTML Error: " + err);
+		gutil.log("Compile HTML Error: " + err);
 	}
 
 	return merged;

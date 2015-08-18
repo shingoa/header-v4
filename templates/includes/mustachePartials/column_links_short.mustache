@@ -1,59 +1,11 @@
 <div class="xrx_bnrv4_column">
 	{{> column_header}}
 
-	<div class="xrx_bnrv4_column_links">
-		<label class="xrx_bnrv4_header_flyout_header_back" for="xrx_bnrv4_column_{{id}}">{{label}}</label>
+	{{#links.length}}
+		<div class="xrx_bnrv4_column_links">
+			<label class="xrx_bnrv4_header_flyout_header_back" for="xrx_bnrv4_column_{{id}}">{{label}}</label>
 
-		{{#links.6}}
-			<div class="xrx_bnrv4_table">
-				<div class="xrx_bnrv4_row">
-					<div class="xrx_bnrv4_column">
-						<ul>
-							{{#links.0}}
-								{{> list_item}}
-							{{/links.0}}
-							{{#links.1}}
-								{{> list_item}}
-							{{/links.1}}
-							{{#links.2}}
-								{{> list_item}}
-							{{/links.2}}
-							{{#links.3}}
-								{{> list_item}}
-							{{/links.3}}
-						</ul>
-					</div>
-					<div class="xrx_bnrv4_column">
-						<ul>
-							{{#links.4}}
-								{{> list_item}}
-							{{/links.4}}
-							{{#links.5}}
-								{{> list_item}}
-							{{/links.5}}
-							{{#links.6}}
-								{{> list_item}}
-							{{/links.6}}
-							{{#links.7}}
-								{{> list_item}}
-							{{/links.7}}
-						</ul>
-					</div>
-					<div class="xrx_bnrv4_column">
-						<ul>
-							{{#links.9}}
-								{{> list_item}}
-							{{/links.9}}
-							{{#links.10}}
-								{{> list_item}}
-							{{/links.10}}
-						</ul>
-					</div>
-				</div>
-			</div>
-		{{/links.6}}
-		{{^links.6}}
-			{{#links.4}}
+			{{#links.6}}
 				<div class="xrx_bnrv4_table">
 					<div class="xrx_bnrv4_row">
 						<div class="xrx_bnrv4_column">
@@ -67,25 +19,87 @@
 								{{#links.2}}
 									{{> list_item}}
 								{{/links.2}}
+								{{#links.3}}
+									{{> list_item}}
+								{{/links.3}}
 							</ul>
 						</div>
 						<div class="xrx_bnrv4_column">
 							<ul>
-								{{#links.3}}
-									{{> list_item}}
-								{{/links.3}}
 								{{#links.4}}
 									{{> list_item}}
 								{{/links.4}}
+								{{#links.5}}
+									{{> list_item}}
+								{{/links.5}}
+								{{#links.6}}
+									{{> list_item}}
+								{{/links.6}}
+								{{#links.7}}
+									{{> list_item}}
+								{{/links.7}}
+							</ul>
+						</div>
+						<div class="xrx_bnrv4_column">
+							<ul>
+								{{#links.9}}
+									{{> list_item}}
+								{{/links.9}}
+								{{#links.10}}
+									{{> list_item}}
+								{{/links.10}}
+								{{#links.11}}
+									{{> list_item}}
+								{{/links.11}}
+								{{#links.12}}
+									{{> list_item}}
+								{{/links.12}}
 							</ul>
 						</div>
 					</div>
 				</div>
+			{{/links.6}}
+			{{^links.6}}
+				{{#links.4}}
+					<div class="xrx_bnrv4_table">
+						<div class="xrx_bnrv4_row">
+							<div class="xrx_bnrv4_column">
+								<ul>
+									{{#links.0}}
+										{{> list_item}}
+									{{/links.0}}
+									{{#links.1}}
+										{{> list_item}}
+									{{/links.1}}
+									{{#links.2}}
+										{{> list_item}}
+									{{/links.2}}
+								</ul>
+							</div>
+							<div class="xrx_bnrv4_column">
+								<ul>
+									{{#links.3}}
+										{{> list_item}}
+									{{/links.3}}
+									{{#links.4}}
+										{{> list_item}}
+									{{/links.4}}
+									{{#links.5}}
+										{{> list_item}}
+									{{/links.5}}
+								</ul>
+							</div>
+						</div>
+					</div>
 
-			{{/links.4}}
-			{{^links.4}}
-				{{> list}}
-			{{/links.4}}
-		{{/links.6}}
-	</div>
+				{{/links.4}}
+				{{^links.4}}
+					{{> list}}
+				{{/links.4}}
+			{{/links.6}}
+		</div>
+	{{/links.length}}
+	{{^links.length}}
+		{{{ content }}}
+	{{/links.length}}
 </div>
