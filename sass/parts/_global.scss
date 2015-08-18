@@ -86,3 +86,18 @@
 #xrx_bnrv4_content {
 	@include xrx_bnrv4_positionit;
 }
+
+.no-svg
+{
+	#xrx_bnrv4_header {
+		.xrx_bnrv4_logo {
+			background-image: url("images/xerox_logo_big.png");
+		}
+	}
+
+	#xrx_bnrv4_footer {
+		.xrx_bnrv4_logo {
+			background-image: url("images/xerox_logo_small.png");
+		}
+	}
+}

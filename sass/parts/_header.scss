@@ -278,3 +278,22 @@
 		}
 	}
 }
+
+.no-boxshadow #xrx_bnrv4_header
+{
+	#xrx_bnrv4_header_floater.xrx_bnrv4_scrolling {
+		box-shadow: none;
+		border-bottom: 1px solid #ebebeb;
+	}
+
+	#xrx_bnrv4_header_menuchk:checked ~ #xrx_bnrv4_header_floater {
+		border-bottom: none;
+	}
+
+	@include respond-max($break_tablet)
+	{
+		#xrx_bnrv4_header_searchchk:checked ~ #xrx_bnrv4_header_floater {
+			border-bottom: none;
+		}
+	}
+}
