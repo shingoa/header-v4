@@ -1,10 +1,10 @@
 'use strict';
 
 var fs = require('fs');
-
+var gutil = require('gulp-util');
 var helpers = {};
 
-helpers.testLocales = ["ptbr", "engb", "frfr", "heil", "enus", "sample", "frmc", "frca", "enfo", "enis"];
+helpers.testLocales = ["sample"];
 
 helpers.getXOGLang = function(locale)
 {
@@ -130,9 +130,7 @@ helpers.openJson = function(path, shouldThrow)
 	}
 	catch (err)
 	{
-		//if (shouldThrow) {
-			console.log(shouldThrow);
-		//}
+		gutil.log("Unable to open path: ", err.path);
 	}
 }
 
