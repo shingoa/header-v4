@@ -36,6 +36,17 @@
 
 			htmlElm.className = htmlElm.className + " " + boxShadow;
 		}
+
+		if (htmlElm.className.indexOf("transform") == -1)
+		{
+			var transform = "no-transform";
+			if (!!(0 + document.createElement('div').style['transform']))
+			{
+				transform = "transform";
+			}
+
+			htmlElm.className = htmlElm.className + " " + transform;
+		}
 	};
 
 	self.setupScrollHandler = function()
