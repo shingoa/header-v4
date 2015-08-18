@@ -55,7 +55,33 @@ gulp.task('compile-and-push-to-lamp', ['clean', 'compile-zip'], function()
 			};
 
 			merged.add(request.post(options, function(err, resp, body) {
-				gutil.log("Uploaded");
+
+				if (err)
+				{
+					gutil.log("ERROR: ", err);
+					throw err;
+				}
+				else
+				{
+					if (resp.statusCode == 201)
+					{
+						gutil.log("Uploaded complete. Ready to test on ", argv.t);
+					}
+					else if (resp.statusCode == 202)
+					{
+						gutil.log("Uploaded complete. Awaiting processing and replication on ", argv.t);
+					}
+					else if (resp.statusCode == 400)
+					{
+						gutil.log("Uploaded error on ", argv.t);
+						gutil.log(body);
+						throw body;
+					}
+					else
+					{
+						gutil.log("Uploaded complete. Unknown status on ", argv.t);
+					}
+				}
 			}));
 		});
 	}

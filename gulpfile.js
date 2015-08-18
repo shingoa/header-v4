@@ -2,6 +2,8 @@
 
 var gulp = require('gulp');
 var requireDir = require('require-dir');
+var xrxhelpers = require('./gulp-tasks/_helpers.js');
+var gutil = require('gulp-util');
 
 var argv = require('yargs')
     .default({ t : 'local' })
@@ -12,4 +14,5 @@ var argv = require('yargs')
 
 requireDir('./gulp-tasks');
 
-console.log("Running tier: " + argv.tier);
+gutil.log("Running tier: ", argv.tier);
+gutil.log("Building version: ", xrxhelpers.getPackageVersion());
