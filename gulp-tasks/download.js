@@ -8,6 +8,7 @@ var mergeStream = require("merge-stream");
 var xrxhelpers = require('./_helpers.js');
 var argv = require('yargs').argv;
 var iconv  = require('iconv-lite');
+var gutil = require('gulp-util');
 
 iconv.extendNodeEncodings();
 

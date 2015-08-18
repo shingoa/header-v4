@@ -8,6 +8,7 @@ var request = require('request');
 var mergeStream = require("merge-stream");
 var xrxhelpers = require('./_helpers.js');
 var argv = require('yargs').argv;
+var gutil = require('gulp-util');
 
 gulp.task('compile-and-push-to-lamp', ['clean', 'compile-zip'], function()
 {
@@ -26,7 +27,7 @@ gulp.task('compile-and-push-to-lamp', ['clean', 'compile-zip'], function()
 		targets.push("http://w3adminp.opbu.xerox.com/perl-bin/receive_versioned_banner.pl");
 	}
 	else {
-		console.log("Cannot push to " + argv.t + " tier");
+		gutil.log("Cannot push to " + argv.t + " tier");
 	}
 
 	var releaseFile = fs.readFileSync('./dist/' + argv.t + '.zip');
@@ -54,7 +55,7 @@ gulp.task('compile-and-push-to-lamp', ['clean', 'compile-zip'], function()
 			};
 
 			merged.add(request.post(options, function(err, resp, body) {
-				console.log("Uploaded");
+				gutil.log("Uploaded");
 			}));
 		});
 	}
