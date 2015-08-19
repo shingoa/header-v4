@@ -33,7 +33,7 @@
 			position: relative;
 			padding: 0 15px;
 
-			&::after {
+			&:after {
 				content: "";
 				display: block;
 				position: absolute;
@@ -48,7 +48,7 @@
 				padding-left: 0;
 			}
 
-			&:last-child::after {
+			&:last-child:after {
 				display: none;
 			}
 		}
