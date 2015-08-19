@@ -110,12 +110,12 @@ if (typeof(jQuery) !== "undefined" && jQuery)
 				xrx_bnr_v4_intershop_header_substitution();
 				jQuery("ul#xrx_bnr_v3_ftr_links").html("<li class=\"xrx_bnr_first\"><a href=\"http://www.xerox.com/about-xerox/privacy-policy/enus.html\">Privacy</a></li><li><a href=\"http://www.xerox.com/about-xerox/website-terms-of-use/enus.html\">Legal</a></li><li><a href=\"http://www.xerox.com/about-xerox/privacy-policy/enus.html#adchoices\">Privacy Choices</a></li>");
 			} else {
-				alert('test failed');
+				//alert('test failed');
 			}
 		}
 		else
 		{
-			alert('function not found');
+			//alert('function not found');
 		}
 	})(window, document, jQuery);
 }
