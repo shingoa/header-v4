@@ -1,16 +1,16 @@
 'use strict';
 
 var fs = require('fs');
-
+var gutil = require('gulp-util');
 var helpers = {};
 
-helpers.testLocales = ["ptbr", "engb", "frfr", "heil", "enus", "sample", "frmc", "frca"];
+helpers.testLocales = ["ptbr", "engb", "frfr", "heil", "enus", "sample", "frmc", "frca", "enfo", "enis"];
 
 helpers.getXOGLang = function(locale)
 {
 	if (typeof(locale) !== "undefined" && locale)
 	{
-		if (typeof(locale) == "object" && typeof(locale.locale) != "undefined")
+		if (typeof(locale) == "object" && typeof(locale.locale) != "undefined" && locale.locale)
 		{
 			locale = locale.locale;
 		}
@@ -30,7 +30,6 @@ helpers.processTemplateData = function(data, locale)
 {
 	if(typeof(data) !== "undefined" && data)
 	{
-
 		data.XOGLang = helpers.getXOGLang(locale);
 
 		helpers.recurse(data, function(obj, p)
@@ -131,9 +130,7 @@ helpers.openJson = function(path, shouldThrow)
 	}
 	catch (err)
 	{
-		//if (shouldThrow) {
-			console.log(shouldThrow);
-		//}
+		gutil.log("Unable to open path: ", err.path);
 	}
 }
 

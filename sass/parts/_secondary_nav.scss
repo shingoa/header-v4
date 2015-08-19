@@ -51,7 +51,7 @@
 				font-weight: lighter;
 				line-height: 20px;
 
-				&::before {
+				&:before {
 					top: 35%;
 					bottom: 35%;
 				}
@@ -68,6 +68,20 @@
 
 			&#hdr-bar-log-out {
 				display: none;
+			}
+		}
+	}
+}
+
+.no-svg #xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary
+{
+	@include respond-min($break_desktop)
+	{
+		#xrx_bnrv4_header_country_selector > a {
+			background-image: url("images/maplocator_off.png");
+
+			&:hover {
+				background-image: url("images/maplocator_on.png");
 			}
 		}
 	}

@@ -2,7 +2,7 @@
 
 var gulp = require('gulp');
 
-gulp.task('watch', ['download-test-configs'], function () {
+gulp.task('watch', ['clean'], function () {
 	gulp.start('build-html', 'build-sass', 'build-images', 'build-js');
 
 	gulp.watch(['./templates/**/*.html', './templates/**/*.mustache', "./data/*.json"], ['build-html']);

@@ -21,7 +21,8 @@
 		}
 	}
 
-	#xrx_bnrv4_header_searchchk:checked ~ #xrx_bnrv4_header_floater
+	#xrx_bnrv4_header_searchchk:checked ~ #xrx_bnrv4_header_floater,
+	#xrx_bnrv4_header_searchchk.checked ~ #xrx_bnrv4_header_floater
 	{
 		#xrx_bnrv4_menu_search_btn {
 			display: none;
@@ -119,9 +120,30 @@
 
 		@include respond-min($break_desktop)
 		{
-			top: 26px;
+			top: 20px;
 			left: 262px;
 			right: 368px;
+		}
+	}
+}
+
+.no-svg #xrx_bnrv4_header #xrx_bnrv4_header_search
+{
+	.xrx_bnrv4_header_search_submit_icon {
+		background-image: url("images/search_off.png");
+		background-position: center center;
+    	background-repeat: no-repeat;
+
+		svg {
+			display: none;
+		}
+	}
+
+	button {
+		&:hover {
+			~ .xrx_bnrv4_header_search_submit_icon {
+				background-image: url("images/search_on.png");
+			}
 		}
 	}
 }

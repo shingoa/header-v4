@@ -26,13 +26,13 @@
 
 		> label[for]
 		{
-			&::after {
+			&:after {
 				@include xrx_bnrv4_down_arrow();
 			}
 		}
 
 		> a {
-			&::after {
+			&:after {
 				@include xrx_bnrv4_right_arrow();
 				color: $red;
 			}
@@ -42,7 +42,7 @@
 	@include respond-min($break_tablet)
 	{
 		display: block;
-		top: 30px;
+		top: 29px;
 		right: 80px;
 		z-index: 500;
 		min-width: 200px;
@@ -63,7 +63,8 @@
 			> input {
 				display: none;
 
-				&:checked {
+				&:checked
+				&.checked {
 					~ .xrx_bnrv4_header_flyout {
 						display: block;
 					}
@@ -116,7 +117,7 @@
 							font-weight: bold;
 							color: #333;
 
-							&::after {
+							&:after {
 								@include xrx_bnrv4_right_arrow();
 								color: $red;
 							}
@@ -134,6 +135,5 @@
 	@include respond-min($break_desktop)
 	{
 		right: 80px;
-		top: 35px;
 	}
 }
