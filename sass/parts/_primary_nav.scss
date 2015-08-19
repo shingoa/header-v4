@@ -39,7 +39,8 @@
 	{
 		&
 		{
-			input:checked ~ .xrx_bnrv4_header_flyout {
+			input:checked ~ .xrx_bnrv4_header_flyout,
+			input.checked ~ .xrx_bnrv4_header_flyout {
 				left: 0;
 			}
 			.xrx_bnrv4_header_flyout
@@ -62,7 +63,8 @@
 
 				.xrx_bnrv4_column {
 
-					input:checked ~ .xrx_bnrv4_column_links {
+					input:checked ~ .xrx_bnrv4_column_links,
+					input.checked ~ .xrx_bnrv4_column_links {
 						left: 0;
 					}
 					.xrx_bnrv4_column_links
@@ -101,7 +103,7 @@
 				cursor: pointer;
 				padding: 10px 20px;
 
-				&::after {
+				&:after {
 					float: right;
 					color: $red;
 
@@ -127,7 +129,7 @@
 			cursor: pointer;
 			padding: 10px 20px;
 
-			&::after {
+			&:after {
 				float: left;
 				color: $red;
 
@@ -164,7 +166,7 @@
 			}
 
 			> a {
-				&::after {
+				&:after {
 					color: $red;
 					@include xrx_bnrv4_right_arrow();
 				}
@@ -198,7 +200,7 @@
 					color: $red;
 				}
 
-				&::after {
+				&:after {
 					color: $red;
 					@include xrx_bnrv4_right_arrow();
 				}
@@ -242,7 +244,7 @@
 				line-height: 20px;
 				font-weight: normal;
 
-				&::before {
+				&:before {
 					top: 35%;
 					bottom: 35%;
 				}

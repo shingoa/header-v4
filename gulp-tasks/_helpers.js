@@ -4,7 +4,7 @@ var fs = require('fs');
 var gutil = require('gulp-util');
 var helpers = {};
 
-helpers.testLocales = ["sample"];
+helpers.testLocales = ["ptbr", "engb", "frfr", "heil", "enus", "sample", "frmc", "frca", "enfo", "enis"];
 
 helpers.getXOGLang = function(locale)
 {

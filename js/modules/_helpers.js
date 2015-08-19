@@ -67,6 +67,26 @@
 		{
 			return (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
 		};
+
+		self.addClass = function(elm, cls)
+		{
+			if (elm && cls)
+			{
+				var re = new RegExp("\s?" + cls + "\s?");
+
+				if (!elm.className || !re.exec(elm.className))
+				{
+					elm.className = elm.className + " " + cls;
+				}
+			}
+		};
+		self.removeClass = function(elm, cls)
+		{
+			if (elm && cls && elm.className)
+			{
+				elm.className = elm.className.replace(cls, "");
+			}
+		};
 	}
 
 })(window, document);

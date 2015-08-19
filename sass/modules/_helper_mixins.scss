@@ -55,7 +55,7 @@
 		-khtml-user-select: none;
 		-webkit-user-select: none;
 
-		&::before {
+		&:before {
 			content: "";
 			display: block;
 			position: absolute;
@@ -105,7 +105,7 @@
 				padding-right: 0;
 				margin-right: 0;
 
-				&::before {
+				&:before {
 					display: none;
 				}
 			}
