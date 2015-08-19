@@ -67,13 +67,15 @@
 		}
 	}
 
-	#xrx_bnrv4_header_menuchk:checked ~ #xrx_bnrv4_header_floater {
+	#xrx_bnrv4_header_menuchk:checked ~ #xrx_bnrv4_header_floater,
+	#xrx_bnrv4_header_menuchk.checked ~ #xrx_bnrv4_header_floater {
 		box-shadow: none;
 	}
 
 	@include respond-max($break_tablet)
 	{
-		#xrx_bnrv4_header_searchchk:checked ~ #xrx_bnrv4_header_floater {
+		#xrx_bnrv4_header_searchchk:checked ~ #xrx_bnrv4_header_floater,
+		#xrx_bnrv4_header_searchchk.checked ~ #xrx_bnrv4_header_floater {
 			box-shadow: none;
 		}
 	}
@@ -171,9 +173,13 @@
 		@include respond-min($break_desktop)
 		{
 			input#xrx_bnrv4_default:checked ~ div #xrx_bnrv4_header_nav_primary li:first-child > label,
+			input#xrx_bnrv4_default.checked ~ div #xrx_bnrv4_header_nav_primary li:first-child > label,
 			#xrx_bnrv4_header_nav_primary > li > input:checked ~ label,
+			#xrx_bnrv4_header_nav_primary > li > input.checked ~ label,
 			#xrx_bnrv4_header_nav_secondary > li > input:checked ~ label,
-			#xrx_bnrv4_header_nav_tertiary > li > input:checked ~ label
+			#xrx_bnrv4_header_nav_secondary > li > input.checked ~ label,
+			#xrx_bnrv4_header_nav_tertiary > li > input:checked ~ label,
+			#xrx_bnrv4_header_nav_tertiary > li > input.checked ~ label
 			{
 				color: $red;
 				cursor: default;
@@ -187,7 +193,7 @@
 					right: -1px;
 				}
 
-				&::after {
+				&:after {
 					content: "";
 					display: block;
 					background-color: #f1f1f1;
@@ -236,7 +242,7 @@
 			}
 		}
 
-		&::after {
+		&:after {
 			content: "";
 			display: block;
 			clear: both;
@@ -244,7 +250,7 @@
 	}
 
 	#xrx_bnrv4_header_menuchk:checked,
-	.xrx_bnrv4_menu_btn.open
+	#xrx_bnrv4_header_menuchk.checked
 	{
 		@include respond-max($break_desktop)
 		{
@@ -287,13 +293,15 @@
 		border-bottom: 1px solid #ebebeb;
 	}
 
-	#xrx_bnrv4_header_menuchk:checked ~ #xrx_bnrv4_header_floater {
+	#xrx_bnrv4_header_menuchk:checked ~ #xrx_bnrv4_header_floater,
+	#xrx_bnrv4_header_menuchk.checked ~ #xrx_bnrv4_header_floater {
 		border-bottom: none;
 	}
 
 	@include respond-max($break_tablet)
 	{
-		#xrx_bnrv4_header_searchchk:checked ~ #xrx_bnrv4_header_floater {
+		#xrx_bnrv4_header_searchchk:checked ~ #xrx_bnrv4_header_floater,
+		#xrx_bnrv4_header_searchchk.checked ~ #xrx_bnrv4_header_floater {
 			border-bottom: none;
 		}
 	}

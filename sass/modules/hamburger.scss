@@ -34,15 +34,15 @@
 		transition: transform .25s ease-in-out, top .25s ease-in-out, left .25s ease-in-out, width .25s ease-in-out;
 		*/
 
-		&:nth-child(1) {
+		&.xrx_bnrv4_n1 {
 			top: 1px;
 		}
-		&:nth-child(2),
-		&:nth-child(3) {
+		&.xrx_bnrv4_n2,
+		&.xrx_bnrv4_n3 {
 			top: 50%;
-			margin-top: -5%;
+			margin-top: -3%;
 		}
-		&:nth-child(4) {
+		&.xrx_bnrv4_n4 {
 			bottom: 0;
 		}
 	}
@@ -53,24 +53,24 @@
 	& ~ #xrx_bnrv4_header_floater .xrx_bnrv4_menu_btn
 	{
 		span {
-			&:nth-child(1) {
+			&.xrx_bnrv4_n1 {
 			  top: 18px;
 			  width: 0%;
 			  left: 50%;
 			}
-			&:nth-child(2) {
+			&.xrx_bnrv4_n2 {
 			  -webkit-transform: rotate(45deg);
 			  -moz-transform: rotate(45deg);
 			  -o-transform: rotate(45deg);
 			  transform: rotate(45deg);
 			}
-			&:nth-child(3) {
+			&.xrx_bnrv4_n3 {
 			  -webkit-transform: rotate(-45deg);
 			  -moz-transform: rotate(-45deg);
 			  -o-transform: rotate(-45deg);
 			  transform: rotate(-45deg);
 			}
-			&:nth-child(4) {
+			&.xrx_bnrv4_n4 {
 			  top: 18px;
 			  width: 0%;
 			  left: 50%;
