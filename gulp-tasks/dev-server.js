@@ -5,7 +5,7 @@ var webserver = require('gulp-webserver');
 
 gulp.task('dev-server', ['watch'], function()
 {
-	gulp.src('./built')
+	gulp.src('./')
 		.pipe(webserver({
 			fallback: 'index.enus.html',
 			open : '/built',
