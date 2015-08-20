@@ -1,7 +1,9 @@
+@charset "UTF-8";
+
+@import "responsive_base";
+@import "helper_mixins";
+
 // SOURCE: http://codepen.io/designcouch/pen/Atyop
-
-@import "../vars";
-
 .xrx_bnrv4_menu_btn {
 	display: block;
 	width: 30px;
@@ -48,42 +50,55 @@
 	}
 }
 
-#xrx_bnrv4_header_menuchk:checked {
-
-	& ~ #xrx_bnrv4_header_floater .xrx_bnrv4_menu_btn
+#xrx_bnrv4_header_menuchk
+{
+	@include checked()
 	{
-		span {
-			&.xrx_bnrv4_n1 {
-			  top: 18px;
-			  width: 0%;
-			  left: 50%;
+		~ #xrx_bnrv4_header_floater .xrx_bnrv4_menu_btn
+		{
+			span {
+				background-color: $red;
 			}
-			&.xrx_bnrv4_n2 {
-			  -webkit-transform: rotate(45deg);
-			  -moz-transform: rotate(45deg);
-			  -o-transform: rotate(45deg);
-			  transform: rotate(45deg);
-			}
-			&.xrx_bnrv4_n3 {
-			  -webkit-transform: rotate(-45deg);
-			  -moz-transform: rotate(-45deg);
-			  -o-transform: rotate(-45deg);
-			  transform: rotate(-45deg);
-			}
-			&.xrx_bnrv4_n4 {
-			  top: 18px;
-			  width: 0%;
-			  left: 50%;
-			}
-		}
 
-		&#xrx_bnrv4_menu_openbtn {
-			position: absolute;
-			top: -100000px;
+			&#xrx_bnrv4_menu_openbtn {
+				position: absolute;
+				top: -100000px;
+			}
 		}
 	}
+}
 
-	~ #xrx_bnrv4_header_nav {
-		display: block;
+.transform
+{
+	#xrx_bnrv4_header_menuchk
+	{
+		@include checked()
+		{
+			~ #xrx_bnrv4_header_floater .xrx_bnrv4_menu_btn span
+			{
+				&.xrx_bnrv4_n1 {
+				  top: 18px;
+				  width: 0%;
+				  left: 50%;
+				}
+				&.xrx_bnrv4_n2 {
+				  -webkit-transform: rotate(45deg);
+				  -moz-transform: rotate(45deg);
+				  -o-transform: rotate(45deg);
+				  transform: rotate(45deg);
+				}
+				&.xrx_bnrv4_n3 {
+				  -webkit-transform: rotate(-45deg);
+				  -moz-transform: rotate(-45deg);
+				  -o-transform: rotate(-45deg);
+				  transform: rotate(-45deg);
+				}
+				&.xrx_bnrv4_n4 {
+				  top: 18px;
+				  width: 0%;
+				  left: 50%;
+				}
+			}
+		}
 	}
 }
