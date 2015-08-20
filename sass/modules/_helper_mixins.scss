@@ -113,23 +113,51 @@
 	}
 }
 
+@mixin has_feature($feature)
+{
+	.#{$feature} &
+	{
+		@content;
+	}
+}
+
+@mixin missing_feature($feature)
+{
+	.no-#{$feature} &
+	{
+		@content;
+	}
+}
+
 @mixin xrx_bnrv4_right_arrow
 {
-	content: "\0000a0❯";
+	content: "\0000a0\276F";
 	font-family: "Arial";
 	font-size: 90%;
 	margin-left: 5px;
+
+	@include missing_feature("transform")
+	{
+		content: "\0000a0>";
+	}
 }
+
 @mixin xrx_bnrv4_left_arrow
 {
 	font-family: "Arial";
-	content: "❮\0000a0";
+	content: "\276E\0000a0";
 	font-size: 90%;
+
+	@include missing_feature("transform")
+	{
+		content: "<\0000a0";
+	}
 }
+
 @mixin xrx_bnrv4_down_arrow
 {
 	font-family: "Arial";
-	content: "❯";
+	content: "\276F";
 	display: inline-block;
 	margin-left: 12px;
 	position: relative;
@@ -137,6 +165,12 @@
 	transform: rotate(90deg);
 	font-size: 90%;
 	margin-right: 2px;
+
+	@include missing_feature("transform")
+	{
+		content: "∨";
+		transform: none;
+	}
 }
 
 @mixin transition($transition...) {
