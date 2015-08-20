@@ -32,6 +32,7 @@
 
 	> li {
 		display: inline-block;
+		margin-right: 1px;
 	}
 }
 
@@ -136,7 +137,7 @@
 	font-size: 90%;
 	margin-left: 5px;
 
-	@include missing_feature("transform")
+	@include missing_feature("csstransforms")
 	{
 		content: "\0000a0>";
 	}
@@ -148,7 +149,7 @@
 	content: "\276E\0000a0";
 	font-size: 90%;
 
-	@include missing_feature("transform")
+	@include missing_feature("csstransforms")
 	{
 		content: "<\0000a0";
 	}
@@ -166,7 +167,7 @@
 	font-size: 90%;
 	margin-right: 2px;
 
-	@include missing_feature("transform")
+	@include missing_feature("csstransforms")
 	{
 		content: "∨";
 		transform: none;
