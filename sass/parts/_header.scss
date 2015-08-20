@@ -24,19 +24,22 @@
 		right: -1px;
 	}
 
-	&:after {
-		content: "";
-		display: block;
-		background-color: #f1f1f1;
-		border-top: 1px solid #dbdbdb;
-		border-left: 1px solid #dbdbdb;
-		width: 15px;
-		height: 15px;
-		position: absolute;
-		bottom: -22px;
-		transform: rotate(45deg) translateX(-20px);
-		left: 50%;
-		z-index: 1100;
+	@include missing_feature("csstransforms")
+	{
+		&:after {
+			content: "";
+			display: block;
+			background-color: #f1f1f1;
+			border-top: 1px solid #dbdbdb;
+			border-left: 1px solid #dbdbdb;
+			width: 15px;
+			height: 15px;
+			position: absolute;
+			bottom: -22px;
+			transform: rotate(45deg) translateX(-20px);
+			left: 50%;
+			z-index: 1100;
+		}
 	}
 }
 

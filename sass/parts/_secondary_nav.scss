@@ -37,6 +37,16 @@
 			padding-left: 60px;
 			background-size: auto 50%;
 			background-position: left center;
+
+			@include missing_feature("svg")
+			{
+				padding-left: 70px;
+				background-image: url("images/maplocator_off.png");
+
+				&:hover {
+					background-image: url("images/maplocator_on.png");
+				}
+			}
 		}
 
 		> li {
@@ -68,20 +78,6 @@
 
 			&#hdr-bar-log-out {
 				display: none;
-			}
-		}
-	}
-}
-
-.no-svg #xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary
-{
-	@include respond-min($break_desktop)
-	{
-		#xrx_bnrv4_header_country_selector > a {
-			background-image: url("images/maplocator_off.png");
-
-			&:hover {
-				background-image: url("images/maplocator_on.png");
 			}
 		}
 	}
