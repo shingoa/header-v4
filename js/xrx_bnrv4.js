@@ -7,4 +7,3 @@
 //=require modules/tracking.js
 //=require modules/search.js
 //=require modules/header.js
-//=require modules/ie8.js
