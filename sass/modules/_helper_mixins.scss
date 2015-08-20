@@ -169,3 +169,17 @@
     -webkit-transition-delay: $delay;
     transition-delay:         $delay;
 }
+
+@mixin checked()
+{
+	&:checked {
+		@content;
+	}
+
+	@if $fix-mqs
+	{
+		&.checked {
+			@content;
+		}
+	}
+}

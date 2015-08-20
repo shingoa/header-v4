@@ -8,6 +8,37 @@
 @import "tertiary_nav";
 @import "insights_selector";
 @import "search";
+@import "modules/hamburger";
+
+@mixin xrx_bnrv4_flyout_checked_styles
+{
+	color: $red;
+	cursor: default;
+	font-weight: bold;
+	position: relative;
+
+	~ .xrx_bnrv4_header_flyout {
+		display: block;
+		position: absolute;
+		left: -1px;
+		right: -1px;
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		background-color: #f1f1f1;
+		border-top: 1px solid #dbdbdb;
+		border-left: 1px solid #dbdbdb;
+		width: 15px;
+		height: 15px;
+		position: absolute;
+		bottom: -22px;
+		transform: rotate(45deg) translateX(-20px);
+		left: 50%;
+		z-index: 1100;
+	}
+}
 
 #xrx_bnrv4_header
 {
@@ -67,16 +98,26 @@
 		}
 	}
 
-	#xrx_bnrv4_header_menuchk:checked ~ #xrx_bnrv4_header_floater,
-	#xrx_bnrv4_header_menuchk.checked ~ #xrx_bnrv4_header_floater {
-		box-shadow: none;
+	#xrx_bnrv4_header_menuchk
+	{
+		@include checked()
+		{
+			 ~ #xrx_bnrv4_header_floater {
+				box-shadow: none;
+			}
+		}
 	}
 
 	@include respond-max($break_tablet)
 	{
-		#xrx_bnrv4_header_searchchk:checked ~ #xrx_bnrv4_header_floater,
-		#xrx_bnrv4_header_searchchk.checked ~ #xrx_bnrv4_header_floater {
-			box-shadow: none;
+		#xrx_bnrv4_header_searchchk
+		{
+			@include checked()
+			{
+				~ #xrx_bnrv4_header_floater {
+					box-shadow: none;
+				}
+			}
 		}
 	}
 
@@ -172,40 +213,27 @@
 
 		@include respond-min($break_desktop)
 		{
-			input#xrx_bnrv4_default:checked ~ div #xrx_bnrv4_header_nav_primary li:first-child > label,
-			input#xrx_bnrv4_default.checked ~ div #xrx_bnrv4_header_nav_primary li:first-child > label,
-			#xrx_bnrv4_header_nav_primary > li > input:checked ~ label,
-			#xrx_bnrv4_header_nav_primary > li > input.checked ~ label,
-			#xrx_bnrv4_header_nav_secondary > li > input:checked ~ label,
-			#xrx_bnrv4_header_nav_secondary > li > input.checked ~ label,
-			#xrx_bnrv4_header_nav_tertiary > li > input:checked ~ label,
-			#xrx_bnrv4_header_nav_tertiary > li > input.checked ~ label
+			input#xrx_bnrv4_default
 			{
-				color: $red;
-				cursor: default;
-				font-weight: bold;
-				position: relative;
-
-				~ .xrx_bnrv4_header_flyout {
-					display: block;
-					position: absolute;
-					left: -1px;
-					right: -1px;
+				@include checked()
+				{
+					~ div #xrx_bnrv4_header_nav_primary li:first-child > label
+					{
+						@include xrx_bnrv4_flyout_checked_styles();
+					}
 				}
+			}
 
-				&:after {
-					content: "";
-					display: block;
-					background-color: #f1f1f1;
-					border-top: 1px solid #dbdbdb;
-					border-left: 1px solid #dbdbdb;
-					width: 15px;
-					height: 15px;
-					position: absolute;
-					bottom: -22px;
-					transform: rotate(45deg) translateX(-20px);
-					left: 50%;
-					z-index: 1100;
+			#xrx_bnrv4_header_nav_primary > li > input,
+			#xrx_bnrv4_header_nav_secondary > li > input,
+			#xrx_bnrv4_header_nav_tertiary > li > input
+			{
+				@include checked()
+				{
+					~ label
+					{
+						@include xrx_bnrv4_flyout_checked_styles();
+					}
 				}
 			}
 
@@ -249,21 +277,23 @@
 		}
 	}
 
-	#xrx_bnrv4_header_menuchk:checked,
-	#xrx_bnrv4_header_menuchk.checked
+	#xrx_bnrv4_header_menuchk
 	{
-		@include respond-max($break_desktop)
+		@include checked()
 		{
-			~ #xrx_bnrv4_header_nav {
-				left: 0;
+			@include respond-max($break_desktop)
+			{
+				~ #xrx_bnrv4_header_nav {
+					left: 0;
+				}
 			}
-		}
 
-		@include respond-min($break_desktop)
-		{
-			~ #xrx_bnrv4_header_nav {
-				max-height: 100%;
-				border-top: 1px solid #dbdbdb;
+			@include respond-min($break_desktop)
+			{
+				~ #xrx_bnrv4_header_nav {
+					max-height: 100%;
+					border-top: 1px solid #dbdbdb;
+				}
 			}
 		}
 	}
@@ -293,15 +323,19 @@
 		border-bottom: 1px solid #ebebeb;
 	}
 
-	#xrx_bnrv4_header_menuchk:checked ~ #xrx_bnrv4_header_floater,
-	#xrx_bnrv4_header_menuchk.checked ~ #xrx_bnrv4_header_floater {
-		border-bottom: none;
+	#xrx_bnrv4_header_menuchk
+	{
+		@include checked()
+		{
+			~ #xrx_bnrv4_header_floater {
+				border-bottom: none;
+			}
+		}
 	}
 
 	@include respond-max($break_tablet)
 	{
-		#xrx_bnrv4_header_searchchk:checked ~ #xrx_bnrv4_header_floater,
-		#xrx_bnrv4_header_searchchk.checked ~ #xrx_bnrv4_header_floater {
+		#xrx_bnrv4_header_searchchk:checked ~ #xrx_bnrv4_header_floater {
 			border-bottom: none;
 		}
 	}
