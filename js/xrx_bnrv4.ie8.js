@@ -7,3 +7,5 @@
 //=include modules/tracking.js
 //=include modules/search.js
 //=include modules/header.js
+
+//=include modules/ie8.js

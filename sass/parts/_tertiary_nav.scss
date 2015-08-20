@@ -1,7 +1,8 @@
 @charset "UTF-8";
 @import "vars";
 
-@import "../modules/_responsive_base";
+@import "modules/_responsive_base";
+@import "modules/helper_mixins";
 
 #xrx_bnrv4_header #xrx_bnrv4_header_nav_tertiary
 {
@@ -63,8 +64,8 @@
 			> input {
 				display: none;
 
-				&:checked
-				&.checked {
+				@include checked()
+				{
 					~ .xrx_bnrv4_header_flyout {
 						display: block;
 					}
