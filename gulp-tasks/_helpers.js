@@ -56,6 +56,11 @@ helpers.processTemplateData = function(data, locale)
 				}
 			}
 		});
+
+		if (typeof(data.data) !== "undefined")
+		{
+			data.dataStr = JSON.stringify(data.data);
+		}
 	}
 
 	return data;

@@ -1,5 +1,11 @@
 
 {
+	"data" : {
+		"chat" : {
+			"xogLink" : "http://www.xerox.co.uk/office/perl-bin/opb_launch_chat.pl?dept=39869",
+			"psgLink" : "http://www.xerox.co.uk/digital-printing/perl-bin/psg_launch_chat.pl?dept=39869"
+		}
+	},
 	"header" : {
 		"trans" : {
 			"menuBtnTitle" : "Open/Close menu",

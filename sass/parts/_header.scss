@@ -61,6 +61,11 @@
 		width: 200px;
 		height: 50px;
 
+		@include missing_feature("svg")
+		{
+			background-image: url("images/xerox_logo_big.png");
+		}
+
 		@include respond-min($break_tablet)
 		{
 			width: 142px;
