@@ -20,6 +20,11 @@
 		margin-bottom: 25px;
 		height: 31px;
 		width: 115px;
+
+		@include missing_feature("svg")
+		{
+			background-image: url("images/xerox_logo_small.png");
+		}
 	}
 
 	#xrx_bnr_v3_ftr_links
