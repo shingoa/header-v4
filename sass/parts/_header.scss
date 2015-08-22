@@ -8,7 +8,8 @@
 @import "tertiary_nav";
 @import "insights_selector";
 @import "search";
-@import "modules/hamburger";
+@import "../modules/hamburger";
+@import "hide_banners";
 
 @mixin xrx_bnrv4_flyout_checked_styles
 {
