@@ -23,5 +23,9 @@ gulp.task('build-js', ['init-repo'], function ()
 		.pipe(jshint())
 		.pipe(gulp.dest('./built/js')));
 
+	merged.add(gulp.src('./js/vendor/**/*.js')
+		.pipe(jshint())
+		.pipe(gulp.dest('./built/js/vendor')));
+
 	return merged;
 });
