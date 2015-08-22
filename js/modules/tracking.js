@@ -3,6 +3,8 @@
 
 (function(window, document, metrics, helpers)
 {
+	"use strict";
+
 	var V4_ELEMENT_IDS = ["xrx_bnrv4_header", "xrx_bnrv4_footer"];
 
 	var searchForm = document.getElementById("xrx_bnr_hdr_utilitynav_search_form");

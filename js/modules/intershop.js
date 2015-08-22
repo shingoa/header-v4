@@ -3,6 +3,8 @@
 //***************************************************************
 (function(window, document)
 {
+	"use strict";
+	
 	var cookies = document.cookie;
 
 	// set state of login/logout link correctly
