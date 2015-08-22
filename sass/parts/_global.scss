@@ -87,17 +87,21 @@
 	@include xrx_bnrv4_positionit;
 }
 
-.no-svg
+@include respond-max($break_tablet)
 {
-	#xrx_bnrv4_header {
-		.xrx_bnrv4_logo {
-			background-image: url("images/xerox_logo_big.png");
-		}
+	.xrx_hide_mobile {
+		display: none !important;
 	}
-
-	#xrx_bnrv4_footer {
-		.xrx_bnrv4_logo {
-			background-image: url("images/xerox_logo_small.png");
-		}
+}
+@include respond-min-max($break_tablet, $break_desktop)
+{
+	.xrx_hide_tablet {
+		display: none !important;
+	}
+}
+@include respond-max($break_desktop)
+{
+	.xrx_hide_desktop {
+		display: none !important;
 	}
 }

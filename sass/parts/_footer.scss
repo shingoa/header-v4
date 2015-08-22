@@ -20,6 +20,11 @@
 		margin-bottom: 25px;
 		height: 31px;
 		width: 115px;
+
+		@include missing_feature("svg")
+		{
+			background-image: url("images/xerox_logo_small.png");
+		}
 	}
 
 	#xrx_bnr_v3_ftr_links
@@ -30,27 +35,7 @@
 		margin-bottom: 15px;
 
 		> li {
-			position: relative;
-			padding: 0 15px;
-
-			&:after {
-				content: "";
-				display: block;
-				position: absolute;
-				top: 20%;
-				bottom: 20%;
-				right: 0;
-				width: 1px;
-				background-color: #dbdbdb;
-			}
-
-			&:first-child {
-				padding-left: 0;
-			}
-
-			&:last-child:after {
-				display: none;
-			}
+			@include xrx_bnrv4_list_dividers;
 		}
 	}
 
