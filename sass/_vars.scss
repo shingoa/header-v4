@@ -3,7 +3,7 @@ $break_desktop: 930px !default;
 
 $page_width: 1200px !default;
 
-$logoPathPng: url("images/xerox_logo_r.png");
-$logoPathSvg: url("images/xerox_logo_r.svg");
+$logoPathPng: url("images/xerox_logo_r.png") !default;
+$logoPathSvg: url("images/xerox_logo_r.svg") !default;
 
-$red: #cf3847;
+$red: #D92231;

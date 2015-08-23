@@ -1,5 +1,7 @@
 (function(window)
 {
+	"use strict";
+
 	if (typeof(window.xrx) == "undefined") {
 		window.xrx = {};
 	}

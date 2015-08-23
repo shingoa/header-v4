@@ -2,6 +2,8 @@
 
 (function(window, document, helpers)
 {
+	"use strict";
+
 	var self = {};
 
 	self.init = function()
@@ -39,10 +41,10 @@
 
 		if (htmlElm.className.indexOf("transform") == -1)
 		{
-			var transform = "no-transform";
+			var transform = "no-csstransforms";
 			if (!!(0 + document.createElement('div').style['transform']))
 			{
-				transform = "transform";
+				transform = "csstransforms";
 			}
 
 			htmlElm.className = htmlElm.className + " " + transform;

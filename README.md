@@ -31,3 +31,27 @@ When you start working with gulp I automatically install a git precommit hook wh
 
 ### Automatic Building
 Automatic building occurs on a [Jenkins server](http://usa7061vm1072.na.xerox.net:8080/), it is automatically triggered by a JSON build on LAMP.
+
+## Merging
+
+* First you need to [view a comparison](https://github.com/xeroxinteractive/header-v4/compare) of the branches
+
+![Step 1](https://cloud.githubusercontent.com/assets/1090602/9384756/76c82064-474a-11e5-9382-e9e5cd58c794.PNG)
+
+* Pick the base (destination) and compare (source). So in this case I'm merging changes from master into dev. Push "Create pull request"
+
+![Step 2](https://cloud.githubusercontent.com/assets/1090602/9384757/76dc8180-474a-11e5-9f47-0c5a5a3e0ce6.PNG)
+
+* Enter a basic message and conform the merge.
+
+![Step 3](https://cloud.githubusercontent.com/assets/1090602/9384758/76e17500-474a-11e5-9fec-2c59cd557ea8.PNG)
+
+* You will now have the ability to merge the pull request
+
+![Step 4](https://cloud.githubusercontent.com/assets/1090602/9384759/76f2f21c-474a-11e5-9473-457ed6b8fb02.PNG)
+
+* You can again enter a simple message, although it usually takes the message entered in step 3. Confirm the merge.
+
+![Step 5](https://cloud.githubusercontent.com/assets/1090602/9384755/76c520d0-474a-11e5-9ffc-c8e502622fd0.PNG)
+
+* All done. When [Jenkins](http://usa7061vm1072.na.xerox.net:8080/) next runs it will build that code for that tier. 

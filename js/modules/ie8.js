@@ -1,10 +1,12 @@
 //=require modules/_helpers.js
 
 // Fast <= IE8 check.
-//if (!document.addEventListener)
+if (!document.addEventListener)
 {
 	(function(window, document, helpers)
 	{
+		"use strict";
+
 		var self = {};
 
 		self.init = function()
@@ -35,35 +37,23 @@
 						{
 							if (input.getAttribute("type") === "radio" || input.getAttribute("type") === "checkbox")
 							{
+								try {
+									input.focus();
+								} catch (err) {};
+
 								input.checked = true;
+
+								try {
+									input.blur();
+								} catch (err) {};
+
+								self.checkCheckboxState();
 							}
 							else
 							{
 								input.focus();
 							}
 						}
-					}
-				});
-			}
-
-			var inputs = header.getElementsByTagName("input");
-			for (var i = 0; i < inputs.length; i++)
-			{
-				// This adds a checked classes when checked. IE8 doesn't support :checked
-				helpers.attachListener(inputs[i], "change", function(evt)
-				{
-					self.checkCheckboxState();
-				});
-
-				// This makes the change event fire properly
-				helpers.attachListener(inputs[i], "click", function(evt)
-				{
-					var input = (event.currentTarget) ? event.currentTarget : event.srcElement;
-
-					if (input.getAttribute("type") === "radio" || input.getAttribute("type") === "checkbox")
-					{
-						input.blur();
-						input.focus();
 					}
 				});
 			}
@@ -91,6 +81,8 @@
 					}
 				}
 			}
+
+			helpers.toggleClass(document.body, "xrx_poke_ie8");
 		};
 
 		self.init();

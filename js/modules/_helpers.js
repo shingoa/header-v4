@@ -1,5 +1,7 @@
 (function(window, document)
 {
+	"use strict";
+
 	if (typeof(window.xrx) == "undefined") {
 		window.xrx = {};
 	}
@@ -87,6 +89,19 @@
 				elm.className = elm.className.replace(cls, "");
 			}
 		};
+
+		self.toggleClass = function(elm, cls)
+		{
+			if (elm && cls)
+			{
+				var re = new RegExp("\s?" + cls + "\s?");
+
+				if (re.exec(elm.className))
+					self.removeClass(elm, cls);
+				else
+					self.addClass(elm, cls);
+			}
+		}
 	}
 
 })(window, document);

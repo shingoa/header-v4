@@ -1,5 +1,7 @@
 (function(document)
 {
+	"use strict";
+
 	var form = document.getElementById("xrx_bnr_hdr_utilitynav_search_form");
 
 	if (form)
