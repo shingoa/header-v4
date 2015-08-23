@@ -39,14 +39,14 @@
 			bottom: -22px;
 			transform: rotate(45deg) translateX(-20px);
 			left: 50%;
-			z-index: 600;
+			z-index: 4100;
 		}
 	}
 }
 
 #xrx_bnrv4_header
 {
-	z-index: 500;
+	z-index: 4000;
 	height: 116px;
 
 	@include respond-min($break_tablet)
@@ -88,7 +88,7 @@
 		height: 116px;
 		background-color: rgb(255, 255, 255);
 		background-color: rgba(255, 255, 255, .96);
-		z-index: 700;
+		z-index: 4200;
 		box-shadow: 0px 4px 5px 0px rgba(102,102,102,0);
 		@include transition(box-shadow .1s ease-in-out);
 
@@ -198,7 +198,7 @@
 
 	#xrx_bnrv4_header_nav
 	{
-		z-index: 600;
+		z-index: 4100;
 		position: fixed;
 		top: 116px;
 		width: 100%;
