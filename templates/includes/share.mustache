@@ -1,14 +1,23 @@
 {{#share}}
-	<li id="xrx_bnrv4_header_share">
-		<input type="radio" name="xrx_bnrv4_header_menu" value="xrx_bnrv4_header_sharechk" id="xrx_bnrv4_header_sharechk" autocomplete="off" />
-		<label for="xrx_bnrv4_header_defaultchk" class="xrx_bnrv4_header_defaultlbl" name="&amp;lid=hdr-share-close">{{label}}</label>
-		<label for="xrx_bnrv4_header_sharechk" name="&amp;lid=hdr-share-open">{{label}}</label>
+	{{#links.length}}
+		<li id="xrx_bnrv4_header_share">
+			<input type="radio" name="xrx_bnrv4_header_menu" value="xrx_bnrv4_header_sharechk" id="xrx_bnrv4_header_sharechk" autocomplete="off" />
+			<label for="xrx_bnrv4_header_defaultchk" class="xrx_bnrv4_header_defaultlbl" name="&amp;lid=hdr-share-close">{{label}}</label>
+			<label for="xrx_bnrv4_header_sharechk" name="&amp;lid=hdr-share-open">{{label}}</label>
 
-		<div class="xrx_bnrv4_header_flyout">
-			<label for="xrx_bnrv4_header_defaultchk" class="xrx_bnrv4_header_defaultlbl">✖</label>
-			<p>{{label}}</p>
+			<div class="xrx_bnrv4_header_flyout">
+				<label for="xrx_bnrv4_header_defaultchk" class="xrx_bnrv4_header_defaultlbl">✖</label>
+				<p>{{label}}</p>
 
-			{{> ./mustachePartials/list }}
-		</div>
-	</li>
+				{{> ./mustachePartials/list }}
+			</div>
+		</li>
+	{{/links.length}}
+	{{^links.length}}
+		{{#href}}
+			<li id="xrx_bnrv4_header_share">
+				{{> ./mustachePartials/link }}
+			</li>
+		{{/href}}
+	{{/links.length}}
 {{/share}}
