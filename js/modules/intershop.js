@@ -4,7 +4,7 @@
 (function(window, document)
 {
 	"use strict";
-	
+
 	var cookies = document.cookie;
 
 	// set state of login/logout link correctly
@@ -41,10 +41,17 @@
 // I will optimise this code and strip out the jQuery once it is finished
 // Until then I'm adding some safety
 
-if (typeof(jQuery) !== "undefined" && jQuery)
+(function(window, document, $)
 {
-	(function(window, document, $)
+	if (typeof($) === "undefined" || !$)
 	{
+		if (typeof(console) !== "undefined")
+			console.log("jQuery is not defined. Intershop replacement will not run");
+	}
+	else
+	{
+		var jQuery = $;
+
 		function xrx_bnr_v4_intershop_header_substitution()
 		{
 			var xrx_ish_request_time = new Date();
@@ -119,10 +126,5 @@ if (typeof(jQuery) !== "undefined" && jQuery)
 		{
 			//alert('function not found');
 		}
-	})(window, document, jQuery);
-}
-else
-{
-	if (typeof(console) !== "undefined")
-		console.log("jQuery is not defined. Intershop replacement will not run");
-}
+	}
+})(window, document, window.jQuery);

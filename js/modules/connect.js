@@ -1,21 +1,26 @@
-if (typeof(jQuery) === "undefined" || !jQuery)
+(function($, moment)
 {
-    if (typeof(console) !== "undefined")
-        console.log("jQuery is not defined. Connect module will not run");
-}
-else if (typeof($) === "undefined" || !$ || typeof($.templates) === "undefined" || !$.templates)
-{
-    if (typeof(console) !== "undefined")
-        console.log("JSRender not defined. Connect module will not run");
-}
-else if (typeof(moment) === "undefined" || !moment)
-{
-    if (typeof(console) !== "undefined")
-        console.log("Moment.js is not defined. Connect module will not run");
-}
-else
-{
-    (function($) {
+    "use strict";
+
+    if (typeof($) === "undefined" || !$)
+    {
+        if (typeof(console) !== "undefined")
+            console.log("jQuery is not defined. Connect module will not run");
+    }
+    else if (typeof($) === "undefined" || !$ || typeof($.templates) === "undefined" || !$.templates)
+    {
+        if (typeof(console) !== "undefined")
+            console.log("JSRender not defined. Connect module will not run");
+    }
+    else if (typeof(moment) === "undefined" || !moment)
+    {
+        if (typeof(console) !== "undefined")
+            console.log("Moment.js is not defined. Connect module will not run");
+    }
+    else
+    {
+        var jQuery = $;
+        
         // Pull in the feed data here and dump into .social-feed .content
         // hashtag parser
         String.prototype.parseHashtag = function() {
@@ -228,5 +233,5 @@ else
     			} // end else greater than 0
     		} // end success
     	}); // end ajax
-    })(jQuery);
-}
+    }
+})(window.jQuery, window.moment);
