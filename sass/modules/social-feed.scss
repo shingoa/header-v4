@@ -14,13 +14,34 @@ $xerox-red: $red;
 		margin-right: 15px;
 
 		> img {
-			width: 32px;
+			@if ($page_width <= 740px) {
+				width: 22px;
+			}
+			@else if ($page_width <= 940px) {
+				width: 26px;
+			}
+			@else {
+				width: 32px;
+			}
 		}
 	}
 }
 
 .xrx_social_feed {
 	padding: 0 0 10px;
+
+	@include respond-min($break_tablet)
+	{
+		@if ($page_width <= 740px) {
+			max-width: 280px;
+		}
+		@else if ($page_width <= 940px) {
+			max-width: 300px;
+		}
+		@else {
+			max-width: 350px;
+		}
+	}
 
 	.loading-image {
 		max-width: 64px;

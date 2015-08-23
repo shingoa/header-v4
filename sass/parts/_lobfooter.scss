@@ -7,12 +7,30 @@
 
 #xrx_bnrv4_lobfooter
 {
+	@if ($page_width <= 740px) {
+		font-size: 14px;
+	}
+	@else if ($page_width <= 940px) {
+		font-size: 15px;
+	}
+	@else {
+		font-size: 16px;
+	}
+
 	margin-bottom: 20px;
-	font-size: 16px;
 	font-weight: lighter;
 
 	.xrx_bnrv4_lobfooter_title {
-		font-size: 28px;
+		@if ($page_width <= 740px) {
+			font-size: 20px;
+		}
+		@else if ($page_width <= 940px) {
+			font-size: 24px;
+		}
+		@else {
+			font-size: 28px;
+		}
+
 		margin-bottom: 10px;
 		font-weight: lighter;
 	}
@@ -28,8 +46,17 @@
 
 			&,
 			> span {
+				@if ($page_width <= 740px) {
+					font-size: 16px;
+				}
+				@else if ($page_width <= 940px) {
+					font-size: 18px;
+				}
+				@else {
+					font-size: 20px;
+				}
+
 				font-weight: bold;
-				font-size: 20px;
 			}
 
 			> label {
@@ -46,8 +73,17 @@
 				&,
 				> a,
 				> span {
+					@if ($page_width <= 740px) {
+						font-size: 16px;
+					}
+					@else if ($page_width <= 940px) {
+						font-size: 18px;
+					}
+					@else {
+						font-size: 20px;
+					}
+
 					font-weight: lighter;
-					font-size: 20px;
 				}
 			}
 		}

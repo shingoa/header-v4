@@ -2,6 +2,7 @@
 
 var fs = require('fs');
 var gutil = require('gulp-util');
+var ent = require('ent');
 var helpers = {};
 
 helpers.testLocales = ["ptbr", "engb", "frfr", "heil", "enus", "sample", "frmc", "frca", "enfo", "enis"];
@@ -32,7 +33,7 @@ helpers.processTemplateData = function(data, locale)
 	{
 		data.XOGLang = helpers.getXOGLang(locale);
 
-		helpers.recurse(data, function(obj, p)
+		helpers.recurse(data, function(obj, p, path)
 		{
 			if (typeof(obj) === "object" && obj)
 			{
@@ -54,6 +55,26 @@ helpers.processTemplateData = function(data, locale)
 				if (obj.id && obj.id === "hdr-bar-country-select") {
 					obj.id = "xrx_bnrv4_header_country_selector";
 				}
+				if (obj.id && obj.id.indexOf("xrx_") === -1)
+				{
+					var base = "xrx_bnrv4_";
+
+					if (path.indexOf("lobFooter") >= 0) {
+						base += "lobfooter_"
+					}
+					else if (path.indexOf("footer") >= 0) {
+						base += "footer_"
+					}
+					else if (path.indexOf("header") >= 0) {
+						base += "header_"
+					}
+
+					obj.id = base + obj.id;
+				}
+
+				if (obj.label) {
+					obj.label = ent.decode(obj.label);
+				}
 			}
 		});
 
@@ -66,18 +87,25 @@ helpers.processTemplateData = function(data, locale)
 	return data;
 };
 
-helpers.recurse = function(obj, callback)
+helpers.recurse = function(obj, callback, path)
 {
     for (var property in obj)
 	{
         if (obj.hasOwnProperty(property))
 		{
+			var newPath;
+
+			if (!path)
+				newPath = property;
+			else
+				newPath = path + "." + property;
+
 			if (typeof(callback) === "function") {
-				callback(obj[property], property);
+				callback(obj[property], property, newPath);
 			}
 
             if (typeof obj[property] == "object") {
-                helpers.recurse(obj[property], callback);
+                helpers.recurse(obj[property], callback, newPath);
             }
         }
     }

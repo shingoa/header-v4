@@ -120,9 +120,16 @@
 
 		@include respond-min($break_desktop)
 		{
+			@if ($page_width <= 740px) {
+				left: 200px;
+				right: 340px;
+			}
+			@else {
+				left: 262px;
+				right: 368px;
+			}
+
 			top: 20px;
-			left: 262px;
-			right: 368px;
 		}
 	}
 }
