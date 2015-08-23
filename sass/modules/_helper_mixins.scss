@@ -46,9 +46,20 @@
 	> span,
 	> label[for],
 	> a {
+		@if ($page_width <= 740px) {
+			padding-#{$side}: 7px;
+			margin-#{$side}: 7px;
+		}
+		@else if ($page_width <= 940px) {
+			padding-#{$side}: 8px;
+			margin-#{$side}: 8px;
+		}
+		@else {
+			padding-#{$side}: 10px;
+			margin-#{$side}: 10px;
+		}
+
 		position: relative;
-		padding-#{$side}: 10px;
-		margin-#{$side}: 10px;
 		margin-bottom: 0;
 		user-select: none;
 		-o-user-select:none;
