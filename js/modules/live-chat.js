@@ -3,6 +3,8 @@
 
 (function(window, document, helpers, data)
 {
+	"use strict";
+
 	var agentOnlineUrl = "https://rs.instantservice.com/resources/smartbutton/5590/$dept/available.gif";
 
 	if (typeof(window.xrx) == "undefined") {

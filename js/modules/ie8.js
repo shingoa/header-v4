@@ -1,10 +1,12 @@
 //=require modules/_helpers.js
 
 // Fast <= IE8 check.
-//if (!document.addEventListener)
+if (!document.addEventListener)
 {
 	(function(window, document, helpers)
 	{
+		"use strict";
+
 		var self = {};
 
 		self.init = function()

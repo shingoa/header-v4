@@ -2,6 +2,8 @@
 
 (function(window, document, helpers)
 {
+	"use strict";
+
 	var self = {};
 
 	self.init = function()
