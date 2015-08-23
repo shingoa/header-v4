@@ -10,28 +10,38 @@
 							<div class="xrx_bnrv4_row">
 								<div class="xrx_bnrv4_column">
 									{{#xogSales}}
-										{{> column_header}}
-										{{> list}}
+										<div id="xrx_bnrv4_lobfooter_sales">
+											{{> column_header}}
+											{{> list}}
+										</div>
 									{{/xogSales}}
 									{{#xogPurchase}}
-										{{> column_header}}
-										{{> list}}
+										<div id="xrx_bnrv4_lobfooter_purchase">
+											{{> column_header}}
+											{{> list}}
+										</div>
 									{{/xogPurchase}}
 								</div>
 								<div class="xrx_bnrv4_column">
 									{{#xogOfficeEquipment}}
-										{{> column_header}}
-										{{> list}}
+										<div id="xrx_bnrv4_lobfooter_equipment">
+											{{> column_header}}
+											{{> list}}
+										</div>
 									{{/xogOfficeEquipment}}
 									{{#xogOwners}}
-										{{> column_header}}
-										{{> list}}
+										<div id="xrx_bnrv4_lobfooter_owners">
+											{{> column_header}}
+											{{> list}}
+										</div>
 									{{/xogOwners}}
 								</div>
 								<div class="xrx_bnrv4_column">
 									{{#xogHelpfulResources}}
-										{{> column_header}}
-										{{> list}}
+										<div id="xrx_bnrv4_lobfooter_resources">
+											{{> column_header}}
+											{{> list}}
+										</div>
 									{{/xogHelpfulResources}}
 								</div>
 							</div>
@@ -56,6 +66,8 @@
 		var xrx_bnrv4_vars = {{{dataStr}}};
 	</script>
 {{/dataStr}}
+
+<script src="js/libs.js"></script>
 
 <!--[if IE 8]>
 	<script defer src="js/xrx_bnrv4.ie8.js"></script>

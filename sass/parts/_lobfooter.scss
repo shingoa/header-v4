@@ -18,7 +18,7 @@
 	}
 
 	.xrx_bnrv4_column {
-		> input {
+		input {
 			display: none;
 		}
 
@@ -37,7 +37,7 @@
 			}
 		}
 
-		> ul {
+		ul {
 			@include xrx_bnrv4_resetlist;
 
 			> li {

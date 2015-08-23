@@ -26,5 +26,11 @@ gulp.task('compile-js', ['init-repo', 'clean'], function ()
 		.pipe(uglify())
 		.pipe(gulp.dest('./compiled/' + argv.t + '/js/' + version)));
 
+	merged.add(gulp.src('./js/libs.js')
+		.pipe(include())
+		.pipe(jshint())
+		.pipe(uglify())
+		.pipe(gulp.dest('./compiled/' + argv.t + '/js/' + version)));
+
 	return merged;
 });

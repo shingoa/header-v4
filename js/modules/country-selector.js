@@ -1,4 +1,6 @@
-(function(window, document) {
+(function(window, document)
+{
+	"use strict";
 
 	var countrySelector = document.getElementById("xrx_bnrv4_header_country_selector");
 	if(countrySelector && countrySelector.children)
