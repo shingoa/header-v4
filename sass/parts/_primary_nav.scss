@@ -237,9 +237,23 @@
 
 			> label[for],
 			> a {
-				font-size: 20px;
-				padding: 16px 15px 17px 0;
-				margin-right: 15px;
+				@if ($page_width <= 740px) {
+					font-size: 15px;
+					padding: 16px 7px 17px 0;
+					margin-right: 7px;
+				}
+				@else if ($page_width <= 940px) {
+					font-size: 18px;
+					padding: 16px 10px 17px 0;
+					margin-right: 10px;
+				}
+				@else {
+					font-size: 20px;
+					padding: 16px 15px 17px 0;
+					margin-right: 15px;
+				}
+
+
 				line-height: 20px;
 				font-weight: normal;
 
