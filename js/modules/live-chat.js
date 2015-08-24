@@ -85,7 +85,7 @@
 			var liveChatData = xrx.data.getData("livechat");
 			if (liveChatData && lnk)
 			{
-				var text = liveChataData.chatLabel;
+				var text = liveChatData.chatLabel;
 
 				self.setLinks(lnk, text);
 			}
