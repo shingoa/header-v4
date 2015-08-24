@@ -1,4 +1,6 @@
-(function(window)
+//=require modules/_data.js
+
+(function(window, xrx_hbx_proxy, data)
 {
 	"use strict";
 
@@ -15,6 +17,11 @@
 			if  ( typeof(xrx_hbx_proxy) !== 'undefined' && xrx_hbx_proxy.xrxLink )
 			{
 				xrx_hbx_proxy.xrxLink(id);
+			}
+
+			if (xrx.data.getData("tier") == "dev" && typeof(window.console) !== "undefined" && window.console)
+			{
+				window.console.log("Manual link track: " + id);
 			}
 		}
 
@@ -44,4 +51,4 @@
 		}
 	}
 
-})(window);
+})(window, window.xrx_hbx_proxy, window.xrx.data);

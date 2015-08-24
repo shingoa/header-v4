@@ -11,7 +11,7 @@
 	if (searchForm)
 	{
 		helpers.attachListener(searchForm, "submit", function() {
-			metrics.trackLink("hdr-search-submit");
+			metrics.trackLink("hdr-pre-search-submit");
 		});
 	}
 
