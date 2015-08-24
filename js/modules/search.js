@@ -1,4 +1,4 @@
-(function(document)
+(function(window, document)
 {
 	"use strict";
 
@@ -14,4 +14,4 @@
 		form.appendChild(field);
 	}
 
-})(document);
+})(window, document);
