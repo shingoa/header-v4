@@ -60,7 +60,11 @@
 
 		self.getLink = function()
 		{
-			var liveChatUrl;
+			var liveChatLink = xrx.data.getData("liveChatLink");
+			if (liveChatLink)
+			{
+				return liveChatLink;
+			}
 
 			var liveChatData = xrx.data.getData("livechat");
 			if (liveChatData)
@@ -68,14 +72,14 @@
 				var lob = xrx.data.getLob();
 
 				if (lob === "psg" && liveChatData.psgLiveChatLink) {
-					liveChatUrl = liveChatData.psgLiveChatLink;
+					return liveChatData.psgLiveChatLink;
 				}
 				else if (lob === "xog" && liveChatData.xogLiveChatLink) {
-					liveChatUrl = liveChatData.xogLiveChatLink
+					return liveChatData.xogLiveChatLink
 				}
 			}
 
-			return liveChatUrl;
+			return null;
 		}
 
 		self.handleAgentsOnline = function()
