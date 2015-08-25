@@ -42,18 +42,18 @@
 
 		.xrx_bnrv4_column_header {
 			font-weight: bold;
-			padding: 8px 0;
+			padding: 4px 0;
 
 			&,
 			> span {
 				@if ($page_width <= 740px) {
-					font-size: 16px;
+					font-size: 15px;
 				}
 				@else if ($page_width <= 940px) {
-					font-size: 18px;
+					font-size: 16px;
 				}
 				@else {
-					font-size: 20px;
+					font-size: 16px;
 				}
 
 				font-weight: bold;
@@ -68,19 +68,19 @@
 			@include xrx_bnrv4_resetlist;
 
 			> li {
-				padding: 8px 0;
+				padding: 4px 0;
 
 				&,
 				> a,
 				> span {
 					@if ($page_width <= 740px) {
-						font-size: 16px;
+						font-size: 15px;
 					}
 					@else if ($page_width <= 940px) {
-						font-size: 18px;
+						font-size: 16px;
 					}
 					@else {
-						font-size: 20px;
+						font-size: 16px;
 					}
 
 					font-weight: lighter;
