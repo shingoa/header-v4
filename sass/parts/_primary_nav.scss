@@ -39,10 +39,16 @@
 	{
 		&
 		{
-			input:checked ~ .xrx_bnrv4_header_flyout,
-			input.checked ~ .xrx_bnrv4_header_flyout {
-				left: 0;
+			input
+			{
+				@include checked()
+				{
+					~ .xrx_bnrv4_header_flyout {
+						left: 0;
+					}
+				}
 			}
+
 			.xrx_bnrv4_header_flyout
 			{
 				display: block;
@@ -253,7 +259,7 @@
 					margin-right: 15px;
 				}
 
-
+				white-space: no-wrap;
 				line-height: 20px;
 				font-weight: normal;
 
