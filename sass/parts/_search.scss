@@ -111,6 +111,10 @@
 				border: 1px solid #ebebeb;
 				outline: none;
 
+				&::-ms-clear {
+				    display: none;
+				}
+
 				&:focus,
 				&:hover {
 					border-color: $red;
