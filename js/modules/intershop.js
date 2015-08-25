@@ -67,8 +67,9 @@
 				success: function(data)
 				{
 		  			if (typeof data.portal_home_url !== 'undefined')
-						{
-							jQuery("#xrx_bnrv4_header_nav_tertiary").html('<li id="xrx_bnrv4_header_contact"><a href="'+data.portal_home_url+'">Back to Portal Home &amp; Main Navigation</a></li>').show();
+					{
+						jQuery("#xrx_bnrv4_header_nav_tertiary").html('<li id="xrx_bnrv4_header_contact"><a href="'+data.portal_home_url+'">Back to Portal Home &amp; Main Navigation</a></li>').show();
+						jQuery("a.xrx_bnrv4_logo").attr("href","#");
 		  			}
 
 		  			// log success
