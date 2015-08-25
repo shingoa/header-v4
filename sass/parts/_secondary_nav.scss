@@ -11,6 +11,10 @@
 		padding: 10px 20px;
 	}
 
+	#xrx_bnrv4_header_hdr-bar-log-out {
+		display: none;
+	}
+
 	@include respond-max($break_desktop)
 	{
 		#xrx_bnrv4_header_country_selector {
@@ -90,10 +94,6 @@
 					padding-right: 0px;
 					margin-right: 0;
 				}
-			}
-
-			&#xrx_bnrv4_header_hdr-bar-log-out {
-				display: none;
 			}
 		}
 	}

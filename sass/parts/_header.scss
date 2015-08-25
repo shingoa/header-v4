@@ -11,23 +11,12 @@
 @import "../modules/hamburger";
 @import "hide_banners";
 
-@mixin xrx_bnrv4_flyout_checked_styles
+@mixin xrx_bnrv4_flyout_label_checked_marker
 {
-	color: $red;
-	cursor: default;
-	font-weight: bold;
-	position: relative;
-
-	~ .xrx_bnrv4_header_flyout {
-		display: block;
-		position: absolute;
-		left: -1px;
-		right: -1px;
-	}
-
-	@include missing_feature("csstransforms")
+	@include has_feature("csstransforms")
 	{
-		&:after {
+		&:after
+		{
 			content: "";
 			display: block;
 			background-color: #f1f1f1;
@@ -41,6 +30,21 @@
 			left: 50%;
 			z-index: 4100;
 		}
+	}
+}
+
+@mixin xrx_bnrv4_flyout_checked_styles
+{
+	color: $red;
+	cursor: default;
+	font-weight: bold;
+	position: relative;
+
+	~ .xrx_bnrv4_header_flyout {
+		display: block;
+		position: absolute;
+		left: -1px;
+		right: -1px;
 	}
 }
 
@@ -237,6 +241,7 @@
 					~ div #xrx_bnrv4_header_nav_primary li:first-child > label
 					{
 						@include xrx_bnrv4_flyout_checked_styles();
+						@include xrx_bnrv4_flyout_label_checked_marker();
 					}
 				}
 			}
@@ -250,6 +255,17 @@
 					~ label
 					{
 						@include xrx_bnrv4_flyout_checked_styles();
+					}
+				}
+			}
+
+			#xrx_bnrv4_header_nav_primary > li > input
+			{
+				@include checked()
+				{
+					~ label
+					{
+						@include xrx_bnrv4_flyout_label_checked_marker();
 					}
 				}
 			}
