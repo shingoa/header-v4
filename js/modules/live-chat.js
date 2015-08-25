@@ -148,8 +148,8 @@
 				}
 			}
 		}
-
-		self.init();
+		if (document.getElementById('xrx_bnrv4_lobfooter'))
+			self.init();
 	}
 
 })(window, document, window.xrx.helpers, window.xrx.data);
