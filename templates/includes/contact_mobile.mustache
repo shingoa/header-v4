@@ -1,0 +1,23 @@
+{{#contactUs}}
+	{{#links.length}}
+		<li id="xrx_bnrv4_header_contact_mobile">
+			<input type="radio" name="xrx_bnrv4_header_nav_primary" value="xrx_bnrv4_contact_mobile" id="xrx_bnrv4_contact_mobile" autocomplete="off" />
+			<label for="xrx_bnrv4_contact_mobile" name="&amp;lid=hdr-pre-int-contact-us">{{label}}</label>
+
+			<div class="xrx_bnrv4_header_flyout">
+				{{#label}}
+					<label class="xrx_bnrv4_header_flyout_header_back" for="xrx_bnrv4_default" name="&amp;lid=hdr-pre-int-contact-us-close">{{label}}</label>
+				{{/label}}
+
+				{{> contact_content }}
+			</div>
+		</li>
+	{{/links.length}}
+	{{^links.length}}
+		{{#href}}
+			<li id="xrx_bnrv4_header_contact_mobile">
+				{{> ./mustachePartials/link_no_id }}
+			</li>
+		{{/href}}
+	{{/links.length}}
+{{/contactUs}}

@@ -1,11 +1,11 @@
 {{#href}}
 	{{#id}}
-		<a href="{{{href}}}" name="{{{lid}}}" id="{{id}}" class="{{{class}}}" target="{{{target}}}">{{label}}</a>
+		<a href="{{{href}}}" name="{{{lid}}}" id="{{id}}" class="{{{class}}}" target="{{{target}}}">{{{label}}}</a>
 	{{/id}}
 	{{^id}}
-		<a href="{{{href}}}" name="{{{lid}}}" class="{{{class}}}" target="{{{target}}}">{{label}}</a>
+		<a href="{{{href}}}" name="{{{lid}}}" class="{{{class}}}" target="{{{target}}}">{{{label}}}</a>
 	{{/id}}
 {{/href}}
 {{^href}}
-	<span class="{{{class}}}">{{label}}</span>
+	<span class="{{{class}}}">{{{label}}}</span>
 {{/href}}

@@ -114,6 +114,7 @@
 			if (url && text)
 			{
 				self.setListLink(url, text, document.getElementById("xrx_bnrv4_header_contact"));
+				self.setListLink(url, text, document.getElementById("xrx_bnrv4_header_contact_mobile"));
 				self.setListLink(url, text, document.getElementById("xrx_bnrv4_lobfooter_sales"));
 			}
 		}
@@ -148,8 +149,8 @@
 				}
 			}
 		}
-
-		self.init();
+		if (document.getElementById('xrx_bnrv4_lobfooter'))
+			self.init();
 	}
 
 })(window, document, window.xrx.helpers, window.xrx.data);
