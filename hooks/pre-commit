@@ -1,10 +1,28 @@
 #!/bin/sh
 
-rightBranch=`git status --branch --porcelain | grep -b master`
-if [ "$rightBranch" == "" ]; then
+rightBranch=`git status --branch --porcelain | grep -b dev`
+if [ "$rightBranch" != "" ]; then
 	echo "---------------------------------------------------"
 	echo "Commit failed..."
-	echo "You can only commit to the master branch!"
+	echo "You cannot directly commit into the dev branch!"
+	echo "---------------------------------------------------"
+	exit 1;
+fi
+
+rightBranch=`git status --branch --porcelain | grep -b test`
+if [ "$rightBranch" != "" ]; then
+	echo "---------------------------------------------------"
+	echo "Commit failed..."
+	echo "You cannot directly commit into the test branch!"
+	echo "---------------------------------------------------"
+	exit 1;
+fi
+
+rightBranch=`git status --branch --porcelain | grep -b prod`
+if [ "$rightBranch" != "" ]; then
+	echo "---------------------------------------------------"
+	echo "Commit failed..."
+	echo "You cannot directly commit into the prod branch!"
 	echo "---------------------------------------------------"
 	exit 1;
 fi

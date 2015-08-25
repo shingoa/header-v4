@@ -114,6 +114,7 @@
 			if (url && text)
 			{
 				self.setListLink(url, text, document.getElementById("xrx_bnrv4_header_contact"));
+				self.setListLink(url, text, document.getElementById("xrx_bnrv4_header_contact_mobile"));
 				self.setListLink(url, text, document.getElementById("xrx_bnrv4_lobfooter_sales"));
 			}
 		}
