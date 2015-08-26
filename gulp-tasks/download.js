@@ -39,7 +39,10 @@ gulp.task('download-configs', ['init-repo', 'clean', 'download-locales'], functi
 			var requestOptions  = {
 				encoding: null,
 				method: "GET",
-				uri: server + "assets/json/xrx_bnr_json/v4_header_raw." + localeCodeShort + ".json"
+				uri: server + "assets/json/xrx_bnr_json/v4_header_raw." + localeCodeShort + ".json",
+				headers: {
+					"Cache control" : "no-cache"
+				}
 			};
 
 			merged.add(request(requestOptions)
@@ -89,7 +92,10 @@ gulp.task('download-test-configs', ['init-repo'], function()
 			var requestOptions  = {
 				encoding: null,
 				method: "GET",
-				uri: server + "assets/json/xrx_bnr_json/v4_header_raw." + locale + ".json"
+				uri: server + "assets/json/xrx_bnr_json/v4_header_raw." + locale + ".json",
+				headers: {
+					"Cache-Control" : "no-cache"
+				}
 			};
 
 			merged.add(request(requestOptions)

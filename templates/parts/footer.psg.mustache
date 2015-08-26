@@ -8,14 +8,15 @@
 
 						<div class="xrx_bnrv4_table">
 							<div class="xrx_bnrv4_row">
-								<div class="xrx_bnrv4_column">
-									{{#psgSales}}
+								{{#psgSales.links.length}}
+									<div class="xrx_bnrv4_column">
 										<div id="xrx_bnrv4_lobfooter_sales">
 											{{> column_header }}
 											{{> list}}
 										</div>
-									{{/psgSales}}
-								</div>
+									</div>
+								{{/psgSales.links.length}}
+
 								<div class="xrx_bnrv4_column">
 									{{#psgProducts}}
 										<div id="xrx_bnrv4_lobfooter_products">
