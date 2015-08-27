@@ -16,7 +16,9 @@ gulp.task('download-locales', ['init-repo', 'clean'], function()
 {
 	var server = xrxhelpers.getXeroxHttpServer(argv.t);
 
-	return request(server + "perl-bin/json_locale_service.pl")
+	var cacheBuster = Math.floor((Math.random() * 100) + 1);
+
+	return request(server + "perl-bin/json_locale_service.pl?cacheBuster=" + cacheBuster)
 		.pipe(source('locales.json'))
 		.pipe(gulp.dest('./data/' + argv.t));
 });
@@ -36,10 +38,12 @@ gulp.task('download-configs', ['init-repo', 'clean', 'download-locales'], functi
 			var localeCodeShort = locale['locale-short'];
 			var savePath = './data/' + argv.t + '/config.' + localeCodeShort + '.json';
 
+			var cacheBuster = Math.floor((Math.random() * 100) + 1);
+
 			var requestOptions  = {
 				encoding: null,
 				method: "GET",
-				uri: server + "assets/json/xrx_bnr_json/v4_header_raw." + localeCodeShort + ".json",
+				uri: server + "assets/json/xrx_bnr_json/v4_header_raw." + localeCodeShort + ".json?cacheBuster=" + cacheBuster,
 				headers: {
 					"Cache control" : "no-cache"
 				}
@@ -85,6 +89,8 @@ gulp.task('download-test-configs', ['init-repo'], function()
 		var savePath = './data/' + argv.t + '/config.' + locale + '.json';
 		var differenceMinutes = xrxhelpers.getFileAgeMinutes(savePath);
 
+		var cacheBuster = Math.floor((Math.random() * 100) + 1);
+
 		if (typeof(differenceMinutes) === "undefined" ||
 			!differenceMinutes ||
 			differenceMinutes > 240)
@@ -92,7 +98,7 @@ gulp.task('download-test-configs', ['init-repo'], function()
 			var requestOptions  = {
 				encoding: null,
 				method: "GET",
-				uri: server + "assets/json/xrx_bnr_json/v4_header_raw." + locale + ".json",
+				uri: server + "assets/json/xrx_bnr_json/v4_header_raw." + locale + ".json?cacheBuster=" + cacheBuster,
 				headers: {
 					"Cache-Control" : "no-cache"
 				}
