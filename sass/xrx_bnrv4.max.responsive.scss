@@ -1,5 +1,7 @@
 @charset "UTF-8";
-@import "normalize";
+// Force output of above line by adding a unicode character. ♫
+
+@import "vendor/normalize";
 @import "vars";
 
 @import "modules/helper_mixins";
