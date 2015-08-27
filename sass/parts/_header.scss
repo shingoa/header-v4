@@ -52,7 +52,7 @@
 #xrx_bnrv4_header
 {
 	z-index: 4000;
-	height: 116px;
+	height: 80px;
 
 	@include respond-min($break_tablet)
 	{
@@ -62,10 +62,10 @@
 	.xrx_bnrv4_logo {
 		position: absolute;
 		background-position: left center;
-		top: 27px;
+		top: 18px;
 		left: 5px;
-		width: 200px;
-		height: 50px;
+		width: 114px;
+		height: 30px;
 
 		@include missing_feature("svg")
 		{
@@ -90,7 +90,7 @@
 	#xrx_bnrv4_header_floater {
 		position: fixed;
 		width: 100%;
-		height: 116px;
+		height: 80px;
 		background-color: rgb(255, 255, 255);
 		background-color: rgba(255, 255, 255, .96);
 		z-index: 4200;
@@ -105,6 +105,8 @@
 		> div {
 			@include xrx_bnrv4_positionit;
 			position: relative;
+
+			height: 80px;
 		}
 
 		&.xrx_bnrv4_scrolling {
@@ -151,7 +153,7 @@
 
 	.xrx_bnrv4_menu_btn {
 		position: absolute;
-		top: 42px;
+		top: 23px;
 		right: 5px;
 
 		@include respond-min($break_tablet)
@@ -205,7 +207,7 @@
 	{
 		z-index: 4100;
 		position: fixed;
-		top: 116px;
+		top: 80px;
 		width: 100%;
 		bottom: 0;
 		overflow: hidden;
