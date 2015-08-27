@@ -186,4 +186,19 @@ helpers.getXeroxHttpServer = function(tier)
 	}
 }
 
+helpers.getConfigPath = function(tier, locale)
+{
+	var cacheBuster = Math.floor((Math.random() * 100) + 1);
+
+	if (tier == "prod") {
+		return "http://w3adminp.opbu.xerox.com/perl-bin/get_banner_json_raw.pl?file=v4_header_raw." + locale + ".json&cacheBuster=" + cacheBuster;
+	}
+	else if (tier == "test") {
+		return "http://xeroxtest.xerox.com/assets/json/xrx_bnr_json/v4_header_raw." + locale + ".json?cacheBuster=" + cacheBuster;
+	}
+	else {
+		return "http://psgdev.opbu.xerox.com/assets/json/xrx_bnr_json/v4_header_raw." + locale + ".json?cacheBuster=" + cacheBuster;
+	}
+}
+
 module.exports = helpers;
