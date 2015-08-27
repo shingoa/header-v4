@@ -42,12 +42,29 @@
 		if (htmlElm.className.indexOf("transform") == -1)
 		{
 			var transform = "no-csstransforms";
-			if (!!(0 + document.createElement('div').style['transform']))
+			if (!!(0 + document.createElement('div').style['transform']) ||
+				!!(0 + document.createElement('div').style['msTransform']))
 			{
 				transform = "csstransforms";
 			}
 
 			htmlElm.className = htmlElm.className + " " + transform;
+		}
+
+		if (navigator.userAgent && navigator.userAgent.match(/trident/i))
+		{
+			if (typeof(window.atob) !== "undefined") {
+			    htmlElm.className = htmlElm.className + " " + "ie-10";
+			}
+			else if (typeof(document.addEventListener) !== "undefined") {
+			    htmlElm.className = htmlElm.className + " " + "ie-9";
+			}
+			else if (typeof(document.querySelector) !== "undefined") {
+			    htmlElm.className = htmlElm.className + " " + "ie-8";
+			}
+			else {
+			    htmlElm.className = htmlElm.className + " " + "ie-unsupported";
+			}
 		}
 	};
 
