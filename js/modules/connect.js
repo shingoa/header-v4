@@ -1,7 +1,5 @@
 (function($, moment)
 {
-    "use strict";
-
     if (typeof($) === "undefined" || !$)
     {
         if (typeof(console) !== "undefined")
