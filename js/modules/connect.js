@@ -194,10 +194,10 @@
         					{
         						$feed.twitter = true;
 
-        						$feed.reply = '<a class="reply" target="_blank" href="https://twitter.com/intent/tweet?in_reply_to=' + obj.native_id + '">Reply</a>',
-        						$feed.retweet = '<a class="retweet" target="_blank" href="https://twitter.com/intent/retweet?tweet_id=' + obj.native_id + '">Retweet</a>',
-        						$feed.favorite = '<a class="favorite" target="_blank" href="https://twitter.com/intent/favorite?tweet_id=' + obj.native_id + '">Favorite</a>',
-        						$feed.tweetLink = '<a target="_blank" href="https://twitter.com/XeroxHealthcare/status/' + obj.native_id + '"><span>&middot;</span> ' + $feed.TWtimeago + '</a>';
+        						$feed.reply = '<a class="reply" name="&lid=connect-social-twitter-reply" target="_blank" href="https://twitter.com/intent/tweet?in_reply_to=' + obj.native_id + '">Reply</a>',
+        						$feed.retweet = '<a class="retweet" name="&lid=connect-social-twitter-retweet" target="_blank" href="https://twitter.com/intent/retweet?tweet_id=' + obj.native_id + '">Retweet</a>',
+        						$feed.favorite = '<a class="favorite" name="&lid=connect-social-twitter-favorite" target="_blank" href="https://twitter.com/intent/favorite?tweet_id=' + obj.native_id + '">Favorite</a>',
+        						$feed.tweetLink = '<a target="_blank" name="&lid=connect-social-twitter-text" href="https://twitter.com/XeroxHealthcare/status/' + obj.native_id + '"><span>&middot;</span> ' + $feed.TWtimeago + '</a>';
 
         					}
         					else if ($feed.medium === 'linkedin')

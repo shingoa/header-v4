@@ -128,12 +128,14 @@
 				if (findList && findList.length > 0)
 				{
 					var list = findList[0];
+					var lob = xrx.data.getLob();
 
 					var liTag = document.createElement("li");
 					list.appendChild(liTag);
 
 					var aTag = document.createElement("a");
 					aTag.setAttribute('href', url);
+					aTag.setAttribute('name', '&lid=ftr-live-chat');
 					aTag.setAttribute('target', "_blank");
 					aTag.innerHTML = text;
 					liTag.appendChild(aTag);
