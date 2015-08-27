@@ -27,7 +27,6 @@ gulp.task('download-configs', ['init-repo', 'clean', 'download-locales'], functi
 {
 	var merged = mergeStream();
 
-	var server = xrxhelpers.getXeroxHttpServer(argv.t);
 	var data = xrxhelpers.openJson('./data/' + argv.t + '/locales.json', true);
 	var downloaded = 0;
 
@@ -38,12 +37,12 @@ gulp.task('download-configs', ['init-repo', 'clean', 'download-locales'], functi
 			var localeCodeShort = locale['locale-short'];
 			var savePath = './data/' + argv.t + '/config.' + localeCodeShort + '.json';
 
-			var cacheBuster = Math.floor((Math.random() * 100) + 1);
+			var uri = xrxhelpers.getConfigPath(argv.t, localeCodeShort);
 
 			var requestOptions  = {
 				encoding: null,
 				method: "GET",
-				uri: server + "assets/json/xrx_bnr_json/v4_header_raw." + localeCodeShort + ".json?cacheBuster=" + cacheBuster,
+				uri: uri,
 				headers: {
 					"Cache control" : "no-cache"
 				}
@@ -77,7 +76,6 @@ gulp.task('download-test-configs', ['init-repo'], function()
 	if (argv.t != "local")
 		throw "Test configs can only be downloaded on local builds"
 
-	var server = xrxhelpers.getXeroxHttpServer(argv.t);
 	var locales = xrxhelpers.testLocales;
 	var downloaded = 0;
 
@@ -95,10 +93,12 @@ gulp.task('download-test-configs', ['init-repo'], function()
 			!differenceMinutes ||
 			differenceMinutes > 240)
 		{
+			var uri = xrxhelpers.getConfigPath(argv.t, locale);
+
 			var requestOptions  = {
 				encoding: null,
 				method: "GET",
-				uri: server + "assets/json/xrx_bnr_json/v4_header_raw." + locale + ".json?cacheBuster=" + cacheBuster,
+				uri: uri,
 				headers: {
 					"Cache-Control" : "no-cache"
 				}
