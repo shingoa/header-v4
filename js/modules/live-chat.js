@@ -1,7 +1,8 @@
 //=require modules/_helpers.js
 //=require modules/_data.js
+//=require modules/_metrics.js
 
-(function(window, document, helpers, data)
+(function(window, document, helpers, data, metrics)
 {
 	"use strict";
 
@@ -146,6 +147,11 @@
 						if (evt.preventDefault)
 							evt.preventDefault();
 
+						var clickTarget = evt.currentTarget;
+						var lid = metrics.determineLid(clickTarget);
+
+						metrics.trackLink(lid);
+
 						return false;
 					});
 				}
@@ -155,4 +161,4 @@
 			self.init();
 	}
 
-})(window, document, window.xrx.helpers, window.xrx.data);
+})(window, document, window.xrx.helpers, window.xrx.data, window.xrx.metrics);
