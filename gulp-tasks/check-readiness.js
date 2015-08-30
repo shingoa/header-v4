@@ -17,11 +17,20 @@ gulp.task('check-readiness', function (cb)
 
 	var promises = [];
 
+	if (argv.t == "prod")
+	{
+		// http://lampa.origin.xerox.com/assets/js/banners/V4.3.63.html
+		// http://wvlnxas01.opbu.xerox.com/assets/js/banners/V4.3.63.html
+		// http://wvlnxas02.opbu.xerox.com/assets/js/banners/V4.3.63.html
+		// http://wvlnxas03.opbu.xerox.com/assets/js/banners/V4.3.63.html
+
+		// http://usa0300lx261.na.xerox.net/assets/js/banners/V4.3.63.html
+		// http://lampb.origin.xerox.com/assets/js/banners/V4.3.63.html
+	}
+
+
 	var server = xrxhelpers.getXeroxHttpServer(argv.t);
 	server += "assets/";
-
-	var walkerPromise = q.defer();
-	promises.push(walkerPromise);
 
 	var walker = walk.walk("./compiled/" + argv.t, {
 		filters: ["parts"]
@@ -40,7 +49,7 @@ gulp.task('check-readiness', function (cb)
 		fullPath = fullPath.replace(/(css|js)\//, "$1/banners/");
 
 		var deferred = q.defer();
-		promises.push(deferred);
+		promises.push(deferred.promise);
 
 		var tryCount = 0;
 		var interval = setInterval(function() {
@@ -57,7 +66,6 @@ gulp.task('check-readiness', function (cb)
 						}
 						else {
 							gutil.log("Not ready: " + server + fullPath);
-							gutil.log(err);
 						}
 					})
 					.on('error', function(err){
@@ -72,9 +80,7 @@ gulp.task('check-readiness', function (cb)
 			}
 			tryCount++;
 
-		}, 15000);
-
-		deferred.resolve();
+		}, 30000);
 
 		next();
 	});
@@ -84,12 +90,11 @@ gulp.task('check-readiness', function (cb)
 	});
 
 	walker.on("end", function () {
-		walkerPromise.resolve();
+		q.allSettled(promises)
+			.then(function()
+			{
+				gutil.log("All ready");
+				cb();
+			});
 	});
-
-	q.allSettled(promises)
-		.then(function()
-		{
-			cb();
-		});
 });
