@@ -17,6 +17,18 @@ gulp.task('check-readiness', function (cb)
 
 	var promises = [];
 
+	if (argv.t == "prod")
+	{
+		// http://lampa.origin.xerox.com/assets/js/banners/V4.3.63.html
+		// http://wvlnxas01.opbu.xerox.com/assets/js/banners/V4.3.63.html
+		// http://wvlnxas02.opbu.xerox.com/assets/js/banners/V4.3.63.html
+		// http://wvlnxas03.opbu.xerox.com/assets/js/banners/V4.3.63.html
+
+		// http://usa0300lx261.na.xerox.net/assets/js/banners/V4.3.63.html
+		// http://lampb.origin.xerox.com/assets/js/banners/V4.3.63.html
+	}
+
+
 	var server = xrxhelpers.getXeroxHttpServer(argv.t);
 	server += "assets/";
 
