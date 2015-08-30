@@ -1,7 +1,8 @@
 //=require modules/_helpers.js
 //=require modules/_data.js
+//=require modules/_metrics.js
 
-(function(window, document, helpers, data)
+(function(window, document, helpers, data, metrics)
 {
 	"use strict";
 
@@ -113,13 +114,13 @@
 		{
 			if (url && text)
 			{
-				self.setListLink(url, text, document.getElementById("xrx_bnrv4_header_contact"));
-				self.setListLink(url, text, document.getElementById("xrx_bnrv4_header_contact_mobile"));
-				self.setListLink(url, text, document.getElementById("xrx_bnrv4_lobfooter_sales"));
+				self.setListLink(url, text, document.getElementById("xrx_bnrv4_header_contact"), "hdr");
+				self.setListLink(url, text, document.getElementById("xrx_bnrv4_header_contact_mobile"), "hdr");
+				self.setListLink(url, text, document.getElementById("xrx_bnrv4_lobfooter_sales"), "ftr");
 			}
 		}
 
-		self.setListLink = function(url, text, elm)
+		self.setListLink = function(url, text, elm, lidprefix)
 		{
 			if(url && text && elm)
 			{
@@ -135,7 +136,7 @@
 
 					var aTag = document.createElement("a");
 					aTag.setAttribute('href', url);
-					aTag.setAttribute('name', '&lid=ftr-live-chat');
+					aTag.setAttribute('name', '&lid=' + lidprefix + '-live-chat');
 					aTag.setAttribute('target', "_blank");
 					aTag.innerHTML = text;
 					liTag.appendChild(aTag);
@@ -146,6 +147,11 @@
 						if (evt.preventDefault)
 							evt.preventDefault();
 
+						var clickTarget = evt.currentTarget;
+						var lid = metrics.determineLid(clickTarget);
+
+						metrics.trackLink(lid);
+
 						return false;
 					});
 				}
@@ -155,4 +161,4 @@
 			self.init();
 	}
 
-})(window, document, window.xrx.helpers, window.xrx.data);
+})(window, document, window.xrx.helpers, window.xrx.data, window.xrx.metrics);
