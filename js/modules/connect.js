@@ -49,7 +49,7 @@
             }
             sourceArr = sourceArr.join("&");
 
-            var $feedsURL = 'http://www.xerox.com/perl-bin/social_aggregator_service.pl?' + sourceArr + 'aggregation_strategy=alternate_by_medium&show_count=2';
+            var $feedsURL = 'https://www.xerox.com/perl-bin/social_aggregator_service.pl?' + sourceArr + 'aggregation_strategy=alternate_by_medium&show_count=2';
 
             // Begin AJAX call to get the social feed
             $.ajax({
