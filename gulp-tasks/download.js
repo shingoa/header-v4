@@ -127,7 +127,7 @@ gulp.task('download-test-configs', ['init-repo'], function()
 					if (resp.statusCode < 300)
 					{
 						req
-							.pipe(source('config.' + localeCodeShort + '.json'))
+							.pipe(source('config.' + locale + '.json'))
 							.pipe(gulp.dest('./data/' + argv.t));
 					}
 				});
