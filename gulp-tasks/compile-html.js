@@ -22,7 +22,7 @@ gulp.task('compile-html', ['init-repo', 'clean', 'download-configs'], function()
 
 		locales.locales.forEach(function(locale)
 		{
-			if (locale.type != "redirect")
+			if (locale.type != "redirect" && (typeof(locale.redirect) === "undefined" || !locale.redirect))
 			{
 				var localeCodeShort = locale['locale-short'];
 

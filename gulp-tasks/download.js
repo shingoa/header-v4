@@ -19,6 +19,10 @@ gulp.task('download-locales', ['init-repo', 'clean'], function()
 	var cacheBuster = Math.floor((Math.random() * 100) + 1);
 
 	return request(server + "perl-bin/json_locale_service.pl?cacheBuster=" + cacheBuster)
+		.on("response", function(resp)
+		{
+			gutil.log("Downloaded locale config");
+		})
 		.pipe(source('locales.json'))
 		.pipe(gulp.dest('./data/' + argv.t));
 });
@@ -32,7 +36,7 @@ gulp.task('download-configs', ['init-repo', 'clean', 'download-locales'], functi
 
 	data.locales.forEach(function(locale)
 	{
-		if (locale.type != "redirect")
+		if (locale.type != "redirect" && (typeof(locale.redirect) === "undefined" || !locale.redirect))
 		{
 			var localeCodeShort = locale['locale-short'];
 			var savePath = './data/' + argv.t + '/config.' + localeCodeShort + '.json';
@@ -48,9 +52,20 @@ gulp.task('download-configs', ['init-repo', 'clean', 'download-locales'], functi
 				}
 			};
 
-			merged.add(request(requestOptions)
-				.pipe(source('config.' + localeCodeShort + '.json'))
-				.pipe(gulp.dest('./data/' + argv.t)));
+			var req = request(requestOptions)
+				.on("response", function(resp)
+				{
+					gutil.log("Downloaded config for " + locale['locale-short']);
+
+					if (resp.statusCode < 300)
+					{
+						req
+							.pipe(source('config.' + localeCodeShort + '.json'))
+							.pipe(gulp.dest('./data/' + argv.t));
+					}
+				});
+
+			merged.add(req);
 
 			downloaded++;
 		}
@@ -104,9 +119,19 @@ gulp.task('download-test-configs', ['init-repo'], function()
 				}
 			};
 
-			merged.add(request(requestOptions)
-				.pipe(source('config.' + locale + '.json'))
-				.pipe(gulp.dest('./data/' + argv.t)));
+			var req = request(requestOptions)
+				.on("response", function(resp)
+				{
+					gutil.log("Downloaded config for " + locale);
+
+					if (resp.statusCode < 300)
+					{
+						req
+							.pipe(source('config.' + localeCodeShort + '.json'))
+							.pipe(gulp.dest('./data/' + argv.t));
+					}
+				});
+			merged.add(req);
 
 			downloaded++;
 		}

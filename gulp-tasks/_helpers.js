@@ -163,7 +163,7 @@ helpers.openJson = function(path, shouldThrow)
 	}
 	catch (err)
 	{
-		gutil.log("Unable to open path: ", err.path);
+		gutil.log("Unable to open path: ", path, " - ", err);
 	}
 }
 
@@ -188,7 +188,7 @@ helpers.getXeroxHttpServer = function(tier)
 
 helpers.getConfigPath = function(tier, locale)
 {
-	var cacheBuster = Math.floor((Math.random() * 100) + 1);
+	var cacheBuster = Math.floor((Math.random() * 10000) + 1);
 
 	if (tier == "prod") {
 		return "http://w3adminp.opbu.xerox.com/perl-bin/get_banner_json_raw.pl?file=v4_header_raw." + locale + ".json&cacheBuster=" + cacheBuster;
