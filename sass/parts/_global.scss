@@ -2,6 +2,7 @@
 @import "vars";
 
 @import "../modules/_responsive_base";
+@import "print";
 
 #xrx_bnrv4_header,
 #xrx_bnrv4_footer {
@@ -51,6 +52,8 @@
 		background-image: $logoPathSvg;
 		background-repeat: no-repeat;
 		background-size: contain;
+		position: relative;
+		/*-webkit-print-color-adjust: exact;*/
 
 		&:focus
 		{
