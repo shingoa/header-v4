@@ -71,6 +71,14 @@
 		{
 			background-image: url("images/xerox_logo_big.png");
 		}
+		@include has_feature("elc-no-svg")
+		{
+			background-image: url("images/xerox_logo_big.png");
+		}
+		@include has_feature("ie8")
+		{
+			background-image: url("images/xerox_logo_big.png");
+		}
 
 		@include respond-min($break_tablet)
 		{
