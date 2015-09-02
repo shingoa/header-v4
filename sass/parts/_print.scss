@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import "vars";
+
+@media print
+{
+	#xrx_bnrv4_header_nav,
+	#xrx_bnrv4_header_nav_primary,
+	#xrx_bnrv4_header_nav_secondary,
+	#xrx_bnrv4_header_nav_tertiary,
+	#xrx_bnrv4_header_nav_tertiary_mobile,
+	#xrx_bnrv4_menu_openbtn,
+	#xrx_bnrv4_menu_defaultbtn,
+	#xrx_bnrv4_header_search,
+	#xrx_bnrv4_menu_search_default_btn,
+	#xrx_bnrv4_menu_search_btn,
+	#xrx_bnrv4_lobfooter
+	{
+		display: none !important;
+	}
+
+	#xrx_bnrv4_header_floater {
+		position: absolute !important;
+
+		&.xrx_bnrv4_scrolling {
+			border-bottom: none !important;
+			box-shadow: none !important;
+		}
+	}
+
+	.xrx_bnrv4_logo {
+		background-repeat: no-repeat !important;
+
+		&:after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			content: $logoPathSvg;
+		}
+	}
+
+	#xrx_bnrv4_header .xrx_bnrv4_logo {
+		left: 0 !important;
+	}
+}

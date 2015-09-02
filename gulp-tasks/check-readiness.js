@@ -17,15 +17,76 @@ gulp.task('check-readiness', function (cb)
 
 	var promises = [];
 
+	var version = xrxhelpers.getPackageVersion();
+
 	if (argv.t == "prod")
 	{
-		// http://lampa.origin.xerox.com/assets/js/banners/V4.3.63.html
-		// http://wvlnxas01.opbu.xerox.com/assets/js/banners/V4.3.63.html
-		// http://wvlnxas02.opbu.xerox.com/assets/js/banners/V4.3.63.html
-		// http://wvlnxas03.opbu.xerox.com/assets/js/banners/V4.3.63.html
+		var servers = [
+			'lampa.origin.xerox.com',
+			'wvlnxas01.opbu.xerox.com',
+			'wvlnxas02.opbu.xerox.com',
+			'wvlnxas03.opbu.xerox.com',
+			'wvlnxas04.opbu.xerox.com',
+			'wvlnxas05.opbu.xerox.com',
+			'wvlnxas10.opbu.xerox.com',
+			'wvlnxas11.opbu.xerox.com',
+			'wvlnxas12.opbu.xerox.com',
+			'wvlnxas13.opbu.xerox.com',
+			'wvlnxas14.opbu.xerox.com',
+			'wvlnxas15.opbu.xerox.com',
 
-		// http://usa0300lx261.na.xerox.net/assets/js/banners/V4.3.63.html
-		// http://lampb.origin.xerox.com/assets/js/banners/V4.3.63.html
+			'lampb.origin.xerox.com',
+			'nylnxas01.opbu.xerox.com',
+			'nylnxas02.opbu.xerox.com',
+			'nylnxas03.opbu.xerox.com',
+			'nylnxas04.opbu.xerox.com',
+			'nylnxas05.opbu.xerox.com',
+			'nylnxas06.opbu.xerox.com',
+			'nylnxas07.opbu.xerox.com',
+			'nylnxas08.opbu.xerox.com',
+			'nylnxas09.opbu.xerox.com'
+		];
+
+		servers.forEach(function(server)
+		{
+			var deferred = q.defer();
+			promises.push(deferred.promise);
+
+			var url = "http://" + server + "/assets/js/banners/V" + version + ".html";
+
+			var tryCount = 0;
+			var interval = setInterval(function()
+			{
+				if (tryCount < 120)
+				{
+					request
+						.get(url)
+						.on('response', function(response) {
+							if (response.statusCode < 300)
+							{
+								gutil.log("Ready on: " + server);
+								deferred.resolve("Ready on: " + server);
+								clearInterval(interval);
+							}
+							else {
+								gutil.log("Not ready on: " + server);
+							}
+						})
+						.on('error', function(err){
+							gutil.log("Not ready on: " + server);
+							gutil.log(err);
+						});
+				}
+				else {
+					deferred.reject(new Error("Failed to replicate onto: " + server));
+					clearInterval(interval);
+					gutil.log("Failed to replicate onto: " + server);
+
+					throw "Failed to replicate onto: " + server;
+				}
+			}, 30000);
+
+		});
 	}
 
 
@@ -53,11 +114,12 @@ gulp.task('check-readiness', function (cb)
 
 		var tryCount = 0;
 		var interval = setInterval(function() {
-			if (tryCount < 60)
+			if (tryCount < 120)
 			{
 				request
 					.get(server + fullPath)
-					.on('response', function(response) {
+					.on('response', function(response)
+					{
 						if (response.statusCode < 300)
 						{
 							gutil.log("Ready: " + server + fullPath);
@@ -77,6 +139,8 @@ gulp.task('check-readiness', function (cb)
 				deferred.reject(new Error("Failed: " + server + fullPath));
 				clearInterval(interval);
 				gutil.log("Failed: " + fullPath);
+
+				throw "Failed: " + fullPath;
 			}
 			tryCount++;
 
