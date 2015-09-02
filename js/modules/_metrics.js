@@ -14,9 +14,14 @@
 
 		self.trackLink = function(id)
 		{
-			if  ( typeof(xrx_hbx_proxy) !== 'undefined' && xrx_hbx_proxy.xrxLink )
+			if  ( typeof(xrx_hbx_proxy) !== 'undefined' )
 			{
-				xrx_hbx_proxy.xrxLink(id);
+				if (xrx_hbx_proxy.xrxLid) {
+					xrx_hbx_proxy.xrxLid(id);
+				}
+				else if (xrx_hbx_proxy.xrxLink) {
+					xrx_hbx_proxy.xrxLink(id);
+				}
 			}
 
 			if (xrx.data.getData("tier") == "dev" && typeof(window.console) !== "undefined" && window.console)
