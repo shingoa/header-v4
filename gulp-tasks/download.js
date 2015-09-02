@@ -9,90 +9,80 @@ var xrxhelpers = require('./_helpers.js');
 var argv = require('yargs').argv;
 var iconv  = require('iconv-lite');
 var gutil = require('gulp-util');
+var q = require('q');
 
 iconv.extendNodeEncodings();
 
-gulp.task('download-locales', ['init-repo', 'clean'], function()
+gulp.task('download-locales', ['init-repo', 'clean'], function(cb)
 {
 	var server = xrxhelpers.getXeroxHttpServer(argv.t);
-
 	var cacheBuster = Math.floor((Math.random() * 100) + 1);
 
-	return request(server + "perl-bin/json_locale_service.pl?cacheBuster=" + cacheBuster)
-		.on("response", function(resp)
-		{
-			gutil.log("Downloaded locale config");
-		})
-		.pipe(source('locales.json'))
-		.pipe(gulp.dest('./data/' + argv.t));
+	var d = xrxhelpers.downloadAndSaveDeferred(
+		server + "perl-bin/json_locale_service.pl?cacheBuster=" + cacheBuster,
+		'./data/' + argv.t,
+		'locales.json'
+	);
+
+	return d.promise;
 });
 
 gulp.task('download-configs', ['init-repo', 'clean', 'download-locales'], function()
 {
-	var merged = mergeStream();
+	var promises = [];
 
 	var data = xrxhelpers.openJson('./data/' + argv.t + '/locales.json', true);
-	var downloaded = 0;
 
-	data.locales.forEach(function(locale)
+	if (typeof(data) !== "undefined" && data)
 	{
-		if (locale.type != "redirect" && (typeof(locale.redirect) === "undefined" || !locale.redirect))
+		data.locales.forEach(function(locale)
 		{
-			var localeCodeShort = locale['locale-short'];
-			var savePath = './data/' + argv.t + '/config.' + localeCodeShort + '.json';
+			if (locale.type != "redirect" && (typeof(locale.redirect) === "undefined" || !locale.redirect))
+			{
+				var localeCodeShort = locale['locale-short'];
+				var savePath = './data/' + argv.t + '/config.' + localeCodeShort + '.json';
 
-			var uri = xrxhelpers.getConfigPath(argv.t, localeCodeShort);
+				var uri = xrxhelpers.getConfigPath(argv.t, localeCodeShort);
 
-			var requestOptions  = {
-				encoding: null,
-				method: "GET",
-				uri: uri,
-				headers: {
-					"Cache control" : "no-cache"
-				}
-			};
-
-			var req = request(requestOptions)
-				.on("response", function(resp)
-				{
-					gutil.log("Downloaded config for " + locale['locale-short']);
-
-					if (resp.statusCode < 300)
-					{
-						req
-							.pipe(source('config.' + localeCodeShort + '.json'))
-							.pipe(gulp.dest('./data/' + argv.t));
-					}
+				var d = xrxhelpers.downloadAndSaveDeferred(
+					uri,
+					'./data/' + argv.t,
+					'config.' + localeCodeShort + '.json'
+				);
+				d.promise.then(function(){
+					complete++;
 				});
 
-			merged.add(req);
-
-			downloaded++;
-		}
-	});
-
-	if (downloaded == 0)
+				promises.push(d.promise);
+			}
+		});
+	}
+	else
 	{
-		// This may seem weird but without it the download task stalls in the case that it doesn't need
-		// to download any updated files.
-		// I'd rather that didn't happen
-		merged.add(
-			gulp.src('./data/config.*.json')
-		);
+		throw "Could not open locales.json file";
 	}
 
-	return merged;
+	var all = q.all(promises);
+	all.then(function(data)
+		{
+			gutil.log("All configs downloaded");
+		})
+		.fail(function(err)
+		{
+			gutil.log("Config download failure");
+		});
+
+	return all;
 });
 
-gulp.task('download-test-configs', ['init-repo'], function()
+gulp.task('download-test-configs', ['init-repo'], function(cb)
 {
-	var merged = mergeStream();
+	var promises = [];
 
 	if (argv.t != "local")
 		throw "Test configs can only be downloaded on local builds"
 
 	var locales = xrxhelpers.testLocales;
-	var downloaded = 0;
 
 	locales.forEach(function(locale)
 	{
@@ -110,42 +100,14 @@ gulp.task('download-test-configs', ['init-repo'], function()
 		{
 			var uri = xrxhelpers.getConfigPath(argv.t, locale);
 
-			var requestOptions  = {
-				encoding: null,
-				method: "GET",
-				uri: uri,
-				headers: {
-					"Cache-Control" : "no-cache"
-				}
-			};
-
-			var req = request(requestOptions)
-				.on("response", function(resp)
-				{
-					gutil.log("Downloaded config for " + locale);
-
-					if (resp.statusCode < 300)
-					{
-						req
-							.pipe(source('config.' + locale + '.json'))
-							.pipe(gulp.dest('./data/' + argv.t));
-					}
-				});
-			merged.add(req);
-
-			downloaded++;
+			var d = xrxhelpers.downloadAndSaveDeferred(
+				uri,
+				'./data/' + argv.t,
+				'config.' + locale + '.json'
+			);
+			promises.push(d.promise);
 		}
 	});
 
-	if (downloaded == 0)
-	{
-		// This may seem weird but without it the download task stalls in the case that it doesn't need
-		// to download any updated files.
-		// I'd rather that didn't happen
-		merged.add(
-			gulp.src('./data/config.*.json')
-		);
-	}
-
-	return merged;
+	return q.all(promises);
 });

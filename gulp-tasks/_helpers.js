@@ -1,8 +1,13 @@
 'use strict';
 
+var gulp = require('gulp');
+var source = require('vinyl-source-stream');
 var fs = require('fs');
 var gutil = require('gulp-util');
 var ent = require('ent');
+var q = require('q');
+var request = require('request');
+
 var helpers = {};
 
 helpers.testLocales = ["ptbr", "engb", "frfr", "heil", "enus", "sample", "huhu"];
@@ -163,7 +168,7 @@ helpers.openJson = function(path, shouldThrow)
 	}
 	catch (err)
 	{
-		gutil.log("Unable to open path: ", path, " - ", err);
+		gutil.log("Unable to open path:", path);
 	}
 }
 
@@ -199,6 +204,102 @@ helpers.getConfigPath = function(tier, locale)
 	else {
 		return "http://psgdev.opbu.xerox.com/assets/json/xrx_bnr_json/v4_header_raw." + locale + ".json?cacheBuster=" + cacheBuster;
 	}
+}
+
+helpers.downloadDeferred = function(uri, name, retry, count, deferred)
+{
+	deferred = deferred || q.defer();
+	retry = retry || 3;
+	count = count || 0;
+	name = name || uri;
+
+	gutil.log("Downloading: " + name);
+
+	var requestOptions  = {
+		encoding: null,
+		method: "GET",
+		uri: uri,
+		headers: {
+			"Cache control" : "no-cache"
+		}
+	};
+
+	var req = request(requestOptions)
+		.on("response", function(resp)
+		{
+			if (resp.statusCode < 300)
+			{
+				gutil.log("Downloaded: " + name);
+
+				deferred.resolve({
+					success: true,
+					req: req,
+					resp: resp
+				});
+			}
+			else if (resp.statusCode == 404)
+			{
+				gutil.log("Not found: " + name);
+
+				deferred.resolve({
+					success: false,
+					req: req,
+					resp: resp
+				});
+			}
+			else
+			{
+				if (count + 1 < retry) {
+					gutil.log("Failed... Retrying: " + name + " - Status Code: " + resp.statusCode);
+					helpers.downloadDeferred(uri, name, retry, count + 1, deferred);
+				} else {
+					gutil.log("Failed... Fatal: " + name + " | " + requestOptions.uri);
+					deferred.reject(new Error("Failed to download: " + uri + " - Status code: " + resp.statusCode));
+				}
+			}
+		})
+		.on("error", function(err)
+		{
+			if (count + 1 < retry) {
+				gutil.log("Failed... Retrying: " + name);
+				helpers.downloadDeferred(uri, name, retry, count + 1, deferred);
+			} else {
+				gutil.log("Failed... Fatal: " + name + " | " + requestOptions.uri);
+				deferred.reject(new Error("Failed to download: " + uri + " - " + err));
+			}
+		});
+
+	return deferred;
+}
+
+helpers.downloadAndSaveDeferred = function(uri, dir, filename, retry)
+{
+	var deferred = q.defer();
+
+	helpers.downloadDeferred(uri, filename).promise
+		.then(function(data)
+		{
+			if (data.success)
+			{
+				data.req
+					.pipe(source(filename))
+					.pipe(gulp.dest(dir))
+					.on("end", function() {
+						gutil.log("Saved: " + filename);
+						deferred.resolve("Saved: " + filename);
+					});
+			}
+			else
+			{
+				deferred.resolve("Not found: " + filename);
+			}
+		})
+		.fail(function(err)
+		{
+			deferred.reject(err);
+		});
+
+	return deferred;
 }
 
 module.exports = helpers;
