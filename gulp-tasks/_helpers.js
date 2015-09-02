@@ -206,19 +206,32 @@ helpers.getConfigPath = function(tier, locale)
 	}
 }
 
-helpers.downloadDeferred = function(uri, name, retry, count, deferred)
+helpers.downloadDeferred = function(data)
 {
-	deferred = deferred || q.defer();
-	retry = retry || 3;
-	count = count || 0;
-	name = name || uri;
+	if (typeof(data) === "undefined" || !data) {
+		throw "No data supplied";
+	}
+	if (typeof(data.uri) === "undefined" || !data.uri) {
+		throw "No uri supplied";
+	}
 
-	gutil.log("Downloading: " + name);
+	data.deferred = data.deferred || q.defer();
+	data.retry = data.retry || 3;
+	data.count = data.count || 0;
+	data.name = data.name || data.uri;
+	data.retryDelay = data.retryDelay || 5000;
+	data.retryOn404 = data.retryOn404 || false;
+	data.silentRetry = data.silentRetry || false;
+	data.silentComplete = data.silentComplete || false;
+	data.silentDownloading = data.silentDownloading || false;
+
+	if (!data.silentDownloading)
+		gutil.log("Downloading: " + data.name);
 
 	var requestOptions  = {
 		encoding: null,
 		method: "GET",
-		uri: uri,
+		uri: data.uri,
 		headers: {
 			"Cache control" : "no-cache"
 		}
@@ -227,56 +240,94 @@ helpers.downloadDeferred = function(uri, name, retry, count, deferred)
 	var req = request(requestOptions)
 		.on("response", function(resp)
 		{
+			data.count++;
+
 			if (resp.statusCode < 300)
 			{
-				gutil.log("Downloaded: " + name);
+				if (!data.silentComplete)
+					gutil.log("Downloaded: " + data.name);
 
-				deferred.resolve({
+				data.deferred.resolve({
 					success: true,
 					req: req,
-					resp: resp
+					resp: resp,
+					name: data.name
 				});
 			}
 			else if (resp.statusCode == 404)
 			{
-				gutil.log("Not found: " + name);
+				if (!data.silentRetry)
+					gutil.log("404: " + data.name);
 
-				deferred.resolve({
-					success: false,
-					req: req,
-					resp: resp
-				});
+				if (data.retryOn404)
+				{
+					setTimeout(function() {
+						helpers.downloadDeferred(data);
+					}, data.retryDelay);
+				}
+				else
+				{
+					data.deferred.resolve({
+						success: false,
+						req: req,
+						resp: resp,
+						name: data.name
+					});
+				}
 			}
 			else
 			{
-				if (count + 1 < retry) {
-					gutil.log("Failed... Retrying: " + name + " - Status Code: " + resp.statusCode);
-					helpers.downloadDeferred(uri, name, retry, count + 1, deferred);
-				} else {
-					gutil.log("Failed... Fatal: " + name + " | " + requestOptions.uri);
-					deferred.reject(new Error("Failed to download: " + uri + " - Status code: " + resp.statusCode));
+				if (data.count < data.retry)
+				{
+					if (!data.silentRetry)
+						gutil.log("Failed... Retrying: " + data.name + " - Status Code: " + resp.statusCode);
+
+					setTimeout(function() {
+						helpers.downloadDeferred(data);
+					}, data.retryDelay);
+				}
+				else
+				{
+					if (!data.silentRetry)
+						gutil.log("Failed... Fatal: " + data.name + " | " + requestOptions.uri);
+
+					data.deferred.reject(new Error("Failed to download: " + data.uri + " - Status code: " + resp.statusCode));
 				}
 			}
 		})
 		.on("error", function(err)
 		{
-			if (count + 1 < retry) {
-				gutil.log("Failed... Retrying: " + name);
-				helpers.downloadDeferred(uri, name, retry, count + 1, deferred);
-			} else {
-				gutil.log("Failed... Fatal: " + name + " | " + requestOptions.uri);
-				deferred.reject(new Error("Failed to download: " + uri + " - " + err));
+			data.count++;
+
+			if (count < retry)
+			{
+				if (!data.silentRetry)
+					gutil.log("Failed... Retrying: " + data.name);
+
+				setTimeout(function() {
+					helpers.downloadDeferred(data);
+				}, data.retryDelay);
+			}
+			else
+			{
+				if (!data.silentRetry)
+					gutil.log("Failed... Fatal: " + data.name + " | " + requestOptions.uri);
+
+				data.deferred.reject(new Error("Failed to download: " + data.uri + " - " + err));
 			}
 		});
 
-	return deferred;
+	return data.deferred;
 }
 
 helpers.downloadAndSaveDeferred = function(uri, dir, filename, retry)
 {
 	var deferred = q.defer();
 
-	helpers.downloadDeferred(uri, filename).promise
+	helpers.downloadDeferred({
+		uri: uri,
+		name: filename
+	}).promise
 		.then(function(data)
 		{
 			if (data.success)

@@ -49,49 +49,31 @@ gulp.task('check-readiness', function (cb)
 
 		servers.forEach(function(server)
 		{
-			var deferred = q.defer();
-			promises.push(deferred.promise);
+			var d = xrxhelpers.downloadDeferred({
+				uri: "http://" + server + "/assets/js/banners/V" + version + ".html",
+				retry: 200,
+				name: server,
+				retryDelay: 30000,
+				retryOn404: true,
+				silentComplete: true,
+				silentDownloading: true
+			});
+			d.promise.then (function(data) {
+				gutil.log("Ready: " + data.name);
+			});
 
-			var url = "http://" + server + "/assets/js/banners/V" + version + ".html";
-
-			var tryCount = 0;
-			var interval = setInterval(function()
-			{
-				if (tryCount < 120)
-				{
-					request
-						.get(url)
-						.on('response', function(response) {
-							if (response.statusCode < 300)
-							{
-								gutil.log("Ready on: " + server);
-								deferred.resolve("Ready on: " + server);
-								clearInterval(interval);
-							}
-							else {
-								gutil.log("Not ready on: " + server);
-							}
-						})
-						.on('error', function(err){
-							gutil.log("Not ready on: " + server);
-							gutil.log(err);
-						});
-				}
-				else {
-					deferred.reject(new Error("Failed to replicate onto: " + server));
-					clearInterval(interval);
-					gutil.log("Failed to replicate onto: " + server);
-
-					throw "Failed to replicate onto: " + server;
-				}
-			}, 30000);
-
+			promises.push(d.promise);
 		});
 	}
 
 
 	var server = xrxhelpers.getXeroxHttpServer(argv.t);
 	server += "assets/";
+
+	var walkerDeferred = q.defer();
+	promises.push(walkerDeferred.promise);
+
+	var walkerPromises = [];
 
 	var walker = walk.walk("./compiled/" + argv.t, {
 		filters: ["parts"]
@@ -109,42 +91,20 @@ gulp.task('check-readiness', function (cb)
 
 		fullPath = fullPath.replace(/(css|js)\//, "$1/banners/");
 
-		var deferred = q.defer();
-		promises.push(deferred.promise);
+		var d = xrxhelpers.downloadDeferred({
+			uri: server + fullPath,
+			retry: 200,
+			name: fullPath,
+			retryDelay: 30000,
+			retryOn404: true,
+			silentComplete: true,
+			silentDownloading: true
+		});
+		d.promise.then (function(data) {
+			gutil.log("Ready: " + data.name);
+		});
 
-		var tryCount = 0;
-		var interval = setInterval(function() {
-			if (tryCount < 120)
-			{
-				request
-					.get(server + fullPath)
-					.on('response', function(response)
-					{
-						if (response.statusCode < 300)
-						{
-							gutil.log("Ready: " + server + fullPath);
-							deferred.resolve("Ready: " + fullPath);
-							clearInterval(interval);
-						}
-						else {
-							gutil.log("Not ready: " + server + fullPath);
-						}
-					})
-					.on('error', function(err){
-						gutil.log("Not ready: " + server + fullPath);
-						gutil.log(err);
-					});
-			}
-			else {
-				deferred.reject(new Error("Failed: " + server + fullPath));
-				clearInterval(interval);
-				gutil.log("Failed: " + fullPath);
-
-				throw "Failed: " + fullPath;
-			}
-			tryCount++;
-
-		}, 30000);
+		walkerPromises.push(d.promise);
 
 		next();
 	});
@@ -154,11 +114,11 @@ gulp.task('check-readiness', function (cb)
 	});
 
 	walker.on("end", function () {
-		q.allSettled(promises)
-			.then(function()
-			{
-				gutil.log("All ready");
-				cb();
+		q.all(walkerPromises)
+			.then(function(){
+				walkerDeferred.resolve("Walk complete");
 			});
 	});
+
+	return q.all(promises);
 });
