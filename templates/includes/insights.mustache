@@ -1,9 +1,9 @@
 {{#insights}}
 	<li>
-		<input type="radio" name="xrx_bnrv4_header_nav_primary" value="xrx_bnrv4_insights" id="xrx_bnrv4_insights" autocomplete="off" />
-		<label for="xrx_bnrv4_insights" name="&amp;lid=hdr-bar-insights">{{label}}</label>
+		<input type="radio" name="xrx_bnrv4_header_nav_primary" value="xrx_bnrv4_insights" id="xrx_bnrv4_insights" autocomplete="off" aria-hidden="true" />
+		<label for="xrx_bnrv4_insights" name="&amp;lid=hdr-bar-insights" role="tab" aria-controls="xrx_bnrv4_header_flyout_insights">{{label}}</label>
 
-		<div class="xrx_bnrv4_header_flyout">
+		<div class="xrx_bnrv4_header_flyout" id="xrx_bnrv4_header_flyout_insights" role="tabpanel">
 			<div>
 				{{> ./mustachePartials/flyout_header}}
 
