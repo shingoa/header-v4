@@ -8,7 +8,10 @@ var gutil = require('gulp-util');
 var argv = require('yargs')
     .default({ t : 'local' })
 	.alias('t', 'tier')
-	.describe('t', 'Specify the tier to build for. local/dev/test/prod. Defaults to test')
+	.describe('t', 'Specify the tier to build for. local/dev/test/prod. Defaults to local')
+    .alias('l', 'locales')
+	.describe('l', 'Specify the locales to build for')
+    .array('l')
     .argv
 ;
 
