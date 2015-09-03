@@ -1,16 +1,33 @@
 {{#header}}
 	<div id="xrx_bnrv4_header">
-		<input type="radio" name="xrx_bnrv4_header_menu" value="xrx_bnrv4_header_defaultchk" id="xrx_bnrv4_header_defaultchk" checked="checked" autocomplete="off" />
+		<input type="radio" name="xrx_bnrv4_header_menu" value="xrx_bnrv4_header_defaultchk" id="xrx_bnrv4_header_defaultchk" checked="checked" autocomplete="off" aria-hidden="true" />
 
-		<input type="radio" name="xrx_bnrv4_header_menu" value="xrx_bnrv4_header_menuchk" id="xrx_bnrv4_header_menuchk" autocomplete="off" />
-		<input type="radio" name="xrx_bnrv4_header_menu" value="xrx_bnrv4_header_searchchk" id="xrx_bnrv4_header_searchchk" autocomplete="off" />
+		<input type="radio" name="xrx_bnrv4_header_menu" value="xrx_bnrv4_header_menuchk" id="xrx_bnrv4_header_menuchk" autocomplete="off" aria-hidden="true" />
+		<input type="radio" name="xrx_bnrv4_header_menu" value="xrx_bnrv4_header_searchchk" id="xrx_bnrv4_header_searchchk" autocomplete="off" aria-hidden="true" />
 
 		<div id="xrx_bnrv4_header_floater">
 			<div>
-				<label for="xrx_bnrv4_header_defaultchk" name="&amp;lid=hdr-pre-int-menu-close" id="xrx_bnrv4_menu_defaultbtn" title="{{trans.menuBtnTitle}}" class="xrx_bnrv4_menu_btn">
+				<label
+					for="xrx_bnrv4_header_defaultchk"
+					name="&amp;lid=hdr-pre-int-menu-close"
+					id="xrx_bnrv4_menu_defaultbtn"
+					title="{{trans.menuBtnTitle}}"
+					class="xrx_bnrv4_menu_btn"
+					aria-label="{{trans.menuBtnTitle}}"
+					role="button"
+					aria-controls="xrx_bnrv4_header_nav">
 					{{> mustachePartials/menu_icon }}
 				</label>
-				<label for="xrx_bnrv4_header_menuchk" name="&amp;lid=hdr-pre-int-menu" id="xrx_bnrv4_menu_openbtn" title="{{trans.menuBtnTitle}}" class="xrx_bnrv4_menu_btn">
+
+				<label
+					for="xrx_bnrv4_header_menuchk"
+					name="&amp;lid=hdr-pre-int-menu"
+					id="xrx_bnrv4_menu_openbtn"
+					title="{{trans.menuBtnTitle}}"
+					class="xrx_bnrv4_menu_btn"
+					aria-label="{{trans.menuBtnTitle}}"
+					role="button"
+					aria-controls="xrx_bnrv4_header_nav">
 					{{> mustachePartials/menu_icon }}
 				</label>
 				<a class="xrx_bnrv4_logo" name="&lid=hdr-pre-logo-home" href="{{trans.logoURL}}" title="{{trans.logoTitle}}"></a>
@@ -31,7 +48,7 @@
 
 			<div>
 				{{#header.primaryNav}}
-					<ul id="xrx_bnrv4_header_nav_primary">
+					<ul id="xrx_bnrv4_header_nav_primary" role="tablist">
 						{{> ../includes/services}}
 						{{> ../includes/products}}
 						{{> ../includes/insights}}
