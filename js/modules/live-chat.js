@@ -114,7 +114,7 @@
 		{
 			if (url && text)
 			{
-				self.setListLink(url, text, document.getElementById("xrx_bnrv4_header_contact"), "hdr");
+				self.setListLink(url, text, document.getElementById("xrx_bnrv4_header_contact"), "hdr-pre");
 				self.setListLink(url, text, document.getElementById("xrx_bnrv4_header_contact_mobile"), "hdr");
 				self.setListLink(url, text, document.getElementById("xrx_bnrv4_lobfooter_sales"), "ftr");
 			}
