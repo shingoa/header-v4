@@ -7,6 +7,7 @@ var gutil = require('gulp-util');
 var ent = require('ent');
 var q = require('q');
 var request = require('request');
+var argv = require('yargs').argv;
 
 var helpers = {};
 
@@ -351,6 +352,27 @@ helpers.downloadAndSaveDeferred = function(uri, dir, filename, retry)
 		});
 
 	return deferred;
+}
+
+helpers.getPassedArg = function(key)
+{
+	if (key)
+	{
+		if (key === "l" || key === "locales")
+		{
+			var locales = argv["locales"];
+
+			if (locales) {
+				return locales.split(",");
+			}
+		}
+
+		if (argv[key]) {
+			return argv[key];
+		}
+	}
+
+	return null;
 }
 
 module.exports = helpers;

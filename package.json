@@ -1,6 +1,6 @@
 {
   "name": "xerox.com-banners",
-  "version": "4.3.78",
+  "version": "4.3.79",
   "description": "Xerox.com banners",
   "main": "gulpfile.js",
   "dependencies": {},

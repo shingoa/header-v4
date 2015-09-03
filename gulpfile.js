@@ -11,7 +11,6 @@ var argv = require('yargs')
 	.describe('t', 'Specify the tier to build for. local/dev/test/prod. Defaults to local')
     .alias('l', 'locales')
 	.describe('l', 'Specify the locales to build for')
-    .array('l')
     .argv
 ;
 
