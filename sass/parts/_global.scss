@@ -54,14 +54,6 @@
 		background-size: contain;
 		position: relative;
 		/*-webkit-print-color-adjust: exact;*/
-
-		&:focus
-		{
-			@include respond-min($break_desktop)
-			{
-				outline: 1px solid $red !important;
-			}
-		}
 	}
 
 	@include respond-min($break_desktop)

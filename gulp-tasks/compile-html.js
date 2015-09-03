@@ -18,28 +18,41 @@ gulp.task('compile-html', ['init-repo', 'clean', 'download-configs'], function()
 	try
 	{
 		var version = xrxhelpers.getPackageVersion();
-		var locales = xrxhelpers.openJson('./data/' + argv.t + '/locales.json', true);
 
-		locales.locales.forEach(function(locale)
+		var locales = xrxhelpers.getPassedArg("locales");
+		if (!locales || !locales.length || locales.length === 0)
+		{
+			locales = [];
+
+			var data = xrxhelpers.openJson('./data/' + argv.t + '/locales.json', true);
+			data.locales.forEach(function(locale)
+			{
+				if (locale.type != "redirect" && (typeof(locale.redirect) === "undefined" || !locale.redirect))
+				{
+					locales.push(data.locales['locale-short']);
+				}
+			});
+		}
+
+
+		locales.forEach(function(locale)
 		{
 			if (locale.type != "redirect" && (typeof(locale.redirect) === "undefined" || !locale.redirect))
 			{
-				var localeCodeShort = locale['locale-short'];
-
 				try
 				{
-					var templateData = xrxhelpers.openJson('./data/' + argv.t + '/config.' + localeCodeShort + '.json');
+					var templateData = xrxhelpers.openJson('./data/' + argv.t + '/config.' + locale + '.json');
 
 					if (typeof(templateData) !== "undefined" && templateData)
 					{
-						templateData = xrxhelpers.processTemplateData(templateData, localeCodeShort);
+						templateData = xrxhelpers.processTemplateData(templateData, locale);
 
 						templateData.imagePath = "/assets/css/banners/" + version + "/images/";
 
 						merged.add(gulp.src(['./templates/parts/header.mustache', './templates/parts/footer.mustache', './templates/parts/footer.*.mustache'])
 							.pipe(mustache(templateData))
 							.pipe(rename({
-								'suffix' : '.' + localeCodeShort,
+								'suffix' : '.' + locale,
 								'extname' : '.html'
 							}))
 							.pipe(gulp.dest('./compiled/' + argv.t + '/parts/' + version)));

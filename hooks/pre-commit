@@ -1,6 +1,6 @@
 #!/bin/sh
 
-rightBranch=`git status --branch --porcelain | grep -b dev`
+rightBranch=`git status --branch --porcelain | grep -b 'origin/dev'`
 if [ "$rightBranch" != "" ]; then
 	echo "---------------------------------------------------"
 	echo "Commit failed..."
@@ -9,7 +9,7 @@ if [ "$rightBranch" != "" ]; then
 	exit 1;
 fi
 
-rightBranch=`git status --branch --porcelain | grep -b test`
+rightBranch=`git status --branch --porcelain | grep -b 'origin/test'`
 if [ "$rightBranch" != "" ]; then
 	echo "---------------------------------------------------"
 	echo "Commit failed..."
@@ -18,7 +18,7 @@ if [ "$rightBranch" != "" ]; then
 	exit 1;
 fi
 
-rightBranch=`git status --branch --porcelain | grep -b prod`
+rightBranch=`git status --branch --porcelain | grep -b 'origin/prod'`
 if [ "$rightBranch" != "" ]; then
 	echo "---------------------------------------------------"
 	echo "Commit failed..."

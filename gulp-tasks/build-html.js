@@ -16,7 +16,11 @@ gulp.task('build-html', ['init-repo', 'download-test-configs'], function()
 	if (argv.t != "local")
 		throw "Builds can only be performed locally"
 
-	var locales = xrxhelpers.testLocales;
+	var locales = xrxhelpers.getPassedArg("locales");
+
+	if (!locales || !locales.length || locales.length == 0) {
+		locales = xrxhelpers.testLocales;
+	}
 
 	var merged = mergeStream();
 
