@@ -13,7 +13,7 @@ var q = require('q');
 
 iconv.extendNodeEncodings();
 
-gulp.task('download-locales', ['init-repo', 'clean'], function(cb)
+gulp.task('download-locales', ['init-repo'], function(cb)
 {
 	var locales = xrxhelpers.getPassedArg("locales");
 	if (locales && locales.length && locales.length > 0)
@@ -35,25 +35,11 @@ gulp.task('download-locales', ['init-repo', 'clean'], function(cb)
 	}
 });
 
-gulp.task('download-configs', ['init-repo', 'clean', 'download-locales'], function()
+gulp.task('download-configs', ['init-repo', 'download-locales'], function()
 {
 	var promises = [];
 
-	var locales = xrxhelpers.getPassedArg("locales");
-	if (!locales || !locales.length || locales.length === 0)
-	{
-		locales = [];
-
-		var data = xrxhelpers.openJson('./data/' + argv.t + '/locales.json', true);
-		data.locales.forEach(function(locale)
-		{
-			if (locale.type != "redirect" && (typeof(locale.redirect) === "undefined" || !locale.redirect))
-			{
-				locales.push(data.locales['locale-short']);
-			}
-		});
-	}
-
+	var locales = xrxhelpers.getLocales("locales");
 
 	if (locales && locales.length && locales.length > 0)
 	{
