@@ -375,4 +375,34 @@ helpers.getPassedArg = function(key)
 	return null;
 }
 
+helpers.getLocales = function()
+{
+	var locales = helpers.getPassedArg("locales");
+	if (!locales || !locales.length || locales.length === 0)
+	{
+		locales = [];
+
+		console.log(argv);
+
+		var tier = argv.t || argv.tier;
+
+		var data = helpers.openJson('./data/' + tier + '/locales.json', true);
+		if (data)
+		{
+			data.locales.forEach(function(locale)
+			{
+				if (locale.type != "redirect" && (typeof(locale.redirect) === "undefined" || !locale.redirect))
+				{
+					locales.push(locale['locale-short']);
+				}
+			});
+		}
+	}
+
+	if (!locales || locales.length == 0)
+		throw "No locales supplied";
+
+	return locales;
+}
+
 module.exports = helpers;

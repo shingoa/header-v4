@@ -93,7 +93,7 @@ gulp.task('check-readiness', function (cb)
 
 		var d = xrxhelpers.downloadDeferred({
 			uri: server + fullPath,
-			retry: 200,
+			retry: 100,
 			name: fullPath,
 			retryDelay: 30000,
 			retryOn404: true,
