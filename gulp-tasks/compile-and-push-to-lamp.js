@@ -10,7 +10,7 @@ var xrxhelpers = require('./_helpers.js');
 var argv = require('yargs').argv;
 var gutil = require('gulp-util');
 
-gulp.task('compile-and-push-to-lamp', ['clean', 'compile-zip'], function()
+gulp.task('compile-and-push-to-lamp', ['compile-zip'], function()
 {
 	var merged = mergeStream();
 

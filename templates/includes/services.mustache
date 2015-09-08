@@ -1,10 +1,9 @@
 {{#services}}
-
 	<li>
-		<input type="radio" name="xrx_bnrv4_header_nav_primary" value="xrx_bnrv4_services" id="xrx_bnrv4_services" autocomplete="off" />
-		<label for="xrx_bnrv4_services" name="&amp;lid=hdr-bar-services">{{label}}</label>
+		<input type="radio" name="xrx_bnrv4_header_nav_primary" value="xrx_bnrv4_services" id="xrx_bnrv4_services" autocomplete="off" aria-hidden="true" />
+		<label for="xrx_bnrv4_services" name="&amp;lid=hdr-bar-services" role="tab" aria-controls="xrx_bnrv4_header_flyout_services">{{label}}</label>
 
-		<div class="xrx_bnrv4_header_flyout">
+		<div class="xrx_bnrv4_header_flyout" id="xrx_bnrv4_header_flyout_services" role="tabpanel">
 			<div>
 				{{> ./mustachePartials/flyout_header}}
 

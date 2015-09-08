@@ -344,6 +344,17 @@
 
 	@include respond-min($break_desktop)
 	{
+		&.xrx_bnr_hdr_search_active
+		{
+			#xrx_bnrv4_header_nav {
+				max-height: 100%;
+				border-top: 1px solid #dbdbdb;
+			}
+		}
+	}
+
+	@include respond-min($break_desktop)
+	{
 		.xrx_bnrv4_header_flyout {
 			min-height: 50px;
 			border-bottom: 1px solid #dbdbdb;

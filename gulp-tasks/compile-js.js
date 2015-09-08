@@ -8,7 +8,7 @@ var xrxhelpers = require('./_helpers.js');
 var include = require("gulp-include");
 var mergeStream = require("merge-stream");
 
-gulp.task('compile-js', ['init-repo', 'clean'], function ()
+gulp.task('compile-js', ['init-repo'], function ()
 {
 	var version = xrxhelpers.getPackageVersion();
 
