@@ -56,10 +56,14 @@ gulp.task('check-readiness', function (cb)
 				retryDelay: 30000,
 				retryOn404: true,
 				silentComplete: true,
-				silentDownloading: true
+				silentDownloading: false
 			});
-			d.promise.then (function(data) {
-				gutil.log("Ready: " + data.name);
+			d.promise.then(function(data) {
+				if (data.success) {
+					gutil.log("Ready: " + data.name);
+				} else {
+					gutil.log("Not Ready: " + data.name);
+				}
 			});
 
 			promises.push(d.promise);
@@ -93,15 +97,19 @@ gulp.task('check-readiness', function (cb)
 
 		var d = xrxhelpers.downloadDeferred({
 			uri: server + fullPath,
-			retry: 100,
+			retry: 200,
 			name: fullPath,
 			retryDelay: 30000,
 			retryOn404: true,
 			silentComplete: true,
-			silentDownloading: true
+			silentDownloading: false
 		});
-		d.promise.then (function(data) {
-			gutil.log("Ready: " + data.name);
+		d.promise.then(function(data) {
+			if (data.success) {
+				gutil.log("Ready: " + data.name);
+			} else {
+				gutil.log("Not Ready: " + data.name);
+			}
 		});
 
 		walkerPromises.push(d.promise);
