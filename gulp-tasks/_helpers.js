@@ -227,7 +227,7 @@ helpers.downloadDeferred = function(data)
 	data.silentDownloading = data.silentDownloading || false;
 
 	if (!data.silentDownloading)
-		gutil.log("Downloading: " + data.name);
+		gutil.log("Downloading (attempt " + (data.count + 1) + " / " + data.retry + "): " + data.name);
 
 	var requestOptions  = {
 		encoding: null,
@@ -257,17 +257,20 @@ helpers.downloadDeferred = function(data)
 			}
 			else if (resp.statusCode == 404)
 			{
-				if (!data.silentRetry)
-					gutil.log("404: " + data.name);
-
-				if (data.retryOn404)
+				if (data.retryOn404 && data.count < data.retry)
 				{
+					if (!data.silentRetry)
+						gutil.log("404 - Retrying: " + data.name);
+
 					setTimeout(function() {
 						helpers.downloadDeferred(data);
 					}, data.retryDelay);
 				}
 				else
 				{
+					if (!data.silentRetry)
+						gutil.log("404: " + data.name);
+
 					data.deferred.resolve({
 						success: false,
 						req: req,
@@ -281,7 +284,7 @@ helpers.downloadDeferred = function(data)
 				if (data.count < data.retry)
 				{
 					if (!data.silentRetry)
-						gutil.log("Failed... Retrying: " + data.name + " - Status Code: " + resp.statusCode);
+						gutil.log("Failed - Retrying: " + data.name + " | Status Code: " + resp.statusCode);
 
 					setTimeout(function() {
 						helpers.downloadDeferred(data);
@@ -290,7 +293,7 @@ helpers.downloadDeferred = function(data)
 				else
 				{
 					if (!data.silentRetry)
-						gutil.log("Failed... Fatal: " + data.name + " | " + requestOptions.uri);
+						gutil.log("Failed - Fatal: " + data.name + " | " + requestOptions.uri);
 
 					data.deferred.reject(new Error("Failed to download: " + data.uri + " - Status code: " + resp.statusCode));
 				}
@@ -303,7 +306,7 @@ helpers.downloadDeferred = function(data)
 			if (count < retry)
 			{
 				if (!data.silentRetry)
-					gutil.log("Failed... Retrying: " + data.name);
+					gutil.log("Failed - Retrying: " + data.name);
 
 				setTimeout(function() {
 					helpers.downloadDeferred(data);
@@ -312,7 +315,7 @@ helpers.downloadDeferred = function(data)
 			else
 			{
 				if (!data.silentRetry)
-					gutil.log("Failed... Fatal: " + data.name + " | " + requestOptions.uri);
+					gutil.log("Failed - Fatal: " + data.name + " | " + requestOptions.uri);
 
 				data.deferred.reject(new Error("Failed to download: " + data.uri + " - " + err));
 			}
@@ -381,8 +384,6 @@ helpers.getLocales = function()
 	if (!locales || !locales.length || locales.length === 0)
 	{
 		locales = [];
-
-		console.log(argv);
 
 		var tier = argv.t || argv.tier;
 
