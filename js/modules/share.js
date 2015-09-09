@@ -74,15 +74,11 @@
 					{
 						switch (evt.data.service)
 						{
-							case "email" :
-								metrics.trackLink("hdr-pre-int-share-email");
-								share_type = 'email';
-								break;
-							case "print" :
-								metrics.trackLink("hdr-pre-int-share-print");
+							case "more" :
+								metrics.trackLink("hdr-pre-int-share-plus");
 								break;
 							default :
-								metrics.trackLink("hdr-pre-int-share-social-network");
+								metrics.trackLink("hdr-pre-int-share-" + evt.data.service);
 								break;
 						}
 					}
