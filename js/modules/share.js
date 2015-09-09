@@ -65,11 +65,7 @@
 
 				window.addthis.addEventListener('addthis.ready', function()
 				{
-					helpers.log("AddThis ready");
-
-					var htmlElm = document.documentElement;
-
-					htmlElm.className = htmlElm.className + " addthis";
+					self.addThisReady();
 				});
 
 				window.addthis.addEventListener('addthis.menu.share', function(evt)
@@ -92,11 +88,30 @@
 					}
 				});
 
+				if (window.addthis.ost) {
+					self.addThisReady();
+				}
+
+				setTimeout(function() {
+					self.addThisReady();
+				}, 1000);
+
 				return true;
 			}
 		}
 
 		return false;
+	};
+
+	self.addThisReady = function()
+	{
+		var htmlElm = document.documentElement;
+		if (htmlElm.className.indexOf("addthis") === -1)
+		{
+			helpers.log("AddThis ready");
+
+			htmlElm.className = htmlElm.className + " addthis";
+		}
 	};
 
 	self.init();
