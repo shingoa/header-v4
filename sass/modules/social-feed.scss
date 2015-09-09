@@ -30,6 +30,7 @@ $xerox-red: $red;
 	}
 }
 
+#xrx_bnrv4_lobfooter .xrx_social_feed,
 .xrx_social_feed {
 	padding: 0 0 10px;
 
@@ -81,7 +82,13 @@ $xerox-red: $red;
 		.text-side {
 			margin-left: 45px;
 			font-weight: lighter;
-			font-size: 15px;
+
+			a,
+			p {
+				font-size: 15px;
+				color: $xerox-red;
+				line-height: 20px;
+			}
 
 			@include respond-min($break_tablet)
 			{
@@ -96,9 +103,7 @@ $xerox-red: $red;
 		&:hover {
 			text-decoration: none;
 		}
-		a {
-			color: $xerox-red;
-		}
+
 		p.li-info {
 			color: #333;
 			span {
@@ -111,9 +116,6 @@ $xerox-red: $red;
 		p {
 			color: #333;
 			margin-bottom: 0;
-			a {
-				color: $xerox-red;
-			}
 			&.account {
 				a {
 					&:hover {
@@ -135,13 +137,28 @@ $xerox-red: $red;
 				height: 16px;
 				text-indent: -99999px;
 				margin-right: 40px;
+				&.reply {
+					background-position: 0px 0;
+
+					&:hover {
+						background-position: -16px 0;
+					}
+				}
 				&.retweet {
 					background-position: -81px 0;
 					width: 17px;
+
+					&:hover {
+						background-position: -100px 0;
+					}
 				}
 				&.favorite {
 					margin-right: 0;
 					background-position: -32px 0;
+
+					&:hover {
+						background-position: -48px 0;
+					}
 				}
 			}
 		}
