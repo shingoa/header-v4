@@ -9,5 +9,6 @@
 //=include modules/banners.js
 //=include modules/live-chat.js
 //=include modules/connect.js
+//=include modules/share.js
 
 //=include modules/ie8.js
