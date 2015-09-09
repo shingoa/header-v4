@@ -14,6 +14,7 @@
 	if (typeof(window.xrx.liveChat) == "undefined")
 	{
 		var self = {};
+		window.xrx.liveChat = self;
 
 		self.init = function()
 		{

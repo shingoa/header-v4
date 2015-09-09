@@ -1,23 +1,14 @@
 {{#share}}
-	{{#links.length}}
-		<li id="xrx_bnrv4_header_share">
-			<input type="radio" name="xrx_bnrv4_header_menu" value="xrx_bnrv4_header_sharechk" id="xrx_bnrv4_header_sharechk" autocomplete="off" aria-hidden="true" />
-			<label for="xrx_bnrv4_header_defaultchk" class="xrx_bnrv4_header_defaultlbl" name="&amp;lid=hdr-pre-int-share-close">{{label}}</label>
-			<label for="xrx_bnrv4_header_sharechk" name="&amp;lid=hdr-pre-int-share" aria-haspopup="true">{{label}}</label>
+	<li id="xrx_bnrv4_header_share">
+		<input type="radio" name="xrx_bnrv4_header_menu" value="xrx_bnrv4_header_sharechk" id="xrx_bnrv4_header_sharechk" autocomplete="off" aria-hidden="true" />
+		<label for="xrx_bnrv4_header_defaultchk" class="xrx_bnrv4_header_defaultlbl" name="&amp;lid=hdr-pre-int-share-close">{{label}}</label>
+		<label for="xrx_bnrv4_header_sharechk" name="&amp;lid=hdr-pre-int-share" aria-haspopup="true">{{label}}</label>
 
-			<div class="xrx_bnrv4_header_flyout" aria-label="submenu">
-				<label for="xrx_bnrv4_header_defaultchk" class="xrx_bnrv4_header_defaultlbl" name="&amp;lid=hdr-pre-int-share-close">✖</label>
-				<p>{{label}}</p>
+		<div class="xrx_bnrv4_header_flyout" aria-label="submenu">
+			<label for="xrx_bnrv4_header_defaultchk" class="xrx_bnrv4_header_defaultlbl" name="&amp;lid=hdr-pre-int-share-close">✖</label>
+			<p>{{label}}</p>
 
-				{{> share_content }}
-			</div>
-		</li>
-	{{/links.length}}
-	{{^links.length}}
-		{{#href}}
-			<li id="xrx_bnrv4_header_share">
-				{{> ./mustachePartials/link }}
-			</li>
-		{{/href}}
-	{{/links.length}}
+			{{> share_content }}
+		</div>
+	</li>
 {{/share}}

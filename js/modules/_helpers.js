@@ -102,6 +102,14 @@
 					self.addClass(elm, cls);
 			}
 		}
+
+		self.log = function()
+		{
+			if (typeof(window.console) === "object" && typeof(window.console.log) === "function")
+			{
+				window.console.log(arguments);
+			}
+		}
 	}
 
 })(window, document);
