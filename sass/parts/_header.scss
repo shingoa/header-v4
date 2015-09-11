@@ -369,4 +369,59 @@
 			}
 		}
 	}
+
+	#xrx_bnr_v4_floating_title {
+		display: none;
+		position: absolute;
+		left: 30px;
+		top: 27px;
+		font-size: 20px;
+	}
+	#xrx_bnr_v4_floating_nav {
+		display: none;
+		@include xrx_bnrv4_inlinelist;
+		position: absolute;
+		top: 30px;
+		left: 262px;
+		right: 368px;
+
+		> li {
+			@include xrx_bnrv4_list_dividers("right");
+
+			&,
+			> a {
+				font-size: 18px;
+				font-weight: lighter;
+			}
+
+			&.xrx_bnr_v4_floating_nav_active_current {
+
+				&,
+				> a {
+					color: $red;
+				}
+			}
+		}
+	}
+
+	@include respond-min($break_tablet)
+	{
+		&.xrx_bnr_v4_floating_title_active {
+			#xrx_bnr_v4_floating_title {
+				display: block;
+			}
+			.xrx_bnrv4_logo {
+				display: none;
+			}
+		}
+
+		&.xrx_bnr_v4_floating_nav_active {
+			#xrx_bnr_v4_floating_nav {
+				display: block;
+			}
+			#xrx_bnrv4_header_search {
+				display: none;
+			}
+		}
+	}
 }

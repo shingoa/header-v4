@@ -1,4 +1,5 @@
 //=require modules/_helpers.js
+//=require modules/_metrics.js
 
 (function(window, document, helpers, metrics)
 {
@@ -20,7 +21,7 @@
 					helpers.log("Share module is missing AddThis, loading...");
 
 					var script = document.createElement("script");
-					script.setAttribute("src", "http://s7.addthis.com/js/250/addthis_widget.js?pub=xeroxinteractive");
+					script.setAttribute("src", "//s7.addthis.com/js/250/addthis_widget.js?pub=xeroxinteractive");
 					script.setAttribute("type", "text/javascript");
 
 					helpers.attachListener(script, "load", function(evt)
