@@ -84,14 +84,9 @@
 		{
 			width: 142px;
 			height: 38px;
-			top: 21px;
-			left: 20px;
 			right: auto;
 			background-position: left center;
-		}
-		@include respond-min($break_desktop)
-		{
-			left: 30px;
+			position: static;
 		}
 	}
 
@@ -115,6 +110,46 @@
 			position: relative;
 
 			height: 80px;
+
+			@include respond-min($break_tablet)
+			{
+				> div.xrx_bnrv4_table {
+					display: table;
+					width: 100%;
+					position: relative;
+					top: 18px;
+
+					> div {
+						display: table-row;
+
+						> div {
+							display: table-cell;
+							vertical-align: middle;
+							padding-right: 20px;
+
+							&:first-child {
+								padding-left: 30px;
+							}
+
+							&:last-child {
+								padding-right: 30px;
+							}
+
+							&#xrx_bnrv4_header_logocol {
+								padding-right: 80px;
+							}
+
+							&#xrx_bnrv4_header_searchcol {
+								width: 100%;
+							}
+
+							&#xrx_bnrv4_header_tertiarycol {
+								padding-left: 40px;
+							}
+						}
+					}
+				}
+			}
 		}
 
 		&.xrx_bnrv4_scrolling {
@@ -166,12 +201,9 @@
 
 		@include respond-min($break_tablet)
 		{
-			top: 29px;
-			right: 20px;
-		}
-		@include respond-min($break_desktop)
-		{
-			right: 30px;
+			position: relative;
+			top: auto;
+			right: auto;
 		}
 	}
 
@@ -338,17 +370,6 @@
 					max-height: 100%;
 					border-top: 1px solid #dbdbdb;
 				}
-			}
-		}
-	}
-
-	@include respond-min($break_desktop)
-	{
-		&.xrx_bnr_hdr_search_active
-		{
-			#xrx_bnrv4_header_nav {
-				max-height: 100%;
-				border-top: 1px solid #dbdbdb;
 			}
 		}
 	}

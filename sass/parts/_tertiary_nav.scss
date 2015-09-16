@@ -115,15 +115,13 @@
 		@include respond-min($break_tablet)
 		{
 			@include xrx_bnrv4_inlinelist;
-			position: absolute;
 			display: block;
-			top: 29px;
-			right: 80px;
 			font-size: 18px;
 			font-weight: lighter;
 			z-index: 4100;
 			min-width: 200px;
 			text-align: right;
+			position: relative;
 
 			> li {
 				@include xrx_bnrv4_list_dividers("left");
@@ -232,11 +230,6 @@
 					}
 				}
 			}
-		}
-
-		@include respond-min($break_desktop)
-		{
-			right: 80px;
 		}
 	}
 
