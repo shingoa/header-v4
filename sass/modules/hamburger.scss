@@ -5,8 +5,8 @@
 @import "../vendor/css3-mixins";
 
 // SOURCE: http://codepen.io/designcouch/pen/Atyop
-.xrx_bnrv4_menu_btn {
-	display: block;
+.xrx_bnrv4_hamburger_btn {
+	display: inline-block;
 	width: 30px;
 	height: 20px;
 	position: relative;
@@ -36,6 +36,16 @@
 		}
 		&.xrx_bnrv4_n4 {
 			bottom: 0;
+		}
+	}
+}
+
+label {
+	&:hover,
+	&:active
+	{
+		> .xrx_bnrv4_hamburger_btn span {
+			background-color: $red;
 		}
 	}
 }
