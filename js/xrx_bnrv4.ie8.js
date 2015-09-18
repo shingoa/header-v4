@@ -10,5 +10,6 @@
 //=include modules/live-chat.js
 //=include modules/connect.js
 //=include modules/share.js
+//=include modules/content-in-header.js
 
 //=include modules/ie8.js

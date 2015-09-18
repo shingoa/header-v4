@@ -99,14 +99,14 @@
 		@include respond-min($break_tablet)
 		{
 			display: block;
-			position: absolute;
+			position: static;
 			padding: 0;
 			background-color: none;
 			border: none;
 
-			left: 200px;
-			right: 300px;
-			top: 20px;
+			left: auto;
+			right: auto;
+			top: auto;
 
 			input {
 				border: none;
@@ -122,20 +122,6 @@
 					border-color: $red;
 				}
 			}
-		}
-
-		@include respond-min($break_desktop)
-		{
-			@if ($page_width <= 740px) {
-				left: 200px;
-				right: 340px;
-			}
-			@else {
-				left: 262px;
-				right: 368px;
-			}
-
-			top: 20px;
 		}
 	}
 }

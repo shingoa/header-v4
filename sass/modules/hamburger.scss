@@ -26,11 +26,6 @@
 		opacity: 1;
 		left: 0;
 
-		/*
-		@include transform(rotate(0deg));
-		@include transition(transform .25s ease-in-out, top .25s ease-in-out, left .25s ease-in-out, width .25s ease-in-out);
-		*/
-
 		&.xrx_bnrv4_n1 {
 			top: 1px;
 		}
@@ -47,6 +42,13 @@
 
 #xrx_bnrv4_header_menuchk
 {
+	~ #xrx_bnrv4_header_floater .xrx_bnrv4_menu_btn
+	{
+		&#xrx_bnrv4_menu_defaultbtn {
+			display: none;
+		}
+	}
+
 	@include checked()
 	{
 		~ #xrx_bnrv4_header_floater .xrx_bnrv4_menu_btn
@@ -56,8 +58,11 @@
 			}
 
 			&#xrx_bnrv4_menu_openbtn {
-				position: absolute;
-				top: -100000px;
+				display: none;
+			}
+
+			&#xrx_bnrv4_menu_defaultbtn {
+				display: block;
 			}
 		}
 	}
@@ -107,7 +112,7 @@
 	}
 
 	.xrx_bnr_hdr_search_active
-	{	
+	{
 		#xrx_bnrv4_header_floater .xrx_bnrv4_menu_btn span
 		{
 			&.xrx_bnrv4_n1 {

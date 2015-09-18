@@ -19,7 +19,10 @@
 
 			$(document).on("focus blur", "#xrx_bnr_hdr_utilitynav_search_form input", function(evt)
 			{
-				$hdr.toggleClass("xrx_bnr_hdr_search_active", evt.type == "focusin");
+				var $chk = $("#xrx_bnrv4_header_menuchk");
+
+				if ($chk.length > 0)
+					$chk[0].checked = true;
 			});
 		}
 		else
