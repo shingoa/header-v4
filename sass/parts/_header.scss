@@ -84,14 +84,9 @@
 		{
 			width: 142px;
 			height: 38px;
-			top: 21px;
-			left: 20px;
 			right: auto;
 			background-position: left center;
-		}
-		@include respond-min($break_desktop)
-		{
-			left: 30px;
+			position: static;
 		}
 	}
 
@@ -115,6 +110,55 @@
 			position: relative;
 
 			height: 80px;
+
+			@include respond-min($break_tablet)
+			{
+				> div.xrx_bnrv4_table {
+					display: table;
+					width: 100%;
+					position: relative;
+					top: 18px;
+
+					> div {
+						display: table-row;
+
+						> div {
+							display: table-cell;
+							vertical-align: middle;
+							padding-right: 0;
+
+							&:first-child {
+								padding-left: 30px;
+							}
+
+							&:last-child {
+								padding-right: 30px;
+							}
+
+							&#xrx_bnrv4_header_logocol {
+								padding-right: 80px;
+							}
+
+							&#xrx_bnrv4_header_searchcol {
+								width: 100%;
+							}
+
+							&#xrx_bnrv4_header_tertiarycol {
+								padding-left: 40px;
+							}
+
+							&#xrx_bnrv4_header_menucol {
+								padding-left: 20px;
+
+								@include has_feature("xrx_show_menu_on_hamburger")
+								{
+									padding-left: 0px;
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 
 		&.xrx_bnrv4_scrolling {
@@ -166,12 +210,58 @@
 
 		@include respond-min($break_tablet)
 		{
-			top: 29px;
-			right: 20px;
+			position: relative;
+			top: auto;
+			right: auto;
 		}
+
 		@include respond-min($break_desktop)
 		{
-			right: 30px;
+			@include has_feature("xrx_show_menu_on_hamburger")
+			{
+				display: inline-block;
+				line-height: 21px;
+				white-space: nowrap;
+
+				&:before {
+					content: attr(data-label);
+					display: inline-block;
+					font-size: 18px;
+					font-weight: lighter;
+					padding-right: 40px;
+				}
+
+				&:after {
+					content: "";
+					display: block;
+					position: absolute;
+					top: 20%;
+					bottom: 20%;
+					left: 0;
+					width: 1px;
+					background-color: #dbdbdb;
+					border: none !important;
+				}
+
+				@if ($page_width <= 740px) {
+					padding-left: 7px;
+					margin-left: 7px;
+				}
+				@else if ($page_width <= 940px) {
+					padding-left: 8px;
+					margin-left: 8px;
+				}
+				@else {
+					padding-left: 10px;
+					margin-left: 10px;
+				}
+
+				> .xrx_bnrv4_hamburger_btn {
+					position: absolute;
+					right: 0;
+					top: -1px;
+				}
+			}
 		}
 	}
 
@@ -344,17 +434,6 @@
 
 	@include respond-min($break_desktop)
 	{
-		&.xrx_bnr_hdr_search_active
-		{
-			#xrx_bnrv4_header_nav {
-				max-height: 100%;
-				border-top: 1px solid #dbdbdb;
-			}
-		}
-	}
-
-	@include respond-min($break_desktop)
-	{
 		.xrx_bnrv4_header_flyout {
 			min-height: 50px;
 			border-bottom: 1px solid #dbdbdb;
@@ -366,6 +445,61 @@
 				box-sizing: border-box;
 				padding: 30px;
 				@include xrx_bnrv4_positionit;
+			}
+		}
+	}
+
+	#xrx_bnr_v4_floating_title {
+		display: none;
+		position: absolute;
+		left: 30px;
+		top: 27px;
+		font-size: 20px;
+	}
+	#xrx_bnr_v4_floating_nav {
+		display: none;
+		@include xrx_bnrv4_inlinelist;
+		position: absolute;
+		top: 30px;
+		left: 262px;
+		right: 368px;
+
+		> li {
+			@include xrx_bnrv4_list_dividers("right");
+
+			&,
+			> a {
+				font-size: 18px;
+				font-weight: lighter;
+			}
+
+			&.xrx_bnr_v4_floating_nav_active_current {
+
+				&,
+				> a {
+					color: $red;
+				}
+			}
+		}
+	}
+
+	@include respond-min($break_tablet)
+	{
+		&.xrx_bnr_v4_floating_title_active {
+			#xrx_bnr_v4_floating_title {
+				display: block;
+			}
+			.xrx_bnrv4_logo {
+				display: none;
+			}
+		}
+
+		&.xrx_bnr_v4_floating_nav_active {
+			#xrx_bnr_v4_floating_nav {
+				display: block;
+			}
+			#xrx_bnrv4_header_search {
+				display: none;
 			}
 		}
 	}

@@ -14,7 +14,7 @@
 
 		self.trackLink = function(id)
 		{
-			if  ( typeof(xrx_hbx_proxy) !== 'undefined' )
+			if (typeof(xrx_hbx_proxy) !== 'undefined')
 			{
 				if (xrx_hbx_proxy.xrxLid) {
 					xrx_hbx_proxy.xrxLid(id);

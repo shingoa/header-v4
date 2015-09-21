@@ -26,32 +26,36 @@ if (!document.addEventListener)
 				// This makes labels work properly
 				helpers.attachListener(labels[i], "click", function(evt)
 				{
-					var label = (event.currentTarget) ? event.currentTarget : event.srcElement;
-					var forAttr = label.getAttribute("for");
+					var label = evt.currentTarget;
 
-					if (forAttr)
+					if (label)
 					{
-						var input = document.getElementById(forAttr);
+						var forAttr = label.getAttribute("for");
 
-						if (input)
+						if (forAttr)
 						{
-							if (input.getAttribute("type") === "radio" || input.getAttribute("type") === "checkbox")
+							var input = document.getElementById(forAttr);
+
+							if (input)
 							{
-								try {
+								if (input.getAttribute("type") === "radio" || input.getAttribute("type") === "checkbox")
+								{
+									try {
+										input.focus();
+									} catch (err) {};
+
+									input.checked = true;
+
+									try {
+										input.blur();
+									} catch (err) {};
+
+									self.checkCheckboxState();
+								}
+								else
+								{
 									input.focus();
-								} catch (err) {};
-
-								input.checked = true;
-
-								try {
-									input.blur();
-								} catch (err) {};
-
-								self.checkCheckboxState();
-							}
-							else
-							{
-								input.focus();
+								}
 							}
 						}
 					}

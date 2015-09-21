@@ -33,6 +33,13 @@
 	> li {
 		display: inline-block;
 		margin-right: 1px;
+
+		&,
+		> a,
+		> span,
+		> label {
+			white-space: nowrap;
+		}
 	}
 }
 
