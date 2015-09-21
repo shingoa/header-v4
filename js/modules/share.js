@@ -12,6 +12,12 @@
 
 	self.loadAddThisIfRequired = function()
 	{
+		// If IE8 do not include!
+		if (!document.addEventListener)
+		{
+			return;
+		}
+
 		if (typeof(window.addthis) == 'undefined')
 		{
 			setTimeout(function()
