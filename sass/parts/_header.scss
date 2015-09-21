@@ -207,6 +207,7 @@
 		position: absolute;
 		top: 23px;
 		right: 5px;
+		margin-bottom: 0;
 
 		@include respond-min($break_tablet)
 		{
