@@ -150,7 +150,7 @@
 							&#xrx_bnrv4_header_menucol {
 								padding-left: 20px;
 
-								@include has_feature("xrx_mnu_ab_opt1")
+								@include has_feature("xrx_show_menu_on_hamburger")
 								{
 									padding-left: 0px;
 								}
@@ -217,7 +217,7 @@
 
 		@include respond-min($break_desktop)
 		{
-			@include has_feature("xrx_mnu_ab_opt1")
+			@include has_feature("xrx_show_menu_on_hamburger")
 			{
 				display: inline-block;
 				line-height: 21px;
