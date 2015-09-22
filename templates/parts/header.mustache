@@ -7,39 +7,56 @@
 
 		<div id="xrx_bnrv4_header_floater">
 			<div>
-				<label
-					for="xrx_bnrv4_header_defaultchk"
-					name="&amp;lid=hdr-pre-int-menu-close"
-					id="xrx_bnrv4_menu_defaultbtn"
-					title="{{trans.menuBtnTitle}}"
-					class="xrx_bnrv4_menu_btn"
-					aria-label="{{trans.menuBtnTitle}}"
-					role="button"
-					aria-controls="xrx_bnrv4_header_nav">
-					{{> mustachePartials/menu_icon }}
-				</label>
+				<div class="xrx_bnrv4_table">
+					<div>
+						<div id="xrx_bnrv4_header_logocol">
+							<a class="xrx_bnrv4_logo" name="&lid=hdr-pre-logo-home" href="{{trans.logoURL}}" title="{{trans.logoTitle}}"></a>
+							<div id="xrx_bnr_v4_floating_title"></div>
+						</div>
 
-				<label
-					for="xrx_bnrv4_header_menuchk"
-					name="&amp;lid=hdr-pre-int-menu"
-					id="xrx_bnrv4_menu_openbtn"
-					title="{{trans.menuBtnTitle}}"
-					class="xrx_bnrv4_menu_btn"
-					aria-label="{{trans.menuBtnTitle}}"
-					role="button"
-					aria-controls="xrx_bnrv4_header_nav">
-					{{> mustachePartials/menu_icon }}
-				</label>
-				<a class="xrx_bnrv4_logo" name="&lid=hdr-pre-logo-home" href="{{trans.logoURL}}" title="{{trans.logoTitle}}"></a>
+						<div id="xrx_bnrv4_header_searchcol">
+							{{> ../includes/search }}
+							<ul id="xrx_bnr_v4_floating_nav"></ul>
+						</div>
 
-				{{> ../includes/search }}
+						<div id="xrx_bnrv4_header_tertiarycol">
+							{{#header.tertiaryNav}}
+								<ul id="xrx_bnrv4_header_nav_tertiary">
+									{{> ../includes/contact}}
+									{{> ../includes/share}}
+								</ul>
+							{{/header.tertiaryNav}}
+						</div>
 
-				{{#header.tertiaryNav}}
-					<ul id="xrx_bnrv4_header_nav_tertiary">
-						{{> ../includes/contact}}
-						{{> ../includes/share}}
-					</ul>
-				{{/header.tertiaryNav}}
+						<div id="xrx_bnrv4_header_menucol">
+							<label
+								for="xrx_bnrv4_header_defaultchk"
+								name="&amp;lid=hdr-pre-int-menu-close"
+								id="xrx_bnrv4_menu_defaultbtn"
+								title="{{trans.menuBtnTitle}}"
+								data-label="{{trans.menuLabel}}"
+								class="xrx_bnrv4_menu_btn"
+								aria-label="{{trans.menuBtnTitle}}"
+								role="button"
+								aria-controls="xrx_bnrv4_header_nav">
+								{{> mustachePartials/menu_icon }}
+							</label>
+
+							<label
+								for="xrx_bnrv4_header_menuchk"
+								name="&amp;lid=hdr-pre-int-menu"
+								id="xrx_bnrv4_menu_openbtn"
+								title="{{trans.menuBtnTitle}}"
+								data-label="{{trans.menuLabel}}"
+								class="xrx_bnrv4_menu_btn"
+								aria-label="{{trans.menuBtnTitle}}"
+								role="button"
+								aria-controls="xrx_bnrv4_header_nav">
+								{{> mustachePartials/menu_icon }}
+							</label>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 

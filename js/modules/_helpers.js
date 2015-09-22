@@ -54,13 +54,34 @@
 		{
 			if (elm)
 			{
+				var normalise = function(evt)
+				{
+					if (!evt.currentTarget && evt.srcElement) {
+						var currentTarget = evt.srcElement;
+
+						while (currentTarget)
+						{
+							if (currentTarget === elm)
+							{
+								evt.currentTarget = currentTarget;
+								break;
+							}
+
+							currentTarget = currentTarget.parentNode;
+						}
+					}
+
+					if (callback)
+						callback(evt);
+				};
+
 				if (elm.addEventListener)
 				{
-					elm.addEventListener(event, callback, false);
+					elm.addEventListener(event, normalise, false);
 				}
 				else if (elm.attachEvent)
 				{
-					elm.attachEvent("on" + event, callback);
+					elm.attachEvent("on" + event, normalise);
 				}
 			}
 		};
@@ -100,6 +121,14 @@
 					self.removeClass(elm, cls);
 				else
 					self.addClass(elm, cls);
+			}
+		}
+
+		self.log = function()
+		{
+			if (typeof(window.console) === "object" && typeof(window.console.log) === "function")
+			{
+				window.console.log(arguments);
 			}
 		}
 	}
