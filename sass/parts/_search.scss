@@ -103,14 +103,14 @@
 			padding: 0;
 			background-color: none;
 			border: none;
+			max-height: 40px;
 
 			left: auto;
 			right: auto;
 			top: auto;
 
-			input {
-				border: none;
-				border: 1px solid #ebebeb;
+			form > input {
+				border: 1px solid #ebebeb !important;
 				outline: none;
 
 				&::-ms-clear {

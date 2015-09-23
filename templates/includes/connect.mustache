@@ -1,67 +1,83 @@
-<div class="xrx_links_social_network">
-	<a href="https://www.facebook.com/XeroxCorp" name="&lid=connect-follow-facebook" target="_blank"><img alt="Facebook" src="css/images/icon_fb.png"></a>
-	<a href="https://twitter.com/Xerox" name="&lid=connect-follow-twitter" target="_blank"><img alt="Twitter" src="css/images/icon_tw.png"></a>
-	<a href="https://www.linkedin.com/company/xerox" name="&lid=connect-follow-linkedin" target="_blank"><img alt="LinkedIn" src="css/images/icon_ln.png"></a>
-	<a href="https://www.youtube.com/user/XeroxCorp" name="&lid=connect-follow-youtube" target="_blank"><img alt="YouTube" src="css/images/icon_yt.png"></a>
-	<a href="https://plus.google.com/+Xerox" name="&lid=connect-follow-google-plus" target="_blank"><img alt="Google+" src="css/images/icon_go.png"></a>
-</div>
-<div class="xrx_social_feed" data-handles="tw:XeroxCorp,tw:ServicesatXerox,tw:XeroxHealthcare,tw:XeroxTransportation,tw:XeroxProduction,li:Xerox">
-</div>
+{{#connect}}
+	{{#follow}}
+		<div class="xrx_links_social_network">
+			{{#facebook}}
+				<a href="{{{facebook}}}" name="&lid=connect-follow-facebook" target="_blank"><img alt="Facebook" src="css/images/icon_fb.png"></a>
+			{{/facebook}}
+			{{#twitter}}
+				<a href="{{{twitter}}}" name="&lid=connect-follow-twitter" target="_blank"><img alt="Twitter" src="css/images/icon_tw.png"></a>
+			{{/twitter}}
+			{{#linkedin}}
+				<a href="{{{linkedin}}}" name="&lid=connect-follow-linkedin" target="_blank"><img alt="LinkedIn" src="css/images/icon_ln.png"></a>
+			{{/linkedin}}
+			{{#youtube}}
+				<a href="{{{youtube}}}" name="&lid=connect-follow-youtube" target="_blank"><img alt="YouTube" src="css/images/icon_yt.png"></a>
+			{{/youtube}}
+			{{#googleplus}}
+				<a href="{{{googleplus}}}" name="&lid=connect-follow-google-plus" target="_blank"><img alt="Google+" src="css/images/icon_go.png"></a>
+			{{/googleplus}}
+		</div>
+	{{/follow}}
+	{{#display}}
+		<div class="xrx_social_feed" data-handles="{{{display}}}">
+		</div>
 
-{{=<% %>=}}
-<script id="feed-tmpl-js" type="text/x-jsrender">
+		{{=<% %>=}}
+		<script id="feed-tmpl-js" type="text/x-jsrender">
 
-    {{if twitter}}
-	    <div class="feed-tweet" data-index="{{:index}}">
-	        <div class="icon">
-				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
-					<path d="M64 12.151c-2.355 1.044-4.885 1.75-7.541 2.067 2.711-1.625 4.793-4.198 5.773-7.264-2.537 1.505-5.347 2.597-8.338 3.186-2.395-2.552-5.808-4.146-9.584-4.146-7.251 0-13.13 5.879-13.13 13.13 0 1.029 0.116 2.031 0.34 2.992-10.912-0.548-20.588-5.775-27.064-13.719-1.13 1.939-1.778 4.195-1.778 6.601 0 4.556 2.318 8.575 5.841 10.929-2.152-0.068-4.177-0.659-5.947-1.642-0.001 0.055-0.001 0.11-0.001 0.165 0 6.362 4.526 11.668 10.533 12.875-1.102 0.3-2.262 0.461-3.459 0.461-0.846 0-1.669-0.083-2.47-0.236 1.671 5.216 6.52 9.013 12.266 9.118-4.494 3.522-10.155 5.621-16.307 5.621-1.060 0-2.105-0.062-3.132-0.184 5.811 3.726 12.713 5.9 20.128 5.9 24.151 0 37.358-20.008 37.358-37.359 0-0.569-0.013-1.136-0.038-1.699 2.566-1.851 4.792-4.164 6.552-6.797z" fill="#000000"></path>
-				</svg>
-			</div>
-	        <div class="text-side">
-		        <p class="account">
-		            <a href="{{:account_link}}" target="_blank">{{:account_name}} {{:account}}</a> {{:tweetLink}}
-		        </p>
-		        <p class="tweet-text">{{:title_twitter}}</p>
-		        <div class="twitter-actions">{{:reply}} {{:retweet}} {{:favorite}}</div>
-	        </div>
-	    </div>
-    {{/if}}
+		    {{if twitter}}
+			    <div class="feed-tweet" data-index="{{:index}}">
+			        <div class="icon">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+							<path d="M64 12.151c-2.355 1.044-4.885 1.75-7.541 2.067 2.711-1.625 4.793-4.198 5.773-7.264-2.537 1.505-5.347 2.597-8.338 3.186-2.395-2.552-5.808-4.146-9.584-4.146-7.251 0-13.13 5.879-13.13 13.13 0 1.029 0.116 2.031 0.34 2.992-10.912-0.548-20.588-5.775-27.064-13.719-1.13 1.939-1.778 4.195-1.778 6.601 0 4.556 2.318 8.575 5.841 10.929-2.152-0.068-4.177-0.659-5.947-1.642-0.001 0.055-0.001 0.11-0.001 0.165 0 6.362 4.526 11.668 10.533 12.875-1.102 0.3-2.262 0.461-3.459 0.461-0.846 0-1.669-0.083-2.47-0.236 1.671 5.216 6.52 9.013 12.266 9.118-4.494 3.522-10.155 5.621-16.307 5.621-1.060 0-2.105-0.062-3.132-0.184 5.811 3.726 12.713 5.9 20.128 5.9 24.151 0 37.358-20.008 37.358-37.359 0-0.569-0.013-1.136-0.038-1.699 2.566-1.851 4.792-4.164 6.552-6.797z" fill="#000000"></path>
+						</svg>
+					</div>
+			        <div class="text-side">
+				        <p class="account">
+				            <a href="{{:account_link}}" target="_blank">{{:account_name}} {{:account}}</a> {{:tweetLink}}
+				        </p>
+				        <p class="tweet-text">{{:title_twitter}}</p>
+				        <div class="twitter-actions">{{:reply}} {{:retweet}} {{:favorite}}</div>
+			        </div>
+			    </div>
+		    {{/if}}
 
-    {{if linkedin}}
-        <div class="feed-linkedin">
-            <div class="icon">
-				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
-					<path d="M24 24h11.069v5.674h0.158c1.54-2.762 5.31-5.674 10.928-5.674 11.684 0 13.845 7.273 13.845 16.733v19.267h-11.538v-17.080c0-4.074-0.083-9.314-6.002-9.314-6.009 0-6.926 4.437-6.926 9.018v17.376h-11.534v-36z" fill="#000000"></path>
-					<path d="M4 24h12v36h-12v-36z" fill="#000000"></path>
-					<path d="M16 14c0 3.314-2.686 6-6 6s-6-2.686-6-6c0-3.314 2.686-6 6-6s6 2.686 6 6z" fill="#000000"></path>
-				</svg>
-			</div>
-            <div class="text-side">
-                <a href="{{:account_link}}" target="_blank"><p class="account">{{:account}}</p></a>
-                <a href="{{:link}}" target="_blank" name="&lid=connect-social-linkedin-title text"><p class="title">{{:title}}</p></a>
+		    {{if linkedin}}
+		        <div class="feed-linkedin">
+		            <div class="icon">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+							<path d="M24 24h11.069v5.674h0.158c1.54-2.762 5.31-5.674 10.928-5.674 11.684 0 13.845 7.273 13.845 16.733v19.267h-11.538v-17.080c0-4.074-0.083-9.314-6.002-9.314-6.009 0-6.926 4.437-6.926 9.018v17.376h-11.534v-36z" fill="#000000"></path>
+							<path d="M4 24h12v36h-12v-36z" fill="#000000"></path>
+							<path d="M16 14c0 3.314-2.686 6-6 6s-6-2.686-6-6c0-3.314 2.686-6 6-6s6 2.686 6 6z" fill="#000000"></path>
+						</svg>
+					</div>
+		            <div class="text-side">
+		                <a href="{{:account_link}}" target="_blank"><p class="account">{{:account}}</p></a>
+		                <a href="{{:link}}" target="_blank" name="&lid=connect-social-linkedin-title text"><p class="title">{{:title}}</p></a>
 
-                <p class="li-info">{{:LItimeago}}</p>
-            </div>
-        </div>
+		                <p class="li-info">{{:LItimeago}}</p>
+		            </div>
+		        </div>
 
-    {{/if}}
-    {{if facebook}}
-        <div class="feed-facebook">
-            <div class="icon">
-				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
-					<path d="M42 12c-5.523 0-10 4.477-10 10v6h-8v8h8v28h8v-28h9l2-8h-11v-6c0-1.105 0.895-2 2-2h10v-8h-10z" fill="#000000"></path>
-				</svg>
-			</div>
-            <div class="text-side">
-                <a href="{{:account_link}}" class="account" target="_blank">{{:account}}</a>
-                <a href="{{:postLink}}" name="&lid=connect-social-facebook-text" target="_blank">
-                    <span class="title">{{:title}}</span>
-                </a>
-                <p class="updated">{{:LItimeago}}</p>
-            </div>
-        </div>
-    {{/if}}
+		    {{/if}}
+		    {{if facebook}}
+		        <div class="feed-facebook">
+		            <div class="icon">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+							<path d="M42 12c-5.523 0-10 4.477-10 10v6h-8v8h8v28h8v-28h9l2-8h-11v-6c0-1.105 0.895-2 2-2h10v-8h-10z" fill="#000000"></path>
+						</svg>
+					</div>
+		            <div class="text-side">
+		                <a href="{{:account_link}}" class="account" target="_blank">{{:account}}</a>
+		                <a href="{{:postLink}}" name="&lid=connect-social-facebook-text" target="_blank">
+		                    <span class="title">{{:title}}</span>
+		                </a>
+		                <p class="updated">{{:LItimeago}}</p>
+		            </div>
+		        </div>
+		    {{/if}}
 
-</script>
-<%={{ }}=%>
+		</script>
+		<%={{ }}=%>
+	{{/display}}
+{{/connect}}
