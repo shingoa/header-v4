@@ -128,7 +128,9 @@
 		{
 			if (typeof(window.console) === "object" && typeof(window.console.log) === "function")
 			{
-				window.console.log(arguments);
+				if (arguments) {
+					window.console.log.apply(window.console, arguments);
+				}
 			}
 		}
 	}
