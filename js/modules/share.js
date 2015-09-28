@@ -79,15 +79,7 @@
 				{
 					if (evt.type == 'addthis.menu.share')
 					{
-						switch (evt.data.service)
-						{
-							case "more" :
-								metrics.trackLink("hdr-pre-int-share-plus");
-								break;
-							default :
-								metrics.trackLink("hdr-pre-int-share-" + evt.data.service);
-								break;
-						}
+						metrics.trackLink("hdr-pre-share-" + evt.data.service);
 					}
 				});
 
