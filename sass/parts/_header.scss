@@ -323,6 +323,15 @@
 					}
 				}
 			}
+
+			@include has_feature("xrx_show_menu_on_hamburger_v3")
+			{
+				.xrx_bnrv4_hamburger_btn {
+					span {
+						background-color: $red;
+					}
+				}
+			}
 		}
 	}
 
