@@ -10,3 +10,6 @@ gulp.task('watch', ['clean'], function () {
 	gulp.watch('./images/**/*', ['build-images']);
 	gulp.watch('./js/**/*', ['build-js']);
 });
+
+
+// Test
