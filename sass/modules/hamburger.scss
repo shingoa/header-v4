@@ -63,7 +63,7 @@ label {
 	{
 		~ #xrx_bnrv4_header_floater .xrx_bnrv4_menu_btn
 		{
-			span {
+			.xrx_bnrv4_hamburger_btn span {
 				background-color: $red;
 			}
 
@@ -74,21 +74,6 @@ label {
 			&#xrx_bnrv4_menu_defaultbtn {
 				display: block;
 			}
-		}
-	}
-}
-
-.xrx_bnr_hdr_search_active
-{
-	#xrx_bnrv4_header_floater .xrx_bnrv4_menu_btn
-	{
-		span {
-			background-color: $red;
-		}
-
-		&#xrx_bnrv4_menu_openbtn {
-			position: absolute;
-			top: -100000px;
 		}
 	}
 }
@@ -117,29 +102,6 @@ label {
 				  width: 0%;
 				  left: 50%;
 				}
-			}
-		}
-	}
-
-	.xrx_bnr_hdr_search_active
-	{
-		#xrx_bnrv4_header_floater .xrx_bnrv4_menu_btn span
-		{
-			&.xrx_bnrv4_n1 {
-			  top: 18px;
-			  width: 0%;
-			  left: 50%;
-			}
-			&.xrx_bnrv4_n2 {
-			  @include transform(rotate(45deg));
-			}
-			&.xrx_bnrv4_n3 {
-			  @include transform(rotate(-45deg));
-			}
-			&.xrx_bnrv4_n4 {
-			  top: 18px;
-			  width: 0%;
-			  left: 50%;
 			}
 		}
 	}
