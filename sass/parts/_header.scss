@@ -97,8 +97,13 @@
 		background-color: rgb(255, 255, 255);
 		background-color: rgba(255, 255, 255, .96);
 		z-index: 4200;
-		@include box-shadow(0px 4px 5px 0px rgba(102,102,102,0));
+		@include box-shadow(0px, 4px, 5px, rgba(102,102,102,0));
 		@include transition(box-shadow .1s ease-in-out);
+
+		@include has_feature("xrx_bnrv4_header_static")
+		{
+			position: static;
+		}
 
 		@include respond-min($break_tablet)
 		{
@@ -157,7 +162,17 @@
 										padding-left: 0px;
 									}
 
-									@include has_feature("xrx_show_menu_on_hamburger_v2")
+									@include has_feature("xrx_show_menu_on_hamburger_red")
+									{
+										padding-left: 0px;
+									}
+
+									@include has_feature("xrx_show_menu_with_arrow")
+									{
+										padding-left: 0px;
+									}
+
+									@include has_feature("xrx_show_menu_with_arrow_red")
 									{
 										padding-left: 0px;
 									}
@@ -170,7 +185,7 @@
 		}
 
 		&.xrx_bnrv4_scrolling {
-			box-shadow: 0px 4px 5px 0px rgba(102,102,102,0.5);
+			@include box-shadow(0px, 4px, 5px, rgba(102,102,102,0.5));
 
 			@include missing_feature("boxshadow")
 			{
@@ -217,6 +232,10 @@
 		right: 5px;
 		margin-bottom: 0;
 
+		> span {
+			display: none;
+		}
+
 		@include respond-min($break_tablet)
 		{
 			position: relative;
@@ -232,8 +251,7 @@
 				line-height: 21px;
 				white-space: nowrap;
 
-				&:before {
-					content: attr(data-label);
+				> span {
 					display: inline-block;
 					font-size: 18px;
 					font-weight: lighter;
@@ -273,19 +291,19 @@
 				}
 			}
 
-			@include has_feature("xrx_show_menu_on_hamburger_v2")
+			@include has_feature("xrx_show_menu_on_hamburger_red")
 			{
 				display: inline-block;
 				line-height: 21px;
 				white-space: nowrap;
 
-				&:before {
-					content: attr(data-label);
+				> span {
 					display: inline-block;
 					font-size: 18px;
 					font-weight: lighter;
 					padding-right: 40px;
 					border: none !important;
+					color: $red;
 				}
 
 				&:after {
@@ -324,12 +342,107 @@
 				}
 			}
 
-			@include has_feature("xrx_show_menu_on_hamburger_v3")
+			@include has_feature("xrx_show_red_hamburger")
 			{
 				.xrx_bnrv4_hamburger_btn {
 					span {
 						background-color: $red;
 					}
+				}
+			}
+
+			@include has_feature("xrx_show_menu_with_arrow")
+			{
+				display: inline-block;
+				line-height: 21px;
+				white-space: nowrap;
+
+				&:after {
+					content: "";
+					display: block;
+					position: absolute;
+					top: 20%;
+					bottom: 20%;
+					left: 0;
+					width: 1px;
+					background-color: #dbdbdb;
+					border: none !important;
+				}
+
+				@if ($page_width <= 740px) {
+					padding-left: 7px;
+					margin-left: 7px;
+				}
+				@else if ($page_width <= 940px) {
+					padding-left: 8px;
+					margin-left: 8px;
+				}
+				@else {
+					padding-left: 10px;
+					margin-left: 10px;
+				}
+
+				> span {
+					display: inline-block;
+					font-size: 18px;
+					font-weight: lighter;
+					border: none !important;
+
+					&:after {
+						@include xrx_bnrv4_down_arrow();
+					}
+				}
+
+				> div {
+					display: none;
+				}
+			}
+
+			@include has_feature("xrx_show_menu_with_arrow_red")
+			{
+				display: inline-block;
+				line-height: 21px;
+				white-space: nowrap;
+
+				&:after {
+					content: "";
+					display: block;
+					position: absolute;
+					top: 20%;
+					bottom: 20%;
+					left: 0;
+					width: 1px;
+					background-color: #dbdbdb;
+					border: none !important;
+				}
+
+				@if ($page_width <= 740px) {
+					padding-left: 7px;
+					margin-left: 7px;
+				}
+				@else if ($page_width <= 940px) {
+					padding-left: 8px;
+					margin-left: 8px;
+				}
+				@else {
+					padding-left: 10px;
+					margin-left: 10px;
+				}
+
+				> span {
+					display: inline-block;
+					font-size: 18px;
+					font-weight: lighter;
+					border: none !important;
+					color: $red;
+
+					&:after {
+						@include xrx_bnrv4_down_arrow();
+					}
+				}
+
+				> div {
+					display: none;
 				}
 			}
 		}
