@@ -232,6 +232,14 @@
 		right: 5px;
 		margin-bottom: 0;
 
+		&:hover {
+
+			&,
+			span {
+				color: $red;
+			}
+		}
+
 		> span {
 			display: none;
 		}
