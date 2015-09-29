@@ -97,7 +97,7 @@
 		background-color: rgb(255, 255, 255);
 		background-color: rgba(255, 255, 255, .96);
 		z-index: 4200;
-		@include box-shadow(0px 4px 5px 0px rgba(102,102,102,0));
+		@include box-shadow(0px, 4px, 5px, rgba(102,102,102,0));
 		@include transition(box-shadow .1s ease-in-out);
 
 		@include has_feature("xrx_bnrv4_header_static")
@@ -185,7 +185,7 @@
 		}
 
 		&.xrx_bnrv4_scrolling {
-			box-shadow: 0px 4px 5px 0px rgba(102,102,102,0.5);
+			@include box-shadow(0px, 4px, 5px, rgba(102,102,102,0.5));
 
 			@include missing_feature("boxshadow")
 			{
