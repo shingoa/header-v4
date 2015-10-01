@@ -16,12 +16,23 @@
 		if (typeof($) !== "undefined" && $)
 		{
 			var $hdr = $('#xrx_bnrv4_header');
+			var tracked = false;
 
-			$(document).on("focus blur", "#xrx_bnr_hdr_utilitynav_search_form input", function(evt)
+			$(document).on("focus", "#xrx_bnr_hdr_utilitynav_search_form input", function(evt)
 			{
 				if ($('#xrx_bnrv4_menu_search_btn:visible, #xrx_bnrv4_menu_search_default_btn:visible').length === 0)
 				{
 					var $chk = $("#xrx_bnrv4_header_menuchk");
+
+					// AB Testing of menu
+					if (typeof(window.mboxUpdate) === 'function')
+					{
+						if (!tracked)
+						{
+						    mboxUpdate('target-global-mbox', 'searchbox=clicked');
+							tracked = true;
+						}
+					}
 
 					if ($chk.length > 0)
 						$chk[0].checked = true;
