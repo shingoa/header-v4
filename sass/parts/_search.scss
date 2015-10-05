@@ -43,10 +43,12 @@
 		padding: 30px 20px;
 		background-color: #ebebeb;
 		border: 1px solid #dbdbdb;
-		position: relative;
+		position: absolute;
 		top: 80px;
 		left: 100%;
 		border-width: 1px 0;
+		box-sizing: border-box;
+		width: 100%;
 
 		@include transition(left .25s ease-in-out);
 
