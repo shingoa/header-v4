@@ -17,7 +17,10 @@
 		var $navs;
 
 		var $targetTitleElm;
-		var $targetNavElm;
+		var $targetContentElm;
+
+		var $activeTitleElm;
+		var $activeContentElm;
 
 		self.init = function()
 		{
@@ -28,17 +31,17 @@
 		self.findElements = function()
 		{
 			$targetTitleElm = $("#xrx_bnr_v4_floating_title");
-			$targetNavElm = $("#xrx_bnr_v4_floating_nav");
+			$targetContentElm = $("#xrx_bnr_v4_floating_content");
 
 			$titles = $(".xrx_bnr_v4_floating_title");
-			$navs = $(".xrx_bnr_v4_floating_nav");
+			$contents = $(".xrx_bnr_v4_floating_content");
 		};
 
 		self.setupScrollHander = function()
 		{
 			$(document).scroll(function(evt) {
 				self.setFloatingTitle();
-				self.setFloatingNav();
+				self.setFloatingContent();
 			});
 		};
 
@@ -48,58 +51,102 @@
 
 			if (pos > 0)
 			{
+				pos += 50;
+
 				var $activeTitle;
 
 				$titles.each(function() {
 					var $title = $(this);
 
-					if (!$activeTitle || ($title.offset().top < $activeTitle.offset().top && $title.offset().top > pos))
+					if (!$activeTitle ||
+						($title.offset().top > $activeTitle.offset().top && $title.offset().top < pos))
 					{
 						$activeTitle = $title;
 					}
 				});
 
-				if ($activeTitle && $activeTitle.length > 0)
+				if ($activeTitle && $activeTitle.length > 0 && (!$activeTitleElm || $activeTitleElm.get(0) !== $activeTitle.get(0)))
 				{
 					$targetTitleElm.text($activeTitle.first().text());
+
+					$activeTitleElm = $activeTitle;
 				}
 			}
 			else
 			{
+				$activeTitleElm = null;
 				$targetTitleElm.text("");
 			}
 
 			$("#xrx_bnrv4_header").toggleClass("xrx_bnr_v4_floating_title_active", $targetTitleElm.text().length > 0);
 		};
 
-		self.setFloatingNav = function()
+		self.setFloatingContent = function()
 		{
 			var pos = helpers.scrollY();
 
 			if (pos > 0)
 			{
-				var $activeNav;
+				pos += 50;
 
-				$navs.each(function() {
-					var $nav = $(this);
+				var $activeContent;
 
-					if (pos > $nav.offset().top || ($activeNav && $nav.offset().top < $activeNav.offset().top))
+				$contents.each(function() {
+					var $content = $(this);
+
+					if (pos > $content.offset().top || ($activeContent && $content.offset().top < $activeContent.offset().top))
 					{
-						$activeNav = $nav;
+						$activeContent = $content;
 					}
 				});
 
-				if ($activeNav && $activeNav.length > 0)
+				$contents.change(function(evt) {
+					var $elm = $(evt.target);
+					$elm.attr('value', $elm.val());
+				});
+
+				if ($activeContent && $activeContent.length > 0)
 				{
-					$targetNavElm.empty()
-					$targetNavElm.append($activeNav.children().clone(true, true));
+					if (!$activeContentElm || $activeContentElm.get(0) !== $activeContent.get(0))
+					{
+						$targetContentElm.empty()
+						$targetContentElm.append($activeContent.children().clone(true, true));
+
+						$targetContentElm.find("[value]").each(function() {
+							$(this).val($(this).attr("value"));
+						});
+
+						$activeContentElm = $activeContent;
+
+						$targetContentElm.change(function(evt) {
+							var $elm = $(evt.target);
+
+							var nodeName = $elm.prop("nodeName");
+							var name = $elm.attr("name");
+
+							var search = "";
+							if (nodeName) {
+								search += nodeName.toLowerCase();
+							}
+							if (name) {
+								search += "[name='" + name + "']";
+							}
+
+							var $matchElm = $activeContentElm.find(search);
+
+							$matchElm.val($elm.val());
+							$matchElm.attr("value", $elm.val());
+						});
+					}
 
 					var $activeLi;
 					var $activeLinkTarget;
 
-					$targetNavElm.children().each(function(){
+					$targetContentElm.find("li").each(function(){
 						var $li = $(this);
 						var $a = $li.children("a[href^='#']");
+
+						$li.removeClass("xrx_bnr_v4_floating_nav_active_current");
 
 						if ($a && $a.length > 0) {
 							var $target = $($a.attr("href"));
@@ -121,15 +168,16 @@
 				}
 				else
 				{
-					$targetNavElm.empty();
+					$activeContentElm = null;
+					$targetContentElm.empty();
 				}
 			}
 			else
 			{
-				$targetNavElm.empty();
+				$targetContentElm.empty();
 			}
 
-			$("#xrx_bnrv4_header").toggleClass("xrx_bnr_v4_floating_nav_active", $targetNavElm.children().length > 0);
+			$("#xrx_bnrv4_header").toggleClass("xrx_bnr_v4_floating_content_active", $targetContentElm.children().length > 0);
 		};
 
 		self.init();
