@@ -20,23 +20,53 @@
 
 	#xrx_bnrv4_header_floater {
 		position: absolute !important;
+		padding: 0 !important;
 
 		&.xrx_bnrv4_scrolling {
 			border-bottom: none !important;
 			box-shadow: none !important;
 		}
+
+		.xrx_bnrv4_table
+		{
+			display: block !important;
+
+			> div
+			{
+				display: block !important;
+
+				> div
+				{
+					padding: 0 !important;
+					display: none !important;
+
+					&:first-child {
+						padding: 0 !important;
+					}
+
+					&#xrx_bnrv4_header_logocol {
+						padding: 0 !important;
+						display: block !important;
+					}
+				}
+			}
+		}
+	}
+
+	#xrx_bnr_v4_floating_title {
+		display: none;
 	}
 
 	.xrx_bnrv4_logo {
-		background-repeat: no-repeat !important;
+		display: block;
+		background-image: none !important;;
+		max-height: 30px !important;
+		position: static !important;
 
 		&:after {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			content: $logoPathSvg;
+			content: $logoPathSvg !important;
+			height: 30px;
+			display: block;
 		}
 	}
 
