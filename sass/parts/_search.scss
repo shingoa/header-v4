@@ -121,7 +121,7 @@
 
 				&:focus,
 				&:hover {
-					border-color: $red;
+					border-color: $red !important;
 				}
 			}
 
