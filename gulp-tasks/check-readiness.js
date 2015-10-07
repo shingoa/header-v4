@@ -3,7 +3,6 @@
 var gulp = require('gulp');
 var request = require('request');
 var xrxhelpers = require('./_helpers.js');
-var argv = require('yargs').argv;
 var q = require('q');
 var fs = require('fs');
 var walk = require('walk')
@@ -12,7 +11,7 @@ var gutil = require('gulp-util');
 gulp.task('check-readiness', function (cb)
 {
 	var tier = xrxhelpers.getPassedArg("tier");
-	
+
 	if (tier == "local") {
 		throw "Cannot check readiness of " + tier + " tier";
 	}

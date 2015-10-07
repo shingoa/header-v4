@@ -8,7 +8,6 @@ var rename = require('gulp-rename');
 var requireDir = require('require-dir');
 var mergeStream = require("merge-stream");
 var xrxhelpers = require('./_helpers.js');
-var argv = require('yargs').argv;
 var gutil = require('gulp-util');
 
 gulp.task('compile-html', ['init-repo', 'download-configs'], function()

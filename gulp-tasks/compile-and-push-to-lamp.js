@@ -7,7 +7,6 @@ var request = require('request');
 
 var mergeStream = require("merge-stream");
 var xrxhelpers = require('./_helpers.js');
-var argv = require('yargs').argv;
 var gutil = require('gulp-util');
 
 gulp.task('compile-and-push-to-lamp', ['compile-zip'], function()

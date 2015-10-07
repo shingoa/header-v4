@@ -8,13 +8,12 @@ var handlebars = require('gulp-compile-handlebars');
 var rename = require('gulp-rename');
 var requireDir = require('require-dir');
 var mergeStream = require("merge-stream");
-var argv = require('yargs').argv;
 var gutil = require('gulp-util');
 
 gulp.task('build-html', ['init-repo', 'download-test-configs'], function()
 {
 	var tier = xrxhelpers.getPassedArg("tier");
-	
+
 	if (tier != "local")
 		throw "Builds can only be performed locally"
 

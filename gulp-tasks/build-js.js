@@ -1,15 +1,15 @@
 'use strict';
 
 var gulp = require('gulp');
-var argv = require('yargs').argv;
 var jshint = require('gulp-jshint');
 var include = require("gulp-include");
 var mergeStream = require("merge-stream");
+var xrxhelpers = require('./_helpers.js');
 
 gulp.task('build-js', ['init-repo'], function ()
 {
 	var tier = xrxhelpers.getPassedArg("tier");
-	
+
 	if (tier != "local")
 		throw "Builds can only be performed locally"
 

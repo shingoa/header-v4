@@ -7,7 +7,15 @@ var gutil = require('gulp-util');
 var ent = require('ent');
 var q = require('q');
 var request = require('request');
-var argv = require('yargs').argv;
+
+var argv = require('yargs')
+	.alias('t', 'tier')
+    .default("t", 'local' )
+	.describe('t', 'Specify the tier to build for. local/dev/test/prod. Defaults to local')
+    .choices('t', ['local', 'dev', 'test', 'prod'])
+    .alias('l', 'locales')
+	.describe('l', 'Specify the locales to build for')
+    .argv;
 
 var helpers = {};
 
