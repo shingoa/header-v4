@@ -88,6 +88,7 @@ $xerox-red: $red;
 				font-size: 15px;
 				color: $xerox-red;
 				line-height: 20px;
+				font-weight: 300;
 			}
 
 			@include respond-min($break_tablet)
