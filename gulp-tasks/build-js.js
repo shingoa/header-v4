@@ -8,7 +8,9 @@ var mergeStream = require("merge-stream");
 
 gulp.task('build-js', ['init-repo'], function ()
 {
-	if (argv.t != "local")
+	var tier = xrxhelpers.getPassedArg("tier");
+	
+	if (tier != "local")
 		throw "Builds can only be performed locally"
 
 	var merged = mergeStream();

@@ -14,23 +14,25 @@ gulp.task('compile-and-push-to-lamp', ['compile-zip'], function()
 {
 	var merged = mergeStream();
 
+	var tier = xrxhelpers.getPassedArg("tier");
+
 	var targets = [];
 
-	if (argv.t == "dev") {
+	if (tier == "dev") {
 		targets.push("http://wvlnxas08.opbu.xerox.com/perl-bin/receive_versioned_banner.pl");
 	}
-	else if (argv.t == "test") {
+	else if (tier == "test") {
 		targets.push("http://wvlnxas06.opbu.xerox.com/perl-bin/receive_versioned_banner.pl");
 		targets.push("http://wvlnxas07.opbu.xerox.com/perl-bin/receive_versioned_banner.pl");
 	}
-	else if (argv.t == "prod") {
+	else if (tier == "prod") {
 		targets.push("http://w3adminp.opbu.xerox.com/perl-bin/receive_versioned_banner.pl");
 	}
 	else {
-		gutil.log("Cannot push to " + argv.t + " tier");
+		gutil.log("Cannot push to " + tier + " tier");
 	}
 
-	var releaseFile = fs.readFileSync('./dist/' + argv.t + '.zip');
+	var releaseFile = fs.readFileSync('./dist/' + tier + '.zip');
 
 	if (releaseFile)
 	{
@@ -47,7 +49,7 @@ gulp.task('compile-and-push-to-lamp', ['compile-zip'], function()
 						value : releaseFile,
 
 						options : {
-							filename: argv.t + '.zip',
+							filename: tier + '.zip',
 							contentType: "application/zip"
 						}
 					}
@@ -65,21 +67,21 @@ gulp.task('compile-and-push-to-lamp', ['compile-zip'], function()
 				{
 					if (resp.statusCode == 201)
 					{
-						gutil.log("Uploaded complete. Ready to test on ", argv.t);
+						gutil.log("Uploaded complete. Ready to test on ", tier);
 					}
 					else if (resp.statusCode == 202)
 					{
-						gutil.log("Uploaded complete. Awaiting processing and replication on ", argv.t);
+						gutil.log("Uploaded complete. Awaiting processing and replication on ", tier);
 					}
 					else if (resp.statusCode == 400)
 					{
-						gutil.log("Uploaded error on ", argv.t);
+						gutil.log("Uploaded error on ", tier);
 						gutil.log(body);
 						throw body;
 					}
 					else
 					{
-						gutil.log("Uploaded complete. Unknown status on ", argv.t);
+						gutil.log("Uploaded complete. Unknown status on ", tier);
 					}
 				}
 			}));
