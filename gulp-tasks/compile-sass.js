@@ -5,11 +5,13 @@ var sass = require('gulp-sass');
 var xrxhelpers = require('./_helpers.js');
 var argv = require('yargs').argv;
 
-gulp.task('compile-sass', ['init-repo'], function () {
+gulp.task('compile-sass', ['init-repo'], function ()
+{
 	var version = xrxhelpers.getPackageVersion();
+	var tier = xrxhelpers.getPassedArg("tier");
 
 	var hasComments = true;
-	if (argv.t == "prod" || argv.t == "test")
+	if (tier == "prod" || tier == "test")
 	{
 		hasComments = false;
 	}
@@ -19,5 +21,5 @@ gulp.task('compile-sass', ['init-repo'], function () {
 			outputStyle: "compressed",
 			sourceComments: hasComments
 		}).on('error', sass.logError))
-		.pipe(gulp.dest('./compiled/' + argv.t + '/css/' + version));
+		.pipe(gulp.dest('./compiled/' + tier + '/css/' + version));
 });

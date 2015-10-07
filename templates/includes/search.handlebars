@@ -1,0 +1,18 @@
+{{#if trans.searchBtnTitle}}
+	<label id="xrx_bnrv4_menu_search_default_btn" name="&amp;lid=hdr-pre-search-close" for="xrx_bnrv4_header_defaultchk" title="{{trans.searchBtnTitle}}" class="xrx_bnrv4_header_search_btn">
+		{{> parts/partials/search_icon }}
+	</label>
+	<label id="xrx_bnrv4_menu_search_btn" name="&amp;lid=hdr-pre-search" for="xrx_bnrv4_header_searchchk" title="{{trans.searchBtnTitle}}" class="xrx_bnrv4_header_search_btn">
+		{{> parts/partials/search_icon }}
+	</label>
+	<div id="xrx_bnrv4_header_search">
+		<form method="get" action="{{trans.searchURL}}" id="xrx_bnr_hdr_utilitynav_search_form" novalidate role="search" name="&amp;lid=hdr-pre-search-submit">
+			<button type="submit" name="&amp;lid=hdr-pre-search-submit"></button>
+			<div class="xrx_bnrv4_header_search_submit_icon">
+				{{> parts/partials/search_icon }}
+			</div>
+			<input type="text" title="Search" placeholder="{{trans.searchPlaceholder}}" name="searchString" required></input>
+			<input name="XOGlang" value="{{XOGLang}}" type="hidden" />
+		</form>
+	</div>
+{{/if}}

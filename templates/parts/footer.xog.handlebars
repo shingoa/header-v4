@@ -1,0 +1,80 @@
+<div id="xrx_bnrv4_footer">
+	{{#footer.lobFooter}}
+		<div id="xrx_bnrv4_lobfooter" class="xrx_bnrv4_footer_position">
+			<div class="xrx_bnrv4_table">
+				<div class="xrx_bnrv4_row">
+					<div class="xrx_bnrv4_column" id="xrx_bnrv4_footer_linkfarm">
+						<div class="xrx_bnrv4_lobfooter_title">{{trans.usefulLinks}}</div>
+
+						<div class="xrx_bnrv4_table">
+							<div class="xrx_bnrv4_row">
+								<div class="xrx_bnrv4_column">
+									{{#xogSales}}
+										<div id="xrx_bnrv4_lobfooter_sales">
+											{{> includes/partials/column_header }}
+											{{> includes/partials/list }}
+										</div>
+									{{/xogSales}}
+									{{#xogPurchase}}
+										<div id="xrx_bnrv4_lobfooter_purchase">
+											{{> includes/partials/column_header }}
+											{{> includes/partials/list }}
+										</div>
+									{{/xogPurchase}}
+								</div>
+								<div class="xrx_bnrv4_column">
+									{{#xogOfficeEquipment}}
+										<div id="xrx_bnrv4_lobfooter_equipment">
+											{{> includes/partials/column_header }}
+											{{> includes/partials/list }}
+										</div>
+									{{/xogOfficeEquipment}}
+									{{#xogOwners}}
+										<div id="xrx_bnrv4_lobfooter_owners">
+											{{> includes/partials/column_header }}
+											{{> includes/partials/list }}
+										</div>
+									{{/xogOwners}}
+								</div>
+								<div class="xrx_bnrv4_column">
+									{{#xogHelpfulResources}}
+										<div id="xrx_bnrv4_lobfooter_resources">
+											{{> includes/partials/column_header }}
+											{{> includes/partials/list }}
+										</div>
+									{{/xogHelpfulResources}}
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="xrx_bnrv4_column">
+						<div class="xrx_bnrv4_lobfooter_title">{{trans.connect}}</div>
+
+						{{> includes/connect }}
+					</div>
+				</div>
+			</div>
+		</div>
+	{{/footer.lobFooter}}
+
+	{{> parts/partials/footer_main }}
+</div>
+
+{{#if dataStr}}
+	<script type='text/javascript'>
+		var xrx_bnrv4_vars = {{{dataStr}}};
+	</script>
+{{/if}}
+
+<script src="js/libs.js"></script>
+
+<!--[if IE 8]>
+	<script defer src="js/xrx_bnrv4.ie8.js"></script>
+<![endif]-->
+<!--[if gt IE 8]>
+	<script defer src="js/xrx_bnrv4.js"></script>
+<![endif]-->
+<!--[if !IE]> -->
+	<script defer src="js/xrx_bnrv4.js"></script>
+<!-- <![endif]-->

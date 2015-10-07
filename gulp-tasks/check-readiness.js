@@ -3,7 +3,6 @@
 var gulp = require('gulp');
 var request = require('request');
 var xrxhelpers = require('./_helpers.js');
-var argv = require('yargs').argv;
 var q = require('q');
 var fs = require('fs');
 var walk = require('walk')
@@ -11,15 +10,17 @@ var gutil = require('gulp-util');
 
 gulp.task('check-readiness', function (cb)
 {
-	if (argv.t == "local") {
-		throw "Cannot check readiness of " + argv.t + " tier";
+	var tier = xrxhelpers.getPassedArg("tier");
+
+	if (tier == "local") {
+		throw "Cannot check readiness of " + tier + " tier";
 	}
 
 	var promises = [];
 
 	var version = xrxhelpers.getPackageVersion();
 
-	if (argv.t == "prod")
+	if (tier == "prod")
 	{
 		var servers = [
 			'lampa.origin.xerox.com',
@@ -71,7 +72,7 @@ gulp.task('check-readiness', function (cb)
 	}
 
 
-	var server = xrxhelpers.getXeroxHttpServer(argv.t);
+	var server = xrxhelpers.getXeroxHttpServer(tier);
 	server += "assets/";
 
 	var walkerDeferred = q.defer();
@@ -79,7 +80,7 @@ gulp.task('check-readiness', function (cb)
 
 	var walkerPromises = [];
 
-	var walker = walk.walk("./compiled/" + argv.t, {
+	var walker = walk.walk("./compiled/" + tier, {
 		filters: ["parts"]
 	});
 	walker.on("file", function (root, fileStats, next)
@@ -87,7 +88,7 @@ gulp.task('check-readiness', function (cb)
 		var fullPath = root + "/" + fileStats.name;
 		fullPath = fullPath.replace(/\\/g, "/");
 
-		var tierPathPart = "/" + argv.t + "/";
+		var tierPathPart = "/" + tier + "/";
 		if (fullPath.indexOf(tierPathPart) >= 0)
 		{
 			fullPath = fullPath.substr(fullPath.indexOf(tierPathPart) + tierPathPart.length);

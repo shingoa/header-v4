@@ -2,7 +2,6 @@
 
 var gulp = require('gulp');
 var xrxhelpers = require('./_helpers.js');
-var argv = require('yargs').argv;
 var clean = require('gulp-clean');
 
 gulp.task('clean', ['init-repo'], function()
