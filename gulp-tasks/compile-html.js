@@ -3,7 +3,7 @@
 var gulp = require('gulp');
 var fs = require('fs');
 
-var mustache = require('gulp-mustache');
+var handlebars = require('gulp-compile-handlebars');
 var rename = require('gulp-rename');
 var requireDir = require('require-dir');
 var mergeStream = require("merge-stream");
@@ -16,8 +16,15 @@ gulp.task('compile-html', ['init-repo', 'download-configs'], function()
 	var merged = mergeStream();
 
 	var version = xrxhelpers.getPackageVersion();
-
 	var locales = xrxhelpers.getLocales("locales");
+	var tier = xrxhelpers.getPassedArg("tier");
+
+	var handlebarOptions = {
+		ignorePartials : true,
+		batch : [
+			"./templates"
+		]
+	};
 
 	locales.forEach(function(locale)
 	{
@@ -25,7 +32,7 @@ gulp.task('compile-html', ['init-repo', 'download-configs'], function()
 		{
 			try
 			{
-				var templateData = xrxhelpers.openJson('./data/' + argv.t + '/config.' + locale + '.json');
+				var templateData = xrxhelpers.openJson('./data/' + tier + '/config.' + locale + '.json');
 
 				if (typeof(templateData) !== "undefined" && templateData)
 				{
@@ -33,13 +40,13 @@ gulp.task('compile-html', ['init-repo', 'download-configs'], function()
 
 					templateData.imagePath = "/assets/css/banners/" + version + "/images/";
 
-					merged.add(gulp.src(['./templates/parts/header.mustache', './templates/parts/footer.mustache', './templates/parts/footer.*.mustache'])
-						.pipe(mustache(templateData))
+					merged.add(gulp.src(['./templates/parts/header.handlebars', './templates/parts/footer.handlebars', './templates/parts/footer.*.handlebars'])
+						.pipe(handlebars(templateData, handlebarOptions).on('error', gutil.log))
 						.pipe(rename({
 							'suffix' : '.' + locale,
 							'extname' : '.html'
 						}))
-						.pipe(gulp.dest('./compiled/' + argv.t + '/parts/' + version)));
+						.pipe(gulp.dest('./compiled/' + tier + '/parts/' + version)));
 				}
 			}
 			catch (err)
@@ -49,12 +56,12 @@ gulp.task('compile-html', ['init-repo', 'download-configs'], function()
 		}
 	});
 
-	merged.add(gulp.src(['./templates/parts/head_section.*.mustache'])
-		.pipe(mustache({}))
+	merged.add(gulp.src(['./templates/parts/head_section.*.handlebars'])
+		.pipe(handlebars({}, handlebarOptions).on('error', gutil.log))
 		.pipe(rename({
 			'extname' : '.html'
 		}))
-		.pipe(gulp.dest('./compiled/' + argv.t + '/parts/' + version)));
+		.pipe(gulp.dest('./compiled/' + tier + '/parts/' + version)));
 
 	return merged;
 });

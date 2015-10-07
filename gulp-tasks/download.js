@@ -16,18 +16,20 @@ iconv.extendNodeEncodings();
 gulp.task('download-locales', ['init-repo'], function(cb)
 {
 	var locales = xrxhelpers.getPassedArg("locales");
+	var tier = xrxhelpers.getPassedArg("tier");
+
 	if (locales && locales.length && locales.length > 0)
 	{
 		cb();
 	}
 	else
 	{
-		var server = xrxhelpers.getXeroxHttpServer(argv.t);
+		var server = xrxhelpers.getXeroxHttpServer(tier);
 		var cacheBuster = Math.floor((Math.random() * 100) + 1);
 
 		var d = xrxhelpers.downloadAndSaveDeferred(
 			server + "perl-bin/json_locale_service.pl?cacheBuster=" + cacheBuster,
-			'./data/' + argv.t,
+			'./data/' + tier,
 			'locales.json'
 		);
 
@@ -40,18 +42,19 @@ gulp.task('download-configs', ['init-repo', 'download-locales'], function()
 	var promises = [];
 
 	var locales = xrxhelpers.getLocales("locales");
+	var tier = xrxhelpers.getPassedArg("tier");
 
 	if (locales && locales.length && locales.length > 0)
 	{
 		locales.forEach(function(locale)
 		{
-			var savePath = './data/' + argv.t + '/config.' + locale + '.json';
+			var savePath = './data/' + tier + '/config.' + locale + '.json';
 
-			var uri = xrxhelpers.getConfigPath(argv.t, locale);
+			var uri = xrxhelpers.getConfigPath(tier, locale);
 
 			var d = xrxhelpers.downloadAndSaveDeferred(
 				uri,
-				'./data/' + argv.t,
+				'./data/' + tier,
 				'config.' + locale + '.json'
 			);
 			d.promise.then(function(){
@@ -83,7 +86,9 @@ gulp.task('download-test-configs', ['init-repo'], function(cb)
 {
 	var promises = [];
 
-	if (argv.t != "local")
+	var tier = xrxhelpers.getPassedArg("tier");
+
+	if (tier !== "local")
 		throw "Test configs can only be downloaded on local builds"
 
 	var locales = xrxhelpers.getPassedArg("locales");
@@ -97,7 +102,7 @@ gulp.task('download-test-configs', ['init-repo'], function(cb)
 		if(locale.length != 4)
 			return;
 
-		var savePath = './data/' + argv.t + '/config.' + locale + '.json';
+		var savePath = './data/' + tier + '/config.' + locale + '.json';
 		var differenceMinutes = xrxhelpers.getFileAgeMinutes(savePath);
 
 		var cacheBuster = Math.floor((Math.random() * 100) + 1);
@@ -106,11 +111,11 @@ gulp.task('download-test-configs', ['init-repo'], function(cb)
 			!differenceMinutes ||
 			differenceMinutes > 240)
 		{
-			var uri = xrxhelpers.getConfigPath(argv.t, locale);
+			var uri = xrxhelpers.getConfigPath(tier, locale);
 
 			var d = xrxhelpers.downloadAndSaveDeferred(
 				uri,
-				'./data/' + argv.t,
+				'./data/' + tier,
 				'config.' + locale + '.json'
 			);
 			promises.push(d.promise);

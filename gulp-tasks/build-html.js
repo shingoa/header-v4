@@ -4,7 +4,7 @@ var gulp = require('gulp');
 var fs = require('fs');
 var xrxhelpers = require('./_helpers.js');
 
-var mustache = require('gulp-mustache');
+var handlebars = require('gulp-compile-handlebars');
 var rename = require('gulp-rename');
 var requireDir = require('require-dir');
 var mergeStream = require("merge-stream");
@@ -13,7 +13,9 @@ var gutil = require('gulp-util');
 
 gulp.task('build-html', ['init-repo', 'download-test-configs'], function()
 {
-	if (argv.t != "local")
+	var tier = xrxhelpers.getPassedArg("tier");
+	
+	if (tier != "local")
 		throw "Builds can only be performed locally"
 
 	var locales = xrxhelpers.getPassedArg("locales");
@@ -21,6 +23,13 @@ gulp.task('build-html', ['init-repo', 'download-test-configs'], function()
 	if (!locales || !locales.length || locales.length == 0) {
 		locales = xrxhelpers.testLocales;
 	}
+
+	var handlebarOptions = {
+		ignorePartials : true,
+		batch : [
+			"./templates"
+		]
+	};
 
 	var merged = mergeStream();
 
@@ -39,8 +48,8 @@ gulp.task('build-html', ['init-repo', 'download-test-configs'], function()
 
 				templateData.imagePath = "../images/";
 
-				merged.add(gulp.src(['./templates/mock_pages/*.mustache'])
-					.pipe(mustache(templateData))
+				merged.add(gulp.src(['./templates/mock_pages/*.handlebars'])
+					.pipe(handlebars(templateData, handlebarOptions).on('error', gutil.log))
 					.pipe(rename({
 						'suffix' : '.' + locale,
 						'extname' : '.html'

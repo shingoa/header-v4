@@ -133,6 +133,14 @@ helpers.processMockPageFileList = function(files, suffix)
 					returnFiles.push(file);
 				}
 			}
+			if (file.indexOf(".handlebars") > -1)
+			{
+				file = file.replace(".handlebars", suffix + ".html");
+
+				if (returnFiles.indexOf(file) === -1) {
+					returnFiles.push(file);
+				}
+			}
 		});
 	}
 
@@ -363,11 +371,15 @@ helpers.getPassedArg = function(key)
 	{
 		if (key === "l" || key === "locales")
 		{
-			var locales = argv["locales"];
+			var locales = argv.l || argv.locales;
 
 			if (locales) {
 				return locales.split(",");
 			}
+		}
+		else if (key === "t" || key === "tier")
+		{
+			return argv.t || argv.tier;
 		}
 
 		if (argv[key]) {
@@ -385,7 +397,7 @@ helpers.getLocales = function()
 	{
 		locales = [];
 
-		var tier = argv.t || argv.tier;
+		var tier = helpers.getPassedArg("tier");
 
 		var data = helpers.openJson('./data/' + tier + '/locales.json', true);
 		if (data)

@@ -1,0 +1,9 @@
+{{#options.length}}
+	<select name="{{fieldName}}">
+		<option>{{default}}</option>
+
+		{{#each options}}
+			<option value="{{value}}">{{label}}</option>
+		{{/each}}
+	</select>
+{{/options.length}}

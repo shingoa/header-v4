@@ -1,0 +1,19 @@
+<div id="xrx_bnrv4_footer">
+	{{> parts/partials/footer_main }}
+</div>
+
+{{#if dataStr}}
+	<script type='text/javascript'>
+		var xrx_bnrv4_vars = {{{dataStr}}};
+	</script>
+{{/if}}
+
+<!--[if IE 8]>
+	<script defer src="js/xrx_bnrv4.ie8.js"></script>
+<![endif]-->
+<!--[if gt IE 8]>
+	<script defer src="js/xrx_bnrv4.js"></script>
+<![endif]-->
+<!--[if !IE]> -->
+	<script defer src="js/xrx_bnrv4.js"></script>
+<!-- <![endif]-->
