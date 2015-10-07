@@ -1,13 +1,11 @@
 'use strict';
 
 var gulp = require('gulp');
-var argv = require('yargs').argv;
 var jshint = require('gulp-jshint');
 var uglify = require('gulp-uglify');
 var xrxhelpers = require('./_helpers.js');
 var include = require("gulp-include");
 var mergeStream = require("merge-stream");
-var argv = require('yargs').argv;
 
 gulp.task('compile-js', ['init-repo'], function ()
 {
