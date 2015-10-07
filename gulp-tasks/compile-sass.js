@@ -3,7 +3,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var xrxhelpers = require('./_helpers.js');
-var argv = require('yargs').argv;
 
 gulp.task('compile-sass', ['init-repo'], function ()
 {
