@@ -149,22 +149,13 @@
 
 								if (target)
 								{
-									var rect = target.getBoundingClientRect();
+									if(helpers.scrollTo(target))
+									{
+										if (evt.preventDefault)
+											evt.preventDefault();
 
-									var body = document.body;
-		    						var docElem = document.documentElement;
-
-									var scrollTop = window.pageYOffset || docElem.scrollTop || body.scrollTop;
-									var clientTop = docElem.clientTop || body.clientTop || 0;
-
-									var scrollTo = rect.top +  scrollTop - clientTop;
-
-									window.scrollTo(0, scrollTo - 95);
-
-									if (evt.preventDefault)
-										evt.preventDefault();
-
-									return false;
+										return false;
+									}
 								}
 							}
 						}

@@ -140,6 +140,71 @@
 				NREUM.noticeError(err)
 			}
 		}
+
+		self.scrollTo = function(target)
+		{
+			try
+			{
+				if (target)
+				{
+					var scrollTop = window.pageYOffset || docElem.scrollTop || body.scrollTop;
+
+					if (typeof(target.getBoundingClientRect) === "function")
+					{
+						var rect = target.getBoundingClientRect();
+
+						var body = document.body;
+						var docElem = document.documentElement;
+
+						var clientTop = docElem.clientTop || body.clientTop || 0;
+
+						target = rect.top +  scrollTop - clientTop;
+					}
+
+					if (typeof(target) === "number")
+					{
+						target = target - 95;
+						var dist = target - scrollTop;
+
+						var smooth_step = function(start, end, point) {
+					        if(point <= start) { return 0; }
+					        if(point >= end) { return 1; }
+					        var x = (point - start) / (end - start); // interpolation
+					        return x*x*(3 - 2*x);
+					    }
+
+						var animTime = 500;
+						var fr = 60;
+						var segments = Math.round((1000 / animTime) * 60);
+						var segmentTime = animTime / segments;
+
+						// This needs to be changed to request animation frame at some point.
+						// Probably when we drop IE8 support
+						var segment = 0;
+						var interval = setInterval(function()
+						{
+							var point = smooth_step(0, segments, segment);
+							var to = scrollTop + (dist * point)
+
+							window.scrollTo(0, to);
+
+							segment++;
+							if (segment >= segments) {
+								clearInterval(interval);
+							}
+						}, segmentTime)
+
+						return true;
+					}
+				}
+			}
+			catch (err)
+			{
+				self.logError(err);
+			}
+
+			return false;
+		}
 	}
 
 })(window, document);
