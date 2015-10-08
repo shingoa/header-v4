@@ -86,9 +86,12 @@ $xerox-red: $red;
 			a,
 			p {
 				font-size: 15px;
-				color: $xerox-red;
 				line-height: 20px;
 				font-weight: 300;
+			}
+
+			a {
+				color: $xerox-red;
 			}
 
 			@include respond-min($break_tablet)
