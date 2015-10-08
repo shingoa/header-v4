@@ -91,10 +91,7 @@ $xerox-red: $red;
 			}
 
 			a {
-				&,
-				p {
-					color: $xerox-red;
-				}
+				color: $xerox-red;
 			}
 
 			@include respond-min($break_tablet)
