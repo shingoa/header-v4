@@ -133,6 +133,13 @@
 				}
 			}
 		}
+
+		self.logError = function(err)
+		{
+			if (typeof(window.NREUM) !== "undefined" && typeof(window.NREUM.noticeError) !== "undefined") {
+				NREUM.noticeError(err)
+			}
+		}
 	}
 
 })(window, document);

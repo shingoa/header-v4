@@ -74,19 +74,24 @@
 		var scrollingClassSetTo;
 		helpers.attachListener(document, "scroll", function(evt)
 		{
-			var floater = document.getElementById("xrx_bnrv4_header_floater");
+			try {
+				var floater = document.getElementById("xrx_bnrv4_header_floater");
 
-			if (helpers.scrollY() > 0 && !scrollingClassSetTo)
-			{
-				scrollingClassSetTo = true;
+				if (helpers.scrollY() > 0 && !scrollingClassSetTo)
+				{
+					scrollingClassSetTo = true;
 
-				if (floater.className.indexOf("xrx_bnrv4_scrolling") == -1)
-					floater.className = floater.className + " xrx_bnrv4_scrolling";
+					if (floater.className.indexOf("xrx_bnrv4_scrolling") == -1)
+						floater.className = floater.className + " xrx_bnrv4_scrolling";
+				}
+				else if (helpers.scrollY() == 0 && scrollingClassSetTo) {
+					scrollingClassSetTo = false;
+
+					floater.className = floater.className.replace("xrx_bnrv4_scrolling", "");
+				}
 			}
-			else if (helpers.scrollY() == 0 && scrollingClassSetTo) {
-				scrollingClassSetTo = false;
-
-				floater.className = floater.className.replace("xrx_bnrv4_scrolling", "");
+			catch (err) {
+				helpers.logError(err);
 			}
 		});
 	};
@@ -95,65 +100,79 @@
 	{
 		helpers.attachListener(document, "click", function(evt)
 		{
-			var a = evt.srcElement || evt.target;
+			try {
+				var a = evt.srcElement || evt.target;
 
-			if (a.nodeName !== "A") {
-				while (a && a.nodeName !== "A") {
-					a = a.parentNode;
+				if (a.nodeName !== "A") {
+					while (a && a.nodeName !== "A") {
+						a = a.parentNode;
+					}
 				}
-			}
 
-			if (a)
-			{
-				var href = a.getAttribute("href");
-
-				if (href)
+				if (a)
 				{
-					if (href.indexOf("#") === 0)
+					var href = a.getAttribute("href");
+
+					if (href)
 					{
-						href = href.substr(1);
-
-						var clsFound = false;
-						var clsNode = a;
-
-						while (clsNode && !clsFound)
+						if (href.indexOf("#") === 0)
 						{
-							var cls = clsNode.getAttribute("class");
+							href = href.substr(1);
 
-							if (cls && cls.indexOf("xrx_bnr_handle_jump_link") > -1) {
-								clsFound = true;
-								break;
-							} else {
-								clsNode = clsNode.parentNode;
-							}
-						}
+							var clsFound = false;
+							var clsNode = a;
 
-						if (clsFound)
-						{
-							var target = document.getElementById(href);
-
-							if (target)
+							while (clsNode && !clsFound)
 							{
-								var rect = target.getBoundingClientRect();
+								if (typeof(clsNode.getAttribute) === "function")
+								{
+									var cls = clsNode.getAttribute("class");
 
-								var body = document.body;
-	    						var docElem = document.documentElement;
+									if (cls && cls.indexOf("xrx_bnr_handle_jump_link") > -1) {
+										clsFound = true;
+										break;
+									} else {
+										clsNode = clsNode.parentNode;
+									}
+								}
+								else if (typeof(clsNode.parentNode) !== "undefined") {
+									clsNode = clsNode.parentNode;
+								}
+								else {
+									break;
+								}
+							}
 
-								var scrollTop = window.pageYOffset || docElem.scrollTop || body.scrollTop;
-								var clientTop = docElem.clientTop || body.clientTop || 0;
+							if (clsFound)
+							{
+								var target = document.getElementById(href);
 
-								var scrollTo = rect.top +  scrollTop - clientTop;
+								if (target)
+								{
+									var rect = target.getBoundingClientRect();
 
-								window.scrollTo(0, scrollTo - 95);
+									var body = document.body;
+		    						var docElem = document.documentElement;
 
-								if (evt.preventDefault)
-									evt.preventDefault();
+									var scrollTop = window.pageYOffset || docElem.scrollTop || body.scrollTop;
+									var clientTop = docElem.clientTop || body.clientTop || 0;
 
-								return false;
+									var scrollTo = rect.top +  scrollTop - clientTop;
+
+									window.scrollTo(0, scrollTo - 95);
+
+									if (evt.preventDefault)
+										evt.preventDefault();
+
+									return false;
+								}
 							}
 						}
 					}
 				}
+			}
+			catch (err) {
+				helpers.logError(err);
 			}
 		});
 	};
