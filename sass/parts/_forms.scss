@@ -2,8 +2,10 @@
 
 @import "vars";
 
-.xrx_bnrv4_insights {
-	select, button {
+#xrx_bnr_v4_floating_content form,
+.xrx_bnrv4_header_flyout form,
+form.xrx_bnrv4_form {
+	select, button, input, textarea {
 		box-sizing: border-box;
 		display: inline-block;
 		border: 1px solid #e3e3e3;
@@ -20,17 +22,8 @@
 	}
 
 	select {
-		width: 200px;
-
 		&:focus {
 			border-color: $red;
-		}
-
-		@include respond-max($break_desktop)
-		{
-			display: block;
-			width: 100%;
-			margin-bottom: 10px;
 		}
 	}
 
@@ -41,6 +34,27 @@
 			color: $red;
 			font-size: 115%;
 			margin-left: 10px;
+		}
+	}
+}
+
+.xrx_bnrv4_header_flyout form,
+form.xrx_bnrv4_form {
+	select, button, input, textarea {
+		box-sizing: border-box;
+		display: inline-block;
+		margin-right: 10px;
+		border-radius: 0;
+	}
+
+	select {
+		width: 200px;
+
+		@include respond-max($break_desktop)
+		{
+			display: block;
+			width: 100%;
+			margin-bottom: 10px;
 		}
 	}
 }
