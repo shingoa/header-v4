@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+@import "vars";
+
+#xrx_bnr_v4_floating_content form,
+.xrx_bnrv4_header_flyout form,
+form.xrx_bnrv4_form {
+	select, button, input, textarea {
+		box-sizing: border-box;
+		display: inline-block;
+		border: 1px solid #e3e3e3;
+		padding: 5px 10px;
+		margin-right: 10px;
+		outline: none;
+		background-color: #fff;
+		border-radius: 0;
+
+		&:focus,
+		&:hover {
+			border-color: $red;
+		}
+	}
+
+	select {
+		&:focus {
+			border-color: $red;
+		}
+	}
+
+	button {
+		&:after {
+			content: " >";
+			display: inline-block;
+			color: $red;
+			font-size: 115%;
+			margin-left: 10px;
+		}
+	}
+}
+
+.xrx_bnrv4_header_flyout form,
+form.xrx_bnrv4_form {
+	select, button, input, textarea {
+		box-sizing: border-box;
+		display: inline-block;
+		margin-right: 10px;
+		border-radius: 0;
+	}
+
+	select {
+		width: 200px;
+
+		@include respond-max($break_desktop)
+		{
+			display: block;
+			width: 100%;
+			margin-bottom: 10px;
+		}
+	}
+}

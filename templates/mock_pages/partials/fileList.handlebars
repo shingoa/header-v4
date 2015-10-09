@@ -1,0 +1,9 @@
+{{#if files}}
+	<ul>
+		{{#each files}}
+			{{> mock_pages/partials/fileListItem}}
+		{{else}}
+			<li>No files</li>
+		{{/each}}
+	</ul>
+{{/if}}

@@ -36,7 +36,7 @@
     		$('.feed').html('<div class="feed-error row no-gutter"><div class="col-md-1 col-sm-1 col-xs-1"><div class="icon"></div></div><div class="col-md-11 col-sm-11 col-xs-11"><div class="error-title">' + $errorTitle + '</div><p>' + $errorText + '</p></div></div>');
         }
 
-        var $feeds = $('.xrx_social_feed').attr('data-handles');
+        var $feeds = $('.xrx_social_feed[data-handles]').attr('data-handles');
 
         if ($feeds)
         {

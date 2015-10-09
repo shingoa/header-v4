@@ -2,11 +2,13 @@
 
 var gulp = require('gulp');
 var zip = require('gulp-zip');
-var argv = require('yargs').argv;
+var xrxhelpers = require('./_helpers.js');
 
 gulp.task('compile-zip', ['compile'], function()
 {
-	return gulp.src('./compiled/' + argv.t + '/**/*')
-		.pipe(zip(argv.t + '.zip'))
+	var tier = xrxhelpers.getPassedArg("tier");
+
+	return gulp.src('./compiled/' + tier + '/**/*')
+		.pipe(zip(tier + '.zip'))
 	    .pipe(gulp.dest('dist'));
 });
