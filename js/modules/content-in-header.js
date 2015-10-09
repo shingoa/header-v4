@@ -111,6 +111,7 @@
 					{
 						$targetContentElm.empty()
 						$targetContentElm.append($activeContent.children().clone(true, true));
+						$targetContentElm.find("*").removeClass();
 
 						$targetContentElm.find("[value]").each(function() {
 							$(this).val($(this).attr("value"));
