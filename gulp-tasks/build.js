@@ -1,7 +1,11 @@
 'use strict';
 
 var gulp = require('gulp');
+var runSequence = require('run-sequence');
 
-gulp.task('build', ['init-repo', 'clean'], function() {
-	return gulp.start('build-html', 'build-sass', 'build-images', 'build-js');
+gulp.task('build', function(cb)
+{
+	runSequence(['init-repo', 'clean'],
+        		['build-html', 'build-sass', 'build-images', 'build-js'],
+				cb);
 });

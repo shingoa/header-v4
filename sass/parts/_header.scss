@@ -6,7 +6,7 @@
 @import "primary_nav";
 @import "secondary_nav";
 @import "tertiary_nav";
-@import "insights_selector";
+@import "forms";
 @import "search";
 @import "../modules/hamburger";
 @import "hide_banners";
@@ -686,6 +686,7 @@
 		&.xrx_bnr_v4_floating_content_active {
 			#xrx_bnr_v4_floating_content {
 				display: block;
+				white-space: nowrap;
 			}
 			#xrx_bnrv4_header_search {
 				display: none;

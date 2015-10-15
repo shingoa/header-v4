@@ -1,0 +1,10 @@
+{{#if href}}
+	{{#if choices}}
+		<a href="{{{href}}}" name="{{{lid}}}" class="xrx_bnrv4_header_no_divider">{{label}}</a>
+		<span>{{{choices}}}</span>
+	{{else}}
+		<a href="{{{href}}}" name="{{{lid}}}">{{label}}</a>
+	{{/if}}
+{{else}}
+	<span>{{label}}</span>
+{{/if}}

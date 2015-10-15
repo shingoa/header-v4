@@ -8,7 +8,7 @@ gulp.task('dev-server', ['watch'], function()
 	gulp.src('./')
 		.pipe(webserver({
 			fallback: 'index.enus.html',
-			open : '/built',
+			open : '/built/index.enus.html',
 			directoryListing : true
 		}));
 });

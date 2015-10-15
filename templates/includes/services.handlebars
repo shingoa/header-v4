@@ -1,0 +1,31 @@
+{{#with services}}
+	<li>
+		<input type="radio" name="xrx_bnrv4_header_nav_primary" value="xrx_bnrv4_services" id="xrx_bnrv4_services" autocomplete="off" aria-hidden="true" />
+		<label for="xrx_bnrv4_services" name="&amp;lid=hdr-bar-services" role="tab" aria-controls="xrx_bnrv4_header_flyout_services">{{label}}</label>
+
+		<div class="xrx_bnrv4_header_flyout" id="xrx_bnrv4_header_flyout_services" role="tabpanel">
+			<div>
+				{{> includes/partials/flyout_header}}
+
+				<div class="xrx_bnrv4_table xrx_bnrv4_header_flyout_content">
+					<div class="xrx_bnrv4_row">
+						{{#with col1}}
+							{{> includes/partials/column_links_tall}}
+						{{/with}}
+						{{#with col2}}
+							{{> includes/partials/column_links_tall}}
+						{{/with}}
+						{{#with col3}}
+							{{> includes/partials/column_links_tall}}
+						{{/with}}
+						{{#with col4}}
+							{{> includes/partials/column_links_tall}}
+						{{/with}}
+					</div>
+				</div>
+
+				{{> includes/partials/flyout_footer}}
+			</div>
+		</div>
+	</li>
+{{/with}}

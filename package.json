@@ -1,19 +1,24 @@
 {
   "name": "xerox.com-banners",
-  "version": "4.4.26",
+  "version": "4.5.16",
   "description": "Xerox.com banners",
   "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xeroxinteractive/header-v4.git"
+  },
   "dependencies": {},
   "devDependencies": {
+    "casperjs": "^1.1.0-beta3",
     "ent": "^2.2.0",
     "gulp": "^3.9.0",
     "gulp-bump": "^0.3.1",
     "gulp-clean": "^0.3.1",
+    "gulp-compile-handlebars": "^0.5.0",
     "gulp-git": "^1.2.4",
     "gulp-include": "^2.0.2",
     "gulp-jshint": "^1.11.2",
     "gulp-match": "^0.2.1",
-    "gulp-mustache": "^1.0.2",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.3",
     "gulp-uglify": "^1.2.0",
@@ -26,6 +31,7 @@
     "q": "^1.4.1",
     "request": "^2.60.0",
     "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.4",
     "vinyl-source-stream": "^1.1.0",
     "walk": "^2.3.9",
     "yargs": "^3.17.1"

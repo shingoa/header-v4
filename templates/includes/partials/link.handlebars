@@ -1,0 +1,9 @@
+{{#if href}}
+	{{#if id}}
+		<a href="{{{href}}}" name="{{{lid}}}" id="{{id}}" class="{{{class}}}" target="{{{target}}}">{{{label}}}</a>
+	{{else}}
+		<a href="{{{href}}}" name="{{{lid}}}" class="{{{class}}}" target="{{{target}}}">{{{label}}}</a>
+	{{/if}}
+{{else}}
+	<span class="{{{class}}}">{{{label}}}</span>
+{{/if}}
