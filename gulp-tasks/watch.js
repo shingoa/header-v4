@@ -2,8 +2,7 @@
 
 var gulp = require('gulp');
 
-gulp.task('watch', ['clean'], function () {
-	gulp.start('build-html', 'build-sass', 'build-images', 'build-js');
+gulp.task('watch', ['build'], function () {
 
 	gulp.watch(['./templates/**/*.handlebars', "./data/**/*.json"], ['build-html']);
 	gulp.watch('./sass/**/*.scss', ['build-sass']);
