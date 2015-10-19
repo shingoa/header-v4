@@ -9,6 +9,7 @@ var requireDir = require('require-dir');
 var mergeStream = require("merge-stream");
 var xrxhelpers = require('./_helpers.js');
 var gutil = require('gulp-util');
+var minifyHTML = require('gulp-minify-html');
 
 gulp.task('compile-html', ['init-repo', 'download-configs'], function()
 {
@@ -41,6 +42,9 @@ gulp.task('compile-html', ['init-repo', 'download-configs'], function()
 
 					merged.add(gulp.src(['./templates/parts/header.handlebars', './templates/parts/footer.handlebars', './templates/parts/footer.*.handlebars'])
 						.pipe(handlebars(templateData, handlebarOptions).on('error', gutil.log))
+						.pipe(minifyHTML({
+							'comments' : 'true'
+						}))
 						.pipe(rename({
 							'suffix' : '.' + locale,
 							'extname' : '.html'
