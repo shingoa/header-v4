@@ -43,7 +43,8 @@ gulp.task('compile-html', ['init-repo', 'download-configs'], function()
 					merged.add(gulp.src(['./templates/parts/header.handlebars', './templates/parts/footer.handlebars', './templates/parts/footer.*.handlebars'])
 						.pipe(handlebars(templateData, handlebarOptions).on('error', gutil.log))
 						.pipe(minifyHTML({
-							'comments' : 'true'
+							'comments' : true,
+							'quotes' : true
 						}))
 						.pipe(rename({
 							'suffix' : '.' + locale,
