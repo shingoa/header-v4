@@ -64,6 +64,7 @@
 				jsonpCallback: "ish",
 			    tryCount : 0,
 			    retryLimit : 3,
+				async: true,
 				success: function(data)
 				{
 		  			if (typeof data.portal_home_url !== 'undefined')
@@ -80,7 +81,8 @@
 		  				jQuery.ajax({
 							url: "https://www.xerox.com/perl-bin/xrx_ish_proxy_log.pl",
 							data: {"success": "true", "retry": xrx_ish_trycount, "url": document.location.toString(), "interval": xrx_ish_interval},
-							dataType: "jsonp"
+							dataType: "jsonp",
+							async: true
 						});
 					},5000);
 				},
@@ -103,7 +105,8 @@
 							jQuery.ajax({
 								url: "https://www.xerox.com/perl-bin/xrx_ish_proxy_log.pl",
 								data: {"success": "false", "retry": xrx_ish_trycount, "url": document.location.toString(), "interval": xrx_ish_interval},
-								dataType: "jsonp"
+								dataType: "jsonp",
+								async: true
 							});
 						},5000);
 					}
