@@ -96,6 +96,92 @@ helpers.processTemplateData = function(data, locale)
 		{
 			data.dataStr = JSON.stringify(data.data);
 		}
+
+		// Self balancing columns
+		if (typeof(data.header.primaryNav) !== "undefined")
+		{
+			var primaryNav = data.header.primaryNav;
+
+			for (var property in primaryNav)
+			{
+		        if (primaryNav.hasOwnProperty(property))
+				{
+					var navItem = primaryNav[property];
+
+					var linkCount = 0;
+					var colCount = 0;
+					var minLinkCount = 1000;
+					var maxLinkCount = 0;
+					for (var i = 0; i < 10; i++)
+					{
+						var col = navItem["col" + i];
+
+						if (col && col.links)
+						{
+							col.colCount = 1;
+							col.linksPerCol = col.links.length;
+
+							if (col.links.length > maxLinkCount)
+								maxLinkCount = col.links.length;
+							if (col.links.length < minLinkCount)
+								minLinkCount = col.links.length;
+
+							linkCount += col.links.length;
+							colCount++;
+						}
+					}
+
+					while (colCount < 6)
+					{
+						var highestCol;
+
+						for (var i = 0; i < 10; i++)
+						{
+							var col = navItem["col" + i];
+
+							if (col && col.links)
+							{
+								if (!highestCol || highestCol.linksPerCol < col.linksPerCol) {
+									highestCol = col;
+								}
+							}
+						}
+
+						if (!highestCol) break;
+
+						var suggestedLinksPerCol = Math.ceil(highestCol.links.length / (highestCol.colCount + 1));
+
+						if (suggestedLinksPerCol >= 2) {
+							highestCol.colCount++;
+							highestCol.linksPerCol = suggestedLinksPerCol;
+							colCount++;
+						} else {
+							break;
+						}
+					}
+
+					for (var i = 0; i < 10; i++)
+					{
+						var col = navItem["col" + i];
+
+						if (col && col.links)
+						{
+							col.cols = [];
+							if (col.colCount === 1)
+							{
+								col.cols.push(col.links);
+							}
+							else if (col.colCount >= 1)
+							{
+								while(col.links.length > 0) {
+									col.cols.push(col.links.splice(0, Math.min(col.linksPerCol, col.links.length)));
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 
 	return data;
