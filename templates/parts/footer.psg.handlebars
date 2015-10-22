@@ -72,14 +72,20 @@
 	</script>
 {{/if}}
 
-<script src="js/libs.js"></script>
-
+<!-- https://github.com/h5bp/lazyweb-requests/issues/42 -->
 <!--[if IE 8]>
-	<script defer src="js/xrx_bnrv4.ie8.js"></script>
+	<script src="js/libs.js"></script>
+	<script src="js/xrx_bnrv4.ie8.js"></script>
 <![endif]-->
-<!--[if gt IE 8]>
+<!--[if (gt IE 8) & (lte IE 9)]>
+	<script src="js/libs.js"></script>
+	<script src="js/xrx_bnrv4.js"></script>
+<![endif]-->
+<!--[if gte IE 10]>
+	<script defer src="js/libs.js"></script>
 	<script defer src="js/xrx_bnrv4.js"></script>
 <![endif]-->
 <!--[if !IE]> -->
+	<script defer src="js/libs.js"></script>
 	<script defer src="js/xrx_bnrv4.js"></script>
 <!-- <![endif]-->

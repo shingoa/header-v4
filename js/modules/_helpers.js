@@ -45,7 +45,9 @@
 				}
 
 				var script = document.createElement('script');
-				script.src = config.url;
+				script.setAttribute("src", config.url);
+				script.setAttribute("type", "text/javascript");
+				script.setAttribute("defer", "defer");
 				document.getElementsByTagName('head')[0].appendChild(script);
 			}
 		};

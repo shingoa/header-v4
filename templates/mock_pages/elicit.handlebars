@@ -50,6 +50,16 @@
 
 		{{> parts/footer}}
 
-		<script src="//www.xerox.com/assets/js/xrx/xrx-elicit-v4-responsive.min.js"></script>
+		<!-- https://github.com/h5bp/lazyweb-requests/issues/42 -->
+		<!--[if lte IE 9]>
+			<script src="//www.xerox.com/assets/js/xrx/xrx-elicit-v4-responsive.min.js"></script>
+		<![endif]-->
+		<!--[if gte IE 10]>
+			<script defer src="//www.xerox.com/assets/js/xrx/xrx-elicit-v4-responsive.min.js"></script>
+		<![endif]-->
+		<!--[if !IE]> -->
+			<script defer src="//www.xerox.com/assets/js/xrx/xrx-elicit-v4-responsive.min.js"></script>
+		<!-- <![endif]-->
+
 	</body>
 </html>
