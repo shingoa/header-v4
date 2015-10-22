@@ -19,7 +19,7 @@
 		</div>
 	{{/with}}
 	{{#if display}}
-		<div class="xrx_social_feed" data-handles="{{{display}}}">
+		<div class="xrx_social_feed" data-handles-default="{{{display}}}">
 		</div>
 		<script id="feed-tmpl-js" type="text/x-jsrender">
 		    \{{if twitter}}
@@ -31,10 +31,17 @@
 					</div>
 			        <div class="text-side">
 				        <p class="account">
-				            <a href="\{{:account_link}}" target="_blank">\{{:account_name}} \{{:account}}</a> \{{:tweetLink}}
+				            <a href="\{{:account_link}}" target="_blank">\{{:account_name}}</a>
+							<a href="\{{:account_link}}" target="_blank">\{{:account}}</a>
+							<span>&middot;</span>
+							<a target="_blank" name="&lid=connect-social-twitter-text" href="https://twitter.com/XeroxHealthcare/status/\{{:native_id}}">\{{:time_ago}}</a>
 				        </p>
-				        <p class="tweet-text">\{{:title_twitter}}</p>
-				        <div class="twitter-actions">\{{:reply}} \{{:retweet}} \{{:favorite}}</div>
+				        <p class="tweet-text">\{{:title}}</p>
+				        <div class="twitter-actions">
+							<a class="reply" name="&lid=connect-social-twitter-reply" target="_blank" href="https://twitter.com/intent/tweet?in_reply_to=\{{:native_id}}">Reply</a>
+							<a class="retweet" name="&lid=connect-social-twitter-retweet" target="_blank" href="https://twitter.com/intent/retweet?tweet_id=\{{:native_id}}">Retweet</a>
+							<a class="favorite" name="&lid=connect-social-twitter-favorite" target="_blank" href="https://twitter.com/intent/favorite?tweet_id=\{{:native_id}}">Favorite</a>
+						</div>
 			        </div>
 			    </div>
 		    \{{/if}}
@@ -50,9 +57,11 @@
 					</div>
 		            <div class="text-side">
 		                <p class="account"><a href="\{{:account_link}}" target="_blank">\{{:account}}</a></p>
-		                <p class="title"><a href="\{{:link}}" target="_blank" name="&lid=connect-social-linkedin-title text">\{{:title}}</a></p>
+						<p class="title">
+		                	<a href="\{{:link}}" target="_blank" name="&lid=connect-social-linkedin-title text">\{{:title}}</a></p>
+						</p>
 
-		                <p class="li-info">\{{:LItimeago}}</p>
+		                <p class="li-info">\{{:time_ago}}</p>
 		            </div>
 		        </div>
 
@@ -65,11 +74,12 @@
 						</svg>
 					</div>
 		            <div class="text-side">
-		                <a href="\{{:account_link}}" class="account" target="_blank">\{{:account}}</a>
-		                <a href="\{{:postLink}}" name="&lid=connect-social-facebook-text" target="_blank">
-		                    <span class="title">\{{:title}}</span>
-		                </a>
-		                <p class="updated">\{{:LItimeago}}</p>
+						<p class="account"><a href="\{{:account_link}}" target="_blank">\{{:account}}</a></p>
+						<p class="title">
+			                <a href="\{{:postLink}}" name="&lid=connect-social-facebook-text" target="_blank">\{{:title}}</a>
+						</p>
+
+						<p class="li-info">\{{:time_ago}}</p>
 		            </div>
 		        </div>
 		    \{{/if}}

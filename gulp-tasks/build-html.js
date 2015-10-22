@@ -9,6 +9,7 @@ var rename = require('gulp-rename');
 var requireDir = require('require-dir');
 var mergeStream = require("merge-stream");
 var gutil = require('gulp-util');
+var minifyHTML = require('gulp-minify-html');
 
 gulp.task('build-html', ['init-repo', 'download-test-configs'], function()
 {
@@ -49,6 +50,9 @@ gulp.task('build-html', ['init-repo', 'download-test-configs'], function()
 
 				merged.add(gulp.src(['./templates/mock_pages/*.handlebars'])
 					.pipe(handlebars(templateData, handlebarOptions).on('error', gutil.log))
+					//.pipe(minifyHTML({
+					//	'comments' : 'true'
+					//}))
 					.pipe(rename({
 						'suffix' : '.' + locale,
 						'extname' : '.html'

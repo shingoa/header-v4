@@ -29,6 +29,7 @@
 					var script = document.createElement("script");
 					script.setAttribute("src", "//s7.addthis.com/js/250/addthis_widget.js?pub=xeroxinteractive");
 					script.setAttribute("type", "text/javascript");
+					script.setAttribute("defer", "defer");
 
 					helpers.attachListener(script, "load", function(evt)
 					{

@@ -1,0 +1,25 @@
+{{#if cols.length}}
+	<div class="xrx_bnrv4_column">
+		{{> includes/partials/column_header }}
+
+		<div class="xrx_bnrv4_column_links">
+
+			{{> includes/partials/column_header_top }}
+
+			<div class="xrx_bnrv4_table">
+				<div class="xrx_bnrv4_row">
+					{{#each cols}}
+						<div class="xrx_bnrv4_column">
+							<ul>
+								{{#each this}}
+									{{> includes/partials/list_item}}
+								{{/each}}
+							</ul>
+						</div>
+					{{/each}}
+				</div>
+			</div>
+
+		</div>
+	</div>
+{{/if}}
