@@ -112,6 +112,13 @@ helpers.processTemplateData = function(data, locale)
 					var colCount = 0;
 					var minLinkCount = 1000;
 					var maxLinkCount = 0;
+
+					var labelCount = 0;
+					var minLabelLength = 1000;
+					var maxLabelLength = 0;
+					var avgLabelLength = 0;
+					var totalLabelLength = 0;
+
 					for (var i = 0; i < 10; i++)
 					{
 						var col = navItem["col" + i];
@@ -121,17 +128,45 @@ helpers.processTemplateData = function(data, locale)
 							col.colCount = 1;
 							col.linksPerCol = col.links.length;
 
+							if (col.label) {
+								labelCount++;
+								totalLabelLength += col.label.length;
+							}
+
 							if (col.links.length > maxLinkCount)
 								maxLinkCount = col.links.length;
 							if (col.links.length < minLinkCount)
 								minLinkCount = col.links.length;
 
+							col.links.forEach(function(lnk) {
+								if (lnk.label.length > maxLabelLength)
+									maxLabelLength = lnk.label.length;
+								if (lnk.label.length < minLabelLength)
+									minLabelLength = lnk.label.length;
+
+								totalLabelLength += lnk.label.length;
+							});
+
 							linkCount += col.links.length;
+							labelCount += col.links.length;
 							colCount++;
 						}
 					}
 
-					while (colCount < 6)
+					if (linkCount == 0) continue;
+
+					avgLabelLength = parseInt(totalLabelLength / labelCount);
+
+					var maxCols = 6;
+
+					if (avgLabelLength > 40)
+						maxCols = 3;
+					else if (avgLabelLength > 30)
+						maxCols = 4;
+					else if (avgLabelLength > 20)
+						maxCols = 5;
+
+					while (colCount < maxCols)
 					{
 						var highestCol;
 

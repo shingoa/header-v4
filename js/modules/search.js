@@ -1,4 +1,6 @@
-(function(window, document, $)
+//=require modules/_data.js
+
+(function(window, document, $, data)
 {
 	"use strict";
 
@@ -12,6 +14,30 @@
 		field.setAttribute("value", "1");
 
 		form.appendChild(field);
+
+		var xogLang = data.getData("XOGLang");
+		if (xogLang)
+		{
+			var inputs = form.getElementsByTagName("input");
+
+			if (inputs)
+			{
+				for(var i = 0; i < inputs.length; i++)
+				{
+					var input = inputs[i];
+
+					if (typeof(input) !== "undefined" && typeof(input.getAttribute) === "function")
+					{
+						if (input.getAttribute("name") === "XOGlang")
+						{
+							input.setAttribute("value", xogLang);
+
+							break;
+						}
+					}
+				}
+			}
+		}
 
 		if (typeof($) !== "undefined" && $)
 		{
@@ -46,4 +72,4 @@
 		}
 	}
 
-})(window, document, window.jQuery);
+})(window, document, window.jQuery, window.xrx.data);
