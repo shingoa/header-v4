@@ -440,7 +440,7 @@ helpers.downloadDeferred = function(data)
 		{
 			data.count++;
 
-			if (count < retry)
+			if (data.count < data.retry)
 			{
 				if (!data.silentRetry)
 					gutil.log("Failed - Retrying: " + data.name);
