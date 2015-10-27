@@ -64,23 +64,46 @@
 
 		self.getData = function(key)
 		{
+			var val = null;
+
 			if (typeof(key) === "string")
 			{
 				key = key.toLowerCase();
 
-				if (self.xrx_bnr_vars && self.xrx_bnr_vars[key]) {
-					return self.xrx_bnr_vars[key];
+				if (!val && self.xrx_bnr_vars && self.xrx_bnr_vars[key]) {
+					val = self.xrx_bnr_vars[key];
 				}
-				if (self.xerox_data && self.xerox_data[key]) {
-					return self.xerox_data[key];
+				if (!val && self.xerox_data && self.xerox_data[key]) {
+					val = self.xerox_data[key];
 				}
-				if (self.xrx_vars && self.xrx_vars[key]) {
-					return self.xrx_vars[key];
+				if (!val && self.xrx_vars && self.xrx_vars[key]) {
+					val = self.xrx_vars[key];
 				}
-				if (self.xrx_bnrv4_vars && self.xrx_bnrv4_vars[key]) {
-					return self.xrx_bnrv4_vars[key];
+				if (!val && self.xrx_bnrv4_vars && self.xrx_bnrv4_vars[key]) {
+					val = self.xrx_bnrv4_vars[key];
+				}
+				if (!val && key === "xoglang") {
+					if (typeof(navigator.language) !== "undefined") {
+						val = navigator.language;
+					} else if (typeof(navigator.languages) !== "undefined") {
+						val = navigator.languages[0];
+					}
+				}
+
+				if (val)
+				{
+					if (key === "xoglang")
+					{
+						if (val.length == 5) {
+							val = val.substr(0,2) + "_" + val.substr(3,2).toUpperCase();
+						} else if (val.length == 4) {
+							val = val.substr(0,2) + "_" + val.substr(2,2).toUpperCase();
+						}
+					}
 				}
 			}
+
+			return val;
 		}
 
 		self.getLob = function()
