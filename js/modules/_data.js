@@ -70,22 +70,22 @@
 			{
 				key = key.toLowerCase();
 
-				if (!val && self.xrx_bnr_vars && self.xrx_bnr_vars[key]) {
-					val = self.xrx_bnr_vars[key];
+				if (!val) {
+					val = self.getInternalData(key);
 				}
-				if (!val && self.xerox_data && self.xerox_data[key]) {
-					val = self.xerox_data[key];
-				}
-				if (!val && self.xrx_vars && self.xrx_vars[key]) {
-					val = self.xrx_vars[key];
-				}
-				if (!val && self.xrx_bnrv4_vars && self.xrx_bnrv4_vars[key]) {
-					val = self.xrx_bnrv4_vars[key];
-				}
+
 				if (!val && key === "xoglang") {
-					if (typeof(navigator.language) !== "undefined") {
+					if (!val) {
+						val = self.getInternalData("locale");
+					}
+					if (!val) {
+						val = self.getInternalData("language");
+					}
+
+					if (!val && typeof(navigator.language) !== "undefined") {
 						val = navigator.language;
-					} else if (typeof(navigator.languages) !== "undefined") {
+					}
+					if (!val && typeof(navigator.languages) !== "undefined") {
 						val = navigator.languages[0];
 					}
 				}
@@ -104,6 +104,29 @@
 			}
 
 			return val;
+		}
+
+		self.getInternalData = function(key)
+		{
+			if (typeof(key) === "string")
+			{
+				key = key.toLowerCase();
+
+				if (self.xrx_bnr_vars && self.xrx_bnr_vars[key]) {
+					return self.xrx_bnr_vars[key];
+				}
+				if (self.xerox_data && self.xerox_data[key]) {
+					return self.xerox_data[key];
+				}
+				if (self.xrx_vars && self.xrx_vars[key]) {
+					return self.xrx_vars[key];
+				}
+				if (self.xrx_bnrv4_vars && self.xrx_bnrv4_vars[key]) {
+					return self.xrx_bnrv4_vars[key];
+				}
+			}
+
+			return null;
 		}
 
 		self.getLob = function()
