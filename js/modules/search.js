@@ -15,30 +15,6 @@
 
 		form.appendChild(field);
 
-		var xogLang = data.getData("XOGLang");
-		if (xogLang)
-		{
-			var inputs = form.getElementsByTagName("input");
-
-			if (inputs)
-			{
-				for(var i = 0; i < inputs.length; i++)
-				{
-					var input = inputs[i];
-
-					if (typeof(input) !== "undefined" && typeof(input.getAttribute) === "function")
-					{
-						if (input.getAttribute("name") === "XOGlang")
-						{
-							input.setAttribute("value", xogLang);
-
-							break;
-						}
-					}
-				}
-			}
-		}
-
 		if (typeof($) !== "undefined" && $)
 		{
 			var $hdr = $('#xrx_bnrv4_header');
