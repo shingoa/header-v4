@@ -26,16 +26,6 @@
 				{
 					var $chk = $("#xrx_bnrv4_header_menuchk");
 
-					// AB Testing of menu
-					if (typeof(window.mboxUpdate) === 'function')
-					{
-						if (!tracked)
-						{
-						    mboxUpdate('target-global-mbox', 'searchbox=clicked');
-							tracked = true;
-						}
-					}
-
 					if ($chk.length > 0)
 						$chk[0].checked = true;
 				}
