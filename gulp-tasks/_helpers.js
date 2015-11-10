@@ -58,8 +58,8 @@ helpers.processTemplateData = function(data, locale)
 					obj.id = id
 						.toLowerCase()
 						.replace(/\s/g, "-")
-						.replace('&lid=', '')
-						.replace(/[^a-zA-Z0-9-_]/g, '');
+						.replace('&lid=', '');
+						.replace(/[\t\s\:\'\"]/g, '');
 
 					if (!obj.lid) {
 						obj.lid = "&lid=" + obj.id;
