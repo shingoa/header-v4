@@ -59,7 +59,7 @@ helpers.processTemplateData = function(data, locale)
 						.toLowerCase()
 						.replace(/\s/g, "-")
 						.replace('&lid=', '')
-						.replace(/[^a-zA-Z0-9-_]/g, '');
+						.replace(/[\t\s\:\'\"]/g, '');
 
 					if (!obj.lid) {
 						obj.lid = "&lid=" + obj.id;
