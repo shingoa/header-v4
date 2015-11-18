@@ -25,10 +25,10 @@
 			var pattern = /UserID=[0-9]/i;
 			if (pattern.exec(xrxcookie) != null && cookies.indexOf("iPlanetDirectoryPro") != -1)
 			{
-				if (document.getElementById("xrx_bnrv4_header_hdr-bar-log-in"))
-					document.getElementById("xrx_bnrv4_header_hdr-bar-log-in").style.display = "none"
-				if (document.getElementById("xrx_bnrv4_header_hdr-bar-log-out"))
-					document.getElementById("xrx_bnrv4_header_hdr-bar-log-out").style.display = "inline-block"
+				if (document.getElementById("xrx_bnrv4_header_log-in"))
+					document.getElementById("xrx_bnrv4_header_log-in").style.display = "none"
+				if (document.getElementById("xrx_bnrv4_header_log-out"))
+					document.getElementById("xrx_bnrv4_header_log-out").style.display = "inline-block"
 			}
 		}
 	}
