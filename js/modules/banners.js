@@ -72,7 +72,8 @@
 	self.setupScrollHandler = function()
 	{
 		var scrollingClassSetTo;
-		helpers.attachListener(document, "scroll", function(evt)
+
+		var scrollingHandler = function()
 		{
 			try {
 				var floater = document.getElementById("xrx_bnrv4_header_floater");
@@ -93,7 +94,10 @@
 			catch (err) {
 				helpers.logError(err);
 			}
-		});
+		};
+
+		helpers.attachListener(document, "scroll", scrollingHandler);
+		scrollingHandler();
 	};
 
 	self.setupAnchorHandler = function()
