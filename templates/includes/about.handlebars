@@ -1,6 +1,8 @@
 {{#with about}}
 	<li>
 		<input type="radio" name="xrx_bnrv4_header_nav_primary" value="xrx_bnrv4_about" id="xrx_bnrv4_about" autocomplete="off" aria-hidden="true" />
+
+		<label for="xrx_bnrv4_default" name="&amp;lid=hdr-bar-about-close">{{label}}</label>
 		<label for="xrx_bnrv4_about" name="&amp;lid=hdr-bar-about" role="tab" aria-controls="xrx_bnrv4_header_flyout_about">{{label}}</label>
 
 		<div class="xrx_bnrv4_header_flyout" id="xrx_bnrv4_header_flyout_about" role="tabpanel">
@@ -20,9 +22,9 @@
 						{{/with}}
 					</div>
 				</div>
-
-				{{> includes/partials/flyout_footer}}
 			</div>
+
+			{{> includes/partials/flyout_footer}}
 		</div>
 	</li>
 {{/with}}

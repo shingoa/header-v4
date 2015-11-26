@@ -1,21 +1,12 @@
 @charset "UTF-8";
 @import "vars";
 
-@import "../modules/_responsive_base";
+@import "modules/_responsive_base";
+@import "modules/helper_mixins";
 
-#xrx_bnrv4_header #xrx_bnrv4_header_nav_secondary
+#xrx_bnrv4_header
 {
-	li {
-		display: block;
-		border-bottom: 1px solid #e3e3e3;
-		padding: 10px 20px;
-	}
-
-	#xrx_bnrv4_header_log-out {
-		display: none;
-	}
-
-	@include respond-max($break_desktop)
+	#xrx_bnrv4_header_nav_secondary_mobile
 	{
 		#xrx_bnrv4_header_country_selector {
 			background-image: url("images/maplocator.svg");
@@ -29,70 +20,147 @@
 				display: inline;
 			}
 		}
-	}
 
-	@include respond-min($break_desktop)
-	{
-		float: right;
+		&, ul {
+			@include xrx_bnrv4_resetlist;
+		}
 
-		#xrx_bnrv4_header_country_selector > a
+		input {
+			display: none;
+		}
+
+		input
 		{
-			background-image: url("images/maplocator.svg");
-			background-repeat: no-repeat;
-			padding-left: 60px;
-			background-size: auto 50%;
-			background-position: left center;
-
-			@if ($page_width <= 740px) {
-				background-image: none;
-				padding-left: 0;
-			}
-
-			@include missing_feature("svg")
+			@include checked()
 			{
-				padding-left: 70px;
-				background-image: url("images/maplocator_off.png");
-
-				&:hover {
-					background-image: url("images/maplocator_on.png");
+				~ .xrx_bnrv4_header_flyout {
+					left: 0;
 				}
 			}
 		}
 
-		> li {
-			@include xrx_bnrv4_list_dividers(left);
+		#xrx_bnrv4_header_log-out {
+			display: none;
+		}
 
-			> span,
-			> label[for],
-			> a {
-				@if ($page_width <= 740px) {
-					font-size: 13px;
-				}
-				@else if ($page_width <= 940px) {
-					font-size: 14px;
-				}
-				@else {
-					font-size: 15px;
-				}
+		.xrx_bnrv4_header_flyout
+		{
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 100%;
+			width: 100%;
+			background-color: rgba(235, 235, 235, .98);
 
-				white-space: no-wrap;
-				padding-top: 16px;
-				padding-bottom: 17px;
-				font-weight: lighter;
-				line-height: 20px;
+			@include transition(left .25s ease-in-out);
 
-				&:before {
-					top: 35%;
-					bottom: 35%;
-				}
+			p,
+			form {
+				padding-left: 20px;
+				padding-right: 20px;
 			}
 
-			&:last-child {
+			.xrx_bnrv4_column {
 
-				> label,
+				input:checked ~ .xrx_bnrv4_column_links,
+				input.checked ~ .xrx_bnrv4_column_links {
+					left: 0;
+				}
+				.xrx_bnrv4_column_links
+				{
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 100%;
+					width: 100%;
+					background-color: rgba(235, 235, 235, .98);
+
+					@include transition(left .25s ease-in-out);
+				}
+			}
+		}
+
+		a,
+		label {
+			display: block;
+			border-bottom: 1px solid #e3e3e3;
+			display: block;
+			cursor: pointer;
+			padding: 10px 20px;
+			margin: 0;
+
+			+ span {
+				display: none;
+			}
+		}
+
+		label:after {
+			float: right;
+			color: $red;
+		}
+
+		.xrx_bnrv4_header_flyout_header_back {
+			text-align: center;
+			background-color: #fff;
+
+			&:after {
+				float: left;
+				color: $red;
+
+				@include xrx_bnrv4_left_arrow();
+
+				@include respond-min($break_desktop)
+				{
+					display: none;
+				}
+			}
+		}
+
+		@include respond-min($break_tablet)
+		{
+			display: none;
+		}
+	}
+
+	#xrx_bnrv4_header_nav_secondary
+	{
+		display: none;
+
+		#xrx_bnrv4_header_log-out {
+			display: none;
+		}
+
+		@include respond-min($break_tablet)
+		{
+			@include xrx_bnrv4_inlinelist;
+			display: block;
+			font-size: 18px;
+			font-weight: lighter;
+			z-index: 4100;
+			text-align: right;
+			position: relative;
+			white-space: nowrap;
+
+			> li {
+				@include xrx_bnrv4_list_dividers("left");
+
+				display: inline-block;
+				padding: 0;
+				border-bottom: none;
+				text-align: left;
+
+				&#xrx_bnrv4_header_contact .xrx_bnrv4_header_flyout ul li:first-child {
+					label, a {
+						font-weight: bold;
+					}
+				}
+
+				> label[for],
 				> a {
-					padding-right: 0px;
-					margin-right: 0;
+					font-size: 18px;
+					font-weight: lighter;
+					white-space: no-wrap;
 				}
 			}
 		}

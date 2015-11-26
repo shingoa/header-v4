@@ -42,8 +42,23 @@
 	}
 }
 
-@mixin xrx_bnrv4_list_dividers($side: right)
+@mixin xrx_bnrv4_list_dividers($side: right, $margin: 10px)
 {
+	&:first-child {
+		> span,
+		> label[for],
+		> a {
+			margin-left: 0;
+		}
+	}
+	&:last-child {
+		> span,
+		> label[for],
+		> a {
+			margin-right: 0;
+		}
+	}
+
 	> label[for],
 	> a {
 		cursor: pointer;
@@ -52,17 +67,30 @@
 	> span,
 	> label[for],
 	> a {
+
 		@if ($page_width <= 740px) {
-			padding-#{$side}: 7px;
-			margin-#{$side}: 7px;
+			margin-left: $margin - (($margin / 100) * 30);
+			margin-right: $margin - (($margin / 100) * 30);
+
+			&:before {
+				#{$side}: ($margin - (($margin / 100) * 30) * -1);
+			}
 		}
 		@else if ($page_width <= 940px) {
-			padding-#{$side}: 8px;
-			margin-#{$side}: 8px;
+			margin-left: $margin - (($margin / 100) * 20);
+			margin-right: $margin - (($margin / 100) * 20);
+
+			&:before {
+				#{$side}: ($margin - (($margin / 100) * 20) * -1);
+			}
 		}
 		@else {
-			padding-#{$side}: 10px;
-			margin-#{$side}: 10px;
+			margin-left: $margin;
+			margin-right: $margin;
+
+			&:before {
+				#{$side}: $margin * -1;
+			}
 		}
 
 		position: relative;
@@ -79,7 +107,6 @@
 			position: absolute;
 			top: 20%;
 			bottom: 20%;
-			#{$side}: 0;
 			width: 1px;
 			background-color: #dbdbdb;
 			border: none !important;
@@ -126,6 +153,27 @@
 				&:before {
 					display: none;
 				}
+			}
+		}
+	}
+
+	@include respond-max($break_tablet)
+	{
+		&.xrx_hide_mobile + li {
+			> span,
+			> label[for],
+			> a {
+				margin-left: 0;
+			}
+		}
+	}
+	@include respond-min-max($break_tablet, $break_desktop)
+	{
+		&.xrx_hide_tablet + li {
+			> span,
+			> label[for],
+			> a {
+				margin-left: 0;
 			}
 		}
 	}

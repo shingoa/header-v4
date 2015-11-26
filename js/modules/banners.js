@@ -72,12 +72,14 @@
 	self.setupScrollHandler = function()
 	{
 		var scrollingClassSetTo;
+		var scrollingFixedHeaderClassSet;
+
+		var floater = document.getElementById("xrx_bnrv4_header_floater");
+		var htmlElm = document.documentElement;
 
 		var scrollingHandler = function()
 		{
 			try {
-				var floater = document.getElementById("xrx_bnrv4_header_floater");
-
 				if (helpers.scrollY() > 0 && !scrollingClassSetTo)
 				{
 					scrollingClassSetTo = true;
@@ -89,6 +91,19 @@
 					scrollingClassSetTo = false;
 
 					floater.className = floater.className.replace("xrx_bnrv4_scrolling", "");
+				}
+
+				if (helpers.scrollY() >= 80 && !scrollingFixedHeaderClassSet)
+				{
+					scrollingFixedHeaderClassSet = true;
+
+					if (htmlElm.className.indexOf("xrx_bnrv4_fixed_header") == -1)
+						htmlElm.className = htmlElm.className + " xrx_bnrv4_fixed_header";
+				}
+				else if (helpers.scrollY() < 80 && scrollingFixedHeaderClassSet) {
+					scrollingFixedHeaderClassSet = false;
+
+					htmlElm.className = htmlElm.className.replace("xrx_bnrv4_fixed_header", "");
 				}
 			}
 			catch (err) {
