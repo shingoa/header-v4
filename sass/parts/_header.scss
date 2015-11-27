@@ -12,51 +12,14 @@
 @import "hide_banners";
 @import "../vendor/css3-mixins";
 
-@mixin xrx_bnrv4_flyout_label_checked_marker
-{
-	@include has_feature("csstransforms")
-	{
-		&:after
-		{
-			content: "";
-			display: block;
-			background-color: #f1f1f1;
-			border-top: 1px solid #dbdbdb;
-			border-left: 1px solid #dbdbdb;
-			width: 15px;
-			height: 15px;
-			position: absolute;
-			bottom: -22px;
-			@include transform(rotate(45deg) translateX(-20px));
-			left: 50%;
-			z-index: 4100;
-		}
-	}
-}
-
-@mixin xrx_bnrv4_flyout_checked_styles
-{
-	color: $red;
-	cursor: default;
-	font-weight: bold;
-	position: relative;
-
-	~ .xrx_bnrv4_header_flyout {
-		display: block;
-		position: absolute;
-		left: -1px;
-		right: -1px;
-	}
-}
-
 #xrx_bnrv4_header
 {
 	z-index: 4000;
 	height: 80px;
 
-	@include respond-min($break_tablet)
+	@include respond-min($break_desktop)
 	{
-		height: 80px;
+		height: 135px;
 	}
 
 	.xrx_bnrv4_logo {
@@ -110,6 +73,11 @@
 			height: 80px;
 		}
 
+		@include respond-min($break_desktop)
+		{
+			position: static;
+		}
+
 		> div {
 			@include xrx_bnrv4_positionit;
 			position: relative;
@@ -149,7 +117,7 @@
 								width: 100%;
 							}
 
-							&#xrx_bnrv4_header_tertiarycol {
+							&#xrx_bnrv4_header_secondarycol {
 								padding-left: 40px;
 							}
 
@@ -158,22 +126,13 @@
 
 								@include respond-min($break_desktop)
 								{
+									display: none;
 									padding-left: 0px;
 								}
 							}
 						}
 					}
 				}
-			}
-		}
-
-		&.xrx_bnrv4_scrolling {
-			@include box-shadow(0px, 4px, 5px, rgba(102,102,102,0.5));
-
-			@include missing_feature("boxshadow")
-			{
-				box-shadow: none;
-				border-bottom: 1px solid #ebebeb;
 			}
 		}
 	}
@@ -327,6 +286,16 @@
 		overflow: hidden;
 		overflow-x: hidden;
 
+		.xrx_bnrv4_logo {
+			display: inline-block;
+			float: left;
+			height: 25px;
+			margin: 7px 0;
+			width: 0px;
+			background-position: left center;
+			@include transition(width .25s ease-in-out, border-top-width .25s ease-in-out);
+		}
+
 		@include transition(left .25s ease-in-out);
 
 		> input {
@@ -346,57 +315,6 @@
 				width: 100%;
 				bottom: 0;
 			}
-
-		}
-
-		@include respond-min($break_desktop)
-		{
-			input#xrx_bnrv4_default
-			{
-				@include checked()
-				{
-					~ div #xrx_bnrv4_header_nav_primary li:first-child > label
-					{
-						@include xrx_bnrv4_flyout_checked_styles();
-						@include xrx_bnrv4_flyout_label_checked_marker();
-					}
-				}
-			}
-
-			#xrx_bnrv4_header_nav_primary > li > input,
-			#xrx_bnrv4_header_nav_secondary > li > input,
-			#xrx_bnrv4_header_nav_tertiary > li > input
-			{
-				@include checked()
-				{
-					~ label
-					{
-						@include xrx_bnrv4_flyout_checked_styles();
-					}
-				}
-			}
-
-			#xrx_bnrv4_header_nav_primary > li > input
-			{
-				@include checked()
-				{
-					~ label
-					{
-						@include xrx_bnrv4_flyout_label_checked_marker();
-					}
-				}
-			}
-
-			&:before {
-				content: "";
-				background-color: rgba(235, 235, 235, 1);
-				display: block;
-				position: absolute;
-				left: 0;
-				right: 0;
-				top: 0;
-				height: 150px;
-			}
 		}
 
 		@include respond-min($break_tablet)
@@ -406,10 +324,100 @@
 
 		@include respond-min($break_desktop)
 		{
-			position: fixed;
+			#xrx_bnrv4_header_nav_primary > li
+			{
+				> input
+				{
+					@include checked()
+					{
+						~ label
+						{
+							border-bottom: 5px solid $red;
+							display: none;
+
+							&[for='xrx_bnrv4_default'] {
+								display: inline-block;
+							}
+						}
+
+						~ .xrx_bnrv4_header_flyout {
+							display: block;
+							position: absolute;
+						}
+					}
+				}
+
+				@include has_feature("xrx-mouse")
+				{
+					&:hover
+					{
+						> label
+						{
+							border-bottom: 5px solid $red;
+							display: none;
+
+							&[for='xrx_bnrv4_default'] {
+								display: inline-block;
+							}
+						}
+
+						> .xrx_bnrv4_header_flyout {
+							display: block;
+							position: absolute;
+						}
+					}
+				}
+			}
+
+			.xrx_bnrv4_header_flyout {
+				min-height: 50px;
+				border: 1px solid #dbdbdb;
+				border-top: 0px solid #dbdbdb;
+				display: none;
+				background-color: #fff;
+				left: 0;
+				right: 0;
+
+				> div {
+					box-sizing: border-box;
+					padding: 30px;
+					@include xrx_bnrv4_positionit;
+
+					> .xrx_bnrv4_header_flyout_content {
+
+					}
+				}
+			}
+
+			> div {
+				background-color: #333;
+				position: relative;
+
+				&:after {
+					content: "";
+					display: block;
+					clear: both;
+				}
+			}
+		}
+
+		@include respond-min($break_desktop)
+		{
+			position: absolute;
 			top: 80px;
-			max-height: 0;
-			border-top: 0px solid #dbdbdb;
+			border: none;
+			bottom: auto;
+			overflow: visible;
+
+			@include has_feature("xrx_bnrv4_fixed_header")
+			{
+				top: 0;
+				position: fixed;
+
+				.xrx_bnrv4_logo {
+					width: 120px;
+				}
+			}
 
 			@include transition(max-height .25s ease-in-out, border-top-width .25s ease-in-out);
 
@@ -444,23 +452,6 @@
 					max-height: 100%;
 					border-top: 1px solid #dbdbdb;
 				}
-			}
-		}
-	}
-
-	@include respond-min($break_desktop)
-	{
-		.xrx_bnrv4_header_flyout {
-			min-height: 50px;
-			border-bottom: 1px solid #dbdbdb;
-			border-top: 1px solid #dbdbdb;
-			display: none;
-			background-color: #f1f1f1;
-
-			> div {
-				box-sizing: border-box;
-				padding: 30px;
-				@include xrx_bnrv4_positionit;
 			}
 		}
 	}

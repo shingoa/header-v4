@@ -19,11 +19,14 @@
 							<div id="xrx_bnr_v4_floating_content"></div>
 						</div>
 
-						<div id="xrx_bnrv4_header_tertiarycol">
-							{{#with tertiaryNav}}
-								<ul id="xrx_bnrv4_header_nav_tertiary">
-									{{> includes/contact}}
-									{{> includes/share}}
+						<div id="xrx_bnrv4_header_secondarycol">
+							{{#with secondaryNav}}
+								<ul id="xrx_bnrv4_header_nav_secondary">
+									{{#each links}}
+										<li id="{{id}}">
+											{{> includes/partials/secondary_nav_link}}
+										</li>
+									{{/each}}
 								</ul>
 							{{/with}}
 						</div>
@@ -64,6 +67,8 @@
 			<input type="radio" name="xrx_bnrv4_header_nav_primary" value="xrx_bnrv4_default" id="xrx_bnrv4_default" checked="checked" autocomplete="off" />
 
 			<div>
+				<a class="xrx_bnrv4_logo xrx_bnrv4_logo_white" name="&lid=hdr-pre-logo-home" href="{{trans.logoURL}}" title="{{trans.logoTitle}}"></a>
+
 				{{#with primaryNav}}
 					<ul id="xrx_bnrv4_header_nav_primary" role="tablist">
 						{{> includes/services}}
@@ -75,20 +80,25 @@
 					</ul>
 				{{/with}}
 
-				{{#with secondaryNav}}
-					<ul id="xrx_bnrv4_header_nav_secondary">
-						{{#each links}}
-							<li id="{{id}}">
-								{{> includes/partials/secondary_nav_link}}
-							</li>
-						{{/each}}
+				{{#with tertiaryNav}}
+					<ul id="xrx_bnrv4_header_nav_tertiary">
+						<li id="xrx_bnrv4_header_nav_tertiary_search">
+							<label for="searchString">
+								{{> parts/partials/search_icon }}
+							</label>
+						</li>
+						{{> includes/share_desktop}}
+						{{> includes/contact_desktop}}
 					</ul>
 				{{/with}}
 
-				{{#with tertiaryNav}}
-					<ul id="xrx_bnrv4_header_nav_tertiary_mobile">
-						{{> includes/contact_mobile}}
-						{{> includes/share_mobile}}
+				{{#with secondaryNav}}
+					<ul id="xrx_bnrv4_header_nav_secondary_mobile">
+						{{#each links}}
+							<li id="{{id}}_mobile">
+								{{> includes/partials/secondary_nav_link}}
+							</li>
+						{{/each}}
 					</ul>
 				{{/with}}
 			</div>

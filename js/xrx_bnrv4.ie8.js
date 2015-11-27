@@ -2,6 +2,7 @@
 //=include modules/_metrics.js
 //=include modules/_data.js
 
+//=include modules/hover.js
 //=include modules/intershop.js
 //=include modules/country-selector.js
 //=include modules/tracking.js

@@ -1,6 +1,8 @@
 {{#with supplies}}
 	<li>
 		<input type="radio" name="xrx_bnrv4_header_nav_primary" value="xrx_bnrv4_supplies" id="xrx_bnrv4_supplies" autocomplete="off" aria-hidden="true" />
+
+		<label for="xrx_bnrv4_default" name="&amp;lid=hdr-bar-supplies-close">{{label}}</label>
 		<label for="xrx_bnrv4_supplies" name="&amp;lid=hdr-bar-supplies" role="tab" aria-controls="xrx_bnrv4_header_flyout_supplies">{{label}}</label>
 
 		<div class="xrx_bnrv4_header_flyout" id="xrx_bnrv4_header_flyout_supplies" role="tabpanel">
@@ -18,11 +20,11 @@
 						{{#with col3}}
 							{{> includes/partials/column_links_auto}}
 						{{/with}}
-						</div>
 					</div>
-
-				{{> includes/partials/flyout_footer}}
+				</div>
 			</div>
+
+			{{> includes/partials/flyout_footer}}
 		</div>
 	</li>
 {{/with}}
