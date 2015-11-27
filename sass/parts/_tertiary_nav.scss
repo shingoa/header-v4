@@ -7,10 +7,52 @@
 {
 	#xrx_bnrv4_header_nav_tertiary
 	{
-		li {
-			display: block;
-			border-bottom: 1px solid #e3e3e3;
-			padding: 10px 20px;
+		ul {
+			padding: 0;
+
+			li {
+				display: block;
+			}
+		}
+
+		@include respond-min($break_desktop)
+		{
+			@include has_feature("xrx-mouse")
+			{
+				> li
+				{
+					&:hover
+					{
+						> .xrx_bnrv4_header_flyout
+						{
+							display: block;
+							left: auto;
+							top: auto;
+							right: 0;
+						}
+
+						> label {
+							display: none;
+						}
+
+						> label.xrx_bnrv4_header_defaultlbl
+						{
+							display: inline-block;
+							border-bottom: 5px solid $red;
+						}
+					}
+				}
+			}
+		}
+
+		input
+		{
+			@include checked()
+			{
+				~ .xrx_bnrv4_header_flyout {
+					left: 0;
+				}
+			}
 		}
 
 		#xrx_bnrv4_header_nav_tertiary_search {
@@ -23,8 +65,6 @@
 
 			@include has_feature("addthis")
 			{
-				display: block;
-
 				@include respond-min($break_desktop)
 				{
 					display: inline-block;
@@ -49,13 +89,122 @@
 			}
 		}
 
+
+		a,
+		label {
+			display: block;
+			border-bottom: 1px solid #e3e3e3;
+			display: block;
+			cursor: pointer;
+			padding: 10px 20px;
+			margin: 0;
+
+			+ span {
+				display: none;
+			}
+
+			&[for='xrx_bnrv4_default'] {
+				display: none;
+			}
+
+			@include respond-min($break_desktop)
+			{
+				padding: 0;
+				border-bottom: none;
+			}
+		}
+
+		label:after
+		{
+			&:after {
+				float: right;
+				color: $red;
+				@include xrx_bnrv4_right_arrow();
+			}
+
+			@include respond-min($break_desktop)
+			{
+				&:after {
+					display: none;
+				}
+			}
+		}
+
+		.xrx_bnrv4_header_flyout
+		{
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 100%;
+			width: 100%;
+			background-color: rgba(235, 235, 235, .98);
+
+			> div {
+				> label {
+					display: none;
+				}
+			}
+
+			@include respond-min($break_desktop)
+			{
+				bottom: auto;
+			}
+
+			@include transition(left .25s ease-in-out);
+
+			p,
+			form {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+
+			.xrx_bnrv4_column {
+
+				input:checked ~ .xrx_bnrv4_column_links,
+				input.checked ~ .xrx_bnrv4_column_links {
+					left: 0;
+				}
+				.xrx_bnrv4_column_links
+				{
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 100%;
+					width: 100%;
+					background-color: rgba(235, 235, 235, .98);
+
+					@include transition(left .25s ease-in-out);
+				}
+			}
+
+			label[for='xrx_bnrv4_default'].xrx_bnrv4_header_flyoutlbl
+			{
+				display: block;
+				text-align: center;
+				background-color: #fff;
+
+				@include respond-min($break_desktop)
+				{
+					display: none;
+				}
+
+				&:after {
+					float: left;
+					color: $red;
+
+					@include xrx_bnrv4_left_arrow();
+				}
+			}
+		}
+
 		@include respond-min($break_desktop)
 		{
 			float: right;
 
 			#xrx_bnrv4_header_nav_tertiary_search {
-				width: 28px;
-				height: 28px;
+				width: 26px;
+				height: 26px;
 
 				@include has_feature("xrx_bnrv4_fixed_header")
 				{
@@ -237,6 +386,11 @@
 
 						.xrx_bnrv4_share_module {
 							padding: 10px 0;
+
+							a {
+								margin-right: 10px;
+								display: inline-block;
+							}
 						}
 
 						ul {

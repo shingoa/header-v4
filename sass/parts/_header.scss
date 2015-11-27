@@ -12,17 +12,6 @@
 @import "hide_banners";
 @import "../vendor/css3-mixins";
 
-@mixin xrx_bnrv4_flyout_checked_styles
-{
-	cursor: default;
-	position: relative;
-
-	~ .xrx_bnrv4_header_flyout {
-		display: block;
-		position: absolute;
-	}
-}
-
 #xrx_bnrv4_header
 {
 	z-index: 4000;
@@ -335,30 +324,46 @@
 
 		@include respond-min($break_desktop)
 		{
-			#xrx_bnrv4_header_nav_primary > li > input,
-			#xrx_bnrv4_header_nav_secondary > li > input,
-			#xrx_bnrv4_header_nav_tertiary > li > input
+			#xrx_bnrv4_header_nav_primary > li
 			{
-				@include checked()
+				> input
 				{
-					~ label
+					@include checked()
 					{
-						@include xrx_bnrv4_flyout_checked_styles();
+						~ label
+						{
+							border-bottom: 5px solid $red;
+							display: none;
+
+							&[for='xrx_bnrv4_default'] {
+								display: inline-block;
+							}
+						}
+
+						~ .xrx_bnrv4_header_flyout {
+							display: block;
+							position: absolute;
+						}
 					}
 				}
-			}
 
-			#xrx_bnrv4_header_nav_primary > li > input
-			{
-				@include checked()
+				@include has_feature("xrx-mouse")
 				{
-					~ label
+					&:hover
 					{
-						border-bottom: 5px solid $red;
-						display: none;
+						> label
+						{
+							border-bottom: 5px solid $red;
+							display: none;
 
-						&[for='xrx_bnrv4_default'] {
-							display: inline-block;
+							&[for='xrx_bnrv4_default'] {
+								display: inline-block;
+							}
+						}
+
+						> .xrx_bnrv4_header_flyout {
+							display: block;
+							position: absolute;
 						}
 					}
 				}
@@ -401,6 +406,8 @@
 			position: absolute;
 			top: 80px;
 			border: none;
+			bottom: auto;
+			overflow: visible;
 
 			@include has_feature("xrx_bnrv4_fixed_header")
 			{
