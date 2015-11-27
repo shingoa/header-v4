@@ -105,7 +105,7 @@
                 var template = $.templates("#feed-tmpl-js");
 
                 // sort function (backwards)
-                function sortByKey(array, key) {
+                var sortByKey = function(array, key) {
                     return array.sort(function(b, a) {
                         var x = a[key];
                         var y = b[key];

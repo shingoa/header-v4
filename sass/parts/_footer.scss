@@ -7,17 +7,22 @@
 #xrx_bnrv4_footer {
 	z-index: 100;
 
-	#xrx_bnrv4_footer_main {
-		background-color: #f9f9f9;
-	}
-
 	.xrx_bnrv4_footer_position {
 		@include xrx_bnrv4_positionit;
-		padding: 15px;
+	}
+
+	.xrx_bnrv4_footer_content {
+		background-color: #333;
+		padding: 15px 30px;
+
+		p, a, label {
+			color: #fff;
+		}
 	}
 
 	.xrx_bnrv4_logo {
-		margin-bottom: 25px;
+		margin-bottom: 15px;
+		margin-left: 30px;
 		height: 31px;
 		width: 115px;
 

@@ -1,6 +1,8 @@
 {{#with products}}
 	<li>
 		<input type="radio" name="xrx_bnrv4_header_nav_primary" value="xrx_bnrv4_products" id="xrx_bnrv4_products" autocomplete="off" aria-hidden="true" />
+
+		<label for="xrx_bnrv4_default" name="&amp;lid=hdr-bar-products-close">{{label}}</label>
 		<label for="xrx_bnrv4_products" name="&amp;lid=hdr-bar-products" role="tab" aria-controls="xrx_bnrv4_header_flyout_products">{{label}}</label>
 
 		<div class="xrx_bnrv4_header_flyout" id="xrx_bnrv4_header_flyout_products" role="tabpanel">
@@ -21,8 +23,9 @@
 					</div>
 				</div>
 
-				{{> includes/partials/flyout_footer}}
 			</div>
+
+			{{> includes/partials/flyout_footer}}
 		</div>
 	</li>
 {{/with}}
