@@ -302,13 +302,6 @@
 					}
 				}
 
-				> label[for],
-				> a {
-					&:hover {
-						text-decoration: underline;
-					}
-				}
-
 				&:last-child {
 					> label,
 					> a {
