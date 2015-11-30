@@ -32,7 +32,6 @@
 
 	> li {
 		display: inline-block;
-		margin-right: 1px;
 
 		> a,
 		> span,
@@ -68,29 +67,20 @@
 	> label[for],
 	> a {
 
-		@if ($page_width <= 740px) {
-			margin-left: $margin - (($margin / 100) * 30);
-			margin-right: $margin - (($margin / 100) * 30);
+		$computedMargin: $margin;
 
-			&:before {
-				#{$side}: ($margin - (($margin / 100) * 30) * -1);
-			}
+		@if ($page_width <= 740px) {
+			$computedMargin: round($margin - (($margin / 100) * 30));
 		}
 		@else if ($page_width <= 940px) {
-			margin-left: $margin - (($margin / 100) * 20);
-			margin-right: $margin - (($margin / 100) * 20);
-
-			&:before {
-				#{$side}: ($margin - (($margin / 100) * 20) * -1);
-			}
+			$computedMargin: round($margin - (($margin / 100) * 20));
 		}
-		@else {
-			margin-left: $margin;
-			margin-right: $margin;
 
-			&:before {
-				#{$side}: $margin * -1;
-			}
+		margin-left: $computedMargin - 1px;
+		margin-right: $computedMargin;
+
+		&:before {
+			#{$side}: $computedMargin * -1;
 		}
 
 		position: relative;
@@ -114,8 +104,8 @@
 
 		&.xrx_bnrv4_header_no_divider
 		{
-			padding-#{$side}: 0;
-			margin-#{$side}: 0;
+			margin-left: 0;
+			margin-right: 0;
 
 			&:before {
 				display: none;
