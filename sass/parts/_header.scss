@@ -324,7 +324,8 @@
 
 		@include respond-min($break_desktop)
 		{
-			#xrx_bnrv4_header_nav_primary > li
+			#xrx_bnrv4_header_nav_primary > li,
+			#xrx_bnrv4_header_nav_tertiary > li
 			{
 				> input
 				{
@@ -355,28 +356,29 @@
 						{
 							border-bottom: 5px solid $red;
 							display: none;
-
-							&[for='xrx_bnrv4_default'] {
-								display: inline-block;
-							}
+						}
+						> label[for='xrx_bnrv4_default'] {
+							display: inline-block;
 						}
 
 						> .xrx_bnrv4_header_flyout {
-							display: block;
-							position: absolute;
+							max-height: 90000px;
 						}
 					}
 				}
 			}
 
 			.xrx_bnrv4_header_flyout {
-				min-height: 50px;
 				border: 1px solid #dbdbdb;
 				border-top: 0px solid #dbdbdb;
-				display: none;
+				display: block;
 				background-color: #fff;
 				left: 0;
 				right: 0;
+				position: absolute;
+				max-height: 0;
+				overflow: hidden;
+				transition-delay: 250ms;
 
 				@include has_feature("xrx_abn_header_all_grey")
 				{
