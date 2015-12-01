@@ -17,30 +17,14 @@
 
 		@include respond-min($break_desktop)
 		{
-			@include has_feature("xrx-mouse")
+			> li
 			{
-				> li
+				> .xrx_bnrv4_header_flyout
 				{
-					&:hover
-					{
-						> .xrx_bnrv4_header_flyout
-						{
-							display: block;
-							left: auto;
-							top: auto;
-							right: 0;
-						}
-
-						> label {
-							display: none;
-						}
-
-						> label.xrx_bnrv4_header_defaultlbl
-						{
-							display: inline-block;
-							border-bottom: 5px solid $red;
-						}
-					}
+					display: block;
+					left: auto;
+					top: auto;
+					right: 0;
 				}
 			}
 		}
@@ -324,7 +308,6 @@
 							left: auto;
 							top: auto;
 							right: 0;
-
 						}
 
 						~ .xrx_bnrv4_header_defaultlbl {
@@ -339,7 +322,6 @@
 				}
 
 				.xrx_bnrv4_header_flyout {
-					display: none;
 					position: absolute;
 					background-color: #fff;
 					border: 1px solid #e3e3e3;

@@ -29,6 +29,8 @@
 					document.getElementById("xrx_bnrv4_header_secondary_log-in").style.display = "none"
 				if (document.getElementById("xrx_bnrv4_header_secondary_log-out"))
 					document.getElementById("xrx_bnrv4_header_secondary_log-out").style.display = "inline-block"
+				if (document.getElementById("xrx_bnrv4_header_secondary_log-out_mobile"))
+					document.getElementById("xrx_bnrv4_header_secondary_log-out_mobile-out").style.display = "block"
 			}
 		}
 	}
