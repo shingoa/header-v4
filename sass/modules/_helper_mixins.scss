@@ -191,6 +191,7 @@
 	font-family: "Arial";
 	font-size: 90%;
 	margin-left: 5px;
+	display: inline-block;
 
 	@include missing_feature("csstransforms")
 	{
