@@ -6,11 +6,6 @@
 
 #xrx_bnrv4_header
 {
-	#xrx_bnrv4_header_log-out,
-	#xrx_bnrv4_header_log-out_mobile {
-		display: none;
-	}
-
 	#xrx_bnrv4_header_nav_secondary_mobile
 	{
 		#xrx_bnrv4_header_country_selector {
@@ -128,7 +123,7 @@
 	{
 		display: none;
 
-		#xrx_bnrv4_header_log-out {
+		#xrx_bnrv4_header_secondary_log-out {
 			display: none;
 		}
 

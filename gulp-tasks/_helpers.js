@@ -49,46 +49,85 @@ helpers.processTemplateData = function(data, locale)
 
 		helpers.recurse(data, function(obj, p, path)
 		{
-			if (typeof(obj) === "object" && obj)
+			try
 			{
-				if (typeof(obj.label) !== "undefined" && obj.label)
+				if (typeof(obj) === "object" && obj)
 				{
-					var id = obj.id || obj.label;
+					if (typeof(obj.label) !== "undefined" && obj.label)
+					{
+						obj.id = obj.id || obj.label;
 
-					obj.id = id
-						.toLowerCase()
-						.replace(/\s/g, "-")
-						.replace('&lid=', '')
-						.replace(/[\t\s\:\'\"]/g, '');
-
-					if (!obj.lid) {
-						obj.lid = "&lid=" + obj.id;
-					}
-				}
-
-				if (obj.id && obj.id === "hdr-bar-country-select") {
-					obj.id = "xrx_bnrv4_header_country_selector";
-				}
-				if (obj.id && obj.id.indexOf("xrx_") === -1)
-				{
-					var base = "xrx_bnrv4_";
-
-					if (path.indexOf("lobFooter") >= 0) {
-						base += "lobfooter_"
-					}
-					else if (path.indexOf("footer") >= 0) {
-						base += "footer_"
-					}
-					else if (path.indexOf("header") >= 0) {
-						base += "header_"
+						if (!obj.lid) {
+							obj.lid = "&lid=" + obj.id;
+						}
 					}
 
-					obj.id = base + obj.id;
-				}
+					if (obj.id && obj.id === "hdr-bar-country-select") {
+						obj.id = "xrx_bnrv4_header_country_selector";
+					}
+					else if (obj.id && obj.id.indexOf("xrx_") === -1)
+					{
+						obj.id = obj.id.replace("hdr-", "");
 
-				if (obj.label) {
-					obj.label = ent.decode(obj.label);
+						var splitPath = path.split(".");
+						var base = "xrx_bnrv4_";
+
+						if (splitPath[1] == "lobFooter") {
+							base += "lobfooter_"
+						}
+						else if (splitPath[0] == "footer") {
+							base += "footer_"
+						}
+						else if (splitPath[0] == "header") {
+							base += "header_"
+
+							if (splitPath[1] == "primaryNav") {
+								base += "primary_" + splitPath[2] + "_";
+
+								if (splitPath[2] && splitPath[3] &&
+									data.header.primaryNav &&
+									data.header.primaryNav[splitPath[2]] &&
+									data.header.primaryNav[splitPath[2]][splitPath[3]] &&
+									data.header.primaryNav[splitPath[2]][splitPath[3]].label)
+								{
+									base += data.header.primaryNav[splitPath[2]][splitPath[3]].label + "_";
+								}
+							}
+							else if (splitPath[1] == "secondaryNav") {
+								base += "secondary_";
+							}
+							else if (splitPath[1] == "tertiaryNav") {
+								base += "tertiary_" + splitPath[2] + "_";
+							}
+						}
+
+						obj.id = base + obj.id;
+					}
+
+					if (obj.id)
+					{
+						obj.id = obj.id.toLowerCase()
+							.replace(/\s/g, "-")
+							.replace('&lid=', '')
+							.replace(/[\t\s\:\'\"]/g, '')
+							.replace("&amp;", "and")
+							.replace(",", "")
+							.replace(".", "")
+							.replace("/", "-")
+							.replace("--", "-")
+							.replace("--", "-")
+							.replace("--", "-")
+							.replace("-&-", "-and-");
+					}
+
+					if (obj.label) {
+						obj.label = ent.decode(obj.label);
+					}
 				}
+			}
+			catch (exp)
+			{
+				gutil.log(exp);
 			}
 		});
 

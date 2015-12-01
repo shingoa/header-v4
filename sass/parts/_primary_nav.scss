@@ -179,7 +179,6 @@
 			> span,
 			> label {
 				font-size: 18px;
-				color: #333;
 				font-weight: bold;
 				line-height: 20px;
 			}
@@ -313,11 +312,22 @@
 		.xrx_bnrv4_header_flyout_footer {
 			@include xrx_bnrv4_inlinelist;
 
-			border-top: 1px solid #dbdbdb;
 			padding: 15px 30px;
 			margin-top: 9px;
 			background-color: #333;
 			margin: 0 -1px -1px -1px;
+
+			@include has_feature("xrx_abn_header_all_grey")
+			{
+				margin: 0;
+			}
+
+			@include has_feature("xrx_abn_header_white")
+			{
+				background-color: #fff;
+				border: 1px solid #dbdbdb;
+				border-top: none;
+			}
 
 			li {
 				@include xrx_bnrv4_list_dividers;
@@ -327,6 +337,11 @@
 					padding-right: 18px;
 					margin-right: 18px;
 					color: #fff;
+
+					@include has_feature("xrx_abn_header_white")
+					{
+						color: #333;
+					}
 				}
 			}
 		}
