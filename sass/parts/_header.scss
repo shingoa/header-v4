@@ -414,12 +414,15 @@
 				top: 0;
 				position: fixed;
 
+				animation-name: header_slide_in;
+				animation-duration: .5s;
+
 				.xrx_bnrv4_logo {
 					width: 120px;
+
+					@include transition(none);
 				}
 			}
-
-			@include transition(max-height .25s ease-in-out, border-top-width .25s ease-in-out);
 
 			> div {
 				@include xrx_bnrv4_positionit;
@@ -506,5 +509,16 @@
 				display: none;
 			}
 		}
+	}
+}
+
+@keyframes header_slide_in {
+  0%   {
+		top: -80px;
+		position: fixed;
+	}
+  100% {
+		top: 0;
+		position: fixed;
 	}
 }
