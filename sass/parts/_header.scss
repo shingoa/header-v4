@@ -343,12 +343,22 @@
 
 						~ .xrx_bnrv4_header_flyout {
 							max-height: 90000px;
+
+							@include has_feature("xrx_abn_header_white")
+							{
+								border: 1px solid #dbdbdb;
+								border-top: none;
+							}
 						}
 					}
 				}
 
 				@include has_feature("xrx-mouse")
 				{
+					.xrx_bnrv4_header_flyout {
+						transition-delay: 250ms;
+					}
+
 					&:hover
 					{
 						> label
@@ -362,14 +372,19 @@
 
 						> .xrx_bnrv4_header_flyout {
 							max-height: 90000px;
+
+							@include has_feature("xrx_abn_header_white")
+							{
+								border-left: 1px solid #dbdbdb;
+								border-right: 1px solid #dbdbdb;
+								border-bottom: 1px solid #dbdbdb;
+							}
 						}
 					}
 				}
 			}
 
 			.xrx_bnrv4_header_flyout {
-				border: 1px solid #dbdbdb;
-				border-top: 0px solid #dbdbdb;
 				display: block;
 				background-color: #fff;
 				left: 0;
@@ -377,7 +392,7 @@
 				position: absolute;
 				max-height: 0;
 				overflow: hidden;
-				transition-delay: 250ms;
+				border: 0px solid #dbdbdb;
 
 				@include has_feature("xrx_abn_header_all_grey")
 				{
@@ -396,6 +411,19 @@
 					box-sizing: border-box;
 					padding: 30px;
 					@include xrx_bnrv4_positionit;
+
+					border: 1px solid #dbdbdb;
+					border-width: 0 1px;
+
+					@include has_feature("xrx_abn_header_all_grey")
+					{
+						border: none;
+					}
+
+					@include has_feature("xrx_abn_header_white")
+					{
+						border: none;
+					}
 				}
 
 				&,
