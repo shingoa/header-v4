@@ -13,7 +13,7 @@ gulp.task('build-sass', ['init-repo'], function ()
 
 	return gulp.src('./sass/**/*.scss')
 		.pipe(sass({
-			outputStyle: "expanded",
+			outputStyle: "nested",
 			indentType: "tab",
 			indentWidth: 1,
 			sourceComments: true
