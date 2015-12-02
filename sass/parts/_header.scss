@@ -347,7 +347,7 @@
 							@include has_feature("xrx_abn_header_white")
 							{
 								border: 1px solid #dbdbdb;
-								border-top: none;
+								border-top: 0;
 							}
 						}
 					}
@@ -372,13 +372,18 @@
 
 						> .xrx_bnrv4_header_flyout {
 							max-height: 90000px;
+						}
+					}
+				}
 
-							@include has_feature("xrx_abn_header_white")
-							{
-								border-left: 1px solid #dbdbdb;
-								border-right: 1px solid #dbdbdb;
-								border-bottom: 1px solid #dbdbdb;
-							}
+				@include has_feature("xrx-mouse.xrx_abn_header_white")
+				{
+					&:hover
+					{
+						> .xrx_bnrv4_header_flyout
+						{
+							border: 1px solid #dbdbdb;
+							border-top: 0;
 						}
 					}
 				}
