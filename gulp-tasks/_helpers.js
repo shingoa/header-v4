@@ -14,6 +14,7 @@ var argv = require('yargs')
 	.describe('t', 'Specify the tier to build for. local/dev/test/prod. Defaults to local')
     .choices('t', ['local', 'dev', 'test', 'prod'])
     .alias('l', 'locales')
+		.alias('l', 'locale')
 	.describe('l', 'Specify the locales to build for')
     .argv;
 

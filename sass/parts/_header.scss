@@ -16,6 +16,7 @@
 {
 	z-index: 4000;
 	height: 80px;
+	margin-bottom: 10px;
 
 	@include respond-min($break_desktop)
 	{
@@ -60,12 +61,12 @@
 		background-color: rgb(255, 255, 255);
 		background-color: rgba(255, 255, 255, .96);
 		z-index: 4200;
-		@include box-shadow(0px, 4px, 5px, rgba(102,102,102,0));
 		@include transition(box-shadow .1s ease-in-out);
 
 		@include has_feature("xrx_bnrv4_header_static")
 		{
 			position: static;
+			@include box-shadow(0px, 4px, 5px, rgba(102,102,102,0));
 		}
 
 		@include respond-min($break_tablet)
@@ -335,6 +336,11 @@
 						{
 							border-bottom: 5px solid $red;
 							display: none;
+							text-decoration: none;
+
+							&:hover {
+								text-decoration: none;
+							}
 
 							&[for='xrx_bnrv4_default'] {
 								display: inline-block;
@@ -343,11 +349,15 @@
 
 						~ .xrx_bnrv4_header_flyout {
 							max-height: 90000px;
+							border: 1px solid #dbdbdb;
 
-							@include has_feature("xrx_abn_header_white")
-							{
-								border: 1px solid #dbdbdb;
-								border-top: 0;
+							> label {
+								display: block;
+								position: absolute;
+								top: 20px;
+								right: 30px;
+								font-size: 24px;
+								color: $red;
 							}
 						}
 					}
@@ -357,6 +367,10 @@
 				{
 					.xrx_bnrv4_header_flyout {
 						transition-delay: 250ms;
+
+						> label {
+							display: none;
+						}
 					}
 
 					&:hover
@@ -365,6 +379,7 @@
 						{
 							border-bottom: 5px solid $red;
 							display: none;
+							text-decoration: none;
 						}
 						> label[for='xrx_bnrv4_default'] {
 							display: inline-block;
@@ -372,18 +387,7 @@
 
 						> .xrx_bnrv4_header_flyout {
 							max-height: 90000px;
-						}
-					}
-				}
-
-				@include has_feature("xrx-mouse.xrx_abn_header_white")
-				{
-					&:hover
-					{
-						> .xrx_bnrv4_header_flyout
-						{
 							border: 1px solid #dbdbdb;
-							border-top: 0;
 						}
 					}
 				}
@@ -391,44 +395,22 @@
 
 			.xrx_bnrv4_header_flyout {
 				display: block;
-				background-color: #fff;
 				left: 0;
 				right: 0;
 				position: absolute;
 				max-height: 0;
 				overflow: hidden;
+				margin-left: -1px;
+				margin-right: -1px;
+				background-color: #fff;
 				border: 0px solid #dbdbdb;
-
-				@include has_feature("xrx_abn_header_all_grey")
-				{
-					background-color: #333;
-					border: none;
-				}
-
-				@include has_feature("xrx_abn_header_white")
-				{
-					margin-left: -1px;
-					margin-right: -1px;
-				}
-
 
 				> div {
 					box-sizing: border-box;
 					padding: 30px;
 					@include xrx_bnrv4_positionit;
 
-					border: 1px solid #dbdbdb;
-					border-width: 0 1px;
-
-					@include has_feature("xrx_abn_header_all_grey")
-					{
-						border: none;
-					}
-
-					@include has_feature("xrx_abn_header_white")
-					{
-						border: none;
-					}
+					border: none;
 				}
 
 				&,
@@ -436,62 +418,29 @@
 				span,
 				label[for] {
 					color: #333;
-
-					@include has_feature("xrx_abn_header_all_grey")
-					{
-						color: #fff;
-					}
 				}
 
 				a,
 				label[for] {
-					@include has_feature("xrx_abn_header_all_grey")
-					{
-						&:hover {
-							text-decoration: underline;
+					&:hover {
+						text-decoration: underline;
 
-							&:after {
-								text-decoration: none;
-							}
-						}
-					}
-
-					@include has_feature("xrx_abn_header_white")
-					{
-						&:hover {
-							text-decoration: underline;
-
-							&:after {
-								text-decoration: none;
-							}
+						&:after {
+							text-decoration: none;
 						}
 					}
 				}
 			}
 
 			> div {
-				background-color: #333;
 				position: relative;
+				border: 1px solid #dbdbdb;
 
 				> ul > li {
 					&,
 					> a,
 					> label[for] {
-						color: #fff;
-					}
-				}
-
-				@include has_feature("xrx_abn_header_white")
-				{
-					background-color: #fff;
-					border: 1px solid #dbdbdb;
-
-					> ul > li {
-						&,
-						> a,
-						> label[for] {
-							color: #333;
-						}
+						color: #333;
 					}
 				}
 
@@ -515,7 +464,6 @@
 			{
 				top: 0;
 				position: fixed;
-
 				animation-name: header_slide_in;
 				animation-duration: .5s;
 
@@ -524,12 +472,17 @@
 
 					@include transition(none);
 				}
+
+				> div {
+					border-top-width: 0;
+				}
 			}
 
 			> div {
 				@include xrx_bnrv4_positionit;
 				padding: 0 30px;
 				box-sizing: border-box;
+				background-color: #fff;
 			}
 		}
 

@@ -195,14 +195,17 @@
 					display: block;
 				}
 
+				&:hover > label {
+					border-bottom: none !important;
+
+					@include has_feature("xrx-mouse")
+					{
+						display: block !important;
+					}
+				}
+
 				> label {
 					display: block;
-
-					svg {
-						#XMLID_1_, #XMLID_3_ {
-							stroke: #fff !important;
-						}
-					}
 
 					&:hover svg {
 						#XMLID_1_, #XMLID_3_ {

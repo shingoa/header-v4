@@ -314,20 +314,9 @@
 
 			padding: 15px 30px;
 			margin-top: 9px;
-			background-color: #333;
+			background-color: #fff;
 			margin: 0 -1px -1px -1px;
-
-			@include has_feature("xrx_abn_header_all_grey")
-			{
-				margin: 0;
-			}
-
-			@include has_feature("xrx_abn_header_white")
-			{
-				background-color: #fff;
-				border: 1px solid #dbdbdb;
-				border-top: none;
-			}
+			border-top: 1px solid #dbdbdb;
 
 			li {
 				@include xrx_bnrv4_list_dividers;
@@ -336,12 +325,7 @@
 				> span {
 					padding-right: 18px;
 					margin-right: 18px;
-					color: #fff;
-
-					@include has_feature("xrx_abn_header_white")
-					{
-						color: #333;
-					}
+					color: #333;
 				}
 			}
 		}
