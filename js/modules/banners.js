@@ -97,13 +97,14 @@
 				{
 					scrollingFixedHeaderClassSet = true;
 
-					if (htmlElm.className.indexOf("xrx_bnrv4_fixed_header") == -1)
-						htmlElm.className = htmlElm.className + " xrx_bnrv4_fixed_header";
+					helpers.addClass(document.getElementById("xrx_bnrv4_header_nav"), "xrx_bnrv4_fixed_header");
+					helpers.removeClass(document.getElementById("xrx_bnrv4_header_nav"), "xrx_bnrv4_static_header");
 				}
 				else if (helpers.scrollY() < 80 && scrollingFixedHeaderClassSet) {
 					scrollingFixedHeaderClassSet = false;
 
-					htmlElm.className = htmlElm.className.replace("xrx_bnrv4_fixed_header", "");
+					helpers.removeClass(document.getElementById("xrx_bnrv4_header_nav"), "xrx_bnrv4_fixed_header");
+					helpers.addClass(document.getElementById("xrx_bnrv4_header_nav"), "xrx_bnrv4_static_header");
 				}
 			}
 			catch (err) {
