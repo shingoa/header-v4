@@ -10,11 +10,6 @@
 		@include xrx_bnrv4_resetlist;
 	}
 
-	label[for='xrx_bnrv4_default'],
-	.xrx_bnrv4_column > input {
-		display: none;
-	}
-
 	p {
 		color: #737373;
 	}
@@ -39,83 +34,6 @@
 
 	@include respond-max($break_desktop)
 	{
-		&
-		{
-			input
-			{
-				@include checked()
-				{
-					~ .xrx_bnrv4_header_flyout {
-						left: 0;
-					}
-				}
-			}
-
-			.xrx_bnrv4_header_flyout
-			{
-				display: block;
-				position: absolute;
-				top: -1px;
-				bottom: 0;
-				left: 100%;
-				width: 100%;
-				background-color: rgba(235, 235, 235, .98);
-
-				@include transition(left .25s ease-in-out);
-
-				p,
-				form {
-					padding-left: 20px;
-					padding-right: 20px;
-				}
-
-				.xrx_bnrv4_column {
-
-					input
-					{
-						@include checked()
-						{
-							~ .xrx_bnrv4_column_links {
-								left: 0;
-							}
-						}
-					}
-					.xrx_bnrv4_column_links
-					{
-						position: absolute;
-						top: 0;
-						bottom: 0;
-						left: 100%;
-						width: 100%;
-						background-color: rgba(235, 235, 235, .98);
-
-						@include transition(left .25s ease-in-out);
-					}
-				}
-			}
-		}
-
-		a,
-		label {
-			display: block;
-			border-bottom: 1px solid #e3e3e3;
-			display: block;
-			cursor: pointer;
-			padding: 10px 20px;
-			margin: 0;
-
-			+ span {
-				display: none;
-			}
-		}
-
-		label:after {
-			float: right;
-			color: $red;
-
-			@include xrx_bnrv4_right_arrow();
-		}
-
 		label ~ a {
 			display: none;
 
@@ -133,24 +51,6 @@
 		.xrx_bnrv4_header_flyout_header {
 			+ .xrx_bnrv4_header_flyout_content > p:first-child {
 				margin-top: 10px;
-			}
-		}
-
-		label.xrx_bnrv4_header_flyout_header_back {
-			text-align: center;
-			background-color: #fff;
-			display: block;
-
-			&:after {
-				float: left;
-				color: $red;
-
-				@include xrx_bnrv4_left_arrow();
-
-				@include respond-min($break_desktop)
-				{
-					display: none;
-				}
 			}
 		}
 
@@ -257,22 +157,6 @@
 
 			> label[for],
 			> a {
-				@if ($page_width <= 740px) {
-					font-size: 15px;
-					padding-top: 16px;
-					padding-bottom: 12px;
-				}
-				@else if ($page_width <= 940px) {
-					font-size: 18px;
-					padding-top: 16px;
-					padding-bottom: 12px;
-				}
-				@else {
-					font-size: 20px;
-					padding-top: 16px;
-					padding-bottom: 12px;
-				}
-
 				border-bottom: 5px solid transparent;
 				white-space: no-wrap;
 				line-height: 20px;
