@@ -137,7 +137,6 @@
 			@include xrx_bnrv4_inlinelist;
 			display: block;
 			font-size: 18px;
-			font-weight: lighter;
 			z-index: 4100;
 			text-align: right;
 			position: relative;
@@ -159,7 +158,7 @@
 
 				> label[for],
 				> a {
-					font-size: 18px;
+					font-size: 17px;
 					font-weight: lighter;
 					white-space: no-wrap;
 				}

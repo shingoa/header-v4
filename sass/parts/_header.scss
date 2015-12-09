@@ -120,6 +120,11 @@
 
 							&#xrx_bnrv4_header_secondarycol {
 								padding-left: 40px;
+
+								@include respond-min($break_desktop)
+								{
+									padding-right: 30px;
+								}
 							}
 
 							&#xrx_bnrv4_header_menucol {
@@ -325,12 +330,130 @@
 			top: 80px;
 		}
 
+		.xrx_bnrv4_column > input {
+			display: none;
+		}
+
+		@include respond-max($break_desktop)
+		{
+			#xrx_bnrv4_header_nav_primary,
+			#xrx_bnrv4_header_nav_secondary,
+			#xrx_bnrv4_header_nav_tertiary
+			{
+				li
+				{
+					a,
+					label {
+						display: block;
+						border-bottom: 1px solid #e3e3e3;
+						display: block;
+						cursor: pointer;
+						padding: 10px 20px;
+						margin: 0;
+
+						&[for='xrx_bnrv4_default'] {
+							display: none;
+						}
+
+						+ span {
+							display: none;
+						}
+					}
+
+					label.xrx_bnrv4_header_flyout_header_back {
+						text-align: center;
+						background-color: #fff;
+						display: block;
+
+						&:after {
+							float: left;
+							color: $red;
+
+							@include xrx_bnrv4_left_arrow();
+						}
+					}
+
+					label:after {
+						float: right;
+						color: $red;
+
+						@include xrx_bnrv4_right_arrow();
+					}
+
+					.xrx_bnrv4_column_header > a {
+						display: none;
+					}
+
+					.xrx_bnrv4_header_flyout
+					{
+						display: block;
+						position: absolute;
+						top: -1px;
+						bottom: 0;
+						left: 100%;
+						width: 100%;
+						background-color: rgba(235, 235, 235, .98);
+
+						@include transition(left .25s ease-in-out);
+					}
+
+
+
+					input
+					{
+						@include checked()
+						{
+							~ .xrx_bnrv4_header_flyout,
+							~ .xrx_bnrv4_column_links {
+								left: 0;
+							}
+						}
+					}
+
+					.xrx_bnrv4_header_flyout,
+					.xrx_bnrv4_column .xrx_bnrv4_column_links
+					{
+						display: block;
+						position: absolute;
+						top: -1px;
+						bottom: 0;
+						left: 100%;
+						width: 100%;
+						background-color: rgba(235, 235, 235, .98);
+
+						@include transition(left .25s ease-in-out);
+
+						p,
+						form {
+							padding-left: 20px;
+							padding-right: 20px;
+						}
+					}
+				}
+			}
+		}
+
 		@include respond-min($break_desktop)
 		{
+			label.xrx_bnrv4_header_flyout_header_back,
+			label[for='xrx_bnrv4_default'] {
+				display: none;
+			}
+
 			#xrx_bnrv4_header_nav_primary > li,
 			#xrx_bnrv4_header_nav_tertiary > li#xrx_bnrv4_header_contact,
-			&.xrx_bnrv4_fixed_header 	#xrx_bnrv4_header_nav_tertiary > li#xrx_bnrv4_header_share
+			&.xrx_bnrv4_fixed_header 	#xrx_bnrv4_header_nav_tertiary > li
 			{
+				> a,
+				> span,
+				> label[for] {
+					font-size: 17px;
+					padding-top: 16px;
+					padding-bottom: 12px;
+					line-height: 20px;
+					font-weight: normal;
+				}
+
 				> input
 				{
 					@include checked()
