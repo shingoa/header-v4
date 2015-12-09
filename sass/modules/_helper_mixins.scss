@@ -171,7 +171,8 @@
 
 @mixin has_feature($feature)
 {
-	.#{$feature} &
+	.#{$feature} &,
+	&.#{$feature}
 	{
 		@content;
 	}
@@ -179,7 +180,8 @@
 
 @mixin missing_feature($feature)
 {
-	.no-#{$feature} &
+	.no-#{$feature} &,
+	&.no-#{$feature}
 	{
 		@content;
 	}

@@ -3,7 +3,7 @@
 
 @import "../modules/_responsive_base";
 
-#xrx_bnrv4_header
+#xrx_bnrv4_header #xrx_bnrv4_header_nav
 {
 	#xrx_bnrv4_header_nav_tertiary
 	{
@@ -66,35 +66,13 @@
 				> span {
 					background-color: transparent !important;
 				}
-
-				.at4-icon-left {
-					float: none !important;
-				}
-			}
-		}
-
-
-		a,
-		label {
-			display: block;
-			border-bottom: 1px solid #e3e3e3;
-			display: block;
-			cursor: pointer;
-			padding: 10px 20px;
-			margin: 0;
-
-			+ span {
-				display: none;
 			}
 
-			&[for='xrx_bnrv4_default'] {
-				display: none;
+			.at4-icon-left {
+				float: none !important;
 			}
-
-			@include respond-min($break_desktop)
-			{
-				padding: 0;
-				border-bottom: none;
+			.at4-icon {
+				background-color: #666 !important;
 			}
 		}
 
@@ -190,11 +168,6 @@
 				width: 26px;
 				height: 26px;
 
-				@include has_feature("xrx_bnrv4_fixed_header")
-				{
-					display: block;
-				}
-
 				&:hover > label {
 					border-bottom: none !important;
 
@@ -247,7 +220,6 @@
 				> span,
 				> label[for],
 				> a {
-					color: #fff;
 					border-bottom: 5px solid transparent;
 
 					@if ($page_width <= 740px) {
@@ -394,6 +366,50 @@
 									border-bottom: none;
 								}
 							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@include has_feature("xrx_bnrv4_fixed_header")
+	{
+		@include respond-min($break_desktop)
+		{
+			#xrx_bnrv4_header_nav_tertiary #xrx_bnrv4_header_nav_tertiary_search
+			{
+				display: block;
+			}
+		}
+	}
+
+	@include has_feature("xrx_bnrv4_static_header")
+	{
+		@include respond-min($break_desktop)
+		{
+			#xrx_bnrv4_header_nav_tertiary #xrx_bnrv4_header_share
+			{
+				&:hover {
+					> label {
+						display: none;
+					}
+				}
+
+				> label {
+					display: none;
+				}
+
+				> .xrx_bnrv4_header_flyout {
+					max-height: none;
+					position: static;
+
+					> div {
+						padding: 0;
+
+						.xrx_bnrv4_share_module {
+							padding: 16px 0 5px 0;
+
 						}
 					}
 				}

@@ -291,10 +291,12 @@
 			display: inline-block;
 			float: left;
 			height: 25px;
-			margin: 7px 0;
+			margin: 14px 0 0 0;
 			width: 0px;
 			background-position: left center;
-			@include transition(width .25s ease-in-out, border-top-width .25s ease-in-out);
+			opacity: 0;
+
+			@include transition(width .25s ease-in-out, border-top-width .25s ease-in-out, opacity .25s ease-in-out);
 		}
 
 		@include transition(left .25s ease-in-out);
@@ -326,7 +328,8 @@
 		@include respond-min($break_desktop)
 		{
 			#xrx_bnrv4_header_nav_primary > li,
-			#xrx_bnrv4_header_nav_tertiary > li
+			#xrx_bnrv4_header_nav_tertiary > li#xrx_bnrv4_header_contact,
+			&.xrx_bnrv4_fixed_header 	#xrx_bnrv4_header_nav_tertiary > li#xrx_bnrv4_header_share
 			{
 				> input
 				{
@@ -433,8 +436,16 @@
 			}
 
 			> div {
+				@include xrx_bnrv4_positionit;
+				padding: 0 30px;
+				box-sizing: border-box;
+				background-color: #fff;
 				position: relative;
-				border: 1px solid #dbdbdb;
+				border-bottom: 1px solid #dbdbdb;
+				border-left: 1px solid #fff;
+				border-right: 1px solid #fff;
+
+				@include transition(border .25s ease-in-out);
 
 				> ul > li {
 					&,
@@ -469,20 +480,17 @@
 
 				.xrx_bnrv4_logo {
 					width: 120px;
+					opacity: 1;
 
 					@include transition(none);
 				}
 
 				> div {
-					border-top-width: 0;
-				}
-			}
+					border-right-color: #dbdbdb;
+					border-left-color: #dbdbdb;
 
-			> div {
-				@include xrx_bnrv4_positionit;
-				padding: 0 30px;
-				box-sizing: border-box;
-				background-color: #fff;
+					@include transition(none);
+				}
 			}
 		}
 
