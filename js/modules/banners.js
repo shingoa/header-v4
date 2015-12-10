@@ -121,61 +121,65 @@
 		helpers.attachListener(document, "click", function(evt)
 		{
 			try {
-				var a = evt.srcElement || evt.target;
+				var element = evt.srcElement || evt.target;
 
-				if (a.nodeName !== "A") {
-					while (a && a.nodeName !== "A") {
-						a = a.parentNode;
+				if (element.nodeName !== "A" && element.nodeName !== "LABEL") {
+					while (element && (element.nodeName !== "A" && element.nodeName !== "LABEL")) {
+						element = element.parentNode;
 					}
 				}
 
-				if (a)
+				if (element)
 				{
-					var href = a.getAttribute("href");
+					var target = element.nodeName === "A" ? element.getAttribute("href") : element.getAttribute("for");
 
-					if (href)
+					if (target)
 					{
-						if (href.indexOf("#") === 0)
+						target = target.replace("#", "");
+
+						var clsFound = false;
+						var clsNode = element;
+
+						while (clsNode && !clsFound)
 						{
-							href = href.substr(1);
-
-							var clsFound = false;
-							var clsNode = a;
-
-							while (clsNode && !clsFound)
+							if (typeof(clsNode.getAttribute) === "function")
 							{
-								if (typeof(clsNode.getAttribute) === "function")
-								{
-									var cls = clsNode.getAttribute("class");
+								var cls = clsNode.getAttribute("class");
 
-									if (cls && cls.indexOf("xrx_bnr_handle_jump_link") > -1) {
-										clsFound = true;
-										break;
-									} else {
-										clsNode = clsNode.parentNode;
-									}
-								}
-								else if (typeof(clsNode.parentNode) !== "undefined") {
+								if (cls && cls.indexOf("xrx_bnr_handle_jump_link") > -1) {
+									clsFound = true;
+									break;
+								} else {
 									clsNode = clsNode.parentNode;
 								}
-								else {
-									break;
-								}
 							}
+							else if (typeof(clsNode.parentNode) !== "undefined") {
+								clsNode = clsNode.parentNode;
+							}
+							else {
+								break;
+							}
+						}
 
-							if (clsFound)
+						if (clsFound)
+						{
+							var target = document.getElementById(target);
+
+							if (target)
 							{
-								var target = document.getElementById(href);
-
-								if (target)
+								var scrollComplete = function()
 								{
-									if(helpers.scrollTo(target))
-									{
-										if (evt.preventDefault)
-											evt.preventDefault();
-
-										return false;
+									if (target && target.focus) {
+										target.focus();
 									}
+								}
+
+								if(helpers.scrollTo(target, scrollComplete))
+								{
+									if (evt.preventDefault)
+										evt.preventDefault();
+
+									return false;
 								}
 							}
 						}

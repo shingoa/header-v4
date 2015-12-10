@@ -349,37 +349,4 @@
 			}
 		}
 	}
-
-	@include has_feature("xrx_bnrv4_static_header")
-	{
-		@include respond-min($break_desktop)
-		{
-			#xrx_bnrv4_header_nav_tertiary #xrx_bnrv4_header_share
-			{
-				&:hover {
-					> label {
-						display: none;
-					}
-				}
-
-				> label {
-					display: none;
-				}
-
-				> .xrx_bnrv4_header_flyout {
-					max-height: none;
-					position: static;
-
-					> div {
-						padding: 0;
-
-						.xrx_bnrv4_share_module {
-							padding: 16px 0 5px 0;
-
-						}
-					}
-				}
-			}
-		}
-	}
 }
