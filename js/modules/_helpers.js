@@ -189,6 +189,8 @@
 					if (typeof(target) === "number")
 					{
 						target = target - 95;
+						if (target < 0)
+							target = 0;
 						var dist = target - scrollTop;
 
 						var smooth_step = function(start, end, point) {

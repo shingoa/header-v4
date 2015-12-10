@@ -163,18 +163,22 @@
 
 						if (clsFound)
 						{
-							var target = document.getElementById(target);
+							var targetElm = document.getElementById(target);
 
-							if (target)
+							if (target === "searchString" && window.elc_options && document.getElementById("elc-searchInput-0")) {
+								targetElm = document.getElementById("elc-searchInput-0");
+							}
+
+							if (targetElm)
 							{
 								var scrollComplete = function()
 								{
-									if (target && target.focus) {
-										target.focus();
+									if (targetElm && targetElm.focus) {
+										targetElm.focus();
 									}
 								}
 
-								if(helpers.scrollTo(target, scrollComplete))
+								if(helpers.scrollTo(targetElm, scrollComplete))
 								{
 									if (evt.preventDefault)
 										evt.preventDefault();
