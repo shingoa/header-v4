@@ -166,7 +166,7 @@
 			}
 		}
 
-		self.scrollTo = function(target)
+		self.scrollTo = function(target, scrollComplete)
 		{
 			try
 			{
@@ -216,6 +216,10 @@
 							segment++;
 							if (segment >= segments) {
 								clearInterval(interval);
+
+								if (scrollComplete) {
+									scrollComplete();
+								}
 							}
 						}, segmentTime)
 
