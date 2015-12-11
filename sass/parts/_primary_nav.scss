@@ -176,11 +176,6 @@
 
 					@include transition(none);
 				}
-
-				&:before {
-					top: 35%;
-					bottom: 25%;
-				}
 			}
 
 			&:last-child {
