@@ -489,7 +489,7 @@
 				@include has_feature("xrx-mouse")
 				{
 					.xrx_bnrv4_header_flyout {
-						transition-delay: 250ms;
+						@include transition(max-height 0s 250ms, border 0s ease-in-out 250ms);
 
 						> label {
 							display: none;
