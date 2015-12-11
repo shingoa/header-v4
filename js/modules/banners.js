@@ -72,11 +72,14 @@
 	self.setupScrollHandler = function()
 	{
 		var scrollingClassSetTo;
-		helpers.attachListener(document, "scroll", function(evt)
+		var scrollingFixedHeaderClassSet;
+
+		var floater = document.getElementById("xrx_bnrv4_header_floater");
+		var htmlElm = document.documentElement;
+
+		var scrollingHandler = function()
 		{
 			try {
-				var floater = document.getElementById("xrx_bnrv4_header_floater");
-
 				if (helpers.scrollY() > 0 && !scrollingClassSetTo)
 				{
 					scrollingClassSetTo = true;
@@ -89,11 +92,28 @@
 
 					floater.className = floater.className.replace("xrx_bnrv4_scrolling", "");
 				}
+
+				if (helpers.scrollY() >= 80 && !scrollingFixedHeaderClassSet)
+				{
+					scrollingFixedHeaderClassSet = true;
+
+					helpers.addClass(document.getElementById("xrx_bnrv4_header_nav"), "xrx_bnrv4_fixed_header");
+					helpers.removeClass(document.getElementById("xrx_bnrv4_header_nav"), "xrx_bnrv4_static_header");
+				}
+				else if (helpers.scrollY() < 80 && scrollingFixedHeaderClassSet) {
+					scrollingFixedHeaderClassSet = false;
+
+					helpers.removeClass(document.getElementById("xrx_bnrv4_header_nav"), "xrx_bnrv4_fixed_header");
+					helpers.addClass(document.getElementById("xrx_bnrv4_header_nav"), "xrx_bnrv4_static_header");
+				}
 			}
 			catch (err) {
 				helpers.logError(err);
 			}
-		});
+		};
+
+		helpers.attachListener(document, "scroll", scrollingHandler);
+		scrollingHandler();
 	};
 
 	self.setupAnchorHandler = function()
@@ -101,61 +121,69 @@
 		helpers.attachListener(document, "click", function(evt)
 		{
 			try {
-				var a = evt.srcElement || evt.target;
+				var element = evt.srcElement || evt.target;
 
-				if (a.nodeName !== "A") {
-					while (a && a.nodeName !== "A") {
-						a = a.parentNode;
+				if (element.nodeName !== "A" && element.nodeName !== "LABEL") {
+					while (element && (element.nodeName !== "A" && element.nodeName !== "LABEL")) {
+						element = element.parentNode;
 					}
 				}
 
-				if (a)
+				if (element)
 				{
-					var href = a.getAttribute("href");
+					var target = element.nodeName === "A" ? element.getAttribute("href") : element.getAttribute("for");
 
-					if (href)
+					if (target)
 					{
-						if (href.indexOf("#") === 0)
+						target = target.replace("#", "");
+
+						var clsFound = false;
+						var clsNode = element;
+
+						while (clsNode && !clsFound)
 						{
-							href = href.substr(1);
-
-							var clsFound = false;
-							var clsNode = a;
-
-							while (clsNode && !clsFound)
+							if (typeof(clsNode.getAttribute) === "function")
 							{
-								if (typeof(clsNode.getAttribute) === "function")
-								{
-									var cls = clsNode.getAttribute("class");
+								var cls = clsNode.getAttribute("class");
 
-									if (cls && cls.indexOf("xrx_bnr_handle_jump_link") > -1) {
-										clsFound = true;
-										break;
-									} else {
-										clsNode = clsNode.parentNode;
-									}
-								}
-								else if (typeof(clsNode.parentNode) !== "undefined") {
+								if (cls && cls.indexOf("xrx_bnr_handle_jump_link") > -1) {
+									clsFound = true;
+									break;
+								} else {
 									clsNode = clsNode.parentNode;
 								}
-								else {
-									break;
-								}
+							}
+							else if (typeof(clsNode.parentNode) !== "undefined") {
+								clsNode = clsNode.parentNode;
+							}
+							else {
+								break;
+							}
+						}
+
+						if (clsFound)
+						{
+							var targetElm = document.getElementById(target);
+
+							if (target === "searchString" && window.elc_options && document.getElementById("elc-searchInput-0")) {
+								targetElm = document.getElementById("elc-searchInput-0");
 							}
 
-							if (clsFound)
+							if (targetElm)
 							{
-								var target = document.getElementById(href);
-
-								if (target)
+								var scrollComplete = function()
 								{
-									if(helpers.scrollTo(target))
-									{
-										if (evt.preventDefault)
-											evt.preventDefault();
-
-										return false;
+									if (targetElm && targetElm.focus) {
+										targetElm.focus();
 									}
+								}
+
+								if(helpers.scrollTo(targetElm, scrollComplete))
+								{
+									if (evt.preventDefault)
+										evt.preventDefault();
+
+									return false;
 								}
 							}
 						}

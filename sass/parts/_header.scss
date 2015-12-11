@@ -12,51 +12,15 @@
 @import "hide_banners";
 @import "../vendor/css3-mixins";
 
-@mixin xrx_bnrv4_flyout_label_checked_marker
-{
-	@include has_feature("csstransforms")
-	{
-		&:after
-		{
-			content: "";
-			display: block;
-			background-color: #f1f1f1;
-			border-top: 1px solid #dbdbdb;
-			border-left: 1px solid #dbdbdb;
-			width: 15px;
-			height: 15px;
-			position: absolute;
-			bottom: -22px;
-			@include transform(rotate(45deg) translateX(-20px));
-			left: 50%;
-			z-index: 4100;
-		}
-	}
-}
-
-@mixin xrx_bnrv4_flyout_checked_styles
-{
-	color: $red;
-	cursor: default;
-	font-weight: bold;
-	position: relative;
-
-	~ .xrx_bnrv4_header_flyout {
-		display: block;
-		position: absolute;
-		left: -1px;
-		right: -1px;
-	}
-}
-
 #xrx_bnrv4_header
 {
 	z-index: 4000;
 	height: 80px;
+	margin-bottom: 10px;
 
-	@include respond-min($break_tablet)
+	@include respond-min($break_desktop)
 	{
-		height: 80px;
+		height: 135px;
 	}
 
 	.xrx_bnrv4_logo {
@@ -97,17 +61,22 @@
 		background-color: rgb(255, 255, 255);
 		background-color: rgba(255, 255, 255, .96);
 		z-index: 4200;
-		@include box-shadow(0px, 4px, 5px, rgba(102,102,102,0));
 		@include transition(box-shadow .1s ease-in-out);
 
 		@include has_feature("xrx_bnrv4_header_static")
 		{
 			position: static;
+			@include box-shadow(0px, 4px, 5px, rgba(102,102,102,0));
 		}
 
 		@include respond-min($break_tablet)
 		{
 			height: 80px;
+		}
+
+		@include respond-min($break_desktop)
+		{
+			position: static;
 		}
 
 		> div {
@@ -149,8 +118,13 @@
 								width: 100%;
 							}
 
-							&#xrx_bnrv4_header_tertiarycol {
+							&#xrx_bnrv4_header_secondarycol {
 								padding-left: 40px;
+
+								@include respond-min($break_desktop)
+								{
+									padding-right: 30px;
+								}
 							}
 
 							&#xrx_bnrv4_header_menucol {
@@ -158,22 +132,13 @@
 
 								@include respond-min($break_desktop)
 								{
+									display: none;
 									padding-left: 0px;
 								}
 							}
 						}
 					}
 				}
-			}
-		}
-
-		&.xrx_bnrv4_scrolling {
-			@include box-shadow(0px, 4px, 5px, rgba(102,102,102,0.5));
-
-			@include missing_feature("boxshadow")
-			{
-				box-shadow: none;
-				border-bottom: 1px solid #ebebeb;
 			}
 		}
 	}
@@ -327,6 +292,18 @@
 		overflow: hidden;
 		overflow-x: hidden;
 
+		.xrx_bnrv4_logo {
+			display: inline-block;
+			float: left;
+			height: 25px;
+			margin: 14px 0 0 0;
+			width: 0px;
+			background-position: left center;
+			opacity: 0;
+
+			@include transition(width .25s ease-in-out, border-top-width .25s ease-in-out, opacity .25s ease-in-out);
+		}
+
 		@include transition(left .25s ease-in-out);
 
 		> input {
@@ -346,57 +323,6 @@
 				width: 100%;
 				bottom: 0;
 			}
-
-		}
-
-		@include respond-min($break_desktop)
-		{
-			input#xrx_bnrv4_default
-			{
-				@include checked()
-				{
-					~ div #xrx_bnrv4_header_nav_primary li:first-child > label
-					{
-						@include xrx_bnrv4_flyout_checked_styles();
-						@include xrx_bnrv4_flyout_label_checked_marker();
-					}
-				}
-			}
-
-			#xrx_bnrv4_header_nav_primary > li > input,
-			#xrx_bnrv4_header_nav_secondary > li > input,
-			#xrx_bnrv4_header_nav_tertiary > li > input
-			{
-				@include checked()
-				{
-					~ label
-					{
-						@include xrx_bnrv4_flyout_checked_styles();
-					}
-				}
-			}
-
-			#xrx_bnrv4_header_nav_primary > li > input
-			{
-				@include checked()
-				{
-					~ label
-					{
-						@include xrx_bnrv4_flyout_label_checked_marker();
-					}
-				}
-			}
-
-			&:before {
-				content: "";
-				background-color: rgba(235, 235, 235, 1);
-				display: block;
-				position: absolute;
-				left: 0;
-				right: 0;
-				top: 0;
-				height: 150px;
-			}
 		}
 
 		@include respond-min($break_tablet)
@@ -404,19 +330,289 @@
 			top: 80px;
 		}
 
+		.xrx_bnrv4_column > input {
+			display: none;
+		}
+
+		@include respond-max($break_desktop)
+		{
+			#xrx_bnrv4_header_nav_primary,
+			#xrx_bnrv4_header_nav_secondary,
+			#xrx_bnrv4_header_nav_tertiary
+			{
+				li
+				{
+					a,
+					label {
+						display: block;
+						border-bottom: 1px solid #e3e3e3;
+						display: block;
+						cursor: pointer;
+						padding: 10px 20px;
+						margin: 0;
+
+						&[for='xrx_bnrv4_default'] {
+							display: none;
+						}
+
+						+ span {
+							display: none;
+						}
+					}
+
+					label.xrx_bnrv4_header_flyout_header_back {
+						text-align: center;
+						background-color: #fff;
+						display: block;
+
+						&:after {
+							float: left;
+							color: $red;
+
+							@include xrx_bnrv4_left_arrow();
+						}
+					}
+
+					label:after {
+						float: right;
+						color: $red;
+
+						@include xrx_bnrv4_right_arrow();
+					}
+
+					.xrx_bnrv4_column_header > a {
+						display: none;
+					}
+
+					.xrx_bnrv4_header_flyout
+					{
+						display: block;
+						position: absolute;
+						top: -1px;
+						bottom: 0;
+						left: 100%;
+						width: 100%;
+						background-color: rgba(235, 235, 235, .98);
+
+						@include transition(left .25s ease-in-out);
+					}
+
+
+
+					input
+					{
+						@include checked()
+						{
+							~ .xrx_bnrv4_header_flyout,
+							~ .xrx_bnrv4_column_links {
+								left: 0;
+							}
+						}
+					}
+
+					.xrx_bnrv4_header_flyout,
+					.xrx_bnrv4_column .xrx_bnrv4_column_links
+					{
+						display: block;
+						position: absolute;
+						top: -1px;
+						bottom: 0;
+						left: 100%;
+						width: 100%;
+						background-color: rgba(235, 235, 235, .98);
+
+						@include transition(left .25s ease-in-out);
+
+						p,
+						form {
+							padding-left: 20px;
+							padding-right: 20px;
+						}
+					}
+				}
+			}
+		}
+
 		@include respond-min($break_desktop)
 		{
-			position: fixed;
-			top: 80px;
-			max-height: 0;
-			border-top: 0px solid #dbdbdb;
+			label.xrx_bnrv4_header_flyout_header_back,
+			label[for='xrx_bnrv4_default'] {
+				display: none;
+			}
 
-			@include transition(max-height .25s ease-in-out, border-top-width .25s ease-in-out);
+			#xrx_bnrv4_header_nav_primary > li,
+			#xrx_bnrv4_header_nav_tertiary > li
+			{
+				> a,
+				> span,
+				> label[for] {
+					font-size: 17px;
+					padding-top: 16px;
+					padding-bottom: 12px;
+					line-height: 20px;
+					font-weight: normal;
+				}
+
+				> input
+				{
+					@include checked()
+					{
+						~ label
+						{
+							border-bottom: 5px solid $red;
+							display: none;
+							text-decoration: none;
+
+							&:hover {
+								text-decoration: none;
+							}
+
+							&[for='xrx_bnrv4_default'] {
+								display: inline-block;
+							}
+						}
+
+						~ .xrx_bnrv4_header_flyout {
+							max-height: 90000px;
+							border: 1px solid #dbdbdb;
+
+							> label {
+								display: block;
+								position: absolute;
+								top: 20px;
+								right: 30px;
+								font-size: 24px;
+								color: $red;
+							}
+						}
+					}
+				}
+
+				@include has_feature("xrx-mouse")
+				{
+					.xrx_bnrv4_header_flyout {
+						transition-delay: 250ms;
+
+						> label {
+							display: none;
+						}
+					}
+
+					&:hover
+					{
+						> label
+						{
+							border-bottom: 5px solid $red;
+							display: none;
+							text-decoration: none;
+						}
+						> label[for='xrx_bnrv4_default'] {
+							display: inline-block;
+						}
+
+						> .xrx_bnrv4_header_flyout {
+							max-height: 90000px;
+							border: 1px solid #dbdbdb;
+						}
+					}
+				}
+			}
+
+			.xrx_bnrv4_header_flyout {
+				display: block;
+				left: 0;
+				right: 0;
+				position: absolute;
+				max-height: 0;
+				overflow: hidden;
+				margin-left: -1px;
+				margin-right: -1px;
+				background-color: #fff;
+				border: 0px solid #dbdbdb;
+
+				> div {
+					box-sizing: border-box;
+					padding: 30px;
+					@include xrx_bnrv4_positionit;
+
+					border: none;
+				}
+
+				&,
+				a,
+				span,
+				label[for] {
+					color: #333;
+				}
+
+				a,
+				label[for] {
+					&:hover {
+						text-decoration: underline;
+
+						&:after {
+							text-decoration: none;
+						}
+					}
+				}
+			}
 
 			> div {
 				@include xrx_bnrv4_positionit;
 				padding: 0 30px;
 				box-sizing: border-box;
+				background-color: #fff;
+				position: relative;
+				border-bottom: 1px solid #dbdbdb;
+				border-left: 1px solid #fff;
+				border-right: 1px solid #fff;
+
+				@include transition(border .25s ease-in-out);
+
+				> ul > li {
+					&,
+					> a,
+					> label[for] {
+						color: #333;
+					}
+				}
+
+				&:after {
+					content: "";
+					display: block;
+					clear: both;
+				}
+			}
+		}
+
+		@include respond-min($break_desktop)
+		{
+			position: absolute;
+			top: 80px;
+			border: none;
+			bottom: auto;
+			overflow: visible;
+
+			@include has_feature("xrx_bnrv4_fixed_header")
+			{
+				top: 0;
+				position: fixed;
+				animation-name: header_slide_in;
+				animation-duration: .5s;
+
+				.xrx_bnrv4_logo {
+					width: 120px;
+					opacity: 1;
+
+					@include transition(none);
+				}
+
+				> div {
+					border-right-color: #dbdbdb;
+					border-left-color: #dbdbdb;
+
+					@include transition(none);
+				}
 			}
 		}
 
@@ -442,25 +638,7 @@
 			{
 				~ #xrx_bnrv4_header_nav {
 					max-height: 100%;
-					border-top: 1px solid #dbdbdb;
 				}
-			}
-		}
-	}
-
-	@include respond-min($break_desktop)
-	{
-		.xrx_bnrv4_header_flyout {
-			min-height: 50px;
-			border-bottom: 1px solid #dbdbdb;
-			border-top: 1px solid #dbdbdb;
-			display: none;
-			background-color: #f1f1f1;
-
-			> div {
-				box-sizing: border-box;
-				padding: 30px;
-				@include xrx_bnrv4_positionit;
 			}
 		}
 	}
@@ -516,5 +694,16 @@
 				display: none;
 			}
 		}
+	}
+}
+
+@keyframes header_slide_in {
+  0%   {
+		top: -80px;
+		position: fixed;
+	}
+  100% {
+		top: 0;
+		position: fixed;
 	}
 }

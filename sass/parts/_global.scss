@@ -30,7 +30,7 @@
 		cursor: pointer;
 
 		&:hover {
-			color: $red;
+			text-decoration: underline;
 		}
 
 		&:focus {
@@ -54,6 +54,10 @@
 		background-size: contain;
 		position: relative;
 		/*-webkit-print-color-adjust: exact;*/
+
+		&.xrx_bnrv4_logo_white {
+			background-image: $logoPathWhitePng
+		}
 	}
 
 	@include respond-min($break_desktop)

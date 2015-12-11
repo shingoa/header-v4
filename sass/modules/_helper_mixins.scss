@@ -32,7 +32,6 @@
 
 	> li {
 		display: inline-block;
-		margin-right: 1px;
 
 		> a,
 		> span,
@@ -42,8 +41,23 @@
 	}
 }
 
-@mixin xrx_bnrv4_list_dividers($side: right)
+@mixin xrx_bnrv4_list_dividers($side: right, $margin: 10px)
 {
+	&:first-child {
+		> span,
+		> label[for],
+		> a {
+			margin-left: 0;
+		}
+	}
+	&:last-child {
+		> span,
+		> label[for],
+		> a {
+			margin-right: 0;
+		}
+	}
+
 	> label[for],
 	> a {
 		cursor: pointer;
@@ -52,17 +66,21 @@
 	> span,
 	> label[for],
 	> a {
+
+		$computedMargin: $margin;
+
 		@if ($page_width <= 740px) {
-			padding-#{$side}: 7px;
-			margin-#{$side}: 7px;
+			$computedMargin: round($margin - (($margin / 100) * 30));
 		}
 		@else if ($page_width <= 940px) {
-			padding-#{$side}: 8px;
-			margin-#{$side}: 8px;
+			$computedMargin: round($margin - (($margin / 100) * 20));
 		}
-		@else {
-			padding-#{$side}: 10px;
-			margin-#{$side}: 10px;
+
+		margin-left: $computedMargin - 1px;
+		margin-right: $computedMargin;
+
+		&:before {
+			#{$side}: $computedMargin * -1;
 		}
 
 		position: relative;
@@ -79,7 +97,6 @@
 			position: absolute;
 			top: 20%;
 			bottom: 20%;
-			#{$side}: 0;
 			width: 1px;
 			background-color: #dbdbdb;
 			border: none !important;
@@ -87,8 +104,8 @@
 
 		&.xrx_bnrv4_header_no_divider
 		{
-			padding-#{$side}: 0;
-			margin-#{$side}: 0;
+			margin-left: 0;
+			margin-right: 0;
 
 			&:before {
 				display: none;
@@ -129,11 +146,33 @@
 			}
 		}
 	}
+
+	@include respond-max($break_tablet)
+	{
+		&.xrx_hide_mobile + li {
+			> span,
+			> label[for],
+			> a {
+				margin-left: 0;
+			}
+		}
+	}
+	@include respond-min-max($break_tablet, $break_desktop)
+	{
+		&.xrx_hide_tablet + li {
+			> span,
+			> label[for],
+			> a {
+				margin-left: 0;
+			}
+		}
+	}
 }
 
 @mixin has_feature($feature)
 {
-	.#{$feature} &
+	.#{$feature} &,
+	&.#{$feature}
 	{
 		@content;
 	}
@@ -141,7 +180,8 @@
 
 @mixin missing_feature($feature)
 {
-	.no-#{$feature} &
+	.no-#{$feature} &,
+	&.no-#{$feature}
 	{
 		@content;
 	}
@@ -153,6 +193,7 @@
 	font-family: "Arial";
 	font-size: 90%;
 	margin-left: 5px;
+	display: inline-block;
 
 	@include missing_feature("csstransforms")
 	{

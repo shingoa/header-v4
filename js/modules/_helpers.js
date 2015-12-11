@@ -99,7 +99,11 @@
 			{
 				var re = new RegExp("\s?" + cls + "\s?");
 
-				if (!elm.className || !re.exec(elm.className))
+				if (!elm.className)
+				{
+					elm.className = cls;
+				}
+				else if (!re.exec(elm.className))
 				{
 					elm.className = elm.className + " " + cls;
 				}
@@ -109,20 +113,39 @@
 		{
 			if (elm && cls && elm.className)
 			{
-				elm.className = elm.className.replace(cls, "");
+				elm.className = elm.className
+					.replace(cls, "")
+					.replace("  ", " ")
+					.replace("  ", " ")
+					.replace("  ", " ");
+
+					if (typeof(String.prototype.trim) == "function")
+					{
+						elm.className = elm.className.trim();
+					}
 			}
 		};
 
-		self.toggleClass = function(elm, cls)
+		self.toggleClass = function(elm, cls, state)
 		{
 			if (elm && cls)
 			{
-				var re = new RegExp("\s?" + cls + "\s?");
-
-				if (re.exec(elm.className))
-					self.removeClass(elm, cls);
+				if (typeof(state) !== "undefined")
+				{
+					if (state)
+						self.addClass(elm, cls);
+					else
+						self.removeClass(elm, cls);
+				}
 				else
-					self.addClass(elm, cls);
+				{
+					var re = new RegExp("\s?" + cls + "\s?");
+
+					if (re.exec(elm.className))
+						self.removeClass(elm, cls);
+					else
+						self.addClass(elm, cls);
+				}
 			}
 		}
 
@@ -143,7 +166,7 @@
 			}
 		}
 
-		self.scrollTo = function(target)
+		self.scrollTo = function(target, scrollComplete)
 		{
 			try
 			{
@@ -166,6 +189,8 @@
 					if (typeof(target) === "number")
 					{
 						target = target - 95;
+						if (target < 0)
+							target = 0;
 						var dist = target - scrollTop;
 
 						var smooth_step = function(start, end, point) {
@@ -193,6 +218,10 @@
 							segment++;
 							if (segment >= segments) {
 								clearInterval(interval);
+
+								if (scrollComplete) {
+									scrollComplete();
+								}
 							}
 						}, segmentTime)
 

@@ -1,9 +1,13 @@
 {{#with insights}}
 	<li>
 		<input type="radio" name="xrx_bnrv4_header_nav_primary" value="xrx_bnrv4_insights" id="xrx_bnrv4_insights" autocomplete="off" aria-hidden="true" />
+
+		<label for="xrx_bnrv4_default" name="&amp;lid=hdr-bar-insights-close">{{label}}</label>
 		<label for="xrx_bnrv4_insights" name="&amp;lid=hdr-bar-insights" role="tab" aria-controls="xrx_bnrv4_header_flyout_insights">{{label}}</label>
 
 		<div class="xrx_bnrv4_header_flyout" id="xrx_bnrv4_header_flyout_insights" role="tabpanel">
+			<label for="xrx_bnrv4_default" name="&amp;lid=hdr-bar-insights-close">❌</label>
+
 			<div>
 				{{> includes/partials/flyout_header}}
 
@@ -25,8 +29,9 @@
 					</form>
 				</div>
 
-				{{> includes/partials/flyout_footer}}
 			</div>
+
+			{{> includes/partials/flyout_footer}}
 		</div>
 	</li>
 {{/with}}

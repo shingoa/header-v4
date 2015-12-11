@@ -2,16 +2,18 @@
 	<div class="xrx_bnrv4_footer_position">
 		<a class="xrx_bnrv4_logo" name="&lid=ftr-logo-home" href="{{footer.trans.logoURL}}" title="{{footer.trans.logoTitle}}"></a>
 
-		{{#if footer.footerLinks.links}}
-			<ul id="xrx_bnr_v3_ftr_links">
-				{{#each footer.footerLinks.links}}
-					{{> includes/partials/list_item }}
-				{{/each}}
-			</ul>
-		{{/if}}
+		<div class="xrx_bnrv4_footer_content">
+			{{#if footer.footerLinks.links}}
+				<ul id="xrx_bnr_v3_ftr_links">
+					{{#each footer.footerLinks.links}}
+						{{> includes/partials/list_item }}
+					{{/each}}
+				</ul>
+			{{/if}}
 
-		<p id="xrx_bnr_v3_ftr_copyright">
-			{{{footer.copyrightStatement}}}
-		</p>
+			<p id="xrx_bnr_v3_ftr_copyright">
+				{{{footer.copyrightStatement}}}
+			</p>
+		</div>
 	</div>
 </div>

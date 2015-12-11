@@ -10,10 +10,6 @@
 		@include xrx_bnrv4_resetlist;
 	}
 
-	.xrx_bnrv4_column > input {
-		display: none;
-	}
-
 	p {
 		color: #737373;
 	}
@@ -38,83 +34,6 @@
 
 	@include respond-max($break_desktop)
 	{
-		&
-		{
-			input
-			{
-				@include checked()
-				{
-					~ .xrx_bnrv4_header_flyout {
-						left: 0;
-					}
-				}
-			}
-
-			.xrx_bnrv4_header_flyout
-			{
-				display: block;
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 100%;
-				width: 100%;
-				background-color: rgba(235, 235, 235, .98);
-
-				@include transition(left .25s ease-in-out);
-
-				p,
-				form {
-					padding-left: 20px;
-					padding-right: 20px;
-				}
-
-				.xrx_bnrv4_column {
-
-					input
-					{
-						@include checked()
-						{
-							~ .xrx_bnrv4_column_links {
-								left: 0;
-							}
-						}
-					}
-					.xrx_bnrv4_column_links
-					{
-						position: absolute;
-						top: 0;
-						bottom: 0;
-						left: 100%;
-						width: 100%;
-						background-color: rgba(235, 235, 235, .98);
-
-						@include transition(left .25s ease-in-out);
-					}
-				}
-			}
-		}
-
-		a,
-		label {
-			display: block;
-			border-bottom: 1px solid #e3e3e3;
-			display: block;
-			cursor: pointer;
-			padding: 10px 20px;
-			margin: 0;
-
-			+ span {
-				display: none;
-			}
-		}
-
-		label:after {
-			float: right;
-			color: $red;
-
-			@include xrx_bnrv4_right_arrow();
-		}
-
 		label ~ a {
 			display: none;
 
@@ -135,22 +54,6 @@
 			}
 		}
 
-		.xrx_bnrv4_header_flyout_header_back {
-			text-align: center;
-			background-color: #fff;
-
-			&:after {
-				float: left;
-				color: $red;
-
-				@include xrx_bnrv4_left_arrow();
-
-				@include respond-min($break_desktop)
-				{
-					display: none;
-				}
-			}
-		}
 		.xrx_bnrv4_header_flyout_footer {
 			display: none;
 		}
@@ -161,6 +64,12 @@
 		float: left;
 		line-height: 20px;
 
+		> li {
+			> label {
+				color: #fff;
+			}
+		}
+
 		.xrx_bnrv4_header_flyout_header {
 			margin-bottom: 20px;
 			display: block;
@@ -170,7 +79,6 @@
 			> span,
 			> label {
 				font-size: 18px;
-				color: #333;
 				font-weight: bold;
 				line-height: 20px;
 			}
@@ -245,33 +153,33 @@
 		}
 
 		> li {
-			@include xrx_bnrv4_list_dividers;
+			@include xrx_bnrv4_list_dividers(right, 16px);
 
 			> label[for],
 			> a {
-				@if ($page_width <= 740px) {
-					font-size: 15px;
-					padding: 16px 7px 17px 0;
-					margin-right: 7px;
-				}
-				@else if ($page_width <= 940px) {
-					font-size: 18px;
-					padding: 16px 10px 17px 0;
-					margin-right: 10px;
-				}
-				@else {
-					font-size: 20px;
-					padding: 16px 15px 17px 0;
-					margin-right: 15px;
-				}
-
+				border-bottom: 5px solid transparent;
 				white-space: no-wrap;
 				line-height: 20px;
-				font-weight: normal;
+				font-weight: 300;
+
+				@include transition(font-size .25s ease-in-out, border-top-width .25s ease-in-out,
+														padding-top .25s ease-in-out, border-top-width .25s ease-in-out,
+														padding-bottom .25s ease-in-out, border-top-width .25s ease-in-out,
+														line-height .25s ease-in-out, border-top-width .25s ease-in-out);
+
+				@include has_feature("xrx_bnrv4_fixed_header")
+				{
+					font-size: 16px;
+					padding-top: 13px;
+					padding-bottom: 9px;
+					line-height: 15px;
+
+					@include transition(none);
+				}
 
 				&:before {
 					top: 35%;
-					bottom: 35%;
+					bottom: 25%;
 				}
 			}
 
@@ -288,12 +196,11 @@
 		.xrx_bnrv4_header_flyout_footer {
 			@include xrx_bnrv4_inlinelist;
 
-			position: relative;
-			top: 10px;
-			border-top: 1px solid #dbdbdb;
-			padding-top: 15px;
+			padding: 15px 30px;
 			margin-top: 9px;
-			margin-bottom: -5px;
+			background-color: #fff;
+			margin: 0 -1px -1px -1px;
+			border-top: 1px solid #dbdbdb;
 
 			li {
 				@include xrx_bnrv4_list_dividers;
@@ -302,6 +209,7 @@
 				> span {
 					padding-right: 18px;
 					margin-right: 18px;
+					color: #333;
 				}
 			}
 		}
