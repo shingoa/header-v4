@@ -20,7 +20,7 @@
 
 	@include respond-min($break_desktop)
 	{
-		height: 135px;
+		height: 130px;
 	}
 
 	.xrx_bnrv4_logo {
@@ -310,6 +310,10 @@
 			display: none;
 		}
 
+		.xrx_bnrv4_column > input {
+			display: none;
+		}
+
 		@include respond-max($break_desktop)
 		{
 			background-color: rgba(235, 235, 235, .98);
@@ -323,19 +327,7 @@
 				width: 100%;
 				bottom: 0;
 			}
-		}
 
-		@include respond-min($break_tablet)
-		{
-			top: 80px;
-		}
-
-		.xrx_bnrv4_column > input {
-			display: none;
-		}
-
-		@include respond-max($break_desktop)
-		{
 			#xrx_bnrv4_header_nav_primary,
 			#xrx_bnrv4_header_nav_secondary,
 			#xrx_bnrv4_header_nav_tertiary
@@ -435,6 +427,12 @@
 
 		@include respond-min($break_desktop)
 		{
+			position: absolute;
+			top: 70px;
+			border: none;
+			bottom: auto;
+			overflow: visible;
+
 			label.xrx_bnrv4_header_flyout_header_back,
 			label[for='xrx_bnrv4_default'] {
 				display: none;
@@ -446,10 +444,10 @@
 				> a,
 				> span,
 				> label[for] {
-					font-size: 17px;
-					padding-top: 16px;
-					padding-bottom: 12px;
-					line-height: 20px;
+					font-size: 16px;
+					padding-top: 14px;
+					padding-bottom: 8px;
+					line-height: 28px;
 					font-weight: normal;
 				}
 
@@ -583,15 +581,6 @@
 					clear: both;
 				}
 			}
-		}
-
-		@include respond-min($break_desktop)
-		{
-			position: absolute;
-			top: 80px;
-			border: none;
-			bottom: auto;
-			overflow: visible;
 
 			@include has_feature("xrx_bnrv4_fixed_header")
 			{

@@ -166,6 +166,11 @@
 							stroke: $red !important;
 						}
 					}
+
+					> svg {
+						position: relative;
+						top: 4px;
+					}
 				}
 			}
 
@@ -196,7 +201,7 @@
 			> li {
 				float: left;
 
-				@include xrx_bnrv4_list_dividers(left);
+				@include xrx_bnrv4_list_dividers(right);
 
 				> span,
 				> label[for],
@@ -204,10 +209,6 @@
 					border-bottom: 5px solid transparent;
 					white-space: no-wrap;
 					font-weight: lighter;
-
-					&:before {
-						display: none;
-					}
 
 					@include transition(font-size .25s ease-in-out, border-top-width .25s ease-in-out,
 															padding-top .25s ease-in-out, border-top-width .25s ease-in-out,
@@ -219,11 +220,6 @@
 						padding-top: 13px;
 						padding-bottom: 9px;
 						line-height: 15px;
-
-						&:before {
-							top: 35%;
-							bottom: 35%;
-						}
 					}
 				}
 
@@ -277,7 +273,7 @@
 						}
 
 						p {
-							font-size: 18px;
+							font-size: 16px;
 						}
 
 						> label {
@@ -289,7 +285,7 @@
 							}
 
 							&.xrx_bnrv4_header_flyoutlbl {
-								font-size: 18px;
+								font-size: 16px;
 								margin-bottom: 10px;
 								display: none;
 
@@ -317,7 +313,7 @@
 
 								> a,
 								> label {
-									font-size: 18px;
+									font-size: 16px;
 									display: block;
 									cursor: pointer;
 									padding: 10px 0px;
