@@ -113,6 +113,7 @@
 		};
 
 		helpers.attachListener(document, "scroll", scrollingHandler);
+		helpers.attachListener(window, "scroll", scrollingHandler);
 		scrollingHandler();
 	};
 
