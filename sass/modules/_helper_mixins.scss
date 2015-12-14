@@ -194,6 +194,7 @@
 	font-size: 90%;
 	margin-left: 5px;
 	display: inline-block;
+	text-decoration: none;
 
 	@include missing_feature("csstransforms")
 	{
@@ -214,6 +215,8 @@
 	font-family: "Arial";
 	content: "\276E\0000a0";
 	font-size: 90%;
+	text-decoration: none;
+	display: inline-block;
 
 	@include missing_feature("csstransforms")
 	{
@@ -237,6 +240,8 @@
 	margin-left: 12px;
 	position: relative;
 	top: 1px;
+	text-decoration: none;
+
 	@include transform(rotate(90deg));
 	font-size: 90%;
 	margin-right: 2px;
