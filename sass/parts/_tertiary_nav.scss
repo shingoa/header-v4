@@ -41,6 +41,33 @@
 
 		#xrx_bnrv4_header_nav_tertiary_search {
 			display: none;
+
+			> label {
+				width: 16px;
+				height: 16px;
+
+				&:before {
+					display: none;
+				}
+			}
+
+			@include has_feature("no-svg")
+			{
+				> label
+				{
+					background-image: url("images/search_compressed_off.png");
+					background-position: center center;
+			    background-repeat: no-repeat;
+
+					&:hover {
+						background-image: url("images/search_compressed_on.png");
+					}
+
+					svg {
+						display: none;
+					}
+				}
+			}
 		}
 
 		#xrx_bnrv4_header_share
@@ -147,7 +174,6 @@
 
 			#xrx_bnrv4_header_nav_tertiary_search {
 				width: 26px;
-				height: 26px;
 
 				&:hover > label {
 					border-bottom: none !important;
@@ -160,18 +186,18 @@
 
 				> label {
 					display: block;
+					width: 16px;
+					height: 28px;
+
+					> svg {
+						position: relative;
+						top: 3px;
+					}
 
 					&:hover svg {
 						#XMLID_1_, #XMLID_3_ {
 							stroke: $red !important;
 						}
-					}
-
-					> svg {
-						position: relative;
-						top: 4px;
-						width: 16px;
-						height: 16px;
 					}
 				}
 			}
@@ -208,14 +234,8 @@
 				> span,
 				> label[for],
 				> a {
-					border-bottom: 5px solid transparent;
 					white-space: no-wrap;
 					font-weight: lighter;
-
-					@include transition(font-size .25s ease-in-out, border-top-width .25s ease-in-out,
-															padding-top .25s ease-in-out, border-top-width .25s ease-in-out,
-															padding-bottom .25s ease-in-out, border-top-width .25s ease-in-out,
-															line-height .25s ease-in-out, border-top-width .25s ease-in-out);
 
 					@include has_feature("xrx_bnrv4_fixed_header")
 					{
