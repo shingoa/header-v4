@@ -299,6 +299,19 @@
 			background-position: left center;
 			opacity: 0;
 
+			@include missing_feature("svg")
+			{
+				background-image: url("images/xerox_logo_compressed.png");
+			}
+			@include has_feature("elc-no-svg")
+			{
+				background-image: url("images/xerox_logo_compressed.png");
+			}
+			@include has_feature("ie8")
+			{
+				background-image: url("images/xerox_logo_compressed.png");
+			}
+
 			@include transition(width .25s ease-in-out, border-top-width .25s ease-in-out, opacity .25s ease-in-out);
 		}
 
@@ -442,8 +455,10 @@
 				> a,
 				> span,
 				> label[for] {
+					border-top: 5px solid transparent;
+					border-bottom: 5px solid transparent;
 					font-size: 16px;
-					padding-top: 14px;
+					padding-top: 9px;
 					padding-bottom: 8px;
 					line-height: 28px;
 					font-weight: normal;
@@ -470,7 +485,8 @@
 
 						~ .xrx_bnrv4_header_flyout {
 							max-height: 90000px;
-							border: 1px solid #dbdbdb;
+							border-bottom: 1px solid #dbdbdb;
+							border-top: 1px solid #dbdbdb;
 
 							> label {
 								display: block;
@@ -508,7 +524,8 @@
 
 						> .xrx_bnrv4_header_flyout {
 							max-height: 90000px;
-							border: 1px solid #dbdbdb;
+							border-bottom: 1px solid #dbdbdb;
+							border-top: 1px solid #dbdbdb;
 						}
 					}
 				}
@@ -525,6 +542,7 @@
 				margin-right: -1px;
 				background-color: #fff;
 				border: 0px solid #dbdbdb;
+				color: #333;
 
 				> div {
 					box-sizing: border-box;
@@ -532,13 +550,6 @@
 					@include xrx_bnrv4_positionit;
 
 					border: none;
-				}
-
-				&,
-				a,
-				span,
-				label[for] {
-					color: #333;
 				}
 
 				a,
